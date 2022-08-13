@@ -1,0 +1,636 @@
+// Prebuilt digitalocean Provider for Terraform CDK (cdktf)
+package digitalocean
+
+import (
+	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/hashicorp/cdktf-provider-digitalocean-go/digitalocean/v2/jsii"
+
+	"github.com/hashicorp/cdktf-provider-digitalocean-go/digitalocean/v2/internal"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+)
+
+type AppSpecStaticSiteCorsOutputReference interface {
+	cdktf.ComplexObject
+	AllowCredentials() interface{}
+	SetAllowCredentials(val interface{})
+	AllowCredentialsInput() interface{}
+	AllowHeaders() *[]*string
+	SetAllowHeaders(val *[]*string)
+	AllowHeadersInput() *[]*string
+	AllowMethods() *[]*string
+	SetAllowMethods(val *[]*string)
+	AllowMethodsInput() *[]*string
+	AllowOrigins() AppSpecStaticSiteCorsAllowOriginsOutputReference
+	AllowOriginsInput() *AppSpecStaticSiteCorsAllowOrigins
+	// the index of the complex object in a list.
+	// Experimental.
+	ComplexObjectIndex() interface{}
+	// Experimental.
+	SetComplexObjectIndex(val interface{})
+	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
+	// Experimental.
+	ComplexObjectIsFromSet() *bool
+	// Experimental.
+	SetComplexObjectIsFromSet(val *bool)
+	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
+	//
+	// If this returns an empty array the stack will not be attached.
+	// Experimental.
+	CreationStack() *[]*string
+	ExposeHeaders() *[]*string
+	SetExposeHeaders(val *[]*string)
+	ExposeHeadersInput() *[]*string
+	// Experimental.
+	Fqn() *string
+	InternalValue() *AppSpecStaticSiteCors
+	SetInternalValue(val *AppSpecStaticSiteCors)
+	MaxAge() *string
+	SetMaxAge(val *string)
+	MaxAgeInput() *string
+	// Experimental.
+	TerraformAttribute() *string
+	// Experimental.
+	SetTerraformAttribute(val *string)
+	// Experimental.
+	TerraformResource() cdktf.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktf.IInterpolatingParent)
+	// Experimental.
+	ComputeFqn() *string
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationAsList() cdktf.IResolvable
+	// Experimental.
+	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAllowOrigins(value *AppSpecStaticSiteCorsAllowOrigins)
+	ResetAllowCredentials()
+	ResetAllowHeaders()
+	ResetAllowMethods()
+	ResetAllowOrigins()
+	ResetExposeHeaders()
+	ResetMaxAge()
+	// Produce the Token's value at resolution time.
+	// Experimental.
+	Resolve(_context cdktf.IResolveContext) interface{}
+	// Return a string representation of this resolvable object.
+	//
+	// Returns a reversible string representation.
+	// Experimental.
+	ToString() *string
+}
+
+// The jsii proxy struct for AppSpecStaticSiteCorsOutputReference
+type jsiiProxy_AppSpecStaticSiteCorsOutputReference struct {
+	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_AppSpecStaticSiteCorsOutputReference) AllowCredentials() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowCredentials",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecStaticSiteCorsOutputReference) AllowCredentialsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowCredentialsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecStaticSiteCorsOutputReference) AllowHeaders() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowHeaders",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecStaticSiteCorsOutputReference) AllowHeadersInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowHeadersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecStaticSiteCorsOutputReference) AllowMethods() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowMethods",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecStaticSiteCorsOutputReference) AllowMethodsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowMethodsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecStaticSiteCorsOutputReference) AllowOrigins() AppSpecStaticSiteCorsAllowOriginsOutputReference {
+	var returns AppSpecStaticSiteCorsAllowOriginsOutputReference
+	_jsii_.Get(
+		j,
+		"allowOrigins",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecStaticSiteCorsOutputReference) AllowOriginsInput() *AppSpecStaticSiteCorsAllowOrigins {
+	var returns *AppSpecStaticSiteCorsAllowOrigins
+	_jsii_.Get(
+		j,
+		"allowOriginsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecStaticSiteCorsOutputReference) ComplexObjectIndex() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"complexObjectIndex",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecStaticSiteCorsOutputReference) ComplexObjectIsFromSet() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecStaticSiteCorsOutputReference) CreationStack() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecStaticSiteCorsOutputReference) ExposeHeaders() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"exposeHeaders",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecStaticSiteCorsOutputReference) ExposeHeadersInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"exposeHeadersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecStaticSiteCorsOutputReference) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecStaticSiteCorsOutputReference) InternalValue() *AppSpecStaticSiteCors {
+	var returns *AppSpecStaticSiteCors
+	_jsii_.Get(
+		j,
+		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecStaticSiteCorsOutputReference) MaxAge() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maxAge",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecStaticSiteCorsOutputReference) MaxAgeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maxAgeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecStaticSiteCorsOutputReference) TerraformAttribute() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecStaticSiteCorsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+	var returns cdktf.IInterpolatingParent
+	_jsii_.Get(
+		j,
+		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+
+func NewAppSpecStaticSiteCorsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AppSpecStaticSiteCorsOutputReference {
+	_init_.Initialize()
+
+	j := jsiiProxy_AppSpecStaticSiteCorsOutputReference{}
+
+	_jsii_.Create(
+		"@cdktf/provider-digitalocean.AppSpecStaticSiteCorsOutputReference",
+		[]interface{}{terraformResource, terraformAttribute},
+		&j,
+	)
+
+	return &j
+}
+
+func NewAppSpecStaticSiteCorsOutputReference_Override(a AppSpecStaticSiteCorsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-digitalocean.AppSpecStaticSiteCorsOutputReference",
+		[]interface{}{terraformResource, terraformAttribute},
+		a,
+	)
+}
+
+func (j *jsiiProxy_AppSpecStaticSiteCorsOutputReference) SetAllowCredentials(val interface{}) {
+	_jsii_.Set(
+		j,
+		"allowCredentials",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppSpecStaticSiteCorsOutputReference) SetAllowHeaders(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"allowHeaders",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppSpecStaticSiteCorsOutputReference) SetAllowMethods(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"allowMethods",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppSpecStaticSiteCorsOutputReference) SetComplexObjectIndex(val interface{}) {
+	_jsii_.Set(
+		j,
+		"complexObjectIndex",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppSpecStaticSiteCorsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+	_jsii_.Set(
+		j,
+		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppSpecStaticSiteCorsOutputReference) SetExposeHeaders(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"exposeHeaders",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppSpecStaticSiteCorsOutputReference) SetInternalValue(val *AppSpecStaticSiteCors) {
+	_jsii_.Set(
+		j,
+		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppSpecStaticSiteCorsOutputReference) SetMaxAge(val *string) {
+	_jsii_.Set(
+		j,
+		"maxAge",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppSpecStaticSiteCorsOutputReference) SetTerraformAttribute(val *string) {
+	_jsii_.Set(
+		j,
+		"terraformAttribute",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppSpecStaticSiteCorsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+	_jsii_.Set(
+		j,
+		"terraformResource",
+		val,
+	)
+}
+
+func (a *jsiiProxy_AppSpecStaticSiteCorsOutputReference) ComputeFqn() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		a,
+		"computeFqn",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AppSpecStaticSiteCorsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		a,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AppSpecStaticSiteCorsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		a,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AppSpecStaticSiteCorsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		a,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AppSpecStaticSiteCorsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		a,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AppSpecStaticSiteCorsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	var returns *float64
+
+	_jsii_.Invoke(
+		a,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AppSpecStaticSiteCorsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		a,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AppSpecStaticSiteCorsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		a,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AppSpecStaticSiteCorsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		a,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AppSpecStaticSiteCorsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		a,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AppSpecStaticSiteCorsOutputReference) InterpolationAsList() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		a,
+		"interpolationAsList",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AppSpecStaticSiteCorsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		a,
+		"interpolationForAttribute",
+		[]interface{}{property},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AppSpecStaticSiteCorsOutputReference) PutAllowOrigins(value *AppSpecStaticSiteCorsAllowOrigins) {
+	_jsii_.InvokeVoid(
+		a,
+		"putAllowOrigins",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AppSpecStaticSiteCorsOutputReference) ResetAllowCredentials() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAllowCredentials",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppSpecStaticSiteCorsOutputReference) ResetAllowHeaders() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAllowHeaders",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppSpecStaticSiteCorsOutputReference) ResetAllowMethods() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAllowMethods",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppSpecStaticSiteCorsOutputReference) ResetAllowOrigins() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAllowOrigins",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppSpecStaticSiteCorsOutputReference) ResetExposeHeaders() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetExposeHeaders",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppSpecStaticSiteCorsOutputReference) ResetMaxAge() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetMaxAge",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppSpecStaticSiteCorsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		a,
+		"resolve",
+		[]interface{}{_context},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AppSpecStaticSiteCorsOutputReference) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		a,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
