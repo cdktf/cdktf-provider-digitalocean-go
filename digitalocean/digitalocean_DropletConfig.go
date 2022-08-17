@@ -51,6 +51,10 @@ type DropletConfig struct {
 	SshKeys *[]*string `field:"optional" json:"sshKeys" yaml:"sshKeys"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/droplet#tags Droplet#tags}.
 	Tags *[]*string `field:"optional" json:"tags" yaml:"tags"`
+	// timeouts block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/droplet#timeouts Droplet#timeouts}
+	Timeouts *DropletTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/droplet#user_data Droplet#user_data}.
 	UserData *string `field:"optional" json:"userData" yaml:"userData"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/droplet#volume_ids Droplet#volume_ids}.

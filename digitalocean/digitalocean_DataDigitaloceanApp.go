@@ -63,6 +63,7 @@ type DataDigitaloceanApp interface {
 	// Experimental.
 	TerraformResourceType() *string
 	UpdatedAt() *string
+	Urn() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -342,6 +343,16 @@ func (j *jsiiProxy_DataDigitaloceanApp) UpdatedAt() *string {
 	_jsii_.Get(
 		j,
 		"updatedAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDigitaloceanApp) Urn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"urn",
 		&returns,
 	)
 	return returns

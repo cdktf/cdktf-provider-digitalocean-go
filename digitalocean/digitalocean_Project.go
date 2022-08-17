@@ -47,7 +47,9 @@ type Project interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	IsDefault() cdktf.IResolvable
+	IsDefault() interface{}
+	SetIsDefault(val interface{})
+	IsDefaultInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -110,6 +112,7 @@ type Project interface {
 	ResetDescription()
 	ResetEnvironment()
 	ResetId()
+	ResetIsDefault()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -280,11 +283,21 @@ func (j *jsiiProxy_Project) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Project) IsDefault() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_Project) IsDefault() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"isDefault",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) IsDefaultInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isDefaultInput",
 		&returns,
 	)
 	return returns
@@ -539,6 +552,14 @@ func (j *jsiiProxy_Project) SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Project) SetIsDefault(val interface{}) {
+	_jsii_.Set(
+		j,
+		"isDefault",
 		val,
 	)
 }
@@ -800,6 +821,14 @@ func (p *jsiiProxy_Project) ResetId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Project) ResetIsDefault() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetIsDefault",
 		nil, // no parameters
 	)
 }

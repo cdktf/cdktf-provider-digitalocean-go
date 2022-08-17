@@ -111,6 +111,8 @@ type Droplet interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() DropletTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	Urn() *string
 	UserData() *string
 	SetUserData(val *string)
@@ -147,6 +149,7 @@ type Droplet interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *DropletTimeouts)
 	ResetBackups()
 	ResetDropletAgent()
 	ResetGracefulShutdown()
@@ -160,6 +163,7 @@ type Droplet interface {
 	ResetResizeDisk()
 	ResetSshKeys()
 	ResetTags()
+	ResetTimeouts()
 	ResetUserData()
 	ResetVolumeIds()
 	ResetVpcUuid()
@@ -718,6 +722,26 @@ func (j *jsiiProxy_Droplet) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Droplet) Timeouts() DropletTimeoutsOutputReference {
+	var returns DropletTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Droplet) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Droplet) Urn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1206,6 +1230,14 @@ func (d *jsiiProxy_Droplet) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (d *jsiiProxy_Droplet) PutTimeouts(value *DropletTimeouts) {
+	_jsii_.InvokeVoid(
+		d,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_Droplet) ResetBackups() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1290,6 +1322,14 @@ func (d *jsiiProxy_Droplet) ResetTags() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_Droplet) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

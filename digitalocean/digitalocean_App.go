@@ -71,6 +71,7 @@ type App interface {
 	Timeouts() AppTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	UpdatedAt() *string
+	Urn() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -384,6 +385,16 @@ func (j *jsiiProxy_App) UpdatedAt() *string {
 	_jsii_.Get(
 		j,
 		"updatedAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_App) Urn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"urn",
 		&returns,
 	)
 	return returns
