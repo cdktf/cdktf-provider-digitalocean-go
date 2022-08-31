@@ -384,6 +384,9 @@ func (j *jsiiProxy_ContainerRegistryDockerCredentials) WriteInput() interface{} 
 func NewContainerRegistryDockerCredentials(scope constructs.Construct, id *string, config *ContainerRegistryDockerCredentialsConfig) ContainerRegistryDockerCredentials {
 	_init_.Initialize()
 
+	if err := validateNewContainerRegistryDockerCredentialsParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ContainerRegistryDockerCredentials{}
 
 	_jsii_.Create(
@@ -406,7 +409,10 @@ func NewContainerRegistryDockerCredentials_Override(c ContainerRegistryDockerCre
 	)
 }
 
-func (j *jsiiProxy_ContainerRegistryDockerCredentials) SetConnection(val interface{}) {
+func (j *jsiiProxy_ContainerRegistryDockerCredentials)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -414,7 +420,7 @@ func (j *jsiiProxy_ContainerRegistryDockerCredentials) SetConnection(val interfa
 	)
 }
 
-func (j *jsiiProxy_ContainerRegistryDockerCredentials) SetCount(val *float64) {
+func (j *jsiiProxy_ContainerRegistryDockerCredentials)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -422,7 +428,7 @@ func (j *jsiiProxy_ContainerRegistryDockerCredentials) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ContainerRegistryDockerCredentials) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ContainerRegistryDockerCredentials)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -430,7 +436,10 @@ func (j *jsiiProxy_ContainerRegistryDockerCredentials) SetDependsOn(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_ContainerRegistryDockerCredentials) SetExpirySeconds(val *float64) {
+func (j *jsiiProxy_ContainerRegistryDockerCredentials)SetExpirySeconds(val *float64) {
+	if err := j.validateSetExpirySecondsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"expirySeconds",
@@ -438,7 +447,7 @@ func (j *jsiiProxy_ContainerRegistryDockerCredentials) SetExpirySeconds(val *flo
 	)
 }
 
-func (j *jsiiProxy_ContainerRegistryDockerCredentials) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ContainerRegistryDockerCredentials)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -446,7 +455,10 @@ func (j *jsiiProxy_ContainerRegistryDockerCredentials) SetForEach(val cdktf.ITer
 	)
 }
 
-func (j *jsiiProxy_ContainerRegistryDockerCredentials) SetId(val *string) {
+func (j *jsiiProxy_ContainerRegistryDockerCredentials)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -454,7 +466,10 @@ func (j *jsiiProxy_ContainerRegistryDockerCredentials) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ContainerRegistryDockerCredentials) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ContainerRegistryDockerCredentials)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -462,7 +477,7 @@ func (j *jsiiProxy_ContainerRegistryDockerCredentials) SetLifecycle(val *cdktf.T
 	)
 }
 
-func (j *jsiiProxy_ContainerRegistryDockerCredentials) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ContainerRegistryDockerCredentials)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -470,7 +485,10 @@ func (j *jsiiProxy_ContainerRegistryDockerCredentials) SetProvider(val cdktf.Ter
 	)
 }
 
-func (j *jsiiProxy_ContainerRegistryDockerCredentials) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ContainerRegistryDockerCredentials)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -478,7 +496,10 @@ func (j *jsiiProxy_ContainerRegistryDockerCredentials) SetProvisioners(val *[]in
 	)
 }
 
-func (j *jsiiProxy_ContainerRegistryDockerCredentials) SetRegistryName(val *string) {
+func (j *jsiiProxy_ContainerRegistryDockerCredentials)SetRegistryName(val *string) {
+	if err := j.validateSetRegistryNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"registryName",
@@ -486,7 +507,10 @@ func (j *jsiiProxy_ContainerRegistryDockerCredentials) SetRegistryName(val *stri
 	)
 }
 
-func (j *jsiiProxy_ContainerRegistryDockerCredentials) SetWrite(val interface{}) {
+func (j *jsiiProxy_ContainerRegistryDockerCredentials)SetWrite(val interface{}) {
+	if err := j.validateSetWriteParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"write",
@@ -514,6 +538,9 @@ func (j *jsiiProxy_ContainerRegistryDockerCredentials) SetWrite(val interface{})
 func ContainerRegistryDockerCredentials_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateContainerRegistryDockerCredentials_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -538,6 +565,9 @@ func ContainerRegistryDockerCredentials_TfResourceType() *string {
 }
 
 func (c *jsiiProxy_ContainerRegistryDockerCredentials) AddOverride(path *string, value interface{}) {
+	if err := c.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
@@ -546,6 +576,9 @@ func (c *jsiiProxy_ContainerRegistryDockerCredentials) AddOverride(path *string,
 }
 
 func (c *jsiiProxy_ContainerRegistryDockerCredentials) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -559,6 +592,9 @@ func (c *jsiiProxy_ContainerRegistryDockerCredentials) GetAnyMapAttribute(terraf
 }
 
 func (c *jsiiProxy_ContainerRegistryDockerCredentials) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -572,6 +608,9 @@ func (c *jsiiProxy_ContainerRegistryDockerCredentials) GetBooleanAttribute(terra
 }
 
 func (c *jsiiProxy_ContainerRegistryDockerCredentials) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -585,6 +624,9 @@ func (c *jsiiProxy_ContainerRegistryDockerCredentials) GetBooleanMapAttribute(te
 }
 
 func (c *jsiiProxy_ContainerRegistryDockerCredentials) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -598,6 +640,9 @@ func (c *jsiiProxy_ContainerRegistryDockerCredentials) GetListAttribute(terrafor
 }
 
 func (c *jsiiProxy_ContainerRegistryDockerCredentials) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -611,6 +656,9 @@ func (c *jsiiProxy_ContainerRegistryDockerCredentials) GetNumberAttribute(terraf
 }
 
 func (c *jsiiProxy_ContainerRegistryDockerCredentials) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -624,6 +672,9 @@ func (c *jsiiProxy_ContainerRegistryDockerCredentials) GetNumberListAttribute(te
 }
 
 func (c *jsiiProxy_ContainerRegistryDockerCredentials) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -637,6 +688,9 @@ func (c *jsiiProxy_ContainerRegistryDockerCredentials) GetNumberMapAttribute(ter
 }
 
 func (c *jsiiProxy_ContainerRegistryDockerCredentials) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -650,6 +704,9 @@ func (c *jsiiProxy_ContainerRegistryDockerCredentials) GetStringAttribute(terraf
 }
 
 func (c *jsiiProxy_ContainerRegistryDockerCredentials) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -663,6 +720,9 @@ func (c *jsiiProxy_ContainerRegistryDockerCredentials) GetStringMapAttribute(ter
 }
 
 func (c *jsiiProxy_ContainerRegistryDockerCredentials) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -676,6 +736,9 @@ func (c *jsiiProxy_ContainerRegistryDockerCredentials) InterpolationForAttribute
 }
 
 func (c *jsiiProxy_ContainerRegistryDockerCredentials) OverrideLogicalId(newLogicalId *string) {
+	if err := c.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",

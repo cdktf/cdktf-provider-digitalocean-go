@@ -111,6 +111,9 @@ func (j *jsiiProxy_LoadbalancerForwardingRuleList) WrapsSet() *bool {
 func NewLoadbalancerForwardingRuleList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadbalancerForwardingRuleList {
 	_init_.Initialize()
 
+	if err := validateNewLoadbalancerForwardingRuleListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_LoadbalancerForwardingRuleList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewLoadbalancerForwardingRuleList_Override(l LoadbalancerForwardingRuleList
 	)
 }
 
-func (j *jsiiProxy_LoadbalancerForwardingRuleList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_LoadbalancerForwardingRuleList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_LoadbalancerForwardingRuleList) SetInternalValue(val interfac
 	)
 }
 
-func (j *jsiiProxy_LoadbalancerForwardingRuleList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LoadbalancerForwardingRuleList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_LoadbalancerForwardingRuleList) SetTerraformAttribute(val *st
 	)
 }
 
-func (j *jsiiProxy_LoadbalancerForwardingRuleList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LoadbalancerForwardingRuleList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_LoadbalancerForwardingRuleList) SetTerraformResource(val cdkt
 	)
 }
 
-func (j *jsiiProxy_LoadbalancerForwardingRuleList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_LoadbalancerForwardingRuleList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (l *jsiiProxy_LoadbalancerForwardingRuleList) ComputeFqn() *string {
 }
 
 func (l *jsiiProxy_LoadbalancerForwardingRuleList) Get(index *float64) LoadbalancerForwardingRuleOutputReference {
+	if err := l.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns LoadbalancerForwardingRuleOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (l *jsiiProxy_LoadbalancerForwardingRuleList) Get(index *float64) Loadbalan
 }
 
 func (l *jsiiProxy_LoadbalancerForwardingRuleList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

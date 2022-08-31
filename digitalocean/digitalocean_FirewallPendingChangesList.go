@@ -99,6 +99,9 @@ func (j *jsiiProxy_FirewallPendingChangesList) WrapsSet() *bool {
 func NewFirewallPendingChangesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FirewallPendingChangesList {
 	_init_.Initialize()
 
+	if err := validateNewFirewallPendingChangesListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_FirewallPendingChangesList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewFirewallPendingChangesList_Override(f FirewallPendingChangesList, terraf
 	)
 }
 
-func (j *jsiiProxy_FirewallPendingChangesList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_FirewallPendingChangesList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_FirewallPendingChangesList) SetTerraformAttribute(val *string
 	)
 }
 
-func (j *jsiiProxy_FirewallPendingChangesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FirewallPendingChangesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_FirewallPendingChangesList) SetTerraformResource(val cdktf.II
 	)
 }
 
-func (j *jsiiProxy_FirewallPendingChangesList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_FirewallPendingChangesList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (f *jsiiProxy_FirewallPendingChangesList) ComputeFqn() *string {
 }
 
 func (f *jsiiProxy_FirewallPendingChangesList) Get(index *float64) FirewallPendingChangesOutputReference {
+	if err := f.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns FirewallPendingChangesOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (f *jsiiProxy_FirewallPendingChangesList) Get(index *float64) FirewallPendi
 }
 
 func (f *jsiiProxy_FirewallPendingChangesList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := f.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

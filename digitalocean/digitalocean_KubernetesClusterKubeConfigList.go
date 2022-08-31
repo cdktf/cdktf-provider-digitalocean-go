@@ -99,6 +99,9 @@ func (j *jsiiProxy_KubernetesClusterKubeConfigList) WrapsSet() *bool {
 func NewKubernetesClusterKubeConfigList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KubernetesClusterKubeConfigList {
 	_init_.Initialize()
 
+	if err := validateNewKubernetesClusterKubeConfigListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_KubernetesClusterKubeConfigList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewKubernetesClusterKubeConfigList_Override(k KubernetesClusterKubeConfigLi
 	)
 }
 
-func (j *jsiiProxy_KubernetesClusterKubeConfigList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_KubernetesClusterKubeConfigList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_KubernetesClusterKubeConfigList) SetTerraformAttribute(val *s
 	)
 }
 
-func (j *jsiiProxy_KubernetesClusterKubeConfigList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_KubernetesClusterKubeConfigList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_KubernetesClusterKubeConfigList) SetTerraformResource(val cdk
 	)
 }
 
-func (j *jsiiProxy_KubernetesClusterKubeConfigList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_KubernetesClusterKubeConfigList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (k *jsiiProxy_KubernetesClusterKubeConfigList) ComputeFqn() *string {
 }
 
 func (k *jsiiProxy_KubernetesClusterKubeConfigList) Get(index *float64) KubernetesClusterKubeConfigOutputReference {
+	if err := k.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns KubernetesClusterKubeConfigOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (k *jsiiProxy_KubernetesClusterKubeConfigList) Get(index *float64) Kubernet
 }
 
 func (k *jsiiProxy_KubernetesClusterKubeConfigList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := k.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

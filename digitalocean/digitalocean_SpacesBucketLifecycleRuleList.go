@@ -111,6 +111,9 @@ func (j *jsiiProxy_SpacesBucketLifecycleRuleList) WrapsSet() *bool {
 func NewSpacesBucketLifecycleRuleList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SpacesBucketLifecycleRuleList {
 	_init_.Initialize()
 
+	if err := validateNewSpacesBucketLifecycleRuleListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SpacesBucketLifecycleRuleList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewSpacesBucketLifecycleRuleList_Override(s SpacesBucketLifecycleRuleList, 
 	)
 }
 
-func (j *jsiiProxy_SpacesBucketLifecycleRuleList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SpacesBucketLifecycleRuleList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_SpacesBucketLifecycleRuleList) SetInternalValue(val interface
 	)
 }
 
-func (j *jsiiProxy_SpacesBucketLifecycleRuleList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SpacesBucketLifecycleRuleList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_SpacesBucketLifecycleRuleList) SetTerraformAttribute(val *str
 	)
 }
 
-func (j *jsiiProxy_SpacesBucketLifecycleRuleList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SpacesBucketLifecycleRuleList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_SpacesBucketLifecycleRuleList) SetTerraformResource(val cdktf
 	)
 }
 
-func (j *jsiiProxy_SpacesBucketLifecycleRuleList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_SpacesBucketLifecycleRuleList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (s *jsiiProxy_SpacesBucketLifecycleRuleList) ComputeFqn() *string {
 }
 
 func (s *jsiiProxy_SpacesBucketLifecycleRuleList) Get(index *float64) SpacesBucketLifecycleRuleOutputReference {
+	if err := s.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns SpacesBucketLifecycleRuleOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (s *jsiiProxy_SpacesBucketLifecycleRuleList) Get(index *float64) SpacesBuck
 }
 
 func (s *jsiiProxy_SpacesBucketLifecycleRuleList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

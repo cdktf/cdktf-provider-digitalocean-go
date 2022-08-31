@@ -111,6 +111,9 @@ func (j *jsiiProxy_MonitorAlertAlertsSlackList) WrapsSet() *bool {
 func NewMonitorAlertAlertsSlackList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorAlertAlertsSlackList {
 	_init_.Initialize()
 
+	if err := validateNewMonitorAlertAlertsSlackListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MonitorAlertAlertsSlackList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewMonitorAlertAlertsSlackList_Override(m MonitorAlertAlertsSlackList, terr
 	)
 }
 
-func (j *jsiiProxy_MonitorAlertAlertsSlackList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MonitorAlertAlertsSlackList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_MonitorAlertAlertsSlackList) SetInternalValue(val interface{}
 	)
 }
 
-func (j *jsiiProxy_MonitorAlertAlertsSlackList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MonitorAlertAlertsSlackList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_MonitorAlertAlertsSlackList) SetTerraformAttribute(val *strin
 	)
 }
 
-func (j *jsiiProxy_MonitorAlertAlertsSlackList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MonitorAlertAlertsSlackList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_MonitorAlertAlertsSlackList) SetTerraformResource(val cdktf.I
 	)
 }
 
-func (j *jsiiProxy_MonitorAlertAlertsSlackList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_MonitorAlertAlertsSlackList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (m *jsiiProxy_MonitorAlertAlertsSlackList) ComputeFqn() *string {
 }
 
 func (m *jsiiProxy_MonitorAlertAlertsSlackList) Get(index *float64) MonitorAlertAlertsSlackOutputReference {
+	if err := m.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns MonitorAlertAlertsSlackOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (m *jsiiProxy_MonitorAlertAlertsSlackList) Get(index *float64) MonitorAlert
 }
 
 func (m *jsiiProxy_MonitorAlertAlertsSlackList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

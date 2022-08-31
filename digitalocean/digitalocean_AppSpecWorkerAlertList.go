@@ -111,6 +111,9 @@ func (j *jsiiProxy_AppSpecWorkerAlertList) WrapsSet() *bool {
 func NewAppSpecWorkerAlertList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecWorkerAlertList {
 	_init_.Initialize()
 
+	if err := validateNewAppSpecWorkerAlertListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AppSpecWorkerAlertList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewAppSpecWorkerAlertList_Override(a AppSpecWorkerAlertList, terraformResou
 	)
 }
 
-func (j *jsiiProxy_AppSpecWorkerAlertList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AppSpecWorkerAlertList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_AppSpecWorkerAlertList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppSpecWorkerAlertList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AppSpecWorkerAlertList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_AppSpecWorkerAlertList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSpecWorkerAlertList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppSpecWorkerAlertList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_AppSpecWorkerAlertList) SetTerraformResource(val cdktf.IInter
 	)
 }
 
-func (j *jsiiProxy_AppSpecWorkerAlertList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_AppSpecWorkerAlertList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (a *jsiiProxy_AppSpecWorkerAlertList) ComputeFqn() *string {
 }
 
 func (a *jsiiProxy_AppSpecWorkerAlertList) Get(index *float64) AppSpecWorkerAlertOutputReference {
+	if err := a.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns AppSpecWorkerAlertOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (a *jsiiProxy_AppSpecWorkerAlertList) Get(index *float64) AppSpecWorkerAler
 }
 
 func (a *jsiiProxy_AppSpecWorkerAlertList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

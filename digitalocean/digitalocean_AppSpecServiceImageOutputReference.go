@@ -245,6 +245,9 @@ func (j *jsiiProxy_AppSpecServiceImageOutputReference) TerraformResource() cdktf
 func NewAppSpecServiceImageOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AppSpecServiceImageOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewAppSpecServiceImageOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AppSpecServiceImageOutputReference{}
 
 	_jsii_.Create(
@@ -266,7 +269,10 @@ func NewAppSpecServiceImageOutputReference_Override(a AppSpecServiceImageOutputR
 	)
 }
 
-func (j *jsiiProxy_AppSpecServiceImageOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AppSpecServiceImageOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -274,7 +280,10 @@ func (j *jsiiProxy_AppSpecServiceImageOutputReference) SetComplexObjectIndex(val
 	)
 }
 
-func (j *jsiiProxy_AppSpecServiceImageOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AppSpecServiceImageOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -282,7 +291,10 @@ func (j *jsiiProxy_AppSpecServiceImageOutputReference) SetComplexObjectIsFromSet
 	)
 }
 
-func (j *jsiiProxy_AppSpecServiceImageOutputReference) SetInternalValue(val *AppSpecServiceImage) {
+func (j *jsiiProxy_AppSpecServiceImageOutputReference)SetInternalValue(val *AppSpecServiceImage) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -290,7 +302,10 @@ func (j *jsiiProxy_AppSpecServiceImageOutputReference) SetInternalValue(val *App
 	)
 }
 
-func (j *jsiiProxy_AppSpecServiceImageOutputReference) SetRegistry(val *string) {
+func (j *jsiiProxy_AppSpecServiceImageOutputReference)SetRegistry(val *string) {
+	if err := j.validateSetRegistryParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"registry",
@@ -298,7 +313,10 @@ func (j *jsiiProxy_AppSpecServiceImageOutputReference) SetRegistry(val *string) 
 	)
 }
 
-func (j *jsiiProxy_AppSpecServiceImageOutputReference) SetRegistryType(val *string) {
+func (j *jsiiProxy_AppSpecServiceImageOutputReference)SetRegistryType(val *string) {
+	if err := j.validateSetRegistryTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"registryType",
@@ -306,7 +324,10 @@ func (j *jsiiProxy_AppSpecServiceImageOutputReference) SetRegistryType(val *stri
 	)
 }
 
-func (j *jsiiProxy_AppSpecServiceImageOutputReference) SetRepository(val *string) {
+func (j *jsiiProxy_AppSpecServiceImageOutputReference)SetRepository(val *string) {
+	if err := j.validateSetRepositoryParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"repository",
@@ -314,7 +335,10 @@ func (j *jsiiProxy_AppSpecServiceImageOutputReference) SetRepository(val *string
 	)
 }
 
-func (j *jsiiProxy_AppSpecServiceImageOutputReference) SetTag(val *string) {
+func (j *jsiiProxy_AppSpecServiceImageOutputReference)SetTag(val *string) {
+	if err := j.validateSetTagParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tag",
@@ -322,7 +346,10 @@ func (j *jsiiProxy_AppSpecServiceImageOutputReference) SetTag(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSpecServiceImageOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AppSpecServiceImageOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -330,7 +357,10 @@ func (j *jsiiProxy_AppSpecServiceImageOutputReference) SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_AppSpecServiceImageOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppSpecServiceImageOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -352,6 +382,9 @@ func (a *jsiiProxy_AppSpecServiceImageOutputReference) ComputeFqn() *string {
 }
 
 func (a *jsiiProxy_AppSpecServiceImageOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -365,6 +398,9 @@ func (a *jsiiProxy_AppSpecServiceImageOutputReference) GetAnyMapAttribute(terraf
 }
 
 func (a *jsiiProxy_AppSpecServiceImageOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -378,6 +414,9 @@ func (a *jsiiProxy_AppSpecServiceImageOutputReference) GetBooleanAttribute(terra
 }
 
 func (a *jsiiProxy_AppSpecServiceImageOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -391,6 +430,9 @@ func (a *jsiiProxy_AppSpecServiceImageOutputReference) GetBooleanMapAttribute(te
 }
 
 func (a *jsiiProxy_AppSpecServiceImageOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -404,6 +446,9 @@ func (a *jsiiProxy_AppSpecServiceImageOutputReference) GetListAttribute(terrafor
 }
 
 func (a *jsiiProxy_AppSpecServiceImageOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -417,6 +462,9 @@ func (a *jsiiProxy_AppSpecServiceImageOutputReference) GetNumberAttribute(terraf
 }
 
 func (a *jsiiProxy_AppSpecServiceImageOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -430,6 +478,9 @@ func (a *jsiiProxy_AppSpecServiceImageOutputReference) GetNumberListAttribute(te
 }
 
 func (a *jsiiProxy_AppSpecServiceImageOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -443,6 +494,9 @@ func (a *jsiiProxy_AppSpecServiceImageOutputReference) GetNumberMapAttribute(ter
 }
 
 func (a *jsiiProxy_AppSpecServiceImageOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -456,6 +510,9 @@ func (a *jsiiProxy_AppSpecServiceImageOutputReference) GetStringAttribute(terraf
 }
 
 func (a *jsiiProxy_AppSpecServiceImageOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -482,6 +539,9 @@ func (a *jsiiProxy_AppSpecServiceImageOutputReference) InterpolationAsList() cdk
 }
 
 func (a *jsiiProxy_AppSpecServiceImageOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -511,6 +571,9 @@ func (a *jsiiProxy_AppSpecServiceImageOutputReference) ResetTag() {
 }
 
 func (a *jsiiProxy_AppSpecServiceImageOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -245,6 +245,9 @@ func (j *jsiiProxy_SpacesBucketCorsRuleOutputReference) TerraformResource() cdkt
 func NewSpacesBucketCorsRuleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SpacesBucketCorsRuleOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewSpacesBucketCorsRuleOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SpacesBucketCorsRuleOutputReference{}
 
 	_jsii_.Create(
@@ -266,7 +269,10 @@ func NewSpacesBucketCorsRuleOutputReference_Override(s SpacesBucketCorsRuleOutpu
 	)
 }
 
-func (j *jsiiProxy_SpacesBucketCorsRuleOutputReference) SetAllowedHeaders(val *[]*string) {
+func (j *jsiiProxy_SpacesBucketCorsRuleOutputReference)SetAllowedHeaders(val *[]*string) {
+	if err := j.validateSetAllowedHeadersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowedHeaders",
@@ -274,7 +280,10 @@ func (j *jsiiProxy_SpacesBucketCorsRuleOutputReference) SetAllowedHeaders(val *[
 	)
 }
 
-func (j *jsiiProxy_SpacesBucketCorsRuleOutputReference) SetAllowedMethods(val *[]*string) {
+func (j *jsiiProxy_SpacesBucketCorsRuleOutputReference)SetAllowedMethods(val *[]*string) {
+	if err := j.validateSetAllowedMethodsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowedMethods",
@@ -282,7 +291,10 @@ func (j *jsiiProxy_SpacesBucketCorsRuleOutputReference) SetAllowedMethods(val *[
 	)
 }
 
-func (j *jsiiProxy_SpacesBucketCorsRuleOutputReference) SetAllowedOrigins(val *[]*string) {
+func (j *jsiiProxy_SpacesBucketCorsRuleOutputReference)SetAllowedOrigins(val *[]*string) {
+	if err := j.validateSetAllowedOriginsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowedOrigins",
@@ -290,7 +302,10 @@ func (j *jsiiProxy_SpacesBucketCorsRuleOutputReference) SetAllowedOrigins(val *[
 	)
 }
 
-func (j *jsiiProxy_SpacesBucketCorsRuleOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SpacesBucketCorsRuleOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -298,7 +313,10 @@ func (j *jsiiProxy_SpacesBucketCorsRuleOutputReference) SetComplexObjectIndex(va
 	)
 }
 
-func (j *jsiiProxy_SpacesBucketCorsRuleOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SpacesBucketCorsRuleOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -306,7 +324,10 @@ func (j *jsiiProxy_SpacesBucketCorsRuleOutputReference) SetComplexObjectIsFromSe
 	)
 }
 
-func (j *jsiiProxy_SpacesBucketCorsRuleOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SpacesBucketCorsRuleOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -314,7 +335,10 @@ func (j *jsiiProxy_SpacesBucketCorsRuleOutputReference) SetInternalValue(val int
 	)
 }
 
-func (j *jsiiProxy_SpacesBucketCorsRuleOutputReference) SetMaxAgeSeconds(val *float64) {
+func (j *jsiiProxy_SpacesBucketCorsRuleOutputReference)SetMaxAgeSeconds(val *float64) {
+	if err := j.validateSetMaxAgeSecondsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxAgeSeconds",
@@ -322,7 +346,10 @@ func (j *jsiiProxy_SpacesBucketCorsRuleOutputReference) SetMaxAgeSeconds(val *fl
 	)
 }
 
-func (j *jsiiProxy_SpacesBucketCorsRuleOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SpacesBucketCorsRuleOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -330,7 +357,10 @@ func (j *jsiiProxy_SpacesBucketCorsRuleOutputReference) SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_SpacesBucketCorsRuleOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SpacesBucketCorsRuleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -352,6 +382,9 @@ func (s *jsiiProxy_SpacesBucketCorsRuleOutputReference) ComputeFqn() *string {
 }
 
 func (s *jsiiProxy_SpacesBucketCorsRuleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -365,6 +398,9 @@ func (s *jsiiProxy_SpacesBucketCorsRuleOutputReference) GetAnyMapAttribute(terra
 }
 
 func (s *jsiiProxy_SpacesBucketCorsRuleOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -378,6 +414,9 @@ func (s *jsiiProxy_SpacesBucketCorsRuleOutputReference) GetBooleanAttribute(terr
 }
 
 func (s *jsiiProxy_SpacesBucketCorsRuleOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -391,6 +430,9 @@ func (s *jsiiProxy_SpacesBucketCorsRuleOutputReference) GetBooleanMapAttribute(t
 }
 
 func (s *jsiiProxy_SpacesBucketCorsRuleOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -404,6 +446,9 @@ func (s *jsiiProxy_SpacesBucketCorsRuleOutputReference) GetListAttribute(terrafo
 }
 
 func (s *jsiiProxy_SpacesBucketCorsRuleOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -417,6 +462,9 @@ func (s *jsiiProxy_SpacesBucketCorsRuleOutputReference) GetNumberAttribute(terra
 }
 
 func (s *jsiiProxy_SpacesBucketCorsRuleOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -430,6 +478,9 @@ func (s *jsiiProxy_SpacesBucketCorsRuleOutputReference) GetNumberListAttribute(t
 }
 
 func (s *jsiiProxy_SpacesBucketCorsRuleOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -443,6 +494,9 @@ func (s *jsiiProxy_SpacesBucketCorsRuleOutputReference) GetNumberMapAttribute(te
 }
 
 func (s *jsiiProxy_SpacesBucketCorsRuleOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -456,6 +510,9 @@ func (s *jsiiProxy_SpacesBucketCorsRuleOutputReference) GetStringAttribute(terra
 }
 
 func (s *jsiiProxy_SpacesBucketCorsRuleOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -482,6 +539,9 @@ func (s *jsiiProxy_SpacesBucketCorsRuleOutputReference) InterpolationAsList() cd
 }
 
 func (s *jsiiProxy_SpacesBucketCorsRuleOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -511,6 +571,9 @@ func (s *jsiiProxy_SpacesBucketCorsRuleOutputReference) ResetMaxAgeSeconds() {
 }
 
 func (s *jsiiProxy_SpacesBucketCorsRuleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

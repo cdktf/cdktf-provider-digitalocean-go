@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataDigitaloceanAppSpecServiceLogDestinationDatadogList) Wrap
 func NewDataDigitaloceanAppSpecServiceLogDestinationDatadogList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecServiceLogDestinationDatadogList {
 	_init_.Initialize()
 
+	if err := validateNewDataDigitaloceanAppSpecServiceLogDestinationDatadogListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataDigitaloceanAppSpecServiceLogDestinationDatadogList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataDigitaloceanAppSpecServiceLogDestinationDatadogList_Override(d DataD
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanAppSpecServiceLogDestinationDatadogList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataDigitaloceanAppSpecServiceLogDestinationDatadogList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataDigitaloceanAppSpecServiceLogDestinationDatadogList) SetT
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanAppSpecServiceLogDestinationDatadogList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDigitaloceanAppSpecServiceLogDestinationDatadogList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataDigitaloceanAppSpecServiceLogDestinationDatadogList) SetT
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanAppSpecServiceLogDestinationDatadogList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataDigitaloceanAppSpecServiceLogDestinationDatadogList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataDigitaloceanAppSpecServiceLogDestinationDatadogList) Comp
 }
 
 func (d *jsiiProxy_DataDigitaloceanAppSpecServiceLogDestinationDatadogList) Get(index *float64) DataDigitaloceanAppSpecServiceLogDestinationDatadogOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataDigitaloceanAppSpecServiceLogDestinationDatadogOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataDigitaloceanAppSpecServiceLogDestinationDatadogList) Get(
 }
 
 func (d *jsiiProxy_DataDigitaloceanAppSpecServiceLogDestinationDatadogList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

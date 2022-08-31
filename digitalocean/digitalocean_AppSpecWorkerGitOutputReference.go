@@ -199,6 +199,9 @@ func (j *jsiiProxy_AppSpecWorkerGitOutputReference) TerraformResource() cdktf.II
 func NewAppSpecWorkerGitOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AppSpecWorkerGitOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewAppSpecWorkerGitOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AppSpecWorkerGitOutputReference{}
 
 	_jsii_.Create(
@@ -220,7 +223,10 @@ func NewAppSpecWorkerGitOutputReference_Override(a AppSpecWorkerGitOutputReferen
 	)
 }
 
-func (j *jsiiProxy_AppSpecWorkerGitOutputReference) SetBranch(val *string) {
+func (j *jsiiProxy_AppSpecWorkerGitOutputReference)SetBranch(val *string) {
+	if err := j.validateSetBranchParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"branch",
@@ -228,7 +234,10 @@ func (j *jsiiProxy_AppSpecWorkerGitOutputReference) SetBranch(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSpecWorkerGitOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AppSpecWorkerGitOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -236,7 +245,10 @@ func (j *jsiiProxy_AppSpecWorkerGitOutputReference) SetComplexObjectIndex(val in
 	)
 }
 
-func (j *jsiiProxy_AppSpecWorkerGitOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AppSpecWorkerGitOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -244,7 +256,10 @@ func (j *jsiiProxy_AppSpecWorkerGitOutputReference) SetComplexObjectIsFromSet(va
 	)
 }
 
-func (j *jsiiProxy_AppSpecWorkerGitOutputReference) SetInternalValue(val *AppSpecWorkerGit) {
+func (j *jsiiProxy_AppSpecWorkerGitOutputReference)SetInternalValue(val *AppSpecWorkerGit) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -252,7 +267,10 @@ func (j *jsiiProxy_AppSpecWorkerGitOutputReference) SetInternalValue(val *AppSpe
 	)
 }
 
-func (j *jsiiProxy_AppSpecWorkerGitOutputReference) SetRepoCloneUrl(val *string) {
+func (j *jsiiProxy_AppSpecWorkerGitOutputReference)SetRepoCloneUrl(val *string) {
+	if err := j.validateSetRepoCloneUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"repoCloneUrl",
@@ -260,7 +278,10 @@ func (j *jsiiProxy_AppSpecWorkerGitOutputReference) SetRepoCloneUrl(val *string)
 	)
 }
 
-func (j *jsiiProxy_AppSpecWorkerGitOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AppSpecWorkerGitOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -268,7 +289,10 @@ func (j *jsiiProxy_AppSpecWorkerGitOutputReference) SetTerraformAttribute(val *s
 	)
 }
 
-func (j *jsiiProxy_AppSpecWorkerGitOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppSpecWorkerGitOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -290,6 +314,9 @@ func (a *jsiiProxy_AppSpecWorkerGitOutputReference) ComputeFqn() *string {
 }
 
 func (a *jsiiProxy_AppSpecWorkerGitOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -303,6 +330,9 @@ func (a *jsiiProxy_AppSpecWorkerGitOutputReference) GetAnyMapAttribute(terraform
 }
 
 func (a *jsiiProxy_AppSpecWorkerGitOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -316,6 +346,9 @@ func (a *jsiiProxy_AppSpecWorkerGitOutputReference) GetBooleanAttribute(terrafor
 }
 
 func (a *jsiiProxy_AppSpecWorkerGitOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -329,6 +362,9 @@ func (a *jsiiProxy_AppSpecWorkerGitOutputReference) GetBooleanMapAttribute(terra
 }
 
 func (a *jsiiProxy_AppSpecWorkerGitOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -342,6 +378,9 @@ func (a *jsiiProxy_AppSpecWorkerGitOutputReference) GetListAttribute(terraformAt
 }
 
 func (a *jsiiProxy_AppSpecWorkerGitOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -355,6 +394,9 @@ func (a *jsiiProxy_AppSpecWorkerGitOutputReference) GetNumberAttribute(terraform
 }
 
 func (a *jsiiProxy_AppSpecWorkerGitOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -368,6 +410,9 @@ func (a *jsiiProxy_AppSpecWorkerGitOutputReference) GetNumberListAttribute(terra
 }
 
 func (a *jsiiProxy_AppSpecWorkerGitOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -381,6 +426,9 @@ func (a *jsiiProxy_AppSpecWorkerGitOutputReference) GetNumberMapAttribute(terraf
 }
 
 func (a *jsiiProxy_AppSpecWorkerGitOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -394,6 +442,9 @@ func (a *jsiiProxy_AppSpecWorkerGitOutputReference) GetStringAttribute(terraform
 }
 
 func (a *jsiiProxy_AppSpecWorkerGitOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -420,6 +471,9 @@ func (a *jsiiProxy_AppSpecWorkerGitOutputReference) InterpolationAsList() cdktf.
 }
 
 func (a *jsiiProxy_AppSpecWorkerGitOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -449,6 +503,9 @@ func (a *jsiiProxy_AppSpecWorkerGitOutputReference) ResetRepoCloneUrl() {
 }
 
 func (a *jsiiProxy_AppSpecWorkerGitOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

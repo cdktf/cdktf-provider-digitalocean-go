@@ -398,6 +398,9 @@ func (j *jsiiProxy_KubernetesClusterNodePoolOutputReference) TerraformResource()
 func NewKubernetesClusterNodePoolOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) KubernetesClusterNodePoolOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewKubernetesClusterNodePoolOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_KubernetesClusterNodePoolOutputReference{}
 
 	_jsii_.Create(
@@ -419,7 +422,10 @@ func NewKubernetesClusterNodePoolOutputReference_Override(k KubernetesClusterNod
 	)
 }
 
-func (j *jsiiProxy_KubernetesClusterNodePoolOutputReference) SetAutoScale(val interface{}) {
+func (j *jsiiProxy_KubernetesClusterNodePoolOutputReference)SetAutoScale(val interface{}) {
+	if err := j.validateSetAutoScaleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"autoScale",
@@ -427,7 +433,10 @@ func (j *jsiiProxy_KubernetesClusterNodePoolOutputReference) SetAutoScale(val in
 	)
 }
 
-func (j *jsiiProxy_KubernetesClusterNodePoolOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_KubernetesClusterNodePoolOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -435,7 +444,10 @@ func (j *jsiiProxy_KubernetesClusterNodePoolOutputReference) SetComplexObjectInd
 	)
 }
 
-func (j *jsiiProxy_KubernetesClusterNodePoolOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_KubernetesClusterNodePoolOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -443,7 +455,10 @@ func (j *jsiiProxy_KubernetesClusterNodePoolOutputReference) SetComplexObjectIsF
 	)
 }
 
-func (j *jsiiProxy_KubernetesClusterNodePoolOutputReference) SetInternalValue(val *KubernetesClusterNodePool) {
+func (j *jsiiProxy_KubernetesClusterNodePoolOutputReference)SetInternalValue(val *KubernetesClusterNodePool) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -451,7 +466,10 @@ func (j *jsiiProxy_KubernetesClusterNodePoolOutputReference) SetInternalValue(va
 	)
 }
 
-func (j *jsiiProxy_KubernetesClusterNodePoolOutputReference) SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_KubernetesClusterNodePoolOutputReference)SetLabels(val *map[string]*string) {
+	if err := j.validateSetLabelsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"labels",
@@ -459,7 +477,10 @@ func (j *jsiiProxy_KubernetesClusterNodePoolOutputReference) SetLabels(val *map[
 	)
 }
 
-func (j *jsiiProxy_KubernetesClusterNodePoolOutputReference) SetMaxNodes(val *float64) {
+func (j *jsiiProxy_KubernetesClusterNodePoolOutputReference)SetMaxNodes(val *float64) {
+	if err := j.validateSetMaxNodesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxNodes",
@@ -467,7 +488,10 @@ func (j *jsiiProxy_KubernetesClusterNodePoolOutputReference) SetMaxNodes(val *fl
 	)
 }
 
-func (j *jsiiProxy_KubernetesClusterNodePoolOutputReference) SetMinNodes(val *float64) {
+func (j *jsiiProxy_KubernetesClusterNodePoolOutputReference)SetMinNodes(val *float64) {
+	if err := j.validateSetMinNodesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"minNodes",
@@ -475,7 +499,10 @@ func (j *jsiiProxy_KubernetesClusterNodePoolOutputReference) SetMinNodes(val *fl
 	)
 }
 
-func (j *jsiiProxy_KubernetesClusterNodePoolOutputReference) SetName(val *string) {
+func (j *jsiiProxy_KubernetesClusterNodePoolOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -483,7 +510,10 @@ func (j *jsiiProxy_KubernetesClusterNodePoolOutputReference) SetName(val *string
 	)
 }
 
-func (j *jsiiProxy_KubernetesClusterNodePoolOutputReference) SetNodeCount(val *float64) {
+func (j *jsiiProxy_KubernetesClusterNodePoolOutputReference)SetNodeCount(val *float64) {
+	if err := j.validateSetNodeCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"nodeCount",
@@ -491,7 +521,10 @@ func (j *jsiiProxy_KubernetesClusterNodePoolOutputReference) SetNodeCount(val *f
 	)
 }
 
-func (j *jsiiProxy_KubernetesClusterNodePoolOutputReference) SetSize(val *string) {
+func (j *jsiiProxy_KubernetesClusterNodePoolOutputReference)SetSize(val *string) {
+	if err := j.validateSetSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"size",
@@ -499,7 +532,10 @@ func (j *jsiiProxy_KubernetesClusterNodePoolOutputReference) SetSize(val *string
 	)
 }
 
-func (j *jsiiProxy_KubernetesClusterNodePoolOutputReference) SetTags(val *[]*string) {
+func (j *jsiiProxy_KubernetesClusterNodePoolOutputReference)SetTags(val *[]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tags",
@@ -507,7 +543,10 @@ func (j *jsiiProxy_KubernetesClusterNodePoolOutputReference) SetTags(val *[]*str
 	)
 }
 
-func (j *jsiiProxy_KubernetesClusterNodePoolOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_KubernetesClusterNodePoolOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -515,7 +554,10 @@ func (j *jsiiProxy_KubernetesClusterNodePoolOutputReference) SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_KubernetesClusterNodePoolOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_KubernetesClusterNodePoolOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -537,6 +579,9 @@ func (k *jsiiProxy_KubernetesClusterNodePoolOutputReference) ComputeFqn() *strin
 }
 
 func (k *jsiiProxy_KubernetesClusterNodePoolOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := k.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -550,6 +595,9 @@ func (k *jsiiProxy_KubernetesClusterNodePoolOutputReference) GetAnyMapAttribute(
 }
 
 func (k *jsiiProxy_KubernetesClusterNodePoolOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := k.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -563,6 +611,9 @@ func (k *jsiiProxy_KubernetesClusterNodePoolOutputReference) GetBooleanAttribute
 }
 
 func (k *jsiiProxy_KubernetesClusterNodePoolOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := k.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -576,6 +627,9 @@ func (k *jsiiProxy_KubernetesClusterNodePoolOutputReference) GetBooleanMapAttrib
 }
 
 func (k *jsiiProxy_KubernetesClusterNodePoolOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := k.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -589,6 +643,9 @@ func (k *jsiiProxy_KubernetesClusterNodePoolOutputReference) GetListAttribute(te
 }
 
 func (k *jsiiProxy_KubernetesClusterNodePoolOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := k.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -602,6 +659,9 @@ func (k *jsiiProxy_KubernetesClusterNodePoolOutputReference) GetNumberAttribute(
 }
 
 func (k *jsiiProxy_KubernetesClusterNodePoolOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := k.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -615,6 +675,9 @@ func (k *jsiiProxy_KubernetesClusterNodePoolOutputReference) GetNumberListAttrib
 }
 
 func (k *jsiiProxy_KubernetesClusterNodePoolOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := k.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -628,6 +691,9 @@ func (k *jsiiProxy_KubernetesClusterNodePoolOutputReference) GetNumberMapAttribu
 }
 
 func (k *jsiiProxy_KubernetesClusterNodePoolOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := k.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -641,6 +707,9 @@ func (k *jsiiProxy_KubernetesClusterNodePoolOutputReference) GetStringAttribute(
 }
 
 func (k *jsiiProxy_KubernetesClusterNodePoolOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := k.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -667,6 +736,9 @@ func (k *jsiiProxy_KubernetesClusterNodePoolOutputReference) InterpolationAsList
 }
 
 func (k *jsiiProxy_KubernetesClusterNodePoolOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := k.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -680,6 +752,9 @@ func (k *jsiiProxy_KubernetesClusterNodePoolOutputReference) InterpolationForAtt
 }
 
 func (k *jsiiProxy_KubernetesClusterNodePoolOutputReference) PutTaint(value interface{}) {
+	if err := k.validatePutTaintParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		k,
 		"putTaint",
@@ -744,6 +819,9 @@ func (k *jsiiProxy_KubernetesClusterNodePoolOutputReference) ResetTaint() {
 }
 
 func (k *jsiiProxy_KubernetesClusterNodePoolOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := k.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

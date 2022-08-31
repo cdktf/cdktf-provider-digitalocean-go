@@ -512,6 +512,9 @@ func (j *jsiiProxy_MonitorAlert) WindowInput() *string {
 func NewMonitorAlert(scope constructs.Construct, id *string, config *MonitorAlertConfig) MonitorAlert {
 	_init_.Initialize()
 
+	if err := validateNewMonitorAlertParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MonitorAlert{}
 
 	_jsii_.Create(
@@ -534,7 +537,10 @@ func NewMonitorAlert_Override(m MonitorAlert, scope constructs.Construct, id *st
 	)
 }
 
-func (j *jsiiProxy_MonitorAlert) SetCompare(val *string) {
+func (j *jsiiProxy_MonitorAlert)SetCompare(val *string) {
+	if err := j.validateSetCompareParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"compare",
@@ -542,7 +548,10 @@ func (j *jsiiProxy_MonitorAlert) SetCompare(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MonitorAlert) SetConnection(val interface{}) {
+func (j *jsiiProxy_MonitorAlert)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -550,7 +559,7 @@ func (j *jsiiProxy_MonitorAlert) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MonitorAlert) SetCount(val *float64) {
+func (j *jsiiProxy_MonitorAlert)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -558,7 +567,7 @@ func (j *jsiiProxy_MonitorAlert) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MonitorAlert) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_MonitorAlert)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -566,7 +575,10 @@ func (j *jsiiProxy_MonitorAlert) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MonitorAlert) SetDescription(val *string) {
+func (j *jsiiProxy_MonitorAlert)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"description",
@@ -574,7 +586,10 @@ func (j *jsiiProxy_MonitorAlert) SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MonitorAlert) SetEnabled(val interface{}) {
+func (j *jsiiProxy_MonitorAlert)SetEnabled(val interface{}) {
+	if err := j.validateSetEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enabled",
@@ -582,7 +597,10 @@ func (j *jsiiProxy_MonitorAlert) SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MonitorAlert) SetEntities(val *[]*string) {
+func (j *jsiiProxy_MonitorAlert)SetEntities(val *[]*string) {
+	if err := j.validateSetEntitiesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"entities",
@@ -590,7 +608,7 @@ func (j *jsiiProxy_MonitorAlert) SetEntities(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MonitorAlert) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_MonitorAlert)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -598,7 +616,10 @@ func (j *jsiiProxy_MonitorAlert) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_MonitorAlert) SetId(val *string) {
+func (j *jsiiProxy_MonitorAlert)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -606,7 +627,10 @@ func (j *jsiiProxy_MonitorAlert) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MonitorAlert) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_MonitorAlert)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -614,7 +638,7 @@ func (j *jsiiProxy_MonitorAlert) SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_MonitorAlert) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_MonitorAlert)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -622,7 +646,10 @@ func (j *jsiiProxy_MonitorAlert) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_MonitorAlert) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_MonitorAlert)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -630,7 +657,10 @@ func (j *jsiiProxy_MonitorAlert) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MonitorAlert) SetTags(val *[]*string) {
+func (j *jsiiProxy_MonitorAlert)SetTags(val *[]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tags",
@@ -638,7 +668,10 @@ func (j *jsiiProxy_MonitorAlert) SetTags(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MonitorAlert) SetType(val *string) {
+func (j *jsiiProxy_MonitorAlert)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"type",
@@ -646,7 +679,10 @@ func (j *jsiiProxy_MonitorAlert) SetType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MonitorAlert) SetValue(val *float64) {
+func (j *jsiiProxy_MonitorAlert)SetValue(val *float64) {
+	if err := j.validateSetValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"value",
@@ -654,7 +690,10 @@ func (j *jsiiProxy_MonitorAlert) SetValue(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MonitorAlert) SetWindow(val *string) {
+func (j *jsiiProxy_MonitorAlert)SetWindow(val *string) {
+	if err := j.validateSetWindowParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"window",
@@ -682,6 +721,9 @@ func (j *jsiiProxy_MonitorAlert) SetWindow(val *string) {
 func MonitorAlert_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateMonitorAlert_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -706,6 +748,9 @@ func MonitorAlert_TfResourceType() *string {
 }
 
 func (m *jsiiProxy_MonitorAlert) AddOverride(path *string, value interface{}) {
+	if err := m.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"addOverride",
@@ -714,6 +759,9 @@ func (m *jsiiProxy_MonitorAlert) AddOverride(path *string, value interface{}) {
 }
 
 func (m *jsiiProxy_MonitorAlert) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -727,6 +775,9 @@ func (m *jsiiProxy_MonitorAlert) GetAnyMapAttribute(terraformAttribute *string) 
 }
 
 func (m *jsiiProxy_MonitorAlert) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -740,6 +791,9 @@ func (m *jsiiProxy_MonitorAlert) GetBooleanAttribute(terraformAttribute *string)
 }
 
 func (m *jsiiProxy_MonitorAlert) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -753,6 +807,9 @@ func (m *jsiiProxy_MonitorAlert) GetBooleanMapAttribute(terraformAttribute *stri
 }
 
 func (m *jsiiProxy_MonitorAlert) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -766,6 +823,9 @@ func (m *jsiiProxy_MonitorAlert) GetListAttribute(terraformAttribute *string) *[
 }
 
 func (m *jsiiProxy_MonitorAlert) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -779,6 +839,9 @@ func (m *jsiiProxy_MonitorAlert) GetNumberAttribute(terraformAttribute *string) 
 }
 
 func (m *jsiiProxy_MonitorAlert) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -792,6 +855,9 @@ func (m *jsiiProxy_MonitorAlert) GetNumberListAttribute(terraformAttribute *stri
 }
 
 func (m *jsiiProxy_MonitorAlert) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -805,6 +871,9 @@ func (m *jsiiProxy_MonitorAlert) GetNumberMapAttribute(terraformAttribute *strin
 }
 
 func (m *jsiiProxy_MonitorAlert) GetStringAttribute(terraformAttribute *string) *string {
+	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -818,6 +887,9 @@ func (m *jsiiProxy_MonitorAlert) GetStringAttribute(terraformAttribute *string) 
 }
 
 func (m *jsiiProxy_MonitorAlert) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -831,6 +903,9 @@ func (m *jsiiProxy_MonitorAlert) GetStringMapAttribute(terraformAttribute *strin
 }
 
 func (m *jsiiProxy_MonitorAlert) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -844,6 +919,9 @@ func (m *jsiiProxy_MonitorAlert) InterpolationForAttribute(terraformAttribute *s
 }
 
 func (m *jsiiProxy_MonitorAlert) OverrideLogicalId(newLogicalId *string) {
+	if err := m.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"overrideLogicalId",
@@ -852,6 +930,9 @@ func (m *jsiiProxy_MonitorAlert) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (m *jsiiProxy_MonitorAlert) PutAlerts(value *MonitorAlertAlerts) {
+	if err := m.validatePutAlertsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"putAlerts",

@@ -683,6 +683,9 @@ func (j *jsiiProxy_SpacesBucketObject) WebsiteRedirectInput() *string {
 func NewSpacesBucketObject(scope constructs.Construct, id *string, config *SpacesBucketObjectConfig) SpacesBucketObject {
 	_init_.Initialize()
 
+	if err := validateNewSpacesBucketObjectParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SpacesBucketObject{}
 
 	_jsii_.Create(
@@ -705,7 +708,10 @@ func NewSpacesBucketObject_Override(s SpacesBucketObject, scope constructs.Const
 	)
 }
 
-func (j *jsiiProxy_SpacesBucketObject) SetAcl(val *string) {
+func (j *jsiiProxy_SpacesBucketObject)SetAcl(val *string) {
+	if err := j.validateSetAclParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"acl",
@@ -713,7 +719,10 @@ func (j *jsiiProxy_SpacesBucketObject) SetAcl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpacesBucketObject) SetBucket(val *string) {
+func (j *jsiiProxy_SpacesBucketObject)SetBucket(val *string) {
+	if err := j.validateSetBucketParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"bucket",
@@ -721,7 +730,10 @@ func (j *jsiiProxy_SpacesBucketObject) SetBucket(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpacesBucketObject) SetCacheControl(val *string) {
+func (j *jsiiProxy_SpacesBucketObject)SetCacheControl(val *string) {
+	if err := j.validateSetCacheControlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"cacheControl",
@@ -729,7 +741,10 @@ func (j *jsiiProxy_SpacesBucketObject) SetCacheControl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpacesBucketObject) SetConnection(val interface{}) {
+func (j *jsiiProxy_SpacesBucketObject)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -737,7 +752,10 @@ func (j *jsiiProxy_SpacesBucketObject) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SpacesBucketObject) SetContent(val *string) {
+func (j *jsiiProxy_SpacesBucketObject)SetContent(val *string) {
+	if err := j.validateSetContentParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"content",
@@ -745,7 +763,10 @@ func (j *jsiiProxy_SpacesBucketObject) SetContent(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpacesBucketObject) SetContentBase64(val *string) {
+func (j *jsiiProxy_SpacesBucketObject)SetContentBase64(val *string) {
+	if err := j.validateSetContentBase64Parameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"contentBase64",
@@ -753,7 +774,10 @@ func (j *jsiiProxy_SpacesBucketObject) SetContentBase64(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpacesBucketObject) SetContentDisposition(val *string) {
+func (j *jsiiProxy_SpacesBucketObject)SetContentDisposition(val *string) {
+	if err := j.validateSetContentDispositionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"contentDisposition",
@@ -761,7 +785,10 @@ func (j *jsiiProxy_SpacesBucketObject) SetContentDisposition(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpacesBucketObject) SetContentEncoding(val *string) {
+func (j *jsiiProxy_SpacesBucketObject)SetContentEncoding(val *string) {
+	if err := j.validateSetContentEncodingParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"contentEncoding",
@@ -769,7 +796,10 @@ func (j *jsiiProxy_SpacesBucketObject) SetContentEncoding(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpacesBucketObject) SetContentLanguage(val *string) {
+func (j *jsiiProxy_SpacesBucketObject)SetContentLanguage(val *string) {
+	if err := j.validateSetContentLanguageParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"contentLanguage",
@@ -777,7 +807,10 @@ func (j *jsiiProxy_SpacesBucketObject) SetContentLanguage(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpacesBucketObject) SetContentType(val *string) {
+func (j *jsiiProxy_SpacesBucketObject)SetContentType(val *string) {
+	if err := j.validateSetContentTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"contentType",
@@ -785,7 +818,7 @@ func (j *jsiiProxy_SpacesBucketObject) SetContentType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpacesBucketObject) SetCount(val *float64) {
+func (j *jsiiProxy_SpacesBucketObject)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -793,7 +826,7 @@ func (j *jsiiProxy_SpacesBucketObject) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SpacesBucketObject) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SpacesBucketObject)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -801,7 +834,10 @@ func (j *jsiiProxy_SpacesBucketObject) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SpacesBucketObject) SetEtag(val *string) {
+func (j *jsiiProxy_SpacesBucketObject)SetEtag(val *string) {
+	if err := j.validateSetEtagParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"etag",
@@ -809,7 +845,10 @@ func (j *jsiiProxy_SpacesBucketObject) SetEtag(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpacesBucketObject) SetForceDestroy(val interface{}) {
+func (j *jsiiProxy_SpacesBucketObject)SetForceDestroy(val interface{}) {
+	if err := j.validateSetForceDestroyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"forceDestroy",
@@ -817,7 +856,7 @@ func (j *jsiiProxy_SpacesBucketObject) SetForceDestroy(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SpacesBucketObject) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SpacesBucketObject)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -825,7 +864,10 @@ func (j *jsiiProxy_SpacesBucketObject) SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_SpacesBucketObject) SetId(val *string) {
+func (j *jsiiProxy_SpacesBucketObject)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -833,7 +875,10 @@ func (j *jsiiProxy_SpacesBucketObject) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpacesBucketObject) SetKey(val *string) {
+func (j *jsiiProxy_SpacesBucketObject)SetKey(val *string) {
+	if err := j.validateSetKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"key",
@@ -841,7 +886,10 @@ func (j *jsiiProxy_SpacesBucketObject) SetKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpacesBucketObject) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SpacesBucketObject)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -849,7 +897,10 @@ func (j *jsiiProxy_SpacesBucketObject) SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_SpacesBucketObject) SetMetadata(val *map[string]*string) {
+func (j *jsiiProxy_SpacesBucketObject)SetMetadata(val *map[string]*string) {
+	if err := j.validateSetMetadataParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"metadata",
@@ -857,7 +908,7 @@ func (j *jsiiProxy_SpacesBucketObject) SetMetadata(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_SpacesBucketObject) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SpacesBucketObject)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -865,7 +916,10 @@ func (j *jsiiProxy_SpacesBucketObject) SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_SpacesBucketObject) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SpacesBucketObject)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -873,7 +927,10 @@ func (j *jsiiProxy_SpacesBucketObject) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SpacesBucketObject) SetRegion(val *string) {
+func (j *jsiiProxy_SpacesBucketObject)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"region",
@@ -881,7 +938,10 @@ func (j *jsiiProxy_SpacesBucketObject) SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpacesBucketObject) SetSource(val *string) {
+func (j *jsiiProxy_SpacesBucketObject)SetSource(val *string) {
+	if err := j.validateSetSourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"source",
@@ -889,7 +949,10 @@ func (j *jsiiProxy_SpacesBucketObject) SetSource(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpacesBucketObject) SetWebsiteRedirect(val *string) {
+func (j *jsiiProxy_SpacesBucketObject)SetWebsiteRedirect(val *string) {
+	if err := j.validateSetWebsiteRedirectParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"websiteRedirect",
@@ -917,6 +980,9 @@ func (j *jsiiProxy_SpacesBucketObject) SetWebsiteRedirect(val *string) {
 func SpacesBucketObject_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateSpacesBucketObject_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -941,6 +1007,9 @@ func SpacesBucketObject_TfResourceType() *string {
 }
 
 func (s *jsiiProxy_SpacesBucketObject) AddOverride(path *string, value interface{}) {
+	if err := s.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
@@ -949,6 +1018,9 @@ func (s *jsiiProxy_SpacesBucketObject) AddOverride(path *string, value interface
 }
 
 func (s *jsiiProxy_SpacesBucketObject) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -962,6 +1034,9 @@ func (s *jsiiProxy_SpacesBucketObject) GetAnyMapAttribute(terraformAttribute *st
 }
 
 func (s *jsiiProxy_SpacesBucketObject) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -975,6 +1050,9 @@ func (s *jsiiProxy_SpacesBucketObject) GetBooleanAttribute(terraformAttribute *s
 }
 
 func (s *jsiiProxy_SpacesBucketObject) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -988,6 +1066,9 @@ func (s *jsiiProxy_SpacesBucketObject) GetBooleanMapAttribute(terraformAttribute
 }
 
 func (s *jsiiProxy_SpacesBucketObject) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -1001,6 +1082,9 @@ func (s *jsiiProxy_SpacesBucketObject) GetListAttribute(terraformAttribute *stri
 }
 
 func (s *jsiiProxy_SpacesBucketObject) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -1014,6 +1098,9 @@ func (s *jsiiProxy_SpacesBucketObject) GetNumberAttribute(terraformAttribute *st
 }
 
 func (s *jsiiProxy_SpacesBucketObject) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -1027,6 +1114,9 @@ func (s *jsiiProxy_SpacesBucketObject) GetNumberListAttribute(terraformAttribute
 }
 
 func (s *jsiiProxy_SpacesBucketObject) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -1040,6 +1130,9 @@ func (s *jsiiProxy_SpacesBucketObject) GetNumberMapAttribute(terraformAttribute 
 }
 
 func (s *jsiiProxy_SpacesBucketObject) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1053,6 +1146,9 @@ func (s *jsiiProxy_SpacesBucketObject) GetStringAttribute(terraformAttribute *st
 }
 
 func (s *jsiiProxy_SpacesBucketObject) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1066,6 +1162,9 @@ func (s *jsiiProxy_SpacesBucketObject) GetStringMapAttribute(terraformAttribute 
 }
 
 func (s *jsiiProxy_SpacesBucketObject) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1079,6 +1178,9 @@ func (s *jsiiProxy_SpacesBucketObject) InterpolationForAttribute(terraformAttrib
 }
 
 func (s *jsiiProxy_SpacesBucketObject) OverrideLogicalId(newLogicalId *string) {
+	if err := s.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",

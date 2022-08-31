@@ -111,6 +111,9 @@ func (j *jsiiProxy_AppSpecJobEnvList) WrapsSet() *bool {
 func NewAppSpecJobEnvList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecJobEnvList {
 	_init_.Initialize()
 
+	if err := validateNewAppSpecJobEnvListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AppSpecJobEnvList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewAppSpecJobEnvList_Override(a AppSpecJobEnvList, terraformResource cdktf.
 	)
 }
 
-func (j *jsiiProxy_AppSpecJobEnvList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AppSpecJobEnvList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_AppSpecJobEnvList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppSpecJobEnvList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AppSpecJobEnvList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_AppSpecJobEnvList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSpecJobEnvList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppSpecJobEnvList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_AppSpecJobEnvList) SetTerraformResource(val cdktf.IInterpolat
 	)
 }
 
-func (j *jsiiProxy_AppSpecJobEnvList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_AppSpecJobEnvList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (a *jsiiProxy_AppSpecJobEnvList) ComputeFqn() *string {
 }
 
 func (a *jsiiProxy_AppSpecJobEnvList) Get(index *float64) AppSpecJobEnvOutputReference {
+	if err := a.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns AppSpecJobEnvOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (a *jsiiProxy_AppSpecJobEnvList) Get(index *float64) AppSpecJobEnvOutputRef
 }
 
 func (a *jsiiProxy_AppSpecJobEnvList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

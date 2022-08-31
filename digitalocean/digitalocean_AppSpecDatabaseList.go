@@ -111,6 +111,9 @@ func (j *jsiiProxy_AppSpecDatabaseList) WrapsSet() *bool {
 func NewAppSpecDatabaseList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecDatabaseList {
 	_init_.Initialize()
 
+	if err := validateNewAppSpecDatabaseListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AppSpecDatabaseList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewAppSpecDatabaseList_Override(a AppSpecDatabaseList, terraformResource cd
 	)
 }
 
-func (j *jsiiProxy_AppSpecDatabaseList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AppSpecDatabaseList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_AppSpecDatabaseList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppSpecDatabaseList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AppSpecDatabaseList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_AppSpecDatabaseList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSpecDatabaseList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppSpecDatabaseList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_AppSpecDatabaseList) SetTerraformResource(val cdktf.IInterpol
 	)
 }
 
-func (j *jsiiProxy_AppSpecDatabaseList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_AppSpecDatabaseList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (a *jsiiProxy_AppSpecDatabaseList) ComputeFqn() *string {
 }
 
 func (a *jsiiProxy_AppSpecDatabaseList) Get(index *float64) AppSpecDatabaseOutputReference {
+	if err := a.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns AppSpecDatabaseOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (a *jsiiProxy_AppSpecDatabaseList) Get(index *float64) AppSpecDatabaseOutpu
 }
 
 func (a *jsiiProxy_AppSpecDatabaseList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

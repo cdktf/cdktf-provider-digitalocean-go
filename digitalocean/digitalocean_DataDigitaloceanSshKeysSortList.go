@@ -111,6 +111,9 @@ func (j *jsiiProxy_DataDigitaloceanSshKeysSortList) WrapsSet() *bool {
 func NewDataDigitaloceanSshKeysSortList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanSshKeysSortList {
 	_init_.Initialize()
 
+	if err := validateNewDataDigitaloceanSshKeysSortListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataDigitaloceanSshKeysSortList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewDataDigitaloceanSshKeysSortList_Override(d DataDigitaloceanSshKeysSortLi
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanSshKeysSortList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataDigitaloceanSshKeysSortList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_DataDigitaloceanSshKeysSortList) SetInternalValue(val interfa
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanSshKeysSortList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataDigitaloceanSshKeysSortList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_DataDigitaloceanSshKeysSortList) SetTerraformAttribute(val *s
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanSshKeysSortList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDigitaloceanSshKeysSortList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_DataDigitaloceanSshKeysSortList) SetTerraformResource(val cdk
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanSshKeysSortList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataDigitaloceanSshKeysSortList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (d *jsiiProxy_DataDigitaloceanSshKeysSortList) ComputeFqn() *string {
 }
 
 func (d *jsiiProxy_DataDigitaloceanSshKeysSortList) Get(index *float64) DataDigitaloceanSshKeysSortOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataDigitaloceanSshKeysSortOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (d *jsiiProxy_DataDigitaloceanSshKeysSortList) Get(index *float64) DataDigi
 }
 
 func (d *jsiiProxy_DataDigitaloceanSshKeysSortList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

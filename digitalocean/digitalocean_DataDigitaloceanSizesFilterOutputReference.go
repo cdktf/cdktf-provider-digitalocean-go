@@ -245,6 +245,9 @@ func (j *jsiiProxy_DataDigitaloceanSizesFilterOutputReference) ValuesInput() *[]
 func NewDataDigitaloceanSizesFilterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDigitaloceanSizesFilterOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDataDigitaloceanSizesFilterOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataDigitaloceanSizesFilterOutputReference{}
 
 	_jsii_.Create(
@@ -266,7 +269,10 @@ func NewDataDigitaloceanSizesFilterOutputReference_Override(d DataDigitaloceanSi
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanSizesFilterOutputReference) SetAll(val interface{}) {
+func (j *jsiiProxy_DataDigitaloceanSizesFilterOutputReference)SetAll(val interface{}) {
+	if err := j.validateSetAllParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"all",
@@ -274,7 +280,10 @@ func (j *jsiiProxy_DataDigitaloceanSizesFilterOutputReference) SetAll(val interf
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanSizesFilterOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataDigitaloceanSizesFilterOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -282,7 +291,10 @@ func (j *jsiiProxy_DataDigitaloceanSizesFilterOutputReference) SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanSizesFilterOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataDigitaloceanSizesFilterOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -290,7 +302,10 @@ func (j *jsiiProxy_DataDigitaloceanSizesFilterOutputReference) SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanSizesFilterOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataDigitaloceanSizesFilterOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -298,7 +313,10 @@ func (j *jsiiProxy_DataDigitaloceanSizesFilterOutputReference) SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanSizesFilterOutputReference) SetKey(val *string) {
+func (j *jsiiProxy_DataDigitaloceanSizesFilterOutputReference)SetKey(val *string) {
+	if err := j.validateSetKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"key",
@@ -306,7 +324,10 @@ func (j *jsiiProxy_DataDigitaloceanSizesFilterOutputReference) SetKey(val *strin
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanSizesFilterOutputReference) SetMatchBy(val *string) {
+func (j *jsiiProxy_DataDigitaloceanSizesFilterOutputReference)SetMatchBy(val *string) {
+	if err := j.validateSetMatchByParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"matchBy",
@@ -314,7 +335,10 @@ func (j *jsiiProxy_DataDigitaloceanSizesFilterOutputReference) SetMatchBy(val *s
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanSizesFilterOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataDigitaloceanSizesFilterOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -322,7 +346,10 @@ func (j *jsiiProxy_DataDigitaloceanSizesFilterOutputReference) SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanSizesFilterOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDigitaloceanSizesFilterOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -330,7 +357,10 @@ func (j *jsiiProxy_DataDigitaloceanSizesFilterOutputReference) SetTerraformResou
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanSizesFilterOutputReference) SetValues(val *[]*string) {
+func (j *jsiiProxy_DataDigitaloceanSizesFilterOutputReference)SetValues(val *[]*string) {
+	if err := j.validateSetValuesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"values",
@@ -352,6 +382,9 @@ func (d *jsiiProxy_DataDigitaloceanSizesFilterOutputReference) ComputeFqn() *str
 }
 
 func (d *jsiiProxy_DataDigitaloceanSizesFilterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -365,6 +398,9 @@ func (d *jsiiProxy_DataDigitaloceanSizesFilterOutputReference) GetAnyMapAttribut
 }
 
 func (d *jsiiProxy_DataDigitaloceanSizesFilterOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -378,6 +414,9 @@ func (d *jsiiProxy_DataDigitaloceanSizesFilterOutputReference) GetBooleanAttribu
 }
 
 func (d *jsiiProxy_DataDigitaloceanSizesFilterOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -391,6 +430,9 @@ func (d *jsiiProxy_DataDigitaloceanSizesFilterOutputReference) GetBooleanMapAttr
 }
 
 func (d *jsiiProxy_DataDigitaloceanSizesFilterOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -404,6 +446,9 @@ func (d *jsiiProxy_DataDigitaloceanSizesFilterOutputReference) GetListAttribute(
 }
 
 func (d *jsiiProxy_DataDigitaloceanSizesFilterOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -417,6 +462,9 @@ func (d *jsiiProxy_DataDigitaloceanSizesFilterOutputReference) GetNumberAttribut
 }
 
 func (d *jsiiProxy_DataDigitaloceanSizesFilterOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -430,6 +478,9 @@ func (d *jsiiProxy_DataDigitaloceanSizesFilterOutputReference) GetNumberListAttr
 }
 
 func (d *jsiiProxy_DataDigitaloceanSizesFilterOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -443,6 +494,9 @@ func (d *jsiiProxy_DataDigitaloceanSizesFilterOutputReference) GetNumberMapAttri
 }
 
 func (d *jsiiProxy_DataDigitaloceanSizesFilterOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -456,6 +510,9 @@ func (d *jsiiProxy_DataDigitaloceanSizesFilterOutputReference) GetStringAttribut
 }
 
 func (d *jsiiProxy_DataDigitaloceanSizesFilterOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -482,6 +539,9 @@ func (d *jsiiProxy_DataDigitaloceanSizesFilterOutputReference) InterpolationAsLi
 }
 
 func (d *jsiiProxy_DataDigitaloceanSizesFilterOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -511,6 +571,9 @@ func (d *jsiiProxy_DataDigitaloceanSizesFilterOutputReference) ResetMatchBy() {
 }
 
 func (d *jsiiProxy_DataDigitaloceanSizesFilterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -111,6 +111,9 @@ func (j *jsiiProxy_DataDigitaloceanFirewallOutboundRuleList) WrapsSet() *bool {
 func NewDataDigitaloceanFirewallOutboundRuleList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanFirewallOutboundRuleList {
 	_init_.Initialize()
 
+	if err := validateNewDataDigitaloceanFirewallOutboundRuleListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataDigitaloceanFirewallOutboundRuleList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewDataDigitaloceanFirewallOutboundRuleList_Override(d DataDigitaloceanFire
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanFirewallOutboundRuleList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataDigitaloceanFirewallOutboundRuleList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_DataDigitaloceanFirewallOutboundRuleList) SetInternalValue(va
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanFirewallOutboundRuleList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataDigitaloceanFirewallOutboundRuleList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_DataDigitaloceanFirewallOutboundRuleList) SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanFirewallOutboundRuleList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDigitaloceanFirewallOutboundRuleList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_DataDigitaloceanFirewallOutboundRuleList) SetTerraformResourc
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanFirewallOutboundRuleList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataDigitaloceanFirewallOutboundRuleList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (d *jsiiProxy_DataDigitaloceanFirewallOutboundRuleList) ComputeFqn() *strin
 }
 
 func (d *jsiiProxy_DataDigitaloceanFirewallOutboundRuleList) Get(index *float64) DataDigitaloceanFirewallOutboundRuleOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataDigitaloceanFirewallOutboundRuleOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (d *jsiiProxy_DataDigitaloceanFirewallOutboundRuleList) Get(index *float64)
 }
 
 func (d *jsiiProxy_DataDigitaloceanFirewallOutboundRuleList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

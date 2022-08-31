@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataDigitaloceanKubernetesClusterMaintenancePolicyList) Wraps
 func NewDataDigitaloceanKubernetesClusterMaintenancePolicyList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanKubernetesClusterMaintenancePolicyList {
 	_init_.Initialize()
 
+	if err := validateNewDataDigitaloceanKubernetesClusterMaintenancePolicyListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataDigitaloceanKubernetesClusterMaintenancePolicyList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataDigitaloceanKubernetesClusterMaintenancePolicyList_Override(d DataDi
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanKubernetesClusterMaintenancePolicyList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataDigitaloceanKubernetesClusterMaintenancePolicyList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataDigitaloceanKubernetesClusterMaintenancePolicyList) SetTe
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanKubernetesClusterMaintenancePolicyList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDigitaloceanKubernetesClusterMaintenancePolicyList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataDigitaloceanKubernetesClusterMaintenancePolicyList) SetTe
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanKubernetesClusterMaintenancePolicyList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataDigitaloceanKubernetesClusterMaintenancePolicyList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataDigitaloceanKubernetesClusterMaintenancePolicyList) Compu
 }
 
 func (d *jsiiProxy_DataDigitaloceanKubernetesClusterMaintenancePolicyList) Get(index *float64) DataDigitaloceanKubernetesClusterMaintenancePolicyOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataDigitaloceanKubernetesClusterMaintenancePolicyOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataDigitaloceanKubernetesClusterMaintenancePolicyList) Get(i
 }
 
 func (d *jsiiProxy_DataDigitaloceanKubernetesClusterMaintenancePolicyList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

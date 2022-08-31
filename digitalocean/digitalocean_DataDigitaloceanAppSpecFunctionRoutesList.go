@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataDigitaloceanAppSpecFunctionRoutesList) WrapsSet() *bool {
 func NewDataDigitaloceanAppSpecFunctionRoutesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecFunctionRoutesList {
 	_init_.Initialize()
 
+	if err := validateNewDataDigitaloceanAppSpecFunctionRoutesListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataDigitaloceanAppSpecFunctionRoutesList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataDigitaloceanAppSpecFunctionRoutesList_Override(d DataDigitaloceanApp
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanAppSpecFunctionRoutesList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataDigitaloceanAppSpecFunctionRoutesList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataDigitaloceanAppSpecFunctionRoutesList) SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanAppSpecFunctionRoutesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDigitaloceanAppSpecFunctionRoutesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataDigitaloceanAppSpecFunctionRoutesList) SetTerraformResour
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanAppSpecFunctionRoutesList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataDigitaloceanAppSpecFunctionRoutesList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataDigitaloceanAppSpecFunctionRoutesList) ComputeFqn() *stri
 }
 
 func (d *jsiiProxy_DataDigitaloceanAppSpecFunctionRoutesList) Get(index *float64) DataDigitaloceanAppSpecFunctionRoutesOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataDigitaloceanAppSpecFunctionRoutesOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataDigitaloceanAppSpecFunctionRoutesList) Get(index *float64
 }
 
 func (d *jsiiProxy_DataDigitaloceanAppSpecFunctionRoutesList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

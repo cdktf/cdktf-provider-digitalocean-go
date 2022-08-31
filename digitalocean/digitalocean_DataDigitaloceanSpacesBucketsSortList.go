@@ -111,6 +111,9 @@ func (j *jsiiProxy_DataDigitaloceanSpacesBucketsSortList) WrapsSet() *bool {
 func NewDataDigitaloceanSpacesBucketsSortList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanSpacesBucketsSortList {
 	_init_.Initialize()
 
+	if err := validateNewDataDigitaloceanSpacesBucketsSortListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataDigitaloceanSpacesBucketsSortList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewDataDigitaloceanSpacesBucketsSortList_Override(d DataDigitaloceanSpacesB
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanSpacesBucketsSortList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataDigitaloceanSpacesBucketsSortList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_DataDigitaloceanSpacesBucketsSortList) SetInternalValue(val i
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanSpacesBucketsSortList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataDigitaloceanSpacesBucketsSortList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_DataDigitaloceanSpacesBucketsSortList) SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanSpacesBucketsSortList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDigitaloceanSpacesBucketsSortList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_DataDigitaloceanSpacesBucketsSortList) SetTerraformResource(v
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanSpacesBucketsSortList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataDigitaloceanSpacesBucketsSortList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (d *jsiiProxy_DataDigitaloceanSpacesBucketsSortList) ComputeFqn() *string {
 }
 
 func (d *jsiiProxy_DataDigitaloceanSpacesBucketsSortList) Get(index *float64) DataDigitaloceanSpacesBucketsSortOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataDigitaloceanSpacesBucketsSortOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (d *jsiiProxy_DataDigitaloceanSpacesBucketsSortList) Get(index *float64) Da
 }
 
 func (d *jsiiProxy_DataDigitaloceanSpacesBucketsSortList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

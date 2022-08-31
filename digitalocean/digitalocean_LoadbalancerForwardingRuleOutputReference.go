@@ -315,6 +315,9 @@ func (j *jsiiProxy_LoadbalancerForwardingRuleOutputReference) TlsPassthroughInpu
 func NewLoadbalancerForwardingRuleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LoadbalancerForwardingRuleOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewLoadbalancerForwardingRuleOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_LoadbalancerForwardingRuleOutputReference{}
 
 	_jsii_.Create(
@@ -336,7 +339,10 @@ func NewLoadbalancerForwardingRuleOutputReference_Override(l LoadbalancerForward
 	)
 }
 
-func (j *jsiiProxy_LoadbalancerForwardingRuleOutputReference) SetCertificateId(val *string) {
+func (j *jsiiProxy_LoadbalancerForwardingRuleOutputReference)SetCertificateId(val *string) {
+	if err := j.validateSetCertificateIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"certificateId",
@@ -344,7 +350,10 @@ func (j *jsiiProxy_LoadbalancerForwardingRuleOutputReference) SetCertificateId(v
 	)
 }
 
-func (j *jsiiProxy_LoadbalancerForwardingRuleOutputReference) SetCertificateName(val *string) {
+func (j *jsiiProxy_LoadbalancerForwardingRuleOutputReference)SetCertificateName(val *string) {
+	if err := j.validateSetCertificateNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"certificateName",
@@ -352,7 +361,10 @@ func (j *jsiiProxy_LoadbalancerForwardingRuleOutputReference) SetCertificateName
 	)
 }
 
-func (j *jsiiProxy_LoadbalancerForwardingRuleOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LoadbalancerForwardingRuleOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -360,7 +372,10 @@ func (j *jsiiProxy_LoadbalancerForwardingRuleOutputReference) SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_LoadbalancerForwardingRuleOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LoadbalancerForwardingRuleOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -368,7 +383,10 @@ func (j *jsiiProxy_LoadbalancerForwardingRuleOutputReference) SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_LoadbalancerForwardingRuleOutputReference) SetEntryPort(val *float64) {
+func (j *jsiiProxy_LoadbalancerForwardingRuleOutputReference)SetEntryPort(val *float64) {
+	if err := j.validateSetEntryPortParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"entryPort",
@@ -376,7 +394,10 @@ func (j *jsiiProxy_LoadbalancerForwardingRuleOutputReference) SetEntryPort(val *
 	)
 }
 
-func (j *jsiiProxy_LoadbalancerForwardingRuleOutputReference) SetEntryProtocol(val *string) {
+func (j *jsiiProxy_LoadbalancerForwardingRuleOutputReference)SetEntryProtocol(val *string) {
+	if err := j.validateSetEntryProtocolParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"entryProtocol",
@@ -384,7 +405,10 @@ func (j *jsiiProxy_LoadbalancerForwardingRuleOutputReference) SetEntryProtocol(v
 	)
 }
 
-func (j *jsiiProxy_LoadbalancerForwardingRuleOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_LoadbalancerForwardingRuleOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -392,7 +416,10 @@ func (j *jsiiProxy_LoadbalancerForwardingRuleOutputReference) SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_LoadbalancerForwardingRuleOutputReference) SetTargetPort(val *float64) {
+func (j *jsiiProxy_LoadbalancerForwardingRuleOutputReference)SetTargetPort(val *float64) {
+	if err := j.validateSetTargetPortParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"targetPort",
@@ -400,7 +427,10 @@ func (j *jsiiProxy_LoadbalancerForwardingRuleOutputReference) SetTargetPort(val 
 	)
 }
 
-func (j *jsiiProxy_LoadbalancerForwardingRuleOutputReference) SetTargetProtocol(val *string) {
+func (j *jsiiProxy_LoadbalancerForwardingRuleOutputReference)SetTargetProtocol(val *string) {
+	if err := j.validateSetTargetProtocolParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"targetProtocol",
@@ -408,7 +438,10 @@ func (j *jsiiProxy_LoadbalancerForwardingRuleOutputReference) SetTargetProtocol(
 	)
 }
 
-func (j *jsiiProxy_LoadbalancerForwardingRuleOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LoadbalancerForwardingRuleOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -416,7 +449,10 @@ func (j *jsiiProxy_LoadbalancerForwardingRuleOutputReference) SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_LoadbalancerForwardingRuleOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LoadbalancerForwardingRuleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -424,7 +460,10 @@ func (j *jsiiProxy_LoadbalancerForwardingRuleOutputReference) SetTerraformResour
 	)
 }
 
-func (j *jsiiProxy_LoadbalancerForwardingRuleOutputReference) SetTlsPassthrough(val interface{}) {
+func (j *jsiiProxy_LoadbalancerForwardingRuleOutputReference)SetTlsPassthrough(val interface{}) {
+	if err := j.validateSetTlsPassthroughParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tlsPassthrough",
@@ -446,6 +485,9 @@ func (l *jsiiProxy_LoadbalancerForwardingRuleOutputReference) ComputeFqn() *stri
 }
 
 func (l *jsiiProxy_LoadbalancerForwardingRuleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -459,6 +501,9 @@ func (l *jsiiProxy_LoadbalancerForwardingRuleOutputReference) GetAnyMapAttribute
 }
 
 func (l *jsiiProxy_LoadbalancerForwardingRuleOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -472,6 +517,9 @@ func (l *jsiiProxy_LoadbalancerForwardingRuleOutputReference) GetBooleanAttribut
 }
 
 func (l *jsiiProxy_LoadbalancerForwardingRuleOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := l.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -485,6 +533,9 @@ func (l *jsiiProxy_LoadbalancerForwardingRuleOutputReference) GetBooleanMapAttri
 }
 
 func (l *jsiiProxy_LoadbalancerForwardingRuleOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := l.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -498,6 +549,9 @@ func (l *jsiiProxy_LoadbalancerForwardingRuleOutputReference) GetListAttribute(t
 }
 
 func (l *jsiiProxy_LoadbalancerForwardingRuleOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := l.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -511,6 +565,9 @@ func (l *jsiiProxy_LoadbalancerForwardingRuleOutputReference) GetNumberAttribute
 }
 
 func (l *jsiiProxy_LoadbalancerForwardingRuleOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := l.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -524,6 +581,9 @@ func (l *jsiiProxy_LoadbalancerForwardingRuleOutputReference) GetNumberListAttri
 }
 
 func (l *jsiiProxy_LoadbalancerForwardingRuleOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := l.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -537,6 +597,9 @@ func (l *jsiiProxy_LoadbalancerForwardingRuleOutputReference) GetNumberMapAttrib
 }
 
 func (l *jsiiProxy_LoadbalancerForwardingRuleOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := l.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -550,6 +613,9 @@ func (l *jsiiProxy_LoadbalancerForwardingRuleOutputReference) GetStringAttribute
 }
 
 func (l *jsiiProxy_LoadbalancerForwardingRuleOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := l.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -576,6 +642,9 @@ func (l *jsiiProxy_LoadbalancerForwardingRuleOutputReference) InterpolationAsLis
 }
 
 func (l *jsiiProxy_LoadbalancerForwardingRuleOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -613,6 +682,9 @@ func (l *jsiiProxy_LoadbalancerForwardingRuleOutputReference) ResetTlsPassthroug
 }
 
 func (l *jsiiProxy_LoadbalancerForwardingRuleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

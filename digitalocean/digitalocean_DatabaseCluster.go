@@ -673,6 +673,9 @@ func (j *jsiiProxy_DatabaseCluster) VersionInput() *string {
 func NewDatabaseCluster(scope constructs.Construct, id *string, config *DatabaseClusterConfig) DatabaseCluster {
 	_init_.Initialize()
 
+	if err := validateNewDatabaseClusterParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DatabaseCluster{}
 
 	_jsii_.Create(
@@ -695,7 +698,10 @@ func NewDatabaseCluster_Override(d DatabaseCluster, scope constructs.Construct, 
 	)
 }
 
-func (j *jsiiProxy_DatabaseCluster) SetConnection(val interface{}) {
+func (j *jsiiProxy_DatabaseCluster)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -703,7 +709,7 @@ func (j *jsiiProxy_DatabaseCluster) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DatabaseCluster) SetCount(val *float64) {
+func (j *jsiiProxy_DatabaseCluster)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -711,7 +717,7 @@ func (j *jsiiProxy_DatabaseCluster) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DatabaseCluster) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DatabaseCluster)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -719,7 +725,10 @@ func (j *jsiiProxy_DatabaseCluster) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DatabaseCluster) SetEngine(val *string) {
+func (j *jsiiProxy_DatabaseCluster)SetEngine(val *string) {
+	if err := j.validateSetEngineParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"engine",
@@ -727,7 +736,10 @@ func (j *jsiiProxy_DatabaseCluster) SetEngine(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DatabaseCluster) SetEvictionPolicy(val *string) {
+func (j *jsiiProxy_DatabaseCluster)SetEvictionPolicy(val *string) {
+	if err := j.validateSetEvictionPolicyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"evictionPolicy",
@@ -735,7 +747,7 @@ func (j *jsiiProxy_DatabaseCluster) SetEvictionPolicy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DatabaseCluster) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DatabaseCluster)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -743,7 +755,10 @@ func (j *jsiiProxy_DatabaseCluster) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DatabaseCluster) SetId(val *string) {
+func (j *jsiiProxy_DatabaseCluster)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -751,7 +766,10 @@ func (j *jsiiProxy_DatabaseCluster) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DatabaseCluster) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DatabaseCluster)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -759,7 +777,10 @@ func (j *jsiiProxy_DatabaseCluster) SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_DatabaseCluster) SetName(val *string) {
+func (j *jsiiProxy_DatabaseCluster)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -767,7 +788,10 @@ func (j *jsiiProxy_DatabaseCluster) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DatabaseCluster) SetNodeCount(val *float64) {
+func (j *jsiiProxy_DatabaseCluster)SetNodeCount(val *float64) {
+	if err := j.validateSetNodeCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"nodeCount",
@@ -775,7 +799,10 @@ func (j *jsiiProxy_DatabaseCluster) SetNodeCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DatabaseCluster) SetPrivateNetworkUuid(val *string) {
+func (j *jsiiProxy_DatabaseCluster)SetPrivateNetworkUuid(val *string) {
+	if err := j.validateSetPrivateNetworkUuidParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"privateNetworkUuid",
@@ -783,7 +810,7 @@ func (j *jsiiProxy_DatabaseCluster) SetPrivateNetworkUuid(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DatabaseCluster) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DatabaseCluster)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -791,7 +818,10 @@ func (j *jsiiProxy_DatabaseCluster) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DatabaseCluster) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DatabaseCluster)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -799,7 +829,10 @@ func (j *jsiiProxy_DatabaseCluster) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DatabaseCluster) SetRegion(val *string) {
+func (j *jsiiProxy_DatabaseCluster)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"region",
@@ -807,7 +840,10 @@ func (j *jsiiProxy_DatabaseCluster) SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DatabaseCluster) SetSize(val *string) {
+func (j *jsiiProxy_DatabaseCluster)SetSize(val *string) {
+	if err := j.validateSetSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"size",
@@ -815,7 +851,10 @@ func (j *jsiiProxy_DatabaseCluster) SetSize(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DatabaseCluster) SetSqlMode(val *string) {
+func (j *jsiiProxy_DatabaseCluster)SetSqlMode(val *string) {
+	if err := j.validateSetSqlModeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sqlMode",
@@ -823,7 +862,10 @@ func (j *jsiiProxy_DatabaseCluster) SetSqlMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DatabaseCluster) SetTags(val *[]*string) {
+func (j *jsiiProxy_DatabaseCluster)SetTags(val *[]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tags",
@@ -831,7 +873,10 @@ func (j *jsiiProxy_DatabaseCluster) SetTags(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DatabaseCluster) SetVersion(val *string) {
+func (j *jsiiProxy_DatabaseCluster)SetVersion(val *string) {
+	if err := j.validateSetVersionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"version",
@@ -859,6 +904,9 @@ func (j *jsiiProxy_DatabaseCluster) SetVersion(val *string) {
 func DatabaseCluster_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDatabaseCluster_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -883,6 +931,9 @@ func DatabaseCluster_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DatabaseCluster) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -891,6 +942,9 @@ func (d *jsiiProxy_DatabaseCluster) AddOverride(path *string, value interface{})
 }
 
 func (d *jsiiProxy_DatabaseCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -904,6 +958,9 @@ func (d *jsiiProxy_DatabaseCluster) GetAnyMapAttribute(terraformAttribute *strin
 }
 
 func (d *jsiiProxy_DatabaseCluster) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -917,6 +974,9 @@ func (d *jsiiProxy_DatabaseCluster) GetBooleanAttribute(terraformAttribute *stri
 }
 
 func (d *jsiiProxy_DatabaseCluster) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -930,6 +990,9 @@ func (d *jsiiProxy_DatabaseCluster) GetBooleanMapAttribute(terraformAttribute *s
 }
 
 func (d *jsiiProxy_DatabaseCluster) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -943,6 +1006,9 @@ func (d *jsiiProxy_DatabaseCluster) GetListAttribute(terraformAttribute *string)
 }
 
 func (d *jsiiProxy_DatabaseCluster) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -956,6 +1022,9 @@ func (d *jsiiProxy_DatabaseCluster) GetNumberAttribute(terraformAttribute *strin
 }
 
 func (d *jsiiProxy_DatabaseCluster) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -969,6 +1038,9 @@ func (d *jsiiProxy_DatabaseCluster) GetNumberListAttribute(terraformAttribute *s
 }
 
 func (d *jsiiProxy_DatabaseCluster) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -982,6 +1054,9 @@ func (d *jsiiProxy_DatabaseCluster) GetNumberMapAttribute(terraformAttribute *st
 }
 
 func (d *jsiiProxy_DatabaseCluster) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -995,6 +1070,9 @@ func (d *jsiiProxy_DatabaseCluster) GetStringAttribute(terraformAttribute *strin
 }
 
 func (d *jsiiProxy_DatabaseCluster) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1008,6 +1086,9 @@ func (d *jsiiProxy_DatabaseCluster) GetStringMapAttribute(terraformAttribute *st
 }
 
 func (d *jsiiProxy_DatabaseCluster) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1021,6 +1102,9 @@ func (d *jsiiProxy_DatabaseCluster) InterpolationForAttribute(terraformAttribute
 }
 
 func (d *jsiiProxy_DatabaseCluster) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
@@ -1029,6 +1113,9 @@ func (d *jsiiProxy_DatabaseCluster) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (d *jsiiProxy_DatabaseCluster) PutMaintenanceWindow(value interface{}) {
+	if err := d.validatePutMaintenanceWindowParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putMaintenanceWindow",
@@ -1037,6 +1124,9 @@ func (d *jsiiProxy_DatabaseCluster) PutMaintenanceWindow(value interface{}) {
 }
 
 func (d *jsiiProxy_DatabaseCluster) PutTimeouts(value *DatabaseClusterTimeouts) {
+	if err := d.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",

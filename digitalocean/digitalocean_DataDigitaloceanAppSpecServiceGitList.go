@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataDigitaloceanAppSpecServiceGitList) WrapsSet() *bool {
 func NewDataDigitaloceanAppSpecServiceGitList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecServiceGitList {
 	_init_.Initialize()
 
+	if err := validateNewDataDigitaloceanAppSpecServiceGitListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataDigitaloceanAppSpecServiceGitList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataDigitaloceanAppSpecServiceGitList_Override(d DataDigitaloceanAppSpec
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanAppSpecServiceGitList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataDigitaloceanAppSpecServiceGitList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataDigitaloceanAppSpecServiceGitList) SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanAppSpecServiceGitList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDigitaloceanAppSpecServiceGitList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataDigitaloceanAppSpecServiceGitList) SetTerraformResource(v
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanAppSpecServiceGitList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataDigitaloceanAppSpecServiceGitList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataDigitaloceanAppSpecServiceGitList) ComputeFqn() *string {
 }
 
 func (d *jsiiProxy_DataDigitaloceanAppSpecServiceGitList) Get(index *float64) DataDigitaloceanAppSpecServiceGitOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataDigitaloceanAppSpecServiceGitOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataDigitaloceanAppSpecServiceGitList) Get(index *float64) Da
 }
 
 func (d *jsiiProxy_DataDigitaloceanAppSpecServiceGitList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

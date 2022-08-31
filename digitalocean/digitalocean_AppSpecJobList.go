@@ -111,6 +111,9 @@ func (j *jsiiProxy_AppSpecJobList) WrapsSet() *bool {
 func NewAppSpecJobList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecJobList {
 	_init_.Initialize()
 
+	if err := validateNewAppSpecJobListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AppSpecJobList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewAppSpecJobList_Override(a AppSpecJobList, terraformResource cdktf.IInter
 	)
 }
 
-func (j *jsiiProxy_AppSpecJobList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AppSpecJobList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_AppSpecJobList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppSpecJobList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AppSpecJobList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_AppSpecJobList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSpecJobList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppSpecJobList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_AppSpecJobList) SetTerraformResource(val cdktf.IInterpolating
 	)
 }
 
-func (j *jsiiProxy_AppSpecJobList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_AppSpecJobList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (a *jsiiProxy_AppSpecJobList) ComputeFqn() *string {
 }
 
 func (a *jsiiProxy_AppSpecJobList) Get(index *float64) AppSpecJobOutputReference {
+	if err := a.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns AppSpecJobOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (a *jsiiProxy_AppSpecJobList) Get(index *float64) AppSpecJobOutputReference
 }
 
 func (a *jsiiProxy_AppSpecJobList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

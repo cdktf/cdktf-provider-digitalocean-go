@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataDigitaloceanKubernetesClusterNodePoolNodesList) WrapsSet(
 func NewDataDigitaloceanKubernetesClusterNodePoolNodesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanKubernetesClusterNodePoolNodesList {
 	_init_.Initialize()
 
+	if err := validateNewDataDigitaloceanKubernetesClusterNodePoolNodesListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataDigitaloceanKubernetesClusterNodePoolNodesList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataDigitaloceanKubernetesClusterNodePoolNodesList_Override(d DataDigita
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanKubernetesClusterNodePoolNodesList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataDigitaloceanKubernetesClusterNodePoolNodesList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataDigitaloceanKubernetesClusterNodePoolNodesList) SetTerraf
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanKubernetesClusterNodePoolNodesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDigitaloceanKubernetesClusterNodePoolNodesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataDigitaloceanKubernetesClusterNodePoolNodesList) SetTerraf
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanKubernetesClusterNodePoolNodesList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataDigitaloceanKubernetesClusterNodePoolNodesList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataDigitaloceanKubernetesClusterNodePoolNodesList) ComputeFq
 }
 
 func (d *jsiiProxy_DataDigitaloceanKubernetesClusterNodePoolNodesList) Get(index *float64) DataDigitaloceanKubernetesClusterNodePoolNodesOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataDigitaloceanKubernetesClusterNodePoolNodesOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataDigitaloceanKubernetesClusterNodePoolNodesList) Get(index
 }
 
 func (d *jsiiProxy_DataDigitaloceanKubernetesClusterNodePoolNodesList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

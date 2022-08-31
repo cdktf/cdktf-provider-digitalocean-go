@@ -295,6 +295,9 @@ func (j *jsiiProxy_AppSpecFunctionCorsOutputReference) TerraformResource() cdktf
 func NewAppSpecFunctionCorsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AppSpecFunctionCorsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewAppSpecFunctionCorsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AppSpecFunctionCorsOutputReference{}
 
 	_jsii_.Create(
@@ -316,7 +319,10 @@ func NewAppSpecFunctionCorsOutputReference_Override(a AppSpecFunctionCorsOutputR
 	)
 }
 
-func (j *jsiiProxy_AppSpecFunctionCorsOutputReference) SetAllowCredentials(val interface{}) {
+func (j *jsiiProxy_AppSpecFunctionCorsOutputReference)SetAllowCredentials(val interface{}) {
+	if err := j.validateSetAllowCredentialsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowCredentials",
@@ -324,7 +330,10 @@ func (j *jsiiProxy_AppSpecFunctionCorsOutputReference) SetAllowCredentials(val i
 	)
 }
 
-func (j *jsiiProxy_AppSpecFunctionCorsOutputReference) SetAllowHeaders(val *[]*string) {
+func (j *jsiiProxy_AppSpecFunctionCorsOutputReference)SetAllowHeaders(val *[]*string) {
+	if err := j.validateSetAllowHeadersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowHeaders",
@@ -332,7 +341,10 @@ func (j *jsiiProxy_AppSpecFunctionCorsOutputReference) SetAllowHeaders(val *[]*s
 	)
 }
 
-func (j *jsiiProxy_AppSpecFunctionCorsOutputReference) SetAllowMethods(val *[]*string) {
+func (j *jsiiProxy_AppSpecFunctionCorsOutputReference)SetAllowMethods(val *[]*string) {
+	if err := j.validateSetAllowMethodsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowMethods",
@@ -340,7 +352,10 @@ func (j *jsiiProxy_AppSpecFunctionCorsOutputReference) SetAllowMethods(val *[]*s
 	)
 }
 
-func (j *jsiiProxy_AppSpecFunctionCorsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AppSpecFunctionCorsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -348,7 +363,10 @@ func (j *jsiiProxy_AppSpecFunctionCorsOutputReference) SetComplexObjectIndex(val
 	)
 }
 
-func (j *jsiiProxy_AppSpecFunctionCorsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AppSpecFunctionCorsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -356,7 +374,10 @@ func (j *jsiiProxy_AppSpecFunctionCorsOutputReference) SetComplexObjectIsFromSet
 	)
 }
 
-func (j *jsiiProxy_AppSpecFunctionCorsOutputReference) SetExposeHeaders(val *[]*string) {
+func (j *jsiiProxy_AppSpecFunctionCorsOutputReference)SetExposeHeaders(val *[]*string) {
+	if err := j.validateSetExposeHeadersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"exposeHeaders",
@@ -364,7 +385,10 @@ func (j *jsiiProxy_AppSpecFunctionCorsOutputReference) SetExposeHeaders(val *[]*
 	)
 }
 
-func (j *jsiiProxy_AppSpecFunctionCorsOutputReference) SetInternalValue(val *AppSpecFunctionCors) {
+func (j *jsiiProxy_AppSpecFunctionCorsOutputReference)SetInternalValue(val *AppSpecFunctionCors) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -372,7 +396,10 @@ func (j *jsiiProxy_AppSpecFunctionCorsOutputReference) SetInternalValue(val *App
 	)
 }
 
-func (j *jsiiProxy_AppSpecFunctionCorsOutputReference) SetMaxAge(val *string) {
+func (j *jsiiProxy_AppSpecFunctionCorsOutputReference)SetMaxAge(val *string) {
+	if err := j.validateSetMaxAgeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxAge",
@@ -380,7 +407,10 @@ func (j *jsiiProxy_AppSpecFunctionCorsOutputReference) SetMaxAge(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSpecFunctionCorsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AppSpecFunctionCorsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -388,7 +418,10 @@ func (j *jsiiProxy_AppSpecFunctionCorsOutputReference) SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_AppSpecFunctionCorsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppSpecFunctionCorsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -410,6 +443,9 @@ func (a *jsiiProxy_AppSpecFunctionCorsOutputReference) ComputeFqn() *string {
 }
 
 func (a *jsiiProxy_AppSpecFunctionCorsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -423,6 +459,9 @@ func (a *jsiiProxy_AppSpecFunctionCorsOutputReference) GetAnyMapAttribute(terraf
 }
 
 func (a *jsiiProxy_AppSpecFunctionCorsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -436,6 +475,9 @@ func (a *jsiiProxy_AppSpecFunctionCorsOutputReference) GetBooleanAttribute(terra
 }
 
 func (a *jsiiProxy_AppSpecFunctionCorsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -449,6 +491,9 @@ func (a *jsiiProxy_AppSpecFunctionCorsOutputReference) GetBooleanMapAttribute(te
 }
 
 func (a *jsiiProxy_AppSpecFunctionCorsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -462,6 +507,9 @@ func (a *jsiiProxy_AppSpecFunctionCorsOutputReference) GetListAttribute(terrafor
 }
 
 func (a *jsiiProxy_AppSpecFunctionCorsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -475,6 +523,9 @@ func (a *jsiiProxy_AppSpecFunctionCorsOutputReference) GetNumberAttribute(terraf
 }
 
 func (a *jsiiProxy_AppSpecFunctionCorsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -488,6 +539,9 @@ func (a *jsiiProxy_AppSpecFunctionCorsOutputReference) GetNumberListAttribute(te
 }
 
 func (a *jsiiProxy_AppSpecFunctionCorsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -501,6 +555,9 @@ func (a *jsiiProxy_AppSpecFunctionCorsOutputReference) GetNumberMapAttribute(ter
 }
 
 func (a *jsiiProxy_AppSpecFunctionCorsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -514,6 +571,9 @@ func (a *jsiiProxy_AppSpecFunctionCorsOutputReference) GetStringAttribute(terraf
 }
 
 func (a *jsiiProxy_AppSpecFunctionCorsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -540,6 +600,9 @@ func (a *jsiiProxy_AppSpecFunctionCorsOutputReference) InterpolationAsList() cdk
 }
 
 func (a *jsiiProxy_AppSpecFunctionCorsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -553,6 +616,9 @@ func (a *jsiiProxy_AppSpecFunctionCorsOutputReference) InterpolationForAttribute
 }
 
 func (a *jsiiProxy_AppSpecFunctionCorsOutputReference) PutAllowOrigins(value *AppSpecFunctionCorsAllowOrigins) {
+	if err := a.validatePutAllowOriginsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"putAllowOrigins",
@@ -609,6 +675,9 @@ func (a *jsiiProxy_AppSpecFunctionCorsOutputReference) ResetMaxAge() {
 }
 
 func (a *jsiiProxy_AppSpecFunctionCorsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataDigitaloceanTagsTagsList) WrapsSet() *bool {
 func NewDataDigitaloceanTagsTagsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanTagsTagsList {
 	_init_.Initialize()
 
+	if err := validateNewDataDigitaloceanTagsTagsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataDigitaloceanTagsTagsList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataDigitaloceanTagsTagsList_Override(d DataDigitaloceanTagsTagsList, te
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanTagsTagsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataDigitaloceanTagsTagsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataDigitaloceanTagsTagsList) SetTerraformAttribute(val *stri
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanTagsTagsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDigitaloceanTagsTagsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataDigitaloceanTagsTagsList) SetTerraformResource(val cdktf.
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanTagsTagsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataDigitaloceanTagsTagsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataDigitaloceanTagsTagsList) ComputeFqn() *string {
 }
 
 func (d *jsiiProxy_DataDigitaloceanTagsTagsList) Get(index *float64) DataDigitaloceanTagsTagsOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataDigitaloceanTagsTagsOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataDigitaloceanTagsTagsList) Get(index *float64) DataDigital
 }
 
 func (d *jsiiProxy_DataDigitaloceanTagsTagsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

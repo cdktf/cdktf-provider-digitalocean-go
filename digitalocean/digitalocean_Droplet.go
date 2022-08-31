@@ -827,6 +827,9 @@ func (j *jsiiProxy_Droplet) VpcUuidInput() *string {
 func NewDroplet(scope constructs.Construct, id *string, config *DropletConfig) Droplet {
 	_init_.Initialize()
 
+	if err := validateNewDropletParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_Droplet{}
 
 	_jsii_.Create(
@@ -849,7 +852,10 @@ func NewDroplet_Override(d Droplet, scope constructs.Construct, id *string, conf
 	)
 }
 
-func (j *jsiiProxy_Droplet) SetBackups(val interface{}) {
+func (j *jsiiProxy_Droplet)SetBackups(val interface{}) {
+	if err := j.validateSetBackupsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"backups",
@@ -857,7 +863,10 @@ func (j *jsiiProxy_Droplet) SetBackups(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Droplet) SetConnection(val interface{}) {
+func (j *jsiiProxy_Droplet)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -865,7 +874,7 @@ func (j *jsiiProxy_Droplet) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Droplet) SetCount(val *float64) {
+func (j *jsiiProxy_Droplet)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -873,7 +882,7 @@ func (j *jsiiProxy_Droplet) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Droplet) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Droplet)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -881,7 +890,10 @@ func (j *jsiiProxy_Droplet) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Droplet) SetDropletAgent(val interface{}) {
+func (j *jsiiProxy_Droplet)SetDropletAgent(val interface{}) {
+	if err := j.validateSetDropletAgentParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"dropletAgent",
@@ -889,7 +901,7 @@ func (j *jsiiProxy_Droplet) SetDropletAgent(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Droplet) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Droplet)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -897,7 +909,10 @@ func (j *jsiiProxy_Droplet) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Droplet) SetGracefulShutdown(val interface{}) {
+func (j *jsiiProxy_Droplet)SetGracefulShutdown(val interface{}) {
+	if err := j.validateSetGracefulShutdownParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"gracefulShutdown",
@@ -905,7 +920,10 @@ func (j *jsiiProxy_Droplet) SetGracefulShutdown(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Droplet) SetId(val *string) {
+func (j *jsiiProxy_Droplet)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -913,7 +931,10 @@ func (j *jsiiProxy_Droplet) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Droplet) SetImage(val *string) {
+func (j *jsiiProxy_Droplet)SetImage(val *string) {
+	if err := j.validateSetImageParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"image",
@@ -921,7 +942,10 @@ func (j *jsiiProxy_Droplet) SetImage(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Droplet) SetIpv6(val interface{}) {
+func (j *jsiiProxy_Droplet)SetIpv6(val interface{}) {
+	if err := j.validateSetIpv6Parameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ipv6",
@@ -929,7 +953,10 @@ func (j *jsiiProxy_Droplet) SetIpv6(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Droplet) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Droplet)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -937,7 +964,10 @@ func (j *jsiiProxy_Droplet) SetLifecycle(val *cdktf.TerraformResourceLifecycle) 
 	)
 }
 
-func (j *jsiiProxy_Droplet) SetMonitoring(val interface{}) {
+func (j *jsiiProxy_Droplet)SetMonitoring(val interface{}) {
+	if err := j.validateSetMonitoringParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"monitoring",
@@ -945,7 +975,10 @@ func (j *jsiiProxy_Droplet) SetMonitoring(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Droplet) SetName(val *string) {
+func (j *jsiiProxy_Droplet)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -953,7 +986,10 @@ func (j *jsiiProxy_Droplet) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Droplet) SetPrivateNetworking(val interface{}) {
+func (j *jsiiProxy_Droplet)SetPrivateNetworking(val interface{}) {
+	if err := j.validateSetPrivateNetworkingParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"privateNetworking",
@@ -961,7 +997,7 @@ func (j *jsiiProxy_Droplet) SetPrivateNetworking(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Droplet) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Droplet)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -969,7 +1005,10 @@ func (j *jsiiProxy_Droplet) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Droplet) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Droplet)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -977,7 +1016,10 @@ func (j *jsiiProxy_Droplet) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Droplet) SetRegion(val *string) {
+func (j *jsiiProxy_Droplet)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"region",
@@ -985,7 +1027,10 @@ func (j *jsiiProxy_Droplet) SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Droplet) SetResizeDisk(val interface{}) {
+func (j *jsiiProxy_Droplet)SetResizeDisk(val interface{}) {
+	if err := j.validateSetResizeDiskParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"resizeDisk",
@@ -993,7 +1038,10 @@ func (j *jsiiProxy_Droplet) SetResizeDisk(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Droplet) SetSize(val *string) {
+func (j *jsiiProxy_Droplet)SetSize(val *string) {
+	if err := j.validateSetSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"size",
@@ -1001,7 +1049,10 @@ func (j *jsiiProxy_Droplet) SetSize(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Droplet) SetSshKeys(val *[]*string) {
+func (j *jsiiProxy_Droplet)SetSshKeys(val *[]*string) {
+	if err := j.validateSetSshKeysParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sshKeys",
@@ -1009,7 +1060,10 @@ func (j *jsiiProxy_Droplet) SetSshKeys(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Droplet) SetTags(val *[]*string) {
+func (j *jsiiProxy_Droplet)SetTags(val *[]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tags",
@@ -1017,7 +1071,10 @@ func (j *jsiiProxy_Droplet) SetTags(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Droplet) SetUserData(val *string) {
+func (j *jsiiProxy_Droplet)SetUserData(val *string) {
+	if err := j.validateSetUserDataParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"userData",
@@ -1025,7 +1082,10 @@ func (j *jsiiProxy_Droplet) SetUserData(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Droplet) SetVolumeIds(val *[]*string) {
+func (j *jsiiProxy_Droplet)SetVolumeIds(val *[]*string) {
+	if err := j.validateSetVolumeIdsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"volumeIds",
@@ -1033,7 +1093,10 @@ func (j *jsiiProxy_Droplet) SetVolumeIds(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Droplet) SetVpcUuid(val *string) {
+func (j *jsiiProxy_Droplet)SetVpcUuid(val *string) {
+	if err := j.validateSetVpcUuidParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"vpcUuid",
@@ -1061,6 +1124,9 @@ func (j *jsiiProxy_Droplet) SetVpcUuid(val *string) {
 func Droplet_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDroplet_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -1085,6 +1151,9 @@ func Droplet_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_Droplet) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -1093,6 +1162,9 @@ func (d *jsiiProxy_Droplet) AddOverride(path *string, value interface{}) {
 }
 
 func (d *jsiiProxy_Droplet) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -1106,6 +1178,9 @@ func (d *jsiiProxy_Droplet) GetAnyMapAttribute(terraformAttribute *string) *map[
 }
 
 func (d *jsiiProxy_Droplet) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1119,6 +1194,9 @@ func (d *jsiiProxy_Droplet) GetBooleanAttribute(terraformAttribute *string) cdkt
 }
 
 func (d *jsiiProxy_Droplet) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -1132,6 +1210,9 @@ func (d *jsiiProxy_Droplet) GetBooleanMapAttribute(terraformAttribute *string) *
 }
 
 func (d *jsiiProxy_Droplet) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -1145,6 +1226,9 @@ func (d *jsiiProxy_Droplet) GetListAttribute(terraformAttribute *string) *[]*str
 }
 
 func (d *jsiiProxy_Droplet) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -1158,6 +1242,9 @@ func (d *jsiiProxy_Droplet) GetNumberAttribute(terraformAttribute *string) *floa
 }
 
 func (d *jsiiProxy_Droplet) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -1171,6 +1258,9 @@ func (d *jsiiProxy_Droplet) GetNumberListAttribute(terraformAttribute *string) *
 }
 
 func (d *jsiiProxy_Droplet) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -1184,6 +1274,9 @@ func (d *jsiiProxy_Droplet) GetNumberMapAttribute(terraformAttribute *string) *m
 }
 
 func (d *jsiiProxy_Droplet) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1197,6 +1290,9 @@ func (d *jsiiProxy_Droplet) GetStringAttribute(terraformAttribute *string) *stri
 }
 
 func (d *jsiiProxy_Droplet) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1210,6 +1306,9 @@ func (d *jsiiProxy_Droplet) GetStringMapAttribute(terraformAttribute *string) *m
 }
 
 func (d *jsiiProxy_Droplet) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1223,6 +1322,9 @@ func (d *jsiiProxy_Droplet) InterpolationForAttribute(terraformAttribute *string
 }
 
 func (d *jsiiProxy_Droplet) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
@@ -1231,6 +1333,9 @@ func (d *jsiiProxy_Droplet) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (d *jsiiProxy_Droplet) PutTimeouts(value *DropletTimeouts) {
+	if err := d.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",

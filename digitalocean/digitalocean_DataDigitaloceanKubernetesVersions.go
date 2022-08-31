@@ -309,6 +309,9 @@ func (j *jsiiProxy_DataDigitaloceanKubernetesVersions) VersionPrefixInput() *str
 func NewDataDigitaloceanKubernetesVersions(scope constructs.Construct, id *string, config *DataDigitaloceanKubernetesVersionsConfig) DataDigitaloceanKubernetesVersions {
 	_init_.Initialize()
 
+	if err := validateNewDataDigitaloceanKubernetesVersionsParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataDigitaloceanKubernetesVersions{}
 
 	_jsii_.Create(
@@ -331,7 +334,7 @@ func NewDataDigitaloceanKubernetesVersions_Override(d DataDigitaloceanKubernetes
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanKubernetesVersions) SetCount(val *float64) {
+func (j *jsiiProxy_DataDigitaloceanKubernetesVersions)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -339,7 +342,7 @@ func (j *jsiiProxy_DataDigitaloceanKubernetesVersions) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanKubernetesVersions) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataDigitaloceanKubernetesVersions)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -347,7 +350,7 @@ func (j *jsiiProxy_DataDigitaloceanKubernetesVersions) SetDependsOn(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanKubernetesVersions) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataDigitaloceanKubernetesVersions)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -355,7 +358,10 @@ func (j *jsiiProxy_DataDigitaloceanKubernetesVersions) SetForEach(val cdktf.ITer
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanKubernetesVersions) SetId(val *string) {
+func (j *jsiiProxy_DataDigitaloceanKubernetesVersions)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -363,7 +369,10 @@ func (j *jsiiProxy_DataDigitaloceanKubernetesVersions) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanKubernetesVersions) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataDigitaloceanKubernetesVersions)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -371,7 +380,7 @@ func (j *jsiiProxy_DataDigitaloceanKubernetesVersions) SetLifecycle(val *cdktf.T
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanKubernetesVersions) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataDigitaloceanKubernetesVersions)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -379,7 +388,10 @@ func (j *jsiiProxy_DataDigitaloceanKubernetesVersions) SetProvider(val cdktf.Ter
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanKubernetesVersions) SetVersionPrefix(val *string) {
+func (j *jsiiProxy_DataDigitaloceanKubernetesVersions)SetVersionPrefix(val *string) {
+	if err := j.validateSetVersionPrefixParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"versionPrefix",
@@ -407,6 +419,9 @@ func (j *jsiiProxy_DataDigitaloceanKubernetesVersions) SetVersionPrefix(val *str
 func DataDigitaloceanKubernetesVersions_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDataDigitaloceanKubernetesVersions_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -431,6 +446,9 @@ func DataDigitaloceanKubernetesVersions_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DataDigitaloceanKubernetesVersions) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -439,6 +457,9 @@ func (d *jsiiProxy_DataDigitaloceanKubernetesVersions) AddOverride(path *string,
 }
 
 func (d *jsiiProxy_DataDigitaloceanKubernetesVersions) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -452,6 +473,9 @@ func (d *jsiiProxy_DataDigitaloceanKubernetesVersions) GetAnyMapAttribute(terraf
 }
 
 func (d *jsiiProxy_DataDigitaloceanKubernetesVersions) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -465,6 +489,9 @@ func (d *jsiiProxy_DataDigitaloceanKubernetesVersions) GetBooleanAttribute(terra
 }
 
 func (d *jsiiProxy_DataDigitaloceanKubernetesVersions) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -478,6 +505,9 @@ func (d *jsiiProxy_DataDigitaloceanKubernetesVersions) GetBooleanMapAttribute(te
 }
 
 func (d *jsiiProxy_DataDigitaloceanKubernetesVersions) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -491,6 +521,9 @@ func (d *jsiiProxy_DataDigitaloceanKubernetesVersions) GetListAttribute(terrafor
 }
 
 func (d *jsiiProxy_DataDigitaloceanKubernetesVersions) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -504,6 +537,9 @@ func (d *jsiiProxy_DataDigitaloceanKubernetesVersions) GetNumberAttribute(terraf
 }
 
 func (d *jsiiProxy_DataDigitaloceanKubernetesVersions) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -517,6 +553,9 @@ func (d *jsiiProxy_DataDigitaloceanKubernetesVersions) GetNumberListAttribute(te
 }
 
 func (d *jsiiProxy_DataDigitaloceanKubernetesVersions) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -530,6 +569,9 @@ func (d *jsiiProxy_DataDigitaloceanKubernetesVersions) GetNumberMapAttribute(ter
 }
 
 func (d *jsiiProxy_DataDigitaloceanKubernetesVersions) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -543,6 +585,9 @@ func (d *jsiiProxy_DataDigitaloceanKubernetesVersions) GetStringAttribute(terraf
 }
 
 func (d *jsiiProxy_DataDigitaloceanKubernetesVersions) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -556,6 +601,9 @@ func (d *jsiiProxy_DataDigitaloceanKubernetesVersions) GetStringMapAttribute(ter
 }
 
 func (d *jsiiProxy_DataDigitaloceanKubernetesVersions) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -569,6 +617,9 @@ func (d *jsiiProxy_DataDigitaloceanKubernetesVersions) InterpolationForAttribute
 }
 
 func (d *jsiiProxy_DataDigitaloceanKubernetesVersions) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",

@@ -210,6 +210,9 @@ func (j *jsiiProxy_KubernetesClusterMaintenancePolicyOutputReference) TerraformR
 func NewKubernetesClusterMaintenancePolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) KubernetesClusterMaintenancePolicyOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewKubernetesClusterMaintenancePolicyOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_KubernetesClusterMaintenancePolicyOutputReference{}
 
 	_jsii_.Create(
@@ -231,7 +234,10 @@ func NewKubernetesClusterMaintenancePolicyOutputReference_Override(k KubernetesC
 	)
 }
 
-func (j *jsiiProxy_KubernetesClusterMaintenancePolicyOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_KubernetesClusterMaintenancePolicyOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -239,7 +245,10 @@ func (j *jsiiProxy_KubernetesClusterMaintenancePolicyOutputReference) SetComplex
 	)
 }
 
-func (j *jsiiProxy_KubernetesClusterMaintenancePolicyOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_KubernetesClusterMaintenancePolicyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -247,7 +256,10 @@ func (j *jsiiProxy_KubernetesClusterMaintenancePolicyOutputReference) SetComplex
 	)
 }
 
-func (j *jsiiProxy_KubernetesClusterMaintenancePolicyOutputReference) SetDay(val *string) {
+func (j *jsiiProxy_KubernetesClusterMaintenancePolicyOutputReference)SetDay(val *string) {
+	if err := j.validateSetDayParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"day",
@@ -255,7 +267,10 @@ func (j *jsiiProxy_KubernetesClusterMaintenancePolicyOutputReference) SetDay(val
 	)
 }
 
-func (j *jsiiProxy_KubernetesClusterMaintenancePolicyOutputReference) SetInternalValue(val *KubernetesClusterMaintenancePolicy) {
+func (j *jsiiProxy_KubernetesClusterMaintenancePolicyOutputReference)SetInternalValue(val *KubernetesClusterMaintenancePolicy) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -263,7 +278,10 @@ func (j *jsiiProxy_KubernetesClusterMaintenancePolicyOutputReference) SetInterna
 	)
 }
 
-func (j *jsiiProxy_KubernetesClusterMaintenancePolicyOutputReference) SetStartTime(val *string) {
+func (j *jsiiProxy_KubernetesClusterMaintenancePolicyOutputReference)SetStartTime(val *string) {
+	if err := j.validateSetStartTimeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"startTime",
@@ -271,7 +289,10 @@ func (j *jsiiProxy_KubernetesClusterMaintenancePolicyOutputReference) SetStartTi
 	)
 }
 
-func (j *jsiiProxy_KubernetesClusterMaintenancePolicyOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_KubernetesClusterMaintenancePolicyOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -279,7 +300,10 @@ func (j *jsiiProxy_KubernetesClusterMaintenancePolicyOutputReference) SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_KubernetesClusterMaintenancePolicyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_KubernetesClusterMaintenancePolicyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -301,6 +325,9 @@ func (k *jsiiProxy_KubernetesClusterMaintenancePolicyOutputReference) ComputeFqn
 }
 
 func (k *jsiiProxy_KubernetesClusterMaintenancePolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := k.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -314,6 +341,9 @@ func (k *jsiiProxy_KubernetesClusterMaintenancePolicyOutputReference) GetAnyMapA
 }
 
 func (k *jsiiProxy_KubernetesClusterMaintenancePolicyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := k.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -327,6 +357,9 @@ func (k *jsiiProxy_KubernetesClusterMaintenancePolicyOutputReference) GetBoolean
 }
 
 func (k *jsiiProxy_KubernetesClusterMaintenancePolicyOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := k.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -340,6 +373,9 @@ func (k *jsiiProxy_KubernetesClusterMaintenancePolicyOutputReference) GetBoolean
 }
 
 func (k *jsiiProxy_KubernetesClusterMaintenancePolicyOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := k.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -353,6 +389,9 @@ func (k *jsiiProxy_KubernetesClusterMaintenancePolicyOutputReference) GetListAtt
 }
 
 func (k *jsiiProxy_KubernetesClusterMaintenancePolicyOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := k.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -366,6 +405,9 @@ func (k *jsiiProxy_KubernetesClusterMaintenancePolicyOutputReference) GetNumberA
 }
 
 func (k *jsiiProxy_KubernetesClusterMaintenancePolicyOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := k.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -379,6 +421,9 @@ func (k *jsiiProxy_KubernetesClusterMaintenancePolicyOutputReference) GetNumberL
 }
 
 func (k *jsiiProxy_KubernetesClusterMaintenancePolicyOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := k.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -392,6 +437,9 @@ func (k *jsiiProxy_KubernetesClusterMaintenancePolicyOutputReference) GetNumberM
 }
 
 func (k *jsiiProxy_KubernetesClusterMaintenancePolicyOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := k.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -405,6 +453,9 @@ func (k *jsiiProxy_KubernetesClusterMaintenancePolicyOutputReference) GetStringA
 }
 
 func (k *jsiiProxy_KubernetesClusterMaintenancePolicyOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := k.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -431,6 +482,9 @@ func (k *jsiiProxy_KubernetesClusterMaintenancePolicyOutputReference) Interpolat
 }
 
 func (k *jsiiProxy_KubernetesClusterMaintenancePolicyOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := k.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -460,6 +514,9 @@ func (k *jsiiProxy_KubernetesClusterMaintenancePolicyOutputReference) ResetStart
 }
 
 func (k *jsiiProxy_KubernetesClusterMaintenancePolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := k.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

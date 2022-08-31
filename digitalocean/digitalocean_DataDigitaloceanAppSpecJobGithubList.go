@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataDigitaloceanAppSpecJobGithubList) WrapsSet() *bool {
 func NewDataDigitaloceanAppSpecJobGithubList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecJobGithubList {
 	_init_.Initialize()
 
+	if err := validateNewDataDigitaloceanAppSpecJobGithubListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataDigitaloceanAppSpecJobGithubList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataDigitaloceanAppSpecJobGithubList_Override(d DataDigitaloceanAppSpecJ
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanAppSpecJobGithubList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataDigitaloceanAppSpecJobGithubList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataDigitaloceanAppSpecJobGithubList) SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanAppSpecJobGithubList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDigitaloceanAppSpecJobGithubList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataDigitaloceanAppSpecJobGithubList) SetTerraformResource(va
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanAppSpecJobGithubList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataDigitaloceanAppSpecJobGithubList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataDigitaloceanAppSpecJobGithubList) ComputeFqn() *string {
 }
 
 func (d *jsiiProxy_DataDigitaloceanAppSpecJobGithubList) Get(index *float64) DataDigitaloceanAppSpecJobGithubOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataDigitaloceanAppSpecJobGithubOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataDigitaloceanAppSpecJobGithubList) Get(index *float64) Dat
 }
 
 func (d *jsiiProxy_DataDigitaloceanAppSpecJobGithubList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

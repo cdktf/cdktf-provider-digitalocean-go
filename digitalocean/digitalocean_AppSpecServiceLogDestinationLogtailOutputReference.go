@@ -174,6 +174,9 @@ func (j *jsiiProxy_AppSpecServiceLogDestinationLogtailOutputReference) TokenInpu
 func NewAppSpecServiceLogDestinationLogtailOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AppSpecServiceLogDestinationLogtailOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewAppSpecServiceLogDestinationLogtailOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AppSpecServiceLogDestinationLogtailOutputReference{}
 
 	_jsii_.Create(
@@ -195,7 +198,10 @@ func NewAppSpecServiceLogDestinationLogtailOutputReference_Override(a AppSpecSer
 	)
 }
 
-func (j *jsiiProxy_AppSpecServiceLogDestinationLogtailOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AppSpecServiceLogDestinationLogtailOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -203,7 +209,10 @@ func (j *jsiiProxy_AppSpecServiceLogDestinationLogtailOutputReference) SetComple
 	)
 }
 
-func (j *jsiiProxy_AppSpecServiceLogDestinationLogtailOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AppSpecServiceLogDestinationLogtailOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -211,7 +220,10 @@ func (j *jsiiProxy_AppSpecServiceLogDestinationLogtailOutputReference) SetComple
 	)
 }
 
-func (j *jsiiProxy_AppSpecServiceLogDestinationLogtailOutputReference) SetInternalValue(val *AppSpecServiceLogDestinationLogtail) {
+func (j *jsiiProxy_AppSpecServiceLogDestinationLogtailOutputReference)SetInternalValue(val *AppSpecServiceLogDestinationLogtail) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -219,7 +231,10 @@ func (j *jsiiProxy_AppSpecServiceLogDestinationLogtailOutputReference) SetIntern
 	)
 }
 
-func (j *jsiiProxy_AppSpecServiceLogDestinationLogtailOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AppSpecServiceLogDestinationLogtailOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -227,7 +242,10 @@ func (j *jsiiProxy_AppSpecServiceLogDestinationLogtailOutputReference) SetTerraf
 	)
 }
 
-func (j *jsiiProxy_AppSpecServiceLogDestinationLogtailOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppSpecServiceLogDestinationLogtailOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -235,7 +253,10 @@ func (j *jsiiProxy_AppSpecServiceLogDestinationLogtailOutputReference) SetTerraf
 	)
 }
 
-func (j *jsiiProxy_AppSpecServiceLogDestinationLogtailOutputReference) SetToken(val *string) {
+func (j *jsiiProxy_AppSpecServiceLogDestinationLogtailOutputReference)SetToken(val *string) {
+	if err := j.validateSetTokenParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"token",
@@ -257,6 +278,9 @@ func (a *jsiiProxy_AppSpecServiceLogDestinationLogtailOutputReference) ComputeFq
 }
 
 func (a *jsiiProxy_AppSpecServiceLogDestinationLogtailOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -270,6 +294,9 @@ func (a *jsiiProxy_AppSpecServiceLogDestinationLogtailOutputReference) GetAnyMap
 }
 
 func (a *jsiiProxy_AppSpecServiceLogDestinationLogtailOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -283,6 +310,9 @@ func (a *jsiiProxy_AppSpecServiceLogDestinationLogtailOutputReference) GetBoolea
 }
 
 func (a *jsiiProxy_AppSpecServiceLogDestinationLogtailOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -296,6 +326,9 @@ func (a *jsiiProxy_AppSpecServiceLogDestinationLogtailOutputReference) GetBoolea
 }
 
 func (a *jsiiProxy_AppSpecServiceLogDestinationLogtailOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -309,6 +342,9 @@ func (a *jsiiProxy_AppSpecServiceLogDestinationLogtailOutputReference) GetListAt
 }
 
 func (a *jsiiProxy_AppSpecServiceLogDestinationLogtailOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -322,6 +358,9 @@ func (a *jsiiProxy_AppSpecServiceLogDestinationLogtailOutputReference) GetNumber
 }
 
 func (a *jsiiProxy_AppSpecServiceLogDestinationLogtailOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -335,6 +374,9 @@ func (a *jsiiProxy_AppSpecServiceLogDestinationLogtailOutputReference) GetNumber
 }
 
 func (a *jsiiProxy_AppSpecServiceLogDestinationLogtailOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -348,6 +390,9 @@ func (a *jsiiProxy_AppSpecServiceLogDestinationLogtailOutputReference) GetNumber
 }
 
 func (a *jsiiProxy_AppSpecServiceLogDestinationLogtailOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -361,6 +406,9 @@ func (a *jsiiProxy_AppSpecServiceLogDestinationLogtailOutputReference) GetString
 }
 
 func (a *jsiiProxy_AppSpecServiceLogDestinationLogtailOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -387,6 +435,9 @@ func (a *jsiiProxy_AppSpecServiceLogDestinationLogtailOutputReference) Interpola
 }
 
 func (a *jsiiProxy_AppSpecServiceLogDestinationLogtailOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -400,6 +451,9 @@ func (a *jsiiProxy_AppSpecServiceLogDestinationLogtailOutputReference) Interpola
 }
 
 func (a *jsiiProxy_AppSpecServiceLogDestinationLogtailOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

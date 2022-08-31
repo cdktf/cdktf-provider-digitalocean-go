@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataDigitaloceanAppSpecJobAlertList) WrapsSet() *bool {
 func NewDataDigitaloceanAppSpecJobAlertList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecJobAlertList {
 	_init_.Initialize()
 
+	if err := validateNewDataDigitaloceanAppSpecJobAlertListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataDigitaloceanAppSpecJobAlertList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataDigitaloceanAppSpecJobAlertList_Override(d DataDigitaloceanAppSpecJo
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanAppSpecJobAlertList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataDigitaloceanAppSpecJobAlertList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataDigitaloceanAppSpecJobAlertList) SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanAppSpecJobAlertList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDigitaloceanAppSpecJobAlertList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataDigitaloceanAppSpecJobAlertList) SetTerraformResource(val
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanAppSpecJobAlertList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataDigitaloceanAppSpecJobAlertList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataDigitaloceanAppSpecJobAlertList) ComputeFqn() *string {
 }
 
 func (d *jsiiProxy_DataDigitaloceanAppSpecJobAlertList) Get(index *float64) DataDigitaloceanAppSpecJobAlertOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataDigitaloceanAppSpecJobAlertOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataDigitaloceanAppSpecJobAlertList) Get(index *float64) Data
 }
 
 func (d *jsiiProxy_DataDigitaloceanAppSpecJobAlertList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

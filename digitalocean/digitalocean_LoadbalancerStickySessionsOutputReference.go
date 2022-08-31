@@ -223,6 +223,9 @@ func (j *jsiiProxy_LoadbalancerStickySessionsOutputReference) TypeInput() *strin
 func NewLoadbalancerStickySessionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LoadbalancerStickySessionsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewLoadbalancerStickySessionsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_LoadbalancerStickySessionsOutputReference{}
 
 	_jsii_.Create(
@@ -244,7 +247,10 @@ func NewLoadbalancerStickySessionsOutputReference_Override(l LoadbalancerStickyS
 	)
 }
 
-func (j *jsiiProxy_LoadbalancerStickySessionsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LoadbalancerStickySessionsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -252,7 +258,10 @@ func (j *jsiiProxy_LoadbalancerStickySessionsOutputReference) SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_LoadbalancerStickySessionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LoadbalancerStickySessionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -260,7 +269,10 @@ func (j *jsiiProxy_LoadbalancerStickySessionsOutputReference) SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_LoadbalancerStickySessionsOutputReference) SetCookieName(val *string) {
+func (j *jsiiProxy_LoadbalancerStickySessionsOutputReference)SetCookieName(val *string) {
+	if err := j.validateSetCookieNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"cookieName",
@@ -268,7 +280,10 @@ func (j *jsiiProxy_LoadbalancerStickySessionsOutputReference) SetCookieName(val 
 	)
 }
 
-func (j *jsiiProxy_LoadbalancerStickySessionsOutputReference) SetCookieTtlSeconds(val *float64) {
+func (j *jsiiProxy_LoadbalancerStickySessionsOutputReference)SetCookieTtlSeconds(val *float64) {
+	if err := j.validateSetCookieTtlSecondsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"cookieTtlSeconds",
@@ -276,7 +291,10 @@ func (j *jsiiProxy_LoadbalancerStickySessionsOutputReference) SetCookieTtlSecond
 	)
 }
 
-func (j *jsiiProxy_LoadbalancerStickySessionsOutputReference) SetInternalValue(val *LoadbalancerStickySessions) {
+func (j *jsiiProxy_LoadbalancerStickySessionsOutputReference)SetInternalValue(val *LoadbalancerStickySessions) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -284,7 +302,10 @@ func (j *jsiiProxy_LoadbalancerStickySessionsOutputReference) SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_LoadbalancerStickySessionsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LoadbalancerStickySessionsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -292,7 +313,10 @@ func (j *jsiiProxy_LoadbalancerStickySessionsOutputReference) SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_LoadbalancerStickySessionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LoadbalancerStickySessionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -300,7 +324,10 @@ func (j *jsiiProxy_LoadbalancerStickySessionsOutputReference) SetTerraformResour
 	)
 }
 
-func (j *jsiiProxy_LoadbalancerStickySessionsOutputReference) SetType(val *string) {
+func (j *jsiiProxy_LoadbalancerStickySessionsOutputReference)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"type",
@@ -322,6 +349,9 @@ func (l *jsiiProxy_LoadbalancerStickySessionsOutputReference) ComputeFqn() *stri
 }
 
 func (l *jsiiProxy_LoadbalancerStickySessionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -335,6 +365,9 @@ func (l *jsiiProxy_LoadbalancerStickySessionsOutputReference) GetAnyMapAttribute
 }
 
 func (l *jsiiProxy_LoadbalancerStickySessionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -348,6 +381,9 @@ func (l *jsiiProxy_LoadbalancerStickySessionsOutputReference) GetBooleanAttribut
 }
 
 func (l *jsiiProxy_LoadbalancerStickySessionsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := l.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -361,6 +397,9 @@ func (l *jsiiProxy_LoadbalancerStickySessionsOutputReference) GetBooleanMapAttri
 }
 
 func (l *jsiiProxy_LoadbalancerStickySessionsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := l.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -374,6 +413,9 @@ func (l *jsiiProxy_LoadbalancerStickySessionsOutputReference) GetListAttribute(t
 }
 
 func (l *jsiiProxy_LoadbalancerStickySessionsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := l.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -387,6 +429,9 @@ func (l *jsiiProxy_LoadbalancerStickySessionsOutputReference) GetNumberAttribute
 }
 
 func (l *jsiiProxy_LoadbalancerStickySessionsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := l.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -400,6 +445,9 @@ func (l *jsiiProxy_LoadbalancerStickySessionsOutputReference) GetNumberListAttri
 }
 
 func (l *jsiiProxy_LoadbalancerStickySessionsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := l.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -413,6 +461,9 @@ func (l *jsiiProxy_LoadbalancerStickySessionsOutputReference) GetNumberMapAttrib
 }
 
 func (l *jsiiProxy_LoadbalancerStickySessionsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := l.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -426,6 +477,9 @@ func (l *jsiiProxy_LoadbalancerStickySessionsOutputReference) GetStringAttribute
 }
 
 func (l *jsiiProxy_LoadbalancerStickySessionsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := l.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -452,6 +506,9 @@ func (l *jsiiProxy_LoadbalancerStickySessionsOutputReference) InterpolationAsLis
 }
 
 func (l *jsiiProxy_LoadbalancerStickySessionsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -489,6 +546,9 @@ func (l *jsiiProxy_LoadbalancerStickySessionsOutputReference) ResetType() {
 }
 
 func (l *jsiiProxy_LoadbalancerStickySessionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

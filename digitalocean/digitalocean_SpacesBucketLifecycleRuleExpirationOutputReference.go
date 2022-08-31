@@ -223,6 +223,9 @@ func (j *jsiiProxy_SpacesBucketLifecycleRuleExpirationOutputReference) Terraform
 func NewSpacesBucketLifecycleRuleExpirationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SpacesBucketLifecycleRuleExpirationOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewSpacesBucketLifecycleRuleExpirationOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SpacesBucketLifecycleRuleExpirationOutputReference{}
 
 	_jsii_.Create(
@@ -244,7 +247,10 @@ func NewSpacesBucketLifecycleRuleExpirationOutputReference_Override(s SpacesBuck
 	)
 }
 
-func (j *jsiiProxy_SpacesBucketLifecycleRuleExpirationOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SpacesBucketLifecycleRuleExpirationOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -252,7 +258,10 @@ func (j *jsiiProxy_SpacesBucketLifecycleRuleExpirationOutputReference) SetComple
 	)
 }
 
-func (j *jsiiProxy_SpacesBucketLifecycleRuleExpirationOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SpacesBucketLifecycleRuleExpirationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -260,7 +269,10 @@ func (j *jsiiProxy_SpacesBucketLifecycleRuleExpirationOutputReference) SetComple
 	)
 }
 
-func (j *jsiiProxy_SpacesBucketLifecycleRuleExpirationOutputReference) SetDate(val *string) {
+func (j *jsiiProxy_SpacesBucketLifecycleRuleExpirationOutputReference)SetDate(val *string) {
+	if err := j.validateSetDateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"date",
@@ -268,7 +280,10 @@ func (j *jsiiProxy_SpacesBucketLifecycleRuleExpirationOutputReference) SetDate(v
 	)
 }
 
-func (j *jsiiProxy_SpacesBucketLifecycleRuleExpirationOutputReference) SetDays(val *float64) {
+func (j *jsiiProxy_SpacesBucketLifecycleRuleExpirationOutputReference)SetDays(val *float64) {
+	if err := j.validateSetDaysParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"days",
@@ -276,7 +291,10 @@ func (j *jsiiProxy_SpacesBucketLifecycleRuleExpirationOutputReference) SetDays(v
 	)
 }
 
-func (j *jsiiProxy_SpacesBucketLifecycleRuleExpirationOutputReference) SetExpiredObjectDeleteMarker(val interface{}) {
+func (j *jsiiProxy_SpacesBucketLifecycleRuleExpirationOutputReference)SetExpiredObjectDeleteMarker(val interface{}) {
+	if err := j.validateSetExpiredObjectDeleteMarkerParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"expiredObjectDeleteMarker",
@@ -284,7 +302,10 @@ func (j *jsiiProxy_SpacesBucketLifecycleRuleExpirationOutputReference) SetExpire
 	)
 }
 
-func (j *jsiiProxy_SpacesBucketLifecycleRuleExpirationOutputReference) SetInternalValue(val *SpacesBucketLifecycleRuleExpiration) {
+func (j *jsiiProxy_SpacesBucketLifecycleRuleExpirationOutputReference)SetInternalValue(val *SpacesBucketLifecycleRuleExpiration) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -292,7 +313,10 @@ func (j *jsiiProxy_SpacesBucketLifecycleRuleExpirationOutputReference) SetIntern
 	)
 }
 
-func (j *jsiiProxy_SpacesBucketLifecycleRuleExpirationOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SpacesBucketLifecycleRuleExpirationOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -300,7 +324,10 @@ func (j *jsiiProxy_SpacesBucketLifecycleRuleExpirationOutputReference) SetTerraf
 	)
 }
 
-func (j *jsiiProxy_SpacesBucketLifecycleRuleExpirationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SpacesBucketLifecycleRuleExpirationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -322,6 +349,9 @@ func (s *jsiiProxy_SpacesBucketLifecycleRuleExpirationOutputReference) ComputeFq
 }
 
 func (s *jsiiProxy_SpacesBucketLifecycleRuleExpirationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -335,6 +365,9 @@ func (s *jsiiProxy_SpacesBucketLifecycleRuleExpirationOutputReference) GetAnyMap
 }
 
 func (s *jsiiProxy_SpacesBucketLifecycleRuleExpirationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -348,6 +381,9 @@ func (s *jsiiProxy_SpacesBucketLifecycleRuleExpirationOutputReference) GetBoolea
 }
 
 func (s *jsiiProxy_SpacesBucketLifecycleRuleExpirationOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -361,6 +397,9 @@ func (s *jsiiProxy_SpacesBucketLifecycleRuleExpirationOutputReference) GetBoolea
 }
 
 func (s *jsiiProxy_SpacesBucketLifecycleRuleExpirationOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -374,6 +413,9 @@ func (s *jsiiProxy_SpacesBucketLifecycleRuleExpirationOutputReference) GetListAt
 }
 
 func (s *jsiiProxy_SpacesBucketLifecycleRuleExpirationOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -387,6 +429,9 @@ func (s *jsiiProxy_SpacesBucketLifecycleRuleExpirationOutputReference) GetNumber
 }
 
 func (s *jsiiProxy_SpacesBucketLifecycleRuleExpirationOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -400,6 +445,9 @@ func (s *jsiiProxy_SpacesBucketLifecycleRuleExpirationOutputReference) GetNumber
 }
 
 func (s *jsiiProxy_SpacesBucketLifecycleRuleExpirationOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -413,6 +461,9 @@ func (s *jsiiProxy_SpacesBucketLifecycleRuleExpirationOutputReference) GetNumber
 }
 
 func (s *jsiiProxy_SpacesBucketLifecycleRuleExpirationOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -426,6 +477,9 @@ func (s *jsiiProxy_SpacesBucketLifecycleRuleExpirationOutputReference) GetString
 }
 
 func (s *jsiiProxy_SpacesBucketLifecycleRuleExpirationOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -452,6 +506,9 @@ func (s *jsiiProxy_SpacesBucketLifecycleRuleExpirationOutputReference) Interpola
 }
 
 func (s *jsiiProxy_SpacesBucketLifecycleRuleExpirationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -489,6 +546,9 @@ func (s *jsiiProxy_SpacesBucketLifecycleRuleExpirationOutputReference) ResetExpi
 }
 
 func (s *jsiiProxy_SpacesBucketLifecycleRuleExpirationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

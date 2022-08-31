@@ -111,6 +111,9 @@ func (j *jsiiProxy_DataDigitaloceanRegionsFilterList) WrapsSet() *bool {
 func NewDataDigitaloceanRegionsFilterList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanRegionsFilterList {
 	_init_.Initialize()
 
+	if err := validateNewDataDigitaloceanRegionsFilterListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataDigitaloceanRegionsFilterList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewDataDigitaloceanRegionsFilterList_Override(d DataDigitaloceanRegionsFilt
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanRegionsFilterList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataDigitaloceanRegionsFilterList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_DataDigitaloceanRegionsFilterList) SetInternalValue(val inter
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanRegionsFilterList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataDigitaloceanRegionsFilterList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_DataDigitaloceanRegionsFilterList) SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanRegionsFilterList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDigitaloceanRegionsFilterList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_DataDigitaloceanRegionsFilterList) SetTerraformResource(val c
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanRegionsFilterList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataDigitaloceanRegionsFilterList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (d *jsiiProxy_DataDigitaloceanRegionsFilterList) ComputeFqn() *string {
 }
 
 func (d *jsiiProxy_DataDigitaloceanRegionsFilterList) Get(index *float64) DataDigitaloceanRegionsFilterOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataDigitaloceanRegionsFilterOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (d *jsiiProxy_DataDigitaloceanRegionsFilterList) Get(index *float64) DataDi
 }
 
 func (d *jsiiProxy_DataDigitaloceanRegionsFilterList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

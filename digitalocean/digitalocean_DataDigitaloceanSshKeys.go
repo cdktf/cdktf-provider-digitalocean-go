@@ -322,6 +322,9 @@ func (j *jsiiProxy_DataDigitaloceanSshKeys) TerraformResourceType() *string {
 func NewDataDigitaloceanSshKeys(scope constructs.Construct, id *string, config *DataDigitaloceanSshKeysConfig) DataDigitaloceanSshKeys {
 	_init_.Initialize()
 
+	if err := validateNewDataDigitaloceanSshKeysParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataDigitaloceanSshKeys{}
 
 	_jsii_.Create(
@@ -344,7 +347,7 @@ func NewDataDigitaloceanSshKeys_Override(d DataDigitaloceanSshKeys, scope constr
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanSshKeys) SetCount(val *float64) {
+func (j *jsiiProxy_DataDigitaloceanSshKeys)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -352,7 +355,7 @@ func (j *jsiiProxy_DataDigitaloceanSshKeys) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanSshKeys) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataDigitaloceanSshKeys)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -360,7 +363,7 @@ func (j *jsiiProxy_DataDigitaloceanSshKeys) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanSshKeys) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataDigitaloceanSshKeys)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -368,7 +371,10 @@ func (j *jsiiProxy_DataDigitaloceanSshKeys) SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanSshKeys) SetId(val *string) {
+func (j *jsiiProxy_DataDigitaloceanSshKeys)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -376,7 +382,10 @@ func (j *jsiiProxy_DataDigitaloceanSshKeys) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanSshKeys) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataDigitaloceanSshKeys)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -384,7 +393,7 @@ func (j *jsiiProxy_DataDigitaloceanSshKeys) SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanSshKeys) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataDigitaloceanSshKeys)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -412,6 +421,9 @@ func (j *jsiiProxy_DataDigitaloceanSshKeys) SetProvider(val cdktf.TerraformProvi
 func DataDigitaloceanSshKeys_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDataDigitaloceanSshKeys_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -436,6 +448,9 @@ func DataDigitaloceanSshKeys_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DataDigitaloceanSshKeys) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -444,6 +459,9 @@ func (d *jsiiProxy_DataDigitaloceanSshKeys) AddOverride(path *string, value inte
 }
 
 func (d *jsiiProxy_DataDigitaloceanSshKeys) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -457,6 +475,9 @@ func (d *jsiiProxy_DataDigitaloceanSshKeys) GetAnyMapAttribute(terraformAttribut
 }
 
 func (d *jsiiProxy_DataDigitaloceanSshKeys) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -470,6 +491,9 @@ func (d *jsiiProxy_DataDigitaloceanSshKeys) GetBooleanAttribute(terraformAttribu
 }
 
 func (d *jsiiProxy_DataDigitaloceanSshKeys) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -483,6 +507,9 @@ func (d *jsiiProxy_DataDigitaloceanSshKeys) GetBooleanMapAttribute(terraformAttr
 }
 
 func (d *jsiiProxy_DataDigitaloceanSshKeys) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -496,6 +523,9 @@ func (d *jsiiProxy_DataDigitaloceanSshKeys) GetListAttribute(terraformAttribute 
 }
 
 func (d *jsiiProxy_DataDigitaloceanSshKeys) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -509,6 +539,9 @@ func (d *jsiiProxy_DataDigitaloceanSshKeys) GetNumberAttribute(terraformAttribut
 }
 
 func (d *jsiiProxy_DataDigitaloceanSshKeys) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -522,6 +555,9 @@ func (d *jsiiProxy_DataDigitaloceanSshKeys) GetNumberListAttribute(terraformAttr
 }
 
 func (d *jsiiProxy_DataDigitaloceanSshKeys) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -535,6 +571,9 @@ func (d *jsiiProxy_DataDigitaloceanSshKeys) GetNumberMapAttribute(terraformAttri
 }
 
 func (d *jsiiProxy_DataDigitaloceanSshKeys) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -548,6 +587,9 @@ func (d *jsiiProxy_DataDigitaloceanSshKeys) GetStringAttribute(terraformAttribut
 }
 
 func (d *jsiiProxy_DataDigitaloceanSshKeys) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -561,6 +603,9 @@ func (d *jsiiProxy_DataDigitaloceanSshKeys) GetStringMapAttribute(terraformAttri
 }
 
 func (d *jsiiProxy_DataDigitaloceanSshKeys) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -574,6 +619,9 @@ func (d *jsiiProxy_DataDigitaloceanSshKeys) InterpolationForAttribute(terraformA
 }
 
 func (d *jsiiProxy_DataDigitaloceanSshKeys) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
@@ -582,6 +630,9 @@ func (d *jsiiProxy_DataDigitaloceanSshKeys) OverrideLogicalId(newLogicalId *stri
 }
 
 func (d *jsiiProxy_DataDigitaloceanSshKeys) PutFilter(value interface{}) {
+	if err := d.validatePutFilterParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putFilter",
@@ -590,6 +641,9 @@ func (d *jsiiProxy_DataDigitaloceanSshKeys) PutFilter(value interface{}) {
 }
 
 func (d *jsiiProxy_DataDigitaloceanSshKeys) PutSort(value interface{}) {
+	if err := d.validatePutSortParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putSort",

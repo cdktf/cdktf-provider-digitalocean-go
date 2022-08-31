@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataDigitaloceanAppSpecServiceLogDestinationPapertrailList) W
 func NewDataDigitaloceanAppSpecServiceLogDestinationPapertrailList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecServiceLogDestinationPapertrailList {
 	_init_.Initialize()
 
+	if err := validateNewDataDigitaloceanAppSpecServiceLogDestinationPapertrailListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataDigitaloceanAppSpecServiceLogDestinationPapertrailList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataDigitaloceanAppSpecServiceLogDestinationPapertrailList_Override(d Da
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanAppSpecServiceLogDestinationPapertrailList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataDigitaloceanAppSpecServiceLogDestinationPapertrailList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataDigitaloceanAppSpecServiceLogDestinationPapertrailList) S
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanAppSpecServiceLogDestinationPapertrailList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDigitaloceanAppSpecServiceLogDestinationPapertrailList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataDigitaloceanAppSpecServiceLogDestinationPapertrailList) S
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanAppSpecServiceLogDestinationPapertrailList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataDigitaloceanAppSpecServiceLogDestinationPapertrailList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataDigitaloceanAppSpecServiceLogDestinationPapertrailList) C
 }
 
 func (d *jsiiProxy_DataDigitaloceanAppSpecServiceLogDestinationPapertrailList) Get(index *float64) DataDigitaloceanAppSpecServiceLogDestinationPapertrailOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataDigitaloceanAppSpecServiceLogDestinationPapertrailOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataDigitaloceanAppSpecServiceLogDestinationPapertrailList) G
 }
 
 func (d *jsiiProxy_DataDigitaloceanAppSpecServiceLogDestinationPapertrailList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

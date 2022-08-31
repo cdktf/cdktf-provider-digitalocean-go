@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataDigitaloceanLoadbalancerStickySessionsList) WrapsSet() *b
 func NewDataDigitaloceanLoadbalancerStickySessionsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanLoadbalancerStickySessionsList {
 	_init_.Initialize()
 
+	if err := validateNewDataDigitaloceanLoadbalancerStickySessionsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataDigitaloceanLoadbalancerStickySessionsList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataDigitaloceanLoadbalancerStickySessionsList_Override(d DataDigitaloce
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanLoadbalancerStickySessionsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataDigitaloceanLoadbalancerStickySessionsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataDigitaloceanLoadbalancerStickySessionsList) SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanLoadbalancerStickySessionsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDigitaloceanLoadbalancerStickySessionsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataDigitaloceanLoadbalancerStickySessionsList) SetTerraformR
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanLoadbalancerStickySessionsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataDigitaloceanLoadbalancerStickySessionsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataDigitaloceanLoadbalancerStickySessionsList) ComputeFqn() 
 }
 
 func (d *jsiiProxy_DataDigitaloceanLoadbalancerStickySessionsList) Get(index *float64) DataDigitaloceanLoadbalancerStickySessionsOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataDigitaloceanLoadbalancerStickySessionsOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataDigitaloceanLoadbalancerStickySessionsList) Get(index *fl
 }
 
 func (d *jsiiProxy_DataDigitaloceanLoadbalancerStickySessionsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

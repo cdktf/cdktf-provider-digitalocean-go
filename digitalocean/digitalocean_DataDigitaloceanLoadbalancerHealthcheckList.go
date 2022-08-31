@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataDigitaloceanLoadbalancerHealthcheckList) WrapsSet() *bool
 func NewDataDigitaloceanLoadbalancerHealthcheckList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanLoadbalancerHealthcheckList {
 	_init_.Initialize()
 
+	if err := validateNewDataDigitaloceanLoadbalancerHealthcheckListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataDigitaloceanLoadbalancerHealthcheckList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataDigitaloceanLoadbalancerHealthcheckList_Override(d DataDigitaloceanL
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanLoadbalancerHealthcheckList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataDigitaloceanLoadbalancerHealthcheckList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataDigitaloceanLoadbalancerHealthcheckList) SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanLoadbalancerHealthcheckList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDigitaloceanLoadbalancerHealthcheckList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataDigitaloceanLoadbalancerHealthcheckList) SetTerraformReso
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanLoadbalancerHealthcheckList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataDigitaloceanLoadbalancerHealthcheckList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataDigitaloceanLoadbalancerHealthcheckList) ComputeFqn() *st
 }
 
 func (d *jsiiProxy_DataDigitaloceanLoadbalancerHealthcheckList) Get(index *float64) DataDigitaloceanLoadbalancerHealthcheckOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataDigitaloceanLoadbalancerHealthcheckOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataDigitaloceanLoadbalancerHealthcheckList) Get(index *float
 }
 
 func (d *jsiiProxy_DataDigitaloceanLoadbalancerHealthcheckList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

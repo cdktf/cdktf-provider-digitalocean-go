@@ -111,6 +111,9 @@ func (j *jsiiProxy_AppSpecFunctionLogDestinationList) WrapsSet() *bool {
 func NewAppSpecFunctionLogDestinationList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecFunctionLogDestinationList {
 	_init_.Initialize()
 
+	if err := validateNewAppSpecFunctionLogDestinationListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AppSpecFunctionLogDestinationList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewAppSpecFunctionLogDestinationList_Override(a AppSpecFunctionLogDestinati
 	)
 }
 
-func (j *jsiiProxy_AppSpecFunctionLogDestinationList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AppSpecFunctionLogDestinationList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_AppSpecFunctionLogDestinationList) SetInternalValue(val inter
 	)
 }
 
-func (j *jsiiProxy_AppSpecFunctionLogDestinationList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AppSpecFunctionLogDestinationList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_AppSpecFunctionLogDestinationList) SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_AppSpecFunctionLogDestinationList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppSpecFunctionLogDestinationList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_AppSpecFunctionLogDestinationList) SetTerraformResource(val c
 	)
 }
 
-func (j *jsiiProxy_AppSpecFunctionLogDestinationList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_AppSpecFunctionLogDestinationList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (a *jsiiProxy_AppSpecFunctionLogDestinationList) ComputeFqn() *string {
 }
 
 func (a *jsiiProxy_AppSpecFunctionLogDestinationList) Get(index *float64) AppSpecFunctionLogDestinationOutputReference {
+	if err := a.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns AppSpecFunctionLogDestinationOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (a *jsiiProxy_AppSpecFunctionLogDestinationList) Get(index *float64) AppSpe
 }
 
 func (a *jsiiProxy_AppSpecFunctionLogDestinationList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

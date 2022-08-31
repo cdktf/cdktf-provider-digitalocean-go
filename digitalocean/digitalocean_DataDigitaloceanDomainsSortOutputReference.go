@@ -198,6 +198,9 @@ func (j *jsiiProxy_DataDigitaloceanDomainsSortOutputReference) TerraformResource
 func NewDataDigitaloceanDomainsSortOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDigitaloceanDomainsSortOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDataDigitaloceanDomainsSortOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataDigitaloceanDomainsSortOutputReference{}
 
 	_jsii_.Create(
@@ -219,7 +222,10 @@ func NewDataDigitaloceanDomainsSortOutputReference_Override(d DataDigitaloceanDo
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanDomainsSortOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataDigitaloceanDomainsSortOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -227,7 +233,10 @@ func (j *jsiiProxy_DataDigitaloceanDomainsSortOutputReference) SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanDomainsSortOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataDigitaloceanDomainsSortOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -235,7 +244,10 @@ func (j *jsiiProxy_DataDigitaloceanDomainsSortOutputReference) SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanDomainsSortOutputReference) SetDirection(val *string) {
+func (j *jsiiProxy_DataDigitaloceanDomainsSortOutputReference)SetDirection(val *string) {
+	if err := j.validateSetDirectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"direction",
@@ -243,7 +255,10 @@ func (j *jsiiProxy_DataDigitaloceanDomainsSortOutputReference) SetDirection(val 
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanDomainsSortOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataDigitaloceanDomainsSortOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -251,7 +266,10 @@ func (j *jsiiProxy_DataDigitaloceanDomainsSortOutputReference) SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanDomainsSortOutputReference) SetKey(val *string) {
+func (j *jsiiProxy_DataDigitaloceanDomainsSortOutputReference)SetKey(val *string) {
+	if err := j.validateSetKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"key",
@@ -259,7 +277,10 @@ func (j *jsiiProxy_DataDigitaloceanDomainsSortOutputReference) SetKey(val *strin
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanDomainsSortOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataDigitaloceanDomainsSortOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -267,7 +288,10 @@ func (j *jsiiProxy_DataDigitaloceanDomainsSortOutputReference) SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanDomainsSortOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDigitaloceanDomainsSortOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -289,6 +313,9 @@ func (d *jsiiProxy_DataDigitaloceanDomainsSortOutputReference) ComputeFqn() *str
 }
 
 func (d *jsiiProxy_DataDigitaloceanDomainsSortOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -302,6 +329,9 @@ func (d *jsiiProxy_DataDigitaloceanDomainsSortOutputReference) GetAnyMapAttribut
 }
 
 func (d *jsiiProxy_DataDigitaloceanDomainsSortOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -315,6 +345,9 @@ func (d *jsiiProxy_DataDigitaloceanDomainsSortOutputReference) GetBooleanAttribu
 }
 
 func (d *jsiiProxy_DataDigitaloceanDomainsSortOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -328,6 +361,9 @@ func (d *jsiiProxy_DataDigitaloceanDomainsSortOutputReference) GetBooleanMapAttr
 }
 
 func (d *jsiiProxy_DataDigitaloceanDomainsSortOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -341,6 +377,9 @@ func (d *jsiiProxy_DataDigitaloceanDomainsSortOutputReference) GetListAttribute(
 }
 
 func (d *jsiiProxy_DataDigitaloceanDomainsSortOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -354,6 +393,9 @@ func (d *jsiiProxy_DataDigitaloceanDomainsSortOutputReference) GetNumberAttribut
 }
 
 func (d *jsiiProxy_DataDigitaloceanDomainsSortOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -367,6 +409,9 @@ func (d *jsiiProxy_DataDigitaloceanDomainsSortOutputReference) GetNumberListAttr
 }
 
 func (d *jsiiProxy_DataDigitaloceanDomainsSortOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -380,6 +425,9 @@ func (d *jsiiProxy_DataDigitaloceanDomainsSortOutputReference) GetNumberMapAttri
 }
 
 func (d *jsiiProxy_DataDigitaloceanDomainsSortOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -393,6 +441,9 @@ func (d *jsiiProxy_DataDigitaloceanDomainsSortOutputReference) GetStringAttribut
 }
 
 func (d *jsiiProxy_DataDigitaloceanDomainsSortOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -419,6 +470,9 @@ func (d *jsiiProxy_DataDigitaloceanDomainsSortOutputReference) InterpolationAsLi
 }
 
 func (d *jsiiProxy_DataDigitaloceanDomainsSortOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -440,6 +494,9 @@ func (d *jsiiProxy_DataDigitaloceanDomainsSortOutputReference) ResetDirection() 
 }
 
 func (d *jsiiProxy_DataDigitaloceanDomainsSortOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

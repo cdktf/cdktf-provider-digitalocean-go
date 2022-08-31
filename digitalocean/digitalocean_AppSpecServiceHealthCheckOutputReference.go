@@ -295,6 +295,9 @@ func (j *jsiiProxy_AppSpecServiceHealthCheckOutputReference) TimeoutSecondsInput
 func NewAppSpecServiceHealthCheckOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AppSpecServiceHealthCheckOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewAppSpecServiceHealthCheckOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AppSpecServiceHealthCheckOutputReference{}
 
 	_jsii_.Create(
@@ -316,7 +319,10 @@ func NewAppSpecServiceHealthCheckOutputReference_Override(a AppSpecServiceHealth
 	)
 }
 
-func (j *jsiiProxy_AppSpecServiceHealthCheckOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AppSpecServiceHealthCheckOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -324,7 +330,10 @@ func (j *jsiiProxy_AppSpecServiceHealthCheckOutputReference) SetComplexObjectInd
 	)
 }
 
-func (j *jsiiProxy_AppSpecServiceHealthCheckOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AppSpecServiceHealthCheckOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -332,7 +341,10 @@ func (j *jsiiProxy_AppSpecServiceHealthCheckOutputReference) SetComplexObjectIsF
 	)
 }
 
-func (j *jsiiProxy_AppSpecServiceHealthCheckOutputReference) SetFailureThreshold(val *float64) {
+func (j *jsiiProxy_AppSpecServiceHealthCheckOutputReference)SetFailureThreshold(val *float64) {
+	if err := j.validateSetFailureThresholdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"failureThreshold",
@@ -340,7 +352,10 @@ func (j *jsiiProxy_AppSpecServiceHealthCheckOutputReference) SetFailureThreshold
 	)
 }
 
-func (j *jsiiProxy_AppSpecServiceHealthCheckOutputReference) SetHttpPath(val *string) {
+func (j *jsiiProxy_AppSpecServiceHealthCheckOutputReference)SetHttpPath(val *string) {
+	if err := j.validateSetHttpPathParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"httpPath",
@@ -348,7 +363,10 @@ func (j *jsiiProxy_AppSpecServiceHealthCheckOutputReference) SetHttpPath(val *st
 	)
 }
 
-func (j *jsiiProxy_AppSpecServiceHealthCheckOutputReference) SetInitialDelaySeconds(val *float64) {
+func (j *jsiiProxy_AppSpecServiceHealthCheckOutputReference)SetInitialDelaySeconds(val *float64) {
+	if err := j.validateSetInitialDelaySecondsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"initialDelaySeconds",
@@ -356,7 +374,10 @@ func (j *jsiiProxy_AppSpecServiceHealthCheckOutputReference) SetInitialDelaySeco
 	)
 }
 
-func (j *jsiiProxy_AppSpecServiceHealthCheckOutputReference) SetInternalValue(val *AppSpecServiceHealthCheck) {
+func (j *jsiiProxy_AppSpecServiceHealthCheckOutputReference)SetInternalValue(val *AppSpecServiceHealthCheck) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -364,7 +385,10 @@ func (j *jsiiProxy_AppSpecServiceHealthCheckOutputReference) SetInternalValue(va
 	)
 }
 
-func (j *jsiiProxy_AppSpecServiceHealthCheckOutputReference) SetPeriodSeconds(val *float64) {
+func (j *jsiiProxy_AppSpecServiceHealthCheckOutputReference)SetPeriodSeconds(val *float64) {
+	if err := j.validateSetPeriodSecondsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"periodSeconds",
@@ -372,7 +396,10 @@ func (j *jsiiProxy_AppSpecServiceHealthCheckOutputReference) SetPeriodSeconds(va
 	)
 }
 
-func (j *jsiiProxy_AppSpecServiceHealthCheckOutputReference) SetSuccessThreshold(val *float64) {
+func (j *jsiiProxy_AppSpecServiceHealthCheckOutputReference)SetSuccessThreshold(val *float64) {
+	if err := j.validateSetSuccessThresholdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"successThreshold",
@@ -380,7 +407,10 @@ func (j *jsiiProxy_AppSpecServiceHealthCheckOutputReference) SetSuccessThreshold
 	)
 }
 
-func (j *jsiiProxy_AppSpecServiceHealthCheckOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AppSpecServiceHealthCheckOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -388,7 +418,10 @@ func (j *jsiiProxy_AppSpecServiceHealthCheckOutputReference) SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_AppSpecServiceHealthCheckOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppSpecServiceHealthCheckOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -396,7 +429,10 @@ func (j *jsiiProxy_AppSpecServiceHealthCheckOutputReference) SetTerraformResourc
 	)
 }
 
-func (j *jsiiProxy_AppSpecServiceHealthCheckOutputReference) SetTimeoutSeconds(val *float64) {
+func (j *jsiiProxy_AppSpecServiceHealthCheckOutputReference)SetTimeoutSeconds(val *float64) {
+	if err := j.validateSetTimeoutSecondsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"timeoutSeconds",
@@ -418,6 +454,9 @@ func (a *jsiiProxy_AppSpecServiceHealthCheckOutputReference) ComputeFqn() *strin
 }
 
 func (a *jsiiProxy_AppSpecServiceHealthCheckOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -431,6 +470,9 @@ func (a *jsiiProxy_AppSpecServiceHealthCheckOutputReference) GetAnyMapAttribute(
 }
 
 func (a *jsiiProxy_AppSpecServiceHealthCheckOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -444,6 +486,9 @@ func (a *jsiiProxy_AppSpecServiceHealthCheckOutputReference) GetBooleanAttribute
 }
 
 func (a *jsiiProxy_AppSpecServiceHealthCheckOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -457,6 +502,9 @@ func (a *jsiiProxy_AppSpecServiceHealthCheckOutputReference) GetBooleanMapAttrib
 }
 
 func (a *jsiiProxy_AppSpecServiceHealthCheckOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -470,6 +518,9 @@ func (a *jsiiProxy_AppSpecServiceHealthCheckOutputReference) GetListAttribute(te
 }
 
 func (a *jsiiProxy_AppSpecServiceHealthCheckOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -483,6 +534,9 @@ func (a *jsiiProxy_AppSpecServiceHealthCheckOutputReference) GetNumberAttribute(
 }
 
 func (a *jsiiProxy_AppSpecServiceHealthCheckOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -496,6 +550,9 @@ func (a *jsiiProxy_AppSpecServiceHealthCheckOutputReference) GetNumberListAttrib
 }
 
 func (a *jsiiProxy_AppSpecServiceHealthCheckOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -509,6 +566,9 @@ func (a *jsiiProxy_AppSpecServiceHealthCheckOutputReference) GetNumberMapAttribu
 }
 
 func (a *jsiiProxy_AppSpecServiceHealthCheckOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -522,6 +582,9 @@ func (a *jsiiProxy_AppSpecServiceHealthCheckOutputReference) GetStringAttribute(
 }
 
 func (a *jsiiProxy_AppSpecServiceHealthCheckOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -548,6 +611,9 @@ func (a *jsiiProxy_AppSpecServiceHealthCheckOutputReference) InterpolationAsList
 }
 
 func (a *jsiiProxy_AppSpecServiceHealthCheckOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -609,6 +675,9 @@ func (a *jsiiProxy_AppSpecServiceHealthCheckOutputReference) ResetTimeoutSeconds
 }
 
 func (a *jsiiProxy_AppSpecServiceHealthCheckOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataDigitaloceanAppSpecFunctionCorsList) WrapsSet() *bool {
 func NewDataDigitaloceanAppSpecFunctionCorsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecFunctionCorsList {
 	_init_.Initialize()
 
+	if err := validateNewDataDigitaloceanAppSpecFunctionCorsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataDigitaloceanAppSpecFunctionCorsList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataDigitaloceanAppSpecFunctionCorsList_Override(d DataDigitaloceanAppSp
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanAppSpecFunctionCorsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataDigitaloceanAppSpecFunctionCorsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataDigitaloceanAppSpecFunctionCorsList) SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanAppSpecFunctionCorsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDigitaloceanAppSpecFunctionCorsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataDigitaloceanAppSpecFunctionCorsList) SetTerraformResource
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanAppSpecFunctionCorsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataDigitaloceanAppSpecFunctionCorsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataDigitaloceanAppSpecFunctionCorsList) ComputeFqn() *string
 }
 
 func (d *jsiiProxy_DataDigitaloceanAppSpecFunctionCorsList) Get(index *float64) DataDigitaloceanAppSpecFunctionCorsOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataDigitaloceanAppSpecFunctionCorsOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataDigitaloceanAppSpecFunctionCorsList) Get(index *float64) 
 }
 
 func (d *jsiiProxy_DataDigitaloceanAppSpecFunctionCorsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

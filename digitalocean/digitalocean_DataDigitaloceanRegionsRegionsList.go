@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataDigitaloceanRegionsRegionsList) WrapsSet() *bool {
 func NewDataDigitaloceanRegionsRegionsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanRegionsRegionsList {
 	_init_.Initialize()
 
+	if err := validateNewDataDigitaloceanRegionsRegionsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataDigitaloceanRegionsRegionsList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataDigitaloceanRegionsRegionsList_Override(d DataDigitaloceanRegionsReg
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanRegionsRegionsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataDigitaloceanRegionsRegionsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataDigitaloceanRegionsRegionsList) SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanRegionsRegionsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDigitaloceanRegionsRegionsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataDigitaloceanRegionsRegionsList) SetTerraformResource(val 
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanRegionsRegionsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataDigitaloceanRegionsRegionsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataDigitaloceanRegionsRegionsList) ComputeFqn() *string {
 }
 
 func (d *jsiiProxy_DataDigitaloceanRegionsRegionsList) Get(index *float64) DataDigitaloceanRegionsRegionsOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataDigitaloceanRegionsRegionsOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataDigitaloceanRegionsRegionsList) Get(index *float64) DataD
 }
 
 func (d *jsiiProxy_DataDigitaloceanRegionsRegionsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -520,6 +520,9 @@ func (j *jsiiProxy_CustomImage) UrlInput() *string {
 func NewCustomImage(scope constructs.Construct, id *string, config *CustomImageConfig) CustomImage {
 	_init_.Initialize()
 
+	if err := validateNewCustomImageParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CustomImage{}
 
 	_jsii_.Create(
@@ -542,7 +545,10 @@ func NewCustomImage_Override(c CustomImage, scope constructs.Construct, id *stri
 	)
 }
 
-func (j *jsiiProxy_CustomImage) SetConnection(val interface{}) {
+func (j *jsiiProxy_CustomImage)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -550,7 +556,7 @@ func (j *jsiiProxy_CustomImage) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CustomImage) SetCount(val *float64) {
+func (j *jsiiProxy_CustomImage)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -558,7 +564,7 @@ func (j *jsiiProxy_CustomImage) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CustomImage) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CustomImage)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -566,7 +572,10 @@ func (j *jsiiProxy_CustomImage) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CustomImage) SetDescription(val *string) {
+func (j *jsiiProxy_CustomImage)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"description",
@@ -574,7 +583,10 @@ func (j *jsiiProxy_CustomImage) SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CustomImage) SetDistribution(val *string) {
+func (j *jsiiProxy_CustomImage)SetDistribution(val *string) {
+	if err := j.validateSetDistributionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"distribution",
@@ -582,7 +594,7 @@ func (j *jsiiProxy_CustomImage) SetDistribution(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CustomImage) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CustomImage)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -590,7 +602,10 @@ func (j *jsiiProxy_CustomImage) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_CustomImage) SetId(val *string) {
+func (j *jsiiProxy_CustomImage)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -598,7 +613,10 @@ func (j *jsiiProxy_CustomImage) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CustomImage) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CustomImage)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -606,7 +624,10 @@ func (j *jsiiProxy_CustomImage) SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	)
 }
 
-func (j *jsiiProxy_CustomImage) SetName(val *string) {
+func (j *jsiiProxy_CustomImage)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -614,7 +635,7 @@ func (j *jsiiProxy_CustomImage) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CustomImage) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CustomImage)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -622,7 +643,10 @@ func (j *jsiiProxy_CustomImage) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_CustomImage) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CustomImage)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -630,7 +654,10 @@ func (j *jsiiProxy_CustomImage) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CustomImage) SetRegions(val *[]*string) {
+func (j *jsiiProxy_CustomImage)SetRegions(val *[]*string) {
+	if err := j.validateSetRegionsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"regions",
@@ -638,7 +665,10 @@ func (j *jsiiProxy_CustomImage) SetRegions(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CustomImage) SetTags(val *[]*string) {
+func (j *jsiiProxy_CustomImage)SetTags(val *[]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tags",
@@ -646,7 +676,10 @@ func (j *jsiiProxy_CustomImage) SetTags(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CustomImage) SetUrl(val *string) {
+func (j *jsiiProxy_CustomImage)SetUrl(val *string) {
+	if err := j.validateSetUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"url",
@@ -674,6 +707,9 @@ func (j *jsiiProxy_CustomImage) SetUrl(val *string) {
 func CustomImage_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateCustomImage_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -698,6 +734,9 @@ func CustomImage_TfResourceType() *string {
 }
 
 func (c *jsiiProxy_CustomImage) AddOverride(path *string, value interface{}) {
+	if err := c.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
@@ -706,6 +745,9 @@ func (c *jsiiProxy_CustomImage) AddOverride(path *string, value interface{}) {
 }
 
 func (c *jsiiProxy_CustomImage) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -719,6 +761,9 @@ func (c *jsiiProxy_CustomImage) GetAnyMapAttribute(terraformAttribute *string) *
 }
 
 func (c *jsiiProxy_CustomImage) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -732,6 +777,9 @@ func (c *jsiiProxy_CustomImage) GetBooleanAttribute(terraformAttribute *string) 
 }
 
 func (c *jsiiProxy_CustomImage) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -745,6 +793,9 @@ func (c *jsiiProxy_CustomImage) GetBooleanMapAttribute(terraformAttribute *strin
 }
 
 func (c *jsiiProxy_CustomImage) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -758,6 +809,9 @@ func (c *jsiiProxy_CustomImage) GetListAttribute(terraformAttribute *string) *[]
 }
 
 func (c *jsiiProxy_CustomImage) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -771,6 +825,9 @@ func (c *jsiiProxy_CustomImage) GetNumberAttribute(terraformAttribute *string) *
 }
 
 func (c *jsiiProxy_CustomImage) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -784,6 +841,9 @@ func (c *jsiiProxy_CustomImage) GetNumberListAttribute(terraformAttribute *strin
 }
 
 func (c *jsiiProxy_CustomImage) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -797,6 +857,9 @@ func (c *jsiiProxy_CustomImage) GetNumberMapAttribute(terraformAttribute *string
 }
 
 func (c *jsiiProxy_CustomImage) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -810,6 +873,9 @@ func (c *jsiiProxy_CustomImage) GetStringAttribute(terraformAttribute *string) *
 }
 
 func (c *jsiiProxy_CustomImage) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -823,6 +889,9 @@ func (c *jsiiProxy_CustomImage) GetStringMapAttribute(terraformAttribute *string
 }
 
 func (c *jsiiProxy_CustomImage) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -836,6 +905,9 @@ func (c *jsiiProxy_CustomImage) InterpolationForAttribute(terraformAttribute *st
 }
 
 func (c *jsiiProxy_CustomImage) OverrideLogicalId(newLogicalId *string) {
+	if err := c.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",

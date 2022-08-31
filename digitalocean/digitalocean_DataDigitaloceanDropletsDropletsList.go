@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataDigitaloceanDropletsDropletsList) WrapsSet() *bool {
 func NewDataDigitaloceanDropletsDropletsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanDropletsDropletsList {
 	_init_.Initialize()
 
+	if err := validateNewDataDigitaloceanDropletsDropletsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataDigitaloceanDropletsDropletsList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataDigitaloceanDropletsDropletsList_Override(d DataDigitaloceanDroplets
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanDropletsDropletsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataDigitaloceanDropletsDropletsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataDigitaloceanDropletsDropletsList) SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanDropletsDropletsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDigitaloceanDropletsDropletsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataDigitaloceanDropletsDropletsList) SetTerraformResource(va
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanDropletsDropletsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataDigitaloceanDropletsDropletsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataDigitaloceanDropletsDropletsList) ComputeFqn() *string {
 }
 
 func (d *jsiiProxy_DataDigitaloceanDropletsDropletsList) Get(index *float64) DataDigitaloceanDropletsDropletsOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataDigitaloceanDropletsDropletsOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataDigitaloceanDropletsDropletsList) Get(index *float64) Dat
 }
 
 func (d *jsiiProxy_DataDigitaloceanDropletsDropletsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

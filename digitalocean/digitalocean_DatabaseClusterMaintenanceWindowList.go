@@ -111,6 +111,9 @@ func (j *jsiiProxy_DatabaseClusterMaintenanceWindowList) WrapsSet() *bool {
 func NewDatabaseClusterMaintenanceWindowList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseClusterMaintenanceWindowList {
 	_init_.Initialize()
 
+	if err := validateNewDatabaseClusterMaintenanceWindowListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DatabaseClusterMaintenanceWindowList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewDatabaseClusterMaintenanceWindowList_Override(d DatabaseClusterMaintenan
 	)
 }
 
-func (j *jsiiProxy_DatabaseClusterMaintenanceWindowList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DatabaseClusterMaintenanceWindowList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_DatabaseClusterMaintenanceWindowList) SetInternalValue(val in
 	)
 }
 
-func (j *jsiiProxy_DatabaseClusterMaintenanceWindowList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DatabaseClusterMaintenanceWindowList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_DatabaseClusterMaintenanceWindowList) SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_DatabaseClusterMaintenanceWindowList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DatabaseClusterMaintenanceWindowList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_DatabaseClusterMaintenanceWindowList) SetTerraformResource(va
 	)
 }
 
-func (j *jsiiProxy_DatabaseClusterMaintenanceWindowList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DatabaseClusterMaintenanceWindowList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (d *jsiiProxy_DatabaseClusterMaintenanceWindowList) ComputeFqn() *string {
 }
 
 func (d *jsiiProxy_DatabaseClusterMaintenanceWindowList) Get(index *float64) DatabaseClusterMaintenanceWindowOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DatabaseClusterMaintenanceWindowOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (d *jsiiProxy_DatabaseClusterMaintenanceWindowList) Get(index *float64) Dat
 }
 
 func (d *jsiiProxy_DatabaseClusterMaintenanceWindowList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -99,6 +99,9 @@ func (j *jsiiProxy_KubernetesNodePoolNodesList) WrapsSet() *bool {
 func NewKubernetesNodePoolNodesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KubernetesNodePoolNodesList {
 	_init_.Initialize()
 
+	if err := validateNewKubernetesNodePoolNodesListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_KubernetesNodePoolNodesList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewKubernetesNodePoolNodesList_Override(k KubernetesNodePoolNodesList, terr
 	)
 }
 
-func (j *jsiiProxy_KubernetesNodePoolNodesList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_KubernetesNodePoolNodesList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_KubernetesNodePoolNodesList) SetTerraformAttribute(val *strin
 	)
 }
 
-func (j *jsiiProxy_KubernetesNodePoolNodesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_KubernetesNodePoolNodesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_KubernetesNodePoolNodesList) SetTerraformResource(val cdktf.I
 	)
 }
 
-func (j *jsiiProxy_KubernetesNodePoolNodesList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_KubernetesNodePoolNodesList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (k *jsiiProxy_KubernetesNodePoolNodesList) ComputeFqn() *string {
 }
 
 func (k *jsiiProxy_KubernetesNodePoolNodesList) Get(index *float64) KubernetesNodePoolNodesOutputReference {
+	if err := k.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns KubernetesNodePoolNodesOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (k *jsiiProxy_KubernetesNodePoolNodesList) Get(index *float64) KubernetesNo
 }
 
 func (k *jsiiProxy_KubernetesNodePoolNodesList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := k.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -510,6 +510,9 @@ func (j *jsiiProxy_AppSpecWorkerOutputReference) TerraformResource() cdktf.IInte
 func NewAppSpecWorkerOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AppSpecWorkerOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewAppSpecWorkerOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AppSpecWorkerOutputReference{}
 
 	_jsii_.Create(
@@ -531,7 +534,10 @@ func NewAppSpecWorkerOutputReference_Override(a AppSpecWorkerOutputReference, te
 	)
 }
 
-func (j *jsiiProxy_AppSpecWorkerOutputReference) SetBuildCommand(val *string) {
+func (j *jsiiProxy_AppSpecWorkerOutputReference)SetBuildCommand(val *string) {
+	if err := j.validateSetBuildCommandParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"buildCommand",
@@ -539,7 +545,10 @@ func (j *jsiiProxy_AppSpecWorkerOutputReference) SetBuildCommand(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSpecWorkerOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AppSpecWorkerOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -547,7 +556,10 @@ func (j *jsiiProxy_AppSpecWorkerOutputReference) SetComplexObjectIndex(val inter
 	)
 }
 
-func (j *jsiiProxy_AppSpecWorkerOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AppSpecWorkerOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -555,7 +567,10 @@ func (j *jsiiProxy_AppSpecWorkerOutputReference) SetComplexObjectIsFromSet(val *
 	)
 }
 
-func (j *jsiiProxy_AppSpecWorkerOutputReference) SetDockerfilePath(val *string) {
+func (j *jsiiProxy_AppSpecWorkerOutputReference)SetDockerfilePath(val *string) {
+	if err := j.validateSetDockerfilePathParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"dockerfilePath",
@@ -563,7 +578,10 @@ func (j *jsiiProxy_AppSpecWorkerOutputReference) SetDockerfilePath(val *string) 
 	)
 }
 
-func (j *jsiiProxy_AppSpecWorkerOutputReference) SetEnvironmentSlug(val *string) {
+func (j *jsiiProxy_AppSpecWorkerOutputReference)SetEnvironmentSlug(val *string) {
+	if err := j.validateSetEnvironmentSlugParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"environmentSlug",
@@ -571,7 +589,10 @@ func (j *jsiiProxy_AppSpecWorkerOutputReference) SetEnvironmentSlug(val *string)
 	)
 }
 
-func (j *jsiiProxy_AppSpecWorkerOutputReference) SetInstanceCount(val *float64) {
+func (j *jsiiProxy_AppSpecWorkerOutputReference)SetInstanceCount(val *float64) {
+	if err := j.validateSetInstanceCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"instanceCount",
@@ -579,7 +600,10 @@ func (j *jsiiProxy_AppSpecWorkerOutputReference) SetInstanceCount(val *float64) 
 	)
 }
 
-func (j *jsiiProxy_AppSpecWorkerOutputReference) SetInstanceSizeSlug(val *string) {
+func (j *jsiiProxy_AppSpecWorkerOutputReference)SetInstanceSizeSlug(val *string) {
+	if err := j.validateSetInstanceSizeSlugParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"instanceSizeSlug",
@@ -587,7 +611,10 @@ func (j *jsiiProxy_AppSpecWorkerOutputReference) SetInstanceSizeSlug(val *string
 	)
 }
 
-func (j *jsiiProxy_AppSpecWorkerOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AppSpecWorkerOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -595,7 +622,10 @@ func (j *jsiiProxy_AppSpecWorkerOutputReference) SetInternalValue(val interface{
 	)
 }
 
-func (j *jsiiProxy_AppSpecWorkerOutputReference) SetName(val *string) {
+func (j *jsiiProxy_AppSpecWorkerOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -603,7 +633,10 @@ func (j *jsiiProxy_AppSpecWorkerOutputReference) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSpecWorkerOutputReference) SetRunCommand(val *string) {
+func (j *jsiiProxy_AppSpecWorkerOutputReference)SetRunCommand(val *string) {
+	if err := j.validateSetRunCommandParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"runCommand",
@@ -611,7 +644,10 @@ func (j *jsiiProxy_AppSpecWorkerOutputReference) SetRunCommand(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSpecWorkerOutputReference) SetSourceDir(val *string) {
+func (j *jsiiProxy_AppSpecWorkerOutputReference)SetSourceDir(val *string) {
+	if err := j.validateSetSourceDirParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sourceDir",
@@ -619,7 +655,10 @@ func (j *jsiiProxy_AppSpecWorkerOutputReference) SetSourceDir(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSpecWorkerOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AppSpecWorkerOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -627,7 +666,10 @@ func (j *jsiiProxy_AppSpecWorkerOutputReference) SetTerraformAttribute(val *stri
 	)
 }
 
-func (j *jsiiProxy_AppSpecWorkerOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppSpecWorkerOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -649,6 +691,9 @@ func (a *jsiiProxy_AppSpecWorkerOutputReference) ComputeFqn() *string {
 }
 
 func (a *jsiiProxy_AppSpecWorkerOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -662,6 +707,9 @@ func (a *jsiiProxy_AppSpecWorkerOutputReference) GetAnyMapAttribute(terraformAtt
 }
 
 func (a *jsiiProxy_AppSpecWorkerOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -675,6 +723,9 @@ func (a *jsiiProxy_AppSpecWorkerOutputReference) GetBooleanAttribute(terraformAt
 }
 
 func (a *jsiiProxy_AppSpecWorkerOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -688,6 +739,9 @@ func (a *jsiiProxy_AppSpecWorkerOutputReference) GetBooleanMapAttribute(terrafor
 }
 
 func (a *jsiiProxy_AppSpecWorkerOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -701,6 +755,9 @@ func (a *jsiiProxy_AppSpecWorkerOutputReference) GetListAttribute(terraformAttri
 }
 
 func (a *jsiiProxy_AppSpecWorkerOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -714,6 +771,9 @@ func (a *jsiiProxy_AppSpecWorkerOutputReference) GetNumberAttribute(terraformAtt
 }
 
 func (a *jsiiProxy_AppSpecWorkerOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -727,6 +787,9 @@ func (a *jsiiProxy_AppSpecWorkerOutputReference) GetNumberListAttribute(terrafor
 }
 
 func (a *jsiiProxy_AppSpecWorkerOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -740,6 +803,9 @@ func (a *jsiiProxy_AppSpecWorkerOutputReference) GetNumberMapAttribute(terraform
 }
 
 func (a *jsiiProxy_AppSpecWorkerOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -753,6 +819,9 @@ func (a *jsiiProxy_AppSpecWorkerOutputReference) GetStringAttribute(terraformAtt
 }
 
 func (a *jsiiProxy_AppSpecWorkerOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -779,6 +848,9 @@ func (a *jsiiProxy_AppSpecWorkerOutputReference) InterpolationAsList() cdktf.IRe
 }
 
 func (a *jsiiProxy_AppSpecWorkerOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -792,6 +864,9 @@ func (a *jsiiProxy_AppSpecWorkerOutputReference) InterpolationForAttribute(prope
 }
 
 func (a *jsiiProxy_AppSpecWorkerOutputReference) PutAlert(value interface{}) {
+	if err := a.validatePutAlertParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"putAlert",
@@ -800,6 +875,9 @@ func (a *jsiiProxy_AppSpecWorkerOutputReference) PutAlert(value interface{}) {
 }
 
 func (a *jsiiProxy_AppSpecWorkerOutputReference) PutEnv(value interface{}) {
+	if err := a.validatePutEnvParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"putEnv",
@@ -808,6 +886,9 @@ func (a *jsiiProxy_AppSpecWorkerOutputReference) PutEnv(value interface{}) {
 }
 
 func (a *jsiiProxy_AppSpecWorkerOutputReference) PutGit(value *AppSpecWorkerGit) {
+	if err := a.validatePutGitParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"putGit",
@@ -816,6 +897,9 @@ func (a *jsiiProxy_AppSpecWorkerOutputReference) PutGit(value *AppSpecWorkerGit)
 }
 
 func (a *jsiiProxy_AppSpecWorkerOutputReference) PutGithub(value *AppSpecWorkerGithub) {
+	if err := a.validatePutGithubParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"putGithub",
@@ -824,6 +908,9 @@ func (a *jsiiProxy_AppSpecWorkerOutputReference) PutGithub(value *AppSpecWorkerG
 }
 
 func (a *jsiiProxy_AppSpecWorkerOutputReference) PutGitlab(value *AppSpecWorkerGitlab) {
+	if err := a.validatePutGitlabParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"putGitlab",
@@ -832,6 +919,9 @@ func (a *jsiiProxy_AppSpecWorkerOutputReference) PutGitlab(value *AppSpecWorkerG
 }
 
 func (a *jsiiProxy_AppSpecWorkerOutputReference) PutImage(value *AppSpecWorkerImage) {
+	if err := a.validatePutImageParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"putImage",
@@ -840,6 +930,9 @@ func (a *jsiiProxy_AppSpecWorkerOutputReference) PutImage(value *AppSpecWorkerIm
 }
 
 func (a *jsiiProxy_AppSpecWorkerOutputReference) PutLogDestination(value interface{}) {
+	if err := a.validatePutLogDestinationParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"putLogDestination",
@@ -960,6 +1053,9 @@ func (a *jsiiProxy_AppSpecWorkerOutputReference) ResetSourceDir() {
 }
 
 func (a *jsiiProxy_AppSpecWorkerOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

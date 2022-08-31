@@ -111,6 +111,9 @@ func (j *jsiiProxy_KubernetesNodePoolTaintList) WrapsSet() *bool {
 func NewKubernetesNodePoolTaintList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KubernetesNodePoolTaintList {
 	_init_.Initialize()
 
+	if err := validateNewKubernetesNodePoolTaintListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_KubernetesNodePoolTaintList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewKubernetesNodePoolTaintList_Override(k KubernetesNodePoolTaintList, terr
 	)
 }
 
-func (j *jsiiProxy_KubernetesNodePoolTaintList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_KubernetesNodePoolTaintList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_KubernetesNodePoolTaintList) SetInternalValue(val interface{}
 	)
 }
 
-func (j *jsiiProxy_KubernetesNodePoolTaintList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_KubernetesNodePoolTaintList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_KubernetesNodePoolTaintList) SetTerraformAttribute(val *strin
 	)
 }
 
-func (j *jsiiProxy_KubernetesNodePoolTaintList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_KubernetesNodePoolTaintList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_KubernetesNodePoolTaintList) SetTerraformResource(val cdktf.I
 	)
 }
 
-func (j *jsiiProxy_KubernetesNodePoolTaintList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_KubernetesNodePoolTaintList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (k *jsiiProxy_KubernetesNodePoolTaintList) ComputeFqn() *string {
 }
 
 func (k *jsiiProxy_KubernetesNodePoolTaintList) Get(index *float64) KubernetesNodePoolTaintOutputReference {
+	if err := k.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns KubernetesNodePoolTaintOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (k *jsiiProxy_KubernetesNodePoolTaintList) Get(index *float64) KubernetesNo
 }
 
 func (k *jsiiProxy_KubernetesNodePoolTaintList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := k.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

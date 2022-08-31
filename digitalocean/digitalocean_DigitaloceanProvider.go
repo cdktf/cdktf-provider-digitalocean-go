@@ -305,6 +305,9 @@ func (j *jsiiProxy_DigitaloceanProvider) TokenInput() *string {
 func NewDigitaloceanProvider(scope constructs.Construct, id *string, config *DigitaloceanProviderConfig) DigitaloceanProvider {
 	_init_.Initialize()
 
+	if err := validateNewDigitaloceanProviderParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DigitaloceanProvider{}
 
 	_jsii_.Create(
@@ -327,7 +330,7 @@ func NewDigitaloceanProvider_Override(d DigitaloceanProvider, scope constructs.C
 	)
 }
 
-func (j *jsiiProxy_DigitaloceanProvider) SetAlias(val *string) {
+func (j *jsiiProxy_DigitaloceanProvider)SetAlias(val *string) {
 	_jsii_.Set(
 		j,
 		"alias",
@@ -335,7 +338,7 @@ func (j *jsiiProxy_DigitaloceanProvider) SetAlias(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DigitaloceanProvider) SetApiEndpoint(val *string) {
+func (j *jsiiProxy_DigitaloceanProvider)SetApiEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"apiEndpoint",
@@ -343,7 +346,7 @@ func (j *jsiiProxy_DigitaloceanProvider) SetApiEndpoint(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DigitaloceanProvider) SetSpacesAccessId(val *string) {
+func (j *jsiiProxy_DigitaloceanProvider)SetSpacesAccessId(val *string) {
 	_jsii_.Set(
 		j,
 		"spacesAccessId",
@@ -351,7 +354,7 @@ func (j *jsiiProxy_DigitaloceanProvider) SetSpacesAccessId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DigitaloceanProvider) SetSpacesEndpoint(val *string) {
+func (j *jsiiProxy_DigitaloceanProvider)SetSpacesEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"spacesEndpoint",
@@ -359,7 +362,7 @@ func (j *jsiiProxy_DigitaloceanProvider) SetSpacesEndpoint(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DigitaloceanProvider) SetSpacesSecretKey(val *string) {
+func (j *jsiiProxy_DigitaloceanProvider)SetSpacesSecretKey(val *string) {
 	_jsii_.Set(
 		j,
 		"spacesSecretKey",
@@ -367,7 +370,7 @@ func (j *jsiiProxy_DigitaloceanProvider) SetSpacesSecretKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DigitaloceanProvider) SetToken(val *string) {
+func (j *jsiiProxy_DigitaloceanProvider)SetToken(val *string) {
 	_jsii_.Set(
 		j,
 		"token",
@@ -395,6 +398,9 @@ func (j *jsiiProxy_DigitaloceanProvider) SetToken(val *string) {
 func DigitaloceanProvider_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDigitaloceanProvider_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -419,6 +425,9 @@ func DigitaloceanProvider_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DigitaloceanProvider) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -427,6 +436,9 @@ func (d *jsiiProxy_DigitaloceanProvider) AddOverride(path *string, value interfa
 }
 
 func (d *jsiiProxy_DigitaloceanProvider) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",

@@ -174,6 +174,9 @@ func (j *jsiiProxy_AppSpecJobLogDestinationPapertrailOutputReference) TerraformR
 func NewAppSpecJobLogDestinationPapertrailOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AppSpecJobLogDestinationPapertrailOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewAppSpecJobLogDestinationPapertrailOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AppSpecJobLogDestinationPapertrailOutputReference{}
 
 	_jsii_.Create(
@@ -195,7 +198,10 @@ func NewAppSpecJobLogDestinationPapertrailOutputReference_Override(a AppSpecJobL
 	)
 }
 
-func (j *jsiiProxy_AppSpecJobLogDestinationPapertrailOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AppSpecJobLogDestinationPapertrailOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -203,7 +209,10 @@ func (j *jsiiProxy_AppSpecJobLogDestinationPapertrailOutputReference) SetComplex
 	)
 }
 
-func (j *jsiiProxy_AppSpecJobLogDestinationPapertrailOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AppSpecJobLogDestinationPapertrailOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -211,7 +220,10 @@ func (j *jsiiProxy_AppSpecJobLogDestinationPapertrailOutputReference) SetComplex
 	)
 }
 
-func (j *jsiiProxy_AppSpecJobLogDestinationPapertrailOutputReference) SetEndpoint(val *string) {
+func (j *jsiiProxy_AppSpecJobLogDestinationPapertrailOutputReference)SetEndpoint(val *string) {
+	if err := j.validateSetEndpointParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"endpoint",
@@ -219,7 +231,10 @@ func (j *jsiiProxy_AppSpecJobLogDestinationPapertrailOutputReference) SetEndpoin
 	)
 }
 
-func (j *jsiiProxy_AppSpecJobLogDestinationPapertrailOutputReference) SetInternalValue(val *AppSpecJobLogDestinationPapertrail) {
+func (j *jsiiProxy_AppSpecJobLogDestinationPapertrailOutputReference)SetInternalValue(val *AppSpecJobLogDestinationPapertrail) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -227,7 +242,10 @@ func (j *jsiiProxy_AppSpecJobLogDestinationPapertrailOutputReference) SetInterna
 	)
 }
 
-func (j *jsiiProxy_AppSpecJobLogDestinationPapertrailOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AppSpecJobLogDestinationPapertrailOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -235,7 +253,10 @@ func (j *jsiiProxy_AppSpecJobLogDestinationPapertrailOutputReference) SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_AppSpecJobLogDestinationPapertrailOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppSpecJobLogDestinationPapertrailOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -257,6 +278,9 @@ func (a *jsiiProxy_AppSpecJobLogDestinationPapertrailOutputReference) ComputeFqn
 }
 
 func (a *jsiiProxy_AppSpecJobLogDestinationPapertrailOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -270,6 +294,9 @@ func (a *jsiiProxy_AppSpecJobLogDestinationPapertrailOutputReference) GetAnyMapA
 }
 
 func (a *jsiiProxy_AppSpecJobLogDestinationPapertrailOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -283,6 +310,9 @@ func (a *jsiiProxy_AppSpecJobLogDestinationPapertrailOutputReference) GetBoolean
 }
 
 func (a *jsiiProxy_AppSpecJobLogDestinationPapertrailOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -296,6 +326,9 @@ func (a *jsiiProxy_AppSpecJobLogDestinationPapertrailOutputReference) GetBoolean
 }
 
 func (a *jsiiProxy_AppSpecJobLogDestinationPapertrailOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -309,6 +342,9 @@ func (a *jsiiProxy_AppSpecJobLogDestinationPapertrailOutputReference) GetListAtt
 }
 
 func (a *jsiiProxy_AppSpecJobLogDestinationPapertrailOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -322,6 +358,9 @@ func (a *jsiiProxy_AppSpecJobLogDestinationPapertrailOutputReference) GetNumberA
 }
 
 func (a *jsiiProxy_AppSpecJobLogDestinationPapertrailOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -335,6 +374,9 @@ func (a *jsiiProxy_AppSpecJobLogDestinationPapertrailOutputReference) GetNumberL
 }
 
 func (a *jsiiProxy_AppSpecJobLogDestinationPapertrailOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -348,6 +390,9 @@ func (a *jsiiProxy_AppSpecJobLogDestinationPapertrailOutputReference) GetNumberM
 }
 
 func (a *jsiiProxy_AppSpecJobLogDestinationPapertrailOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -361,6 +406,9 @@ func (a *jsiiProxy_AppSpecJobLogDestinationPapertrailOutputReference) GetStringA
 }
 
 func (a *jsiiProxy_AppSpecJobLogDestinationPapertrailOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -387,6 +435,9 @@ func (a *jsiiProxy_AppSpecJobLogDestinationPapertrailOutputReference) Interpolat
 }
 
 func (a *jsiiProxy_AppSpecJobLogDestinationPapertrailOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -400,6 +451,9 @@ func (a *jsiiProxy_AppSpecJobLogDestinationPapertrailOutputReference) Interpolat
 }
 
 func (a *jsiiProxy_AppSpecJobLogDestinationPapertrailOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

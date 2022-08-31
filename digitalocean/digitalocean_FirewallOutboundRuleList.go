@@ -111,6 +111,9 @@ func (j *jsiiProxy_FirewallOutboundRuleList) WrapsSet() *bool {
 func NewFirewallOutboundRuleList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FirewallOutboundRuleList {
 	_init_.Initialize()
 
+	if err := validateNewFirewallOutboundRuleListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_FirewallOutboundRuleList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewFirewallOutboundRuleList_Override(f FirewallOutboundRuleList, terraformR
 	)
 }
 
-func (j *jsiiProxy_FirewallOutboundRuleList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_FirewallOutboundRuleList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_FirewallOutboundRuleList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FirewallOutboundRuleList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_FirewallOutboundRuleList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_FirewallOutboundRuleList) SetTerraformAttribute(val *string) 
 	)
 }
 
-func (j *jsiiProxy_FirewallOutboundRuleList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FirewallOutboundRuleList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_FirewallOutboundRuleList) SetTerraformResource(val cdktf.IInt
 	)
 }
 
-func (j *jsiiProxy_FirewallOutboundRuleList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_FirewallOutboundRuleList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (f *jsiiProxy_FirewallOutboundRuleList) ComputeFqn() *string {
 }
 
 func (f *jsiiProxy_FirewallOutboundRuleList) Get(index *float64) FirewallOutboundRuleOutputReference {
+	if err := f.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns FirewallOutboundRuleOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (f *jsiiProxy_FirewallOutboundRuleList) Get(index *float64) FirewallOutboun
 }
 
 func (f *jsiiProxy_FirewallOutboundRuleList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := f.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

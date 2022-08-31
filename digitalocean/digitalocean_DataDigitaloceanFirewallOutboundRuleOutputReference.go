@@ -318,6 +318,9 @@ func (j *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference) Terrafor
 func NewDataDigitaloceanFirewallOutboundRuleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDigitaloceanFirewallOutboundRuleOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDataDigitaloceanFirewallOutboundRuleOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference{}
 
 	_jsii_.Create(
@@ -339,7 +342,10 @@ func NewDataDigitaloceanFirewallOutboundRuleOutputReference_Override(d DataDigit
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -347,7 +353,10 @@ func (j *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference) SetCompl
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -355,7 +364,10 @@ func (j *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference) SetCompl
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference) SetDestinationAddresses(val *[]*string) {
+func (j *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference)SetDestinationAddresses(val *[]*string) {
+	if err := j.validateSetDestinationAddressesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"destinationAddresses",
@@ -363,7 +375,10 @@ func (j *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference) SetDesti
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference) SetDestinationDropletIds(val *[]*float64) {
+func (j *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference)SetDestinationDropletIds(val *[]*float64) {
+	if err := j.validateSetDestinationDropletIdsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"destinationDropletIds",
@@ -371,7 +386,10 @@ func (j *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference) SetDesti
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference) SetDestinationKubernetesIds(val *[]*string) {
+func (j *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference)SetDestinationKubernetesIds(val *[]*string) {
+	if err := j.validateSetDestinationKubernetesIdsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"destinationKubernetesIds",
@@ -379,7 +397,10 @@ func (j *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference) SetDesti
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference) SetDestinationLoadBalancerUids(val *[]*string) {
+func (j *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference)SetDestinationLoadBalancerUids(val *[]*string) {
+	if err := j.validateSetDestinationLoadBalancerUidsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"destinationLoadBalancerUids",
@@ -387,7 +408,10 @@ func (j *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference) SetDesti
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference) SetDestinationTags(val *[]*string) {
+func (j *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference)SetDestinationTags(val *[]*string) {
+	if err := j.validateSetDestinationTagsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"destinationTags",
@@ -395,7 +419,10 @@ func (j *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference) SetDesti
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -403,7 +430,10 @@ func (j *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference) SetInter
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference) SetPortRange(val *string) {
+func (j *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference)SetPortRange(val *string) {
+	if err := j.validateSetPortRangeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"portRange",
@@ -411,7 +441,10 @@ func (j *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference) SetPortR
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference) SetProtocol(val *string) {
+func (j *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference)SetProtocol(val *string) {
+	if err := j.validateSetProtocolParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"protocol",
@@ -419,7 +452,10 @@ func (j *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference) SetProto
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -427,7 +463,10 @@ func (j *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference) SetTerra
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -449,6 +488,9 @@ func (d *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference) ComputeF
 }
 
 func (d *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -462,6 +504,9 @@ func (d *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference) GetAnyMa
 }
 
 func (d *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -475,6 +520,9 @@ func (d *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference) GetBoole
 }
 
 func (d *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -488,6 +536,9 @@ func (d *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference) GetBoole
 }
 
 func (d *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -501,6 +552,9 @@ func (d *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference) GetListA
 }
 
 func (d *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -514,6 +568,9 @@ func (d *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference) GetNumbe
 }
 
 func (d *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -527,6 +584,9 @@ func (d *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference) GetNumbe
 }
 
 func (d *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -540,6 +600,9 @@ func (d *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference) GetNumbe
 }
 
 func (d *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -553,6 +616,9 @@ func (d *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference) GetStrin
 }
 
 func (d *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -579,6 +645,9 @@ func (d *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference) Interpol
 }
 
 func (d *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -640,6 +709,9 @@ func (d *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference) ResetPor
 }
 
 func (d *jsiiProxy_DataDigitaloceanFirewallOutboundRuleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

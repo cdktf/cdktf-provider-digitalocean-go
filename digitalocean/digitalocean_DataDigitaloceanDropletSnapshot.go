@@ -414,6 +414,9 @@ func (j *jsiiProxy_DataDigitaloceanDropletSnapshot) TerraformResourceType() *str
 func NewDataDigitaloceanDropletSnapshot(scope constructs.Construct, id *string, config *DataDigitaloceanDropletSnapshotConfig) DataDigitaloceanDropletSnapshot {
 	_init_.Initialize()
 
+	if err := validateNewDataDigitaloceanDropletSnapshotParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataDigitaloceanDropletSnapshot{}
 
 	_jsii_.Create(
@@ -436,7 +439,7 @@ func NewDataDigitaloceanDropletSnapshot_Override(d DataDigitaloceanDropletSnapsh
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanDropletSnapshot) SetCount(val *float64) {
+func (j *jsiiProxy_DataDigitaloceanDropletSnapshot)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -444,7 +447,7 @@ func (j *jsiiProxy_DataDigitaloceanDropletSnapshot) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanDropletSnapshot) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataDigitaloceanDropletSnapshot)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -452,7 +455,7 @@ func (j *jsiiProxy_DataDigitaloceanDropletSnapshot) SetDependsOn(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanDropletSnapshot) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataDigitaloceanDropletSnapshot)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -460,7 +463,10 @@ func (j *jsiiProxy_DataDigitaloceanDropletSnapshot) SetForEach(val cdktf.ITerraf
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanDropletSnapshot) SetId(val *string) {
+func (j *jsiiProxy_DataDigitaloceanDropletSnapshot)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -468,7 +474,10 @@ func (j *jsiiProxy_DataDigitaloceanDropletSnapshot) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanDropletSnapshot) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataDigitaloceanDropletSnapshot)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -476,7 +485,10 @@ func (j *jsiiProxy_DataDigitaloceanDropletSnapshot) SetLifecycle(val *cdktf.Terr
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanDropletSnapshot) SetMostRecent(val interface{}) {
+func (j *jsiiProxy_DataDigitaloceanDropletSnapshot)SetMostRecent(val interface{}) {
+	if err := j.validateSetMostRecentParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"mostRecent",
@@ -484,7 +496,10 @@ func (j *jsiiProxy_DataDigitaloceanDropletSnapshot) SetMostRecent(val interface{
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanDropletSnapshot) SetName(val *string) {
+func (j *jsiiProxy_DataDigitaloceanDropletSnapshot)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -492,7 +507,10 @@ func (j *jsiiProxy_DataDigitaloceanDropletSnapshot) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanDropletSnapshot) SetNameRegex(val *string) {
+func (j *jsiiProxy_DataDigitaloceanDropletSnapshot)SetNameRegex(val *string) {
+	if err := j.validateSetNameRegexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"nameRegex",
@@ -500,7 +518,7 @@ func (j *jsiiProxy_DataDigitaloceanDropletSnapshot) SetNameRegex(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanDropletSnapshot) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataDigitaloceanDropletSnapshot)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -508,7 +526,10 @@ func (j *jsiiProxy_DataDigitaloceanDropletSnapshot) SetProvider(val cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanDropletSnapshot) SetRegion(val *string) {
+func (j *jsiiProxy_DataDigitaloceanDropletSnapshot)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"region",
@@ -536,6 +557,9 @@ func (j *jsiiProxy_DataDigitaloceanDropletSnapshot) SetRegion(val *string) {
 func DataDigitaloceanDropletSnapshot_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDataDigitaloceanDropletSnapshot_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -560,6 +584,9 @@ func DataDigitaloceanDropletSnapshot_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DataDigitaloceanDropletSnapshot) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -568,6 +595,9 @@ func (d *jsiiProxy_DataDigitaloceanDropletSnapshot) AddOverride(path *string, va
 }
 
 func (d *jsiiProxy_DataDigitaloceanDropletSnapshot) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -581,6 +611,9 @@ func (d *jsiiProxy_DataDigitaloceanDropletSnapshot) GetAnyMapAttribute(terraform
 }
 
 func (d *jsiiProxy_DataDigitaloceanDropletSnapshot) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -594,6 +627,9 @@ func (d *jsiiProxy_DataDigitaloceanDropletSnapshot) GetBooleanAttribute(terrafor
 }
 
 func (d *jsiiProxy_DataDigitaloceanDropletSnapshot) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -607,6 +643,9 @@ func (d *jsiiProxy_DataDigitaloceanDropletSnapshot) GetBooleanMapAttribute(terra
 }
 
 func (d *jsiiProxy_DataDigitaloceanDropletSnapshot) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -620,6 +659,9 @@ func (d *jsiiProxy_DataDigitaloceanDropletSnapshot) GetListAttribute(terraformAt
 }
 
 func (d *jsiiProxy_DataDigitaloceanDropletSnapshot) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -633,6 +675,9 @@ func (d *jsiiProxy_DataDigitaloceanDropletSnapshot) GetNumberAttribute(terraform
 }
 
 func (d *jsiiProxy_DataDigitaloceanDropletSnapshot) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -646,6 +691,9 @@ func (d *jsiiProxy_DataDigitaloceanDropletSnapshot) GetNumberListAttribute(terra
 }
 
 func (d *jsiiProxy_DataDigitaloceanDropletSnapshot) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -659,6 +707,9 @@ func (d *jsiiProxy_DataDigitaloceanDropletSnapshot) GetNumberMapAttribute(terraf
 }
 
 func (d *jsiiProxy_DataDigitaloceanDropletSnapshot) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -672,6 +723,9 @@ func (d *jsiiProxy_DataDigitaloceanDropletSnapshot) GetStringAttribute(terraform
 }
 
 func (d *jsiiProxy_DataDigitaloceanDropletSnapshot) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -685,6 +739,9 @@ func (d *jsiiProxy_DataDigitaloceanDropletSnapshot) GetStringMapAttribute(terraf
 }
 
 func (d *jsiiProxy_DataDigitaloceanDropletSnapshot) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -698,6 +755,9 @@ func (d *jsiiProxy_DataDigitaloceanDropletSnapshot) InterpolationForAttribute(te
 }
 
 func (d *jsiiProxy_DataDigitaloceanDropletSnapshot) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",

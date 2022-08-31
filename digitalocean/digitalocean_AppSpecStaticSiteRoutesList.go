@@ -111,6 +111,9 @@ func (j *jsiiProxy_AppSpecStaticSiteRoutesList) WrapsSet() *bool {
 func NewAppSpecStaticSiteRoutesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpecStaticSiteRoutesList {
 	_init_.Initialize()
 
+	if err := validateNewAppSpecStaticSiteRoutesListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AppSpecStaticSiteRoutesList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewAppSpecStaticSiteRoutesList_Override(a AppSpecStaticSiteRoutesList, terr
 	)
 }
 
-func (j *jsiiProxy_AppSpecStaticSiteRoutesList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AppSpecStaticSiteRoutesList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_AppSpecStaticSiteRoutesList) SetInternalValue(val interface{}
 	)
 }
 
-func (j *jsiiProxy_AppSpecStaticSiteRoutesList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AppSpecStaticSiteRoutesList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_AppSpecStaticSiteRoutesList) SetTerraformAttribute(val *strin
 	)
 }
 
-func (j *jsiiProxy_AppSpecStaticSiteRoutesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppSpecStaticSiteRoutesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_AppSpecStaticSiteRoutesList) SetTerraformResource(val cdktf.I
 	)
 }
 
-func (j *jsiiProxy_AppSpecStaticSiteRoutesList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_AppSpecStaticSiteRoutesList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (a *jsiiProxy_AppSpecStaticSiteRoutesList) ComputeFqn() *string {
 }
 
 func (a *jsiiProxy_AppSpecStaticSiteRoutesList) Get(index *float64) AppSpecStaticSiteRoutesOutputReference {
+	if err := a.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns AppSpecStaticSiteRoutesOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (a *jsiiProxy_AppSpecStaticSiteRoutesList) Get(index *float64) AppSpecStati
 }
 
 func (a *jsiiProxy_AppSpecStaticSiteRoutesList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -195,6 +195,9 @@ func (j *jsiiProxy_DataDigitaloceanSshKeysSshKeysOutputReference) TerraformResou
 func NewDataDigitaloceanSshKeysSshKeysOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDigitaloceanSshKeysSshKeysOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDataDigitaloceanSshKeysSshKeysOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataDigitaloceanSshKeysSshKeysOutputReference{}
 
 	_jsii_.Create(
@@ -216,7 +219,10 @@ func NewDataDigitaloceanSshKeysSshKeysOutputReference_Override(d DataDigitalocea
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanSshKeysSshKeysOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataDigitaloceanSshKeysSshKeysOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -224,7 +230,10 @@ func (j *jsiiProxy_DataDigitaloceanSshKeysSshKeysOutputReference) SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanSshKeysSshKeysOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataDigitaloceanSshKeysSshKeysOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -232,7 +241,10 @@ func (j *jsiiProxy_DataDigitaloceanSshKeysSshKeysOutputReference) SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanSshKeysSshKeysOutputReference) SetInternalValue(val *DataDigitaloceanSshKeysSshKeys) {
+func (j *jsiiProxy_DataDigitaloceanSshKeysSshKeysOutputReference)SetInternalValue(val *DataDigitaloceanSshKeysSshKeys) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -240,7 +252,10 @@ func (j *jsiiProxy_DataDigitaloceanSshKeysSshKeysOutputReference) SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanSshKeysSshKeysOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataDigitaloceanSshKeysSshKeysOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -248,7 +263,10 @@ func (j *jsiiProxy_DataDigitaloceanSshKeysSshKeysOutputReference) SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanSshKeysSshKeysOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDigitaloceanSshKeysSshKeysOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -270,6 +288,9 @@ func (d *jsiiProxy_DataDigitaloceanSshKeysSshKeysOutputReference) ComputeFqn() *
 }
 
 func (d *jsiiProxy_DataDigitaloceanSshKeysSshKeysOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -283,6 +304,9 @@ func (d *jsiiProxy_DataDigitaloceanSshKeysSshKeysOutputReference) GetAnyMapAttri
 }
 
 func (d *jsiiProxy_DataDigitaloceanSshKeysSshKeysOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -296,6 +320,9 @@ func (d *jsiiProxy_DataDigitaloceanSshKeysSshKeysOutputReference) GetBooleanAttr
 }
 
 func (d *jsiiProxy_DataDigitaloceanSshKeysSshKeysOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -309,6 +336,9 @@ func (d *jsiiProxy_DataDigitaloceanSshKeysSshKeysOutputReference) GetBooleanMapA
 }
 
 func (d *jsiiProxy_DataDigitaloceanSshKeysSshKeysOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -322,6 +352,9 @@ func (d *jsiiProxy_DataDigitaloceanSshKeysSshKeysOutputReference) GetListAttribu
 }
 
 func (d *jsiiProxy_DataDigitaloceanSshKeysSshKeysOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -335,6 +368,9 @@ func (d *jsiiProxy_DataDigitaloceanSshKeysSshKeysOutputReference) GetNumberAttri
 }
 
 func (d *jsiiProxy_DataDigitaloceanSshKeysSshKeysOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -348,6 +384,9 @@ func (d *jsiiProxy_DataDigitaloceanSshKeysSshKeysOutputReference) GetNumberListA
 }
 
 func (d *jsiiProxy_DataDigitaloceanSshKeysSshKeysOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -361,6 +400,9 @@ func (d *jsiiProxy_DataDigitaloceanSshKeysSshKeysOutputReference) GetNumberMapAt
 }
 
 func (d *jsiiProxy_DataDigitaloceanSshKeysSshKeysOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -374,6 +416,9 @@ func (d *jsiiProxy_DataDigitaloceanSshKeysSshKeysOutputReference) GetStringAttri
 }
 
 func (d *jsiiProxy_DataDigitaloceanSshKeysSshKeysOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -400,6 +445,9 @@ func (d *jsiiProxy_DataDigitaloceanSshKeysSshKeysOutputReference) InterpolationA
 }
 
 func (d *jsiiProxy_DataDigitaloceanSshKeysSshKeysOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -413,6 +461,9 @@ func (d *jsiiProxy_DataDigitaloceanSshKeysSshKeysOutputReference) InterpolationF
 }
 
 func (d *jsiiProxy_DataDigitaloceanSshKeysSshKeysOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

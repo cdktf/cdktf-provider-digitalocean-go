@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataDigitaloceanSpacesBucketsBucketsList) WrapsSet() *bool {
 func NewDataDigitaloceanSpacesBucketsBucketsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanSpacesBucketsBucketsList {
 	_init_.Initialize()
 
+	if err := validateNewDataDigitaloceanSpacesBucketsBucketsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataDigitaloceanSpacesBucketsBucketsList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataDigitaloceanSpacesBucketsBucketsList_Override(d DataDigitaloceanSpac
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanSpacesBucketsBucketsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataDigitaloceanSpacesBucketsBucketsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataDigitaloceanSpacesBucketsBucketsList) SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanSpacesBucketsBucketsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDigitaloceanSpacesBucketsBucketsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataDigitaloceanSpacesBucketsBucketsList) SetTerraformResourc
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanSpacesBucketsBucketsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataDigitaloceanSpacesBucketsBucketsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataDigitaloceanSpacesBucketsBucketsList) ComputeFqn() *strin
 }
 
 func (d *jsiiProxy_DataDigitaloceanSpacesBucketsBucketsList) Get(index *float64) DataDigitaloceanSpacesBucketsBucketsOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataDigitaloceanSpacesBucketsBucketsOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataDigitaloceanSpacesBucketsBucketsList) Get(index *float64)
 }
 
 func (d *jsiiProxy_DataDigitaloceanSpacesBucketsBucketsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(
