@@ -115,6 +115,7 @@ type DatabaseConnectionPool interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetUser()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -902,6 +903,14 @@ func (d *jsiiProxy_DatabaseConnectionPool) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseConnectionPool) ResetUser() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetUser",
 		nil, // no parameters
 	)
 }
