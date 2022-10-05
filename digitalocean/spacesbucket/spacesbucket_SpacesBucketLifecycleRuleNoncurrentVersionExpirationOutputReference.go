@@ -2,9 +2,9 @@ package spacesbucket
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/hashicorp/cdktf-provider-digitalocean-go/digitalocean/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v3/jsii"
 
-	"github.com/hashicorp/cdktf-provider-digitalocean-go/digitalocean/v3/spacesbucket/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v3/spacesbucket/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
