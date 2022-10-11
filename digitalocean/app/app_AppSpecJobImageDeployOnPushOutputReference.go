@@ -8,7 +8,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-type AppSpecJobImageOutputReference interface {
+type AppSpecJobImageDeployOnPushOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
@@ -25,24 +25,13 @@ type AppSpecJobImageOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DeployOnPush() AppSpecJobImageDeployOnPushList
-	DeployOnPushInput() interface{}
+	Enabled() interface{}
+	SetEnabled(val interface{})
+	EnabledInput() interface{}
 	// Experimental.
 	Fqn() *string
-	InternalValue() *AppSpecJobImage
-	SetInternalValue(val *AppSpecJobImage)
-	Registry() *string
-	SetRegistry(val *string)
-	RegistryInput() *string
-	RegistryType() *string
-	SetRegistryType(val *string)
-	RegistryTypeInput() *string
-	Repository() *string
-	SetRepository(val *string)
-	RepositoryInput() *string
-	Tag() *string
-	SetTag(val *string)
-	TagInput() *string
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -75,10 +64,7 @@ type AppSpecJobImageOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutDeployOnPush(value interface{})
-	ResetDeployOnPush()
-	ResetRegistry()
-	ResetTag()
+	ResetEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -89,12 +75,12 @@ type AppSpecJobImageOutputReference interface {
 	ToString() *string
 }
 
-// The jsii proxy struct for AppSpecJobImageOutputReference
-type jsiiProxy_AppSpecJobImageOutputReference struct {
+// The jsii proxy struct for AppSpecJobImageDeployOnPushOutputReference
+type jsiiProxy_AppSpecJobImageDeployOnPushOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_AppSpecJobImageOutputReference) ComplexObjectIndex() interface{} {
+func (j *jsiiProxy_AppSpecJobImageDeployOnPushOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -104,7 +90,7 @@ func (j *jsiiProxy_AppSpecJobImageOutputReference) ComplexObjectIndex() interfac
 	return returns
 }
 
-func (j *jsiiProxy_AppSpecJobImageOutputReference) ComplexObjectIsFromSet() *bool {
+func (j *jsiiProxy_AppSpecJobImageDeployOnPushOutputReference) ComplexObjectIsFromSet() *bool {
 	var returns *bool
 	_jsii_.Get(
 		j,
@@ -114,7 +100,7 @@ func (j *jsiiProxy_AppSpecJobImageOutputReference) ComplexObjectIsFromSet() *boo
 	return returns
 }
 
-func (j *jsiiProxy_AppSpecJobImageOutputReference) CreationStack() *[]*string {
+func (j *jsiiProxy_AppSpecJobImageDeployOnPushOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -124,27 +110,27 @@ func (j *jsiiProxy_AppSpecJobImageOutputReference) CreationStack() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_AppSpecJobImageOutputReference) DeployOnPush() AppSpecJobImageDeployOnPushList {
-	var returns AppSpecJobImageDeployOnPushList
-	_jsii_.Get(
-		j,
-		"deployOnPush",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppSpecJobImageOutputReference) DeployOnPushInput() interface{} {
+func (j *jsiiProxy_AppSpecJobImageDeployOnPushOutputReference) Enabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"deployOnPushInput",
+		"enabled",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_AppSpecJobImageOutputReference) Fqn() *string {
+func (j *jsiiProxy_AppSpecJobImageDeployOnPushOutputReference) EnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecJobImageDeployOnPushOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -154,8 +140,8 @@ func (j *jsiiProxy_AppSpecJobImageOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AppSpecJobImageOutputReference) InternalValue() *AppSpecJobImage {
-	var returns *AppSpecJobImage
+func (j *jsiiProxy_AppSpecJobImageDeployOnPushOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -164,87 +150,7 @@ func (j *jsiiProxy_AppSpecJobImageOutputReference) InternalValue() *AppSpecJobIm
 	return returns
 }
 
-func (j *jsiiProxy_AppSpecJobImageOutputReference) Registry() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"registry",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppSpecJobImageOutputReference) RegistryInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"registryInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppSpecJobImageOutputReference) RegistryType() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"registryType",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppSpecJobImageOutputReference) RegistryTypeInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"registryTypeInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppSpecJobImageOutputReference) Repository() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"repository",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppSpecJobImageOutputReference) RepositoryInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"repositoryInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppSpecJobImageOutputReference) Tag() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"tag",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppSpecJobImageOutputReference) TagInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"tagInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppSpecJobImageOutputReference) TerraformAttribute() *string {
+func (j *jsiiProxy_AppSpecJobImageDeployOnPushOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -254,7 +160,7 @@ func (j *jsiiProxy_AppSpecJobImageOutputReference) TerraformAttribute() *string 
 	return returns
 }
 
-func (j *jsiiProxy_AppSpecJobImageOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+func (j *jsiiProxy_AppSpecJobImageDeployOnPushOutputReference) TerraformResource() cdktf.IInterpolatingParent {
 	var returns cdktf.IInterpolatingParent
 	_jsii_.Get(
 		j,
@@ -265,34 +171,34 @@ func (j *jsiiProxy_AppSpecJobImageOutputReference) TerraformResource() cdktf.IIn
 }
 
 
-func NewAppSpecJobImageOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AppSpecJobImageOutputReference {
+func NewAppSpecJobImageDeployOnPushOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AppSpecJobImageDeployOnPushOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewAppSpecJobImageOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewAppSpecJobImageDeployOnPushOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_AppSpecJobImageOutputReference{}
+	j := jsiiProxy_AppSpecJobImageDeployOnPushOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		"@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushOutputReference",
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewAppSpecJobImageOutputReference_Override(a AppSpecJobImageOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewAppSpecJobImageDeployOnPushOutputReference_Override(a AppSpecJobImageDeployOnPushOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-digitalocean.app.AppSpecJobImageOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		"@cdktf/provider-digitalocean.app.AppSpecJobImageDeployOnPushOutputReference",
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AppSpecJobImageOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AppSpecJobImageDeployOnPushOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +209,7 @@ func (j *jsiiProxy_AppSpecJobImageOutputReference)SetComplexObjectIndex(val inte
 	)
 }
 
-func (j *jsiiProxy_AppSpecJobImageOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AppSpecJobImageDeployOnPushOutputReference)SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +220,18 @@ func (j *jsiiProxy_AppSpecJobImageOutputReference)SetComplexObjectIsFromSet(val 
 	)
 }
 
-func (j *jsiiProxy_AppSpecJobImageOutputReference)SetInternalValue(val *AppSpecJobImage) {
+func (j *jsiiProxy_AppSpecJobImageDeployOnPushOutputReference)SetEnabled(val interface{}) {
+	if err := j.validateSetEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppSpecJobImageDeployOnPushOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,51 +242,7 @@ func (j *jsiiProxy_AppSpecJobImageOutputReference)SetInternalValue(val *AppSpecJ
 	)
 }
 
-func (j *jsiiProxy_AppSpecJobImageOutputReference)SetRegistry(val *string) {
-	if err := j.validateSetRegistryParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"registry",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AppSpecJobImageOutputReference)SetRegistryType(val *string) {
-	if err := j.validateSetRegistryTypeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"registryType",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AppSpecJobImageOutputReference)SetRepository(val *string) {
-	if err := j.validateSetRepositoryParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"repository",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AppSpecJobImageOutputReference)SetTag(val *string) {
-	if err := j.validateSetTagParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"tag",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AppSpecJobImageOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AppSpecJobImageDeployOnPushOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -380,7 +253,7 @@ func (j *jsiiProxy_AppSpecJobImageOutputReference)SetTerraformAttribute(val *str
 	)
 }
 
-func (j *jsiiProxy_AppSpecJobImageOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppSpecJobImageDeployOnPushOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -391,7 +264,7 @@ func (j *jsiiProxy_AppSpecJobImageOutputReference)SetTerraformResource(val cdktf
 	)
 }
 
-func (a *jsiiProxy_AppSpecJobImageOutputReference) ComputeFqn() *string {
+func (a *jsiiProxy_AppSpecJobImageDeployOnPushOutputReference) ComputeFqn() *string {
 	var returns *string
 
 	_jsii_.Invoke(
@@ -404,7 +277,7 @@ func (a *jsiiProxy_AppSpecJobImageOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AppSpecJobImageOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AppSpecJobImageDeployOnPushOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -420,7 +293,7 @@ func (a *jsiiProxy_AppSpecJobImageOutputReference) GetAnyMapAttribute(terraformA
 	return returns
 }
 
-func (a *jsiiProxy_AppSpecJobImageOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AppSpecJobImageDeployOnPushOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -436,7 +309,7 @@ func (a *jsiiProxy_AppSpecJobImageOutputReference) GetBooleanAttribute(terraform
 	return returns
 }
 
-func (a *jsiiProxy_AppSpecJobImageOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+func (a *jsiiProxy_AppSpecJobImageDeployOnPushOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
 	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -452,7 +325,7 @@ func (a *jsiiProxy_AppSpecJobImageOutputReference) GetBooleanMapAttribute(terraf
 	return returns
 }
 
-func (a *jsiiProxy_AppSpecJobImageOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+func (a *jsiiProxy_AppSpecJobImageDeployOnPushOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
 	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -468,7 +341,7 @@ func (a *jsiiProxy_AppSpecJobImageOutputReference) GetListAttribute(terraformAtt
 	return returns
 }
 
-func (a *jsiiProxy_AppSpecJobImageOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+func (a *jsiiProxy_AppSpecJobImageDeployOnPushOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
 	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -484,7 +357,7 @@ func (a *jsiiProxy_AppSpecJobImageOutputReference) GetNumberAttribute(terraformA
 	return returns
 }
 
-func (a *jsiiProxy_AppSpecJobImageOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+func (a *jsiiProxy_AppSpecJobImageDeployOnPushOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
 	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -500,7 +373,7 @@ func (a *jsiiProxy_AppSpecJobImageOutputReference) GetNumberListAttribute(terraf
 	return returns
 }
 
-func (a *jsiiProxy_AppSpecJobImageOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+func (a *jsiiProxy_AppSpecJobImageDeployOnPushOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
 	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -516,7 +389,7 @@ func (a *jsiiProxy_AppSpecJobImageOutputReference) GetNumberMapAttribute(terrafo
 	return returns
 }
 
-func (a *jsiiProxy_AppSpecJobImageOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+func (a *jsiiProxy_AppSpecJobImageDeployOnPushOutputReference) GetStringAttribute(terraformAttribute *string) *string {
 	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -532,7 +405,7 @@ func (a *jsiiProxy_AppSpecJobImageOutputReference) GetStringAttribute(terraformA
 	return returns
 }
 
-func (a *jsiiProxy_AppSpecJobImageOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+func (a *jsiiProxy_AppSpecJobImageDeployOnPushOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
 	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -548,7 +421,7 @@ func (a *jsiiProxy_AppSpecJobImageOutputReference) GetStringMapAttribute(terrafo
 	return returns
 }
 
-func (a *jsiiProxy_AppSpecJobImageOutputReference) InterpolationAsList() cdktf.IResolvable {
+func (a *jsiiProxy_AppSpecJobImageDeployOnPushOutputReference) InterpolationAsList() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -561,7 +434,7 @@ func (a *jsiiProxy_AppSpecJobImageOutputReference) InterpolationAsList() cdktf.I
 	return returns
 }
 
-func (a *jsiiProxy_AppSpecJobImageOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+func (a *jsiiProxy_AppSpecJobImageDeployOnPushOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
 	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
 		panic(err)
 	}
@@ -577,42 +450,15 @@ func (a *jsiiProxy_AppSpecJobImageOutputReference) InterpolationForAttribute(pro
 	return returns
 }
 
-func (a *jsiiProxy_AppSpecJobImageOutputReference) PutDeployOnPush(value interface{}) {
-	if err := a.validatePutDeployOnPushParameters(value); err != nil {
-		panic(err)
-	}
+func (a *jsiiProxy_AppSpecJobImageDeployOnPushOutputReference) ResetEnabled() {
 	_jsii_.InvokeVoid(
 		a,
-		"putDeployOnPush",
-		[]interface{}{value},
-	)
-}
-
-func (a *jsiiProxy_AppSpecJobImageOutputReference) ResetDeployOnPush() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetDeployOnPush",
+		"resetEnabled",
 		nil, // no parameters
 	)
 }
 
-func (a *jsiiProxy_AppSpecJobImageOutputReference) ResetRegistry() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetRegistry",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AppSpecJobImageOutputReference) ResetTag() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetTag",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AppSpecJobImageOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AppSpecJobImageDeployOnPushOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
@@ -628,7 +474,7 @@ func (a *jsiiProxy_AppSpecJobImageOutputReference) Resolve(_context cdktf.IResol
 	return returns
 }
 
-func (a *jsiiProxy_AppSpecJobImageOutputReference) ToString() *string {
+func (a *jsiiProxy_AppSpecJobImageDeployOnPushOutputReference) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(

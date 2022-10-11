@@ -25,6 +25,7 @@ type DataDigitaloceanAppSpecWorkerImageOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DeployOnPush() DataDigitaloceanAppSpecWorkerImageDeployOnPushList
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataDigitaloceanAppSpecWorkerImage
@@ -105,6 +106,16 @@ func (j *jsiiProxy_DataDigitaloceanAppSpecWorkerImageOutputReference) CreationSt
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDigitaloceanAppSpecWorkerImageOutputReference) DeployOnPush() DataDigitaloceanAppSpecWorkerImageDeployOnPushList {
+	var returns DataDigitaloceanAppSpecWorkerImageDeployOnPushList
+	_jsii_.Get(
+		j,
+		"deployOnPush",
 		&returns,
 	)
 	return returns

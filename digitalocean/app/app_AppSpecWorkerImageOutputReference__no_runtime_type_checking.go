@@ -45,6 +45,10 @@ func (a *jsiiProxy_AppSpecWorkerImageOutputReference) validateInterpolationForAt
 	return nil
 }
 
+func (a *jsiiProxy_AppSpecWorkerImageOutputReference) validatePutDeployOnPushParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppSpecWorkerImageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

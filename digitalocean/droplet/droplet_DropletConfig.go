@@ -23,8 +23,6 @@ type DropletConfig struct {
 	Image *string `field:"required" json:"image" yaml:"image"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/droplet#name Droplet#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/droplet#region Droplet#region}.
-	Region *string `field:"required" json:"region" yaml:"region"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/droplet#size Droplet#size}.
 	Size *string `field:"required" json:"size" yaml:"size"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/droplet#backups Droplet#backups}.
@@ -44,6 +42,8 @@ type DropletConfig struct {
 	Monitoring interface{} `field:"optional" json:"monitoring" yaml:"monitoring"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/droplet#private_networking Droplet#private_networking}.
 	PrivateNetworking interface{} `field:"optional" json:"privateNetworking" yaml:"privateNetworking"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/droplet#region Droplet#region}.
+	Region *string `field:"optional" json:"region" yaml:"region"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/droplet#resize_disk Droplet#resize_disk}.
 	ResizeDisk interface{} `field:"optional" json:"resizeDisk" yaml:"resizeDisk"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/droplet#ssh_keys Droplet#ssh_keys}.

@@ -10,6 +10,10 @@ type AppSpecServiceImage struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#repository App#repository}
 	Repository *string `field:"required" json:"repository" yaml:"repository"`
+	// deploy_on_push block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#deploy_on_push App#deploy_on_push}
+	DeployOnPush interface{} `field:"optional" json:"deployOnPush" yaml:"deployOnPush"`
 	// The registry name. Must be left empty for the DOCR registry type.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#registry App#registry}

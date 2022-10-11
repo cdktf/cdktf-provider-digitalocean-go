@@ -159,6 +159,7 @@ type Droplet interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPrivateNetworking()
+	ResetRegion()
 	ResetResizeDisk()
 	ResetSshKeys()
 	ResetTags()
@@ -1402,6 +1403,14 @@ func (d *jsiiProxy_Droplet) ResetPrivateNetworking() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPrivateNetworking",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_Droplet) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

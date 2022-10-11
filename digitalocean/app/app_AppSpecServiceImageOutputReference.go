@@ -25,6 +25,8 @@ type AppSpecServiceImageOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DeployOnPush() AppSpecServiceImageDeployOnPushList
+	DeployOnPushInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *AppSpecServiceImage
@@ -73,6 +75,8 @@ type AppSpecServiceImageOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutDeployOnPush(value interface{})
+	ResetDeployOnPush()
 	ResetRegistry()
 	ResetTag()
 	// Produce the Token's value at resolution time.
@@ -115,6 +119,26 @@ func (j *jsiiProxy_AppSpecServiceImageOutputReference) CreationStack() *[]*strin
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecServiceImageOutputReference) DeployOnPush() AppSpecServiceImageDeployOnPushList {
+	var returns AppSpecServiceImageDeployOnPushList
+	_jsii_.Get(
+		j,
+		"deployOnPush",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecServiceImageOutputReference) DeployOnPushInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deployOnPushInput",
 		&returns,
 	)
 	return returns
@@ -551,6 +575,25 @@ func (a *jsiiProxy_AppSpecServiceImageOutputReference) InterpolationForAttribute
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_AppSpecServiceImageOutputReference) PutDeployOnPush(value interface{}) {
+	if err := a.validatePutDeployOnPushParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putDeployOnPush",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AppSpecServiceImageOutputReference) ResetDeployOnPush() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDeployOnPush",
+		nil, // no parameters
+	)
 }
 
 func (a *jsiiProxy_AppSpecServiceImageOutputReference) ResetRegistry() {
