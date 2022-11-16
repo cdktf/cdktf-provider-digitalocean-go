@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package projectresources
 
@@ -54,6 +53,14 @@ func (p *jsiiProxy_ProjectResources) validateOverrideLogicalIdParameters(newLogi
 }
 
 func validateProjectResources_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateProjectResources_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateProjectResources_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

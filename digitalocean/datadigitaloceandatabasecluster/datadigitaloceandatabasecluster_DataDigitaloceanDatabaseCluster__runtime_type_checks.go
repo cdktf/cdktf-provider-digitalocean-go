@@ -1,5 +1,4 @@
 //go:build !no_runtime_type_checking
-// +build !no_runtime_type_checking
 
 package datadigitaloceandatabasecluster
 
@@ -113,6 +112,22 @@ func (d *jsiiProxy_DataDigitaloceanDatabaseCluster) validateOverrideLogicalIdPar
 }
 
 func validateDataDigitaloceanDatabaseCluster_IsConstructParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateDataDigitaloceanDatabaseCluster_IsTerraformDataSourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateDataDigitaloceanDatabaseCluster_IsTerraformElementParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}

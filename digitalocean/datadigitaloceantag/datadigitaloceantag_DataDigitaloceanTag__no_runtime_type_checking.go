@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package datadigitaloceantag
 
@@ -54,6 +53,14 @@ func (d *jsiiProxy_DataDigitaloceanTag) validateOverrideLogicalIdParameters(newL
 }
 
 func validateDataDigitaloceanTag_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataDigitaloceanTag_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataDigitaloceanTag_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 

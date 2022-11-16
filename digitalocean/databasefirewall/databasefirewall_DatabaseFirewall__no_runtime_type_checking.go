@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package databasefirewall
 
@@ -58,6 +57,14 @@ func (d *jsiiProxy_DatabaseFirewall) validatePutRuleParameters(value interface{}
 }
 
 func validateDatabaseFirewall_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDatabaseFirewall_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDatabaseFirewall_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

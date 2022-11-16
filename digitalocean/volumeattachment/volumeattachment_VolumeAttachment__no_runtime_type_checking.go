@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package volumeattachment
 
@@ -54,6 +53,14 @@ func (v *jsiiProxy_VolumeAttachment) validateOverrideLogicalIdParameters(newLogi
 }
 
 func validateVolumeAttachment_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateVolumeAttachment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVolumeAttachment_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package dropletsnapshot
 
@@ -54,6 +53,14 @@ func (d *jsiiProxy_DropletSnapshot) validateOverrideLogicalIdParameters(newLogic
 }
 
 func validateDropletSnapshot_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDropletSnapshot_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDropletSnapshot_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

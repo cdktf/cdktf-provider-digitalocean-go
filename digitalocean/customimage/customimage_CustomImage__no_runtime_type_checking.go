@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package customimage
 
@@ -54,6 +53,14 @@ func (c *jsiiProxy_CustomImage) validateOverrideLogicalIdParameters(newLogicalId
 }
 
 func validateCustomImage_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateCustomImage_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCustomImage_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

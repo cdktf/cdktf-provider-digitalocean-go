@@ -2,10 +2,10 @@ package datadigitaloceandomains
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v3/datadigitaloceandomains/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v4/datadigitaloceandomains/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -428,6 +428,44 @@ func DataDigitaloceanDomains_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataDigitaloceanDomains_IsTerraformDataSource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataDigitaloceanDomains_IsTerraformDataSourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains",
+		"isTerraformDataSource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataDigitaloceanDomains_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataDigitaloceanDomains_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-digitalocean.dataDigitaloceanDomains.DataDigitaloceanDomains",
+		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
 	)

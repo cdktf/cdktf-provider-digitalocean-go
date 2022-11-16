@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package loadbalancer
 
@@ -66,6 +65,14 @@ func (l *jsiiProxy_Loadbalancer) validatePutStickySessionsParameters(value *Load
 }
 
 func validateLoadbalancer_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateLoadbalancer_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLoadbalancer_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

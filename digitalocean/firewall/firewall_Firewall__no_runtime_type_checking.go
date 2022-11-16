@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package firewall
 
@@ -62,6 +61,14 @@ func (f *jsiiProxy_Firewall) validatePutOutboundRuleParameters(value interface{}
 }
 
 func validateFirewall_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateFirewall_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateFirewall_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

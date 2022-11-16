@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package databaseconnectionpool
 
@@ -54,6 +53,14 @@ func (d *jsiiProxy_DatabaseConnectionPool) validateOverrideLogicalIdParameters(n
 }
 
 func validateDatabaseConnectionPool_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDatabaseConnectionPool_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDatabaseConnectionPool_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

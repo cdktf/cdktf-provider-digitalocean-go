@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package datadigitaloceanfirewall
 
@@ -62,6 +61,14 @@ func (d *jsiiProxy_DataDigitaloceanFirewall) validatePutOutboundRuleParameters(v
 }
 
 func validateDataDigitaloceanFirewall_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataDigitaloceanFirewall_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataDigitaloceanFirewall_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 

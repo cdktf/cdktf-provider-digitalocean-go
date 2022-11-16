@@ -2,10 +2,10 @@ package databasereplica
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v3/databasereplica/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v4/databasereplica/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -715,6 +715,44 @@ func DatabaseReplica_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-digitalocean.databaseReplica.DatabaseReplica",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DatabaseReplica_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDatabaseReplica_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-digitalocean.databaseReplica.DatabaseReplica",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DatabaseReplica_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDatabaseReplica_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-digitalocean.databaseReplica.DatabaseReplica",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

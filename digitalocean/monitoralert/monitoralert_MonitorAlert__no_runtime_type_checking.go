@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package monitoralert
 
@@ -58,6 +57,14 @@ func (m *jsiiProxy_MonitorAlert) validatePutAlertsParameters(value *MonitorAlert
 }
 
 func validateMonitorAlert_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateMonitorAlert_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMonitorAlert_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

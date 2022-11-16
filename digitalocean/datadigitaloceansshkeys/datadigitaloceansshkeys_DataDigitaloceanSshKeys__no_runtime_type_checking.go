@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package datadigitaloceansshkeys
 
@@ -62,6 +61,14 @@ func (d *jsiiProxy_DataDigitaloceanSshKeys) validatePutSortParameters(value inte
 }
 
 func validateDataDigitaloceanSshKeys_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataDigitaloceanSshKeys_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataDigitaloceanSshKeys_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 

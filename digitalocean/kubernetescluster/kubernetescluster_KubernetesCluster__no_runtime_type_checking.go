@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package kubernetescluster
 
@@ -66,6 +65,14 @@ func (k *jsiiProxy_KubernetesCluster) validatePutTimeoutsParameters(value *Kuber
 }
 
 func validateKubernetesCluster_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateKubernetesCluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateKubernetesCluster_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

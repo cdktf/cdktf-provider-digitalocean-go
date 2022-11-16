@@ -2,10 +2,10 @@ package spacesbucketpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v3/spacesbucketpolicy/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v4/spacesbucketpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -521,6 +521,44 @@ func SpacesBucketPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-digitalocean.spacesBucketPolicy.SpacesBucketPolicy",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SpacesBucketPolicy_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSpacesBucketPolicy_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-digitalocean.spacesBucketPolicy.SpacesBucketPolicy",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SpacesBucketPolicy_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSpacesBucketPolicy_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-digitalocean.spacesBucketPolicy.SpacesBucketPolicy",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package reservedip
 
@@ -54,6 +53,14 @@ func (r *jsiiProxy_ReservedIp) validateOverrideLogicalIdParameters(newLogicalId 
 }
 
 func validateReservedIp_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateReservedIp_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateReservedIp_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

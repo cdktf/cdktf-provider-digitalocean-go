@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package databaseuser
 
@@ -54,6 +53,14 @@ func (d *jsiiProxy_DatabaseUser) validateOverrideLogicalIdParameters(newLogicalI
 }
 
 func validateDatabaseUser_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDatabaseUser_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDatabaseUser_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

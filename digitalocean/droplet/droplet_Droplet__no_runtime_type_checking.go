@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package droplet
 
@@ -58,6 +57,14 @@ func (d *jsiiProxy_Droplet) validatePutTimeoutsParameters(value *DropletTimeouts
 }
 
 func validateDroplet_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDroplet_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDroplet_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

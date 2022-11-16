@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package datadigitaloceanprojects
 
@@ -62,6 +61,14 @@ func (d *jsiiProxy_DataDigitaloceanProjects) validatePutSortParameters(value int
 }
 
 func validateDataDigitaloceanProjects_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataDigitaloceanProjects_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataDigitaloceanProjects_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 

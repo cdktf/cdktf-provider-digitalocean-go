@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package datadigitaloceanspacesbucketobject
 
@@ -54,6 +53,14 @@ func (d *jsiiProxy_DataDigitaloceanSpacesBucketObject) validateOverrideLogicalId
 }
 
 func validateDataDigitaloceanSpacesBucketObject_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataDigitaloceanSpacesBucketObject_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataDigitaloceanSpacesBucketObject_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 

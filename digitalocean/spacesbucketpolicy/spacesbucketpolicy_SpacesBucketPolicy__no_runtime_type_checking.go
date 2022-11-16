@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package spacesbucketpolicy
 
@@ -54,6 +53,14 @@ func (s *jsiiProxy_SpacesBucketPolicy) validateOverrideLogicalIdParameters(newLo
 }
 
 func validateSpacesBucketPolicy_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateSpacesBucketPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSpacesBucketPolicy_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

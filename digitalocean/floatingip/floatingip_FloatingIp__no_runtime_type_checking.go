@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package floatingip
 
@@ -54,6 +53,14 @@ func (f *jsiiProxy_FloatingIp) validateOverrideLogicalIdParameters(newLogicalId 
 }
 
 func validateFloatingIp_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateFloatingIp_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateFloatingIp_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

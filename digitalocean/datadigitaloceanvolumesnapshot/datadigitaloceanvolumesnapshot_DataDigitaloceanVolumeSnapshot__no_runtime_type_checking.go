@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package datadigitaloceanvolumesnapshot
 
@@ -54,6 +53,14 @@ func (d *jsiiProxy_DataDigitaloceanVolumeSnapshot) validateOverrideLogicalIdPara
 }
 
 func validateDataDigitaloceanVolumeSnapshot_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataDigitaloceanVolumeSnapshot_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataDigitaloceanVolumeSnapshot_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 

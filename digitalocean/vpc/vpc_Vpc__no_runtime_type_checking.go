@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package vpc
 
@@ -58,6 +57,14 @@ func (v *jsiiProxy_Vpc) validatePutTimeoutsParameters(value *VpcTimeouts) error 
 }
 
 func validateVpc_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateVpc_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVpc_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

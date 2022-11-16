@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package reservedipassignment
 
@@ -54,6 +53,14 @@ func (r *jsiiProxy_ReservedIpAssignment) validateOverrideLogicalIdParameters(new
 }
 
 func validateReservedIpAssignment_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateReservedIpAssignment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateReservedIpAssignment_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

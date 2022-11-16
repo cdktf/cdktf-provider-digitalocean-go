@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package databasereplica
 
@@ -54,6 +53,14 @@ func (d *jsiiProxy_DatabaseReplica) validateOverrideLogicalIdParameters(newLogic
 }
 
 func validateDatabaseReplica_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDatabaseReplica_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDatabaseReplica_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

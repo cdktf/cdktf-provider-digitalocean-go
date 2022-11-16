@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package datadigitaloceanreservedip
 
@@ -54,6 +53,14 @@ func (d *jsiiProxy_DataDigitaloceanReservedIp) validateOverrideLogicalIdParamete
 }
 
 func validateDataDigitaloceanReservedIp_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataDigitaloceanReservedIp_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataDigitaloceanReservedIp_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 

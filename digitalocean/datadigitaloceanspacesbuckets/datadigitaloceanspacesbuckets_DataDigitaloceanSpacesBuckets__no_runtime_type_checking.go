@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package datadigitaloceanspacesbuckets
 
@@ -62,6 +61,14 @@ func (d *jsiiProxy_DataDigitaloceanSpacesBuckets) validatePutSortParameters(valu
 }
 
 func validateDataDigitaloceanSpacesBuckets_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataDigitaloceanSpacesBuckets_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataDigitaloceanSpacesBuckets_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 

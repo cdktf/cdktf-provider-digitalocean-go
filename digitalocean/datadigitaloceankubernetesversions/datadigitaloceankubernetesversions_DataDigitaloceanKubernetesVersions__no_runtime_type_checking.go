@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package datadigitaloceankubernetesversions
 
@@ -54,6 +53,14 @@ func (d *jsiiProxy_DataDigitaloceanKubernetesVersions) validateOverrideLogicalId
 }
 
 func validateDataDigitaloceanKubernetesVersions_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataDigitaloceanKubernetesVersions_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataDigitaloceanKubernetesVersions_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 

@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package datadigitaloceancontainerregistry
 
@@ -54,6 +53,14 @@ func (d *jsiiProxy_DataDigitaloceanContainerRegistry) validateOverrideLogicalIdP
 }
 
 func validateDataDigitaloceanContainerRegistry_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataDigitaloceanContainerRegistry_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataDigitaloceanContainerRegistry_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
