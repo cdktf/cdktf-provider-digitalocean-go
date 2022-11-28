@@ -40,6 +40,7 @@ type DataDigitaloceanLoadbalancer interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Healthcheck() DataDigitaloceanLoadbalancerHealthcheckList
+	HttpIdleTimeoutSeconds() *float64
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -53,6 +54,7 @@ type DataDigitaloceanLoadbalancer interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	ProjectId() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -268,6 +270,16 @@ func (j *jsiiProxy_DataDigitaloceanLoadbalancer) Healthcheck() DataDigitaloceanL
 	return returns
 }
 
+func (j *jsiiProxy_DataDigitaloceanLoadbalancer) HttpIdleTimeoutSeconds() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"httpIdleTimeoutSeconds",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDigitaloceanLoadbalancer) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -333,6 +345,16 @@ func (j *jsiiProxy_DataDigitaloceanLoadbalancer) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDigitaloceanLoadbalancer) ProjectId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectId",
 		&returns,
 	)
 	return returns

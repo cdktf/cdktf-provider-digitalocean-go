@@ -305,6 +305,14 @@ func (j *jsiiProxy_Loadbalancer) validateSetEnableProxyProtocolParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_Loadbalancer) validateSetHttpIdleTimeoutSecondsParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Loadbalancer) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -322,6 +330,14 @@ func (j *jsiiProxy_Loadbalancer) validateSetLifecycleParameters(val *cdktf.Terra
 }
 
 func (j *jsiiProxy_Loadbalancer) validateSetNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Loadbalancer) validateSetProjectIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

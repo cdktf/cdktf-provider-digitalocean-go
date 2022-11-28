@@ -104,6 +104,10 @@ func (j *jsiiProxy_Loadbalancer) validateSetEnableProxyProtocolParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_Loadbalancer) validateSetHttpIdleTimeoutSecondsParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_Loadbalancer) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -113,6 +117,10 @@ func (j *jsiiProxy_Loadbalancer) validateSetLifecycleParameters(val *cdktf.Terra
 }
 
 func (j *jsiiProxy_Loadbalancer) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Loadbalancer) validateSetProjectIdParameters(val *string) error {
 	return nil
 }
 

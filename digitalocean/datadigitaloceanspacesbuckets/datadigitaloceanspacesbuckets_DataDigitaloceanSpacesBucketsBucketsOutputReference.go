@@ -26,6 +26,7 @@ type DataDigitaloceanSpacesBucketsBucketsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Endpoint() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataDigitaloceanSpacesBucketsBuckets
@@ -115,6 +116,16 @@ func (j *jsiiProxy_DataDigitaloceanSpacesBucketsBucketsOutputReference) Creation
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDigitaloceanSpacesBucketsBucketsOutputReference) Endpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endpoint",
 		&returns,
 	)
 	return returns

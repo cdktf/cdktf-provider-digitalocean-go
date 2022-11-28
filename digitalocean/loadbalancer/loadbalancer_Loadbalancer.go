@@ -58,6 +58,9 @@ type Loadbalancer interface {
 	FriendlyUniqueId() *string
 	Healthcheck() LoadbalancerHealthcheckOutputReference
 	HealthcheckInput() *LoadbalancerHealthcheck
+	HttpIdleTimeoutSeconds() *float64
+	SetHttpIdleTimeoutSeconds(val *float64)
+	HttpIdleTimeoutSecondsInput() *float64
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -71,6 +74,9 @@ type Loadbalancer interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	ProjectId() *string
+	SetProjectId(val *string)
+	ProjectIdInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -141,10 +147,12 @@ type Loadbalancer interface {
 	ResetEnableBackendKeepalive()
 	ResetEnableProxyProtocol()
 	ResetHealthcheck()
+	ResetHttpIdleTimeoutSeconds()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProjectId()
 	ResetRedirectHttpToHttps()
 	ResetSize()
 	ResetSizeUnit()
@@ -405,6 +413,26 @@ func (j *jsiiProxy_Loadbalancer) HealthcheckInput() *LoadbalancerHealthcheck {
 	return returns
 }
 
+func (j *jsiiProxy_Loadbalancer) HttpIdleTimeoutSeconds() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"httpIdleTimeoutSeconds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Loadbalancer) HttpIdleTimeoutSecondsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"httpIdleTimeoutSecondsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Loadbalancer) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -470,6 +498,26 @@ func (j *jsiiProxy_Loadbalancer) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Loadbalancer) ProjectId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Loadbalancer) ProjectIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectIdInput",
 		&returns,
 	)
 	return returns
@@ -806,6 +854,17 @@ func (j *jsiiProxy_Loadbalancer)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
+func (j *jsiiProxy_Loadbalancer)SetHttpIdleTimeoutSeconds(val *float64) {
+	if err := j.validateSetHttpIdleTimeoutSecondsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"httpIdleTimeoutSeconds",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Loadbalancer)SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
@@ -835,6 +894,17 @@ func (j *jsiiProxy_Loadbalancer)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Loadbalancer)SetProjectId(val *string) {
+	if err := j.validateSetProjectIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"projectId",
 		val,
 	)
 }
@@ -1268,6 +1338,14 @@ func (l *jsiiProxy_Loadbalancer) ResetHealthcheck() {
 	)
 }
 
+func (l *jsiiProxy_Loadbalancer) ResetHttpIdleTimeoutSeconds() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetHttpIdleTimeoutSeconds",
+		nil, // no parameters
+	)
+}
+
 func (l *jsiiProxy_Loadbalancer) ResetId() {
 	_jsii_.InvokeVoid(
 		l,
@@ -1280,6 +1358,14 @@ func (l *jsiiProxy_Loadbalancer) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_Loadbalancer) ResetProjectId() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetProjectId",
 		nil, // no parameters
 	)
 }
