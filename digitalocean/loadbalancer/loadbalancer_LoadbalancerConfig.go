@@ -39,6 +39,10 @@ type LoadbalancerConfig struct {
 	EnableBackendKeepalive interface{} `field:"optional" json:"enableBackendKeepalive" yaml:"enableBackendKeepalive"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/loadbalancer#enable_proxy_protocol Loadbalancer#enable_proxy_protocol}.
 	EnableProxyProtocol interface{} `field:"optional" json:"enableProxyProtocol" yaml:"enableProxyProtocol"`
+	// firewall block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/loadbalancer#firewall Loadbalancer#firewall}
+	Firewall *LoadbalancerFirewall `field:"optional" json:"firewall" yaml:"firewall"`
 	// healthcheck block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/loadbalancer#healthcheck Loadbalancer#healthcheck}

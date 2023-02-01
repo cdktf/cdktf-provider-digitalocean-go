@@ -30,6 +30,7 @@ type DataDigitaloceanLoadbalancer interface {
 	DropletTag() *string
 	EnableBackendKeepalive() cdktf.IResolvable
 	EnableProxyProtocol() cdktf.IResolvable
+	Firewall() DataDigitaloceanLoadbalancerFirewallList
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -215,6 +216,16 @@ func (j *jsiiProxy_DataDigitaloceanLoadbalancer) EnableProxyProtocol() cdktf.IRe
 	_jsii_.Get(
 		j,
 		"enableProxyProtocol",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDigitaloceanLoadbalancer) Firewall() DataDigitaloceanLoadbalancerFirewallList {
+	var returns DataDigitaloceanLoadbalancerFirewallList
+	_jsii_.Get(
+		j,
+		"firewall",
 		&returns,
 	)
 	return returns

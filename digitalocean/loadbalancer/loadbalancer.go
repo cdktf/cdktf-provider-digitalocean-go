@@ -29,6 +29,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "enableBackendKeepaliveInput", GoGetter: "EnableBackendKeepaliveInput"},
 			_jsii_.MemberProperty{JsiiProperty: "enableProxyProtocol", GoGetter: "EnableProxyProtocol"},
 			_jsii_.MemberProperty{JsiiProperty: "enableProxyProtocolInput", GoGetter: "EnableProxyProtocolInput"},
+			_jsii_.MemberProperty{JsiiProperty: "firewall", GoGetter: "Firewall"},
+			_jsii_.MemberProperty{JsiiProperty: "firewallInput", GoGetter: "FirewallInput"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "forwardingRule", GoGetter: "ForwardingRule"},
 			_jsii_.MemberProperty{JsiiProperty: "forwardingRuleInput", GoGetter: "ForwardingRuleInput"},
@@ -60,6 +62,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "projectIdInput", GoGetter: "ProjectIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
+			_jsii_.MemberMethod{JsiiMethod: "putFirewall", GoMethod: "PutFirewall"},
 			_jsii_.MemberMethod{JsiiMethod: "putForwardingRule", GoMethod: "PutForwardingRule"},
 			_jsii_.MemberMethod{JsiiMethod: "putHealthcheck", GoMethod: "PutHealthcheck"},
 			_jsii_.MemberMethod{JsiiMethod: "putStickySessions", GoMethod: "PutStickySessions"},
@@ -74,6 +77,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetDropletTag", GoMethod: "ResetDropletTag"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnableBackendKeepalive", GoMethod: "ResetEnableBackendKeepalive"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnableProxyProtocol", GoMethod: "ResetEnableProxyProtocol"},
+			_jsii_.MemberMethod{JsiiMethod: "resetFirewall", GoMethod: "ResetFirewall"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHealthcheck", GoMethod: "ResetHealthcheck"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHttpIdleTimeoutSeconds", GoMethod: "ResetHttpIdleTimeoutSeconds"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
@@ -111,6 +115,48 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-digitalocean.loadbalancer.LoadbalancerConfig",
 		reflect.TypeOf((*LoadbalancerConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-digitalocean.loadbalancer.LoadbalancerFirewall",
+		reflect.TypeOf((*LoadbalancerFirewall)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-digitalocean.loadbalancer.LoadbalancerFirewallOutputReference",
+		reflect.TypeOf((*LoadbalancerFirewallOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "allow", GoGetter: "Allow"},
+			_jsii_.MemberProperty{JsiiProperty: "allowInput", GoGetter: "AllowInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "deny", GoGetter: "Deny"},
+			_jsii_.MemberProperty{JsiiProperty: "denyInput", GoGetter: "DenyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAllow", GoMethod: "ResetAllow"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDeny", GoMethod: "ResetDeny"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_LoadbalancerFirewallOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-digitalocean.loadbalancer.LoadbalancerForwardingRule",

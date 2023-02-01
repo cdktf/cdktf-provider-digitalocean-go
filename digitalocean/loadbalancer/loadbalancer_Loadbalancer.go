@@ -46,6 +46,8 @@ type Loadbalancer interface {
 	EnableProxyProtocol() interface{}
 	SetEnableProxyProtocol(val interface{})
 	EnableProxyProtocolInput() interface{}
+	Firewall() LoadbalancerFirewallOutputReference
+	FirewallInput() *LoadbalancerFirewall
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -137,6 +139,7 @@ type Loadbalancer interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutFirewall(value *LoadbalancerFirewall)
 	PutForwardingRule(value interface{})
 	PutHealthcheck(value *LoadbalancerHealthcheck)
 	PutStickySessions(value *LoadbalancerStickySessions)
@@ -146,6 +149,7 @@ type Loadbalancer interface {
 	ResetDropletTag()
 	ResetEnableBackendKeepalive()
 	ResetEnableProxyProtocol()
+	ResetFirewall()
 	ResetHealthcheck()
 	ResetHttpIdleTimeoutSeconds()
 	ResetId()
@@ -338,6 +342,26 @@ func (j *jsiiProxy_Loadbalancer) EnableProxyProtocolInput() interface{} {
 	_jsii_.Get(
 		j,
 		"enableProxyProtocolInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Loadbalancer) Firewall() LoadbalancerFirewallOutputReference {
+	var returns LoadbalancerFirewallOutputReference
+	_jsii_.Get(
+		j,
+		"firewall",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Loadbalancer) FirewallInput() *LoadbalancerFirewall {
+	var returns *LoadbalancerFirewall
+	_jsii_.Get(
+		j,
+		"firewallInput",
 		&returns,
 	)
 	return returns
@@ -1249,6 +1273,17 @@ func (l *jsiiProxy_Loadbalancer) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (l *jsiiProxy_Loadbalancer) PutFirewall(value *LoadbalancerFirewall) {
+	if err := l.validatePutFirewallParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putFirewall",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_Loadbalancer) PutForwardingRule(value interface{}) {
 	if err := l.validatePutForwardingRuleParameters(value); err != nil {
 		panic(err)
@@ -1326,6 +1361,14 @@ func (l *jsiiProxy_Loadbalancer) ResetEnableProxyProtocol() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetEnableProxyProtocol",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_Loadbalancer) ResetFirewall() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetFirewall",
 		nil, // no parameters
 	)
 }

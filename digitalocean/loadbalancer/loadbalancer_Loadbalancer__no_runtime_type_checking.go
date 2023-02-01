@@ -52,6 +52,10 @@ func (l *jsiiProxy_Loadbalancer) validateOverrideLogicalIdParameters(newLogicalI
 	return nil
 }
 
+func (l *jsiiProxy_Loadbalancer) validatePutFirewallParameters(value *LoadbalancerFirewall) error {
+	return nil
+}
+
 func (l *jsiiProxy_Loadbalancer) validatePutForwardingRuleParameters(value interface{}) error {
 	return nil
 }

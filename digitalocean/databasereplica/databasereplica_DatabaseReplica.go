@@ -87,6 +87,7 @@ type DatabaseReplica interface {
 	TerraformResourceType() *string
 	Uri() *string
 	User() *string
+	Uuid() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -510,6 +511,16 @@ func (j *jsiiProxy_DatabaseReplica) User() *string {
 	_jsii_.Get(
 		j,
 		"user",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseReplica) Uuid() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"uuid",
 		&returns,
 	)
 	return returns
