@@ -48,5 +48,9 @@ type ProjectConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/project#resources Project#resources}
 	Resources *[]*string `field:"optional" json:"resources" yaml:"resources"`
+	// timeouts block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/project#timeouts Project#timeouts}
+	Timeouts *ProjectTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

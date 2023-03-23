@@ -82,6 +82,8 @@ type Project interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() ProjectTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	UpdatedAt() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
@@ -108,6 +110,7 @@ type Project interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *ProjectTimeouts)
 	ResetDescription()
 	ResetEnvironment()
 	ResetId()
@@ -117,6 +120,7 @@ type Project interface {
 	ResetOverrideLogicalId()
 	ResetPurpose()
 	ResetResources()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -457,6 +461,26 @@ func (j *jsiiProxy_Project) TerraformResourceType() *string {
 	_jsii_.Get(
 		j,
 		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) Timeouts() ProjectTimeoutsOutputReference {
+	var returns ProjectTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
 		&returns,
 	)
 	return returns
@@ -910,6 +934,17 @@ func (p *jsiiProxy_Project) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (p *jsiiProxy_Project) PutTimeouts(value *ProjectTimeouts) {
+	if err := p.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_Project) ResetDescription() {
 	_jsii_.InvokeVoid(
 		p,
@@ -962,6 +997,14 @@ func (p *jsiiProxy_Project) ResetResources() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetResources",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Project) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

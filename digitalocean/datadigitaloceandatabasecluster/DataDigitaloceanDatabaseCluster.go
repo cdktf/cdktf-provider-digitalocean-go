@@ -54,6 +54,7 @@ type DataDigitaloceanDatabaseCluster interface {
 	PrivateHost() *string
 	PrivateNetworkUuid() *string
 	PrivateUri() *string
+	ProjectId() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -345,6 +346,16 @@ func (j *jsiiProxy_DataDigitaloceanDatabaseCluster) PrivateUri() *string {
 	_jsii_.Get(
 		j,
 		"privateUri",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDigitaloceanDatabaseCluster) ProjectId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectId",
 		&returns,
 	)
 	return returns

@@ -68,6 +68,9 @@ type DatabaseCluster interface {
 	SetPrivateNetworkUuid(val *string)
 	PrivateNetworkUuidInput() *string
 	PrivateUri() *string
+	ProjectId() *string
+	SetProjectId(val *string)
+	ProjectIdInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -138,6 +141,7 @@ type DatabaseCluster interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPrivateNetworkUuid()
+	ResetProjectId()
 	ResetSqlMode()
 	ResetTags()
 	ResetTimeouts()
@@ -452,6 +456,26 @@ func (j *jsiiProxy_DatabaseCluster) PrivateUri() *string {
 	_jsii_.Get(
 		j,
 		"privateUri",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseCluster) ProjectId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseCluster) ProjectIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectIdInput",
 		&returns,
 	)
 	return returns
@@ -805,6 +829,17 @@ func (j *jsiiProxy_DatabaseCluster)SetPrivateNetworkUuid(val *string) {
 	_jsii_.Set(
 		j,
 		"privateNetworkUuid",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseCluster)SetProjectId(val *string) {
+	if err := j.validateSetProjectIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"projectId",
 		val,
 	)
 }
@@ -1207,6 +1242,14 @@ func (d *jsiiProxy_DatabaseCluster) ResetPrivateNetworkUuid() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPrivateNetworkUuid",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseCluster) ResetProjectId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProjectId",
 		nil, // no parameters
 	)
 }

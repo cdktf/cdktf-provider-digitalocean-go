@@ -46,6 +46,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "privateHost", GoGetter: "PrivateHost"},
 			_jsii_.MemberProperty{JsiiProperty: "privateNetworkUuid", GoGetter: "PrivateNetworkUuid"},
 			_jsii_.MemberProperty{JsiiProperty: "privateUri", GoGetter: "PrivateUri"},
+			_jsii_.MemberProperty{JsiiProperty: "projectId", GoGetter: "ProjectId"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "region", GoGetter: "Region"},

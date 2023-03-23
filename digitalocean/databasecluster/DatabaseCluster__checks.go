@@ -266,6 +266,14 @@ func (j *jsiiProxy_DatabaseCluster) validateSetPrivateNetworkUuidParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseCluster) validateSetProjectIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseCluster) validateSetProvisionersParameters(val *[]interface{}) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {

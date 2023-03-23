@@ -52,6 +52,10 @@ func (p *jsiiProxy_Project) validateOverrideLogicalIdParameters(newLogicalId *st
 	return nil
 }
 
+func (p *jsiiProxy_Project) validatePutTimeoutsParameters(value *ProjectTimeouts) error {
+	return nil
+}
+
 func validateProject_IsConstructParameters(x interface{}) error {
 	return nil
 }

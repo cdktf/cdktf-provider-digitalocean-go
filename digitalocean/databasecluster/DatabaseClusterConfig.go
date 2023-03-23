@@ -42,6 +42,8 @@ type DatabaseClusterConfig struct {
 	MaintenanceWindow interface{} `field:"optional" json:"maintenanceWindow" yaml:"maintenanceWindow"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/database_cluster#private_network_uuid DatabaseCluster#private_network_uuid}.
 	PrivateNetworkUuid *string `field:"optional" json:"privateNetworkUuid" yaml:"privateNetworkUuid"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/database_cluster#project_id DatabaseCluster#project_id}.
+	ProjectId *string `field:"optional" json:"projectId" yaml:"projectId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/database_cluster#sql_mode DatabaseCluster#sql_mode}.
 	SqlMode *string `field:"optional" json:"sqlMode" yaml:"sqlMode"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/database_cluster#tags DatabaseCluster#tags}.

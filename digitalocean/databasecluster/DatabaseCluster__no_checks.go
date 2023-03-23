@@ -104,6 +104,10 @@ func (j *jsiiProxy_DatabaseCluster) validateSetPrivateNetworkUuidParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseCluster) validateSetProjectIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseCluster) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }
