@@ -2,14 +2,14 @@ package uptimealert
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/uptimealert/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/uptimealert/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/digitalocean/r/uptime_alert digitalocean_uptime_alert}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/uptime_alert digitalocean_uptime_alert}.
 type UptimeAlert interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -27,9 +27,9 @@ type UptimeAlert interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -196,8 +196,8 @@ func (j *jsiiProxy_UptimeAlert) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_UptimeAlert) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_UptimeAlert) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -437,7 +437,7 @@ func (j *jsiiProxy_UptimeAlert) TypeInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/digitalocean/r/uptime_alert digitalocean_uptime_alert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/uptime_alert digitalocean_uptime_alert} Resource.
 func NewUptimeAlert(scope constructs.Construct, id *string, config *UptimeAlertConfig) UptimeAlert {
 	_init_.Initialize()
 
@@ -455,7 +455,7 @@ func NewUptimeAlert(scope constructs.Construct, id *string, config *UptimeAlertC
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/digitalocean/r/uptime_alert digitalocean_uptime_alert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/uptime_alert digitalocean_uptime_alert} Resource.
 func NewUptimeAlert_Override(u UptimeAlert, scope constructs.Construct, id *string, config *UptimeAlertConfig) {
 	_init_.Initialize()
 
@@ -499,7 +499,10 @@ func (j *jsiiProxy_UptimeAlert)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_UptimeAlert)SetCount(val *float64) {
+func (j *jsiiProxy_UptimeAlert)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

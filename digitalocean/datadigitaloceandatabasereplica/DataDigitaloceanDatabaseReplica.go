@@ -2,14 +2,14 @@ package datadigitaloceandatabasereplica
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/datadigitaloceandatabasereplica/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceandatabasereplica/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/digitalocean/d/database_replica digitalocean_database_replica}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/database_replica digitalocean_database_replica}.
 type DataDigitaloceanDatabaseReplica interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -20,9 +20,9 @@ type DataDigitaloceanDatabaseReplica interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Database() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -157,8 +157,8 @@ func (j *jsiiProxy_DataDigitaloceanDatabaseReplica) ConstructNodeMetadata() *map
 	return returns
 }
 
-func (j *jsiiProxy_DataDigitaloceanDatabaseReplica) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataDigitaloceanDatabaseReplica) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -438,7 +438,7 @@ func (j *jsiiProxy_DataDigitaloceanDatabaseReplica) User() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/digitalocean/d/database_replica digitalocean_database_replica} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/database_replica digitalocean_database_replica} Data Source.
 func NewDataDigitaloceanDatabaseReplica(scope constructs.Construct, id *string, config *DataDigitaloceanDatabaseReplicaConfig) DataDigitaloceanDatabaseReplica {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewDataDigitaloceanDatabaseReplica(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/digitalocean/d/database_replica digitalocean_database_replica} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/database_replica digitalocean_database_replica} Data Source.
 func NewDataDigitaloceanDatabaseReplica_Override(d DataDigitaloceanDatabaseReplica, scope constructs.Construct, id *string, config *DataDigitaloceanDatabaseReplicaConfig) {
 	_init_.Initialize()
 
@@ -478,7 +478,10 @@ func (j *jsiiProxy_DataDigitaloceanDatabaseReplica)SetClusterId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanDatabaseReplica)SetCount(val *float64) {
+func (j *jsiiProxy_DataDigitaloceanDatabaseReplica)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

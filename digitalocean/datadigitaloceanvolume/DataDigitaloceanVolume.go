@@ -2,14 +2,14 @@ package datadigitaloceanvolume
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/datadigitaloceanvolume/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceanvolume/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/digitalocean/d/volume digitalocean_volume}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/volume digitalocean_volume}.
 type DataDigitaloceanVolume interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataDigitaloceanVolume interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -134,8 +134,8 @@ func (j *jsiiProxy_DataDigitaloceanVolume) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_DataDigitaloceanVolume) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataDigitaloceanVolume) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -395,7 +395,7 @@ func (j *jsiiProxy_DataDigitaloceanVolume) Urn() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/digitalocean/d/volume digitalocean_volume} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/volume digitalocean_volume} Data Source.
 func NewDataDigitaloceanVolume(scope constructs.Construct, id *string, config *DataDigitaloceanVolumeConfig) DataDigitaloceanVolume {
 	_init_.Initialize()
 
@@ -413,7 +413,7 @@ func NewDataDigitaloceanVolume(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/digitalocean/d/volume digitalocean_volume} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/volume digitalocean_volume} Data Source.
 func NewDataDigitaloceanVolume_Override(d DataDigitaloceanVolume, scope constructs.Construct, id *string, config *DataDigitaloceanVolumeConfig) {
 	_init_.Initialize()
 
@@ -424,7 +424,10 @@ func NewDataDigitaloceanVolume_Override(d DataDigitaloceanVolume, scope construc
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanVolume)SetCount(val *float64) {
+func (j *jsiiProxy_DataDigitaloceanVolume)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -2,14 +2,14 @@ package app
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/app/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/app/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/digitalocean/r/app digitalocean_app}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/app digitalocean_app}.
 type App interface {
 	cdktf.TerraformResource
 	ActiveDeploymentId() *string
@@ -22,9 +22,9 @@ type App interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedAt() *string
 	DefaultIngress() *string
 	// Experimental.
@@ -159,8 +159,8 @@ func (j *jsiiProxy_App) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_App) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_App) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -400,7 +400,7 @@ func (j *jsiiProxy_App) Urn() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/digitalocean/r/app digitalocean_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/app digitalocean_app} Resource.
 func NewApp(scope constructs.Construct, id *string, config *AppConfig) App {
 	_init_.Initialize()
 
@@ -418,7 +418,7 @@ func NewApp(scope constructs.Construct, id *string, config *AppConfig) App {
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/digitalocean/r/app digitalocean_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/app digitalocean_app} Resource.
 func NewApp_Override(a App, scope constructs.Construct, id *string, config *AppConfig) {
 	_init_.Initialize()
 
@@ -440,7 +440,10 @@ func (j *jsiiProxy_App)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_App)SetCount(val *float64) {
+func (j *jsiiProxy_App)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

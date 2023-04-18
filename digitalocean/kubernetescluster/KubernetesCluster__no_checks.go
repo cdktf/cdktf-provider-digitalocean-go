@@ -84,6 +84,10 @@ func (j *jsiiProxy_KubernetesCluster) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesCluster) validateSetHaParameters(val interface{}) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func validateDataDigitaloceanSshKeys_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
+func (j *jsiiProxy_DataDigitaloceanSshKeys) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDigitaloceanSshKeys) validateSetIdParameters(val *string) error {
 	return nil
 }

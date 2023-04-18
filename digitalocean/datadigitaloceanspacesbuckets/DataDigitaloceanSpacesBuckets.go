@@ -2,14 +2,14 @@ package datadigitaloceanspacesbuckets
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/datadigitaloceanspacesbuckets/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceanspacesbuckets/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/digitalocean/d/spaces_buckets digitalocean_spaces_buckets}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/spaces_buckets digitalocean_spaces_buckets}.
 type DataDigitaloceanSpacesBuckets interface {
 	cdktf.TerraformDataSource
 	Buckets() DataDigitaloceanSpacesBucketsBucketsList
@@ -18,9 +18,9 @@ type DataDigitaloceanSpacesBuckets interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -136,8 +136,8 @@ func (j *jsiiProxy_DataDigitaloceanSpacesBuckets) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_DataDigitaloceanSpacesBuckets) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataDigitaloceanSpacesBuckets) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -317,7 +317,7 @@ func (j *jsiiProxy_DataDigitaloceanSpacesBuckets) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/digitalocean/d/spaces_buckets digitalocean_spaces_buckets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/spaces_buckets digitalocean_spaces_buckets} Data Source.
 func NewDataDigitaloceanSpacesBuckets(scope constructs.Construct, id *string, config *DataDigitaloceanSpacesBucketsConfig) DataDigitaloceanSpacesBuckets {
 	_init_.Initialize()
 
@@ -335,7 +335,7 @@ func NewDataDigitaloceanSpacesBuckets(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/digitalocean/d/spaces_buckets digitalocean_spaces_buckets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/spaces_buckets digitalocean_spaces_buckets} Data Source.
 func NewDataDigitaloceanSpacesBuckets_Override(d DataDigitaloceanSpacesBuckets, scope constructs.Construct, id *string, config *DataDigitaloceanSpacesBucketsConfig) {
 	_init_.Initialize()
 
@@ -346,7 +346,10 @@ func NewDataDigitaloceanSpacesBuckets_Override(d DataDigitaloceanSpacesBuckets, 
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanSpacesBuckets)SetCount(val *float64) {
+func (j *jsiiProxy_DataDigitaloceanSpacesBuckets)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

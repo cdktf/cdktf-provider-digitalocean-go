@@ -68,6 +68,10 @@ func (j *jsiiProxy_FloatingIpAssignment) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_FloatingIpAssignment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FloatingIpAssignment) validateSetDropletIdParameters(val *float64) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package datadigitaloceansshkey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/datadigitaloceansshkey/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceansshkey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/digitalocean/d/ssh_key digitalocean_ssh_key}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/ssh_key digitalocean_ssh_key}.
 type DataDigitaloceanSshKey interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataDigitaloceanSshKey interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -119,8 +119,8 @@ func (j *jsiiProxy_DataDigitaloceanSshKey) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_DataDigitaloceanSshKey) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataDigitaloceanSshKey) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -290,7 +290,7 @@ func (j *jsiiProxy_DataDigitaloceanSshKey) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/digitalocean/d/ssh_key digitalocean_ssh_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/ssh_key digitalocean_ssh_key} Data Source.
 func NewDataDigitaloceanSshKey(scope constructs.Construct, id *string, config *DataDigitaloceanSshKeyConfig) DataDigitaloceanSshKey {
 	_init_.Initialize()
 
@@ -308,7 +308,7 @@ func NewDataDigitaloceanSshKey(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/digitalocean/d/ssh_key digitalocean_ssh_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/ssh_key digitalocean_ssh_key} Data Source.
 func NewDataDigitaloceanSshKey_Override(d DataDigitaloceanSshKey, scope constructs.Construct, id *string, config *DataDigitaloceanSshKeyConfig) {
 	_init_.Initialize()
 
@@ -319,7 +319,10 @@ func NewDataDigitaloceanSshKey_Override(d DataDigitaloceanSshKey, scope construc
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanSshKey)SetCount(val *float64) {
+func (j *jsiiProxy_DataDigitaloceanSshKey)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

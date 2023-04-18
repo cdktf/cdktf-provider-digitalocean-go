@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataDigitaloceanSpacesBucketObjects) validateSetBucketParamet
 	return nil
 }
 
+func (j *jsiiProxy_DataDigitaloceanSpacesBucketObjects) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDigitaloceanSpacesBucketObjects) validateSetDelimiterParameters(val *string) error {
 	return nil
 }

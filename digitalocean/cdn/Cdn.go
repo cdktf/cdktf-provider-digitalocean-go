@@ -2,14 +2,14 @@ package cdn
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/cdn/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/cdn/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/digitalocean/r/cdn digitalocean_cdn}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/cdn digitalocean_cdn}.
 type Cdn interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -27,9 +27,9 @@ type Cdn interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedAt() *string
 	CustomDomain() *string
 	SetCustomDomain(val *string)
@@ -196,8 +196,8 @@ func (j *jsiiProxy_Cdn) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Cdn) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Cdn) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -427,7 +427,7 @@ func (j *jsiiProxy_Cdn) TtlInput() *float64 {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/digitalocean/r/cdn digitalocean_cdn} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/cdn digitalocean_cdn} Resource.
 func NewCdn(scope constructs.Construct, id *string, config *CdnConfig) Cdn {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewCdn(scope constructs.Construct, id *string, config *CdnConfig) Cdn {
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/digitalocean/r/cdn digitalocean_cdn} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/cdn digitalocean_cdn} Resource.
 func NewCdn_Override(c Cdn, scope constructs.Construct, id *string, config *CdnConfig) {
 	_init_.Initialize()
 
@@ -489,7 +489,10 @@ func (j *jsiiProxy_Cdn)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Cdn)SetCount(val *float64) {
+func (j *jsiiProxy_Cdn)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

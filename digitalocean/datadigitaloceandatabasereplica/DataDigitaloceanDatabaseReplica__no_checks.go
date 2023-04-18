@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataDigitaloceanDatabaseReplica) validateSetClusterIdParamete
 	return nil
 }
 
+func (j *jsiiProxy_DataDigitaloceanDatabaseReplica) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDigitaloceanDatabaseReplica) validateSetIdParameters(val *string) error {
 	return nil
 }

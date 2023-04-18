@@ -2,14 +2,14 @@ package datadigitaloceantag
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/datadigitaloceantag/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceantag/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/digitalocean/d/tag digitalocean_tag}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/tag digitalocean_tag}.
 type DataDigitaloceanTag interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataDigitaloceanTag interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DatabasesCount() *float64
 	// Experimental.
 	DependsOn() *[]*string
@@ -126,8 +126,8 @@ func (j *jsiiProxy_DataDigitaloceanTag) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_DataDigitaloceanTag) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataDigitaloceanTag) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -347,7 +347,7 @@ func (j *jsiiProxy_DataDigitaloceanTag) VolumeSnapshotsCount() *float64 {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/digitalocean/d/tag digitalocean_tag} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/tag digitalocean_tag} Data Source.
 func NewDataDigitaloceanTag(scope constructs.Construct, id *string, config *DataDigitaloceanTagConfig) DataDigitaloceanTag {
 	_init_.Initialize()
 
@@ -365,7 +365,7 @@ func NewDataDigitaloceanTag(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/digitalocean/d/tag digitalocean_tag} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/tag digitalocean_tag} Data Source.
 func NewDataDigitaloceanTag_Override(d DataDigitaloceanTag, scope constructs.Construct, id *string, config *DataDigitaloceanTagConfig) {
 	_init_.Initialize()
 
@@ -376,7 +376,10 @@ func NewDataDigitaloceanTag_Override(d DataDigitaloceanTag, scope constructs.Con
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanTag)SetCount(val *float64) {
+func (j *jsiiProxy_DataDigitaloceanTag)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

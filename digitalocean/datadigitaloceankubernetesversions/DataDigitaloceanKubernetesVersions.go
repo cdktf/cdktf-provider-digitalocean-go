@@ -2,14 +2,14 @@ package datadigitaloceankubernetesversions
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/datadigitaloceankubernetesversions/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceankubernetesversions/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/digitalocean/d/kubernetes_versions digitalocean_kubernetes_versions}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/kubernetes_versions digitalocean_kubernetes_versions}.
 type DataDigitaloceanKubernetesVersions interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataDigitaloceanKubernetesVersions interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -123,8 +123,8 @@ func (j *jsiiProxy_DataDigitaloceanKubernetesVersions) ConstructNodeMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_DataDigitaloceanKubernetesVersions) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataDigitaloceanKubernetesVersions) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -304,7 +304,7 @@ func (j *jsiiProxy_DataDigitaloceanKubernetesVersions) VersionPrefixInput() *str
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/digitalocean/d/kubernetes_versions digitalocean_kubernetes_versions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/kubernetes_versions digitalocean_kubernetes_versions} Data Source.
 func NewDataDigitaloceanKubernetesVersions(scope constructs.Construct, id *string, config *DataDigitaloceanKubernetesVersionsConfig) DataDigitaloceanKubernetesVersions {
 	_init_.Initialize()
 
@@ -322,7 +322,7 @@ func NewDataDigitaloceanKubernetesVersions(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/digitalocean/d/kubernetes_versions digitalocean_kubernetes_versions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/kubernetes_versions digitalocean_kubernetes_versions} Data Source.
 func NewDataDigitaloceanKubernetesVersions_Override(d DataDigitaloceanKubernetesVersions, scope constructs.Construct, id *string, config *DataDigitaloceanKubernetesVersionsConfig) {
 	_init_.Initialize()
 
@@ -333,7 +333,10 @@ func NewDataDigitaloceanKubernetesVersions_Override(d DataDigitaloceanKubernetes
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanKubernetesVersions)SetCount(val *float64) {
+func (j *jsiiProxy_DataDigitaloceanKubernetesVersions)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

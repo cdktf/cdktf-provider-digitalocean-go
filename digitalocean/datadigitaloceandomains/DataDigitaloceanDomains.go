@@ -2,14 +2,14 @@ package datadigitaloceandomains
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/datadigitaloceandomains/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceandomains/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/digitalocean/d/domains digitalocean_domains}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/domains digitalocean_domains}.
 type DataDigitaloceanDomains interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataDigitaloceanDomains interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -126,8 +126,8 @@ func (j *jsiiProxy_DataDigitaloceanDomains) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_DataDigitaloceanDomains) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataDigitaloceanDomains) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -317,7 +317,7 @@ func (j *jsiiProxy_DataDigitaloceanDomains) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/digitalocean/d/domains digitalocean_domains} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/domains digitalocean_domains} Data Source.
 func NewDataDigitaloceanDomains(scope constructs.Construct, id *string, config *DataDigitaloceanDomainsConfig) DataDigitaloceanDomains {
 	_init_.Initialize()
 
@@ -335,7 +335,7 @@ func NewDataDigitaloceanDomains(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/digitalocean/d/domains digitalocean_domains} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/domains digitalocean_domains} Data Source.
 func NewDataDigitaloceanDomains_Override(d DataDigitaloceanDomains, scope constructs.Construct, id *string, config *DataDigitaloceanDomainsConfig) {
 	_init_.Initialize()
 
@@ -346,7 +346,10 @@ func NewDataDigitaloceanDomains_Override(d DataDigitaloceanDomains, scope constr
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanDomains)SetCount(val *float64) {
+func (j *jsiiProxy_DataDigitaloceanDomains)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

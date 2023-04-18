@@ -68,6 +68,10 @@ func (j *jsiiProxy_UptimeCheck) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_UptimeCheck) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_UptimeCheck) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

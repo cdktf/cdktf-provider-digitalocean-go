@@ -2,14 +2,14 @@ package vpc
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/vpc/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/vpc/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/digitalocean/r/vpc digitalocean_vpc}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/vpc digitalocean_vpc}.
 type Vpc interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type Vpc interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedAt() *string
 	Default() cdktf.IResolvable
 	// Experimental.
@@ -156,8 +156,8 @@ func (j *jsiiProxy_Vpc) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Vpc) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Vpc) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -437,7 +437,7 @@ func (j *jsiiProxy_Vpc) Urn() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/digitalocean/r/vpc digitalocean_vpc} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/vpc digitalocean_vpc} Resource.
 func NewVpc(scope constructs.Construct, id *string, config *VpcConfig) Vpc {
 	_init_.Initialize()
 
@@ -455,7 +455,7 @@ func NewVpc(scope constructs.Construct, id *string, config *VpcConfig) Vpc {
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/digitalocean/r/vpc digitalocean_vpc} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/vpc digitalocean_vpc} Resource.
 func NewVpc_Override(v Vpc, scope constructs.Construct, id *string, config *VpcConfig) {
 	_init_.Initialize()
 
@@ -477,7 +477,10 @@ func (j *jsiiProxy_Vpc)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Vpc)SetCount(val *float64) {
+func (j *jsiiProxy_Vpc)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

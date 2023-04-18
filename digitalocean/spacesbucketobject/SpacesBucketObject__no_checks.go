@@ -104,6 +104,10 @@ func (j *jsiiProxy_SpacesBucketObject) validateSetContentTypeParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_SpacesBucketObject) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpacesBucketObject) validateSetEtagParameters(val *string) error {
 	return nil
 }

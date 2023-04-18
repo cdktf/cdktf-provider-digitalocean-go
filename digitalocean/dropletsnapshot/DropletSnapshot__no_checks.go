@@ -68,6 +68,10 @@ func (j *jsiiProxy_DropletSnapshot) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_DropletSnapshot) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DropletSnapshot) validateSetDropletIdParameters(val *string) error {
 	return nil
 }

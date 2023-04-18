@@ -2,14 +2,14 @@ package floatingipassignment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/floatingipassignment/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/floatingipassignment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/digitalocean/r/floating_ip_assignment digitalocean_floating_ip_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/floating_ip_assignment digitalocean_floating_ip_assignment}.
 type FloatingIpAssignment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type FloatingIpAssignment interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -141,8 +141,8 @@ func (j *jsiiProxy_FloatingIpAssignment) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_FloatingIpAssignment) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_FloatingIpAssignment) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -332,7 +332,7 @@ func (j *jsiiProxy_FloatingIpAssignment) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/digitalocean/r/floating_ip_assignment digitalocean_floating_ip_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/floating_ip_assignment digitalocean_floating_ip_assignment} Resource.
 func NewFloatingIpAssignment(scope constructs.Construct, id *string, config *FloatingIpAssignmentConfig) FloatingIpAssignment {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewFloatingIpAssignment(scope constructs.Construct, id *string, config *Flo
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/digitalocean/r/floating_ip_assignment digitalocean_floating_ip_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/floating_ip_assignment digitalocean_floating_ip_assignment} Resource.
 func NewFloatingIpAssignment_Override(f FloatingIpAssignment, scope constructs.Construct, id *string, config *FloatingIpAssignmentConfig) {
 	_init_.Initialize()
 
@@ -372,7 +372,10 @@ func (j *jsiiProxy_FloatingIpAssignment)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FloatingIpAssignment)SetCount(val *float64) {
+func (j *jsiiProxy_FloatingIpAssignment)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

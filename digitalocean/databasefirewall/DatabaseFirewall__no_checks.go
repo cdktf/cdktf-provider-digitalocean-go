@@ -76,6 +76,10 @@ func (j *jsiiProxy_DatabaseFirewall) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseFirewall) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseFirewall) validateSetIdParameters(val *string) error {
 	return nil
 }

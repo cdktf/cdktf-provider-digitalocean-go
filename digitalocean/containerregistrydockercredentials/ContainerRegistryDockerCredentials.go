@@ -2,14 +2,14 @@ package containerregistrydockercredentials
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/containerregistrydockercredentials/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/containerregistrydockercredentials/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/digitalocean/r/container_registry_docker_credentials digitalocean_container_registry_docker_credentials}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/container_registry_docker_credentials digitalocean_container_registry_docker_credentials}.
 type ContainerRegistryDockerCredentials interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type ContainerRegistryDockerCredentials interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CredentialExpirationTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -148,8 +148,8 @@ func (j *jsiiProxy_ContainerRegistryDockerCredentials) ConstructNodeMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_ContainerRegistryDockerCredentials) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ContainerRegistryDockerCredentials) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -379,7 +379,7 @@ func (j *jsiiProxy_ContainerRegistryDockerCredentials) WriteInput() interface{} 
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/digitalocean/r/container_registry_docker_credentials digitalocean_container_registry_docker_credentials} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/container_registry_docker_credentials digitalocean_container_registry_docker_credentials} Resource.
 func NewContainerRegistryDockerCredentials(scope constructs.Construct, id *string, config *ContainerRegistryDockerCredentialsConfig) ContainerRegistryDockerCredentials {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewContainerRegistryDockerCredentials(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/digitalocean/r/container_registry_docker_credentials digitalocean_container_registry_docker_credentials} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/container_registry_docker_credentials digitalocean_container_registry_docker_credentials} Resource.
 func NewContainerRegistryDockerCredentials_Override(c ContainerRegistryDockerCredentials, scope constructs.Construct, id *string, config *ContainerRegistryDockerCredentialsConfig) {
 	_init_.Initialize()
 
@@ -419,7 +419,10 @@ func (j *jsiiProxy_ContainerRegistryDockerCredentials)SetConnection(val interfac
 	)
 }
 
-func (j *jsiiProxy_ContainerRegistryDockerCredentials)SetCount(val *float64) {
+func (j *jsiiProxy_ContainerRegistryDockerCredentials)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

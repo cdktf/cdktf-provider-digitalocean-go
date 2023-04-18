@@ -2,9 +2,9 @@ package datadigitaloceansizes
 
 
 type DataDigitaloceanSizesSort struct {
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/sizes#key DataDigitaloceanSizes#key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/sizes#key DataDigitaloceanSizes#key}.
 	Key *string `field:"required" json:"key" yaml:"key"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/sizes#direction DataDigitaloceanSizes#direction}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/sizes#direction DataDigitaloceanSizes#direction}.
 	Direction *string `field:"optional" json:"direction" yaml:"direction"`
 }
 

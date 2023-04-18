@@ -88,6 +88,10 @@ func (j *jsiiProxy_Loadbalancer) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_Loadbalancer) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Loadbalancer) validateSetDisableLetsEncryptDnsRecordsParameters(val interface{}) error {
 	return nil
 }

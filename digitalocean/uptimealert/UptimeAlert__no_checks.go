@@ -80,6 +80,10 @@ func (j *jsiiProxy_UptimeAlert) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_UptimeAlert) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_UptimeAlert) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package spacesbucketpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/spacesbucketpolicy/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/spacesbucketpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/digitalocean/r/spaces_bucket_policy digitalocean_spaces_bucket_policy}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/spaces_bucket_policy digitalocean_spaces_bucket_policy}.
 type SpacesBucketPolicy interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -24,9 +24,9 @@ type SpacesBucketPolicy interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -164,8 +164,8 @@ func (j *jsiiProxy_SpacesBucketPolicy) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_SpacesBucketPolicy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SpacesBucketPolicy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -355,7 +355,7 @@ func (j *jsiiProxy_SpacesBucketPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/digitalocean/r/spaces_bucket_policy digitalocean_spaces_bucket_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/spaces_bucket_policy digitalocean_spaces_bucket_policy} Resource.
 func NewSpacesBucketPolicy(scope constructs.Construct, id *string, config *SpacesBucketPolicyConfig) SpacesBucketPolicy {
 	_init_.Initialize()
 
@@ -373,7 +373,7 @@ func NewSpacesBucketPolicy(scope constructs.Construct, id *string, config *Space
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/digitalocean/r/spaces_bucket_policy digitalocean_spaces_bucket_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/spaces_bucket_policy digitalocean_spaces_bucket_policy} Resource.
 func NewSpacesBucketPolicy_Override(s SpacesBucketPolicy, scope constructs.Construct, id *string, config *SpacesBucketPolicyConfig) {
 	_init_.Initialize()
 
@@ -406,7 +406,10 @@ func (j *jsiiProxy_SpacesBucketPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SpacesBucketPolicy)SetCount(val *float64) {
+func (j *jsiiProxy_SpacesBucketPolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

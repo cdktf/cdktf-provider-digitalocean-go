@@ -2,7 +2,7 @@ package app
 
 
 type AppTimeouts struct {
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/r/app#create App#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/app#create App#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
 }
 

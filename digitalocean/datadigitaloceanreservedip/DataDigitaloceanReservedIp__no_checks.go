@@ -64,6 +64,10 @@ func validateDataDigitaloceanReservedIp_IsTerraformElementParameters(x interface
 	return nil
 }
 
+func (j *jsiiProxy_DataDigitaloceanReservedIp) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDigitaloceanReservedIp) validateSetIdParameters(val *string) error {
 	return nil
 }

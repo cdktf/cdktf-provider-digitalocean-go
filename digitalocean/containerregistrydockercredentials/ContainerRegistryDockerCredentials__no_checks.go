@@ -68,6 +68,10 @@ func (j *jsiiProxy_ContainerRegistryDockerCredentials) validateSetConnectionPara
 	return nil
 }
 
+func (j *jsiiProxy_ContainerRegistryDockerCredentials) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerRegistryDockerCredentials) validateSetExpirySecondsParameters(val *float64) error {
 	return nil
 }

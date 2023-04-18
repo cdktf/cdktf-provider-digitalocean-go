@@ -2,14 +2,14 @@ package floatingip
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/floatingip/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/floatingip/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/digitalocean/r/floating_ip digitalocean_floating_ip}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/floating_ip digitalocean_floating_ip}.
 type FloatingIp interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type FloatingIp interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -147,8 +147,8 @@ func (j *jsiiProxy_FloatingIp) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FloatingIp) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_FloatingIp) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -368,7 +368,7 @@ func (j *jsiiProxy_FloatingIp) Urn() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/digitalocean/r/floating_ip digitalocean_floating_ip} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/floating_ip digitalocean_floating_ip} Resource.
 func NewFloatingIp(scope constructs.Construct, id *string, config *FloatingIpConfig) FloatingIp {
 	_init_.Initialize()
 
@@ -386,7 +386,7 @@ func NewFloatingIp(scope constructs.Construct, id *string, config *FloatingIpCon
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/digitalocean/r/floating_ip digitalocean_floating_ip} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/floating_ip digitalocean_floating_ip} Resource.
 func NewFloatingIp_Override(f FloatingIp, scope constructs.Construct, id *string, config *FloatingIpConfig) {
 	_init_.Initialize()
 
@@ -408,7 +408,10 @@ func (j *jsiiProxy_FloatingIp)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FloatingIp)SetCount(val *float64) {
+func (j *jsiiProxy_FloatingIp)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

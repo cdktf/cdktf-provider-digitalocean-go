@@ -2,14 +2,14 @@ package databasecluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/databasecluster/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/databasecluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/digitalocean/r/database_cluster digitalocean_database_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/database_cluster digitalocean_database_cluster}.
 type DatabaseCluster interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type DatabaseCluster interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Database() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -191,8 +191,8 @@ func (j *jsiiProxy_DatabaseCluster) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_DatabaseCluster) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DatabaseCluster) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -692,7 +692,7 @@ func (j *jsiiProxy_DatabaseCluster) VersionInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/digitalocean/r/database_cluster digitalocean_database_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/database_cluster digitalocean_database_cluster} Resource.
 func NewDatabaseCluster(scope constructs.Construct, id *string, config *DatabaseClusterConfig) DatabaseCluster {
 	_init_.Initialize()
 
@@ -710,7 +710,7 @@ func NewDatabaseCluster(scope constructs.Construct, id *string, config *Database
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/digitalocean/r/database_cluster digitalocean_database_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/database_cluster digitalocean_database_cluster} Resource.
 func NewDatabaseCluster_Override(d DatabaseCluster, scope constructs.Construct, id *string, config *DatabaseClusterConfig) {
 	_init_.Initialize()
 
@@ -732,7 +732,10 @@ func (j *jsiiProxy_DatabaseCluster)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DatabaseCluster)SetCount(val *float64) {
+func (j *jsiiProxy_DatabaseCluster)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -2,14 +2,14 @@ package datadigitaloceanspacesbucket
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/datadigitaloceanspacesbucket/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceanspacesbucket/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/digitalocean/d/spaces_bucket digitalocean_spaces_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/spaces_bucket digitalocean_spaces_bucket}.
 type DataDigitaloceanSpacesBucket interface {
 	cdktf.TerraformDataSource
 	BucketDomainName() *string
@@ -18,9 +18,9 @@ type DataDigitaloceanSpacesBucket interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -136,8 +136,8 @@ func (j *jsiiProxy_DataDigitaloceanSpacesBucket) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_DataDigitaloceanSpacesBucket) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataDigitaloceanSpacesBucket) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -337,7 +337,7 @@ func (j *jsiiProxy_DataDigitaloceanSpacesBucket) Urn() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/digitalocean/d/spaces_bucket digitalocean_spaces_bucket} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/spaces_bucket digitalocean_spaces_bucket} Data Source.
 func NewDataDigitaloceanSpacesBucket(scope constructs.Construct, id *string, config *DataDigitaloceanSpacesBucketConfig) DataDigitaloceanSpacesBucket {
 	_init_.Initialize()
 
@@ -355,7 +355,7 @@ func NewDataDigitaloceanSpacesBucket(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/digitalocean/d/spaces_bucket digitalocean_spaces_bucket} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/spaces_bucket digitalocean_spaces_bucket} Data Source.
 func NewDataDigitaloceanSpacesBucket_Override(d DataDigitaloceanSpacesBucket, scope constructs.Construct, id *string, config *DataDigitaloceanSpacesBucketConfig) {
 	_init_.Initialize()
 
@@ -366,7 +366,10 @@ func NewDataDigitaloceanSpacesBucket_Override(d DataDigitaloceanSpacesBucket, sc
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanSpacesBucket)SetCount(val *float64) {
+func (j *jsiiProxy_DataDigitaloceanSpacesBucket)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

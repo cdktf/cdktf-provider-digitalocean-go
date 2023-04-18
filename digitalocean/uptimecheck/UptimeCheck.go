@@ -2,14 +2,14 @@ package uptimecheck
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/uptimecheck/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/uptimecheck/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/digitalocean/r/uptime_check digitalocean_uptime_check}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/uptime_check digitalocean_uptime_check}.
 type UptimeCheck interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type UptimeCheck interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -150,8 +150,8 @@ func (j *jsiiProxy_UptimeCheck) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_UptimeCheck) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_UptimeCheck) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -391,7 +391,7 @@ func (j *jsiiProxy_UptimeCheck) TypeInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/digitalocean/r/uptime_check digitalocean_uptime_check} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/uptime_check digitalocean_uptime_check} Resource.
 func NewUptimeCheck(scope constructs.Construct, id *string, config *UptimeCheckConfig) UptimeCheck {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewUptimeCheck(scope constructs.Construct, id *string, config *UptimeCheckC
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/digitalocean/r/uptime_check digitalocean_uptime_check} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/uptime_check digitalocean_uptime_check} Resource.
 func NewUptimeCheck_Override(u UptimeCheck, scope constructs.Construct, id *string, config *UptimeCheckConfig) {
 	_init_.Initialize()
 
@@ -431,7 +431,10 @@ func (j *jsiiProxy_UptimeCheck)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_UptimeCheck)SetCount(val *float64) {
+func (j *jsiiProxy_UptimeCheck)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

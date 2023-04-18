@@ -76,6 +76,10 @@ func (j *jsiiProxy_Droplet) validateSetConnectionParameters(val interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_Droplet) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Droplet) validateSetDropletAgentParameters(val interface{}) error {
 	return nil
 }

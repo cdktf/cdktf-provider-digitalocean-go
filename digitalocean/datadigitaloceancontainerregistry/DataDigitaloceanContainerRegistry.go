@@ -2,14 +2,14 @@ package datadigitaloceancontainerregistry
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/datadigitaloceancontainerregistry/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceancontainerregistry/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/digitalocean/d/container_registry digitalocean_container_registry}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/container_registry digitalocean_container_registry}.
 type DataDigitaloceanContainerRegistry interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataDigitaloceanContainerRegistry interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -126,8 +126,8 @@ func (j *jsiiProxy_DataDigitaloceanContainerRegistry) ConstructNodeMetadata() *m
 	return returns
 }
 
-func (j *jsiiProxy_DataDigitaloceanContainerRegistry) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataDigitaloceanContainerRegistry) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -347,7 +347,7 @@ func (j *jsiiProxy_DataDigitaloceanContainerRegistry) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/digitalocean/d/container_registry digitalocean_container_registry} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/container_registry digitalocean_container_registry} Data Source.
 func NewDataDigitaloceanContainerRegistry(scope constructs.Construct, id *string, config *DataDigitaloceanContainerRegistryConfig) DataDigitaloceanContainerRegistry {
 	_init_.Initialize()
 
@@ -365,7 +365,7 @@ func NewDataDigitaloceanContainerRegistry(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/digitalocean/d/container_registry digitalocean_container_registry} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/container_registry digitalocean_container_registry} Data Source.
 func NewDataDigitaloceanContainerRegistry_Override(d DataDigitaloceanContainerRegistry, scope constructs.Construct, id *string, config *DataDigitaloceanContainerRegistryConfig) {
 	_init_.Initialize()
 
@@ -376,7 +376,10 @@ func NewDataDigitaloceanContainerRegistry_Override(d DataDigitaloceanContainerRe
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanContainerRegistry)SetCount(val *float64) {
+func (j *jsiiProxy_DataDigitaloceanContainerRegistry)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

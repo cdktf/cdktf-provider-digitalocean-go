@@ -68,6 +68,10 @@ func (j *jsiiProxy_VolumeAttachment) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_VolumeAttachment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VolumeAttachment) validateSetDropletIdParameters(val *float64) error {
 	return nil
 }

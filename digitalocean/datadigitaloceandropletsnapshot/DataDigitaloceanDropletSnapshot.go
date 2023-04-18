@@ -2,14 +2,14 @@ package datadigitaloceandropletsnapshot
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/datadigitaloceandropletsnapshot/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceandropletsnapshot/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/digitalocean/d/droplet_snapshot digitalocean_droplet_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/droplet_snapshot digitalocean_droplet_snapshot}.
 type DataDigitaloceanDropletSnapshot interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataDigitaloceanDropletSnapshot interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -138,8 +138,8 @@ func (j *jsiiProxy_DataDigitaloceanDropletSnapshot) ConstructNodeMetadata() *map
 	return returns
 }
 
-func (j *jsiiProxy_DataDigitaloceanDropletSnapshot) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataDigitaloceanDropletSnapshot) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -409,7 +409,7 @@ func (j *jsiiProxy_DataDigitaloceanDropletSnapshot) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/digitalocean/d/droplet_snapshot digitalocean_droplet_snapshot} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/droplet_snapshot digitalocean_droplet_snapshot} Data Source.
 func NewDataDigitaloceanDropletSnapshot(scope constructs.Construct, id *string, config *DataDigitaloceanDropletSnapshotConfig) DataDigitaloceanDropletSnapshot {
 	_init_.Initialize()
 
@@ -427,7 +427,7 @@ func NewDataDigitaloceanDropletSnapshot(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/digitalocean/d/droplet_snapshot digitalocean_droplet_snapshot} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/droplet_snapshot digitalocean_droplet_snapshot} Data Source.
 func NewDataDigitaloceanDropletSnapshot_Override(d DataDigitaloceanDropletSnapshot, scope constructs.Construct, id *string, config *DataDigitaloceanDropletSnapshotConfig) {
 	_init_.Initialize()
 
@@ -438,7 +438,10 @@ func NewDataDigitaloceanDropletSnapshot_Override(d DataDigitaloceanDropletSnapsh
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanDropletSnapshot)SetCount(val *float64) {
+func (j *jsiiProxy_DataDigitaloceanDropletSnapshot)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

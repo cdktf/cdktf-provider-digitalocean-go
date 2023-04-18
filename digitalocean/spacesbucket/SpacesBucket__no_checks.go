@@ -84,6 +84,10 @@ func (j *jsiiProxy_SpacesBucket) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_SpacesBucket) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpacesBucket) validateSetForceDestroyParameters(val interface{}) error {
 	return nil
 }

@@ -64,6 +64,10 @@ func validateDataDigitaloceanVolume_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_DataDigitaloceanVolume) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDigitaloceanVolume) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

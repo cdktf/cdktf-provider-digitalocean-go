@@ -64,6 +64,10 @@ func validateDataDigitaloceanContainerRegistry_IsTerraformElementParameters(x in
 	return nil
 }
 
+func (j *jsiiProxy_DataDigitaloceanContainerRegistry) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDigitaloceanContainerRegistry) validateSetIdParameters(val *string) error {
 	return nil
 }

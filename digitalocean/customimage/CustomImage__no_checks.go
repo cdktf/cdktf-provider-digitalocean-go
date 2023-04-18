@@ -68,6 +68,10 @@ func (j *jsiiProxy_CustomImage) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_CustomImage) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CustomImage) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

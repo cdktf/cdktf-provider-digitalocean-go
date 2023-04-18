@@ -64,6 +64,10 @@ func validateDataDigitaloceanKubernetesVersions_IsTerraformElementParameters(x i
 	return nil
 }
 
+func (j *jsiiProxy_DataDigitaloceanKubernetesVersions) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDigitaloceanKubernetesVersions) validateSetIdParameters(val *string) error {
 	return nil
 }

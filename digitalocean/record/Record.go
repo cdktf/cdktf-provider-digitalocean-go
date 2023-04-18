@@ -2,14 +2,14 @@ package record
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/record/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/record/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/digitalocean/r/record digitalocean_record}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/record digitalocean_record}.
 type Record interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type Record interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -172,8 +172,8 @@ func (j *jsiiProxy_Record) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Record) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Record) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -533,7 +533,7 @@ func (j *jsiiProxy_Record) WeightInput() *float64 {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/digitalocean/r/record digitalocean_record} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/record digitalocean_record} Resource.
 func NewRecord(scope constructs.Construct, id *string, config *RecordConfig) Record {
 	_init_.Initialize()
 
@@ -551,7 +551,7 @@ func NewRecord(scope constructs.Construct, id *string, config *RecordConfig) Rec
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/digitalocean/r/record digitalocean_record} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/record digitalocean_record} Resource.
 func NewRecord_Override(r Record, scope constructs.Construct, id *string, config *RecordConfig) {
 	_init_.Initialize()
 
@@ -573,7 +573,10 @@ func (j *jsiiProxy_Record)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Record)SetCount(val *float64) {
+func (j *jsiiProxy_Record)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

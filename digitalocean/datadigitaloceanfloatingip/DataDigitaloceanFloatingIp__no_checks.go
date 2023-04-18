@@ -64,6 +64,10 @@ func validateDataDigitaloceanFloatingIp_IsTerraformElementParameters(x interface
 	return nil
 }
 
+func (j *jsiiProxy_DataDigitaloceanFloatingIp) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDigitaloceanFloatingIp) validateSetIdParameters(val *string) error {
 	return nil
 }

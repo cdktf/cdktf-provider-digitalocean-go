@@ -76,6 +76,10 @@ func (j *jsiiProxy_Firewall) validateSetConnectionParameters(val interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_Firewall) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Firewall) validateSetDropletIdsParameters(val *[]*float64) error {
 	return nil
 }

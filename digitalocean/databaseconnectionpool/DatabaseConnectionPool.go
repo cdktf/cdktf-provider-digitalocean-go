@@ -2,14 +2,14 @@ package databaseconnectionpool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/databaseconnectionpool/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/databaseconnectionpool/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/digitalocean/r/database_connection_pool digitalocean_database_connection_pool}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/database_connection_pool digitalocean_database_connection_pool}.
 type DatabaseConnectionPool interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,9 +24,9 @@ type DatabaseConnectionPool interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DbName() *string
 	SetDbName(val *string)
 	DbNameInput() *string
@@ -180,8 +180,8 @@ func (j *jsiiProxy_DatabaseConnectionPool) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_DatabaseConnectionPool) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DatabaseConnectionPool) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -491,7 +491,7 @@ func (j *jsiiProxy_DatabaseConnectionPool) UserInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/digitalocean/r/database_connection_pool digitalocean_database_connection_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/database_connection_pool digitalocean_database_connection_pool} Resource.
 func NewDatabaseConnectionPool(scope constructs.Construct, id *string, config *DatabaseConnectionPoolConfig) DatabaseConnectionPool {
 	_init_.Initialize()
 
@@ -509,7 +509,7 @@ func NewDatabaseConnectionPool(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/digitalocean/r/database_connection_pool digitalocean_database_connection_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/database_connection_pool digitalocean_database_connection_pool} Resource.
 func NewDatabaseConnectionPool_Override(d DatabaseConnectionPool, scope constructs.Construct, id *string, config *DatabaseConnectionPoolConfig) {
 	_init_.Initialize()
 
@@ -542,7 +542,10 @@ func (j *jsiiProxy_DatabaseConnectionPool)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DatabaseConnectionPool)SetCount(val *float64) {
+func (j *jsiiProxy_DatabaseConnectionPool)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

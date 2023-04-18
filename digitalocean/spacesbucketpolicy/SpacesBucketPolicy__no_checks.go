@@ -72,6 +72,10 @@ func (j *jsiiProxy_SpacesBucketPolicy) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_SpacesBucketPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpacesBucketPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

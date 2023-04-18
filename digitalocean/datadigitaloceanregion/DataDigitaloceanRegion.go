@@ -2,14 +2,14 @@ package datadigitaloceanregion
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v5/datadigitaloceanregion/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v6/datadigitaloceanregion/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/digitalocean/d/region digitalocean_region}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/region digitalocean_region}.
 type DataDigitaloceanRegion interface {
 	cdktf.TerraformDataSource
 	Available() cdktf.IResolvable
@@ -18,9 +18,9 @@ type DataDigitaloceanRegion interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -134,8 +134,8 @@ func (j *jsiiProxy_DataDigitaloceanRegion) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_DataDigitaloceanRegion) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataDigitaloceanRegion) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -325,7 +325,7 @@ func (j *jsiiProxy_DataDigitaloceanRegion) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/digitalocean/d/region digitalocean_region} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/region digitalocean_region} Data Source.
 func NewDataDigitaloceanRegion(scope constructs.Construct, id *string, config *DataDigitaloceanRegionConfig) DataDigitaloceanRegion {
 	_init_.Initialize()
 
@@ -343,7 +343,7 @@ func NewDataDigitaloceanRegion(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/digitalocean/d/region digitalocean_region} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/region digitalocean_region} Data Source.
 func NewDataDigitaloceanRegion_Override(d DataDigitaloceanRegion, scope constructs.Construct, id *string, config *DataDigitaloceanRegionConfig) {
 	_init_.Initialize()
 
@@ -354,7 +354,10 @@ func NewDataDigitaloceanRegion_Override(d DataDigitaloceanRegion, scope construc
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanRegion)SetCount(val *float64) {
+func (j *jsiiProxy_DataDigitaloceanRegion)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

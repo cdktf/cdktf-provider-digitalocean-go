@@ -64,6 +64,10 @@ func validateDataDigitaloceanDroplet_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
+func (j *jsiiProxy_DataDigitaloceanDroplet) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDigitaloceanDroplet) validateSetIdParameters(val *float64) error {
 	return nil
 }

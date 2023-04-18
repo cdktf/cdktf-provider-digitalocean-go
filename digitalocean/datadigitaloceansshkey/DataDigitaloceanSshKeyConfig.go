@@ -8,7 +8,7 @@ type DataDigitaloceanSshKeyConfig struct {
 	// Experimental.
 	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count *float64 `field:"optional" json:"count" yaml:"count"`
+	Count interface{} `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -21,7 +21,7 @@ type DataDigitaloceanSshKeyConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// name of the ssh key.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/digitalocean/d/ssh_key#name DataDigitaloceanSshKey#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/ssh_key#name DataDigitaloceanSshKey#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

@@ -84,6 +84,10 @@ func (j *jsiiProxy_KubernetesNodePool) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesNodePool) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesNodePool) validateSetIdParameters(val *string) error {
 	return nil
 }
