@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/kubernetes_cluster digitalocean_kubernetes_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/kubernetes_cluster digitalocean_kubernetes_cluster}.
 type KubernetesCluster interface {
 	cdktf.TerraformResource
 	AutoUpgrade() interface{}
@@ -76,6 +76,9 @@ type KubernetesCluster interface {
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
+	RegistryIntegration() interface{}
+	SetRegistryIntegration(val interface{})
+	RegistryIntegrationInput() interface{}
 	ServiceSubnet() *string
 	Status() *string
 	SurgeUpgrade() interface{}
@@ -135,6 +138,7 @@ type KubernetesCluster interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegistryIntegration()
 	ResetSurgeUpgrade()
 	ResetTags()
 	ResetTimeouts()
@@ -474,6 +478,26 @@ func (j *jsiiProxy_KubernetesCluster) RegionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_KubernetesCluster) RegistryIntegration() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"registryIntegration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesCluster) RegistryIntegrationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"registryIntegrationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KubernetesCluster) ServiceSubnet() *string {
 	var returns *string
 	_jsii_.Get(
@@ -645,7 +669,7 @@ func (j *jsiiProxy_KubernetesCluster) VpcUuidInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/kubernetes_cluster digitalocean_kubernetes_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/kubernetes_cluster digitalocean_kubernetes_cluster} Resource.
 func NewKubernetesCluster(scope constructs.Construct, id *string, config *KubernetesClusterConfig) KubernetesCluster {
 	_init_.Initialize()
 
@@ -663,7 +687,7 @@ func NewKubernetesCluster(scope constructs.Construct, id *string, config *Kubern
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/kubernetes_cluster digitalocean_kubernetes_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/kubernetes_cluster digitalocean_kubernetes_cluster} Resource.
 func NewKubernetesCluster_Override(k KubernetesCluster, scope constructs.Construct, id *string, config *KubernetesClusterConfig) {
 	_init_.Initialize()
 
@@ -793,6 +817,17 @@ func (j *jsiiProxy_KubernetesCluster)SetRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KubernetesCluster)SetRegistryIntegration(val interface{}) {
+	if err := j.validateSetRegistryIntegrationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"registryIntegration",
 		val,
 	)
 }
@@ -1176,6 +1211,14 @@ func (k *jsiiProxy_KubernetesCluster) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesCluster) ResetRegistryIntegration() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetRegistryIntegration",
 		nil, // no parameters
 	)
 }

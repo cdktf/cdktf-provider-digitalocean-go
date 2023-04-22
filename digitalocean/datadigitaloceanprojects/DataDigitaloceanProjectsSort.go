@@ -2,9 +2,9 @@ package datadigitaloceanprojects
 
 
 type DataDigitaloceanProjectsSort struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/projects#key DataDigitaloceanProjects#key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/data-sources/projects#key DataDigitaloceanProjects#key}.
 	Key *string `field:"required" json:"key" yaml:"key"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/projects#direction DataDigitaloceanProjects#direction}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/data-sources/projects#direction DataDigitaloceanProjects#direction}.
 	Direction *string `field:"optional" json:"direction" yaml:"direction"`
 }
 

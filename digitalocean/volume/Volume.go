@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/volume digitalocean_volume}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/volume digitalocean_volume}.
 type Volume interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -532,7 +532,7 @@ func (j *jsiiProxy_Volume) Urn() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/volume digitalocean_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/volume digitalocean_volume} Resource.
 func NewVolume(scope constructs.Construct, id *string, config *VolumeConfig) Volume {
 	_init_.Initialize()
 
@@ -550,7 +550,7 @@ func NewVolume(scope constructs.Construct, id *string, config *VolumeConfig) Vol
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/volume digitalocean_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/volume digitalocean_volume} Resource.
 func NewVolume_Override(v Volume, scope constructs.Construct, id *string, config *VolumeConfig) {
 	_init_.Initialize()
 

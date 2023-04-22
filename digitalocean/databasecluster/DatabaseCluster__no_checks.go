@@ -52,6 +52,10 @@ func (d *jsiiProxy_DatabaseCluster) validateOverrideLogicalIdParameters(newLogic
 	return nil
 }
 
+func (d *jsiiProxy_DatabaseCluster) validatePutBackupRestoreParameters(value *DatabaseClusterBackupRestore) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatabaseCluster) validatePutMaintenanceWindowParameters(value interface{}) error {
 	return nil
 }

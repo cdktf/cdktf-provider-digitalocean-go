@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/database_replica digitalocean_database_replica}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/data-sources/database_replica digitalocean_database_replica}.
 type DataDigitaloceanDatabaseReplica interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -72,6 +72,7 @@ type DataDigitaloceanDatabaseReplica interface {
 	TerraformResourceType() *string
 	Uri() *string
 	User() *string
+	Uuid() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -437,8 +438,18 @@ func (j *jsiiProxy_DataDigitaloceanDatabaseReplica) User() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataDigitaloceanDatabaseReplica) Uuid() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"uuid",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/database_replica digitalocean_database_replica} Data Source.
+
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/data-sources/database_replica digitalocean_database_replica} Data Source.
 func NewDataDigitaloceanDatabaseReplica(scope constructs.Construct, id *string, config *DataDigitaloceanDatabaseReplicaConfig) DataDigitaloceanDatabaseReplica {
 	_init_.Initialize()
 
@@ -456,7 +467,7 @@ func NewDataDigitaloceanDatabaseReplica(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/data-sources/database_replica digitalocean_database_replica} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/data-sources/database_replica digitalocean_database_replica} Data Source.
 func NewDataDigitaloceanDatabaseReplica_Override(d DataDigitaloceanDatabaseReplica, scope constructs.Construct, id *string, config *DataDigitaloceanDatabaseReplicaConfig) {
 	_init_.Initialize()
 

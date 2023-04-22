@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs digitalocean}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs digitalocean}.
 type DigitaloceanProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -26,12 +26,24 @@ type DigitaloceanProvider interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HttpRetryMax() *float64
+	SetHttpRetryMax(val *float64)
+	HttpRetryMaxInput() *float64
+	HttpRetryWaitMax() *float64
+	SetHttpRetryWaitMax(val *float64)
+	HttpRetryWaitMaxInput() *float64
+	HttpRetryWaitMin() *float64
+	SetHttpRetryWaitMin(val *float64)
+	HttpRetryWaitMinInput() *float64
 	// Experimental.
 	MetaAttributes() *map[string]interface{}
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
 	RawOverrides() interface{}
+	RequestsPerSecond() *float64
+	SetRequestsPerSecond(val *float64)
+	RequestsPerSecondInput() *float64
 	SpacesAccessId() *string
 	SetSpacesAccessId(val *string)
 	SpacesAccessIdInput() *string
@@ -57,9 +69,13 @@ type DigitaloceanProvider interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetAlias()
 	ResetApiEndpoint()
+	ResetHttpRetryMax()
+	ResetHttpRetryWaitMax()
+	ResetHttpRetryWaitMin()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRequestsPerSecond()
 	ResetSpacesAccessId()
 	ResetSpacesEndpoint()
 	ResetSpacesSecretKey()
@@ -159,6 +175,66 @@ func (j *jsiiProxy_DigitaloceanProvider) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DigitaloceanProvider) HttpRetryMax() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"httpRetryMax",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DigitaloceanProvider) HttpRetryMaxInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"httpRetryMaxInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DigitaloceanProvider) HttpRetryWaitMax() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"httpRetryWaitMax",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DigitaloceanProvider) HttpRetryWaitMaxInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"httpRetryWaitMaxInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DigitaloceanProvider) HttpRetryWaitMin() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"httpRetryWaitMin",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DigitaloceanProvider) HttpRetryWaitMinInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"httpRetryWaitMinInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DigitaloceanProvider) MetaAttributes() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -184,6 +260,26 @@ func (j *jsiiProxy_DigitaloceanProvider) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DigitaloceanProvider) RequestsPerSecond() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"requestsPerSecond",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DigitaloceanProvider) RequestsPerSecondInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"requestsPerSecondInput",
 		&returns,
 	)
 	return returns
@@ -300,7 +396,7 @@ func (j *jsiiProxy_DigitaloceanProvider) TokenInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs digitalocean} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs digitalocean} Resource.
 func NewDigitaloceanProvider(scope constructs.Construct, id *string, config *DigitaloceanProviderConfig) DigitaloceanProvider {
 	_init_.Initialize()
 
@@ -318,7 +414,7 @@ func NewDigitaloceanProvider(scope constructs.Construct, id *string, config *Dig
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs digitalocean} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs digitalocean} Resource.
 func NewDigitaloceanProvider_Override(d DigitaloceanProvider, scope constructs.Construct, id *string, config *DigitaloceanProviderConfig) {
 	_init_.Initialize()
 
@@ -341,6 +437,38 @@ func (j *jsiiProxy_DigitaloceanProvider)SetApiEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"apiEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DigitaloceanProvider)SetHttpRetryMax(val *float64) {
+	_jsii_.Set(
+		j,
+		"httpRetryMax",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DigitaloceanProvider)SetHttpRetryWaitMax(val *float64) {
+	_jsii_.Set(
+		j,
+		"httpRetryWaitMax",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DigitaloceanProvider)SetHttpRetryWaitMin(val *float64) {
+	_jsii_.Set(
+		j,
+		"httpRetryWaitMin",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DigitaloceanProvider)SetRequestsPerSecond(val *float64) {
+	_jsii_.Set(
+		j,
+		"requestsPerSecond",
 		val,
 	)
 }
@@ -499,10 +627,42 @@ func (d *jsiiProxy_DigitaloceanProvider) ResetApiEndpoint() {
 	)
 }
 
+func (d *jsiiProxy_DigitaloceanProvider) ResetHttpRetryMax() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetHttpRetryMax",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DigitaloceanProvider) ResetHttpRetryWaitMax() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetHttpRetryWaitMax",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DigitaloceanProvider) ResetHttpRetryWaitMin() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetHttpRetryWaitMin",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DigitaloceanProvider) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DigitaloceanProvider) ResetRequestsPerSecond() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRequestsPerSecond",
 		nil, // no parameters
 	)
 }

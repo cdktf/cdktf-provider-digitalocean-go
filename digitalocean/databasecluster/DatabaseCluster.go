@@ -9,9 +9,11 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/database_cluster digitalocean_database_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/database_cluster digitalocean_database_cluster}.
 type DatabaseCluster interface {
 	cdktf.TerraformResource
+	BackupRestore() DatabaseClusterBackupRestoreOutputReference
+	BackupRestoreInput() *DatabaseClusterBackupRestore
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -132,8 +134,10 @@ type DatabaseCluster interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutBackupRestore(value *DatabaseClusterBackupRestore)
 	PutMaintenanceWindow(value interface{})
 	PutTimeouts(value *DatabaseClusterTimeouts)
+	ResetBackupRestore()
 	ResetEvictionPolicy()
 	ResetId()
 	ResetMaintenanceWindow()
@@ -159,6 +163,26 @@ type DatabaseCluster interface {
 // The jsii proxy struct for DatabaseCluster
 type jsiiProxy_DatabaseCluster struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_DatabaseCluster) BackupRestore() DatabaseClusterBackupRestoreOutputReference {
+	var returns DatabaseClusterBackupRestoreOutputReference
+	_jsii_.Get(
+		j,
+		"backupRestore",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseCluster) BackupRestoreInput() *DatabaseClusterBackupRestore {
+	var returns *DatabaseClusterBackupRestore
+	_jsii_.Get(
+		j,
+		"backupRestoreInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DatabaseCluster) CdktfStack() cdktf.TerraformStack {
@@ -692,7 +716,7 @@ func (j *jsiiProxy_DatabaseCluster) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/database_cluster digitalocean_database_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/database_cluster digitalocean_database_cluster} Resource.
 func NewDatabaseCluster(scope constructs.Construct, id *string, config *DatabaseClusterConfig) DatabaseCluster {
 	_init_.Initialize()
 
@@ -710,7 +734,7 @@ func NewDatabaseCluster(scope constructs.Construct, id *string, config *Database
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.27.1/docs/resources/database_cluster digitalocean_database_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/database_cluster digitalocean_database_cluster} Resource.
 func NewDatabaseCluster_Override(d DatabaseCluster, scope constructs.Construct, id *string, config *DatabaseClusterConfig) {
 	_init_.Initialize()
 
@@ -1187,6 +1211,17 @@ func (d *jsiiProxy_DatabaseCluster) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (d *jsiiProxy_DatabaseCluster) PutBackupRestore(value *DatabaseClusterBackupRestore) {
+	if err := d.validatePutBackupRestoreParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putBackupRestore",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DatabaseCluster) PutMaintenanceWindow(value interface{}) {
 	if err := d.validatePutMaintenanceWindowParameters(value); err != nil {
 		panic(err)
@@ -1206,6 +1241,14 @@ func (d *jsiiProxy_DatabaseCluster) PutTimeouts(value *DatabaseClusterTimeouts) 
 		d,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DatabaseCluster) ResetBackupRestore() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetBackupRestore",
+		nil, // no parameters
 	)
 }
 
