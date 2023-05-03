@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/container_registry_docker_credentials digitalocean_container_registry_docker_credentials}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/container_registry_docker_credentials digitalocean_container_registry_docker_credentials}.
 type ContainerRegistryDockerCredentials interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -379,7 +379,7 @@ func (j *jsiiProxy_ContainerRegistryDockerCredentials) WriteInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/container_registry_docker_credentials digitalocean_container_registry_docker_credentials} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/container_registry_docker_credentials digitalocean_container_registry_docker_credentials} Resource.
 func NewContainerRegistryDockerCredentials(scope constructs.Construct, id *string, config *ContainerRegistryDockerCredentialsConfig) ContainerRegistryDockerCredentials {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewContainerRegistryDockerCredentials(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/container_registry_docker_credentials digitalocean_container_registry_docker_credentials} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/container_registry_docker_credentials digitalocean_container_registry_docker_credentials} Resource.
 func NewContainerRegistryDockerCredentials_Override(c ContainerRegistryDockerCredentials, scope constructs.Construct, id *string, config *ContainerRegistryDockerCredentialsConfig) {
 	_init_.Initialize()
 

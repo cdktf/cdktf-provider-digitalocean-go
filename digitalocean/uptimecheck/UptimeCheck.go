@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/uptime_check digitalocean_uptime_check}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/uptime_check digitalocean_uptime_check}.
 type UptimeCheck interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -391,7 +391,7 @@ func (j *jsiiProxy_UptimeCheck) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/uptime_check digitalocean_uptime_check} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/uptime_check digitalocean_uptime_check} Resource.
 func NewUptimeCheck(scope constructs.Construct, id *string, config *UptimeCheckConfig) UptimeCheck {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewUptimeCheck(scope constructs.Construct, id *string, config *UptimeCheckC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/uptime_check digitalocean_uptime_check} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/uptime_check digitalocean_uptime_check} Resource.
 func NewUptimeCheck_Override(u UptimeCheck, scope constructs.Construct, id *string, config *UptimeCheckConfig) {
 	_init_.Initialize()
 

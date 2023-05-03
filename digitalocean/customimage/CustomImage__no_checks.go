@@ -52,6 +52,10 @@ func (c *jsiiProxy_CustomImage) validateOverrideLogicalIdParameters(newLogicalId
 	return nil
 }
 
+func (c *jsiiProxy_CustomImage) validatePutTimeoutsParameters(value *CustomImageTimeouts) error {
+	return nil
+}
+
 func validateCustomImage_IsConstructParameters(x interface{}) error {
 	return nil
 }

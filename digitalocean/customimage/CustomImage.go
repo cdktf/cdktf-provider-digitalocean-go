@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/custom_image digitalocean_custom_image}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/custom_image digitalocean_custom_image}.
 type CustomImage interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -83,6 +83,8 @@ type CustomImage interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() CustomImageTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	Type() *string
 	Url() *string
 	SetUrl(val *string)
@@ -112,6 +114,7 @@ type CustomImage interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *CustomImageTimeouts)
 	ResetDescription()
 	ResetDistribution()
 	ResetId()
@@ -119,6 +122,7 @@ type CustomImage interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTags()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -484,6 +488,26 @@ func (j *jsiiProxy_CustomImage) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_CustomImage) Timeouts() CustomImageTimeoutsOutputReference {
+	var returns CustomImageTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CustomImage) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CustomImage) Type() *string {
 	var returns *string
 	_jsii_.Get(
@@ -515,7 +539,7 @@ func (j *jsiiProxy_CustomImage) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/custom_image digitalocean_custom_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/custom_image digitalocean_custom_image} Resource.
 func NewCustomImage(scope constructs.Construct, id *string, config *CustomImageConfig) CustomImage {
 	_init_.Initialize()
 
@@ -533,7 +557,7 @@ func NewCustomImage(scope constructs.Construct, id *string, config *CustomImageC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/custom_image digitalocean_custom_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/custom_image digitalocean_custom_image} Resource.
 func NewCustomImage_Override(c CustomImage, scope constructs.Construct, id *string, config *CustomImageConfig) {
 	_init_.Initialize()
 
@@ -955,6 +979,17 @@ func (c *jsiiProxy_CustomImage) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (c *jsiiProxy_CustomImage) PutTimeouts(value *CustomImageTimeouts) {
+	if err := c.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CustomImage) ResetDescription() {
 	_jsii_.InvokeVoid(
 		c,
@@ -991,6 +1026,14 @@ func (c *jsiiProxy_CustomImage) ResetTags() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CustomImage) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

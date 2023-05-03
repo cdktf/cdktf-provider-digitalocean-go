@@ -100,6 +100,10 @@ func (j *jsiiProxy_Droplet) validateSetIpv6Parameters(val interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_Droplet) validateSetIpv6AddressParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Droplet) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

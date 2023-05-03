@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/uptime_alert digitalocean_uptime_alert}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/uptime_alert digitalocean_uptime_alert}.
 type UptimeAlert interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -437,7 +437,7 @@ func (j *jsiiProxy_UptimeAlert) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/uptime_alert digitalocean_uptime_alert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/uptime_alert digitalocean_uptime_alert} Resource.
 func NewUptimeAlert(scope constructs.Construct, id *string, config *UptimeAlertConfig) UptimeAlert {
 	_init_.Initialize()
 
@@ -455,7 +455,7 @@ func NewUptimeAlert(scope constructs.Construct, id *string, config *UptimeAlertC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/uptime_alert digitalocean_uptime_alert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/uptime_alert digitalocean_uptime_alert} Resource.
 func NewUptimeAlert_Override(u UptimeAlert, scope constructs.Construct, id *string, config *UptimeAlertConfig) {
 	_init_.Initialize()
 

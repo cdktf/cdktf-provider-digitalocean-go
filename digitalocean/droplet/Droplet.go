@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/droplet digitalocean_droplet}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet digitalocean_droplet}.
 type Droplet interface {
 	cdktf.TerraformResource
 	Backups() interface{}
@@ -58,6 +58,8 @@ type Droplet interface {
 	Ipv6() interface{}
 	SetIpv6(val interface{})
 	Ipv6Address() *string
+	SetIpv6Address(val *string)
+	Ipv6AddressInput() *string
 	Ipv6Input() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -154,6 +156,7 @@ type Droplet interface {
 	ResetGracefulShutdown()
 	ResetId()
 	ResetIpv6()
+	ResetIpv6Address()
 	ResetMonitoring()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -417,6 +420,16 @@ func (j *jsiiProxy_Droplet) Ipv6Address() *string {
 	_jsii_.Get(
 		j,
 		"ipv6Address",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Droplet) Ipv6AddressInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6AddressInput",
 		&returns,
 	)
 	return returns
@@ -823,7 +836,7 @@ func (j *jsiiProxy_Droplet) VpcUuidInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/droplet digitalocean_droplet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet digitalocean_droplet} Resource.
 func NewDroplet(scope constructs.Construct, id *string, config *DropletConfig) Droplet {
 	_init_.Initialize()
 
@@ -841,7 +854,7 @@ func NewDroplet(scope constructs.Construct, id *string, config *DropletConfig) D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.0/docs/resources/droplet digitalocean_droplet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet digitalocean_droplet} Resource.
 func NewDroplet_Override(d Droplet, scope constructs.Construct, id *string, config *DropletConfig) {
 	_init_.Initialize()
 
@@ -952,6 +965,17 @@ func (j *jsiiProxy_Droplet)SetIpv6(val interface{}) {
 	_jsii_.Set(
 		j,
 		"ipv6",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Droplet)SetIpv6Address(val *string) {
+	if err := j.validateSetIpv6AddressParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipv6Address",
 		val,
 	)
 }
@@ -1420,6 +1444,14 @@ func (d *jsiiProxy_Droplet) ResetIpv6() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetIpv6",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_Droplet) ResetIpv6Address() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIpv6Address",
 		nil, // no parameters
 	)
 }
