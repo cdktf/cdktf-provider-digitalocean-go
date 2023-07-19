@@ -2,14 +2,14 @@ package datadigitaloceancertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/datadigitaloceancertificate/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v8/datadigitaloceancertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/data-sources/certificate digitalocean_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/certificate digitalocean_certificate}.
 type DataDigitaloceanCertificate interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -347,7 +347,7 @@ func (j *jsiiProxy_DataDigitaloceanCertificate) Uuid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/data-sources/certificate digitalocean_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/certificate digitalocean_certificate} Data Source.
 func NewDataDigitaloceanCertificate(scope constructs.Construct, id *string, config *DataDigitaloceanCertificateConfig) DataDigitaloceanCertificate {
 	_init_.Initialize()
 
@@ -365,7 +365,7 @@ func NewDataDigitaloceanCertificate(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/data-sources/certificate digitalocean_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/certificate digitalocean_certificate} Data Source.
 func NewDataDigitaloceanCertificate_Override(d DataDigitaloceanCertificate, scope constructs.Construct, id *string, config *DataDigitaloceanCertificateConfig) {
 	_init_.Initialize()
 

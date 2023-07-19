@@ -181,6 +181,8 @@ func (j *jsiiProxy_KubernetesNodePoolTimeoutsOutputReference) validateSetDeleteP
 
 func (j *jsiiProxy_KubernetesNodePoolTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *KubernetesNodePoolTimeouts:
 		val := val.(*KubernetesNodePoolTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_KubernetesNodePoolTimeoutsOutputReference) validateSetInterna
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *KubernetesNodePoolTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *KubernetesNodePoolTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

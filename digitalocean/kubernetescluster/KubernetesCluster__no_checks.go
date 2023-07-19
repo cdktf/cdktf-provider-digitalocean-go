@@ -88,6 +88,10 @@ func (j *jsiiProxy_KubernetesCluster) validateSetCountParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesCluster) validateSetDestroyAllAssociatedResourcesParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesCluster) validateSetHaParameters(val interface{}) error {
 	return nil
 }

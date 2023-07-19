@@ -4,11 +4,11 @@ package monitoralert
 type MonitorAlertAlerts struct {
 	// List of email addresses to sent notifications to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/monitor_alert#email MonitorAlert#email}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/monitor_alert#email MonitorAlert#email}
 	Email *[]*string `field:"optional" json:"email" yaml:"email"`
 	// slack block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/monitor_alert#slack MonitorAlert#slack}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/monitor_alert#slack MonitorAlert#slack}
 	Slack interface{} `field:"optional" json:"slack" yaml:"slack"`
 }
 

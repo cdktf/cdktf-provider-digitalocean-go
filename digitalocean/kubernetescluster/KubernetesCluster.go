@@ -2,14 +2,14 @@ package kubernetescluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/kubernetescluster/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v8/kubernetescluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/kubernetes_cluster digitalocean_kubernetes_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/kubernetes_cluster digitalocean_kubernetes_cluster}.
 type KubernetesCluster interface {
 	cdktf.TerraformResource
 	AutoUpgrade() interface{}
@@ -33,6 +33,9 @@ type KubernetesCluster interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DestroyAllAssociatedResources() interface{}
+	SetDestroyAllAssociatedResources(val interface{})
+	DestroyAllAssociatedResourcesInput() interface{}
 	Endpoint() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -132,6 +135,7 @@ type KubernetesCluster interface {
 	PutNodePool(value *KubernetesClusterNodePool)
 	PutTimeouts(value *KubernetesClusterTimeouts)
 	ResetAutoUpgrade()
+	ResetDestroyAllAssociatedResources()
 	ResetHa()
 	ResetId()
 	ResetMaintenancePolicy()
@@ -243,6 +247,26 @@ func (j *jsiiProxy_KubernetesCluster) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesCluster) DestroyAllAssociatedResources() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"destroyAllAssociatedResources",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesCluster) DestroyAllAssociatedResourcesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"destroyAllAssociatedResourcesInput",
 		&returns,
 	)
 	return returns
@@ -669,7 +693,7 @@ func (j *jsiiProxy_KubernetesCluster) VpcUuidInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/kubernetes_cluster digitalocean_kubernetes_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/kubernetes_cluster digitalocean_kubernetes_cluster} Resource.
 func NewKubernetesCluster(scope constructs.Construct, id *string, config *KubernetesClusterConfig) KubernetesCluster {
 	_init_.Initialize()
 
@@ -687,7 +711,7 @@ func NewKubernetesCluster(scope constructs.Construct, id *string, config *Kubern
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/kubernetes_cluster digitalocean_kubernetes_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/kubernetes_cluster digitalocean_kubernetes_cluster} Resource.
 func NewKubernetesCluster_Override(k KubernetesCluster, scope constructs.Construct, id *string, config *KubernetesClusterConfig) {
 	_init_.Initialize()
 
@@ -735,6 +759,17 @@ func (j *jsiiProxy_KubernetesCluster)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KubernetesCluster)SetDestroyAllAssociatedResources(val interface{}) {
+	if err := j.validateSetDestroyAllAssociatedResourcesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"destroyAllAssociatedResources",
 		val,
 	)
 }
@@ -1179,6 +1214,14 @@ func (k *jsiiProxy_KubernetesCluster) ResetAutoUpgrade() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetAutoUpgrade",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesCluster) ResetDestroyAllAssociatedResources() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetDestroyAllAssociatedResources",
 		nil, // no parameters
 	)
 }

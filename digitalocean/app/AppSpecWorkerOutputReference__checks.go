@@ -342,6 +342,8 @@ func (j *jsiiProxy_AppSpecWorkerOutputReference) validateSetInstanceSizeSlugPara
 
 func (j *jsiiProxy_AppSpecWorkerOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *AppSpecWorker:
 		val := val.(*AppSpecWorker)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -353,11 +355,9 @@ func (j *jsiiProxy_AppSpecWorkerOutputReference) validateSetInternalValueParamet
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *AppSpecWorker, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *AppSpecWorker; received %#v (a %T)", val, val)
 		}
 	}
 

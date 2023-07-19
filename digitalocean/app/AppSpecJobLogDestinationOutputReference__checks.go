@@ -198,6 +198,8 @@ func (j *jsiiProxy_AppSpecJobLogDestinationOutputReference) validateSetComplexOb
 
 func (j *jsiiProxy_AppSpecJobLogDestinationOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *AppSpecJobLogDestination:
 		val := val.(*AppSpecJobLogDestination)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -209,11 +211,9 @@ func (j *jsiiProxy_AppSpecJobLogDestinationOutputReference) validateSetInternalV
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *AppSpecJobLogDestination, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *AppSpecJobLogDestination; received %#v (a %T)", val, val)
 		}
 	}
 

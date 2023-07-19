@@ -2,14 +2,14 @@ package datadigitaloceanregions
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/datadigitaloceanregions/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v8/datadigitaloceanregions/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/data-sources/regions digitalocean_regions}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/regions digitalocean_regions}.
 type DataDigitaloceanRegions interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -317,7 +317,7 @@ func (j *jsiiProxy_DataDigitaloceanRegions) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/data-sources/regions digitalocean_regions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/regions digitalocean_regions} Data Source.
 func NewDataDigitaloceanRegions(scope constructs.Construct, id *string, config *DataDigitaloceanRegionsConfig) DataDigitaloceanRegions {
 	_init_.Initialize()
 
@@ -335,7 +335,7 @@ func NewDataDigitaloceanRegions(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/data-sources/regions digitalocean_regions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/regions digitalocean_regions} Data Source.
 func NewDataDigitaloceanRegions_Override(d DataDigitaloceanRegions, scope constructs.Construct, id *string, config *DataDigitaloceanRegionsConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package datadigitaloceansizes
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/datadigitaloceansizes/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v8/datadigitaloceansizes/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/data-sources/sizes digitalocean_sizes}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/sizes digitalocean_sizes}.
 type DataDigitaloceanSizes interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -317,7 +317,7 @@ func (j *jsiiProxy_DataDigitaloceanSizes) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/data-sources/sizes digitalocean_sizes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/sizes digitalocean_sizes} Data Source.
 func NewDataDigitaloceanSizes(scope constructs.Construct, id *string, config *DataDigitaloceanSizesConfig) DataDigitaloceanSizes {
 	_init_.Initialize()
 
@@ -335,7 +335,7 @@ func NewDataDigitaloceanSizes(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/data-sources/sizes digitalocean_sizes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/sizes digitalocean_sizes} Data Source.
 func NewDataDigitaloceanSizes_Override(d DataDigitaloceanSizes, scope constructs.Construct, id *string, config *DataDigitaloceanSizesConfig) {
 	_init_.Initialize()
 

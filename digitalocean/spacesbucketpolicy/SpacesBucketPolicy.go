@@ -2,14 +2,14 @@ package spacesbucketpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/spacesbucketpolicy/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v8/spacesbucketpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/spaces_bucket_policy digitalocean_spaces_bucket_policy}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/spaces_bucket_policy digitalocean_spaces_bucket_policy}.
 type SpacesBucketPolicy interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -355,7 +355,7 @@ func (j *jsiiProxy_SpacesBucketPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/spaces_bucket_policy digitalocean_spaces_bucket_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/spaces_bucket_policy digitalocean_spaces_bucket_policy} Resource.
 func NewSpacesBucketPolicy(scope constructs.Construct, id *string, config *SpacesBucketPolicyConfig) SpacesBucketPolicy {
 	_init_.Initialize()
 
@@ -373,7 +373,7 @@ func NewSpacesBucketPolicy(scope constructs.Construct, id *string, config *Space
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/spaces_bucket_policy digitalocean_spaces_bucket_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/spaces_bucket_policy digitalocean_spaces_bucket_policy} Resource.
 func NewSpacesBucketPolicy_Override(s SpacesBucketPolicy, scope constructs.Construct, id *string, config *SpacesBucketPolicyConfig) {
 	_init_.Initialize()
 

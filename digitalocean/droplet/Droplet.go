@@ -2,14 +2,14 @@ package droplet
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/droplet/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v8/droplet/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet digitalocean_droplet}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/droplet digitalocean_droplet}.
 type Droplet interface {
 	cdktf.TerraformResource
 	Backups() interface{}
@@ -836,7 +836,7 @@ func (j *jsiiProxy_Droplet) VpcUuidInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet digitalocean_droplet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/droplet digitalocean_droplet} Resource.
 func NewDroplet(scope constructs.Construct, id *string, config *DropletConfig) Droplet {
 	_init_.Initialize()
 
@@ -854,7 +854,7 @@ func NewDroplet(scope constructs.Construct, id *string, config *DropletConfig) D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet digitalocean_droplet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/droplet digitalocean_droplet} Resource.
 func NewDroplet_Override(d Droplet, scope constructs.Construct, id *string, config *DropletConfig) {
 	_init_.Initialize()
 

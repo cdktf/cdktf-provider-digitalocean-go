@@ -2,14 +2,14 @@ package datadigitaloceansshkeys
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/datadigitaloceansshkeys/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v8/datadigitaloceansshkeys/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/data-sources/ssh_keys digitalocean_ssh_keys}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/ssh_keys digitalocean_ssh_keys}.
 type DataDigitaloceanSshKeys interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -317,7 +317,7 @@ func (j *jsiiProxy_DataDigitaloceanSshKeys) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/data-sources/ssh_keys digitalocean_ssh_keys} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/ssh_keys digitalocean_ssh_keys} Data Source.
 func NewDataDigitaloceanSshKeys(scope constructs.Construct, id *string, config *DataDigitaloceanSshKeysConfig) DataDigitaloceanSshKeys {
 	_init_.Initialize()
 
@@ -335,7 +335,7 @@ func NewDataDigitaloceanSshKeys(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/data-sources/ssh_keys digitalocean_ssh_keys} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/ssh_keys digitalocean_ssh_keys} Data Source.
 func NewDataDigitaloceanSshKeys_Override(d DataDigitaloceanSshKeys, scope constructs.Construct, id *string, config *DataDigitaloceanSshKeysConfig) {
 	_init_.Initialize()
 

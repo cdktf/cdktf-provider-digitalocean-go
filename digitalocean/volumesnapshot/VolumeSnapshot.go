@@ -2,14 +2,14 @@ package volumesnapshot
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/volumesnapshot/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v8/volumesnapshot/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/volume_snapshot digitalocean_volume_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/volume_snapshot digitalocean_volume_snapshot}.
 type VolumeSnapshot interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -400,7 +400,7 @@ func (j *jsiiProxy_VolumeSnapshot) VolumeIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/volume_snapshot digitalocean_volume_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/volume_snapshot digitalocean_volume_snapshot} Resource.
 func NewVolumeSnapshot(scope constructs.Construct, id *string, config *VolumeSnapshotConfig) VolumeSnapshot {
 	_init_.Initialize()
 
@@ -418,7 +418,7 @@ func NewVolumeSnapshot(scope constructs.Construct, id *string, config *VolumeSna
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/volume_snapshot digitalocean_volume_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/volume_snapshot digitalocean_volume_snapshot} Resource.
 func NewVolumeSnapshot_Override(v VolumeSnapshot, scope constructs.Construct, id *string, config *VolumeSnapshotConfig) {
 	_init_.Initialize()
 

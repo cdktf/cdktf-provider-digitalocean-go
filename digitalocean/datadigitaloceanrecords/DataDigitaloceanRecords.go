@@ -2,14 +2,14 @@ package datadigitaloceanrecords
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/datadigitaloceanrecords/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v8/datadigitaloceanrecords/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/data-sources/records digitalocean_records}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/records digitalocean_records}.
 type DataDigitaloceanRecords interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -340,7 +340,7 @@ func (j *jsiiProxy_DataDigitaloceanRecords) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/data-sources/records digitalocean_records} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/records digitalocean_records} Data Source.
 func NewDataDigitaloceanRecords(scope constructs.Construct, id *string, config *DataDigitaloceanRecordsConfig) DataDigitaloceanRecords {
 	_init_.Initialize()
 
@@ -358,7 +358,7 @@ func NewDataDigitaloceanRecords(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/data-sources/records digitalocean_records} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/records digitalocean_records} Data Source.
 func NewDataDigitaloceanRecords_Override(d DataDigitaloceanRecords, scope constructs.Construct, id *string, config *DataDigitaloceanRecordsConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package spacesbucket
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/spacesbucket/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v8/spacesbucket/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/spaces_bucket digitalocean_spaces_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/spaces_bucket digitalocean_spaces_bucket}.
 type SpacesBucket interface {
 	cdktf.TerraformResource
 	Acl() *string
@@ -486,7 +486,7 @@ func (j *jsiiProxy_SpacesBucket) VersioningInput() *SpacesBucketVersioning {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/spaces_bucket digitalocean_spaces_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/spaces_bucket digitalocean_spaces_bucket} Resource.
 func NewSpacesBucket(scope constructs.Construct, id *string, config *SpacesBucketConfig) SpacesBucket {
 	_init_.Initialize()
 
@@ -504,7 +504,7 @@ func NewSpacesBucket(scope constructs.Construct, id *string, config *SpacesBucke
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/spaces_bucket digitalocean_spaces_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/spaces_bucket digitalocean_spaces_bucket} Resource.
 func NewSpacesBucket_Override(s SpacesBucket, scope constructs.Construct, id *string, config *SpacesBucketConfig) {
 	_init_.Initialize()
 

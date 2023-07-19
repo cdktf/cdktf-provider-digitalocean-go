@@ -2,14 +2,14 @@ package dropletsnapshot
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/dropletsnapshot/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v8/dropletsnapshot/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet_snapshot digitalocean_droplet_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/droplet_snapshot digitalocean_droplet_snapshot}.
 type DropletSnapshot interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -376,7 +376,7 @@ func (j *jsiiProxy_DropletSnapshot) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet_snapshot digitalocean_droplet_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/droplet_snapshot digitalocean_droplet_snapshot} Resource.
 func NewDropletSnapshot(scope constructs.Construct, id *string, config *DropletSnapshotConfig) DropletSnapshot {
 	_init_.Initialize()
 
@@ -394,7 +394,7 @@ func NewDropletSnapshot(scope constructs.Construct, id *string, config *DropletS
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet_snapshot digitalocean_droplet_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/droplet_snapshot digitalocean_droplet_snapshot} Resource.
 func NewDropletSnapshot_Override(d DropletSnapshot, scope constructs.Construct, id *string, config *DropletSnapshotConfig) {
 	_init_.Initialize()
 

@@ -333,6 +333,8 @@ func (j *jsiiProxy_AppSpecFunctionOutputReference) validateSetComplexObjectIsFro
 
 func (j *jsiiProxy_AppSpecFunctionOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *AppSpecFunction:
 		val := val.(*AppSpecFunction)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -344,11 +346,9 @@ func (j *jsiiProxy_AppSpecFunctionOutputReference) validateSetInternalValueParam
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *AppSpecFunction, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *AppSpecFunction; received %#v (a %T)", val, val)
 		}
 	}
 

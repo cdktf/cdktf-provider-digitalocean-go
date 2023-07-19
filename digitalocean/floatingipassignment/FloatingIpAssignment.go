@@ -2,14 +2,14 @@ package floatingipassignment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v7/floatingipassignment/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v8/floatingipassignment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/floating_ip_assignment digitalocean_floating_ip_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/floating_ip_assignment digitalocean_floating_ip_assignment}.
 type FloatingIpAssignment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -332,7 +332,7 @@ func (j *jsiiProxy_FloatingIpAssignment) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/floating_ip_assignment digitalocean_floating_ip_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/floating_ip_assignment digitalocean_floating_ip_assignment} Resource.
 func NewFloatingIpAssignment(scope constructs.Construct, id *string, config *FloatingIpAssignmentConfig) FloatingIpAssignment {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewFloatingIpAssignment(scope constructs.Construct, id *string, config *Flo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/floating_ip_assignment digitalocean_floating_ip_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/floating_ip_assignment digitalocean_floating_ip_assignment} Resource.
 func NewFloatingIpAssignment_Override(f FloatingIpAssignment, scope constructs.Construct, id *string, config *FloatingIpAssignmentConfig) {
 	_init_.Initialize()
 
