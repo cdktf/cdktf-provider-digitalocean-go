@@ -1,10 +1,13 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datadigitaloceanimages
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v9/jsii"
 
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v8/datadigitaloceanimages/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v9/datadigitaloceanimages/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
