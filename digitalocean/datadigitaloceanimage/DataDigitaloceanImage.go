@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/image digitalocean_image}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/data-sources/image digitalocean_image}.
 type DataDigitaloceanImage interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -465,7 +465,7 @@ func (j *jsiiProxy_DataDigitaloceanImage) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/image digitalocean_image} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/data-sources/image digitalocean_image} Data Source.
 func NewDataDigitaloceanImage(scope constructs.Construct, id *string, config *DataDigitaloceanImageConfig) DataDigitaloceanImage {
 	_init_.Initialize()
 
@@ -483,7 +483,7 @@ func NewDataDigitaloceanImage(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/data-sources/image digitalocean_image} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/data-sources/image digitalocean_image} Data Source.
 func NewDataDigitaloceanImage_Override(d DataDigitaloceanImage, scope constructs.Construct, id *string, config *DataDigitaloceanImageConfig) {
 	_init_.Initialize()
 

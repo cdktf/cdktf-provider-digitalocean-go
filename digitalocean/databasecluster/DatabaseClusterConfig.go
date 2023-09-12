@@ -22,44 +22,44 @@ type DatabaseClusterConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/database_cluster#engine DatabaseCluster#engine}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/database_cluster#engine DatabaseCluster#engine}.
 	Engine *string `field:"required" json:"engine" yaml:"engine"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/database_cluster#name DatabaseCluster#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/database_cluster#name DatabaseCluster#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/database_cluster#node_count DatabaseCluster#node_count}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/database_cluster#node_count DatabaseCluster#node_count}.
 	NodeCount *float64 `field:"required" json:"nodeCount" yaml:"nodeCount"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/database_cluster#region DatabaseCluster#region}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/database_cluster#region DatabaseCluster#region}.
 	Region *string `field:"required" json:"region" yaml:"region"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/database_cluster#size DatabaseCluster#size}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/database_cluster#size DatabaseCluster#size}.
 	Size *string `field:"required" json:"size" yaml:"size"`
 	// backup_restore block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/database_cluster#backup_restore DatabaseCluster#backup_restore}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/database_cluster#backup_restore DatabaseCluster#backup_restore}
 	BackupRestore *DatabaseClusterBackupRestore `field:"optional" json:"backupRestore" yaml:"backupRestore"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/database_cluster#eviction_policy DatabaseCluster#eviction_policy}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/database_cluster#eviction_policy DatabaseCluster#eviction_policy}.
 	EvictionPolicy *string `field:"optional" json:"evictionPolicy" yaml:"evictionPolicy"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/database_cluster#id DatabaseCluster#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/database_cluster#id DatabaseCluster#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// maintenance_window block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/database_cluster#maintenance_window DatabaseCluster#maintenance_window}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/database_cluster#maintenance_window DatabaseCluster#maintenance_window}
 	MaintenanceWindow interface{} `field:"optional" json:"maintenanceWindow" yaml:"maintenanceWindow"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/database_cluster#private_network_uuid DatabaseCluster#private_network_uuid}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/database_cluster#private_network_uuid DatabaseCluster#private_network_uuid}.
 	PrivateNetworkUuid *string `field:"optional" json:"privateNetworkUuid" yaml:"privateNetworkUuid"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/database_cluster#project_id DatabaseCluster#project_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/database_cluster#project_id DatabaseCluster#project_id}.
 	ProjectId *string `field:"optional" json:"projectId" yaml:"projectId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/database_cluster#sql_mode DatabaseCluster#sql_mode}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/database_cluster#sql_mode DatabaseCluster#sql_mode}.
 	SqlMode *string `field:"optional" json:"sqlMode" yaml:"sqlMode"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/database_cluster#tags DatabaseCluster#tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/database_cluster#tags DatabaseCluster#tags}.
 	Tags *[]*string `field:"optional" json:"tags" yaml:"tags"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/database_cluster#timeouts DatabaseCluster#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/database_cluster#timeouts DatabaseCluster#timeouts}
 	Timeouts *DatabaseClusterTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/database_cluster#version DatabaseCluster#version}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/database_cluster#version DatabaseCluster#version}.
 	Version *string `field:"optional" json:"version" yaml:"version"`
 }
 

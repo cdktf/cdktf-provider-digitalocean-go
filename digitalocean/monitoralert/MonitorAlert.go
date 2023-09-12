@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/monitor_alert digitalocean_monitor_alert}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/monitor_alert digitalocean_monitor_alert}.
 type MonitorAlert interface {
 	cdktf.TerraformResource
 	Alerts() MonitorAlertAlertsOutputReference
@@ -510,7 +510,7 @@ func (j *jsiiProxy_MonitorAlert) WindowInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/monitor_alert digitalocean_monitor_alert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/monitor_alert digitalocean_monitor_alert} Resource.
 func NewMonitorAlert(scope constructs.Construct, id *string, config *MonitorAlertConfig) MonitorAlert {
 	_init_.Initialize()
 
@@ -528,7 +528,7 @@ func NewMonitorAlert(scope constructs.Construct, id *string, config *MonitorAler
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/monitor_alert digitalocean_monitor_alert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/monitor_alert digitalocean_monitor_alert} Resource.
 func NewMonitorAlert_Override(m MonitorAlert, scope constructs.Construct, id *string, config *MonitorAlertConfig) {
 	_init_.Initialize()
 

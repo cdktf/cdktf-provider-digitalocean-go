@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/record digitalocean_record}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/record digitalocean_record}.
 type Record interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -536,7 +536,7 @@ func (j *jsiiProxy_Record) WeightInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/record digitalocean_record} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/record digitalocean_record} Resource.
 func NewRecord(scope constructs.Construct, id *string, config *RecordConfig) Record {
 	_init_.Initialize()
 
@@ -554,7 +554,7 @@ func NewRecord(scope constructs.Construct, id *string, config *RecordConfig) Rec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.29.0/docs/resources/record digitalocean_record} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/record digitalocean_record} Resource.
 func NewRecord_Override(r Record, scope constructs.Construct, id *string, config *RecordConfig) {
 	_init_.Initialize()
 
