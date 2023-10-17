@@ -7,6 +7,10 @@ package volumesnapshot
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VolumeSnapshot) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VolumeSnapshot) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (v *jsiiProxy_VolumeSnapshot) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (v *jsiiProxy_VolumeSnapshot) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VolumeSnapshot) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (v *jsiiProxy_VolumeSnapshot) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (v *jsiiProxy_VolumeSnapshot) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateVolumeSnapshot_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

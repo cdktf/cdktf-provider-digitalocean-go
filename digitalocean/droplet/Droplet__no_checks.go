@@ -7,6 +7,10 @@ package droplet
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_Droplet) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_Droplet) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_Droplet) validateGetStringMapAttributeParameters(terraformAtt
 	return nil
 }
 
+func (d *jsiiProxy_Droplet) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_Droplet) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_Droplet) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_Droplet) validateOverrideLogicalIdParameters(newLogicalId *st
 }
 
 func (d *jsiiProxy_Droplet) validatePutTimeoutsParameters(value *DropletTimeouts) error {
+	return nil
+}
+
+func validateDroplet_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package spacesbucketcorsconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SpacesBucketCorsConfiguration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpacesBucketCorsConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SpacesBucketCorsConfiguration) validateGetStringMapAttributeP
 	return nil
 }
 
+func (s *jsiiProxy_SpacesBucketCorsConfiguration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpacesBucketCorsConfiguration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SpacesBucketCorsConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SpacesBucketCorsConfiguration) validateOverrideLogicalIdParam
 }
 
 func (s *jsiiProxy_SpacesBucketCorsConfiguration) validatePutCorsRuleParameters(value interface{}) error {
+	return nil
+}
+
+func validateSpacesBucketCorsConfiguration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

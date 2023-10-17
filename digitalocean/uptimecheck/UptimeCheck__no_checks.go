@@ -7,6 +7,10 @@ package uptimecheck
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (u *jsiiProxy_UptimeCheck) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (u *jsiiProxy_UptimeCheck) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (u *jsiiProxy_UptimeCheck) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (u *jsiiProxy_UptimeCheck) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (u *jsiiProxy_UptimeCheck) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (u *jsiiProxy_UptimeCheck) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (u *jsiiProxy_UptimeCheck) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateUptimeCheck_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

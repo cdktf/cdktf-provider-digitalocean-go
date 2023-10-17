@@ -7,6 +7,10 @@ package certificate
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_Certificate) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_Certificate) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (c *jsiiProxy_Certificate) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (c *jsiiProxy_Certificate) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_Certificate) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (c *jsiiProxy_Certificate) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_Certificate) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateCertificate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

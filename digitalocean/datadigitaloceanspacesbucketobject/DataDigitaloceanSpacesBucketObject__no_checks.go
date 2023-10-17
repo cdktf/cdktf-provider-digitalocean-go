@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDigitaloceanSpacesBucketObject) validateOverrideLogicalId
 	return nil
 }
 
+func validateDataDigitaloceanSpacesBucketObject_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataDigitaloceanSpacesBucketObject_IsConstructParameters(x interface{}) error {
 	return nil
 }

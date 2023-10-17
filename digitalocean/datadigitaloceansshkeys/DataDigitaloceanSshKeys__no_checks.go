@@ -63,6 +63,10 @@ func (d *jsiiProxy_DataDigitaloceanSshKeys) validatePutSortParameters(value inte
 	return nil
 }
 
+func validateDataDigitaloceanSshKeys_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataDigitaloceanSshKeys_IsConstructParameters(x interface{}) error {
 	return nil
 }

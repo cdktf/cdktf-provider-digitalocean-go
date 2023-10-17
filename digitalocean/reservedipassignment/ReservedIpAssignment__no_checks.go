@@ -7,6 +7,10 @@ package reservedipassignment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_ReservedIpAssignment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_ReservedIpAssignment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (r *jsiiProxy_ReservedIpAssignment) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (r *jsiiProxy_ReservedIpAssignment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_ReservedIpAssignment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (r *jsiiProxy_ReservedIpAssignment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_ReservedIpAssignment) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateReservedIpAssignment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

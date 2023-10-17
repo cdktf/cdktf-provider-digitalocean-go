@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDigitaloceanDatabaseUser) validateOverrideLogicalIdParame
 	return nil
 }
 
+func validateDataDigitaloceanDatabaseUser_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataDigitaloceanDatabaseUser_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDigitaloceanSshKey) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
+func validateDataDigitaloceanSshKey_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataDigitaloceanSshKey_IsConstructParameters(x interface{}) error {
 	return nil
 }

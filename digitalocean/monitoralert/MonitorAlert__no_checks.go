@@ -7,6 +7,10 @@ package monitoralert
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MonitorAlert) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorAlert) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MonitorAlert) validateGetStringMapAttributeParameters(terrafo
 	return nil
 }
 
+func (m *jsiiProxy_MonitorAlert) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorAlert) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MonitorAlert) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (m *jsiiProxy_MonitorAlert) validateOverrideLogicalIdParameters(newLogicalI
 }
 
 func (m *jsiiProxy_MonitorAlert) validatePutAlertsParameters(value *MonitorAlertAlerts) error {
+	return nil
+}
+
+func validateMonitorAlert_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package cdn
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_Cdn) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_Cdn) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (c *jsiiProxy_Cdn) validateGetStringMapAttributeParameters(terraformAttribu
 	return nil
 }
 
+func (c *jsiiProxy_Cdn) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_Cdn) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (c *jsiiProxy_Cdn) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_Cdn) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateCdn_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

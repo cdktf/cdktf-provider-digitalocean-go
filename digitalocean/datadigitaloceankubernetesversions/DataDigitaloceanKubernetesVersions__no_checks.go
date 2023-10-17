@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDigitaloceanKubernetesVersions) validateOverrideLogicalId
 	return nil
 }
 
+func validateDataDigitaloceanKubernetesVersions_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataDigitaloceanKubernetesVersions_IsConstructParameters(x interface{}) error {
 	return nil
 }

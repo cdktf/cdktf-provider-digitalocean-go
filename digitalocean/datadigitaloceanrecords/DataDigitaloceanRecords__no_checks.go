@@ -63,6 +63,10 @@ func (d *jsiiProxy_DataDigitaloceanRecords) validatePutSortParameters(value inte
 	return nil
 }
 
+func validateDataDigitaloceanRecords_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataDigitaloceanRecords_IsConstructParameters(x interface{}) error {
 	return nil
 }

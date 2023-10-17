@@ -15,6 +15,10 @@ func (d *jsiiProxy_DigitaloceanProvider) validateOverrideLogicalIdParameters(new
 	return nil
 }
 
+func validateDigitaloceanProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDigitaloceanProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }

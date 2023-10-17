@@ -5,10 +5,10 @@ package uptimealert
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v9/uptimealert/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/uptimealert/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -82,6 +82,9 @@ type UptimeAlert interface {
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -103,7 +106,12 @@ type UptimeAlert interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -603,6 +611,25 @@ func (j *jsiiProxy_UptimeAlert)SetType(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a UptimeAlert resource upon running "cdktf plan <stack-name>".
+func UptimeAlert_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateUptimeAlert_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-digitalocean.uptimeAlert.UptimeAlert",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -685,6 +712,17 @@ func UptimeAlert_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (u *jsiiProxy_UptimeAlert) AddMoveTarget(moveTarget *string) {
+	if err := u.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		u,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (u *jsiiProxy_UptimeAlert) AddOverride(path *string, value interface{}) {
@@ -842,6 +880,17 @@ func (u *jsiiProxy_UptimeAlert) GetStringMapAttribute(terraformAttribute *string
 	return returns
 }
 
+func (u *jsiiProxy_UptimeAlert) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := u.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		u,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (u *jsiiProxy_UptimeAlert) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := u.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -856,6 +905,17 @@ func (u *jsiiProxy_UptimeAlert) InterpolationForAttribute(terraformAttribute *st
 	)
 
 	return returns
+}
+
+func (u *jsiiProxy_UptimeAlert) MoveTo(moveTarget *string, index interface{}) {
+	if err := u.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		u,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (u *jsiiProxy_UptimeAlert) OverrideLogicalId(newLogicalId *string) {

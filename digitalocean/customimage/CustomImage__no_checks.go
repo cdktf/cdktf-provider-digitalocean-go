@@ -7,6 +7,10 @@ package customimage
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CustomImage) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CustomImage) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CustomImage) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (c *jsiiProxy_CustomImage) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CustomImage) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CustomImage) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (c *jsiiProxy_CustomImage) validateOverrideLogicalIdParameters(newLogicalId
 }
 
 func (c *jsiiProxy_CustomImage) validatePutTimeoutsParameters(value *CustomImageTimeouts) error {
+	return nil
+}
+
+func validateCustomImage_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

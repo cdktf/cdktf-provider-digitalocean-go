@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDigitaloceanCertificate) validateOverrideLogicalIdParamet
 	return nil
 }
 
+func validateDataDigitaloceanCertificate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataDigitaloceanCertificate_IsConstructParameters(x interface{}) error {
 	return nil
 }

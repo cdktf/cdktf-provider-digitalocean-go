@@ -7,6 +7,10 @@ package spacesbucket
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SpacesBucket) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpacesBucket) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SpacesBucket) validateGetStringMapAttributeParameters(terrafo
 	return nil
 }
 
+func (s *jsiiProxy_SpacesBucket) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpacesBucket) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SpacesBucket) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (s *jsiiProxy_SpacesBucket) validatePutLifecycleRuleParameters(value interf
 }
 
 func (s *jsiiProxy_SpacesBucket) validatePutVersioningParameters(value *SpacesBucketVersioning) error {
+	return nil
+}
+
+func validateSpacesBucket_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

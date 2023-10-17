@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDigitaloceanContainerRegistry) validateOverrideLogicalIdP
 	return nil
 }
 
+func validateDataDigitaloceanContainerRegistry_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataDigitaloceanContainerRegistry_IsConstructParameters(x interface{}) error {
 	return nil
 }

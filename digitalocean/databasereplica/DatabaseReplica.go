@@ -5,10 +5,10 @@ package databasereplica
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v9/databasereplica/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/databasereplica/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -91,6 +91,9 @@ type DatabaseReplica interface {
 	Uri() *string
 	User() *string
 	Uuid() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -112,7 +115,12 @@ type DatabaseReplica interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -704,6 +712,25 @@ func (j *jsiiProxy_DatabaseReplica)SetTags(val *[]*string) {
 	)
 }
 
+// Generates CDKTF code for importing a DatabaseReplica resource upon running "cdktf plan <stack-name>".
+func DatabaseReplica_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDatabaseReplica_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-digitalocean.databaseReplica.DatabaseReplica",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -786,6 +813,17 @@ func DatabaseReplica_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (d *jsiiProxy_DatabaseReplica) AddMoveTarget(moveTarget *string) {
+	if err := d.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (d *jsiiProxy_DatabaseReplica) AddOverride(path *string, value interface{}) {
@@ -943,6 +981,17 @@ func (d *jsiiProxy_DatabaseReplica) GetStringMapAttribute(terraformAttribute *st
 	return returns
 }
 
+func (d *jsiiProxy_DatabaseReplica) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := d.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (d *jsiiProxy_DatabaseReplica) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -957,6 +1006,17 @@ func (d *jsiiProxy_DatabaseReplica) InterpolationForAttribute(terraformAttribute
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DatabaseReplica) MoveTo(moveTarget *string, index interface{}) {
+	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (d *jsiiProxy_DatabaseReplica) OverrideLogicalId(newLogicalId *string) {
