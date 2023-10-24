@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/database_db digitalocean_database_db}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/database_db digitalocean_database_db}.
 type DatabaseDb interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -343,7 +343,7 @@ func (j *jsiiProxy_DatabaseDb) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/database_db digitalocean_database_db} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/database_db digitalocean_database_db} Resource.
 func NewDatabaseDb(scope constructs.Construct, id *string, config *DatabaseDbConfig) DatabaseDb {
 	_init_.Initialize()
 
@@ -361,7 +361,7 @@ func NewDatabaseDb(scope constructs.Construct, id *string, config *DatabaseDbCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/database_db digitalocean_database_db} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/database_db digitalocean_database_db} Resource.
 func NewDatabaseDb_Override(d DatabaseDb, scope constructs.Construct, id *string, config *DatabaseDbConfig) {
 	_init_.Initialize()
 

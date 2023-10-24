@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/loadbalancer digitalocean_loadbalancer}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/loadbalancer digitalocean_loadbalancer}.
 type Loadbalancer interface {
 	cdktf.TerraformResource
 	Algorithm() *string
@@ -113,6 +113,9 @@ type Loadbalancer interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Type() *string
+	SetType(val *string)
+	TypeInput() *string
 	Urn() *string
 	VpcUuid() *string
 	SetVpcUuid(val *string)
@@ -169,9 +172,11 @@ type Loadbalancer interface {
 	ResetOverrideLogicalId()
 	ResetProjectId()
 	ResetRedirectHttpToHttps()
+	ResetRegion()
 	ResetSize()
 	ResetSizeUnit()
 	ResetStickySessions()
+	ResetType()
 	ResetVpcUuid()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -728,6 +733,26 @@ func (j *jsiiProxy_Loadbalancer) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Loadbalancer) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Loadbalancer) TypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"typeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Loadbalancer) Urn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -759,7 +784,7 @@ func (j *jsiiProxy_Loadbalancer) VpcUuidInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/loadbalancer digitalocean_loadbalancer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/loadbalancer digitalocean_loadbalancer} Resource.
 func NewLoadbalancer(scope constructs.Construct, id *string, config *LoadbalancerConfig) Loadbalancer {
 	_init_.Initialize()
 
@@ -777,7 +802,7 @@ func NewLoadbalancer(scope constructs.Construct, id *string, config *Loadbalance
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/loadbalancer digitalocean_loadbalancer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/loadbalancer digitalocean_loadbalancer} Resource.
 func NewLoadbalancer_Override(l Loadbalancer, scope constructs.Construct, id *string, config *LoadbalancerConfig) {
 	_init_.Initialize()
 
@@ -1006,6 +1031,17 @@ func (j *jsiiProxy_Loadbalancer)SetSizeUnit(val *float64) {
 	_jsii_.Set(
 		j,
 		"sizeUnit",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Loadbalancer)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"type",
 		val,
 	)
 }
@@ -1487,6 +1523,14 @@ func (l *jsiiProxy_Loadbalancer) ResetRedirectHttpToHttps() {
 	)
 }
 
+func (l *jsiiProxy_Loadbalancer) ResetRegion() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRegion",
+		nil, // no parameters
+	)
+}
+
 func (l *jsiiProxy_Loadbalancer) ResetSize() {
 	_jsii_.InvokeVoid(
 		l,
@@ -1507,6 +1551,14 @@ func (l *jsiiProxy_Loadbalancer) ResetStickySessions() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetStickySessions",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_Loadbalancer) ResetType() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetType",
 		nil, // no parameters
 	)
 }

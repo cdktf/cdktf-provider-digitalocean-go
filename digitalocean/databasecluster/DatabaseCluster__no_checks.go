@@ -151,6 +151,10 @@ func (j *jsiiProxy_DatabaseCluster) validateSetSqlModeParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseCluster) validateSetStorageSizeMibParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseCluster) validateSetTagsParameters(val *[]*string) error {
 	return nil
 }

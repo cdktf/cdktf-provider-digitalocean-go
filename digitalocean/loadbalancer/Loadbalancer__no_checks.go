@@ -171,6 +171,10 @@ func (j *jsiiProxy_Loadbalancer) validateSetSizeUnitParameters(val *float64) err
 	return nil
 }
 
+func (j *jsiiProxy_Loadbalancer) validateSetTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Loadbalancer) validateSetVpcUuidParameters(val *string) error {
 	return nil
 }

@@ -43,6 +43,8 @@ type AppSpecOutputReference interface {
 	Fqn() *string
 	Function() AppSpecFunctionList
 	FunctionInput() interface{}
+	Ingress() AppSpecIngressOutputReference
+	IngressInput() *AppSpecIngress
 	InternalValue() *AppSpec
 	SetInternalValue(val *AppSpec)
 	Job() AppSpecJobList
@@ -96,6 +98,7 @@ type AppSpecOutputReference interface {
 	PutDomain(value interface{})
 	PutEnv(value interface{})
 	PutFunction(value interface{})
+	PutIngress(value *AppSpecIngress)
 	PutJob(value interface{})
 	PutService(value interface{})
 	PutStaticSite(value interface{})
@@ -106,6 +109,7 @@ type AppSpecOutputReference interface {
 	ResetDomains()
 	ResetEnv()
 	ResetFunction()
+	ResetIngress()
 	ResetJob()
 	ResetRegion()
 	ResetService()
@@ -281,6 +285,26 @@ func (j *jsiiProxy_AppSpecOutputReference) FunctionInput() interface{} {
 	_jsii_.Get(
 		j,
 		"functionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecOutputReference) Ingress() AppSpecIngressOutputReference {
+	var returns AppSpecIngressOutputReference
+	_jsii_.Get(
+		j,
+		"ingress",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecOutputReference) IngressInput() *AppSpecIngress {
+	var returns *AppSpecIngress
+	_jsii_.Get(
+		j,
+		"ingressInput",
 		&returns,
 	)
 	return returns
@@ -793,6 +817,17 @@ func (a *jsiiProxy_AppSpecOutputReference) PutFunction(value interface{}) {
 	)
 }
 
+func (a *jsiiProxy_AppSpecOutputReference) PutIngress(value *AppSpecIngress) {
+	if err := a.validatePutIngressParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putIngress",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AppSpecOutputReference) PutJob(value interface{}) {
 	if err := a.validatePutJobParameters(value); err != nil {
 		panic(err)
@@ -881,6 +916,14 @@ func (a *jsiiProxy_AppSpecOutputReference) ResetFunction() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetFunction",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppSpecOutputReference) ResetIngress() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetIngress",
 		nil, // no parameters
 	)
 }

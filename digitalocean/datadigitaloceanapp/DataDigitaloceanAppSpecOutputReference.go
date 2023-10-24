@@ -36,6 +36,7 @@ type DataDigitaloceanAppSpecOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	Function() DataDigitaloceanAppSpecFunctionList
+	Ingress() DataDigitaloceanAppSpecIngressList
 	InternalValue() *DataDigitaloceanAppSpec
 	SetInternalValue(val *DataDigitaloceanAppSpec)
 	Job() DataDigitaloceanAppSpecJobList
@@ -186,6 +187,16 @@ func (j *jsiiProxy_DataDigitaloceanAppSpecOutputReference) Function() DataDigita
 	_jsii_.Get(
 		j,
 		"function",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDigitaloceanAppSpecOutputReference) Ingress() DataDigitaloceanAppSpecIngressList {
+	var returns DataDigitaloceanAppSpecIngressList
+	_jsii_.Get(
+		j,
+		"ingress",
 		&returns,
 	)
 	return returns

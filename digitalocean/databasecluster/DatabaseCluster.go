@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/database_cluster digitalocean_database_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/database_cluster digitalocean_database_cluster}.
 type DatabaseCluster interface {
 	cdktf.TerraformResource
 	BackupRestore() DatabaseClusterBackupRestoreOutputReference
@@ -95,6 +95,9 @@ type DatabaseCluster interface {
 	SqlMode() *string
 	SetSqlMode(val *string)
 	SqlModeInput() *string
+	StorageSizeMib() *string
+	SetStorageSizeMib(val *string)
+	StorageSizeMibInput() *string
 	Tags() *[]*string
 	SetTags(val *[]*string)
 	TagsInput() *[]*string
@@ -158,6 +161,7 @@ type DatabaseCluster interface {
 	ResetPrivateNetworkUuid()
 	ResetProjectId()
 	ResetSqlMode()
+	ResetStorageSizeMib()
 	ResetTags()
 	ResetTimeouts()
 	ResetVersion()
@@ -606,6 +610,26 @@ func (j *jsiiProxy_DatabaseCluster) SqlModeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseCluster) StorageSizeMib() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageSizeMib",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseCluster) StorageSizeMibInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageSizeMibInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabaseCluster) Tags() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -727,7 +751,7 @@ func (j *jsiiProxy_DatabaseCluster) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/database_cluster digitalocean_database_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/database_cluster digitalocean_database_cluster} Resource.
 func NewDatabaseCluster(scope constructs.Construct, id *string, config *DatabaseClusterConfig) DatabaseCluster {
 	_init_.Initialize()
 
@@ -745,7 +769,7 @@ func NewDatabaseCluster(scope constructs.Construct, id *string, config *Database
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.30.0/docs/resources/database_cluster digitalocean_database_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/database_cluster digitalocean_database_cluster} Resource.
 func NewDatabaseCluster_Override(d DatabaseCluster, scope constructs.Construct, id *string, config *DatabaseClusterConfig) {
 	_init_.Initialize()
 
@@ -930,6 +954,17 @@ func (j *jsiiProxy_DatabaseCluster)SetSqlMode(val *string) {
 	_jsii_.Set(
 		j,
 		"sqlMode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseCluster)SetStorageSizeMib(val *string) {
+	if err := j.validateSetStorageSizeMibParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storageSizeMib",
 		val,
 	)
 }
@@ -1367,6 +1402,14 @@ func (d *jsiiProxy_DatabaseCluster) ResetSqlMode() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetSqlMode",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseCluster) ResetStorageSizeMib() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetStorageSizeMib",
 		nil, // no parameters
 	)
 }
