@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/database_user digitalocean_database_user}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/database_user digitalocean_database_user}.
 type DatabaseUser interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -69,6 +69,8 @@ type DatabaseUser interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Role() *string
+	Settings() DatabaseUserSettingsList
+	SettingsInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -108,11 +110,13 @@ type DatabaseUser interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutSettings(value interface{})
 	ResetId()
 	ResetMysqlAuthPlugin()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSettings()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -358,6 +362,26 @@ func (j *jsiiProxy_DatabaseUser) Role() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseUser) Settings() DatabaseUserSettingsList {
+	var returns DatabaseUserSettingsList
+	_jsii_.Get(
+		j,
+		"settings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseUser) SettingsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"settingsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabaseUser) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -389,7 +413,7 @@ func (j *jsiiProxy_DatabaseUser) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/database_user digitalocean_database_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/database_user digitalocean_database_user} Resource.
 func NewDatabaseUser(scope constructs.Construct, id *string, config *DatabaseUserConfig) DatabaseUser {
 	_init_.Initialize()
 
@@ -407,7 +431,7 @@ func NewDatabaseUser(scope constructs.Construct, id *string, config *DatabaseUse
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/database_user digitalocean_database_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/database_user digitalocean_database_user} Resource.
 func NewDatabaseUser_Override(d DatabaseUser, scope constructs.Construct, id *string, config *DatabaseUserConfig) {
 	_init_.Initialize()
 
@@ -848,6 +872,17 @@ func (d *jsiiProxy_DatabaseUser) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (d *jsiiProxy_DatabaseUser) PutSettings(value interface{}) {
+	if err := d.validatePutSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putSettings",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DatabaseUser) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -868,6 +903,14 @@ func (d *jsiiProxy_DatabaseUser) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseUser) ResetSettings() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSettings",
 		nil, // no parameters
 	)
 }

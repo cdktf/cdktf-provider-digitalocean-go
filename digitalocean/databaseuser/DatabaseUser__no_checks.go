@@ -67,6 +67,10 @@ func (d *jsiiProxy_DatabaseUser) validateOverrideLogicalIdParameters(newLogicalI
 	return nil
 }
 
+func (d *jsiiProxy_DatabaseUser) validatePutSettingsParameters(value interface{}) error {
+	return nil
+}
+
 func validateDatabaseUser_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/reserved_ip digitalocean_reserved_ip}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/reserved_ip digitalocean_reserved_ip}.
 type ReservedIp interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -379,7 +379,7 @@ func (j *jsiiProxy_ReservedIp) Urn() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/reserved_ip digitalocean_reserved_ip} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/reserved_ip digitalocean_reserved_ip} Resource.
 func NewReservedIp(scope constructs.Construct, id *string, config *ReservedIpConfig) ReservedIp {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewReservedIp(scope constructs.Construct, id *string, config *ReservedIpCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.31.0/docs/resources/reserved_ip digitalocean_reserved_ip} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/reserved_ip digitalocean_reserved_ip} Resource.
 func NewReservedIp_Override(r ReservedIp, scope constructs.Construct, id *string, config *ReservedIpConfig) {
 	_init_.Initialize()
 

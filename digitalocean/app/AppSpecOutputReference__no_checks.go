@@ -103,6 +103,10 @@ func (j *jsiiProxy_AppSpecOutputReference) validateSetDomainsParameters(val *[]*
 	return nil
 }
 
+func (j *jsiiProxy_AppSpecOutputReference) validateSetFeaturesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppSpecOutputReference) validateSetInternalValueParameters(val *AppSpec) error {
 	return nil
 }

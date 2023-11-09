@@ -33,6 +33,7 @@ type DataDigitaloceanAppSpecOutputReference interface {
 	Domain() DataDigitaloceanAppSpecDomainList
 	Domains() *[]*string
 	Env() DataDigitaloceanAppSpecEnvList
+	Features() *[]*string
 	// Experimental.
 	Fqn() *string
 	Function() DataDigitaloceanAppSpecFunctionList
@@ -167,6 +168,16 @@ func (j *jsiiProxy_DataDigitaloceanAppSpecOutputReference) Env() DataDigitalocea
 	_jsii_.Get(
 		j,
 		"env",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDigitaloceanAppSpecOutputReference) Features() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"features",
 		&returns,
 	)
 	return returns

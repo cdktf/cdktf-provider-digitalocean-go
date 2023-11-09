@@ -39,6 +39,9 @@ type AppSpecOutputReference interface {
 	DomainsInput() *[]*string
 	Env() AppSpecEnvList
 	EnvInput() interface{}
+	Features() *[]*string
+	SetFeatures(val *[]*string)
+	FeaturesInput() *[]*string
 	// Experimental.
 	Fqn() *string
 	Function() AppSpecFunctionList
@@ -108,6 +111,7 @@ type AppSpecOutputReference interface {
 	ResetDomain()
 	ResetDomains()
 	ResetEnv()
+	ResetFeatures()
 	ResetFunction()
 	ResetIngress()
 	ResetJob()
@@ -255,6 +259,26 @@ func (j *jsiiProxy_AppSpecOutputReference) EnvInput() interface{} {
 	_jsii_.Get(
 		j,
 		"envInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecOutputReference) Features() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"features",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecOutputReference) FeaturesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"featuresInput",
 		&returns,
 	)
 	return returns
@@ -517,6 +541,17 @@ func (j *jsiiProxy_AppSpecOutputReference)SetDomains(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"domains",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppSpecOutputReference)SetFeatures(val *[]*string) {
+	if err := j.validateSetFeaturesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"features",
 		val,
 	)
 }
@@ -908,6 +943,14 @@ func (a *jsiiProxy_AppSpecOutputReference) ResetEnv() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetEnv",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppSpecOutputReference) ResetFeatures() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetFeatures",
 		nil, // no parameters
 	)
 }
