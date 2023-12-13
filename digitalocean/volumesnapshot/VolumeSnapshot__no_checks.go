@@ -59,7 +59,15 @@ func (v *jsiiProxy_VolumeSnapshot) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (v *jsiiProxy_VolumeSnapshot) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VolumeSnapshot) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VolumeSnapshot) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (c *jsiiProxy_ContainerRegistryDockerCredentials) validateInterpolationForA
 	return nil
 }
 
+func (c *jsiiProxy_ContainerRegistryDockerCredentials) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerRegistryDockerCredentials) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerRegistryDockerCredentials) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

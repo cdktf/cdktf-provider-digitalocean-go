@@ -59,7 +59,15 @@ func (u *jsiiProxy_UptimeCheck) validateInterpolationForAttributeParameters(terr
 	return nil
 }
 
+func (u *jsiiProxy_UptimeCheck) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (u *jsiiProxy_UptimeCheck) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (u *jsiiProxy_UptimeCheck) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

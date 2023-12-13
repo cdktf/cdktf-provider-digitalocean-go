@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/database_connection_pool digitalocean_database_connection_pool}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/database_connection_pool digitalocean_database_connection_pool}.
 type DatabaseConnectionPool interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -112,12 +112,22 @@ type DatabaseConnectionPool interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -502,7 +512,7 @@ func (j *jsiiProxy_DatabaseConnectionPool) UserInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/database_connection_pool digitalocean_database_connection_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/database_connection_pool digitalocean_database_connection_pool} Resource.
 func NewDatabaseConnectionPool(scope constructs.Construct, id *string, config *DatabaseConnectionPoolConfig) DatabaseConnectionPool {
 	_init_.Initialize()
 
@@ -520,7 +530,7 @@ func NewDatabaseConnectionPool(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/database_connection_pool digitalocean_database_connection_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/database_connection_pool digitalocean_database_connection_pool} Resource.
 func NewDatabaseConnectionPool_Override(d DatabaseConnectionPool, scope constructs.Construct, id *string, config *DatabaseConnectionPoolConfig) {
 	_init_.Initialize()
 
@@ -945,6 +955,19 @@ func (d *jsiiProxy_DatabaseConnectionPool) GetStringMapAttribute(terraformAttrib
 	return returns
 }
 
+func (d *jsiiProxy_DatabaseConnectionPool) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (d *jsiiProxy_DatabaseConnectionPool) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := d.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -972,6 +995,17 @@ func (d *jsiiProxy_DatabaseConnectionPool) InterpolationForAttribute(terraformAt
 	return returns
 }
 
+func (d *jsiiProxy_DatabaseConnectionPool) MoveFromId(id *string) {
+	if err := d.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (d *jsiiProxy_DatabaseConnectionPool) MoveTo(moveTarget *string, index interface{}) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -980,6 +1014,17 @@ func (d *jsiiProxy_DatabaseConnectionPool) MoveTo(moveTarget *string, index inte
 		d,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (d *jsiiProxy_DatabaseConnectionPool) MoveToId(id *string) {
+	if err := d.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

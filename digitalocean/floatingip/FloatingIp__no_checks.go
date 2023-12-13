@@ -59,7 +59,15 @@ func (f *jsiiProxy_FloatingIp) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (f *jsiiProxy_FloatingIp) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FloatingIp) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (f *jsiiProxy_FloatingIp) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

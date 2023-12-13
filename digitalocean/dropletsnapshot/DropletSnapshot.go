@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/droplet_snapshot digitalocean_droplet_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/droplet_snapshot digitalocean_droplet_snapshot}.
 type DropletSnapshot interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -98,12 +98,22 @@ type DropletSnapshot interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -387,7 +397,7 @@ func (j *jsiiProxy_DropletSnapshot) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/droplet_snapshot digitalocean_droplet_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/droplet_snapshot digitalocean_droplet_snapshot} Resource.
 func NewDropletSnapshot(scope constructs.Construct, id *string, config *DropletSnapshotConfig) DropletSnapshot {
 	_init_.Initialize()
 
@@ -405,7 +415,7 @@ func NewDropletSnapshot(scope constructs.Construct, id *string, config *DropletS
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/droplet_snapshot digitalocean_droplet_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/droplet_snapshot digitalocean_droplet_snapshot} Resource.
 func NewDropletSnapshot_Override(d DropletSnapshot, scope constructs.Construct, id *string, config *DropletSnapshotConfig) {
 	_init_.Initialize()
 
@@ -786,6 +796,19 @@ func (d *jsiiProxy_DropletSnapshot) GetStringMapAttribute(terraformAttribute *st
 	return returns
 }
 
+func (d *jsiiProxy_DropletSnapshot) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (d *jsiiProxy_DropletSnapshot) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := d.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -813,6 +836,17 @@ func (d *jsiiProxy_DropletSnapshot) InterpolationForAttribute(terraformAttribute
 	return returns
 }
 
+func (d *jsiiProxy_DropletSnapshot) MoveFromId(id *string) {
+	if err := d.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (d *jsiiProxy_DropletSnapshot) MoveTo(moveTarget *string, index interface{}) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -821,6 +855,17 @@ func (d *jsiiProxy_DropletSnapshot) MoveTo(moveTarget *string, index interface{}
 		d,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (d *jsiiProxy_DropletSnapshot) MoveToId(id *string) {
+	if err := d.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

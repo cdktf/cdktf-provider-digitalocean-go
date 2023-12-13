@@ -59,7 +59,15 @@ func (s *jsiiProxy_SshKey) validateInterpolationForAttributeParameters(terraform
 	return nil
 }
 
+func (s *jsiiProxy_SshKey) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SshKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SshKey) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

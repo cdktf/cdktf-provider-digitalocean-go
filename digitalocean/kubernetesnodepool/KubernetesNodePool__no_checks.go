@@ -59,7 +59,15 @@ func (k *jsiiProxy_KubernetesNodePool) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (k *jsiiProxy_KubernetesNodePool) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KubernetesNodePool) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (k *jsiiProxy_KubernetesNodePool) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

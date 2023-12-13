@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/uptime_check digitalocean_uptime_check}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/uptime_check digitalocean_uptime_check}.
 type UptimeCheck interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -101,12 +101,22 @@ type UptimeCheck interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -402,7 +412,7 @@ func (j *jsiiProxy_UptimeCheck) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/uptime_check digitalocean_uptime_check} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/uptime_check digitalocean_uptime_check} Resource.
 func NewUptimeCheck(scope constructs.Construct, id *string, config *UptimeCheckConfig) UptimeCheck {
 	_init_.Initialize()
 
@@ -420,7 +430,7 @@ func NewUptimeCheck(scope constructs.Construct, id *string, config *UptimeCheckC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/resources/uptime_check digitalocean_uptime_check} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/uptime_check digitalocean_uptime_check} Resource.
 func NewUptimeCheck_Override(u UptimeCheck, scope constructs.Construct, id *string, config *UptimeCheckConfig) {
 	_init_.Initialize()
 
@@ -823,6 +833,19 @@ func (u *jsiiProxy_UptimeCheck) GetStringMapAttribute(terraformAttribute *string
 	return returns
 }
 
+func (u *jsiiProxy_UptimeCheck) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		u,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (u *jsiiProxy_UptimeCheck) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := u.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -850,6 +873,17 @@ func (u *jsiiProxy_UptimeCheck) InterpolationForAttribute(terraformAttribute *st
 	return returns
 }
 
+func (u *jsiiProxy_UptimeCheck) MoveFromId(id *string) {
+	if err := u.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		u,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (u *jsiiProxy_UptimeCheck) MoveTo(moveTarget *string, index interface{}) {
 	if err := u.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -858,6 +892,17 @@ func (u *jsiiProxy_UptimeCheck) MoveTo(moveTarget *string, index interface{}) {
 		u,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (u *jsiiProxy_UptimeCheck) MoveToId(id *string) {
+	if err := u.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		u,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

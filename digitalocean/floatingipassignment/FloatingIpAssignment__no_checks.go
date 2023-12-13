@@ -59,7 +59,15 @@ func (f *jsiiProxy_FloatingIpAssignment) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (f *jsiiProxy_FloatingIpAssignment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FloatingIpAssignment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (f *jsiiProxy_FloatingIpAssignment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

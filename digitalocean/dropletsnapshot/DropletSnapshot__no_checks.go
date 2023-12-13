@@ -59,7 +59,15 @@ func (d *jsiiProxy_DropletSnapshot) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (d *jsiiProxy_DropletSnapshot) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DropletSnapshot) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DropletSnapshot) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

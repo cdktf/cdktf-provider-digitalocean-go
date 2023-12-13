@@ -36,6 +36,7 @@ type DataDigitaloceanAppSpecServiceHealthCheckOutputReference interface {
 	InternalValue() *DataDigitaloceanAppSpecServiceHealthCheck
 	SetInternalValue(val *DataDigitaloceanAppSpecServiceHealthCheck)
 	PeriodSeconds() *float64
+	Port() *float64
 	SuccessThreshold() *float64
 	// Experimental.
 	TerraformAttribute() *string
@@ -170,6 +171,16 @@ func (j *jsiiProxy_DataDigitaloceanAppSpecServiceHealthCheckOutputReference) Per
 	_jsii_.Get(
 		j,
 		"periodSeconds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDigitaloceanAppSpecServiceHealthCheckOutputReference) Port() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"port",
 		&returns,
 	)
 	return returns

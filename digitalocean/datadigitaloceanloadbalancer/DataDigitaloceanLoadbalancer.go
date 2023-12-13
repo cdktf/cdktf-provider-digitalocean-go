@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/data-sources/loadbalancer digitalocean_loadbalancer}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/data-sources/loadbalancer digitalocean_loadbalancer}.
 type DataDigitaloceanLoadbalancer interface {
 	cdktf.TerraformDataSource
 	Algorithm() *string
@@ -529,7 +529,7 @@ func (j *jsiiProxy_DataDigitaloceanLoadbalancer) VpcUuid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/data-sources/loadbalancer digitalocean_loadbalancer} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/data-sources/loadbalancer digitalocean_loadbalancer} Data Source.
 func NewDataDigitaloceanLoadbalancer(scope constructs.Construct, id *string, config *DataDigitaloceanLoadbalancerConfig) DataDigitaloceanLoadbalancer {
 	_init_.Initialize()
 
@@ -547,7 +547,7 @@ func NewDataDigitaloceanLoadbalancer(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/data-sources/loadbalancer digitalocean_loadbalancer} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/data-sources/loadbalancer digitalocean_loadbalancer} Data Source.
 func NewDataDigitaloceanLoadbalancer_Override(d DataDigitaloceanLoadbalancer, scope constructs.Construct, id *string, config *DataDigitaloceanLoadbalancerConfig) {
 	_init_.Initialize()
 

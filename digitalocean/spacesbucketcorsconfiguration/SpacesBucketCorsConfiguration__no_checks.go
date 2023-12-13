@@ -59,7 +59,15 @@ func (s *jsiiProxy_SpacesBucketCorsConfiguration) validateInterpolationForAttrib
 	return nil
 }
 
+func (s *jsiiProxy_SpacesBucketCorsConfiguration) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpacesBucketCorsConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SpacesBucketCorsConfiguration) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

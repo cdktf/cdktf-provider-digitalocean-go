@@ -59,7 +59,15 @@ func (s *jsiiProxy_SpacesBucketPolicy) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (s *jsiiProxy_SpacesBucketPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpacesBucketPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SpacesBucketPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

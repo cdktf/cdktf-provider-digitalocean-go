@@ -59,7 +59,15 @@ func (d *jsiiProxy_DatabaseKafkaTopic) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (d *jsiiProxy_DatabaseKafkaTopic) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatabaseKafkaTopic) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatabaseKafkaTopic) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

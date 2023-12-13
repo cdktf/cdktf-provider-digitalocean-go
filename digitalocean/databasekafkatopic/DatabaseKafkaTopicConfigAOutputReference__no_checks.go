@@ -163,10 +163,6 @@ func (j *jsiiProxy_DatabaseKafkaTopicConfigAOutputReference) validateSetTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_DatabaseKafkaTopicConfigAOutputReference) validateSetUncleanLeaderElectionEnableParameters(val interface{}) error {
-	return nil
-}
-
 func validateNewDatabaseKafkaTopicConfigAOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }

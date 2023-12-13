@@ -59,7 +59,15 @@ func (d *jsiiProxy_Droplet) validateInterpolationForAttributeParameters(terrafor
 	return nil
 }
 
+func (d *jsiiProxy_Droplet) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_Droplet) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_Droplet) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

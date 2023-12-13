@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/data-sources/kubernetes_versions digitalocean_kubernetes_versions}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/data-sources/kubernetes_versions digitalocean_kubernetes_versions}.
 type DataDigitaloceanKubernetesVersions interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -307,7 +307,7 @@ func (j *jsiiProxy_DataDigitaloceanKubernetesVersions) VersionPrefixInput() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/data-sources/kubernetes_versions digitalocean_kubernetes_versions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/data-sources/kubernetes_versions digitalocean_kubernetes_versions} Data Source.
 func NewDataDigitaloceanKubernetesVersions(scope constructs.Construct, id *string, config *DataDigitaloceanKubernetesVersionsConfig) DataDigitaloceanKubernetesVersions {
 	_init_.Initialize()
 
@@ -325,7 +325,7 @@ func NewDataDigitaloceanKubernetesVersions(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.32.0/docs/data-sources/kubernetes_versions digitalocean_kubernetes_versions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/data-sources/kubernetes_versions digitalocean_kubernetes_versions} Data Source.
 func NewDataDigitaloceanKubernetesVersions_Override(d DataDigitaloceanKubernetesVersions, scope constructs.Construct, id *string, config *DataDigitaloceanKubernetesVersionsConfig) {
 	_init_.Initialize()
 

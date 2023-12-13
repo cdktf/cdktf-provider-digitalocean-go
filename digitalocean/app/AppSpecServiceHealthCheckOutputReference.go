@@ -44,6 +44,9 @@ type AppSpecServiceHealthCheckOutputReference interface {
 	PeriodSeconds() *float64
 	SetPeriodSeconds(val *float64)
 	PeriodSecondsInput() *float64
+	Port() *float64
+	SetPort(val *float64)
+	PortInput() *float64
 	SuccessThreshold() *float64
 	SetSuccessThreshold(val *float64)
 	SuccessThresholdInput() *float64
@@ -86,6 +89,7 @@ type AppSpecServiceHealthCheckOutputReference interface {
 	ResetHttpPath()
 	ResetInitialDelaySeconds()
 	ResetPeriodSeconds()
+	ResetPort()
 	ResetSuccessThreshold()
 	ResetTimeoutSeconds()
 	// Produce the Token's value at resolution time.
@@ -228,6 +232,26 @@ func (j *jsiiProxy_AppSpecServiceHealthCheckOutputReference) PeriodSecondsInput(
 	_jsii_.Get(
 		j,
 		"periodSecondsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecServiceHealthCheckOutputReference) Port() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"port",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecServiceHealthCheckOutputReference) PortInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"portInput",
 		&returns,
 	)
 	return returns
@@ -394,6 +418,17 @@ func (j *jsiiProxy_AppSpecServiceHealthCheckOutputReference)SetPeriodSeconds(val
 	_jsii_.Set(
 		j,
 		"periodSeconds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppSpecServiceHealthCheckOutputReference)SetPort(val *float64) {
+	if err := j.validateSetPortParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"port",
 		val,
 	)
 }
@@ -656,6 +691,14 @@ func (a *jsiiProxy_AppSpecServiceHealthCheckOutputReference) ResetPeriodSeconds(
 	_jsii_.InvokeVoid(
 		a,
 		"resetPeriodSeconds",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppSpecServiceHealthCheckOutputReference) ResetPort() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetPort",
 		nil, // no parameters
 	)
 }

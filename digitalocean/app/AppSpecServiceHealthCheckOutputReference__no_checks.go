@@ -79,6 +79,10 @@ func (j *jsiiProxy_AppSpecServiceHealthCheckOutputReference) validateSetPeriodSe
 	return nil
 }
 
+func (j *jsiiProxy_AppSpecServiceHealthCheckOutputReference) validateSetPortParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppSpecServiceHealthCheckOutputReference) validateSetSuccessThresholdParameters(val *float64) error {
 	return nil
 }

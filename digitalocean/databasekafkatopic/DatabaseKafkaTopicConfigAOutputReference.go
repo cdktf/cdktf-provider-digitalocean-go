@@ -109,9 +109,6 @@ type DatabaseKafkaTopicConfigAOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	UncleanLeaderElectionEnable() interface{}
-	SetUncleanLeaderElectionEnable(val interface{})
-	UncleanLeaderElectionEnableInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -159,7 +156,6 @@ type DatabaseKafkaTopicConfigAOutputReference interface {
 	ResetSegmentIndexBytes()
 	ResetSegmentJitterMs()
 	ResetSegmentMs()
-	ResetUncleanLeaderElectionEnable()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -705,26 +701,6 @@ func (j *jsiiProxy_DatabaseKafkaTopicConfigAOutputReference) TerraformResource()
 	return returns
 }
 
-func (j *jsiiProxy_DatabaseKafkaTopicConfigAOutputReference) UncleanLeaderElectionEnable() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"uncleanLeaderElectionEnable",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DatabaseKafkaTopicConfigAOutputReference) UncleanLeaderElectionEnableInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"uncleanLeaderElectionEnableInput",
-		&returns,
-	)
-	return returns
-}
-
 
 func NewDatabaseKafkaTopicConfigAOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DatabaseKafkaTopicConfigAOutputReference {
 	_init_.Initialize()
@@ -1057,17 +1033,6 @@ func (j *jsiiProxy_DatabaseKafkaTopicConfigAOutputReference)SetTerraformResource
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DatabaseKafkaTopicConfigAOutputReference)SetUncleanLeaderElectionEnable(val interface{}) {
-	if err := j.validateSetUncleanLeaderElectionEnableParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"uncleanLeaderElectionEnable",
 		val,
 	)
 }
@@ -1438,14 +1403,6 @@ func (d *jsiiProxy_DatabaseKafkaTopicConfigAOutputReference) ResetSegmentMs() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetSegmentMs",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DatabaseKafkaTopicConfigAOutputReference) ResetUncleanLeaderElectionEnable() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetUncleanLeaderElectionEnable",
 		nil, // no parameters
 	)
 }
