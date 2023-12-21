@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/spaces_bucket_cors_configuration digitalocean_spaces_bucket_cors_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/spaces_bucket_cors_configuration digitalocean_spaces_bucket_cors_configuration}.
 type SpacesBucketCorsConfiguration interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -376,7 +376,7 @@ func (j *jsiiProxy_SpacesBucketCorsConfiguration) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/spaces_bucket_cors_configuration digitalocean_spaces_bucket_cors_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/spaces_bucket_cors_configuration digitalocean_spaces_bucket_cors_configuration} Resource.
 func NewSpacesBucketCorsConfiguration(scope constructs.Construct, id *string, config *SpacesBucketCorsConfigurationConfig) SpacesBucketCorsConfiguration {
 	_init_.Initialize()
 
@@ -394,7 +394,7 @@ func NewSpacesBucketCorsConfiguration(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/spaces_bucket_cors_configuration digitalocean_spaces_bucket_cors_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/spaces_bucket_cors_configuration digitalocean_spaces_bucket_cors_configuration} Resource.
 func NewSpacesBucketCorsConfiguration_Override(s SpacesBucketCorsConfiguration, scope constructs.Construct, id *string, config *SpacesBucketCorsConfigurationConfig) {
 	_init_.Initialize()
 

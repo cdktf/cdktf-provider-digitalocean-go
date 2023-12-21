@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/database_firewall digitalocean_database_firewall}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/database_firewall digitalocean_database_firewall}.
 type DatabaseFirewall interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -353,7 +353,7 @@ func (j *jsiiProxy_DatabaseFirewall) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/database_firewall digitalocean_database_firewall} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/database_firewall digitalocean_database_firewall} Resource.
 func NewDatabaseFirewall(scope constructs.Construct, id *string, config *DatabaseFirewallConfig) DatabaseFirewall {
 	_init_.Initialize()
 
@@ -371,7 +371,7 @@ func NewDatabaseFirewall(scope constructs.Construct, id *string, config *Databas
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/resources/database_firewall digitalocean_database_firewall} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/database_firewall digitalocean_database_firewall} Resource.
 func NewDatabaseFirewall_Override(d DatabaseFirewall, scope constructs.Construct, id *string, config *DatabaseFirewallConfig) {
 	_init_.Initialize()
 

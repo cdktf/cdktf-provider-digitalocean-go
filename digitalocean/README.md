@@ -1,40 +1,8 @@
-# CDKTF prebuilt bindings for digitalocean/digitalocean provider version 2.34.0
+# CDKTF Go bindings for digitalocean/digitalocean provider version 2.34.1
 
-This repo builds and publishes the [Terraform digitalocean provider](https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs) bindings for [CDK for Terraform](https://cdk.tf).
+This repo builds and publishes the [Terraform digitalocean provider](https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs) bindings for [CDK for Terraform](https://cdk.tf).
 
-## Available Packages
-
-### NPM
-
-The npm package is available at [https://www.npmjs.com/package/@cdktf/provider-digitalocean](https://www.npmjs.com/package/@cdktf/provider-digitalocean).
-
-`npm install @cdktf/provider-digitalocean`
-
-### PyPI
-
-The PyPI package is available at [https://pypi.org/project/cdktf-cdktf-provider-digitalocean](https://pypi.org/project/cdktf-cdktf-provider-digitalocean).
-
-`pipenv install cdktf-cdktf-provider-digitalocean`
-
-### Nuget
-
-The Nuget package is available at [https://www.nuget.org/packages/HashiCorp.Cdktf.Providers.Digitalocean](https://www.nuget.org/packages/HashiCorp.Cdktf.Providers.Digitalocean).
-
-`dotnet add package HashiCorp.Cdktf.Providers.Digitalocean`
-
-### Maven
-
-The Maven package is available at [https://mvnrepository.com/artifact/com.hashicorp/cdktf-provider-digitalocean](https://mvnrepository.com/artifact/com.hashicorp/cdktf-provider-digitalocean).
-
-```
-<dependency>
-    <groupId>com.hashicorp</groupId>
-    <artifactId>cdktf-provider-digitalocean</artifactId>
-    <version>[REPLACE WITH DESIRED VERSION]</version>
-</dependency>
-```
-
-### Go
+## Go Package
 
 The go package is generated into the [`github.com/cdktf/cdktf-provider-digitalocean-go`](https://github.com/cdktf/cdktf-provider-digitalocean-go) package.
 
@@ -42,15 +10,8 @@ The go package is generated into the [`github.com/cdktf/cdktf-provider-digitaloc
 
 ## Docs
 
-Find auto-generated docs for this provider here:
+Find auto-generated docs for this provider [here](https://github.com/cdktf/cdktf-provider-digitalocean/blob/main/docs/API.go.md).
 
-* [Typescript](./docs/API.typescript.md)
-* [Python](./docs/API.python.md)
-* [Java](./docs/API.java.md)
-* [C#](./docs/API.csharp.md)
-* [Go](./docs/API.go.md)
-
-You can also visit a hosted version of the documentation on [constructs.dev](https://constructs.dev/packages/@cdktf/provider-digitalocean).
 
 ## Versioning
 
@@ -59,7 +20,7 @@ This project is explicitly not tracking the Terraform digitalocean provider vers
 These are the upstream dependencies:
 
 * [CDK for Terraform](https://cdk.tf)
-* [Terraform digitalocean provider](https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0)
+* [Terraform digitalocean provider](https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1)
 * [Terraform Engine](https://terraform.io)
 
 If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.
@@ -81,9 +42,6 @@ This is mostly based on [Projen](https://github.com/projen/projen), which takes 
 
 There's a custom [project builder](https://github.com/cdktf/cdktf-provider-project) which encapsulate the common settings for all `cdktf` prebuilt providers.
 
-### Provider Version
-
-The provider version can be adjusted in [./.projenrc.js](./.projenrc.js).
 
 ### Repository Management
 

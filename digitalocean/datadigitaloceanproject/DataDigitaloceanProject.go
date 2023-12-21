@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/data-sources/project digitalocean_project}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/data-sources/project digitalocean_project}.
 type DataDigitaloceanProject interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -384,7 +384,7 @@ func (j *jsiiProxy_DataDigitaloceanProject) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/data-sources/project digitalocean_project} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/data-sources/project digitalocean_project} Data Source.
 func NewDataDigitaloceanProject(scope constructs.Construct, id *string, config *DataDigitaloceanProjectConfig) DataDigitaloceanProject {
 	_init_.Initialize()
 
@@ -402,7 +402,7 @@ func NewDataDigitaloceanProject(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.0/docs/data-sources/project digitalocean_project} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/data-sources/project digitalocean_project} Data Source.
 func NewDataDigitaloceanProject_Override(d DataDigitaloceanProject, scope constructs.Construct, id *string, config *DataDigitaloceanProjectConfig) {
 	_init_.Initialize()
 
