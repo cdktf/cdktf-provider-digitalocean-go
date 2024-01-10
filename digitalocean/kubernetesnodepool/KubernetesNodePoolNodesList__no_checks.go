@@ -7,6 +7,10 @@ package kubernetesnodepool
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_KubernetesNodePoolNodesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KubernetesNodePoolNodesList) validateGetParameters(index *float64) error {
 	return nil
 }

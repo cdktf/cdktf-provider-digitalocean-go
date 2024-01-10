@@ -7,6 +7,10 @@ package datadigitaloceansizes
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataDigitaloceanSizesFilterList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDigitaloceanSizesFilterList) validateGetParameters(index *float64) error {
 	return nil
 }

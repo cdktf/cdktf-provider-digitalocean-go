@@ -5,9 +5,9 @@ package datadigitaloceanspacesbuckets
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/jsii"
 
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v10/datadigitaloceanspacesbuckets/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanspacesbuckets/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

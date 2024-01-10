@@ -7,6 +7,10 @@ package spacesbucket
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SpacesBucketLifecycleRuleList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpacesBucketLifecycleRuleList) validateGetParameters(index *float64) error {
 	return nil
 }

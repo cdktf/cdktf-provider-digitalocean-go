@@ -7,6 +7,10 @@ package datadigitaloceantags
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataDigitaloceanTagsFilterList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDigitaloceanTagsFilterList) validateGetParameters(index *float64) error {
 	return nil
 }

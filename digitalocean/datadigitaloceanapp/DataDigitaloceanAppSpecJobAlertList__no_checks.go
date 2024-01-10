@@ -7,6 +7,10 @@ package datadigitaloceanapp
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataDigitaloceanAppSpecJobAlertList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDigitaloceanAppSpecJobAlertList) validateGetParameters(index *float64) error {
 	return nil
 }

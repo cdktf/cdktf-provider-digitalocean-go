@@ -7,6 +7,10 @@ package datadigitaloceanrecords
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataDigitaloceanRecordsSortList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDigitaloceanRecordsSortList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package datadigitaloceankubernetescluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataDigitaloceanKubernetesClusterNodePoolList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDigitaloceanKubernetesClusterNodePoolList) validateGetParameters(index *float64) error {
 	return nil
 }

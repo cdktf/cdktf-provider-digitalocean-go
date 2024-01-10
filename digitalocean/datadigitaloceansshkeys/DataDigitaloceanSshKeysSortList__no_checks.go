@@ -7,6 +7,10 @@ package datadigitaloceansshkeys
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataDigitaloceanSshKeysSortList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDigitaloceanSshKeysSortList) validateGetParameters(index *float64) error {
 	return nil
 }

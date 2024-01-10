@@ -7,6 +7,10 @@ package monitoralert
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MonitorAlertAlertsSlackList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorAlertAlertsSlackList) validateGetParameters(index *float64) error {
 	return nil
 }
