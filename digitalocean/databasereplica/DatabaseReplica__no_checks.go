@@ -131,6 +131,10 @@ func (j *jsiiProxy_DatabaseReplica) validateSetSizeParameters(val *string) error
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseReplica) validateSetStorageSizeMibParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseReplica) validateSetTagsParameters(val *[]*string) error {
 	return nil
 }

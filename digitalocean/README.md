@@ -1,12 +1,15 @@
-# CDKTF Go bindings for digitalocean/digitalocean provider version 2.34.1
+# CDKTF Go bindings for digitalocean/digitalocean provider version 2.35.0
 
-This repo builds and publishes the [Terraform digitalocean provider](https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs) bindings for [CDK for Terraform](https://cdk.tf).
+This repo builds and publishes the [Terraform digitalocean provider](https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0/docs) bindings for [CDK for Terraform](https://cdk.tf).
 
 ## Go Package
 
 The go package is generated into the [`github.com/cdktf/cdktf-provider-digitalocean-go`](https://github.com/cdktf/cdktf-provider-digitalocean-go) package.
 
-`go get github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean`
+`go get github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/<version>`
+
+Where `<version>` is the version of the prebuilt provider you would like to use e.g. `v11`. The full module name can be found
+within the [go.mod](https://github.com/cdktf/cdktf-provider-digitalocean-go/blob/main/digitalocean/go.mod#L1) file.
 
 ## Docs
 
@@ -20,7 +23,7 @@ This project is explicitly not tracking the Terraform digitalocean provider vers
 These are the upstream dependencies:
 
 * [CDK for Terraform](https://cdk.tf)
-* [Terraform digitalocean provider](https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1)
+* [Terraform digitalocean provider](https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0)
 * [Terraform Engine](https://terraform.io)
 
 If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.

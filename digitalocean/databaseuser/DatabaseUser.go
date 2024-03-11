@@ -12,9 +12,11 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/database_user digitalocean_database_user}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0/docs/resources/database_user digitalocean_database_user}.
 type DatabaseUser interface {
 	cdktf.TerraformResource
+	AccessCert() *string
+	AccessKey() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ClusterId() *string
@@ -143,6 +145,26 @@ type DatabaseUser interface {
 // The jsii proxy struct for DatabaseUser
 type jsiiProxy_DatabaseUser struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_DatabaseUser) AccessCert() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessCert",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseUser) AccessKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessKey",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DatabaseUser) CdktfStack() cdktf.TerraformStack {
@@ -426,7 +448,7 @@ func (j *jsiiProxy_DatabaseUser) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/database_user digitalocean_database_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0/docs/resources/database_user digitalocean_database_user} Resource.
 func NewDatabaseUser(scope constructs.Construct, id *string, config *DatabaseUserConfig) DatabaseUser {
 	_init_.Initialize()
 
@@ -444,7 +466,7 @@ func NewDatabaseUser(scope constructs.Construct, id *string, config *DatabaseUse
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/database_user digitalocean_database_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0/docs/resources/database_user digitalocean_database_user} Resource.
 func NewDatabaseUser_Override(d DatabaseUser, scope constructs.Construct, id *string, config *DatabaseUserConfig) {
 	_init_.Initialize()
 

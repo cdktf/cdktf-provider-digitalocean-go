@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/cdn digitalocean_cdn}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0/docs/resources/cdn digitalocean_cdn}.
 type Cdn interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -451,7 +451,7 @@ func (j *jsiiProxy_Cdn) TtlInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/cdn digitalocean_cdn} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0/docs/resources/cdn digitalocean_cdn} Resource.
 func NewCdn(scope constructs.Construct, id *string, config *CdnConfig) Cdn {
 	_init_.Initialize()
 
@@ -469,7 +469,7 @@ func NewCdn(scope constructs.Construct, id *string, config *CdnConfig) Cdn {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/cdn digitalocean_cdn} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0/docs/resources/cdn digitalocean_cdn} Resource.
 func NewCdn_Override(c Cdn, scope constructs.Construct, id *string, config *CdnConfig) {
 	_init_.Initialize()
 

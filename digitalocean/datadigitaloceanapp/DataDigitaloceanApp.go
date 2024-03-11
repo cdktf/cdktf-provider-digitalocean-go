@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/data-sources/app digitalocean_app}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0/docs/data-sources/app digitalocean_app}.
 type DataDigitaloceanApp interface {
 	cdktf.TerraformDataSource
 	ActiveDeploymentId() *string
@@ -51,6 +51,7 @@ type DataDigitaloceanApp interface {
 	LiveUrl() *string
 	// The tree node.
 	Node() constructs.Node
+	ProjectId() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -284,6 +285,16 @@ func (j *jsiiProxy_DataDigitaloceanApp) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DataDigitaloceanApp) ProjectId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDigitaloceanApp) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -365,7 +376,7 @@ func (j *jsiiProxy_DataDigitaloceanApp) Urn() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/data-sources/app digitalocean_app} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0/docs/data-sources/app digitalocean_app} Data Source.
 func NewDataDigitaloceanApp(scope constructs.Construct, id *string, config *DataDigitaloceanAppConfig) DataDigitaloceanApp {
 	_init_.Initialize()
 
@@ -383,7 +394,7 @@ func NewDataDigitaloceanApp(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/data-sources/app digitalocean_app} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0/docs/data-sources/app digitalocean_app} Data Source.
 func NewDataDigitaloceanApp_Override(d DataDigitaloceanApp, scope constructs.Construct, id *string, config *DataDigitaloceanAppConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/database_replica digitalocean_database_replica}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0/docs/resources/database_replica digitalocean_database_replica}.
 type DatabaseReplica interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -79,6 +79,9 @@ type DatabaseReplica interface {
 	Size() *string
 	SetSize(val *string)
 	SizeInput() *string
+	StorageSizeMib() *string
+	SetStorageSizeMib(val *string)
+	StorageSizeMibInput() *string
 	Tags() *[]*string
 	SetTags(val *[]*string)
 	TagsInput() *[]*string
@@ -141,6 +144,7 @@ type DatabaseReplica interface {
 	ResetPrivateNetworkUuid()
 	ResetRegion()
 	ResetSize()
+	ResetStorageSizeMib()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -470,6 +474,26 @@ func (j *jsiiProxy_DatabaseReplica) SizeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseReplica) StorageSizeMib() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageSizeMib",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseReplica) StorageSizeMibInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageSizeMibInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabaseReplica) Tags() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -551,7 +575,7 @@ func (j *jsiiProxy_DatabaseReplica) Uuid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/database_replica digitalocean_database_replica} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0/docs/resources/database_replica digitalocean_database_replica} Resource.
 func NewDatabaseReplica(scope constructs.Construct, id *string, config *DatabaseReplicaConfig) DatabaseReplica {
 	_init_.Initialize()
 
@@ -569,7 +593,7 @@ func NewDatabaseReplica(scope constructs.Construct, id *string, config *Database
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/resources/database_replica digitalocean_database_replica} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0/docs/resources/database_replica digitalocean_database_replica} Resource.
 func NewDatabaseReplica_Override(d DatabaseReplica, scope constructs.Construct, id *string, config *DatabaseReplicaConfig) {
 	_init_.Initialize()
 
@@ -710,6 +734,17 @@ func (j *jsiiProxy_DatabaseReplica)SetSize(val *string) {
 	_jsii_.Set(
 		j,
 		"size",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseReplica)SetStorageSizeMib(val *string) {
+	if err := j.validateSetStorageSizeMibParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storageSizeMib",
 		val,
 	)
 }
@@ -1114,6 +1149,14 @@ func (d *jsiiProxy_DatabaseReplica) ResetSize() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetSize",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseReplica) ResetStorageSizeMib() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetStorageSizeMib",
 		nil, // no parameters
 	)
 }

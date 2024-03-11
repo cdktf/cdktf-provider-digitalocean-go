@@ -12,9 +12,11 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/data-sources/database_user digitalocean_database_user}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0/docs/data-sources/database_user digitalocean_database_user}.
 type DataDigitaloceanDatabaseUser interface {
 	cdktf.TerraformDataSource
+	AccessCert() *string
+	AccessKey() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ClusterId() *string
@@ -112,6 +114,26 @@ type DataDigitaloceanDatabaseUser interface {
 // The jsii proxy struct for DataDigitaloceanDatabaseUser
 type jsiiProxy_DataDigitaloceanDatabaseUser struct {
 	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataDigitaloceanDatabaseUser) AccessCert() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessCert",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDigitaloceanDatabaseUser) AccessKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessKey",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataDigitaloceanDatabaseUser) CdktfStack() cdktf.TerraformStack {
@@ -355,7 +377,7 @@ func (j *jsiiProxy_DataDigitaloceanDatabaseUser) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/data-sources/database_user digitalocean_database_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0/docs/data-sources/database_user digitalocean_database_user} Data Source.
 func NewDataDigitaloceanDatabaseUser(scope constructs.Construct, id *string, config *DataDigitaloceanDatabaseUserConfig) DataDigitaloceanDatabaseUser {
 	_init_.Initialize()
 
@@ -373,7 +395,7 @@ func NewDataDigitaloceanDatabaseUser(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.34.1/docs/data-sources/database_user digitalocean_database_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.35.0/docs/data-sources/database_user digitalocean_database_user} Data Source.
 func NewDataDigitaloceanDatabaseUser_Override(d DataDigitaloceanDatabaseUser, scope constructs.Construct, id *string, config *DataDigitaloceanDatabaseUserConfig) {
 	_init_.Initialize()
 
