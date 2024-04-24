@@ -36,6 +36,9 @@ type AppSpecWorkerImageOutputReference interface {
 	SetInternalValue(val *AppSpecWorkerImage)
 	Registry() *string
 	SetRegistry(val *string)
+	RegistryCredentials() *string
+	SetRegistryCredentials(val *string)
+	RegistryCredentialsInput() *string
 	RegistryInput() *string
 	RegistryType() *string
 	SetRegistryType(val *string)
@@ -172,6 +175,26 @@ func (j *jsiiProxy_AppSpecWorkerImageOutputReference) Registry() *string {
 	_jsii_.Get(
 		j,
 		"registry",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecWorkerImageOutputReference) RegistryCredentials() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"registryCredentials",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecWorkerImageOutputReference) RegistryCredentialsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"registryCredentialsInput",
 		&returns,
 	)
 	return returns
@@ -335,6 +358,17 @@ func (j *jsiiProxy_AppSpecWorkerImageOutputReference)SetRegistry(val *string) {
 	_jsii_.Set(
 		j,
 		"registry",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppSpecWorkerImageOutputReference)SetRegistryCredentials(val *string) {
+	if err := j.validateSetRegistryCredentialsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"registryCredentials",
 		val,
 	)
 }

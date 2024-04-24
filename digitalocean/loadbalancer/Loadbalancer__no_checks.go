@@ -75,11 +75,19 @@ func (l *jsiiProxy_Loadbalancer) validateOverrideLogicalIdParameters(newLogicalI
 	return nil
 }
 
+func (l *jsiiProxy_Loadbalancer) validatePutDomainsParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_Loadbalancer) validatePutFirewallParameters(value *LoadbalancerFirewall) error {
 	return nil
 }
 
 func (l *jsiiProxy_Loadbalancer) validatePutForwardingRuleParameters(value interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_Loadbalancer) validatePutGlbSettingsParameters(value *LoadbalancerGlbSettings) error {
 	return nil
 }
 
@@ -176,6 +184,10 @@ func (j *jsiiProxy_Loadbalancer) validateSetSizeParameters(val *string) error {
 }
 
 func (j *jsiiProxy_Loadbalancer) validateSetSizeUnitParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_Loadbalancer) validateSetTargetLoadBalancerIdsParameters(val *[]*string) error {
 	return nil
 }
 

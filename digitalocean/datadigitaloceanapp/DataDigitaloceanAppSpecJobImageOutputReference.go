@@ -34,6 +34,7 @@ type DataDigitaloceanAppSpecJobImageOutputReference interface {
 	InternalValue() *DataDigitaloceanAppSpecJobImage
 	SetInternalValue(val *DataDigitaloceanAppSpecJobImage)
 	Registry() *string
+	RegistryCredentials() *string
 	RegistryType() *string
 	Repository() *string
 	Tag() *string
@@ -149,6 +150,16 @@ func (j *jsiiProxy_DataDigitaloceanAppSpecJobImageOutputReference) Registry() *s
 	_jsii_.Get(
 		j,
 		"registry",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDigitaloceanAppSpecJobImageOutputReference) RegistryCredentials() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"registryCredentials",
 		&returns,
 	)
 	return returns

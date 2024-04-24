@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.36.0/docs/resources/loadbalancer digitalocean_loadbalancer}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.37.0/docs/resources/loadbalancer digitalocean_loadbalancer}.
 type Loadbalancer interface {
 	cdktf.TerraformResource
 	Algorithm() *string
@@ -37,6 +37,8 @@ type Loadbalancer interface {
 	DisableLetsEncryptDnsRecords() interface{}
 	SetDisableLetsEncryptDnsRecords(val interface{})
 	DisableLetsEncryptDnsRecordsInput() interface{}
+	Domains() LoadbalancerDomainsList
+	DomainsInput() interface{}
 	DropletIds() *[]*float64
 	SetDropletIds(val *[]*float64)
 	DropletIdsInput() *[]*float64
@@ -61,6 +63,8 @@ type Loadbalancer interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GlbSettings() LoadbalancerGlbSettingsOutputReference
+	GlbSettingsInput() *LoadbalancerGlbSettings
 	Healthcheck() LoadbalancerHealthcheckOutputReference
 	HealthcheckInput() *LoadbalancerHealthcheck
 	HttpIdleTimeoutSeconds() *float64
@@ -107,6 +111,9 @@ type Loadbalancer interface {
 	Status() *string
 	StickySessions() LoadbalancerStickySessionsOutputReference
 	StickySessionsInput() *LoadbalancerStickySessions
+	TargetLoadBalancerIds() *[]*string
+	SetTargetLoadBalancerIds(val *[]*string)
+	TargetLoadBalancerIdsInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -163,17 +170,22 @@ type Loadbalancer interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutDomains(value interface{})
 	PutFirewall(value *LoadbalancerFirewall)
 	PutForwardingRule(value interface{})
+	PutGlbSettings(value *LoadbalancerGlbSettings)
 	PutHealthcheck(value *LoadbalancerHealthcheck)
 	PutStickySessions(value *LoadbalancerStickySessions)
 	ResetAlgorithm()
 	ResetDisableLetsEncryptDnsRecords()
+	ResetDomains()
 	ResetDropletIds()
 	ResetDropletTag()
 	ResetEnableBackendKeepalive()
 	ResetEnableProxyProtocol()
 	ResetFirewall()
+	ResetForwardingRule()
+	ResetGlbSettings()
 	ResetHealthcheck()
 	ResetHttpIdleTimeoutSeconds()
 	ResetId()
@@ -186,6 +198,7 @@ type Loadbalancer interface {
 	ResetSize()
 	ResetSizeUnit()
 	ResetStickySessions()
+	ResetTargetLoadBalancerIds()
 	ResetType()
 	ResetVpcUuid()
 	SynthesizeAttributes() *map[string]interface{}
@@ -291,6 +304,26 @@ func (j *jsiiProxy_Loadbalancer) DisableLetsEncryptDnsRecordsInput() interface{}
 	_jsii_.Get(
 		j,
 		"disableLetsEncryptDnsRecordsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Loadbalancer) Domains() LoadbalancerDomainsList {
+	var returns LoadbalancerDomainsList
+	_jsii_.Get(
+		j,
+		"domains",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Loadbalancer) DomainsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"domainsInput",
 		&returns,
 	)
 	return returns
@@ -441,6 +474,26 @@ func (j *jsiiProxy_Loadbalancer) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Loadbalancer) GlbSettings() LoadbalancerGlbSettingsOutputReference {
+	var returns LoadbalancerGlbSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"glbSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Loadbalancer) GlbSettingsInput() *LoadbalancerGlbSettings {
+	var returns *LoadbalancerGlbSettings
+	_jsii_.Get(
+		j,
+		"glbSettingsInput",
 		&returns,
 	)
 	return returns
@@ -716,6 +769,26 @@ func (j *jsiiProxy_Loadbalancer) StickySessionsInput() *LoadbalancerStickySessio
 	return returns
 }
 
+func (j *jsiiProxy_Loadbalancer) TargetLoadBalancerIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"targetLoadBalancerIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Loadbalancer) TargetLoadBalancerIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"targetLoadBalancerIdsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Loadbalancer) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -797,7 +870,7 @@ func (j *jsiiProxy_Loadbalancer) VpcUuidInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.36.0/docs/resources/loadbalancer digitalocean_loadbalancer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.37.0/docs/resources/loadbalancer digitalocean_loadbalancer} Resource.
 func NewLoadbalancer(scope constructs.Construct, id *string, config *LoadbalancerConfig) Loadbalancer {
 	_init_.Initialize()
 
@@ -815,7 +888,7 @@ func NewLoadbalancer(scope constructs.Construct, id *string, config *Loadbalance
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.36.0/docs/resources/loadbalancer digitalocean_loadbalancer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.37.0/docs/resources/loadbalancer digitalocean_loadbalancer} Resource.
 func NewLoadbalancer_Override(l Loadbalancer, scope constructs.Construct, id *string, config *LoadbalancerConfig) {
 	_init_.Initialize()
 
@@ -1044,6 +1117,17 @@ func (j *jsiiProxy_Loadbalancer)SetSizeUnit(val *float64) {
 	_jsii_.Set(
 		j,
 		"sizeUnit",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Loadbalancer)SetTargetLoadBalancerIds(val *[]*string) {
+	if err := j.validateSetTargetLoadBalancerIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"targetLoadBalancerIds",
 		val,
 	)
 }
@@ -1423,6 +1507,17 @@ func (l *jsiiProxy_Loadbalancer) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (l *jsiiProxy_Loadbalancer) PutDomains(value interface{}) {
+	if err := l.validatePutDomainsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putDomains",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_Loadbalancer) PutFirewall(value *LoadbalancerFirewall) {
 	if err := l.validatePutFirewallParameters(value); err != nil {
 		panic(err)
@@ -1441,6 +1536,17 @@ func (l *jsiiProxy_Loadbalancer) PutForwardingRule(value interface{}) {
 	_jsii_.InvokeVoid(
 		l,
 		"putForwardingRule",
+		[]interface{}{value},
+	)
+}
+
+func (l *jsiiProxy_Loadbalancer) PutGlbSettings(value *LoadbalancerGlbSettings) {
+	if err := l.validatePutGlbSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putGlbSettings",
 		[]interface{}{value},
 	)
 }
@@ -1483,6 +1589,14 @@ func (l *jsiiProxy_Loadbalancer) ResetDisableLetsEncryptDnsRecords() {
 	)
 }
 
+func (l *jsiiProxy_Loadbalancer) ResetDomains() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetDomains",
+		nil, // no parameters
+	)
+}
+
 func (l *jsiiProxy_Loadbalancer) ResetDropletIds() {
 	_jsii_.InvokeVoid(
 		l,
@@ -1519,6 +1633,22 @@ func (l *jsiiProxy_Loadbalancer) ResetFirewall() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetFirewall",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_Loadbalancer) ResetForwardingRule() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetForwardingRule",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_Loadbalancer) ResetGlbSettings() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetGlbSettings",
 		nil, // no parameters
 	)
 }
@@ -1599,6 +1729,14 @@ func (l *jsiiProxy_Loadbalancer) ResetStickySessions() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetStickySessions",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_Loadbalancer) ResetTargetLoadBalancerIds() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetTargetLoadBalancerIds",
 		nil, // no parameters
 	)
 }

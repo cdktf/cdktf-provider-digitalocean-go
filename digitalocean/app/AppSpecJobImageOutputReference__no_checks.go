@@ -71,6 +71,10 @@ func (j *jsiiProxy_AppSpecJobImageOutputReference) validateSetRegistryParameters
 	return nil
 }
 
+func (j *jsiiProxy_AppSpecJobImageOutputReference) validateSetRegistryCredentialsParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppSpecJobImageOutputReference) validateSetRegistryTypeParameters(val *string) error {
 	return nil
 }

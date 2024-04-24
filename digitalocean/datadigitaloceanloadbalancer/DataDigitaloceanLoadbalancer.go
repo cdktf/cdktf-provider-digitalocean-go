@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.36.0/docs/data-sources/loadbalancer digitalocean_loadbalancer}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.37.0/docs/data-sources/loadbalancer digitalocean_loadbalancer}.
 type DataDigitaloceanLoadbalancer interface {
 	cdktf.TerraformDataSource
 	Algorithm() *string
@@ -29,6 +29,7 @@ type DataDigitaloceanLoadbalancer interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	DisableLetsEncryptDnsRecords() cdktf.IResolvable
+	Domains() DataDigitaloceanLoadbalancerDomainsList
 	DropletIds() *[]*float64
 	DropletTag() *string
 	EnableBackendKeepalive() cdktf.IResolvable
@@ -43,6 +44,7 @@ type DataDigitaloceanLoadbalancer interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GlbSettings() DataDigitaloceanLoadbalancerGlbSettingsList
 	Healthcheck() DataDigitaloceanLoadbalancerHealthcheckList
 	HttpIdleTimeoutSeconds() *float64
 	Id() *string
@@ -71,6 +73,7 @@ type DataDigitaloceanLoadbalancer interface {
 	SizeUnit() *float64
 	Status() *string
 	StickySessions() DataDigitaloceanLoadbalancerStickySessionsList
+	TargetLoadBalancerIds() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -78,8 +81,6 @@ type DataDigitaloceanLoadbalancer interface {
 	// Experimental.
 	TerraformResourceType() *string
 	Type() *string
-	SetType(val *string)
-	TypeInput() *string
 	Urn() *string
 	VpcUuid() *string
 	// Experimental.
@@ -112,7 +113,6 @@ type DataDigitaloceanLoadbalancer interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetType()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -187,6 +187,16 @@ func (j *jsiiProxy_DataDigitaloceanLoadbalancer) DisableLetsEncryptDnsRecords() 
 	_jsii_.Get(
 		j,
 		"disableLetsEncryptDnsRecords",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDigitaloceanLoadbalancer) Domains() DataDigitaloceanLoadbalancerDomainsList {
+	var returns DataDigitaloceanLoadbalancerDomainsList
+	_jsii_.Get(
+		j,
+		"domains",
 		&returns,
 	)
 	return returns
@@ -277,6 +287,16 @@ func (j *jsiiProxy_DataDigitaloceanLoadbalancer) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDigitaloceanLoadbalancer) GlbSettings() DataDigitaloceanLoadbalancerGlbSettingsList {
+	var returns DataDigitaloceanLoadbalancerGlbSettingsList
+	_jsii_.Get(
+		j,
+		"glbSettings",
 		&returns,
 	)
 	return returns
@@ -462,6 +482,16 @@ func (j *jsiiProxy_DataDigitaloceanLoadbalancer) StickySessions() DataDigitaloce
 	return returns
 }
 
+func (j *jsiiProxy_DataDigitaloceanLoadbalancer) TargetLoadBalancerIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"targetLoadBalancerIds",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDigitaloceanLoadbalancer) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -502,16 +532,6 @@ func (j *jsiiProxy_DataDigitaloceanLoadbalancer) Type() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDigitaloceanLoadbalancer) TypeInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"typeInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataDigitaloceanLoadbalancer) Urn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -533,7 +553,7 @@ func (j *jsiiProxy_DataDigitaloceanLoadbalancer) VpcUuid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.36.0/docs/data-sources/loadbalancer digitalocean_loadbalancer} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.37.0/docs/data-sources/loadbalancer digitalocean_loadbalancer} Data Source.
 func NewDataDigitaloceanLoadbalancer(scope constructs.Construct, id *string, config *DataDigitaloceanLoadbalancerConfig) DataDigitaloceanLoadbalancer {
 	_init_.Initialize()
 
@@ -551,7 +571,7 @@ func NewDataDigitaloceanLoadbalancer(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.36.0/docs/data-sources/loadbalancer digitalocean_loadbalancer} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.37.0/docs/data-sources/loadbalancer digitalocean_loadbalancer} Data Source.
 func NewDataDigitaloceanLoadbalancer_Override(d DataDigitaloceanLoadbalancer, scope constructs.Construct, id *string, config *DataDigitaloceanLoadbalancerConfig) {
 	_init_.Initialize()
 
@@ -626,17 +646,6 @@ func (j *jsiiProxy_DataDigitaloceanLoadbalancer)SetProvider(val cdktf.TerraformP
 	_jsii_.Set(
 		j,
 		"provider",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDigitaloceanLoadbalancer)SetType(val *string) {
-	if err := j.validateSetTypeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"type",
 		val,
 	)
 }
@@ -946,14 +955,6 @@ func (d *jsiiProxy_DataDigitaloceanLoadbalancer) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDigitaloceanLoadbalancer) ResetType() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetType",
 		nil, // no parameters
 	)
 }

@@ -207,6 +207,37 @@ func (l *jsiiProxy_Loadbalancer) validateOverrideLogicalIdParameters(newLogicalI
 	return nil
 }
 
+func (l *jsiiProxy_Loadbalancer) validatePutDomainsParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*LoadbalancerDomains:
+		value := value.(*[]*LoadbalancerDomains)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*LoadbalancerDomains:
+		value_ := value.([]*LoadbalancerDomains)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*LoadbalancerDomains; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (l *jsiiProxy_Loadbalancer) validatePutFirewallParameters(value *LoadbalancerFirewall) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -244,6 +275,17 @@ func (l *jsiiProxy_Loadbalancer) validatePutForwardingRuleParameters(value inter
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*LoadbalancerForwardingRule; received %#v (a %T)", value, value)
 		}
+	}
+
+	return nil
+}
+
+func (l *jsiiProxy_Loadbalancer) validatePutGlbSettingsParameters(value *LoadbalancerGlbSettings) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil
@@ -608,6 +650,14 @@ func (j *jsiiProxy_Loadbalancer) validateSetSizeParameters(val *string) error {
 }
 
 func (j *jsiiProxy_Loadbalancer) validateSetSizeUnitParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Loadbalancer) validateSetTargetLoadBalancerIdsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

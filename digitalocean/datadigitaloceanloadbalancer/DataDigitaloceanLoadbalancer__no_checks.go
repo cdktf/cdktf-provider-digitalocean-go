@@ -87,10 +87,6 @@ func (j *jsiiProxy_DataDigitaloceanLoadbalancer) validateSetNameParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_DataDigitaloceanLoadbalancer) validateSetTypeParameters(val *string) error {
-	return nil
-}
-
 func validateNewDataDigitaloceanLoadbalancerParameters(scope constructs.Construct, id *string, config *DataDigitaloceanLoadbalancerConfig) error {
 	return nil
 }
