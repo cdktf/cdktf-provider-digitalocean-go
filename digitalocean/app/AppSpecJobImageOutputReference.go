@@ -84,6 +84,7 @@ type AppSpecJobImageOutputReference interface {
 	PutDeployOnPush(value interface{})
 	ResetDeployOnPush()
 	ResetRegistry()
+	ResetRegistryCredentials()
 	ResetTag()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -637,6 +638,14 @@ func (a *jsiiProxy_AppSpecJobImageOutputReference) ResetRegistry() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetRegistry",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppSpecJobImageOutputReference) ResetRegistryCredentials() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRegistryCredentials",
 		nil, // no parameters
 	)
 }
