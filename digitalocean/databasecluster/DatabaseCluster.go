@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.37.1/docs/resources/database_cluster digitalocean_database_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.38.0/docs/resources/database_cluster digitalocean_database_cluster}.
 type DatabaseCluster interface {
 	cdktf.TerraformResource
 	BackupRestore() DatabaseClusterBackupRestoreOutputReference
@@ -109,6 +109,12 @@ type DatabaseCluster interface {
 	TerraformResourceType() *string
 	Timeouts() DatabaseClusterTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	UiDatabase() *string
+	UiHost() *string
+	UiPassword() *string
+	UiPort() *float64
+	UiUri() *string
+	UiUser() *string
 	Uri() *string
 	Urn() *string
 	User() *string
@@ -713,6 +719,66 @@ func (j *jsiiProxy_DatabaseCluster) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseCluster) UiDatabase() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"uiDatabase",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseCluster) UiHost() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"uiHost",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseCluster) UiPassword() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"uiPassword",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseCluster) UiPort() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"uiPort",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseCluster) UiUri() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"uiUri",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseCluster) UiUser() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"uiUser",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabaseCluster) Uri() *string {
 	var returns *string
 	_jsii_.Get(
@@ -764,7 +830,7 @@ func (j *jsiiProxy_DatabaseCluster) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.37.1/docs/resources/database_cluster digitalocean_database_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.38.0/docs/resources/database_cluster digitalocean_database_cluster} Resource.
 func NewDatabaseCluster(scope constructs.Construct, id *string, config *DatabaseClusterConfig) DatabaseCluster {
 	_init_.Initialize()
 
@@ -782,7 +848,7 @@ func NewDatabaseCluster(scope constructs.Construct, id *string, config *Database
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.37.1/docs/resources/database_cluster digitalocean_database_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.38.0/docs/resources/database_cluster digitalocean_database_cluster} Resource.
 func NewDatabaseCluster_Override(d DatabaseCluster, scope constructs.Construct, id *string, config *DatabaseClusterConfig) {
 	_init_.Initialize()
 
