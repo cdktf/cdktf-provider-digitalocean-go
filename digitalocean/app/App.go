@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.38.0/docs/resources/app digitalocean_app}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.0/docs/resources/app digitalocean_app}.
 type App interface {
 	cdktf.TerraformResource
 	ActiveDeploymentId() *string
@@ -29,6 +29,8 @@ type App interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreatedAt() *string
+	DedicatedIps() AppDedicatedIpsList
+	DedicatedIpsInput() interface{}
 	DefaultIngress() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -120,8 +122,10 @@ type App interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutDedicatedIps(value interface{})
 	PutSpec(value *AppSpec)
 	PutTimeouts(value *AppTimeouts)
+	ResetDedicatedIps()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -202,6 +206,26 @@ func (j *jsiiProxy_App) CreatedAt() *string {
 	_jsii_.Get(
 		j,
 		"createdAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_App) DedicatedIps() AppDedicatedIpsList {
+	var returns AppDedicatedIpsList
+	_jsii_.Get(
+		j,
+		"dedicatedIps",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_App) DedicatedIpsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dedicatedIpsInput",
 		&returns,
 	)
 	return returns
@@ -448,7 +472,7 @@ func (j *jsiiProxy_App) Urn() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.38.0/docs/resources/app digitalocean_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.0/docs/resources/app digitalocean_app} Resource.
 func NewApp(scope constructs.Construct, id *string, config *AppConfig) App {
 	_init_.Initialize()
 
@@ -466,7 +490,7 @@ func NewApp(scope constructs.Construct, id *string, config *AppConfig) App {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.38.0/docs/resources/app digitalocean_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.0/docs/resources/app digitalocean_app} Resource.
 func NewApp_Override(a App, scope constructs.Construct, id *string, config *AppConfig) {
 	_init_.Initialize()
 
@@ -920,6 +944,17 @@ func (a *jsiiProxy_App) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (a *jsiiProxy_App) PutDedicatedIps(value interface{}) {
+	if err := a.validatePutDedicatedIpsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putDedicatedIps",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_App) PutSpec(value *AppSpec) {
 	if err := a.validatePutSpecParameters(value); err != nil {
 		panic(err)
@@ -939,6 +974,14 @@ func (a *jsiiProxy_App) PutTimeouts(value *AppTimeouts) {
 		a,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_App) ResetDedicatedIps() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDedicatedIps",
+		nil, // no parameters
 	)
 }
 

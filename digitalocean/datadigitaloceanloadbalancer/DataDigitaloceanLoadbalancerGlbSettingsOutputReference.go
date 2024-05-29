@@ -29,10 +29,12 @@ type DataDigitaloceanLoadbalancerGlbSettingsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	FailoverThreshold() *float64
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataDigitaloceanLoadbalancerGlbSettings
 	SetInternalValue(val *DataDigitaloceanLoadbalancerGlbSettings)
+	RegionPriorities() cdktf.NumberMap
 	TargetPort() *float64
 	TargetProtocol() *string
 	// Experimental.
@@ -122,6 +124,16 @@ func (j *jsiiProxy_DataDigitaloceanLoadbalancerGlbSettingsOutputReference) Creat
 	return returns
 }
 
+func (j *jsiiProxy_DataDigitaloceanLoadbalancerGlbSettingsOutputReference) FailoverThreshold() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"failoverThreshold",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDigitaloceanLoadbalancerGlbSettingsOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -137,6 +149,16 @@ func (j *jsiiProxy_DataDigitaloceanLoadbalancerGlbSettingsOutputReference) Inter
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDigitaloceanLoadbalancerGlbSettingsOutputReference) RegionPriorities() cdktf.NumberMap {
+	var returns cdktf.NumberMap
+	_jsii_.Get(
+		j,
+		"regionPriorities",
 		&returns,
 	)
 	return returns

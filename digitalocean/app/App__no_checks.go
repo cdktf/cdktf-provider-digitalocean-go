@@ -75,6 +75,10 @@ func (a *jsiiProxy_App) validateOverrideLogicalIdParameters(newLogicalId *string
 	return nil
 }
 
+func (a *jsiiProxy_App) validatePutDedicatedIpsParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_App) validatePutSpecParameters(value *AppSpec) error {
 	return nil
 }

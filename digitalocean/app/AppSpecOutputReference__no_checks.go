@@ -59,6 +59,10 @@ func (a *jsiiProxy_AppSpecOutputReference) validatePutDomainParameters(value int
 	return nil
 }
 
+func (a *jsiiProxy_AppSpecOutputReference) validatePutEgressParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppSpecOutputReference) validatePutEnvParameters(value interface{}) error {
 	return nil
 }

@@ -177,9 +177,25 @@ func (j *jsiiProxy_LoadbalancerGlbSettingsOutputReference) validateSetComplexObj
 	return nil
 }
 
+func (j *jsiiProxy_LoadbalancerGlbSettingsOutputReference) validateSetFailoverThresholdParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_LoadbalancerGlbSettingsOutputReference) validateSetInternalValueParameters(val *LoadbalancerGlbSettings) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_LoadbalancerGlbSettingsOutputReference) validateSetRegionPrioritiesParameters(val *map[string]*float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

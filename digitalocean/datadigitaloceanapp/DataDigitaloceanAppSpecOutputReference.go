@@ -32,6 +32,7 @@ type DataDigitaloceanAppSpecOutputReference interface {
 	Database() DataDigitaloceanAppSpecDatabaseList
 	Domain() DataDigitaloceanAppSpecDomainList
 	Domains() *[]*string
+	Egress() DataDigitaloceanAppSpecEgressList
 	Env() DataDigitaloceanAppSpecEnvList
 	Features() *[]*string
 	// Experimental.
@@ -158,6 +159,16 @@ func (j *jsiiProxy_DataDigitaloceanAppSpecOutputReference) Domains() *[]*string 
 	_jsii_.Get(
 		j,
 		"domains",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDigitaloceanAppSpecOutputReference) Egress() DataDigitaloceanAppSpecEgressList {
+	var returns DataDigitaloceanAppSpecEgressList
+	_jsii_.Get(
+		j,
+		"egress",
 		&returns,
 	)
 	return returns

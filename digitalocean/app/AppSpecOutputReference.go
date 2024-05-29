@@ -37,6 +37,8 @@ type AppSpecOutputReference interface {
 	Domains() *[]*string
 	SetDomains(val *[]*string)
 	DomainsInput() *[]*string
+	Egress() AppSpecEgressList
+	EgressInput() interface{}
 	Env() AppSpecEnvList
 	EnvInput() interface{}
 	Features() *[]*string
@@ -99,6 +101,7 @@ type AppSpecOutputReference interface {
 	PutAlert(value interface{})
 	PutDatabase(value interface{})
 	PutDomain(value interface{})
+	PutEgress(value interface{})
 	PutEnv(value interface{})
 	PutFunction(value interface{})
 	PutIngress(value *AppSpecIngress)
@@ -110,6 +113,7 @@ type AppSpecOutputReference interface {
 	ResetDatabase()
 	ResetDomain()
 	ResetDomains()
+	ResetEgress()
 	ResetEnv()
 	ResetFeatures()
 	ResetFunction()
@@ -239,6 +243,26 @@ func (j *jsiiProxy_AppSpecOutputReference) DomainsInput() *[]*string {
 	_jsii_.Get(
 		j,
 		"domainsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecOutputReference) Egress() AppSpecEgressList {
+	var returns AppSpecEgressList
+	_jsii_.Get(
+		j,
+		"egress",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecOutputReference) EgressInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"egressInput",
 		&returns,
 	)
 	return returns
@@ -830,6 +854,17 @@ func (a *jsiiProxy_AppSpecOutputReference) PutDomain(value interface{}) {
 	)
 }
 
+func (a *jsiiProxy_AppSpecOutputReference) PutEgress(value interface{}) {
+	if err := a.validatePutEgressParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putEgress",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AppSpecOutputReference) PutEnv(value interface{}) {
 	if err := a.validatePutEnvParameters(value); err != nil {
 		panic(err)
@@ -935,6 +970,14 @@ func (a *jsiiProxy_AppSpecOutputReference) ResetDomains() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetDomains",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppSpecOutputReference) ResetEgress() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetEgress",
 		nil, // no parameters
 	)
 }

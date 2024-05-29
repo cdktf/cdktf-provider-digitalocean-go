@@ -30,10 +30,16 @@ type LoadbalancerGlbSettingsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	FailoverThreshold() *float64
+	SetFailoverThreshold(val *float64)
+	FailoverThresholdInput() *float64
 	// Experimental.
 	Fqn() *string
 	InternalValue() *LoadbalancerGlbSettings
 	SetInternalValue(val *LoadbalancerGlbSettings)
+	RegionPriorities() *map[string]*float64
+	SetRegionPriorities(val *map[string]*float64)
+	RegionPrioritiesInput() *map[string]*float64
 	TargetPort() *float64
 	SetTargetPort(val *float64)
 	TargetPortInput() *float64
@@ -74,6 +80,8 @@ type LoadbalancerGlbSettingsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCdn(value *LoadbalancerGlbSettingsCdn)
 	ResetCdn()
+	ResetFailoverThreshold()
+	ResetRegionPriorities()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -139,6 +147,26 @@ func (j *jsiiProxy_LoadbalancerGlbSettingsOutputReference) CreationStack() *[]*s
 	return returns
 }
 
+func (j *jsiiProxy_LoadbalancerGlbSettingsOutputReference) FailoverThreshold() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"failoverThreshold",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoadbalancerGlbSettingsOutputReference) FailoverThresholdInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"failoverThresholdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LoadbalancerGlbSettingsOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -154,6 +182,26 @@ func (j *jsiiProxy_LoadbalancerGlbSettingsOutputReference) InternalValue() *Load
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoadbalancerGlbSettingsOutputReference) RegionPriorities() *map[string]*float64 {
+	var returns *map[string]*float64
+	_jsii_.Get(
+		j,
+		"regionPriorities",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoadbalancerGlbSettingsOutputReference) RegionPrioritiesInput() *map[string]*float64 {
+	var returns *map[string]*float64
+	_jsii_.Get(
+		j,
+		"regionPrioritiesInput",
 		&returns,
 	)
 	return returns
@@ -269,6 +317,17 @@ func (j *jsiiProxy_LoadbalancerGlbSettingsOutputReference)SetComplexObjectIsFrom
 	)
 }
 
+func (j *jsiiProxy_LoadbalancerGlbSettingsOutputReference)SetFailoverThreshold(val *float64) {
+	if err := j.validateSetFailoverThresholdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"failoverThreshold",
+		val,
+	)
+}
+
 func (j *jsiiProxy_LoadbalancerGlbSettingsOutputReference)SetInternalValue(val *LoadbalancerGlbSettings) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -276,6 +335,17 @@ func (j *jsiiProxy_LoadbalancerGlbSettingsOutputReference)SetInternalValue(val *
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LoadbalancerGlbSettingsOutputReference)SetRegionPriorities(val *map[string]*float64) {
+	if err := j.validateSetRegionPrioritiesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"regionPriorities",
 		val,
 	)
 }
@@ -525,6 +595,22 @@ func (l *jsiiProxy_LoadbalancerGlbSettingsOutputReference) ResetCdn() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetCdn",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LoadbalancerGlbSettingsOutputReference) ResetFailoverThreshold() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetFailoverThreshold",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LoadbalancerGlbSettingsOutputReference) ResetRegionPriorities() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRegionPriorities",
 		nil, // no parameters
 	)
 }

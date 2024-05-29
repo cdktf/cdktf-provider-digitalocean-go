@@ -63,7 +63,15 @@ func (j *jsiiProxy_LoadbalancerGlbSettingsOutputReference) validateSetComplexObj
 	return nil
 }
 
+func (j *jsiiProxy_LoadbalancerGlbSettingsOutputReference) validateSetFailoverThresholdParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_LoadbalancerGlbSettingsOutputReference) validateSetInternalValueParameters(val *LoadbalancerGlbSettings) error {
+	return nil
+}
+
+func (j *jsiiProxy_LoadbalancerGlbSettingsOutputReference) validateSetRegionPrioritiesParameters(val *map[string]*float64) error {
 	return nil
 }
 
