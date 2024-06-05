@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.1/docs/data-sources/tag digitalocean_tag}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.2/docs/data-sources/tag digitalocean_tag}.
 type DataDigitaloceanTag interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -354,7 +354,7 @@ func (j *jsiiProxy_DataDigitaloceanTag) VolumeSnapshotsCount() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.1/docs/data-sources/tag digitalocean_tag} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.2/docs/data-sources/tag digitalocean_tag} Data Source.
 func NewDataDigitaloceanTag(scope constructs.Construct, id *string, config *DataDigitaloceanTagConfig) DataDigitaloceanTag {
 	_init_.Initialize()
 
@@ -372,7 +372,7 @@ func NewDataDigitaloceanTag(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.1/docs/data-sources/tag digitalocean_tag} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.2/docs/data-sources/tag digitalocean_tag} Data Source.
 func NewDataDigitaloceanTag_Override(d DataDigitaloceanTag, scope constructs.Construct, id *string, config *DataDigitaloceanTagConfig) {
 	_init_.Initialize()
 

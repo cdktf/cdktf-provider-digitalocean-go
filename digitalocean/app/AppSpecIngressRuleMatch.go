@@ -7,7 +7,7 @@ package app
 type AppSpecIngressRuleMatch struct {
 	// path block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.1/docs/resources/app#path App#path}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.2/docs/resources/app#path App#path}
 	Path *AppSpecIngressRuleMatchPath `field:"optional" json:"path" yaml:"path"`
 }
 
