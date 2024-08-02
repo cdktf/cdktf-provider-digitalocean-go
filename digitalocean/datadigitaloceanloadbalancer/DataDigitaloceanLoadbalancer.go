@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.2/docs/data-sources/loadbalancer digitalocean_loadbalancer}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.40.0/docs/data-sources/loadbalancer digitalocean_loadbalancer}.
 type DataDigitaloceanLoadbalancer interface {
 	cdktf.TerraformDataSource
 	Algorithm() *string
@@ -58,6 +58,7 @@ type DataDigitaloceanLoadbalancer interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	Network() *string
 	// The tree node.
 	Node() constructs.Node
 	ProjectId() *string
@@ -382,6 +383,16 @@ func (j *jsiiProxy_DataDigitaloceanLoadbalancer) NameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataDigitaloceanLoadbalancer) Network() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"network",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDigitaloceanLoadbalancer) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -553,7 +564,7 @@ func (j *jsiiProxy_DataDigitaloceanLoadbalancer) VpcUuid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.2/docs/data-sources/loadbalancer digitalocean_loadbalancer} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.40.0/docs/data-sources/loadbalancer digitalocean_loadbalancer} Data Source.
 func NewDataDigitaloceanLoadbalancer(scope constructs.Construct, id *string, config *DataDigitaloceanLoadbalancerConfig) DataDigitaloceanLoadbalancer {
 	_init_.Initialize()
 
@@ -571,7 +582,7 @@ func NewDataDigitaloceanLoadbalancer(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.2/docs/data-sources/loadbalancer digitalocean_loadbalancer} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.40.0/docs/data-sources/loadbalancer digitalocean_loadbalancer} Data Source.
 func NewDataDigitaloceanLoadbalancer_Override(d DataDigitaloceanLoadbalancer, scope constructs.Construct, id *string, config *DataDigitaloceanLoadbalancerConfig) {
 	_init_.Initialize()
 

@@ -5,7 +5,7 @@ package databasepostgresqlconfig
 
 
 type DatabasePostgresqlConfigTimescaledb struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.39.2/docs/resources/database_postgresql_config#timescaledb DatabasePostgresqlConfig#timescaledb}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.40.0/docs/resources/database_postgresql_config#timescaledb DatabasePostgresqlConfig#timescaledb}.
 	Timescaledb *float64 `field:"optional" json:"timescaledb" yaml:"timescaledb"`
 }
 

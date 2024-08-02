@@ -14,6 +14,7 @@ import (
 type DataDigitaloceanAppSpecServiceOutputReference interface {
 	cdktf.ComplexObject
 	Alert() DataDigitaloceanAppSpecServiceAlertList
+	Autoscaling() DataDigitaloceanAppSpecServiceAutoscalingList
 	BuildCommand() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -104,6 +105,16 @@ func (j *jsiiProxy_DataDigitaloceanAppSpecServiceOutputReference) Alert() DataDi
 	_jsii_.Get(
 		j,
 		"alert",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDigitaloceanAppSpecServiceOutputReference) Autoscaling() DataDigitaloceanAppSpecServiceAutoscalingList {
+	var returns DataDigitaloceanAppSpecServiceAutoscalingList
+	_jsii_.Get(
+		j,
+		"autoscaling",
 		&returns,
 	)
 	return returns

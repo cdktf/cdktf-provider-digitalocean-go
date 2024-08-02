@@ -15,6 +15,8 @@ type AppSpecServiceOutputReference interface {
 	cdktf.ComplexObject
 	Alert() AppSpecServiceAlertList
 	AlertInput() interface{}
+	Autoscaling() AppSpecServiceAutoscalingOutputReference
+	AutoscalingInput() *AppSpecServiceAutoscaling
 	BuildCommand() *string
 	SetBuildCommand(val *string)
 	BuildCommandInput() *string
@@ -115,6 +117,7 @@ type AppSpecServiceOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAlert(value interface{})
+	PutAutoscaling(value *AppSpecServiceAutoscaling)
 	PutCors(value *AppSpecServiceCors)
 	PutEnv(value interface{})
 	PutGit(value *AppSpecServiceGit)
@@ -125,6 +128,7 @@ type AppSpecServiceOutputReference interface {
 	PutLogDestination(value interface{})
 	PutRoutes(value interface{})
 	ResetAlert()
+	ResetAutoscaling()
 	ResetBuildCommand()
 	ResetCors()
 	ResetDockerfilePath()
@@ -173,6 +177,26 @@ func (j *jsiiProxy_AppSpecServiceOutputReference) AlertInput() interface{} {
 	_jsii_.Get(
 		j,
 		"alertInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecServiceOutputReference) Autoscaling() AppSpecServiceAutoscalingOutputReference {
+	var returns AppSpecServiceAutoscalingOutputReference
+	_jsii_.Get(
+		j,
+		"autoscaling",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecServiceOutputReference) AutoscalingInput() *AppSpecServiceAutoscaling {
+	var returns *AppSpecServiceAutoscaling
+	_jsii_.Get(
+		j,
+		"autoscalingInput",
 		&returns,
 	)
 	return returns
@@ -1018,6 +1042,17 @@ func (a *jsiiProxy_AppSpecServiceOutputReference) PutAlert(value interface{}) {
 	)
 }
 
+func (a *jsiiProxy_AppSpecServiceOutputReference) PutAutoscaling(value *AppSpecServiceAutoscaling) {
+	if err := a.validatePutAutoscalingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putAutoscaling",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AppSpecServiceOutputReference) PutCors(value *AppSpecServiceCors) {
 	if err := a.validatePutCorsParameters(value); err != nil {
 		panic(err)
@@ -1121,6 +1156,14 @@ func (a *jsiiProxy_AppSpecServiceOutputReference) ResetAlert() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetAlert",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppSpecServiceOutputReference) ResetAutoscaling() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAutoscaling",
 		nil, // no parameters
 	)
 }

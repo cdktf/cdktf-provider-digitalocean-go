@@ -124,6 +124,17 @@ func (a *jsiiProxy_AppSpecServiceOutputReference) validatePutAlertParameters(val
 	return nil
 }
 
+func (a *jsiiProxy_AppSpecServiceOutputReference) validatePutAutoscalingParameters(value *AppSpecServiceAutoscaling) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (a *jsiiProxy_AppSpecServiceOutputReference) validatePutCorsParameters(value *AppSpecServiceCors) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

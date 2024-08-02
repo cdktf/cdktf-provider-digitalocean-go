@@ -51,6 +51,10 @@ func (a *jsiiProxy_AppSpecServiceOutputReference) validatePutAlertParameters(val
 	return nil
 }
 
+func (a *jsiiProxy_AppSpecServiceOutputReference) validatePutAutoscalingParameters(value *AppSpecServiceAutoscaling) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppSpecServiceOutputReference) validatePutCorsParameters(value *AppSpecServiceCors) error {
 	return nil
 }
