@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.40.0/docs/resources/app digitalocean_app}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs/resources/app digitalocean_app}.
 type App interface {
 	cdktf.TerraformResource
 	ActiveDeploymentId() *string
@@ -51,6 +51,7 @@ type App interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LiveDomain() *string
 	LiveUrl() *string
 	// The tree node.
 	Node() constructs.Node
@@ -311,6 +312,16 @@ func (j *jsiiProxy_App) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	return returns
 }
 
+func (j *jsiiProxy_App) LiveDomain() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"liveDomain",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_App) LiveUrl() *string {
 	var returns *string
 	_jsii_.Get(
@@ -472,7 +483,7 @@ func (j *jsiiProxy_App) Urn() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.40.0/docs/resources/app digitalocean_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs/resources/app digitalocean_app} Resource.
 func NewApp(scope constructs.Construct, id *string, config *AppConfig) App {
 	_init_.Initialize()
 
@@ -490,7 +501,7 @@ func NewApp(scope constructs.Construct, id *string, config *AppConfig) App {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.40.0/docs/resources/app digitalocean_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs/resources/app digitalocean_app} Resource.
 func NewApp_Override(a App, scope constructs.Construct, id *string, config *AppConfig) {
 	_init_.Initialize()
 

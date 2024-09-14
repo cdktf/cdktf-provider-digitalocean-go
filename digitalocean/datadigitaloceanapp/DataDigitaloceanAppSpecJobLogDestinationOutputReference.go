@@ -35,6 +35,7 @@ type DataDigitaloceanAppSpecJobLogDestinationOutputReference interface {
 	SetInternalValue(val *DataDigitaloceanAppSpecJobLogDestination)
 	Logtail() DataDigitaloceanAppSpecJobLogDestinationLogtailList
 	Name() *string
+	OpenSearch() DataDigitaloceanAppSpecJobLogDestinationOpenSearchList
 	Papertrail() DataDigitaloceanAppSpecJobLogDestinationPapertrailList
 	// Experimental.
 	TerraformAttribute() *string
@@ -158,6 +159,16 @@ func (j *jsiiProxy_DataDigitaloceanAppSpecJobLogDestinationOutputReference) Name
 	_jsii_.Get(
 		j,
 		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDigitaloceanAppSpecJobLogDestinationOutputReference) OpenSearch() DataDigitaloceanAppSpecJobLogDestinationOpenSearchList {
+	var returns DataDigitaloceanAppSpecJobLogDestinationOpenSearchList
+	_jsii_.Get(
+		j,
+		"openSearch",
 		&returns,
 	)
 	return returns

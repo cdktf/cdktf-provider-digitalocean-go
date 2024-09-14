@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.40.0/docs/resources/database_postgresql_config digitalocean_database_postgresql_config}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs/resources/database_postgresql_config digitalocean_database_postgresql_config}.
 type DatabasePostgresqlConfig interface {
 	cdktf.TerraformResource
 	AutovacuumAnalyzeScaleFactor() *float64
@@ -192,8 +192,8 @@ type DatabasePostgresqlConfig interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	Timescaledb() DatabasePostgresqlConfigTimescaledbList
-	TimescaledbInput() interface{}
+	Timescaledb() DatabasePostgresqlConfigTimescaledbOutputReference
+	TimescaledbInput() *DatabasePostgresqlConfigTimescaledb
 	Timezone() *string
 	SetTimezone(val *string)
 	TimezoneInput() *string
@@ -262,7 +262,7 @@ type DatabasePostgresqlConfig interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutPgbouncer(value interface{})
-	PutTimescaledb(value interface{})
+	PutTimescaledb(value *DatabasePostgresqlConfigTimescaledb)
 	ResetAutovacuumAnalyzeScaleFactor()
 	ResetAutovacuumAnalyzeThreshold()
 	ResetAutovacuumFreezeMaxAge()
@@ -1376,8 +1376,8 @@ func (j *jsiiProxy_DatabasePostgresqlConfig) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DatabasePostgresqlConfig) Timescaledb() DatabasePostgresqlConfigTimescaledbList {
-	var returns DatabasePostgresqlConfigTimescaledbList
+func (j *jsiiProxy_DatabasePostgresqlConfig) Timescaledb() DatabasePostgresqlConfigTimescaledbOutputReference {
+	var returns DatabasePostgresqlConfigTimescaledbOutputReference
 	_jsii_.Get(
 		j,
 		"timescaledb",
@@ -1386,8 +1386,8 @@ func (j *jsiiProxy_DatabasePostgresqlConfig) Timescaledb() DatabasePostgresqlCon
 	return returns
 }
 
-func (j *jsiiProxy_DatabasePostgresqlConfig) TimescaledbInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DatabasePostgresqlConfig) TimescaledbInput() *DatabasePostgresqlConfigTimescaledb {
+	var returns *DatabasePostgresqlConfigTimescaledb
 	_jsii_.Get(
 		j,
 		"timescaledbInput",
@@ -1557,7 +1557,7 @@ func (j *jsiiProxy_DatabasePostgresqlConfig) WorkMemInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.40.0/docs/resources/database_postgresql_config digitalocean_database_postgresql_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs/resources/database_postgresql_config digitalocean_database_postgresql_config} Resource.
 func NewDatabasePostgresqlConfig(scope constructs.Construct, id *string, config *DatabasePostgresqlConfigConfig) DatabasePostgresqlConfig {
 	_init_.Initialize()
 
@@ -1575,7 +1575,7 @@ func NewDatabasePostgresqlConfig(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.40.0/docs/resources/database_postgresql_config digitalocean_database_postgresql_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs/resources/database_postgresql_config digitalocean_database_postgresql_config} Resource.
 func NewDatabasePostgresqlConfig_Override(d DatabasePostgresqlConfig, scope constructs.Construct, id *string, config *DatabasePostgresqlConfigConfig) {
 	_init_.Initialize()
 
@@ -2579,7 +2579,7 @@ func (d *jsiiProxy_DatabasePostgresqlConfig) PutPgbouncer(value interface{}) {
 	)
 }
 
-func (d *jsiiProxy_DatabasePostgresqlConfig) PutTimescaledb(value interface{}) {
+func (d *jsiiProxy_DatabasePostgresqlConfig) PutTimescaledb(value *DatabasePostgresqlConfigTimescaledb) {
 	if err := d.validatePutTimescaledbParameters(value); err != nil {
 		panic(err)
 	}

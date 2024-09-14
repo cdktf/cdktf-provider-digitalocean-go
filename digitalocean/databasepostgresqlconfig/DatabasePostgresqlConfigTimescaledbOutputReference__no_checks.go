@@ -59,7 +59,11 @@ func (j *jsiiProxy_DatabasePostgresqlConfigTimescaledbOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_DatabasePostgresqlConfigTimescaledbOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DatabasePostgresqlConfigTimescaledbOutputReference) validateSetInternalValueParameters(val *DatabasePostgresqlConfigTimescaledb) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabasePostgresqlConfigTimescaledbOutputReference) validateSetMaxBackgroundWorkersParameters(val *float64) error {
 	return nil
 }
 
@@ -71,11 +75,7 @@ func (j *jsiiProxy_DatabasePostgresqlConfigTimescaledbOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_DatabasePostgresqlConfigTimescaledbOutputReference) validateSetTimescaledbParameters(val *float64) error {
-	return nil
-}
-
-func validateNewDatabasePostgresqlConfigTimescaledbOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDatabasePostgresqlConfigTimescaledbOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

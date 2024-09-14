@@ -75,6 +75,10 @@ func (s *jsiiProxy_SshKey) validateOverrideLogicalIdParameters(newLogicalId *str
 	return nil
 }
 
+func (s *jsiiProxy_SshKey) validatePutTimeoutsParameters(value *SshKeyTimeouts) error {
+	return nil
+}
+
 func validateSshKey_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

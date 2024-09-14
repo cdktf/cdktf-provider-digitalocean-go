@@ -30,8 +30,11 @@ type DatabasePostgresqlConfigTimescaledbOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DatabasePostgresqlConfigTimescaledb
+	SetInternalValue(val *DatabasePostgresqlConfigTimescaledb)
+	MaxBackgroundWorkers() *float64
+	SetMaxBackgroundWorkers(val *float64)
+	MaxBackgroundWorkersInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -40,9 +43,6 @@ type DatabasePostgresqlConfigTimescaledbOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	Timescaledb() *float64
-	SetTimescaledb(val *float64)
-	TimescaledbInput() *float64
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -67,7 +67,7 @@ type DatabasePostgresqlConfigTimescaledbOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetTimescaledb()
+	ResetMaxBackgroundWorkers()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -123,11 +123,31 @@ func (j *jsiiProxy_DatabasePostgresqlConfigTimescaledbOutputReference) Fqn() *st
 	return returns
 }
 
-func (j *jsiiProxy_DatabasePostgresqlConfigTimescaledbOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DatabasePostgresqlConfigTimescaledbOutputReference) InternalValue() *DatabasePostgresqlConfigTimescaledb {
+	var returns *DatabasePostgresqlConfigTimescaledb
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabasePostgresqlConfigTimescaledbOutputReference) MaxBackgroundWorkers() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxBackgroundWorkers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabasePostgresqlConfigTimescaledbOutputReference) MaxBackgroundWorkersInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxBackgroundWorkersInput",
 		&returns,
 	)
 	return returns
@@ -153,50 +173,30 @@ func (j *jsiiProxy_DatabasePostgresqlConfigTimescaledbOutputReference) Terraform
 	return returns
 }
 
-func (j *jsiiProxy_DatabasePostgresqlConfigTimescaledbOutputReference) Timescaledb() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"timescaledb",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_DatabasePostgresqlConfigTimescaledbOutputReference) TimescaledbInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"timescaledbInput",
-		&returns,
-	)
-	return returns
-}
-
-
-func NewDatabasePostgresqlConfigTimescaledbOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DatabasePostgresqlConfigTimescaledbOutputReference {
+func NewDatabasePostgresqlConfigTimescaledbOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DatabasePostgresqlConfigTimescaledbOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewDatabasePostgresqlConfigTimescaledbOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewDatabasePostgresqlConfigTimescaledbOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_DatabasePostgresqlConfigTimescaledbOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-digitalocean.databasePostgresqlConfig.DatabasePostgresqlConfigTimescaledbOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewDatabasePostgresqlConfigTimescaledbOutputReference_Override(d DatabasePostgresqlConfigTimescaledbOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDatabasePostgresqlConfigTimescaledbOutputReference_Override(d DatabasePostgresqlConfigTimescaledbOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-digitalocean.databasePostgresqlConfig.DatabasePostgresqlConfigTimescaledbOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
 }
@@ -223,13 +223,24 @@ func (j *jsiiProxy_DatabasePostgresqlConfigTimescaledbOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_DatabasePostgresqlConfigTimescaledbOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DatabasePostgresqlConfigTimescaledbOutputReference)SetInternalValue(val *DatabasePostgresqlConfigTimescaledb) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabasePostgresqlConfigTimescaledbOutputReference)SetMaxBackgroundWorkers(val *float64) {
+	if err := j.validateSetMaxBackgroundWorkersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxBackgroundWorkers",
 		val,
 	)
 }
@@ -252,17 +263,6 @@ func (j *jsiiProxy_DatabasePostgresqlConfigTimescaledbOutputReference)SetTerrafo
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DatabasePostgresqlConfigTimescaledbOutputReference)SetTimescaledb(val *float64) {
-	if err := j.validateSetTimescaledbParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"timescaledb",
 		val,
 	)
 }
@@ -453,10 +453,10 @@ func (d *jsiiProxy_DatabasePostgresqlConfigTimescaledbOutputReference) Interpola
 	return returns
 }
 
-func (d *jsiiProxy_DatabasePostgresqlConfigTimescaledbOutputReference) ResetTimescaledb() {
+func (d *jsiiProxy_DatabasePostgresqlConfigTimescaledbOutputReference) ResetMaxBackgroundWorkers() {
 	_jsii_.InvokeVoid(
 		d,
-		"resetTimescaledb",
+		"resetMaxBackgroundWorkers",
 		nil, // no parameters
 	)
 }

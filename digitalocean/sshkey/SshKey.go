@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.40.0/docs/resources/ssh_key digitalocean_ssh_key}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs/resources/ssh_key digitalocean_ssh_key}.
 type SshKey interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -71,6 +71,8 @@ type SshKey interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() SshKeyTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -114,10 +116,12 @@ type SshKey interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *SshKeyTimeouts)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -366,8 +370,28 @@ func (j *jsiiProxy_SshKey) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SshKey) Timeouts() SshKeyTimeoutsOutputReference {
+	var returns SshKeyTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.40.0/docs/resources/ssh_key digitalocean_ssh_key} Resource.
+func (j *jsiiProxy_SshKey) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs/resources/ssh_key digitalocean_ssh_key} Resource.
 func NewSshKey(scope constructs.Construct, id *string, config *SshKeyConfig) SshKey {
 	_init_.Initialize()
 
@@ -385,7 +409,7 @@ func NewSshKey(scope constructs.Construct, id *string, config *SshKeyConfig) Ssh
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.40.0/docs/resources/ssh_key digitalocean_ssh_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs/resources/ssh_key digitalocean_ssh_key} Resource.
 func NewSshKey_Override(s SshKey, scope constructs.Construct, id *string, config *SshKeyConfig) {
 	_init_.Initialize()
 
@@ -850,6 +874,17 @@ func (s *jsiiProxy_SshKey) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (s *jsiiProxy_SshKey) PutTimeouts(value *SshKeyTimeouts) {
+	if err := s.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SshKey) ResetId() {
 	_jsii_.InvokeVoid(
 		s,
@@ -862,6 +897,14 @@ func (s *jsiiProxy_SshKey) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SshKey) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

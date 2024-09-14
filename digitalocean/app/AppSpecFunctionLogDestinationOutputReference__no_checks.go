@@ -55,6 +55,10 @@ func (a *jsiiProxy_AppSpecFunctionLogDestinationOutputReference) validatePutLogt
 	return nil
 }
 
+func (a *jsiiProxy_AppSpecFunctionLogDestinationOutputReference) validatePutOpenSearchParameters(value *AppSpecFunctionLogDestinationOpenSearch) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppSpecFunctionLogDestinationOutputReference) validatePutPapertrailParameters(value *AppSpecFunctionLogDestinationPapertrail) error {
 	return nil
 }

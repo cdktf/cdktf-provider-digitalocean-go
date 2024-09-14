@@ -79,7 +79,7 @@ func (d *jsiiProxy_DatabasePostgresqlConfig) validatePutPgbouncerParameters(valu
 	return nil
 }
 
-func (d *jsiiProxy_DatabasePostgresqlConfig) validatePutTimescaledbParameters(value interface{}) error {
+func (d *jsiiProxy_DatabasePostgresqlConfig) validatePutTimescaledbParameters(value *DatabasePostgresqlConfigTimescaledb) error {
 	return nil
 }
 

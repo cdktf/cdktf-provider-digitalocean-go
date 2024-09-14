@@ -39,6 +39,8 @@ type AppSpecServiceLogDestinationOutputReference interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	OpenSearch() AppSpecServiceLogDestinationOpenSearchOutputReference
+	OpenSearchInput() *AppSpecServiceLogDestinationOpenSearch
 	Papertrail() AppSpecServiceLogDestinationPapertrailOutputReference
 	PapertrailInput() *AppSpecServiceLogDestinationPapertrail
 	// Experimental.
@@ -75,9 +77,11 @@ type AppSpecServiceLogDestinationOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutDatadog(value *AppSpecServiceLogDestinationDatadog)
 	PutLogtail(value *AppSpecServiceLogDestinationLogtail)
+	PutOpenSearch(value *AppSpecServiceLogDestinationOpenSearch)
 	PutPapertrail(value *AppSpecServiceLogDestinationPapertrail)
 	ResetDatadog()
 	ResetLogtail()
+	ResetOpenSearch()
 	ResetPapertrail()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -199,6 +203,26 @@ func (j *jsiiProxy_AppSpecServiceLogDestinationOutputReference) NameInput() *str
 	_jsii_.Get(
 		j,
 		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecServiceLogDestinationOutputReference) OpenSearch() AppSpecServiceLogDestinationOpenSearchOutputReference {
+	var returns AppSpecServiceLogDestinationOpenSearchOutputReference
+	_jsii_.Get(
+		j,
+		"openSearch",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecServiceLogDestinationOutputReference) OpenSearchInput() *AppSpecServiceLogDestinationOpenSearch {
+	var returns *AppSpecServiceLogDestinationOpenSearch
+	_jsii_.Get(
+		j,
+		"openSearchInput",
 		&returns,
 	)
 	return returns
@@ -546,6 +570,17 @@ func (a *jsiiProxy_AppSpecServiceLogDestinationOutputReference) PutLogtail(value
 	)
 }
 
+func (a *jsiiProxy_AppSpecServiceLogDestinationOutputReference) PutOpenSearch(value *AppSpecServiceLogDestinationOpenSearch) {
+	if err := a.validatePutOpenSearchParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putOpenSearch",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AppSpecServiceLogDestinationOutputReference) PutPapertrail(value *AppSpecServiceLogDestinationPapertrail) {
 	if err := a.validatePutPapertrailParameters(value); err != nil {
 		panic(err)
@@ -569,6 +604,14 @@ func (a *jsiiProxy_AppSpecServiceLogDestinationOutputReference) ResetLogtail() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetLogtail",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppSpecServiceLogDestinationOutputReference) ResetOpenSearch() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetOpenSearch",
 		nil, // no parameters
 	)
 }

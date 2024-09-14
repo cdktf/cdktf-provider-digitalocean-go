@@ -5,7 +5,7 @@ package spacesbucket
 
 
 type SpacesBucketVersioning struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.40.0/docs/resources/spaces_bucket#enabled SpacesBucket#enabled}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs/resources/spaces_bucket#enabled SpacesBucket#enabled}.
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
 }
 

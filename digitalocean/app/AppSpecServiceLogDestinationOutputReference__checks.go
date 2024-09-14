@@ -115,6 +115,17 @@ func (a *jsiiProxy_AppSpecServiceLogDestinationOutputReference) validatePutLogta
 	return nil
 }
 
+func (a *jsiiProxy_AppSpecServiceLogDestinationOutputReference) validatePutOpenSearchParameters(value *AppSpecServiceLogDestinationOpenSearch) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (a *jsiiProxy_AppSpecServiceLogDestinationOutputReference) validatePutPapertrailParameters(value *AppSpecServiceLogDestinationPapertrail) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

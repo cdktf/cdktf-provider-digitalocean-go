@@ -1,17 +1,17 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
-package databasepostgresqlconfig
+package datadigitaloceanapp
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/jsii"
 
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/databasepostgresqlconfig/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanapp/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-type DatabasePostgresqlConfigTimescaledbList interface {
+type DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList interface {
 	cdktf.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
@@ -20,8 +20,6 @@ type DatabasePostgresqlConfigTimescaledbList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +36,7 @@ type DatabasePostgresqlConfigTimescaledbList interface {
 	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
-	Get(index *float64) DatabasePostgresqlConfigTimescaledbOutputReference
+	Get(index *float64) DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -49,12 +47,12 @@ type DatabasePostgresqlConfigTimescaledbList interface {
 	ToString() *string
 }
 
-// The jsii proxy struct for DatabasePostgresqlConfigTimescaledbList
-type jsiiProxy_DatabasePostgresqlConfigTimescaledbList struct {
+// The jsii proxy struct for DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList
+type jsiiProxy_DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList struct {
 	internal.Type__cdktfComplexList
 }
 
-func (j *jsiiProxy_DatabasePostgresqlConfigTimescaledbList) CreationStack() *[]*string {
+func (j *jsiiProxy_DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -64,7 +62,7 @@ func (j *jsiiProxy_DatabasePostgresqlConfigTimescaledbList) CreationStack() *[]*
 	return returns
 }
 
-func (j *jsiiProxy_DatabasePostgresqlConfigTimescaledbList) Fqn() *string {
+func (j *jsiiProxy_DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -74,17 +72,7 @@ func (j *jsiiProxy_DatabasePostgresqlConfigTimescaledbList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DatabasePostgresqlConfigTimescaledbList) InternalValue() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"internalValue",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DatabasePostgresqlConfigTimescaledbList) TerraformAttribute() *string {
+func (j *jsiiProxy_DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -94,7 +82,7 @@ func (j *jsiiProxy_DatabasePostgresqlConfigTimescaledbList) TerraformAttribute()
 	return returns
 }
 
-func (j *jsiiProxy_DatabasePostgresqlConfigTimescaledbList) TerraformResource() cdktf.IInterpolatingParent {
+func (j *jsiiProxy_DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList) TerraformResource() cdktf.IInterpolatingParent {
 	var returns cdktf.IInterpolatingParent
 	_jsii_.Get(
 		j,
@@ -104,7 +92,7 @@ func (j *jsiiProxy_DatabasePostgresqlConfigTimescaledbList) TerraformResource() 
 	return returns
 }
 
-func (j *jsiiProxy_DatabasePostgresqlConfigTimescaledbList) WrapsSet() *bool {
+func (j *jsiiProxy_DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList) WrapsSet() *bool {
 	var returns *bool
 	_jsii_.Get(
 		j,
@@ -115,16 +103,16 @@ func (j *jsiiProxy_DatabasePostgresqlConfigTimescaledbList) WrapsSet() *bool {
 }
 
 
-func NewDatabasePostgresqlConfigTimescaledbList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabasePostgresqlConfigTimescaledbList {
+func NewDataDigitaloceanAppSpecServiceLogDestinationOpenSearchList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList {
 	_init_.Initialize()
 
-	if err := validateNewDatabasePostgresqlConfigTimescaledbListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+	if err := validateNewDataDigitaloceanAppSpecServiceLogDestinationOpenSearchListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_DatabasePostgresqlConfigTimescaledbList{}
+	j := jsiiProxy_DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-digitalocean.databasePostgresqlConfig.DatabasePostgresqlConfigTimescaledbList",
+		"@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -132,28 +120,17 @@ func NewDatabasePostgresqlConfigTimescaledbList(terraformResource cdktf.IInterpo
 	return &j
 }
 
-func NewDatabasePostgresqlConfigTimescaledbList_Override(d DatabasePostgresqlConfigTimescaledbList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewDataDigitaloceanAppSpecServiceLogDestinationOpenSearchList_Override(d DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-digitalocean.databasePostgresqlConfig.DatabasePostgresqlConfigTimescaledbList",
+		"@cdktf/provider-digitalocean.dataDigitaloceanApp.DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DatabasePostgresqlConfigTimescaledbList)SetInternalValue(val interface{}) {
-	if err := j.validateSetInternalValueParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DatabasePostgresqlConfigTimescaledbList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -164,7 +141,7 @@ func (j *jsiiProxy_DatabasePostgresqlConfigTimescaledbList)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_DatabasePostgresqlConfigTimescaledbList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList)SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -175,7 +152,7 @@ func (j *jsiiProxy_DatabasePostgresqlConfigTimescaledbList)SetTerraformResource(
 	)
 }
 
-func (j *jsiiProxy_DatabasePostgresqlConfigTimescaledbList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList)SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -186,7 +163,7 @@ func (j *jsiiProxy_DatabasePostgresqlConfigTimescaledbList)SetWrapsSet(val *bool
 	)
 }
 
-func (d *jsiiProxy_DatabasePostgresqlConfigTimescaledbList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (d *jsiiProxy_DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
 	if err := d.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
@@ -202,7 +179,7 @@ func (d *jsiiProxy_DatabasePostgresqlConfigTimescaledbList) AllWithMapKey(mapKey
 	return returns
 }
 
-func (d *jsiiProxy_DatabasePostgresqlConfigTimescaledbList) ComputeFqn() *string {
+func (d *jsiiProxy_DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList) ComputeFqn() *string {
 	var returns *string
 
 	_jsii_.Invoke(
@@ -215,11 +192,11 @@ func (d *jsiiProxy_DatabasePostgresqlConfigTimescaledbList) ComputeFqn() *string
 	return returns
 }
 
-func (d *jsiiProxy_DatabasePostgresqlConfigTimescaledbList) Get(index *float64) DatabasePostgresqlConfigTimescaledbOutputReference {
+func (d *jsiiProxy_DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList) Get(index *float64) DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference {
 	if err := d.validateGetParameters(index); err != nil {
 		panic(err)
 	}
-	var returns DatabasePostgresqlConfigTimescaledbOutputReference
+	var returns DataDigitaloceanAppSpecServiceLogDestinationOpenSearchOutputReference
 
 	_jsii_.Invoke(
 		d,
@@ -231,7 +208,7 @@ func (d *jsiiProxy_DatabasePostgresqlConfigTimescaledbList) Get(index *float64) 
 	return returns
 }
 
-func (d *jsiiProxy_DatabasePostgresqlConfigTimescaledbList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList) Resolve(_context cdktf.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
@@ -247,7 +224,7 @@ func (d *jsiiProxy_DatabasePostgresqlConfigTimescaledbList) Resolve(_context cdk
 	return returns
 }
 
-func (d *jsiiProxy_DatabasePostgresqlConfigTimescaledbList) ToString() *string {
+func (d *jsiiProxy_DataDigitaloceanAppSpecServiceLogDestinationOpenSearchList) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(

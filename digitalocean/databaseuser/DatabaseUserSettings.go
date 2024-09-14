@@ -7,7 +7,7 @@ package databaseuser
 type DatabaseUserSettings struct {
 	// acl block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.40.0/docs/resources/database_user#acl DatabaseUser#acl}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs/resources/database_user#acl DatabaseUser#acl}
 	Acl interface{} `field:"optional" json:"acl" yaml:"acl"`
 }
 
