@@ -5,7 +5,7 @@ package sshkey
 
 
 type SshKeyTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.41.0/docs/resources/ssh_key#create SshKey#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/ssh_key#create SshKey#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
 }
 

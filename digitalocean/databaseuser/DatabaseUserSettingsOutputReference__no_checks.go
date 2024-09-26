@@ -51,6 +51,10 @@ func (d *jsiiProxy_DatabaseUserSettingsOutputReference) validatePutAclParameters
 	return nil
 }
 
+func (d *jsiiProxy_DatabaseUserSettingsOutputReference) validatePutOpensearchAclParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatabaseUserSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

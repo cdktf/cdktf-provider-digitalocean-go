@@ -34,6 +34,8 @@ type DatabaseUserSettingsOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	OpensearchAcl() DatabaseUserSettingsOpensearchAclList
+	OpensearchAclInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,7 +69,9 @@ type DatabaseUserSettingsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAcl(value interface{})
+	PutOpensearchAcl(value interface{})
 	ResetAcl()
+	ResetOpensearchAcl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -148,6 +152,26 @@ func (j *jsiiProxy_DatabaseUserSettingsOutputReference) InternalValue() interfac
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseUserSettingsOutputReference) OpensearchAcl() DatabaseUserSettingsOpensearchAclList {
+	var returns DatabaseUserSettingsOpensearchAclList
+	_jsii_.Get(
+		j,
+		"opensearchAcl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseUserSettingsOutputReference) OpensearchAclInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"opensearchAclInput",
 		&returns,
 	)
 	return returns
@@ -453,10 +477,29 @@ func (d *jsiiProxy_DatabaseUserSettingsOutputReference) PutAcl(value interface{}
 	)
 }
 
+func (d *jsiiProxy_DatabaseUserSettingsOutputReference) PutOpensearchAcl(value interface{}) {
+	if err := d.validatePutOpensearchAclParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putOpensearchAcl",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DatabaseUserSettingsOutputReference) ResetAcl() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetAcl",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseUserSettingsOutputReference) ResetOpensearchAcl() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOpensearchAcl",
 		nil, // no parameters
 	)
 }
