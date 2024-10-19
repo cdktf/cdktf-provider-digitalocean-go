@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/kubernetes_cluster digitalocean_kubernetes_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/kubernetes_cluster digitalocean_kubernetes_cluster}.
 type KubernetesCluster interface {
 	cdktf.TerraformResource
 	AutoUpgrade() interface{}
@@ -21,6 +21,8 @@ type KubernetesCluster interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ClusterSubnet() *string
+	SetClusterSubnet(val *string)
+	ClusterSubnetInput() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -86,6 +88,8 @@ type KubernetesCluster interface {
 	SetRegistryIntegration(val interface{})
 	RegistryIntegrationInput() interface{}
 	ServiceSubnet() *string
+	SetServiceSubnet(val *string)
+	ServiceSubnetInput() *string
 	Status() *string
 	SurgeUpgrade() interface{}
 	SetSurgeUpgrade(val interface{})
@@ -156,6 +160,7 @@ type KubernetesCluster interface {
 	PutNodePool(value *KubernetesClusterNodePool)
 	PutTimeouts(value *KubernetesClusterTimeouts)
 	ResetAutoUpgrade()
+	ResetClusterSubnet()
 	ResetDestroyAllAssociatedResources()
 	ResetHa()
 	ResetId()
@@ -164,6 +169,7 @@ type KubernetesCluster interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRegistryIntegration()
+	ResetServiceSubnet()
 	ResetSurgeUpgrade()
 	ResetTags()
 	ResetTimeouts()
@@ -221,6 +227,16 @@ func (j *jsiiProxy_KubernetesCluster) ClusterSubnet() *string {
 	_jsii_.Get(
 		j,
 		"clusterSubnet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesCluster) ClusterSubnetInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterSubnetInput",
 		&returns,
 	)
 	return returns
@@ -556,6 +572,16 @@ func (j *jsiiProxy_KubernetesCluster) ServiceSubnet() *string {
 	return returns
 }
 
+func (j *jsiiProxy_KubernetesCluster) ServiceSubnetInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceSubnetInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KubernetesCluster) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -717,7 +743,7 @@ func (j *jsiiProxy_KubernetesCluster) VpcUuidInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/kubernetes_cluster digitalocean_kubernetes_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/kubernetes_cluster digitalocean_kubernetes_cluster} Resource.
 func NewKubernetesCluster(scope constructs.Construct, id *string, config *KubernetesClusterConfig) KubernetesCluster {
 	_init_.Initialize()
 
@@ -735,7 +761,7 @@ func NewKubernetesCluster(scope constructs.Construct, id *string, config *Kubern
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/kubernetes_cluster digitalocean_kubernetes_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/kubernetes_cluster digitalocean_kubernetes_cluster} Resource.
 func NewKubernetesCluster_Override(k KubernetesCluster, scope constructs.Construct, id *string, config *KubernetesClusterConfig) {
 	_init_.Initialize()
 
@@ -753,6 +779,17 @@ func (j *jsiiProxy_KubernetesCluster)SetAutoUpgrade(val interface{}) {
 	_jsii_.Set(
 		j,
 		"autoUpgrade",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KubernetesCluster)SetClusterSubnet(val *string) {
+	if err := j.validateSetClusterSubnetParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clusterSubnet",
 		val,
 	)
 }
@@ -887,6 +924,17 @@ func (j *jsiiProxy_KubernetesCluster)SetRegistryIntegration(val interface{}) {
 	_jsii_.Set(
 		j,
 		"registryIntegration",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KubernetesCluster)SetServiceSubnet(val *string) {
+	if err := j.validateSetServiceSubnetParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serviceSubnet",
 		val,
 	)
 }
@@ -1329,6 +1377,14 @@ func (k *jsiiProxy_KubernetesCluster) ResetAutoUpgrade() {
 	)
 }
 
+func (k *jsiiProxy_KubernetesCluster) ResetClusterSubnet() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetClusterSubnet",
+		nil, // no parameters
+	)
+}
+
 func (k *jsiiProxy_KubernetesCluster) ResetDestroyAllAssociatedResources() {
 	_jsii_.InvokeVoid(
 		k,
@@ -1373,6 +1429,14 @@ func (k *jsiiProxy_KubernetesCluster) ResetRegistryIntegration() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetRegistryIntegration",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesCluster) ResetServiceSubnet() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetServiceSubnet",
 		nil, // no parameters
 	)
 }

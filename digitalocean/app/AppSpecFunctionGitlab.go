@@ -7,15 +7,15 @@ package app
 type AppSpecFunctionGitlab struct {
 	// The name of the branch to use.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/app#branch App#branch}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/app#branch App#branch}
 	Branch *string `field:"optional" json:"branch" yaml:"branch"`
 	// Whether to automatically deploy new commits made to the repo.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/app#deploy_on_push App#deploy_on_push}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/app#deploy_on_push App#deploy_on_push}
 	DeployOnPush interface{} `field:"optional" json:"deployOnPush" yaml:"deployOnPush"`
 	// The name of the repo in the format `owner/repo`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/app#repo App#repo}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/app#repo App#repo}
 	Repo *string `field:"optional" json:"repo" yaml:"repo"`
 }
 

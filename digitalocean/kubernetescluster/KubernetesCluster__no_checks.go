@@ -107,6 +107,10 @@ func (j *jsiiProxy_KubernetesCluster) validateSetAutoUpgradeParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesCluster) validateSetClusterSubnetParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesCluster) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -144,6 +148,10 @@ func (j *jsiiProxy_KubernetesCluster) validateSetRegionParameters(val *string) e
 }
 
 func (j *jsiiProxy_KubernetesCluster) validateSetRegistryIntegrationParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_KubernetesCluster) validateSetServiceSubnetParameters(val *string) error {
 	return nil
 }
 

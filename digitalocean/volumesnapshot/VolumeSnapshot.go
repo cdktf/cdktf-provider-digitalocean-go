@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/volume_snapshot digitalocean_volume_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/volume_snapshot digitalocean_volume_snapshot}.
 type VolumeSnapshot interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -424,7 +424,7 @@ func (j *jsiiProxy_VolumeSnapshot) VolumeIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/volume_snapshot digitalocean_volume_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/volume_snapshot digitalocean_volume_snapshot} Resource.
 func NewVolumeSnapshot(scope constructs.Construct, id *string, config *VolumeSnapshotConfig) VolumeSnapshot {
 	_init_.Initialize()
 
@@ -442,7 +442,7 @@ func NewVolumeSnapshot(scope constructs.Construct, id *string, config *VolumeSna
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/volume_snapshot digitalocean_volume_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/volume_snapshot digitalocean_volume_snapshot} Resource.
 func NewVolumeSnapshot_Override(v VolumeSnapshot, scope constructs.Construct, id *string, config *VolumeSnapshotConfig) {
 	_init_.Initialize()
 

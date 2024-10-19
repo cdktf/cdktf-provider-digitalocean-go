@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/database_mysql_config digitalocean_database_mysql_config}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/database_mysql_config digitalocean_database_mysql_config}.
 type DatabaseMysqlConfig interface {
 	cdktf.TerraformResource
 	BackupHour() *float64
@@ -981,7 +981,7 @@ func (j *jsiiProxy_DatabaseMysqlConfig) WaitTimeoutInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/database_mysql_config digitalocean_database_mysql_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/database_mysql_config digitalocean_database_mysql_config} Resource.
 func NewDatabaseMysqlConfig(scope constructs.Construct, id *string, config *DatabaseMysqlConfigConfig) DatabaseMysqlConfig {
 	_init_.Initialize()
 
@@ -999,7 +999,7 @@ func NewDatabaseMysqlConfig(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/database_mysql_config digitalocean_database_mysql_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/database_mysql_config digitalocean_database_mysql_config} Resource.
 func NewDatabaseMysqlConfig_Override(d DatabaseMysqlConfig, scope constructs.Construct, id *string, config *DatabaseMysqlConfigConfig) {
 	_init_.Initialize()
 

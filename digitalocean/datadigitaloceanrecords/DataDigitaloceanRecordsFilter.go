@@ -5,13 +5,13 @@ package datadigitaloceanrecords
 
 
 type DataDigitaloceanRecordsFilter struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/data-sources/records#key DataDigitaloceanRecords#key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/data-sources/records#key DataDigitaloceanRecords#key}.
 	Key *string `field:"required" json:"key" yaml:"key"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/data-sources/records#values DataDigitaloceanRecords#values}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/data-sources/records#values DataDigitaloceanRecords#values}.
 	Values *[]*string `field:"required" json:"values" yaml:"values"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/data-sources/records#all DataDigitaloceanRecords#all}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/data-sources/records#all DataDigitaloceanRecords#all}.
 	All interface{} `field:"optional" json:"all" yaml:"all"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/data-sources/records#match_by DataDigitaloceanRecords#match_by}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/data-sources/records#match_by DataDigitaloceanRecords#match_by}.
 	MatchBy *string `field:"optional" json:"matchBy" yaml:"matchBy"`
 }
 

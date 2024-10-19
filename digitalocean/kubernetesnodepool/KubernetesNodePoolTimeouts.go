@@ -5,9 +5,9 @@ package kubernetesnodepool
 
 
 type KubernetesNodePoolTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/kubernetes_node_pool#create KubernetesNodePool#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/kubernetes_node_pool#create KubernetesNodePool#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/kubernetes_node_pool#delete KubernetesNodePool#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/kubernetes_node_pool#delete KubernetesNodePool#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
 }
 

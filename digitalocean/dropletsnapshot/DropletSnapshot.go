@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/droplet_snapshot digitalocean_droplet_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/droplet_snapshot digitalocean_droplet_snapshot}.
 type DropletSnapshot interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -400,7 +400,7 @@ func (j *jsiiProxy_DropletSnapshot) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/droplet_snapshot digitalocean_droplet_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/droplet_snapshot digitalocean_droplet_snapshot} Resource.
 func NewDropletSnapshot(scope constructs.Construct, id *string, config *DropletSnapshotConfig) DropletSnapshot {
 	_init_.Initialize()
 
@@ -418,7 +418,7 @@ func NewDropletSnapshot(scope constructs.Construct, id *string, config *DropletS
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/droplet_snapshot digitalocean_droplet_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/droplet_snapshot digitalocean_droplet_snapshot} Resource.
 func NewDropletSnapshot_Override(d DropletSnapshot, scope constructs.Construct, id *string, config *DropletSnapshotConfig) {
 	_init_.Initialize()
 

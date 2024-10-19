@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/data-sources/droplets digitalocean_droplets}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/data-sources/droplets digitalocean_droplets}.
 type DataDigitaloceanDroplets interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -324,7 +324,7 @@ func (j *jsiiProxy_DataDigitaloceanDroplets) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/data-sources/droplets digitalocean_droplets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/data-sources/droplets digitalocean_droplets} Data Source.
 func NewDataDigitaloceanDroplets(scope constructs.Construct, id *string, config *DataDigitaloceanDropletsConfig) DataDigitaloceanDroplets {
 	_init_.Initialize()
 
@@ -342,7 +342,7 @@ func NewDataDigitaloceanDroplets(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/data-sources/droplets digitalocean_droplets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/data-sources/droplets digitalocean_droplets} Data Source.
 func NewDataDigitaloceanDroplets_Override(d DataDigitaloceanDroplets, scope constructs.Construct, id *string, config *DataDigitaloceanDropletsConfig) {
 	_init_.Initialize()
 

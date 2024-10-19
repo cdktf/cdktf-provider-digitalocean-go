@@ -7,7 +7,7 @@ package app
 type AppSpecIngress struct {
 	// rule block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.42.0/docs/resources/app#rule App#rule}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/app#rule App#rule}
 	Rule interface{} `field:"optional" json:"rule" yaml:"rule"`
 }
 
