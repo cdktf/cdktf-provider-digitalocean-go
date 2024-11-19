@@ -75,6 +75,10 @@ func (d *jsiiProxy_Droplet) validateOverrideLogicalIdParameters(newLogicalId *st
 	return nil
 }
 
+func (d *jsiiProxy_Droplet) validatePutBackupPolicyParameters(value *DropletBackupPolicy) error {
+	return nil
+}
+
 func (d *jsiiProxy_Droplet) validatePutTimeoutsParameters(value *DropletTimeouts) error {
 	return nil
 }

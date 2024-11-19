@@ -12,9 +12,11 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/droplet digitalocean_droplet}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/droplet digitalocean_droplet}.
 type Droplet interface {
 	cdktf.TerraformResource
+	BackupPolicy() DropletBackupPolicyOutputReference
+	BackupPolicyInput() *DropletBackupPolicy
 	Backups() interface{}
 	SetBackups(val interface{})
 	BackupsInput() interface{}
@@ -171,7 +173,9 @@ type Droplet interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutBackupPolicy(value *DropletBackupPolicy)
 	PutTimeouts(value *DropletTimeouts)
+	ResetBackupPolicy()
 	ResetBackups()
 	ResetDropletAgent()
 	ResetGracefulShutdown()
@@ -207,6 +211,26 @@ type Droplet interface {
 // The jsii proxy struct for Droplet
 type jsiiProxy_Droplet struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_Droplet) BackupPolicy() DropletBackupPolicyOutputReference {
+	var returns DropletBackupPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"backupPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Droplet) BackupPolicyInput() *DropletBackupPolicy {
+	var returns *DropletBackupPolicy
+	_jsii_.Get(
+		j,
+		"backupPolicyInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_Droplet) Backups() interface{} {
@@ -860,7 +884,7 @@ func (j *jsiiProxy_Droplet) VpcUuidInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/droplet digitalocean_droplet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/droplet digitalocean_droplet} Resource.
 func NewDroplet(scope constructs.Construct, id *string, config *DropletConfig) Droplet {
 	_init_.Initialize()
 
@@ -878,7 +902,7 @@ func NewDroplet(scope constructs.Construct, id *string, config *DropletConfig) D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/resources/droplet digitalocean_droplet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/droplet digitalocean_droplet} Resource.
 func NewDroplet_Override(d Droplet, scope constructs.Construct, id *string, config *DropletConfig) {
 	_init_.Initialize()
 
@@ -1508,6 +1532,17 @@ func (d *jsiiProxy_Droplet) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (d *jsiiProxy_Droplet) PutBackupPolicy(value *DropletBackupPolicy) {
+	if err := d.validatePutBackupPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putBackupPolicy",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_Droplet) PutTimeouts(value *DropletTimeouts) {
 	if err := d.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1516,6 +1551,14 @@ func (d *jsiiProxy_Droplet) PutTimeouts(value *DropletTimeouts) {
 		d,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_Droplet) ResetBackupPolicy() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetBackupPolicy",
+		nil, // no parameters
 	)
 }
 

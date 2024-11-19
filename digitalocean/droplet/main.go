@@ -16,6 +16,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "backupPolicy", GoGetter: "BackupPolicy"},
+			_jsii_.MemberProperty{JsiiProperty: "backupPolicyInput", GoGetter: "BackupPolicyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "backups", GoGetter: "Backups"},
 			_jsii_.MemberProperty{JsiiProperty: "backupsInput", GoGetter: "BackupsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -72,10 +74,12 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "privateNetworkingInput", GoGetter: "PrivateNetworkingInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
+			_jsii_.MemberMethod{JsiiMethod: "putBackupPolicy", GoMethod: "PutBackupPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "region", GoGetter: "Region"},
 			_jsii_.MemberProperty{JsiiProperty: "regionInput", GoGetter: "RegionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBackupPolicy", GoMethod: "ResetBackupPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBackups", GoMethod: "ResetBackups"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDropletAgent", GoMethod: "ResetDropletAgent"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGracefulShutdown", GoMethod: "ResetGracefulShutdown"},
@@ -125,6 +129,51 @@ func init() {
 		func() interface{} {
 			j := jsiiProxy_Droplet{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-digitalocean.droplet.DropletBackupPolicy",
+		reflect.TypeOf((*DropletBackupPolicy)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-digitalocean.droplet.DropletBackupPolicyOutputReference",
+		reflect.TypeOf((*DropletBackupPolicyOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "hour", GoGetter: "Hour"},
+			_jsii_.MemberProperty{JsiiProperty: "hourInput", GoGetter: "HourInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "plan", GoGetter: "Plan"},
+			_jsii_.MemberProperty{JsiiProperty: "planInput", GoGetter: "PlanInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHour", GoMethod: "ResetHour"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPlan", GoMethod: "ResetPlan"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWeekday", GoMethod: "ResetWeekday"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "weekday", GoGetter: "Weekday"},
+			_jsii_.MemberProperty{JsiiProperty: "weekdayInput", GoGetter: "WeekdayInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DropletBackupPolicyOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
 	)

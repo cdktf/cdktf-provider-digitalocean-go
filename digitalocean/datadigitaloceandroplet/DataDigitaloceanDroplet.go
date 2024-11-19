@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/data-sources/droplet digitalocean_droplet}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/data-sources/droplet digitalocean_droplet}.
 type DataDigitaloceanDroplet interface {
 	cdktf.TerraformDataSource
 	Backups() cdktf.IResolvable
@@ -38,6 +38,9 @@ type DataDigitaloceanDroplet interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Gpu() interface{}
+	SetGpu(val interface{})
+	GpuInput() interface{}
 	Id() *float64
 	SetId(val *float64)
 	IdInput() *float64
@@ -110,6 +113,7 @@ type DataDigitaloceanDroplet interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetGpu()
 	ResetId()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -230,6 +234,26 @@ func (j *jsiiProxy_DataDigitaloceanDroplet) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDigitaloceanDroplet) Gpu() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"gpu",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDigitaloceanDroplet) GpuInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"gpuInput",
 		&returns,
 	)
 	return returns
@@ -566,7 +590,7 @@ func (j *jsiiProxy_DataDigitaloceanDroplet) VpcUuid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/data-sources/droplet digitalocean_droplet} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/data-sources/droplet digitalocean_droplet} Data Source.
 func NewDataDigitaloceanDroplet(scope constructs.Construct, id *string, config *DataDigitaloceanDropletConfig) DataDigitaloceanDroplet {
 	_init_.Initialize()
 
@@ -584,7 +608,7 @@ func NewDataDigitaloceanDroplet(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/data-sources/droplet digitalocean_droplet} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/data-sources/droplet digitalocean_droplet} Data Source.
 func NewDataDigitaloceanDroplet_Override(d DataDigitaloceanDroplet, scope constructs.Construct, id *string, config *DataDigitaloceanDropletConfig) {
 	_init_.Initialize()
 
@@ -618,6 +642,17 @@ func (j *jsiiProxy_DataDigitaloceanDroplet)SetForEach(val cdktf.ITerraformIterat
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDigitaloceanDroplet)SetGpu(val interface{}) {
+	if err := j.validateSetGpuParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"gpu",
 		val,
 	)
 }
@@ -956,6 +991,14 @@ func (d *jsiiProxy_DataDigitaloceanDroplet) OverrideLogicalId(newLogicalId *stri
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataDigitaloceanDroplet) ResetGpu() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetGpu",
+		nil, // no parameters
 	)
 }
 

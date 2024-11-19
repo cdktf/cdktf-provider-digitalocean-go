@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/data-sources/droplets digitalocean_droplets}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/data-sources/droplets digitalocean_droplets}.
 type DataDigitaloceanDroplets interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -38,6 +38,9 @@ type DataDigitaloceanDroplets interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Gpus() interface{}
+	SetGpus(val interface{})
+	GpusInput() interface{}
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -89,6 +92,7 @@ type DataDigitaloceanDroplets interface {
 	PutFilter(value interface{})
 	PutSort(value interface{})
 	ResetFilter()
+	ResetGpus()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -213,6 +217,26 @@ func (j *jsiiProxy_DataDigitaloceanDroplets) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataDigitaloceanDroplets) Gpus() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"gpus",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDigitaloceanDroplets) GpusInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"gpusInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDigitaloceanDroplets) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -324,7 +348,7 @@ func (j *jsiiProxy_DataDigitaloceanDroplets) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/data-sources/droplets digitalocean_droplets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/data-sources/droplets digitalocean_droplets} Data Source.
 func NewDataDigitaloceanDroplets(scope constructs.Construct, id *string, config *DataDigitaloceanDropletsConfig) DataDigitaloceanDroplets {
 	_init_.Initialize()
 
@@ -342,7 +366,7 @@ func NewDataDigitaloceanDroplets(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.43.0/docs/data-sources/droplets digitalocean_droplets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/data-sources/droplets digitalocean_droplets} Data Source.
 func NewDataDigitaloceanDroplets_Override(d DataDigitaloceanDroplets, scope constructs.Construct, id *string, config *DataDigitaloceanDropletsConfig) {
 	_init_.Initialize()
 
@@ -376,6 +400,17 @@ func (j *jsiiProxy_DataDigitaloceanDroplets)SetForEach(val cdktf.ITerraformItera
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDigitaloceanDroplets)SetGpus(val interface{}) {
+	if err := j.validateSetGpusParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"gpus",
 		val,
 	)
 }
@@ -721,6 +756,14 @@ func (d *jsiiProxy_DataDigitaloceanDroplets) ResetFilter() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetFilter",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDigitaloceanDroplets) ResetGpus() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetGpus",
 		nil, // no parameters
 	)
 }

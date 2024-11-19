@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataDigitaloceanDroplets) validateSetCountParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_DataDigitaloceanDroplets) validateSetGpusParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDigitaloceanDroplets) validateSetIdParameters(val *string) error {
 	return nil
 }
