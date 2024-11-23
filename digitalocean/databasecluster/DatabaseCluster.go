@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/database_cluster digitalocean_database_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/resources/database_cluster digitalocean_database_cluster}.
 type DatabaseCluster interface {
 	cdktf.TerraformResource
 	BackupRestore() DatabaseClusterBackupRestoreOutputReference
@@ -830,7 +830,7 @@ func (j *jsiiProxy_DatabaseCluster) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/database_cluster digitalocean_database_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/resources/database_cluster digitalocean_database_cluster} Resource.
 func NewDatabaseCluster(scope constructs.Construct, id *string, config *DatabaseClusterConfig) DatabaseCluster {
 	_init_.Initialize()
 
@@ -848,7 +848,7 @@ func NewDatabaseCluster(scope constructs.Construct, id *string, config *Database
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.0/docs/resources/database_cluster digitalocean_database_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/resources/database_cluster digitalocean_database_cluster} Resource.
 func NewDatabaseCluster_Override(d DatabaseCluster, scope constructs.Construct, id *string, config *DatabaseClusterConfig) {
 	_init_.Initialize()
 
