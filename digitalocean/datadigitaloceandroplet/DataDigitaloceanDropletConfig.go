@@ -22,22 +22,22 @@ type DataDigitaloceanDropletConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/data-sources/droplet#gpu DataDigitaloceanDroplet#gpu}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.45.0/docs/data-sources/droplet#gpu DataDigitaloceanDroplet#gpu}.
 	Gpu interface{} `field:"optional" json:"gpu" yaml:"gpu"`
 	// id of the Droplet.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/data-sources/droplet#id DataDigitaloceanDroplet#id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.45.0/docs/data-sources/droplet#id DataDigitaloceanDroplet#id}
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *float64 `field:"optional" json:"id" yaml:"id"`
 	// name of the Droplet.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/data-sources/droplet#name DataDigitaloceanDroplet#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.45.0/docs/data-sources/droplet#name DataDigitaloceanDroplet#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// unique tag of the Droplet.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/data-sources/droplet#tag DataDigitaloceanDroplet#tag}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.45.0/docs/data-sources/droplet#tag DataDigitaloceanDroplet#tag}
 	Tag *string `field:"optional" json:"tag" yaml:"tag"`
 }
 

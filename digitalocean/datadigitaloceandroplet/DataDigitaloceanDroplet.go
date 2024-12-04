@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/data-sources/droplet digitalocean_droplet}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.45.0/docs/data-sources/droplet digitalocean_droplet}.
 type DataDigitaloceanDroplet interface {
 	cdktf.TerraformDataSource
 	Backups() cdktf.IResolvable
@@ -590,7 +590,7 @@ func (j *jsiiProxy_DataDigitaloceanDroplet) VpcUuid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/data-sources/droplet digitalocean_droplet} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.45.0/docs/data-sources/droplet digitalocean_droplet} Data Source.
 func NewDataDigitaloceanDroplet(scope constructs.Construct, id *string, config *DataDigitaloceanDropletConfig) DataDigitaloceanDroplet {
 	_init_.Initialize()
 
@@ -608,7 +608,7 @@ func NewDataDigitaloceanDroplet(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.44.1/docs/data-sources/droplet digitalocean_droplet} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.45.0/docs/data-sources/droplet digitalocean_droplet} Data Source.
 func NewDataDigitaloceanDroplet_Override(d DataDigitaloceanDroplet, scope constructs.Construct, id *string, config *DataDigitaloceanDropletConfig) {
 	_init_.Initialize()
 
