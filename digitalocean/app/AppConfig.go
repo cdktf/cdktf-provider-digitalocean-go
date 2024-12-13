@@ -24,22 +24,22 @@ type AppConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// dedicated_ips block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.45.0/docs/resources/app#dedicated_ips App#dedicated_ips}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.0/docs/resources/app#dedicated_ips App#dedicated_ips}
 	DedicatedIps interface{} `field:"optional" json:"dedicatedIps" yaml:"dedicatedIps"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.45.0/docs/resources/app#id App#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.0/docs/resources/app#id App#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.45.0/docs/resources/app#project_id App#project_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.0/docs/resources/app#project_id App#project_id}.
 	ProjectId *string `field:"optional" json:"projectId" yaml:"projectId"`
 	// spec block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.45.0/docs/resources/app#spec App#spec}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.0/docs/resources/app#spec App#spec}
 	Spec *AppSpec `field:"optional" json:"spec" yaml:"spec"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.45.0/docs/resources/app#timeouts App#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.0/docs/resources/app#timeouts App#timeouts}
 	Timeouts *AppTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

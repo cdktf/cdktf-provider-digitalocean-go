@@ -22,11 +22,11 @@ type FloatingIpAssignmentConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.45.0/docs/resources/floating_ip_assignment#droplet_id FloatingIpAssignment#droplet_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.0/docs/resources/floating_ip_assignment#droplet_id FloatingIpAssignment#droplet_id}.
 	DropletId *float64 `field:"required" json:"dropletId" yaml:"dropletId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.45.0/docs/resources/floating_ip_assignment#ip_address FloatingIpAssignment#ip_address}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.0/docs/resources/floating_ip_assignment#ip_address FloatingIpAssignment#ip_address}.
 	IpAddress *string `field:"required" json:"ipAddress" yaml:"ipAddress"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.45.0/docs/resources/floating_ip_assignment#id FloatingIpAssignment#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.0/docs/resources/floating_ip_assignment#id FloatingIpAssignment#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
