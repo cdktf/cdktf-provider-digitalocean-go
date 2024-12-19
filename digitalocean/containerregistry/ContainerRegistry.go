@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.0/docs/resources/container_registry digitalocean_container_registry}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/container_registry digitalocean_container_registry}.
 type ContainerRegistry interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -424,7 +424,7 @@ func (j *jsiiProxy_ContainerRegistry) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.0/docs/resources/container_registry digitalocean_container_registry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/container_registry digitalocean_container_registry} Resource.
 func NewContainerRegistry(scope constructs.Construct, id *string, config *ContainerRegistryConfig) ContainerRegistry {
 	_init_.Initialize()
 
@@ -442,7 +442,7 @@ func NewContainerRegistry(scope constructs.Construct, id *string, config *Contai
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.0/docs/resources/container_registry digitalocean_container_registry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/container_registry digitalocean_container_registry} Resource.
 func NewContainerRegistry_Override(c ContainerRegistry, scope constructs.Construct, id *string, config *ContainerRegistryConfig) {
 	_init_.Initialize()
 

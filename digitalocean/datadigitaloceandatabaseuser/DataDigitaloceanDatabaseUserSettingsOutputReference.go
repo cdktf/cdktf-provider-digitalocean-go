@@ -33,6 +33,7 @@ type DataDigitaloceanDatabaseUserSettingsOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataDigitaloceanDatabaseUserSettings
 	SetInternalValue(val *DataDigitaloceanDatabaseUserSettings)
+	OpensearchAcl() DataDigitaloceanDatabaseUserSettingsOpensearchAclList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -135,6 +136,16 @@ func (j *jsiiProxy_DataDigitaloceanDatabaseUserSettingsOutputReference) Internal
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDigitaloceanDatabaseUserSettingsOutputReference) OpensearchAcl() DataDigitaloceanDatabaseUserSettingsOpensearchAclList {
+	var returns DataDigitaloceanDatabaseUserSettingsOpensearchAclList
+	_jsii_.Get(
+		j,
+		"opensearchAcl",
 		&returns,
 	)
 	return returns
