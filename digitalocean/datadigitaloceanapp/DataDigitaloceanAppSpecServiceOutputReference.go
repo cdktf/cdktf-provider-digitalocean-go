@@ -53,6 +53,7 @@ type DataDigitaloceanAppSpecServiceOutputReference interface {
 	Routes() DataDigitaloceanAppSpecServiceRoutesList
 	RunCommand() *string
 	SourceDir() *string
+	Termination() DataDigitaloceanAppSpecServiceTerminationList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -355,6 +356,16 @@ func (j *jsiiProxy_DataDigitaloceanAppSpecServiceOutputReference) SourceDir() *s
 	_jsii_.Get(
 		j,
 		"sourceDir",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDigitaloceanAppSpecServiceOutputReference) Termination() DataDigitaloceanAppSpecServiceTerminationList {
+	var returns DataDigitaloceanAppSpecServiceTerminationList
+	_jsii_.Get(
+		j,
+		"termination",
 		&returns,
 	)
 	return returns

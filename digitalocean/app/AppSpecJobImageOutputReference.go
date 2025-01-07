@@ -30,6 +30,9 @@ type AppSpecJobImageOutputReference interface {
 	CreationStack() *[]*string
 	DeployOnPush() AppSpecJobImageDeployOnPushList
 	DeployOnPushInput() interface{}
+	Digest() *string
+	SetDigest(val *string)
+	DigestInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *AppSpecJobImage
@@ -83,6 +86,7 @@ type AppSpecJobImageOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutDeployOnPush(value interface{})
 	ResetDeployOnPush()
+	ResetDigest()
 	ResetRegistry()
 	ResetRegistryCredentials()
 	ResetTag()
@@ -146,6 +150,26 @@ func (j *jsiiProxy_AppSpecJobImageOutputReference) DeployOnPushInput() interface
 	_jsii_.Get(
 		j,
 		"deployOnPushInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecJobImageOutputReference) Digest() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"digest",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecJobImageOutputReference) DigestInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"digestInput",
 		&returns,
 	)
 	return returns
@@ -337,6 +361,17 @@ func (j *jsiiProxy_AppSpecJobImageOutputReference)SetComplexObjectIsFromSet(val 
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppSpecJobImageOutputReference)SetDigest(val *string) {
+	if err := j.validateSetDigestParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"digest",
 		val,
 	)
 }
@@ -630,6 +665,14 @@ func (a *jsiiProxy_AppSpecJobImageOutputReference) ResetDeployOnPush() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetDeployOnPush",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppSpecJobImageOutputReference) ResetDigest() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDigest",
 		nil, // no parameters
 	)
 }

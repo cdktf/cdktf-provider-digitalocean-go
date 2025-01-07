@@ -91,6 +91,10 @@ func (a *jsiiProxy_AppSpecServiceOutputReference) validatePutRoutesParameters(va
 	return nil
 }
 
+func (a *jsiiProxy_AppSpecServiceOutputReference) validatePutTerminationParameters(value *AppSpecServiceTermination) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppSpecServiceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

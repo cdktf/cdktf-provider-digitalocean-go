@@ -75,6 +75,10 @@ func (a *jsiiProxy_AppSpecJobOutputReference) validatePutLogDestinationParameter
 	return nil
 }
 
+func (a *jsiiProxy_AppSpecJobOutputReference) validatePutTerminationParameters(value *AppSpecJobTermination) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppSpecJobOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

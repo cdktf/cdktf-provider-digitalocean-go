@@ -15,6 +15,8 @@ type AppSpecWorkerOutputReference interface {
 	cdktf.ComplexObject
 	Alert() AppSpecWorkerAlertList
 	AlertInput() interface{}
+	Autoscaling() AppSpecWorkerAutoscalingOutputReference
+	AutoscalingInput() *AppSpecWorkerAutoscaling
 	BuildCommand() *string
 	SetBuildCommand(val *string)
 	BuildCommandInput() *string
@@ -70,6 +72,8 @@ type AppSpecWorkerOutputReference interface {
 	SourceDir() *string
 	SetSourceDir(val *string)
 	SourceDirInput() *string
+	Termination() AppSpecWorkerTerminationOutputReference
+	TerminationInput() *AppSpecWorkerTermination
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -103,13 +107,16 @@ type AppSpecWorkerOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAlert(value interface{})
+	PutAutoscaling(value *AppSpecWorkerAutoscaling)
 	PutEnv(value interface{})
 	PutGit(value *AppSpecWorkerGit)
 	PutGithub(value *AppSpecWorkerGithub)
 	PutGitlab(value *AppSpecWorkerGitlab)
 	PutImage(value *AppSpecWorkerImage)
 	PutLogDestination(value interface{})
+	PutTermination(value *AppSpecWorkerTermination)
 	ResetAlert()
+	ResetAutoscaling()
 	ResetBuildCommand()
 	ResetDockerfilePath()
 	ResetEnv()
@@ -123,6 +130,7 @@ type AppSpecWorkerOutputReference interface {
 	ResetLogDestination()
 	ResetRunCommand()
 	ResetSourceDir()
+	ResetTermination()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -153,6 +161,26 @@ func (j *jsiiProxy_AppSpecWorkerOutputReference) AlertInput() interface{} {
 	_jsii_.Get(
 		j,
 		"alertInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecWorkerOutputReference) Autoscaling() AppSpecWorkerAutoscalingOutputReference {
+	var returns AppSpecWorkerAutoscalingOutputReference
+	_jsii_.Get(
+		j,
+		"autoscaling",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecWorkerOutputReference) AutoscalingInput() *AppSpecWorkerAutoscaling {
+	var returns *AppSpecWorkerAutoscaling
+	_jsii_.Get(
+		j,
+		"autoscalingInput",
 		&returns,
 	)
 	return returns
@@ -483,6 +511,26 @@ func (j *jsiiProxy_AppSpecWorkerOutputReference) SourceDirInput() *string {
 	_jsii_.Get(
 		j,
 		"sourceDirInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecWorkerOutputReference) Termination() AppSpecWorkerTerminationOutputReference {
+	var returns AppSpecWorkerTerminationOutputReference
+	_jsii_.Get(
+		j,
+		"termination",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecWorkerOutputReference) TerminationInput() *AppSpecWorkerTermination {
+	var returns *AppSpecWorkerTermination
+	_jsii_.Get(
+		j,
+		"terminationInput",
 		&returns,
 	)
 	return returns
@@ -876,6 +924,17 @@ func (a *jsiiProxy_AppSpecWorkerOutputReference) PutAlert(value interface{}) {
 	)
 }
 
+func (a *jsiiProxy_AppSpecWorkerOutputReference) PutAutoscaling(value *AppSpecWorkerAutoscaling) {
+	if err := a.validatePutAutoscalingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putAutoscaling",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AppSpecWorkerOutputReference) PutEnv(value interface{}) {
 	if err := a.validatePutEnvParameters(value); err != nil {
 		panic(err)
@@ -942,10 +1001,29 @@ func (a *jsiiProxy_AppSpecWorkerOutputReference) PutLogDestination(value interfa
 	)
 }
 
+func (a *jsiiProxy_AppSpecWorkerOutputReference) PutTermination(value *AppSpecWorkerTermination) {
+	if err := a.validatePutTerminationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putTermination",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AppSpecWorkerOutputReference) ResetAlert() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetAlert",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppSpecWorkerOutputReference) ResetAutoscaling() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAutoscaling",
 		nil, // no parameters
 	)
 }
@@ -1050,6 +1128,14 @@ func (a *jsiiProxy_AppSpecWorkerOutputReference) ResetSourceDir() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetSourceDir",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppSpecWorkerOutputReference) ResetTermination() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTermination",
 		nil, // no parameters
 	)
 }

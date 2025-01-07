@@ -63,6 +63,10 @@ func (j *jsiiProxy_AppSpecJobImageOutputReference) validateSetComplexObjectIsFro
 	return nil
 }
 
+func (j *jsiiProxy_AppSpecJobImageOutputReference) validateSetDigestParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppSpecJobImageOutputReference) validateSetInternalValueParameters(val *AppSpecJobImage) error {
 	return nil
 }

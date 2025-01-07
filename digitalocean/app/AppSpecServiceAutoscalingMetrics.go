@@ -7,7 +7,7 @@ package app
 type AppSpecServiceAutoscalingMetrics struct {
 	// cpu block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/app#cpu App#cpu}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/app#cpu App#cpu}
 	Cpu *AppSpecServiceAutoscalingMetricsCpu `field:"optional" json:"cpu" yaml:"cpu"`
 }
 

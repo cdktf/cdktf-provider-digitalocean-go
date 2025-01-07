@@ -14,6 +14,7 @@ import (
 type DataDigitaloceanAppSpecWorkerOutputReference interface {
 	cdktf.ComplexObject
 	Alert() DataDigitaloceanAppSpecWorkerAlertList
+	Autoscaling() DataDigitaloceanAppSpecWorkerAutoscalingList
 	BuildCommand() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -47,6 +48,7 @@ type DataDigitaloceanAppSpecWorkerOutputReference interface {
 	Name() *string
 	RunCommand() *string
 	SourceDir() *string
+	Termination() DataDigitaloceanAppSpecWorkerTerminationList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -99,6 +101,16 @@ func (j *jsiiProxy_DataDigitaloceanAppSpecWorkerOutputReference) Alert() DataDig
 	_jsii_.Get(
 		j,
 		"alert",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDigitaloceanAppSpecWorkerOutputReference) Autoscaling() DataDigitaloceanAppSpecWorkerAutoscalingList {
+	var returns DataDigitaloceanAppSpecWorkerAutoscalingList
+	_jsii_.Get(
+		j,
+		"autoscaling",
 		&returns,
 	)
 	return returns
@@ -289,6 +301,16 @@ func (j *jsiiProxy_DataDigitaloceanAppSpecWorkerOutputReference) SourceDir() *st
 	_jsii_.Get(
 		j,
 		"sourceDir",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDigitaloceanAppSpecWorkerOutputReference) Termination() DataDigitaloceanAppSpecWorkerTerminationList {
+	var returns DataDigitaloceanAppSpecWorkerTerminationList
+	_jsii_.Get(
+		j,
+		"termination",
 		&returns,
 	)
 	return returns

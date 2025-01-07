@@ -29,6 +29,7 @@ type DataDigitaloceanAppSpecServiceImageOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	DeployOnPush() DataDigitaloceanAppSpecServiceImageDeployOnPushList
+	Digest() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataDigitaloceanAppSpecServiceImage
@@ -120,6 +121,16 @@ func (j *jsiiProxy_DataDigitaloceanAppSpecServiceImageOutputReference) DeployOnP
 	_jsii_.Get(
 		j,
 		"deployOnPush",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDigitaloceanAppSpecServiceImageOutputReference) Digest() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"digest",
 		&returns,
 	)
 	return returns

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/kubernetes_cluster digitalocean_kubernetes_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/kubernetes_cluster digitalocean_kubernetes_cluster}.
 type KubernetesCluster interface {
 	cdktf.TerraformResource
 	AutoUpgrade() interface{}
@@ -743,7 +743,7 @@ func (j *jsiiProxy_KubernetesCluster) VpcUuidInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/kubernetes_cluster digitalocean_kubernetes_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/kubernetes_cluster digitalocean_kubernetes_cluster} Resource.
 func NewKubernetesCluster(scope constructs.Construct, id *string, config *KubernetesClusterConfig) KubernetesCluster {
 	_init_.Initialize()
 
@@ -761,7 +761,7 @@ func NewKubernetesCluster(scope constructs.Construct, id *string, config *Kubern
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/resources/kubernetes_cluster digitalocean_kubernetes_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/kubernetes_cluster digitalocean_kubernetes_cluster} Resource.
 func NewKubernetesCluster_Override(k KubernetesCluster, scope constructs.Construct, id *string, config *KubernetesClusterConfig) {
 	_init_.Initialize()
 

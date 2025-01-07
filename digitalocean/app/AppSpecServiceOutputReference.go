@@ -84,6 +84,8 @@ type AppSpecServiceOutputReference interface {
 	SourceDir() *string
 	SetSourceDir(val *string)
 	SourceDirInput() *string
+	Termination() AppSpecServiceTerminationOutputReference
+	TerminationInput() *AppSpecServiceTermination
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -127,6 +129,7 @@ type AppSpecServiceOutputReference interface {
 	PutImage(value *AppSpecServiceImage)
 	PutLogDestination(value interface{})
 	PutRoutes(value interface{})
+	PutTermination(value *AppSpecServiceTermination)
 	ResetAlert()
 	ResetAutoscaling()
 	ResetBuildCommand()
@@ -147,6 +150,7 @@ type AppSpecServiceOutputReference interface {
 	ResetRoutes()
 	ResetRunCommand()
 	ResetSourceDir()
+	ResetTermination()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -627,6 +631,26 @@ func (j *jsiiProxy_AppSpecServiceOutputReference) SourceDirInput() *string {
 	_jsii_.Get(
 		j,
 		"sourceDirInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecServiceOutputReference) Termination() AppSpecServiceTerminationOutputReference {
+	var returns AppSpecServiceTerminationOutputReference
+	_jsii_.Get(
+		j,
+		"termination",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecServiceOutputReference) TerminationInput() *AppSpecServiceTermination {
+	var returns *AppSpecServiceTermination
+	_jsii_.Get(
+		j,
+		"terminationInput",
 		&returns,
 	)
 	return returns
@@ -1152,6 +1176,17 @@ func (a *jsiiProxy_AppSpecServiceOutputReference) PutRoutes(value interface{}) {
 	)
 }
 
+func (a *jsiiProxy_AppSpecServiceOutputReference) PutTermination(value *AppSpecServiceTermination) {
+	if err := a.validatePutTerminationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putTermination",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AppSpecServiceOutputReference) ResetAlert() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1308,6 +1343,14 @@ func (a *jsiiProxy_AppSpecServiceOutputReference) ResetSourceDir() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetSourceDir",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppSpecServiceOutputReference) ResetTermination() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTermination",
 		nil, // no parameters
 	)
 }

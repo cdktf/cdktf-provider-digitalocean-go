@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/data-sources/volume digitalocean_volume}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/data-sources/volume digitalocean_volume}.
 type DataDigitaloceanVolume interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -402,7 +402,7 @@ func (j *jsiiProxy_DataDigitaloceanVolume) Urn() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/data-sources/volume digitalocean_volume} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/data-sources/volume digitalocean_volume} Data Source.
 func NewDataDigitaloceanVolume(scope constructs.Construct, id *string, config *DataDigitaloceanVolumeConfig) DataDigitaloceanVolume {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewDataDigitaloceanVolume(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.46.1/docs/data-sources/volume digitalocean_volume} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/data-sources/volume digitalocean_volume} Data Source.
 func NewDataDigitaloceanVolume_Override(d DataDigitaloceanVolume, scope constructs.Construct, id *string, config *DataDigitaloceanVolumeConfig) {
 	_init_.Initialize()
 

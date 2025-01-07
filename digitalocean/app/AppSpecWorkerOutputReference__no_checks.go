@@ -51,6 +51,10 @@ func (a *jsiiProxy_AppSpecWorkerOutputReference) validatePutAlertParameters(valu
 	return nil
 }
 
+func (a *jsiiProxy_AppSpecWorkerOutputReference) validatePutAutoscalingParameters(value *AppSpecWorkerAutoscaling) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppSpecWorkerOutputReference) validatePutEnvParameters(value interface{}) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (a *jsiiProxy_AppSpecWorkerOutputReference) validatePutImageParameters(valu
 }
 
 func (a *jsiiProxy_AppSpecWorkerOutputReference) validatePutLogDestinationParameters(value interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppSpecWorkerOutputReference) validatePutTerminationParameters(value *AppSpecWorkerTermination) error {
 	return nil
 }
 

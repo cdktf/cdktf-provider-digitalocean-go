@@ -48,6 +48,7 @@ type DataDigitaloceanAppSpecJobOutputReference interface {
 	Name() *string
 	RunCommand() *string
 	SourceDir() *string
+	Termination() DataDigitaloceanAppSpecJobTerminationList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -300,6 +301,16 @@ func (j *jsiiProxy_DataDigitaloceanAppSpecJobOutputReference) SourceDir() *strin
 	_jsii_.Get(
 		j,
 		"sourceDir",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDigitaloceanAppSpecJobOutputReference) Termination() DataDigitaloceanAppSpecJobTerminationList {
+	var returns DataDigitaloceanAppSpecJobTerminationList
+	_jsii_.Get(
+		j,
+		"termination",
 		&returns,
 	)
 	return returns
