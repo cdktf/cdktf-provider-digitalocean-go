@@ -17,6 +17,8 @@ type AppSpecServiceOutputReference interface {
 	AlertInput() interface{}
 	Autoscaling() AppSpecServiceAutoscalingOutputReference
 	AutoscalingInput() *AppSpecServiceAutoscaling
+	Bitbucket() AppSpecServiceBitbucketOutputReference
+	BitbucketInput() *AppSpecServiceBitbucket
 	BuildCommand() *string
 	SetBuildCommand(val *string)
 	BuildCommandInput() *string
@@ -120,6 +122,7 @@ type AppSpecServiceOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAlert(value interface{})
 	PutAutoscaling(value *AppSpecServiceAutoscaling)
+	PutBitbucket(value *AppSpecServiceBitbucket)
 	PutCors(value *AppSpecServiceCors)
 	PutEnv(value interface{})
 	PutGit(value *AppSpecServiceGit)
@@ -132,6 +135,7 @@ type AppSpecServiceOutputReference interface {
 	PutTermination(value *AppSpecServiceTermination)
 	ResetAlert()
 	ResetAutoscaling()
+	ResetBitbucket()
 	ResetBuildCommand()
 	ResetCors()
 	ResetDockerfilePath()
@@ -201,6 +205,26 @@ func (j *jsiiProxy_AppSpecServiceOutputReference) AutoscalingInput() *AppSpecSer
 	_jsii_.Get(
 		j,
 		"autoscalingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecServiceOutputReference) Bitbucket() AppSpecServiceBitbucketOutputReference {
+	var returns AppSpecServiceBitbucketOutputReference
+	_jsii_.Get(
+		j,
+		"bitbucket",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecServiceOutputReference) BitbucketInput() *AppSpecServiceBitbucket {
+	var returns *AppSpecServiceBitbucket
+	_jsii_.Get(
+		j,
+		"bitbucketInput",
 		&returns,
 	)
 	return returns
@@ -1077,6 +1101,17 @@ func (a *jsiiProxy_AppSpecServiceOutputReference) PutAutoscaling(value *AppSpecS
 	)
 }
 
+func (a *jsiiProxy_AppSpecServiceOutputReference) PutBitbucket(value *AppSpecServiceBitbucket) {
+	if err := a.validatePutBitbucketParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putBitbucket",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AppSpecServiceOutputReference) PutCors(value *AppSpecServiceCors) {
 	if err := a.validatePutCorsParameters(value); err != nil {
 		panic(err)
@@ -1199,6 +1234,14 @@ func (a *jsiiProxy_AppSpecServiceOutputReference) ResetAutoscaling() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetAutoscaling",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppSpecServiceOutputReference) ResetBitbucket() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetBitbucket",
 		nil, // no parameters
 	)
 }

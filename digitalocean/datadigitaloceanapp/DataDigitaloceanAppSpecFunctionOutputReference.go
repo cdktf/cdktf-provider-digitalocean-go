@@ -14,6 +14,7 @@ import (
 type DataDigitaloceanAppSpecFunctionOutputReference interface {
 	cdktf.ComplexObject
 	Alert() DataDigitaloceanAppSpecFunctionAlertList
+	Bitbucket() DataDigitaloceanAppSpecFunctionBitbucketList
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -94,6 +95,16 @@ func (j *jsiiProxy_DataDigitaloceanAppSpecFunctionOutputReference) Alert() DataD
 	_jsii_.Get(
 		j,
 		"alert",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDigitaloceanAppSpecFunctionOutputReference) Bitbucket() DataDigitaloceanAppSpecFunctionBitbucketList {
+	var returns DataDigitaloceanAppSpecFunctionBitbucketList
+	_jsii_.Get(
+		j,
+		"bitbucket",
 		&returns,
 	)
 	return returns

@@ -13,6 +13,7 @@ import (
 
 type DataDigitaloceanAppSpecStaticSiteOutputReference interface {
 	cdktf.ComplexObject
+	Bitbucket() DataDigitaloceanAppSpecStaticSiteBitbucketList
 	BuildCommand() *string
 	CatchallDocument() *string
 	// the index of the complex object in a list.
@@ -92,6 +93,16 @@ type DataDigitaloceanAppSpecStaticSiteOutputReference interface {
 // The jsii proxy struct for DataDigitaloceanAppSpecStaticSiteOutputReference
 type jsiiProxy_DataDigitaloceanAppSpecStaticSiteOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataDigitaloceanAppSpecStaticSiteOutputReference) Bitbucket() DataDigitaloceanAppSpecStaticSiteBitbucketList {
+	var returns DataDigitaloceanAppSpecStaticSiteBitbucketList
+	_jsii_.Get(
+		j,
+		"bitbucket",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataDigitaloceanAppSpecStaticSiteOutputReference) BuildCommand() *string {

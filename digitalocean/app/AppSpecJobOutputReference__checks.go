@@ -124,6 +124,17 @@ func (a *jsiiProxy_AppSpecJobOutputReference) validatePutAlertParameters(value i
 	return nil
 }
 
+func (a *jsiiProxy_AppSpecJobOutputReference) validatePutBitbucketParameters(value *AppSpecJobBitbucket) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (a *jsiiProxy_AppSpecJobOutputReference) validatePutEnvParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

@@ -15,6 +15,7 @@ type DataDigitaloceanAppSpecWorkerOutputReference interface {
 	cdktf.ComplexObject
 	Alert() DataDigitaloceanAppSpecWorkerAlertList
 	Autoscaling() DataDigitaloceanAppSpecWorkerAutoscalingList
+	Bitbucket() DataDigitaloceanAppSpecWorkerBitbucketList
 	BuildCommand() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -111,6 +112,16 @@ func (j *jsiiProxy_DataDigitaloceanAppSpecWorkerOutputReference) Autoscaling() D
 	_jsii_.Get(
 		j,
 		"autoscaling",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDigitaloceanAppSpecWorkerOutputReference) Bitbucket() DataDigitaloceanAppSpecWorkerBitbucketList {
+	var returns DataDigitaloceanAppSpecWorkerBitbucketList
+	_jsii_.Get(
+		j,
+		"bitbucket",
 		&returns,
 	)
 	return returns

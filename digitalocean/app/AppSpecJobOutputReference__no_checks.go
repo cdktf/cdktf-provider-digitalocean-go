@@ -51,6 +51,10 @@ func (a *jsiiProxy_AppSpecJobOutputReference) validatePutAlertParameters(value i
 	return nil
 }
 
+func (a *jsiiProxy_AppSpecJobOutputReference) validatePutBitbucketParameters(value *AppSpecJobBitbucket) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppSpecJobOutputReference) validatePutEnvParameters(value interface{}) error {
 	return nil
 }

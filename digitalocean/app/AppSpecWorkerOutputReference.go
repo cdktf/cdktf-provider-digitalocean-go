@@ -17,6 +17,8 @@ type AppSpecWorkerOutputReference interface {
 	AlertInput() interface{}
 	Autoscaling() AppSpecWorkerAutoscalingOutputReference
 	AutoscalingInput() *AppSpecWorkerAutoscaling
+	Bitbucket() AppSpecWorkerBitbucketOutputReference
+	BitbucketInput() *AppSpecWorkerBitbucket
 	BuildCommand() *string
 	SetBuildCommand(val *string)
 	BuildCommandInput() *string
@@ -108,6 +110,7 @@ type AppSpecWorkerOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAlert(value interface{})
 	PutAutoscaling(value *AppSpecWorkerAutoscaling)
+	PutBitbucket(value *AppSpecWorkerBitbucket)
 	PutEnv(value interface{})
 	PutGit(value *AppSpecWorkerGit)
 	PutGithub(value *AppSpecWorkerGithub)
@@ -117,6 +120,7 @@ type AppSpecWorkerOutputReference interface {
 	PutTermination(value *AppSpecWorkerTermination)
 	ResetAlert()
 	ResetAutoscaling()
+	ResetBitbucket()
 	ResetBuildCommand()
 	ResetDockerfilePath()
 	ResetEnv()
@@ -181,6 +185,26 @@ func (j *jsiiProxy_AppSpecWorkerOutputReference) AutoscalingInput() *AppSpecWork
 	_jsii_.Get(
 		j,
 		"autoscalingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecWorkerOutputReference) Bitbucket() AppSpecWorkerBitbucketOutputReference {
+	var returns AppSpecWorkerBitbucketOutputReference
+	_jsii_.Get(
+		j,
+		"bitbucket",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecWorkerOutputReference) BitbucketInput() *AppSpecWorkerBitbucket {
+	var returns *AppSpecWorkerBitbucket
+	_jsii_.Get(
+		j,
+		"bitbucketInput",
 		&returns,
 	)
 	return returns
@@ -935,6 +959,17 @@ func (a *jsiiProxy_AppSpecWorkerOutputReference) PutAutoscaling(value *AppSpecWo
 	)
 }
 
+func (a *jsiiProxy_AppSpecWorkerOutputReference) PutBitbucket(value *AppSpecWorkerBitbucket) {
+	if err := a.validatePutBitbucketParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putBitbucket",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AppSpecWorkerOutputReference) PutEnv(value interface{}) {
 	if err := a.validatePutEnvParameters(value); err != nil {
 		panic(err)
@@ -1024,6 +1059,14 @@ func (a *jsiiProxy_AppSpecWorkerOutputReference) ResetAutoscaling() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetAutoscaling",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppSpecWorkerOutputReference) ResetBitbucket() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetBitbucket",
 		nil, // no parameters
 	)
 }

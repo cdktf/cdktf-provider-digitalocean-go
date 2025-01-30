@@ -51,6 +51,10 @@ func (a *jsiiProxy_AppSpecFunctionOutputReference) validatePutAlertParameters(va
 	return nil
 }
 
+func (a *jsiiProxy_AppSpecFunctionOutputReference) validatePutBitbucketParameters(value *AppSpecFunctionBitbucket) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppSpecFunctionOutputReference) validatePutCorsParameters(value *AppSpecFunctionCors) error {
 	return nil
 }

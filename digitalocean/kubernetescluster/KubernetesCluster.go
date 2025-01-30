@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/kubernetes_cluster digitalocean_kubernetes_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/kubernetes_cluster digitalocean_kubernetes_cluster}.
 type KubernetesCluster interface {
 	cdktf.TerraformResource
 	AutoUpgrade() interface{}
@@ -29,6 +29,8 @@ type KubernetesCluster interface {
 	SetConnection(val interface{})
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	ControlPlaneFirewall() KubernetesClusterControlPlaneFirewallOutputReference
+	ControlPlaneFirewallInput() *KubernetesClusterControlPlaneFirewall
 	// Experimental.
 	Count() interface{}
 	// Experimental.
@@ -58,6 +60,9 @@ type KubernetesCluster interface {
 	IdInput() *string
 	Ipv4Address() *string
 	KubeConfig() KubernetesClusterKubeConfigList
+	KubeconfigExpireSeconds() *float64
+	SetKubeconfigExpireSeconds(val *float64)
+	KubeconfigExpireSecondsInput() *float64
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -156,14 +161,17 @@ type KubernetesCluster interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutControlPlaneFirewall(value *KubernetesClusterControlPlaneFirewall)
 	PutMaintenancePolicy(value *KubernetesClusterMaintenancePolicy)
 	PutNodePool(value *KubernetesClusterNodePool)
 	PutTimeouts(value *KubernetesClusterTimeouts)
 	ResetAutoUpgrade()
 	ResetClusterSubnet()
+	ResetControlPlaneFirewall()
 	ResetDestroyAllAssociatedResources()
 	ResetHa()
 	ResetId()
+	ResetKubeconfigExpireSeconds()
 	ResetMaintenancePolicy()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -257,6 +265,26 @@ func (j *jsiiProxy_KubernetesCluster) ConstructNodeMetadata() *map[string]interf
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesCluster) ControlPlaneFirewall() KubernetesClusterControlPlaneFirewallOutputReference {
+	var returns KubernetesClusterControlPlaneFirewallOutputReference
+	_jsii_.Get(
+		j,
+		"controlPlaneFirewall",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesCluster) ControlPlaneFirewallInput() *KubernetesClusterControlPlaneFirewall {
+	var returns *KubernetesClusterControlPlaneFirewall
+	_jsii_.Get(
+		j,
+		"controlPlaneFirewallInput",
 		&returns,
 	)
 	return returns
@@ -407,6 +435,26 @@ func (j *jsiiProxy_KubernetesCluster) KubeConfig() KubernetesClusterKubeConfigLi
 	_jsii_.Get(
 		j,
 		"kubeConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesCluster) KubeconfigExpireSeconds() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"kubeconfigExpireSeconds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesCluster) KubeconfigExpireSecondsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"kubeconfigExpireSecondsInput",
 		&returns,
 	)
 	return returns
@@ -743,7 +791,7 @@ func (j *jsiiProxy_KubernetesCluster) VpcUuidInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/kubernetes_cluster digitalocean_kubernetes_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/kubernetes_cluster digitalocean_kubernetes_cluster} Resource.
 func NewKubernetesCluster(scope constructs.Construct, id *string, config *KubernetesClusterConfig) KubernetesCluster {
 	_init_.Initialize()
 
@@ -761,7 +809,7 @@ func NewKubernetesCluster(scope constructs.Construct, id *string, config *Kubern
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/kubernetes_cluster digitalocean_kubernetes_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/kubernetes_cluster digitalocean_kubernetes_cluster} Resource.
 func NewKubernetesCluster_Override(k KubernetesCluster, scope constructs.Construct, id *string, config *KubernetesClusterConfig) {
 	_init_.Initialize()
 
@@ -861,6 +909,17 @@ func (j *jsiiProxy_KubernetesCluster)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KubernetesCluster)SetKubeconfigExpireSeconds(val *float64) {
+	if err := j.validateSetKubeconfigExpireSecondsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kubeconfigExpireSeconds",
 		val,
 	)
 }
@@ -1336,6 +1395,17 @@ func (k *jsiiProxy_KubernetesCluster) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (k *jsiiProxy_KubernetesCluster) PutControlPlaneFirewall(value *KubernetesClusterControlPlaneFirewall) {
+	if err := k.validatePutControlPlaneFirewallParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"putControlPlaneFirewall",
+		[]interface{}{value},
+	)
+}
+
 func (k *jsiiProxy_KubernetesCluster) PutMaintenancePolicy(value *KubernetesClusterMaintenancePolicy) {
 	if err := k.validatePutMaintenancePolicyParameters(value); err != nil {
 		panic(err)
@@ -1385,6 +1455,14 @@ func (k *jsiiProxy_KubernetesCluster) ResetClusterSubnet() {
 	)
 }
 
+func (k *jsiiProxy_KubernetesCluster) ResetControlPlaneFirewall() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetControlPlaneFirewall",
+		nil, // no parameters
+	)
+}
+
 func (k *jsiiProxy_KubernetesCluster) ResetDestroyAllAssociatedResources() {
 	_jsii_.InvokeVoid(
 		k,
@@ -1405,6 +1483,14 @@ func (k *jsiiProxy_KubernetesCluster) ResetId() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesCluster) ResetKubeconfigExpireSeconds() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetKubeconfigExpireSeconds",
 		nil, // no parameters
 	)
 }

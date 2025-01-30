@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/loadbalancer digitalocean_loadbalancer}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/loadbalancer digitalocean_loadbalancer}.
 type Loadbalancer interface {
 	cdktf.TerraformResource
 	Algorithm() *string
@@ -85,6 +85,9 @@ type Loadbalancer interface {
 	Network() *string
 	SetNetwork(val *string)
 	NetworkInput() *string
+	NetworkStack() *string
+	SetNetworkStack(val *string)
+	NetworkStackInput() *string
 	// The tree node.
 	Node() constructs.Node
 	ProjectId() *string
@@ -194,6 +197,7 @@ type Loadbalancer interface {
 	ResetHttpIdleTimeoutSeconds()
 	ResetId()
 	ResetNetwork()
+	ResetNetworkStack()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -634,6 +638,26 @@ func (j *jsiiProxy_Loadbalancer) NetworkInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Loadbalancer) NetworkStack() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Loadbalancer) NetworkStackInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkStackInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Loadbalancer) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -905,7 +929,7 @@ func (j *jsiiProxy_Loadbalancer) VpcUuidInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/loadbalancer digitalocean_loadbalancer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/loadbalancer digitalocean_loadbalancer} Resource.
 func NewLoadbalancer(scope constructs.Construct, id *string, config *LoadbalancerConfig) Loadbalancer {
 	_init_.Initialize()
 
@@ -923,7 +947,7 @@ func NewLoadbalancer(scope constructs.Construct, id *string, config *Loadbalance
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/resources/loadbalancer digitalocean_loadbalancer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/loadbalancer digitalocean_loadbalancer} Resource.
 func NewLoadbalancer_Override(l Loadbalancer, scope constructs.Construct, id *string, config *LoadbalancerConfig) {
 	_init_.Initialize()
 
@@ -1089,6 +1113,17 @@ func (j *jsiiProxy_Loadbalancer)SetNetwork(val *string) {
 	_jsii_.Set(
 		j,
 		"network",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Loadbalancer)SetNetworkStack(val *string) {
+	if err := j.validateSetNetworkStackParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"networkStack",
 		val,
 	)
 }
@@ -1727,6 +1762,14 @@ func (l *jsiiProxy_Loadbalancer) ResetNetwork() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetNetwork",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_Loadbalancer) ResetNetworkStack() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetNetworkStack",
 		nil, // no parameters
 	)
 }

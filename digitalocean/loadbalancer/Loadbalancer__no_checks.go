@@ -167,6 +167,10 @@ func (j *jsiiProxy_Loadbalancer) validateSetNetworkParameters(val *string) error
 	return nil
 }
 
+func (j *jsiiProxy_Loadbalancer) validateSetNetworkStackParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Loadbalancer) validateSetProjectIdParameters(val *string) error {
 	return nil
 }

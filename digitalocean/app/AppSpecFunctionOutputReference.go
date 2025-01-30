@@ -15,6 +15,8 @@ type AppSpecFunctionOutputReference interface {
 	cdktf.ComplexObject
 	Alert() AppSpecFunctionAlertList
 	AlertInput() interface{}
+	Bitbucket() AppSpecFunctionBitbucketOutputReference
+	BitbucketInput() *AppSpecFunctionBitbucket
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -87,6 +89,7 @@ type AppSpecFunctionOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAlert(value interface{})
+	PutBitbucket(value *AppSpecFunctionBitbucket)
 	PutCors(value *AppSpecFunctionCors)
 	PutEnv(value interface{})
 	PutGit(value *AppSpecFunctionGit)
@@ -95,6 +98,7 @@ type AppSpecFunctionOutputReference interface {
 	PutLogDestination(value interface{})
 	PutRoutes(value interface{})
 	ResetAlert()
+	ResetBitbucket()
 	ResetCors()
 	ResetEnv()
 	ResetGit()
@@ -133,6 +137,26 @@ func (j *jsiiProxy_AppSpecFunctionOutputReference) AlertInput() interface{} {
 	_jsii_.Get(
 		j,
 		"alertInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecFunctionOutputReference) Bitbucket() AppSpecFunctionBitbucketOutputReference {
+	var returns AppSpecFunctionBitbucketOutputReference
+	_jsii_.Get(
+		j,
+		"bitbucket",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecFunctionOutputReference) BitbucketInput() *AppSpecFunctionBitbucket {
+	var returns *AppSpecFunctionBitbucket
+	_jsii_.Get(
+		j,
+		"bitbucketInput",
 		&returns,
 	)
 	return returns
@@ -690,6 +714,17 @@ func (a *jsiiProxy_AppSpecFunctionOutputReference) PutAlert(value interface{}) {
 	)
 }
 
+func (a *jsiiProxy_AppSpecFunctionOutputReference) PutBitbucket(value *AppSpecFunctionBitbucket) {
+	if err := a.validatePutBitbucketParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putBitbucket",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AppSpecFunctionOutputReference) PutCors(value *AppSpecFunctionCors) {
 	if err := a.validatePutCorsParameters(value); err != nil {
 		panic(err)
@@ -771,6 +806,14 @@ func (a *jsiiProxy_AppSpecFunctionOutputReference) ResetAlert() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetAlert",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppSpecFunctionOutputReference) ResetBitbucket() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetBitbucket",
 		nil, // no parameters
 	)
 }

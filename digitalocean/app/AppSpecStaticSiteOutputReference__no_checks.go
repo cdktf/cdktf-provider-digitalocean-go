@@ -47,6 +47,10 @@ func (a *jsiiProxy_AppSpecStaticSiteOutputReference) validateInterpolationForAtt
 	return nil
 }
 
+func (a *jsiiProxy_AppSpecStaticSiteOutputReference) validatePutBitbucketParameters(value *AppSpecStaticSiteBitbucket) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppSpecStaticSiteOutputReference) validatePutCorsParameters(value *AppSpecStaticSiteCors) error {
 	return nil
 }

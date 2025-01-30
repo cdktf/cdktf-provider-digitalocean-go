@@ -15,6 +15,8 @@ type AppSpecJobOutputReference interface {
 	cdktf.ComplexObject
 	Alert() AppSpecJobAlertList
 	AlertInput() interface{}
+	Bitbucket() AppSpecJobBitbucketOutputReference
+	BitbucketInput() *AppSpecJobBitbucket
 	BuildCommand() *string
 	SetBuildCommand(val *string)
 	BuildCommandInput() *string
@@ -108,6 +110,7 @@ type AppSpecJobOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAlert(value interface{})
+	PutBitbucket(value *AppSpecJobBitbucket)
 	PutEnv(value interface{})
 	PutGit(value *AppSpecJobGit)
 	PutGithub(value *AppSpecJobGithub)
@@ -116,6 +119,7 @@ type AppSpecJobOutputReference interface {
 	PutLogDestination(value interface{})
 	PutTermination(value *AppSpecJobTermination)
 	ResetAlert()
+	ResetBitbucket()
 	ResetBuildCommand()
 	ResetDockerfilePath()
 	ResetEnv()
@@ -161,6 +165,26 @@ func (j *jsiiProxy_AppSpecJobOutputReference) AlertInput() interface{} {
 	_jsii_.Get(
 		j,
 		"alertInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecJobOutputReference) Bitbucket() AppSpecJobBitbucketOutputReference {
+	var returns AppSpecJobBitbucketOutputReference
+	_jsii_.Get(
+		j,
+		"bitbucket",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecJobOutputReference) BitbucketInput() *AppSpecJobBitbucket {
+	var returns *AppSpecJobBitbucket
+	_jsii_.Get(
+		j,
+		"bitbucketInput",
 		&returns,
 	)
 	return returns
@@ -935,6 +959,17 @@ func (a *jsiiProxy_AppSpecJobOutputReference) PutAlert(value interface{}) {
 	)
 }
 
+func (a *jsiiProxy_AppSpecJobOutputReference) PutBitbucket(value *AppSpecJobBitbucket) {
+	if err := a.validatePutBitbucketParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putBitbucket",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AppSpecJobOutputReference) PutEnv(value interface{}) {
 	if err := a.validatePutEnvParameters(value); err != nil {
 		panic(err)
@@ -1016,6 +1051,14 @@ func (a *jsiiProxy_AppSpecJobOutputReference) ResetAlert() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetAlert",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppSpecJobOutputReference) ResetBitbucket() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetBitbucket",
 		nil, // no parameters
 	)
 }

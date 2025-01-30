@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/data-sources/app digitalocean_app}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/data-sources/app digitalocean_app}.
 type DataDigitaloceanApp interface {
 	cdktf.TerraformDataSource
 	ActiveDeploymentId() *string
@@ -411,7 +411,7 @@ func (j *jsiiProxy_DataDigitaloceanApp) Urn() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/data-sources/app digitalocean_app} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/data-sources/app digitalocean_app} Data Source.
 func NewDataDigitaloceanApp(scope constructs.Construct, id *string, config *DataDigitaloceanAppConfig) DataDigitaloceanApp {
 	_init_.Initialize()
 
@@ -429,7 +429,7 @@ func NewDataDigitaloceanApp(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.47.0/docs/data-sources/app digitalocean_app} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/data-sources/app digitalocean_app} Data Source.
 func NewDataDigitaloceanApp_Override(d DataDigitaloceanApp, scope constructs.Construct, id *string, config *DataDigitaloceanAppConfig) {
 	_init_.Initialize()
 

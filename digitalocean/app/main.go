@@ -578,6 +578,51 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucket",
+		reflect.TypeOf((*AppSpecFunctionBitbucket)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-digitalocean.app.AppSpecFunctionBitbucketOutputReference",
+		reflect.TypeOf((*AppSpecFunctionBitbucketOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "branch", GoGetter: "Branch"},
+			_jsii_.MemberProperty{JsiiProperty: "branchInput", GoGetter: "BranchInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "deployOnPush", GoGetter: "DeployOnPush"},
+			_jsii_.MemberProperty{JsiiProperty: "deployOnPushInput", GoGetter: "DeployOnPushInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "repo", GoGetter: "Repo"},
+			_jsii_.MemberProperty{JsiiProperty: "repoInput", GoGetter: "RepoInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBranch", GoMethod: "ResetBranch"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDeployOnPush", GoMethod: "ResetDeployOnPush"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRepo", GoMethod: "ResetRepo"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_AppSpecFunctionBitbucketOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-digitalocean.app.AppSpecFunctionCors",
 		reflect.TypeOf((*AppSpecFunctionCors)(nil)).Elem(),
 	)
@@ -1190,6 +1235,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alert", GoGetter: "Alert"},
 			_jsii_.MemberProperty{JsiiProperty: "alertInput", GoGetter: "AlertInput"},
+			_jsii_.MemberProperty{JsiiProperty: "bitbucket", GoGetter: "Bitbucket"},
+			_jsii_.MemberProperty{JsiiProperty: "bitbucketInput", GoGetter: "BitbucketInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1222,6 +1269,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putAlert", GoMethod: "PutAlert"},
+			_jsii_.MemberMethod{JsiiMethod: "putBitbucket", GoMethod: "PutBitbucket"},
 			_jsii_.MemberMethod{JsiiMethod: "putCors", GoMethod: "PutCors"},
 			_jsii_.MemberMethod{JsiiMethod: "putEnv", GoMethod: "PutEnv"},
 			_jsii_.MemberMethod{JsiiMethod: "putGit", GoMethod: "PutGit"},
@@ -1230,6 +1278,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putLogDestination", GoMethod: "PutLogDestination"},
 			_jsii_.MemberMethod{JsiiMethod: "putRoutes", GoMethod: "PutRoutes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAlert", GoMethod: "ResetAlert"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBitbucket", GoMethod: "ResetBitbucket"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCors", GoMethod: "ResetCors"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnv", GoMethod: "ResetEnv"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGit", GoMethod: "ResetGit"},
@@ -1775,6 +1824,51 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AppSpecJobAlertOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-digitalocean.app.AppSpecJobBitbucket",
+		reflect.TypeOf((*AppSpecJobBitbucket)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-digitalocean.app.AppSpecJobBitbucketOutputReference",
+		reflect.TypeOf((*AppSpecJobBitbucketOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "branch", GoGetter: "Branch"},
+			_jsii_.MemberProperty{JsiiProperty: "branchInput", GoGetter: "BranchInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "deployOnPush", GoGetter: "DeployOnPush"},
+			_jsii_.MemberProperty{JsiiProperty: "deployOnPushInput", GoGetter: "DeployOnPushInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "repo", GoGetter: "Repo"},
+			_jsii_.MemberProperty{JsiiProperty: "repoInput", GoGetter: "RepoInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBranch", GoMethod: "ResetBranch"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDeployOnPush", GoMethod: "ResetDeployOnPush"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRepo", GoMethod: "ResetRepo"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_AppSpecJobBitbucketOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -2409,6 +2503,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alert", GoGetter: "Alert"},
 			_jsii_.MemberProperty{JsiiProperty: "alertInput", GoGetter: "AlertInput"},
+			_jsii_.MemberProperty{JsiiProperty: "bitbucket", GoGetter: "Bitbucket"},
+			_jsii_.MemberProperty{JsiiProperty: "bitbucketInput", GoGetter: "BitbucketInput"},
 			_jsii_.MemberProperty{JsiiProperty: "buildCommand", GoGetter: "BuildCommand"},
 			_jsii_.MemberProperty{JsiiProperty: "buildCommandInput", GoGetter: "BuildCommandInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2453,6 +2549,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putAlert", GoMethod: "PutAlert"},
+			_jsii_.MemberMethod{JsiiMethod: "putBitbucket", GoMethod: "PutBitbucket"},
 			_jsii_.MemberMethod{JsiiMethod: "putEnv", GoMethod: "PutEnv"},
 			_jsii_.MemberMethod{JsiiMethod: "putGit", GoMethod: "PutGit"},
 			_jsii_.MemberMethod{JsiiMethod: "putGithub", GoMethod: "PutGithub"},
@@ -2461,6 +2558,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putLogDestination", GoMethod: "PutLogDestination"},
 			_jsii_.MemberMethod{JsiiMethod: "putTermination", GoMethod: "PutTermination"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAlert", GoMethod: "ResetAlert"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBitbucket", GoMethod: "ResetBitbucket"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBuildCommand", GoMethod: "ResetBuildCommand"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDockerfilePath", GoMethod: "ResetDockerfilePath"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnv", GoMethod: "ResetEnv"},
@@ -2809,6 +2907,51 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AppSpecServiceAutoscalingOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-digitalocean.app.AppSpecServiceBitbucket",
+		reflect.TypeOf((*AppSpecServiceBitbucket)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-digitalocean.app.AppSpecServiceBitbucketOutputReference",
+		reflect.TypeOf((*AppSpecServiceBitbucketOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "branch", GoGetter: "Branch"},
+			_jsii_.MemberProperty{JsiiProperty: "branchInput", GoGetter: "BranchInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "deployOnPush", GoGetter: "DeployOnPush"},
+			_jsii_.MemberProperty{JsiiProperty: "deployOnPushInput", GoGetter: "DeployOnPushInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "repo", GoGetter: "Repo"},
+			_jsii_.MemberProperty{JsiiProperty: "repoInput", GoGetter: "RepoInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBranch", GoMethod: "ResetBranch"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDeployOnPush", GoMethod: "ResetDeployOnPush"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRepo", GoMethod: "ResetRepo"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_AppSpecServiceBitbucketOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -3602,6 +3745,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "alertInput", GoGetter: "AlertInput"},
 			_jsii_.MemberProperty{JsiiProperty: "autoscaling", GoGetter: "Autoscaling"},
 			_jsii_.MemberProperty{JsiiProperty: "autoscalingInput", GoGetter: "AutoscalingInput"},
+			_jsii_.MemberProperty{JsiiProperty: "bitbucket", GoGetter: "Bitbucket"},
+			_jsii_.MemberProperty{JsiiProperty: "bitbucketInput", GoGetter: "BitbucketInput"},
 			_jsii_.MemberProperty{JsiiProperty: "buildCommand", GoGetter: "BuildCommand"},
 			_jsii_.MemberProperty{JsiiProperty: "buildCommandInput", GoGetter: "BuildCommandInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3653,6 +3798,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putAlert", GoMethod: "PutAlert"},
 			_jsii_.MemberMethod{JsiiMethod: "putAutoscaling", GoMethod: "PutAutoscaling"},
+			_jsii_.MemberMethod{JsiiMethod: "putBitbucket", GoMethod: "PutBitbucket"},
 			_jsii_.MemberMethod{JsiiMethod: "putCors", GoMethod: "PutCors"},
 			_jsii_.MemberMethod{JsiiMethod: "putEnv", GoMethod: "PutEnv"},
 			_jsii_.MemberMethod{JsiiMethod: "putGit", GoMethod: "PutGit"},
@@ -3665,6 +3811,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putTermination", GoMethod: "PutTermination"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAlert", GoMethod: "ResetAlert"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutoscaling", GoMethod: "ResetAutoscaling"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBitbucket", GoMethod: "ResetBitbucket"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBuildCommand", GoMethod: "ResetBuildCommand"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCors", GoMethod: "ResetCors"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDockerfilePath", GoMethod: "ResetDockerfilePath"},
@@ -3812,6 +3959,51 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-digitalocean.app.AppSpecStaticSite",
 		reflect.TypeOf((*AppSpecStaticSite)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucket",
+		reflect.TypeOf((*AppSpecStaticSiteBitbucket)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-digitalocean.app.AppSpecStaticSiteBitbucketOutputReference",
+		reflect.TypeOf((*AppSpecStaticSiteBitbucketOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "branch", GoGetter: "Branch"},
+			_jsii_.MemberProperty{JsiiProperty: "branchInput", GoGetter: "BranchInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "deployOnPush", GoGetter: "DeployOnPush"},
+			_jsii_.MemberProperty{JsiiProperty: "deployOnPushInput", GoGetter: "DeployOnPushInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "repo", GoGetter: "Repo"},
+			_jsii_.MemberProperty{JsiiProperty: "repoInput", GoGetter: "RepoInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBranch", GoMethod: "ResetBranch"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDeployOnPush", GoMethod: "ResetDeployOnPush"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRepo", GoMethod: "ResetRepo"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_AppSpecStaticSiteBitbucketOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-digitalocean.app.AppSpecStaticSiteCors",
@@ -4141,6 +4333,8 @@ func init() {
 		"@cdktf/provider-digitalocean.app.AppSpecStaticSiteOutputReference",
 		reflect.TypeOf((*AppSpecStaticSiteOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "bitbucket", GoGetter: "Bitbucket"},
+			_jsii_.MemberProperty{JsiiProperty: "bitbucketInput", GoGetter: "BitbucketInput"},
 			_jsii_.MemberProperty{JsiiProperty: "buildCommand", GoGetter: "BuildCommand"},
 			_jsii_.MemberProperty{JsiiProperty: "buildCommandInput", GoGetter: "BuildCommandInput"},
 			_jsii_.MemberProperty{JsiiProperty: "catchallDocument", GoGetter: "CatchallDocument"},
@@ -4184,12 +4378,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "outputDir", GoGetter: "OutputDir"},
 			_jsii_.MemberProperty{JsiiProperty: "outputDirInput", GoGetter: "OutputDirInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putBitbucket", GoMethod: "PutBitbucket"},
 			_jsii_.MemberMethod{JsiiMethod: "putCors", GoMethod: "PutCors"},
 			_jsii_.MemberMethod{JsiiMethod: "putEnv", GoMethod: "PutEnv"},
 			_jsii_.MemberMethod{JsiiMethod: "putGit", GoMethod: "PutGit"},
 			_jsii_.MemberMethod{JsiiMethod: "putGithub", GoMethod: "PutGithub"},
 			_jsii_.MemberMethod{JsiiMethod: "putGitlab", GoMethod: "PutGitlab"},
 			_jsii_.MemberMethod{JsiiMethod: "putRoutes", GoMethod: "PutRoutes"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBitbucket", GoMethod: "ResetBitbucket"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBuildCommand", GoMethod: "ResetBuildCommand"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCatchallDocument", GoMethod: "ResetCatchallDocument"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCors", GoMethod: "ResetCors"},
@@ -4473,6 +4669,51 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AppSpecWorkerAutoscalingOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucket",
+		reflect.TypeOf((*AppSpecWorkerBitbucket)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-digitalocean.app.AppSpecWorkerBitbucketOutputReference",
+		reflect.TypeOf((*AppSpecWorkerBitbucketOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "branch", GoGetter: "Branch"},
+			_jsii_.MemberProperty{JsiiProperty: "branchInput", GoGetter: "BranchInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "deployOnPush", GoGetter: "DeployOnPush"},
+			_jsii_.MemberProperty{JsiiProperty: "deployOnPushInput", GoGetter: "DeployOnPushInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "repo", GoGetter: "Repo"},
+			_jsii_.MemberProperty{JsiiProperty: "repoInput", GoGetter: "RepoInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBranch", GoMethod: "ResetBranch"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDeployOnPush", GoMethod: "ResetDeployOnPush"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRepo", GoMethod: "ResetRepo"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_AppSpecWorkerBitbucketOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -5109,6 +5350,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "alertInput", GoGetter: "AlertInput"},
 			_jsii_.MemberProperty{JsiiProperty: "autoscaling", GoGetter: "Autoscaling"},
 			_jsii_.MemberProperty{JsiiProperty: "autoscalingInput", GoGetter: "AutoscalingInput"},
+			_jsii_.MemberProperty{JsiiProperty: "bitbucket", GoGetter: "Bitbucket"},
+			_jsii_.MemberProperty{JsiiProperty: "bitbucketInput", GoGetter: "BitbucketInput"},
 			_jsii_.MemberProperty{JsiiProperty: "buildCommand", GoGetter: "BuildCommand"},
 			_jsii_.MemberProperty{JsiiProperty: "buildCommandInput", GoGetter: "BuildCommandInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5152,6 +5395,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putAlert", GoMethod: "PutAlert"},
 			_jsii_.MemberMethod{JsiiMethod: "putAutoscaling", GoMethod: "PutAutoscaling"},
+			_jsii_.MemberMethod{JsiiMethod: "putBitbucket", GoMethod: "PutBitbucket"},
 			_jsii_.MemberMethod{JsiiMethod: "putEnv", GoMethod: "PutEnv"},
 			_jsii_.MemberMethod{JsiiMethod: "putGit", GoMethod: "PutGit"},
 			_jsii_.MemberMethod{JsiiMethod: "putGithub", GoMethod: "PutGithub"},
@@ -5161,6 +5405,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putTermination", GoMethod: "PutTermination"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAlert", GoMethod: "ResetAlert"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutoscaling", GoMethod: "ResetAutoscaling"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBitbucket", GoMethod: "ResetBitbucket"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBuildCommand", GoMethod: "ResetBuildCommand"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDockerfilePath", GoMethod: "ResetDockerfilePath"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnv", GoMethod: "ResetEnv"},

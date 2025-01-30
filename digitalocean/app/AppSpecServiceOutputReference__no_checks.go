@@ -55,6 +55,10 @@ func (a *jsiiProxy_AppSpecServiceOutputReference) validatePutAutoscalingParamete
 	return nil
 }
 
+func (a *jsiiProxy_AppSpecServiceOutputReference) validatePutBitbucketParameters(value *AppSpecServiceBitbucket) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppSpecServiceOutputReference) validatePutCorsParameters(value *AppSpecServiceCors) error {
 	return nil
 }

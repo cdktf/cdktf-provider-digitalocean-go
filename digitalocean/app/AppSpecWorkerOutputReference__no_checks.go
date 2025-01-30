@@ -55,6 +55,10 @@ func (a *jsiiProxy_AppSpecWorkerOutputReference) validatePutAutoscalingParameter
 	return nil
 }
 
+func (a *jsiiProxy_AppSpecWorkerOutputReference) validatePutBitbucketParameters(value *AppSpecWorkerBitbucket) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppSpecWorkerOutputReference) validatePutEnvParameters(value interface{}) error {
 	return nil
 }

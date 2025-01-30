@@ -13,6 +13,8 @@ import (
 
 type AppSpecStaticSiteOutputReference interface {
 	cdktf.ComplexObject
+	Bitbucket() AppSpecStaticSiteBitbucketOutputReference
+	BitbucketInput() *AppSpecStaticSiteBitbucket
 	BuildCommand() *string
 	SetBuildCommand(val *string)
 	BuildCommandInput() *string
@@ -103,12 +105,14 @@ type AppSpecStaticSiteOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutBitbucket(value *AppSpecStaticSiteBitbucket)
 	PutCors(value *AppSpecStaticSiteCors)
 	PutEnv(value interface{})
 	PutGit(value *AppSpecStaticSiteGit)
 	PutGithub(value *AppSpecStaticSiteGithub)
 	PutGitlab(value *AppSpecStaticSiteGitlab)
 	PutRoutes(value interface{})
+	ResetBitbucket()
 	ResetBuildCommand()
 	ResetCatchallDocument()
 	ResetCors()
@@ -136,6 +140,26 @@ type AppSpecStaticSiteOutputReference interface {
 // The jsii proxy struct for AppSpecStaticSiteOutputReference
 type jsiiProxy_AppSpecStaticSiteOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_AppSpecStaticSiteOutputReference) Bitbucket() AppSpecStaticSiteBitbucketOutputReference {
+	var returns AppSpecStaticSiteBitbucketOutputReference
+	_jsii_.Get(
+		j,
+		"bitbucket",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecStaticSiteOutputReference) BitbucketInput() *AppSpecStaticSiteBitbucket {
+	var returns *AppSpecStaticSiteBitbucket
+	_jsii_.Get(
+		j,
+		"bitbucketInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_AppSpecStaticSiteOutputReference) BuildCommand() *string {
@@ -876,6 +900,17 @@ func (a *jsiiProxy_AppSpecStaticSiteOutputReference) InterpolationForAttribute(p
 	return returns
 }
 
+func (a *jsiiProxy_AppSpecStaticSiteOutputReference) PutBitbucket(value *AppSpecStaticSiteBitbucket) {
+	if err := a.validatePutBitbucketParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putBitbucket",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AppSpecStaticSiteOutputReference) PutCors(value *AppSpecStaticSiteCors) {
 	if err := a.validatePutCorsParameters(value); err != nil {
 		panic(err)
@@ -939,6 +974,14 @@ func (a *jsiiProxy_AppSpecStaticSiteOutputReference) PutRoutes(value interface{}
 		a,
 		"putRoutes",
 		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AppSpecStaticSiteOutputReference) ResetBitbucket() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetBitbucket",
+		nil, // no parameters
 	)
 }
 

@@ -75,6 +75,10 @@ func (k *jsiiProxy_KubernetesCluster) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
+func (k *jsiiProxy_KubernetesCluster) validatePutControlPlaneFirewallParameters(value *KubernetesClusterControlPlaneFirewall) error {
+	return nil
+}
+
 func (k *jsiiProxy_KubernetesCluster) validatePutMaintenancePolicyParameters(value *KubernetesClusterMaintenancePolicy) error {
 	return nil
 }
@@ -128,6 +132,10 @@ func (j *jsiiProxy_KubernetesCluster) validateSetHaParameters(val interface{}) e
 }
 
 func (j *jsiiProxy_KubernetesCluster) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_KubernetesCluster) validateSetKubeconfigExpireSecondsParameters(val *float64) error {
 	return nil
 }
 
