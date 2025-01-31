@@ -79,6 +79,10 @@ func (j *jsiiProxy_DataDigitaloceanKubernetesCluster) validateSetIdParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DataDigitaloceanKubernetesCluster) validateSetKubeconfigExpireSecondsParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDigitaloceanKubernetesCluster) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

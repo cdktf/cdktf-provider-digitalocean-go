@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/data-sources/kubernetes_cluster digitalocean_kubernetes_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/data-sources/kubernetes_cluster digitalocean_kubernetes_cluster}.
 type DataDigitaloceanKubernetesCluster interface {
 	cdktf.TerraformDataSource
 	AutoUpgrade() cdktf.IResolvable
@@ -21,6 +21,7 @@ type DataDigitaloceanKubernetesCluster interface {
 	ClusterSubnet() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	ControlPlaneFirewall() DataDigitaloceanKubernetesClusterControlPlaneFirewallList
 	// Experimental.
 	Count() interface{}
 	// Experimental.
@@ -45,6 +46,9 @@ type DataDigitaloceanKubernetesCluster interface {
 	IdInput() *string
 	Ipv4Address() *string
 	KubeConfig() DataDigitaloceanKubernetesClusterKubeConfigList
+	KubeconfigExpireSeconds() *float64
+	SetKubeconfigExpireSeconds(val *float64)
+	KubeconfigExpireSecondsInput() *float64
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -105,6 +109,7 @@ type DataDigitaloceanKubernetesCluster interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetId()
+	ResetKubeconfigExpireSeconds()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -163,6 +168,16 @@ func (j *jsiiProxy_DataDigitaloceanKubernetesCluster) ConstructNodeMetadata() *m
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDigitaloceanKubernetesCluster) ControlPlaneFirewall() DataDigitaloceanKubernetesClusterControlPlaneFirewallList {
+	var returns DataDigitaloceanKubernetesClusterControlPlaneFirewallList
+	_jsii_.Get(
+		j,
+		"controlPlaneFirewall",
 		&returns,
 	)
 	return returns
@@ -283,6 +298,26 @@ func (j *jsiiProxy_DataDigitaloceanKubernetesCluster) KubeConfig() DataDigitaloc
 	_jsii_.Get(
 		j,
 		"kubeConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDigitaloceanKubernetesCluster) KubeconfigExpireSeconds() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"kubeconfigExpireSeconds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDigitaloceanKubernetesCluster) KubeconfigExpireSecondsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"kubeconfigExpireSecondsInput",
 		&returns,
 	)
 	return returns
@@ -499,7 +534,7 @@ func (j *jsiiProxy_DataDigitaloceanKubernetesCluster) VpcUuid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/data-sources/kubernetes_cluster digitalocean_kubernetes_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/data-sources/kubernetes_cluster digitalocean_kubernetes_cluster} Data Source.
 func NewDataDigitaloceanKubernetesCluster(scope constructs.Construct, id *string, config *DataDigitaloceanKubernetesClusterConfig) DataDigitaloceanKubernetesCluster {
 	_init_.Initialize()
 
@@ -517,7 +552,7 @@ func NewDataDigitaloceanKubernetesCluster(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/data-sources/kubernetes_cluster digitalocean_kubernetes_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/data-sources/kubernetes_cluster digitalocean_kubernetes_cluster} Data Source.
 func NewDataDigitaloceanKubernetesCluster_Override(d DataDigitaloceanKubernetesCluster, scope constructs.Construct, id *string, config *DataDigitaloceanKubernetesClusterConfig) {
 	_init_.Initialize()
 
@@ -562,6 +597,17 @@ func (j *jsiiProxy_DataDigitaloceanKubernetesCluster)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDigitaloceanKubernetesCluster)SetKubeconfigExpireSeconds(val *float64) {
+	if err := j.validateSetKubeconfigExpireSecondsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kubeconfigExpireSeconds",
 		val,
 	)
 }
@@ -896,6 +942,14 @@ func (d *jsiiProxy_DataDigitaloceanKubernetesCluster) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDigitaloceanKubernetesCluster) ResetKubeconfigExpireSeconds() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetKubeconfigExpireSeconds",
 		nil, // no parameters
 	)
 }

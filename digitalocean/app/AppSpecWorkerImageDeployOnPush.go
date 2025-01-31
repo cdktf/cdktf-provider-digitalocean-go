@@ -7,7 +7,7 @@ package app
 type AppSpecWorkerImageDeployOnPush struct {
 	// Whether to automatically deploy images pushed to DOCR.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/app#enabled App#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#enabled App#enabled}
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
 }
 

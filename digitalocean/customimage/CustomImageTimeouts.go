@@ -5,7 +5,7 @@ package customimage
 
 
 type CustomImageTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/resources/custom_image#create CustomImage#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/custom_image#create CustomImage#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
 }
 

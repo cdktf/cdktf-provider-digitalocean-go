@@ -5,9 +5,9 @@ package datadigitaloceansshkeys
 
 
 type DataDigitaloceanSshKeysSort struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/data-sources/ssh_keys#key DataDigitaloceanSshKeys#key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/data-sources/ssh_keys#key DataDigitaloceanSshKeys#key}.
 	Key *string `field:"required" json:"key" yaml:"key"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.1/docs/data-sources/ssh_keys#direction DataDigitaloceanSshKeys#direction}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/data-sources/ssh_keys#direction DataDigitaloceanSshKeys#direction}.
 	Direction *string `field:"optional" json:"direction" yaml:"direction"`
 }
 
