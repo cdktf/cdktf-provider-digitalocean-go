@@ -12,12 +12,14 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/data-sources/kubernetes_cluster digitalocean_kubernetes_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/data-sources/kubernetes_cluster digitalocean_kubernetes_cluster}.
 type DataDigitaloceanKubernetesCluster interface {
 	cdktf.TerraformDataSource
 	AutoUpgrade() cdktf.IResolvable
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ClusterAutoscalerConfiguration() DataDigitaloceanKubernetesClusterClusterAutoscalerConfigurationList
+	ClusterAutoscalerConfigurationInput() interface{}
 	ClusterSubnet() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
@@ -108,6 +110,8 @@ type DataDigitaloceanKubernetesCluster interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutClusterAutoscalerConfiguration(value interface{})
+	ResetClusterAutoscalerConfiguration()
 	ResetId()
 	ResetKubeconfigExpireSeconds()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -148,6 +152,26 @@ func (j *jsiiProxy_DataDigitaloceanKubernetesCluster) CdktfStack() cdktf.Terrafo
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDigitaloceanKubernetesCluster) ClusterAutoscalerConfiguration() DataDigitaloceanKubernetesClusterClusterAutoscalerConfigurationList {
+	var returns DataDigitaloceanKubernetesClusterClusterAutoscalerConfigurationList
+	_jsii_.Get(
+		j,
+		"clusterAutoscalerConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDigitaloceanKubernetesCluster) ClusterAutoscalerConfigurationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"clusterAutoscalerConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -534,7 +558,7 @@ func (j *jsiiProxy_DataDigitaloceanKubernetesCluster) VpcUuid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/data-sources/kubernetes_cluster digitalocean_kubernetes_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/data-sources/kubernetes_cluster digitalocean_kubernetes_cluster} Data Source.
 func NewDataDigitaloceanKubernetesCluster(scope constructs.Construct, id *string, config *DataDigitaloceanKubernetesClusterConfig) DataDigitaloceanKubernetesCluster {
 	_init_.Initialize()
 
@@ -552,7 +576,7 @@ func NewDataDigitaloceanKubernetesCluster(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/data-sources/kubernetes_cluster digitalocean_kubernetes_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/data-sources/kubernetes_cluster digitalocean_kubernetes_cluster} Data Source.
 func NewDataDigitaloceanKubernetesCluster_Override(d DataDigitaloceanKubernetesCluster, scope constructs.Construct, id *string, config *DataDigitaloceanKubernetesClusterConfig) {
 	_init_.Initialize()
 
@@ -935,6 +959,25 @@ func (d *jsiiProxy_DataDigitaloceanKubernetesCluster) OverrideLogicalId(newLogic
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataDigitaloceanKubernetesCluster) PutClusterAutoscalerConfiguration(value interface{}) {
+	if err := d.validatePutClusterAutoscalerConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putClusterAutoscalerConfiguration",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDigitaloceanKubernetesCluster) ResetClusterAutoscalerConfiguration() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetClusterAutoscalerConfiguration",
+		nil, // no parameters
 	)
 }
 

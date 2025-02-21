@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDigitaloceanKubernetesCluster) validateOverrideLogicalIdP
 	return nil
 }
 
+func (d *jsiiProxy_DataDigitaloceanKubernetesCluster) validatePutClusterAutoscalerConfigurationParameters(value interface{}) error {
+	return nil
+}
+
 func validateDataDigitaloceanKubernetesCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

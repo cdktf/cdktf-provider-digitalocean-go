@@ -7,7 +7,7 @@ package app
 type AppSpecEgress struct {
 	// The app egress type.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/app#type App#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/app#type App#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
 

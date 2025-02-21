@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/kubernetes_cluster digitalocean_kubernetes_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/kubernetes_cluster digitalocean_kubernetes_cluster}.
 type KubernetesCluster interface {
 	cdktf.TerraformResource
 	AutoUpgrade() interface{}
@@ -20,6 +20,8 @@ type KubernetesCluster interface {
 	AutoUpgradeInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ClusterAutoscalerConfiguration() KubernetesClusterClusterAutoscalerConfigurationList
+	ClusterAutoscalerConfigurationInput() interface{}
 	ClusterSubnet() *string
 	SetClusterSubnet(val *string)
 	ClusterSubnetInput() *string
@@ -161,11 +163,13 @@ type KubernetesCluster interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutClusterAutoscalerConfiguration(value interface{})
 	PutControlPlaneFirewall(value *KubernetesClusterControlPlaneFirewall)
 	PutMaintenancePolicy(value *KubernetesClusterMaintenancePolicy)
 	PutNodePool(value *KubernetesClusterNodePool)
 	PutTimeouts(value *KubernetesClusterTimeouts)
 	ResetAutoUpgrade()
+	ResetClusterAutoscalerConfiguration()
 	ResetClusterSubnet()
 	ResetControlPlaneFirewall()
 	ResetDestroyAllAssociatedResources()
@@ -225,6 +229,26 @@ func (j *jsiiProxy_KubernetesCluster) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesCluster) ClusterAutoscalerConfiguration() KubernetesClusterClusterAutoscalerConfigurationList {
+	var returns KubernetesClusterClusterAutoscalerConfigurationList
+	_jsii_.Get(
+		j,
+		"clusterAutoscalerConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesCluster) ClusterAutoscalerConfigurationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"clusterAutoscalerConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -791,7 +815,7 @@ func (j *jsiiProxy_KubernetesCluster) VpcUuidInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/kubernetes_cluster digitalocean_kubernetes_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/kubernetes_cluster digitalocean_kubernetes_cluster} Resource.
 func NewKubernetesCluster(scope constructs.Construct, id *string, config *KubernetesClusterConfig) KubernetesCluster {
 	_init_.Initialize()
 
@@ -809,7 +833,7 @@ func NewKubernetesCluster(scope constructs.Construct, id *string, config *Kubern
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/kubernetes_cluster digitalocean_kubernetes_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/kubernetes_cluster digitalocean_kubernetes_cluster} Resource.
 func NewKubernetesCluster_Override(k KubernetesCluster, scope constructs.Construct, id *string, config *KubernetesClusterConfig) {
 	_init_.Initialize()
 
@@ -1395,6 +1419,17 @@ func (k *jsiiProxy_KubernetesCluster) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (k *jsiiProxy_KubernetesCluster) PutClusterAutoscalerConfiguration(value interface{}) {
+	if err := k.validatePutClusterAutoscalerConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"putClusterAutoscalerConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (k *jsiiProxy_KubernetesCluster) PutControlPlaneFirewall(value *KubernetesClusterControlPlaneFirewall) {
 	if err := k.validatePutControlPlaneFirewallParameters(value); err != nil {
 		panic(err)
@@ -1443,6 +1478,14 @@ func (k *jsiiProxy_KubernetesCluster) ResetAutoUpgrade() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetAutoUpgrade",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesCluster) ResetClusterAutoscalerConfiguration() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetClusterAutoscalerConfiguration",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/vpc digitalocean_vpc}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/vpc digitalocean_vpc}.
 type Vpc interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -461,7 +461,7 @@ func (j *jsiiProxy_Vpc) Urn() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/vpc digitalocean_vpc} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/vpc digitalocean_vpc} Resource.
 func NewVpc(scope constructs.Construct, id *string, config *VpcConfig) Vpc {
 	_init_.Initialize()
 
@@ -479,7 +479,7 @@ func NewVpc(scope constructs.Construct, id *string, config *VpcConfig) Vpc {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/vpc digitalocean_vpc} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/vpc digitalocean_vpc} Resource.
 func NewVpc_Override(v Vpc, scope constructs.Construct, id *string, config *VpcConfig) {
 	_init_.Initialize()
 

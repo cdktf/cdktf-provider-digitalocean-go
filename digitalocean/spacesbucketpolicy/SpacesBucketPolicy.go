@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/spaces_bucket_policy digitalocean_spaces_bucket_policy}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/spaces_bucket_policy digitalocean_spaces_bucket_policy}.
 type SpacesBucketPolicy interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -379,7 +379,7 @@ func (j *jsiiProxy_SpacesBucketPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/spaces_bucket_policy digitalocean_spaces_bucket_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/spaces_bucket_policy digitalocean_spaces_bucket_policy} Resource.
 func NewSpacesBucketPolicy(scope constructs.Construct, id *string, config *SpacesBucketPolicyConfig) SpacesBucketPolicy {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewSpacesBucketPolicy(scope constructs.Construct, id *string, config *Space
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/resources/spaces_bucket_policy digitalocean_spaces_bucket_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/spaces_bucket_policy digitalocean_spaces_bucket_policy} Resource.
 func NewSpacesBucketPolicy_Override(s SpacesBucketPolicy, scope constructs.Construct, id *string, config *SpacesBucketPolicyConfig) {
 	_init_.Initialize()
 

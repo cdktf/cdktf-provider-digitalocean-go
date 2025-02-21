@@ -75,6 +75,10 @@ func (k *jsiiProxy_KubernetesCluster) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
+func (k *jsiiProxy_KubernetesCluster) validatePutClusterAutoscalerConfigurationParameters(value interface{}) error {
+	return nil
+}
+
 func (k *jsiiProxy_KubernetesCluster) validatePutControlPlaneFirewallParameters(value *KubernetesClusterControlPlaneFirewall) error {
 	return nil
 }

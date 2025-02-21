@@ -22,24 +22,24 @@ type DataDigitaloceanFirewallConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/data-sources/firewall#firewall_id DataDigitaloceanFirewall#firewall_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/data-sources/firewall#firewall_id DataDigitaloceanFirewall#firewall_id}.
 	FirewallId *string `field:"required" json:"firewallId" yaml:"firewallId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/data-sources/firewall#droplet_ids DataDigitaloceanFirewall#droplet_ids}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/data-sources/firewall#droplet_ids DataDigitaloceanFirewall#droplet_ids}.
 	DropletIds *[]*float64 `field:"optional" json:"dropletIds" yaml:"dropletIds"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/data-sources/firewall#id DataDigitaloceanFirewall#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/data-sources/firewall#id DataDigitaloceanFirewall#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// inbound_rule block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/data-sources/firewall#inbound_rule DataDigitaloceanFirewall#inbound_rule}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/data-sources/firewall#inbound_rule DataDigitaloceanFirewall#inbound_rule}
 	InboundRule interface{} `field:"optional" json:"inboundRule" yaml:"inboundRule"`
 	// outbound_rule block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/data-sources/firewall#outbound_rule DataDigitaloceanFirewall#outbound_rule}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/data-sources/firewall#outbound_rule DataDigitaloceanFirewall#outbound_rule}
 	OutboundRule interface{} `field:"optional" json:"outboundRule" yaml:"outboundRule"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.48.2/docs/data-sources/firewall#tags DataDigitaloceanFirewall#tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/data-sources/firewall#tags DataDigitaloceanFirewall#tags}.
 	Tags *[]*string `field:"optional" json:"tags" yaml:"tags"`
 }
 
