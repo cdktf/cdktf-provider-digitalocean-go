@@ -5,9 +5,9 @@ package databaseuser
 
 
 type DatabaseUserSettingsOpensearchAcl struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/database_user#index DatabaseUser#index}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.1/docs/resources/database_user#index DatabaseUser#index}.
 	Index *string `field:"required" json:"index" yaml:"index"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.0/docs/resources/database_user#permission DatabaseUser#permission}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.1/docs/resources/database_user#permission DatabaseUser#permission}.
 	Permission *string `field:"required" json:"permission" yaml:"permission"`
 }
 
