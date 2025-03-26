@@ -7,11 +7,11 @@ package monitoralert
 type MonitorAlertAlertsSlack struct {
 	// The Slack channel to send alerts to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.2/docs/resources/monitor_alert#channel MonitorAlert#channel}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.50.0/docs/resources/monitor_alert#channel MonitorAlert#channel}
 	Channel *string `field:"required" json:"channel" yaml:"channel"`
 	// The webhook URL for Slack.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.2/docs/resources/monitor_alert#url MonitorAlert#url}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.50.0/docs/resources/monitor_alert#url MonitorAlert#url}
 	Url *string `field:"required" json:"url" yaml:"url"`
 }
 

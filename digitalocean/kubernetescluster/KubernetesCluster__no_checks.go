@@ -91,6 +91,10 @@ func (k *jsiiProxy_KubernetesCluster) validatePutNodePoolParameters(value *Kuber
 	return nil
 }
 
+func (k *jsiiProxy_KubernetesCluster) validatePutRoutingAgentParameters(value *KubernetesClusterRoutingAgent) error {
+	return nil
+}
+
 func (k *jsiiProxy_KubernetesCluster) validatePutTimeoutsParameters(value *KubernetesClusterTimeouts) error {
 	return nil
 }

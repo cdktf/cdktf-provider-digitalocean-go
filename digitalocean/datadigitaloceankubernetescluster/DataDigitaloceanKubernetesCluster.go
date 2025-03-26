@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.2/docs/data-sources/kubernetes_cluster digitalocean_kubernetes_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.50.0/docs/data-sources/kubernetes_cluster digitalocean_kubernetes_cluster}.
 type DataDigitaloceanKubernetesCluster interface {
 	cdktf.TerraformDataSource
 	AutoUpgrade() cdktf.IResolvable
@@ -69,6 +69,8 @@ type DataDigitaloceanKubernetesCluster interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Region() *string
+	RoutingAgent() DataDigitaloceanKubernetesClusterRoutingAgentOutputReference
+	RoutingAgentInput() *DataDigitaloceanKubernetesClusterRoutingAgent
 	ServiceSubnet() *string
 	Status() *string
 	SurgeUpgrade() cdktf.IResolvable
@@ -111,12 +113,14 @@ type DataDigitaloceanKubernetesCluster interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutClusterAutoscalerConfiguration(value interface{})
+	PutRoutingAgent(value *DataDigitaloceanKubernetesClusterRoutingAgent)
 	ResetClusterAutoscalerConfiguration()
 	ResetId()
 	ResetKubeconfigExpireSeconds()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRoutingAgent()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -437,6 +441,26 @@ func (j *jsiiProxy_DataDigitaloceanKubernetesCluster) Region() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataDigitaloceanKubernetesCluster) RoutingAgent() DataDigitaloceanKubernetesClusterRoutingAgentOutputReference {
+	var returns DataDigitaloceanKubernetesClusterRoutingAgentOutputReference
+	_jsii_.Get(
+		j,
+		"routingAgent",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDigitaloceanKubernetesCluster) RoutingAgentInput() *DataDigitaloceanKubernetesClusterRoutingAgent {
+	var returns *DataDigitaloceanKubernetesClusterRoutingAgent
+	_jsii_.Get(
+		j,
+		"routingAgentInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDigitaloceanKubernetesCluster) ServiceSubnet() *string {
 	var returns *string
 	_jsii_.Get(
@@ -558,7 +582,7 @@ func (j *jsiiProxy_DataDigitaloceanKubernetesCluster) VpcUuid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.2/docs/data-sources/kubernetes_cluster digitalocean_kubernetes_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.50.0/docs/data-sources/kubernetes_cluster digitalocean_kubernetes_cluster} Data Source.
 func NewDataDigitaloceanKubernetesCluster(scope constructs.Construct, id *string, config *DataDigitaloceanKubernetesClusterConfig) DataDigitaloceanKubernetesCluster {
 	_init_.Initialize()
 
@@ -576,7 +600,7 @@ func NewDataDigitaloceanKubernetesCluster(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.2/docs/data-sources/kubernetes_cluster digitalocean_kubernetes_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.50.0/docs/data-sources/kubernetes_cluster digitalocean_kubernetes_cluster} Data Source.
 func NewDataDigitaloceanKubernetesCluster_Override(d DataDigitaloceanKubernetesCluster, scope constructs.Construct, id *string, config *DataDigitaloceanKubernetesClusterConfig) {
 	_init_.Initialize()
 
@@ -973,6 +997,17 @@ func (d *jsiiProxy_DataDigitaloceanKubernetesCluster) PutClusterAutoscalerConfig
 	)
 }
 
+func (d *jsiiProxy_DataDigitaloceanKubernetesCluster) PutRoutingAgent(value *DataDigitaloceanKubernetesClusterRoutingAgent) {
+	if err := d.validatePutRoutingAgentParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putRoutingAgent",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDigitaloceanKubernetesCluster) ResetClusterAutoscalerConfiguration() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1001,6 +1036,14 @@ func (d *jsiiProxy_DataDigitaloceanKubernetesCluster) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDigitaloceanKubernetesCluster) ResetRoutingAgent() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRoutingAgent",
 		nil, // no parameters
 	)
 }

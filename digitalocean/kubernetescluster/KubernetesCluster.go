@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.2/docs/resources/kubernetes_cluster digitalocean_kubernetes_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.50.0/docs/resources/kubernetes_cluster digitalocean_kubernetes_cluster}.
 type KubernetesCluster interface {
 	cdktf.TerraformResource
 	AutoUpgrade() interface{}
@@ -94,6 +94,8 @@ type KubernetesCluster interface {
 	RegistryIntegration() interface{}
 	SetRegistryIntegration(val interface{})
 	RegistryIntegrationInput() interface{}
+	RoutingAgent() KubernetesClusterRoutingAgentOutputReference
+	RoutingAgentInput() *KubernetesClusterRoutingAgent
 	ServiceSubnet() *string
 	SetServiceSubnet(val *string)
 	ServiceSubnetInput() *string
@@ -167,6 +169,7 @@ type KubernetesCluster interface {
 	PutControlPlaneFirewall(value *KubernetesClusterControlPlaneFirewall)
 	PutMaintenancePolicy(value *KubernetesClusterMaintenancePolicy)
 	PutNodePool(value *KubernetesClusterNodePool)
+	PutRoutingAgent(value *KubernetesClusterRoutingAgent)
 	PutTimeouts(value *KubernetesClusterTimeouts)
 	ResetAutoUpgrade()
 	ResetClusterAutoscalerConfiguration()
@@ -181,6 +184,7 @@ type KubernetesCluster interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRegistryIntegration()
+	ResetRoutingAgent()
 	ResetServiceSubnet()
 	ResetSurgeUpgrade()
 	ResetTags()
@@ -634,6 +638,26 @@ func (j *jsiiProxy_KubernetesCluster) RegistryIntegrationInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_KubernetesCluster) RoutingAgent() KubernetesClusterRoutingAgentOutputReference {
+	var returns KubernetesClusterRoutingAgentOutputReference
+	_jsii_.Get(
+		j,
+		"routingAgent",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesCluster) RoutingAgentInput() *KubernetesClusterRoutingAgent {
+	var returns *KubernetesClusterRoutingAgent
+	_jsii_.Get(
+		j,
+		"routingAgentInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KubernetesCluster) ServiceSubnet() *string {
 	var returns *string
 	_jsii_.Get(
@@ -815,7 +839,7 @@ func (j *jsiiProxy_KubernetesCluster) VpcUuidInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.2/docs/resources/kubernetes_cluster digitalocean_kubernetes_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.50.0/docs/resources/kubernetes_cluster digitalocean_kubernetes_cluster} Resource.
 func NewKubernetesCluster(scope constructs.Construct, id *string, config *KubernetesClusterConfig) KubernetesCluster {
 	_init_.Initialize()
 
@@ -833,7 +857,7 @@ func NewKubernetesCluster(scope constructs.Construct, id *string, config *Kubern
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.2/docs/resources/kubernetes_cluster digitalocean_kubernetes_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.50.0/docs/resources/kubernetes_cluster digitalocean_kubernetes_cluster} Resource.
 func NewKubernetesCluster_Override(k KubernetesCluster, scope constructs.Construct, id *string, config *KubernetesClusterConfig) {
 	_init_.Initialize()
 
@@ -1463,6 +1487,17 @@ func (k *jsiiProxy_KubernetesCluster) PutNodePool(value *KubernetesClusterNodePo
 	)
 }
 
+func (k *jsiiProxy_KubernetesCluster) PutRoutingAgent(value *KubernetesClusterRoutingAgent) {
+	if err := k.validatePutRoutingAgentParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"putRoutingAgent",
+		[]interface{}{value},
+	)
+}
+
 func (k *jsiiProxy_KubernetesCluster) PutTimeouts(value *KubernetesClusterTimeouts) {
 	if err := k.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1558,6 +1593,14 @@ func (k *jsiiProxy_KubernetesCluster) ResetRegistryIntegration() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetRegistryIntegration",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesCluster) ResetRoutingAgent() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetRoutingAgent",
 		nil, // no parameters
 	)
 }

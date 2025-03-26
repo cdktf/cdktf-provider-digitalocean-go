@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.2/docs/resources/database_kafka_topic digitalocean_database_kafka_topic}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.50.0/docs/resources/database_kafka_topic digitalocean_database_kafka_topic}.
 type DatabaseKafkaTopic interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -439,7 +439,7 @@ func (j *jsiiProxy_DatabaseKafkaTopic) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.2/docs/resources/database_kafka_topic digitalocean_database_kafka_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.50.0/docs/resources/database_kafka_topic digitalocean_database_kafka_topic} Resource.
 func NewDatabaseKafkaTopic(scope constructs.Construct, id *string, config *DatabaseKafkaTopicConfig) DatabaseKafkaTopic {
 	_init_.Initialize()
 
@@ -457,7 +457,7 @@ func NewDatabaseKafkaTopic(scope constructs.Construct, id *string, config *Datab
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.49.2/docs/resources/database_kafka_topic digitalocean_database_kafka_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.50.0/docs/resources/database_kafka_topic digitalocean_database_kafka_topic} Resource.
 func NewDatabaseKafkaTopic_Override(d DatabaseKafkaTopic, scope constructs.Construct, id *string, config *DatabaseKafkaTopicConfig) {
 	_init_.Initialize()
 
