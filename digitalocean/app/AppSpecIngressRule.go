@@ -7,19 +7,19 @@ package app
 type AppSpecIngressRule struct {
 	// component block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.50.0/docs/resources/app#component App#component}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.51.0/docs/resources/app#component App#component}
 	Component *AppSpecIngressRuleComponent `field:"optional" json:"component" yaml:"component"`
 	// cors block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.50.0/docs/resources/app#cors App#cors}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.51.0/docs/resources/app#cors App#cors}
 	Cors *AppSpecIngressRuleCors `field:"optional" json:"cors" yaml:"cors"`
 	// match block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.50.0/docs/resources/app#match App#match}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.51.0/docs/resources/app#match App#match}
 	Match *AppSpecIngressRuleMatch `field:"optional" json:"match" yaml:"match"`
 	// redirect block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.50.0/docs/resources/app#redirect App#redirect}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.51.0/docs/resources/app#redirect App#redirect}
 	Redirect *AppSpecIngressRuleRedirect `field:"optional" json:"redirect" yaml:"redirect"`
 }
 

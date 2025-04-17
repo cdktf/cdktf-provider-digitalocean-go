@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.50.0/docs/resources/tag digitalocean_tag}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.51.0/docs/resources/tag digitalocean_tag}.
 type Tag interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -399,7 +399,7 @@ func (j *jsiiProxy_Tag) VolumeSnapshotsCount() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.50.0/docs/resources/tag digitalocean_tag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.51.0/docs/resources/tag digitalocean_tag} Resource.
 func NewTag(scope constructs.Construct, id *string, config *TagConfig) Tag {
 	_init_.Initialize()
 
@@ -417,7 +417,7 @@ func NewTag(scope constructs.Construct, id *string, config *TagConfig) Tag {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.50.0/docs/resources/tag digitalocean_tag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.51.0/docs/resources/tag digitalocean_tag} Resource.
 func NewTag_Override(t Tag, scope constructs.Construct, id *string, config *TagConfig) {
 	_init_.Initialize()
 
