@@ -199,6 +199,10 @@ func (j *jsiiProxy_Loadbalancer) validateSetTargetLoadBalancerIdsParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_Loadbalancer) validateSetTlsCipherPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Loadbalancer) validateSetTypeParameters(val *string) error {
 	return nil
 }

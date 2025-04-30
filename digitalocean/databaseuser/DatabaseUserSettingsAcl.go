@@ -5,9 +5,9 @@ package databaseuser
 
 
 type DatabaseUserSettingsAcl struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.51.0/docs/resources/database_user#permission DatabaseUser#permission}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.52.0/docs/resources/database_user#permission DatabaseUser#permission}.
 	Permission *string `field:"required" json:"permission" yaml:"permission"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.51.0/docs/resources/database_user#topic DatabaseUser#topic}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.52.0/docs/resources/database_user#topic DatabaseUser#topic}.
 	Topic *string `field:"required" json:"topic" yaml:"topic"`
 }
 

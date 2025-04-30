@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.51.0/docs/resources/spaces_key digitalocean_spaces_key}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.52.0/docs/resources/spaces_key digitalocean_spaces_key}.
 type SpacesKey interface {
 	cdktf.TerraformResource
 	AccessKey() *string
@@ -390,7 +390,7 @@ func (j *jsiiProxy_SpacesKey) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.51.0/docs/resources/spaces_key digitalocean_spaces_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.52.0/docs/resources/spaces_key digitalocean_spaces_key} Resource.
 func NewSpacesKey(scope constructs.Construct, id *string, config *SpacesKeyConfig) SpacesKey {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewSpacesKey(scope constructs.Construct, id *string, config *SpacesKeyConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.51.0/docs/resources/spaces_key digitalocean_spaces_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.52.0/docs/resources/spaces_key digitalocean_spaces_key} Resource.
 func NewSpacesKey_Override(s SpacesKey, scope constructs.Construct, id *string, config *SpacesKeyConfig) {
 	_init_.Initialize()
 

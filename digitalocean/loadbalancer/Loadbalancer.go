@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.51.0/docs/resources/loadbalancer digitalocean_loadbalancer}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.52.0/docs/resources/loadbalancer digitalocean_loadbalancer}.
 type Loadbalancer interface {
 	cdktf.TerraformResource
 	Algorithm() *string
@@ -127,6 +127,9 @@ type Loadbalancer interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	TlsCipherPolicy() *string
+	SetTlsCipherPolicy(val *string)
+	TlsCipherPolicyInput() *string
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -208,6 +211,7 @@ type Loadbalancer interface {
 	ResetSizeUnit()
 	ResetStickySessions()
 	ResetTargetLoadBalancerIds()
+	ResetTlsCipherPolicy()
 	ResetType()
 	ResetVpcUuid()
 	SynthesizeAttributes() *map[string]interface{}
@@ -878,6 +882,26 @@ func (j *jsiiProxy_Loadbalancer) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Loadbalancer) TlsCipherPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tlsCipherPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Loadbalancer) TlsCipherPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tlsCipherPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Loadbalancer) Type() *string {
 	var returns *string
 	_jsii_.Get(
@@ -929,7 +953,7 @@ func (j *jsiiProxy_Loadbalancer) VpcUuidInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.51.0/docs/resources/loadbalancer digitalocean_loadbalancer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.52.0/docs/resources/loadbalancer digitalocean_loadbalancer} Resource.
 func NewLoadbalancer(scope constructs.Construct, id *string, config *LoadbalancerConfig) Loadbalancer {
 	_init_.Initialize()
 
@@ -947,7 +971,7 @@ func NewLoadbalancer(scope constructs.Construct, id *string, config *Loadbalance
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.51.0/docs/resources/loadbalancer digitalocean_loadbalancer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.52.0/docs/resources/loadbalancer digitalocean_loadbalancer} Resource.
 func NewLoadbalancer_Override(l Loadbalancer, scope constructs.Construct, id *string, config *LoadbalancerConfig) {
 	_init_.Initialize()
 
@@ -1209,6 +1233,17 @@ func (j *jsiiProxy_Loadbalancer)SetTargetLoadBalancerIds(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"targetLoadBalancerIds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Loadbalancer)SetTlsCipherPolicy(val *string) {
+	if err := j.validateSetTlsCipherPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tlsCipherPolicy",
 		val,
 	)
 }
@@ -1834,6 +1869,14 @@ func (l *jsiiProxy_Loadbalancer) ResetTargetLoadBalancerIds() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetTargetLoadBalancerIds",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_Loadbalancer) ResetTlsCipherPolicy() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetTlsCipherPolicy",
 		nil, // no parameters
 	)
 }

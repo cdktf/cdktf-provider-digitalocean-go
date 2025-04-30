@@ -681,6 +681,14 @@ func (j *jsiiProxy_Loadbalancer) validateSetTargetLoadBalancerIdsParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_Loadbalancer) validateSetTlsCipherPolicyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Loadbalancer) validateSetTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
