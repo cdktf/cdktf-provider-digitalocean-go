@@ -7,19 +7,19 @@ package app
 type AppSpecWorkerLogDestinationOpenSearch struct {
 	// basic_auth block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.52.0/docs/resources/app#basic_auth App#basic_auth}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.53.0/docs/resources/app#basic_auth App#basic_auth}
 	BasicAuth *AppSpecWorkerLogDestinationOpenSearchBasicAuth `field:"required" json:"basicAuth" yaml:"basicAuth"`
 	// OpenSearch cluster name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.52.0/docs/resources/app#cluster_name App#cluster_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.53.0/docs/resources/app#cluster_name App#cluster_name}
 	ClusterName *string `field:"optional" json:"clusterName" yaml:"clusterName"`
 	// OpenSearch endpoint.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.52.0/docs/resources/app#endpoint App#endpoint}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.53.0/docs/resources/app#endpoint App#endpoint}
 	Endpoint *string `field:"optional" json:"endpoint" yaml:"endpoint"`
 	// OpenSearch index name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.52.0/docs/resources/app#index_name App#index_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.53.0/docs/resources/app#index_name App#index_name}
 	IndexName *string `field:"optional" json:"indexName" yaml:"indexName"`
 }
 

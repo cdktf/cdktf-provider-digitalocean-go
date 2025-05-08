@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.52.0/docs/resources/database_replica digitalocean_database_replica}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.53.0/docs/resources/database_replica digitalocean_database_replica}.
 type DatabaseReplica interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -575,7 +575,7 @@ func (j *jsiiProxy_DatabaseReplica) Uuid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.52.0/docs/resources/database_replica digitalocean_database_replica} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.53.0/docs/resources/database_replica digitalocean_database_replica} Resource.
 func NewDatabaseReplica(scope constructs.Construct, id *string, config *DatabaseReplicaConfig) DatabaseReplica {
 	_init_.Initialize()
 
@@ -593,7 +593,7 @@ func NewDatabaseReplica(scope constructs.Construct, id *string, config *Database
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.52.0/docs/resources/database_replica digitalocean_database_replica} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.53.0/docs/resources/database_replica digitalocean_database_replica} Resource.
 func NewDatabaseReplica_Override(d DatabaseReplica, scope constructs.Construct, id *string, config *DatabaseReplicaConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.52.0/docs/resources/database_postgresql_config digitalocean_database_postgresql_config}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.53.0/docs/resources/database_postgresql_config digitalocean_database_postgresql_config}.
 type DatabasePostgresqlConfig interface {
 	cdktf.TerraformResource
 	AutovacuumAnalyzeScaleFactor() *float64
@@ -1557,7 +1557,7 @@ func (j *jsiiProxy_DatabasePostgresqlConfig) WorkMemInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.52.0/docs/resources/database_postgresql_config digitalocean_database_postgresql_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.53.0/docs/resources/database_postgresql_config digitalocean_database_postgresql_config} Resource.
 func NewDatabasePostgresqlConfig(scope constructs.Construct, id *string, config *DatabasePostgresqlConfigConfig) DatabasePostgresqlConfig {
 	_init_.Initialize()
 
@@ -1575,7 +1575,7 @@ func NewDatabasePostgresqlConfig(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.52.0/docs/resources/database_postgresql_config digitalocean_database_postgresql_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.53.0/docs/resources/database_postgresql_config digitalocean_database_postgresql_config} Resource.
 func NewDatabasePostgresqlConfig_Override(d DatabasePostgresqlConfig, scope constructs.Construct, id *string, config *DatabasePostgresqlConfigConfig) {
 	_init_.Initialize()
 

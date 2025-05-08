@@ -24,18 +24,18 @@ type DataDigitaloceanPartnerAttachmentConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// bgp block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.52.0/docs/data-sources/partner_attachment#bgp DataDigitaloceanPartnerAttachment#bgp}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.53.0/docs/data-sources/partner_attachment#bgp DataDigitaloceanPartnerAttachment#bgp}
 	Bgp *DataDigitaloceanPartnerAttachmentBgp `field:"optional" json:"bgp" yaml:"bgp"`
 	// The ID of the Partner Attachment.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.52.0/docs/data-sources/partner_attachment#id DataDigitaloceanPartnerAttachment#id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.53.0/docs/data-sources/partner_attachment#id DataDigitaloceanPartnerAttachment#id}
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// The name of the Partner Attachment.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.52.0/docs/data-sources/partner_attachment#name DataDigitaloceanPartnerAttachment#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.53.0/docs/data-sources/partner_attachment#name DataDigitaloceanPartnerAttachment#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 

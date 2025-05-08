@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.52.0/docs/resources/reserved_ipv6 digitalocean_reserved_ipv6}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.53.0/docs/resources/reserved_ipv6 digitalocean_reserved_ipv6}.
 type ReservedIpv6 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -392,7 +392,7 @@ func (j *jsiiProxy_ReservedIpv6) Urn() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.52.0/docs/resources/reserved_ipv6 digitalocean_reserved_ipv6} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.53.0/docs/resources/reserved_ipv6 digitalocean_reserved_ipv6} Resource.
 func NewReservedIpv6(scope constructs.Construct, id *string, config *ReservedIpv6Config) ReservedIpv6 {
 	_init_.Initialize()
 
@@ -410,7 +410,7 @@ func NewReservedIpv6(scope constructs.Construct, id *string, config *ReservedIpv
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.52.0/docs/resources/reserved_ipv6 digitalocean_reserved_ipv6} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.53.0/docs/resources/reserved_ipv6 digitalocean_reserved_ipv6} Resource.
 func NewReservedIpv6_Override(r ReservedIpv6, scope constructs.Construct, id *string, config *ReservedIpv6Config) {
 	_init_.Initialize()
 
