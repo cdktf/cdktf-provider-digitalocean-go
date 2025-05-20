@@ -183,6 +183,7 @@ func init() {
 		"@cdktf/provider-digitalocean.loadbalancer.LoadbalancerDomainsOutputReference",
 		reflect.TypeOf((*LoadbalancerDomainsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "certificateId", GoGetter: "CertificateId"},
 			_jsii_.MemberProperty{JsiiProperty: "certificateName", GoGetter: "CertificateName"},
 			_jsii_.MemberProperty{JsiiProperty: "certificateNameInput", GoGetter: "CertificateNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

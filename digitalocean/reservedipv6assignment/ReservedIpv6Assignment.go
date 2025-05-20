@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.53.0/docs/resources/reserved_ipv6_assignment digitalocean_reserved_ipv6_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/reserved_ipv6_assignment digitalocean_reserved_ipv6_assignment}.
 type ReservedIpv6Assignment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_ReservedIpv6Assignment) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.53.0/docs/resources/reserved_ipv6_assignment digitalocean_reserved_ipv6_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/reserved_ipv6_assignment digitalocean_reserved_ipv6_assignment} Resource.
 func NewReservedIpv6Assignment(scope constructs.Construct, id *string, config *ReservedIpv6AssignmentConfig) ReservedIpv6Assignment {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewReservedIpv6Assignment(scope constructs.Construct, id *string, config *R
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.53.0/docs/resources/reserved_ipv6_assignment digitalocean_reserved_ipv6_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/reserved_ipv6_assignment digitalocean_reserved_ipv6_assignment} Resource.
 func NewReservedIpv6Assignment_Override(r ReservedIpv6Assignment, scope constructs.Construct, id *string, config *ReservedIpv6AssignmentConfig) {
 	_init_.Initialize()
 

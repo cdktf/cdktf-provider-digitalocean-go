@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.53.0/docs/resources/database_opensearch_config digitalocean_database_opensearch_config}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/database_opensearch_config digitalocean_database_opensearch_config}.
 type DatabaseOpensearchConfig interface {
 	cdktf.TerraformResource
 	ActionAutoCreateIndexEnabled() interface{}
@@ -1245,7 +1245,7 @@ func (j *jsiiProxy_DatabaseOpensearchConfig) ThreadPoolWriteSizeInput() *float64
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.53.0/docs/resources/database_opensearch_config digitalocean_database_opensearch_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/database_opensearch_config digitalocean_database_opensearch_config} Resource.
 func NewDatabaseOpensearchConfig(scope constructs.Construct, id *string, config *DatabaseOpensearchConfigConfig) DatabaseOpensearchConfig {
 	_init_.Initialize()
 
@@ -1263,7 +1263,7 @@ func NewDatabaseOpensearchConfig(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.53.0/docs/resources/database_opensearch_config digitalocean_database_opensearch_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/database_opensearch_config digitalocean_database_opensearch_config} Resource.
 func NewDatabaseOpensearchConfig_Override(d DatabaseOpensearchConfig, scope constructs.Construct, id *string, config *DatabaseOpensearchConfigConfig) {
 	_init_.Initialize()
 

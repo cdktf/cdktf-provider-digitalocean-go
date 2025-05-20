@@ -13,6 +13,7 @@ import (
 
 type LoadbalancerDomainsOutputReference interface {
 	cdktf.ComplexObject
+	CertificateId() *string
 	CertificateName() *string
 	SetCertificateName(val *string)
 	CertificateNameInput() *string
@@ -90,6 +91,16 @@ type LoadbalancerDomainsOutputReference interface {
 // The jsii proxy struct for LoadbalancerDomainsOutputReference
 type jsiiProxy_LoadbalancerDomainsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_LoadbalancerDomainsOutputReference) CertificateId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"certificateId",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_LoadbalancerDomainsOutputReference) CertificateName() *string {
