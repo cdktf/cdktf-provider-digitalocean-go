@@ -5,14 +5,14 @@ package databaseredisconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/databaseredisconfig/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/databaseredisconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/database_redis_config digitalocean_database_redis_config}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/database_redis_config digitalocean_database_redis_config}.
 type DatabaseRedisConfig interface {
 	cdktf.TerraformResource
 	AclChannelsDefault() *string
@@ -597,7 +597,7 @@ func (j *jsiiProxy_DatabaseRedisConfig) TimeoutInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/database_redis_config digitalocean_database_redis_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/database_redis_config digitalocean_database_redis_config} Resource.
 func NewDatabaseRedisConfig(scope constructs.Construct, id *string, config *DatabaseRedisConfigConfig) DatabaseRedisConfig {
 	_init_.Initialize()
 
@@ -615,7 +615,7 @@ func NewDatabaseRedisConfig(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/database_redis_config digitalocean_database_redis_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/database_redis_config digitalocean_database_redis_config} Resource.
 func NewDatabaseRedisConfig_Override(d DatabaseRedisConfig, scope constructs.Construct, id *string, config *DatabaseRedisConfigConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package record
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/record/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/record/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/record digitalocean_record}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/record digitalocean_record}.
 type Record interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -557,7 +557,7 @@ func (j *jsiiProxy_Record) WeightInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/record digitalocean_record} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/record digitalocean_record} Resource.
 func NewRecord(scope constructs.Construct, id *string, config *RecordConfig) Record {
 	_init_.Initialize()
 
@@ -575,7 +575,7 @@ func NewRecord(scope constructs.Construct, id *string, config *RecordConfig) Rec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/record digitalocean_record} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/record digitalocean_record} Resource.
 func NewRecord_Override(r Record, scope constructs.Construct, id *string, config *RecordConfig) {
 	_init_.Initialize()
 

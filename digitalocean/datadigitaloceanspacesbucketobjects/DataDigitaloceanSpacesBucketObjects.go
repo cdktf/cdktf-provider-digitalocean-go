@@ -5,14 +5,14 @@ package datadigitaloceanspacesbucketobjects
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanspacesbucketobjects/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/datadigitaloceanspacesbucketobjects/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/data-sources/spaces_bucket_objects digitalocean_spaces_bucket_objects}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/data-sources/spaces_bucket_objects digitalocean_spaces_bucket_objects}.
 type DataDigitaloceanSpacesBucketObjects interface {
 	cdktf.TerraformDataSource
 	Bucket() *string
@@ -440,7 +440,7 @@ func (j *jsiiProxy_DataDigitaloceanSpacesBucketObjects) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/data-sources/spaces_bucket_objects digitalocean_spaces_bucket_objects} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/data-sources/spaces_bucket_objects digitalocean_spaces_bucket_objects} Data Source.
 func NewDataDigitaloceanSpacesBucketObjects(scope constructs.Construct, id *string, config *DataDigitaloceanSpacesBucketObjectsConfig) DataDigitaloceanSpacesBucketObjects {
 	_init_.Initialize()
 
@@ -458,7 +458,7 @@ func NewDataDigitaloceanSpacesBucketObjects(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/data-sources/spaces_bucket_objects digitalocean_spaces_bucket_objects} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/data-sources/spaces_bucket_objects digitalocean_spaces_bucket_objects} Data Source.
 func NewDataDigitaloceanSpacesBucketObjects_Override(d DataDigitaloceanSpacesBucketObjects, scope constructs.Construct, id *string, config *DataDigitaloceanSpacesBucketObjectsConfig) {
 	_init_.Initialize()
 

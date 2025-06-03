@@ -127,6 +127,10 @@ func (j *jsiiProxy_PartnerAttachment) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_PartnerAttachment) validateSetRedundancyZoneParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PartnerAttachment) validateSetRegionParameters(val *string) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package datadigitaloceantags
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceantags/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/datadigitaloceantags/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/data-sources/tags digitalocean_tags}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/data-sources/tags digitalocean_tags}.
 type DataDigitaloceanTags interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -324,7 +324,7 @@ func (j *jsiiProxy_DataDigitaloceanTags) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/data-sources/tags digitalocean_tags} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/data-sources/tags digitalocean_tags} Data Source.
 func NewDataDigitaloceanTags(scope constructs.Construct, id *string, config *DataDigitaloceanTagsConfig) DataDigitaloceanTags {
 	_init_.Initialize()
 
@@ -342,7 +342,7 @@ func NewDataDigitaloceanTags(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/data-sources/tags digitalocean_tags} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/data-sources/tags digitalocean_tags} Data Source.
 func NewDataDigitaloceanTags_Override(d DataDigitaloceanTags, scope constructs.Construct, id *string, config *DataDigitaloceanTagsConfig) {
 	_init_.Initialize()
 

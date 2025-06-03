@@ -5,14 +5,14 @@ package databaseopensearchconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/databaseopensearchconfig/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/databaseopensearchconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/database_opensearch_config digitalocean_database_opensearch_config}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/database_opensearch_config digitalocean_database_opensearch_config}.
 type DatabaseOpensearchConfig interface {
 	cdktf.TerraformResource
 	ActionAutoCreateIndexEnabled() interface{}
@@ -1245,7 +1245,7 @@ func (j *jsiiProxy_DatabaseOpensearchConfig) ThreadPoolWriteSizeInput() *float64
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/database_opensearch_config digitalocean_database_opensearch_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/database_opensearch_config digitalocean_database_opensearch_config} Resource.
 func NewDatabaseOpensearchConfig(scope constructs.Construct, id *string, config *DatabaseOpensearchConfigConfig) DatabaseOpensearchConfig {
 	_init_.Initialize()
 
@@ -1263,7 +1263,7 @@ func NewDatabaseOpensearchConfig(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/database_opensearch_config digitalocean_database_opensearch_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/database_opensearch_config digitalocean_database_opensearch_config} Resource.
 func NewDatabaseOpensearchConfig_Override(d DatabaseOpensearchConfig, scope constructs.Construct, id *string, config *DatabaseOpensearchConfigConfig) {
 	_init_.Initialize()
 

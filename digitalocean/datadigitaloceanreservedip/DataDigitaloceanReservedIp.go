@@ -5,14 +5,14 @@ package datadigitaloceanreservedip
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanreservedip/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/datadigitaloceanreservedip/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/data-sources/reserved_ip digitalocean_reserved_ip}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/data-sources/reserved_ip digitalocean_reserved_ip}.
 type DataDigitaloceanReservedIp interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -321,7 +321,7 @@ func (j *jsiiProxy_DataDigitaloceanReservedIp) Urn() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/data-sources/reserved_ip digitalocean_reserved_ip} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/data-sources/reserved_ip digitalocean_reserved_ip} Data Source.
 func NewDataDigitaloceanReservedIp(scope constructs.Construct, id *string, config *DataDigitaloceanReservedIpConfig) DataDigitaloceanReservedIp {
 	_init_.Initialize()
 
@@ -339,7 +339,7 @@ func NewDataDigitaloceanReservedIp(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/data-sources/reserved_ip digitalocean_reserved_ip} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/data-sources/reserved_ip digitalocean_reserved_ip} Data Source.
 func NewDataDigitaloceanReservedIp_Override(d DataDigitaloceanReservedIp, scope constructs.Construct, id *string, config *DataDigitaloceanReservedIpConfig) {
 	_init_.Initialize()
 

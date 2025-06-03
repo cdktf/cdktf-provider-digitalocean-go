@@ -1,4 +1,4 @@
-module github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11
+module github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12
 
 go 1.18
 

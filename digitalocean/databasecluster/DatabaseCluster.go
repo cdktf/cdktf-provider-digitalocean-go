@@ -5,14 +5,14 @@ package databasecluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/databasecluster/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/databasecluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/database_cluster digitalocean_database_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/database_cluster digitalocean_database_cluster}.
 type DatabaseCluster interface {
 	cdktf.TerraformResource
 	BackupRestore() DatabaseClusterBackupRestoreOutputReference
@@ -830,7 +830,7 @@ func (j *jsiiProxy_DatabaseCluster) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/database_cluster digitalocean_database_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/database_cluster digitalocean_database_cluster} Resource.
 func NewDatabaseCluster(scope constructs.Construct, id *string, config *DatabaseClusterConfig) DatabaseCluster {
 	_init_.Initialize()
 
@@ -848,7 +848,7 @@ func NewDatabaseCluster(scope constructs.Construct, id *string, config *Database
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/database_cluster digitalocean_database_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/database_cluster digitalocean_database_cluster} Resource.
 func NewDatabaseCluster_Override(d DatabaseCluster, scope constructs.Construct, id *string, config *DatabaseClusterConfig) {
 	_init_.Initialize()
 

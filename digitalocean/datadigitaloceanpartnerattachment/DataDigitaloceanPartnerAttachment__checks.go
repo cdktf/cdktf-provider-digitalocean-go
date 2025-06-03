@@ -246,6 +246,14 @@ func (j *jsiiProxy_DataDigitaloceanPartnerAttachment) validateSetNameParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataDigitaloceanPartnerAttachment) validateSetRedundancyZoneParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataDigitaloceanPartnerAttachmentParameters(scope constructs.Construct, id *string, config *DataDigitaloceanPartnerAttachmentConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

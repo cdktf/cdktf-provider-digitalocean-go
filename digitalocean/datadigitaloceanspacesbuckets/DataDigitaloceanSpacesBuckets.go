@@ -5,14 +5,14 @@ package datadigitaloceanspacesbuckets
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanspacesbuckets/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/datadigitaloceanspacesbuckets/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/data-sources/spaces_buckets digitalocean_spaces_buckets}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/data-sources/spaces_buckets digitalocean_spaces_buckets}.
 type DataDigitaloceanSpacesBuckets interface {
 	cdktf.TerraformDataSource
 	Buckets() DataDigitaloceanSpacesBucketsBucketsList
@@ -324,7 +324,7 @@ func (j *jsiiProxy_DataDigitaloceanSpacesBuckets) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/data-sources/spaces_buckets digitalocean_spaces_buckets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/data-sources/spaces_buckets digitalocean_spaces_buckets} Data Source.
 func NewDataDigitaloceanSpacesBuckets(scope constructs.Construct, id *string, config *DataDigitaloceanSpacesBucketsConfig) DataDigitaloceanSpacesBuckets {
 	_init_.Initialize()
 
@@ -342,7 +342,7 @@ func NewDataDigitaloceanSpacesBuckets(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/data-sources/spaces_buckets digitalocean_spaces_buckets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/data-sources/spaces_buckets digitalocean_spaces_buckets} Data Source.
 func NewDataDigitaloceanSpacesBuckets_Override(d DataDigitaloceanSpacesBuckets, scope constructs.Construct, id *string, config *DataDigitaloceanSpacesBucketsConfig) {
 	_init_.Initialize()
 

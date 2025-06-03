@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataDigitaloceanPartnerAttachment) validateSetNameParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataDigitaloceanPartnerAttachment) validateSetRedundancyZoneParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataDigitaloceanPartnerAttachmentParameters(scope constructs.Construct, id *string, config *DataDigitaloceanPartnerAttachmentConfig) error {
 	return nil
 }

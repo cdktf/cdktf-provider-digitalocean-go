@@ -5,14 +5,14 @@ package reservedip
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/reservedip/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/reservedip/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/reserved_ip digitalocean_reserved_ip}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/reserved_ip digitalocean_reserved_ip}.
 type ReservedIp interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -392,7 +392,7 @@ func (j *jsiiProxy_ReservedIp) Urn() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/reserved_ip digitalocean_reserved_ip} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/reserved_ip digitalocean_reserved_ip} Resource.
 func NewReservedIp(scope constructs.Construct, id *string, config *ReservedIpConfig) ReservedIp {
 	_init_.Initialize()
 
@@ -410,7 +410,7 @@ func NewReservedIp(scope constructs.Construct, id *string, config *ReservedIpCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/reserved_ip digitalocean_reserved_ip} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/reserved_ip digitalocean_reserved_ip} Resource.
 func NewReservedIp_Override(r ReservedIp, scope constructs.Construct, id *string, config *ReservedIpConfig) {
 	_init_.Initialize()
 

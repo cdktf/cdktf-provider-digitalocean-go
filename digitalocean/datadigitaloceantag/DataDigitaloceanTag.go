@@ -5,14 +5,14 @@ package datadigitaloceantag
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceantag/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/datadigitaloceantag/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/data-sources/tag digitalocean_tag}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/data-sources/tag digitalocean_tag}.
 type DataDigitaloceanTag interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -354,7 +354,7 @@ func (j *jsiiProxy_DataDigitaloceanTag) VolumeSnapshotsCount() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/data-sources/tag digitalocean_tag} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/data-sources/tag digitalocean_tag} Data Source.
 func NewDataDigitaloceanTag(scope constructs.Construct, id *string, config *DataDigitaloceanTagConfig) DataDigitaloceanTag {
 	_init_.Initialize()
 
@@ -372,7 +372,7 @@ func NewDataDigitaloceanTag(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/data-sources/tag digitalocean_tag} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/data-sources/tag digitalocean_tag} Data Source.
 func NewDataDigitaloceanTag_Override(d DataDigitaloceanTag, scope constructs.Construct, id *string, config *DataDigitaloceanTagConfig) {
 	_init_.Initialize()
 

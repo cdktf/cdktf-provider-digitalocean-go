@@ -5,14 +5,14 @@ package spacesbucketobject
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/spacesbucketobject/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/spacesbucketobject/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/spaces_bucket_object digitalocean_spaces_bucket_object}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/spaces_bucket_object digitalocean_spaces_bucket_object}.
 type SpacesBucketObject interface {
 	cdktf.TerraformResource
 	Acl() *string
@@ -702,7 +702,7 @@ func (j *jsiiProxy_SpacesBucketObject) WebsiteRedirectInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/spaces_bucket_object digitalocean_spaces_bucket_object} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/spaces_bucket_object digitalocean_spaces_bucket_object} Resource.
 func NewSpacesBucketObject(scope constructs.Construct, id *string, config *SpacesBucketObjectConfig) SpacesBucketObject {
 	_init_.Initialize()
 
@@ -720,7 +720,7 @@ func NewSpacesBucketObject(scope constructs.Construct, id *string, config *Space
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/spaces_bucket_object digitalocean_spaces_bucket_object} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/spaces_bucket_object digitalocean_spaces_bucket_object} Resource.
 func NewSpacesBucketObject_Override(s SpacesBucketObject, scope constructs.Construct, id *string, config *SpacesBucketObjectConfig) {
 	_init_.Initialize()
 

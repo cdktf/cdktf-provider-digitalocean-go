@@ -5,14 +5,14 @@ package databasekafkaconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/databasekafkaconfig/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/databasekafkaconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/database_kafka_config digitalocean_database_kafka_config}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/database_kafka_config digitalocean_database_kafka_config}.
 type DatabaseKafkaConfig interface {
 	cdktf.TerraformResource
 	AutoCreateTopicsEnable() interface{}
@@ -741,7 +741,7 @@ func (j *jsiiProxy_DatabaseKafkaConfig) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/database_kafka_config digitalocean_database_kafka_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/database_kafka_config digitalocean_database_kafka_config} Resource.
 func NewDatabaseKafkaConfig(scope constructs.Construct, id *string, config *DatabaseKafkaConfigConfig) DatabaseKafkaConfig {
 	_init_.Initialize()
 
@@ -759,7 +759,7 @@ func NewDatabaseKafkaConfig(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/database_kafka_config digitalocean_database_kafka_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/database_kafka_config digitalocean_database_kafka_config} Resource.
 func NewDatabaseKafkaConfig_Override(d DatabaseKafkaConfig, scope constructs.Construct, id *string, config *DatabaseKafkaConfigConfig) {
 	_init_.Initialize()
 

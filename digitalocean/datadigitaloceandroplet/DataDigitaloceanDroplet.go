@@ -5,14 +5,14 @@ package datadigitaloceandroplet
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceandroplet/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/datadigitaloceandroplet/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/data-sources/droplet digitalocean_droplet}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/data-sources/droplet digitalocean_droplet}.
 type DataDigitaloceanDroplet interface {
 	cdktf.TerraformDataSource
 	Backups() cdktf.IResolvable
@@ -590,7 +590,7 @@ func (j *jsiiProxy_DataDigitaloceanDroplet) VpcUuid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/data-sources/droplet digitalocean_droplet} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/data-sources/droplet digitalocean_droplet} Data Source.
 func NewDataDigitaloceanDroplet(scope constructs.Construct, id *string, config *DataDigitaloceanDropletConfig) DataDigitaloceanDroplet {
 	_init_.Initialize()
 
@@ -608,7 +608,7 @@ func NewDataDigitaloceanDroplet(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/data-sources/droplet digitalocean_droplet} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/data-sources/droplet digitalocean_droplet} Data Source.
 func NewDataDigitaloceanDroplet_Override(d DataDigitaloceanDroplet, scope constructs.Construct, id *string, config *DataDigitaloceanDropletConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package datadigitaloceanpartnerattachment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceanpartnerattachment/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/datadigitaloceanpartnerattachment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/data-sources/partner_attachment digitalocean_partner_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/data-sources/partner_attachment digitalocean_partner_attachment}.
 type DataDigitaloceanPartnerAttachment interface {
 	cdktf.TerraformDataSource
 	Bgp() DataDigitaloceanPartnerAttachmentBgpOutputReference
@@ -58,6 +58,9 @@ type DataDigitaloceanPartnerAttachment interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	RedundancyZone() *string
+	SetRedundancyZone(val *string)
+	RedundancyZoneInput() *string
 	Region() *string
 	State() *string
 	// Experimental.
@@ -99,6 +102,7 @@ type DataDigitaloceanPartnerAttachment interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRedundancyZone()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -318,6 +322,26 @@ func (j *jsiiProxy_DataDigitaloceanPartnerAttachment) RawOverrides() interface{}
 	return returns
 }
 
+func (j *jsiiProxy_DataDigitaloceanPartnerAttachment) RedundancyZone() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"redundancyZone",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDigitaloceanPartnerAttachment) RedundancyZoneInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"redundancyZoneInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDigitaloceanPartnerAttachment) Region() *string {
 	var returns *string
 	_jsii_.Get(
@@ -379,7 +403,7 @@ func (j *jsiiProxy_DataDigitaloceanPartnerAttachment) VpcIds() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/data-sources/partner_attachment digitalocean_partner_attachment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/data-sources/partner_attachment digitalocean_partner_attachment} Data Source.
 func NewDataDigitaloceanPartnerAttachment(scope constructs.Construct, id *string, config *DataDigitaloceanPartnerAttachmentConfig) DataDigitaloceanPartnerAttachment {
 	_init_.Initialize()
 
@@ -397,7 +421,7 @@ func NewDataDigitaloceanPartnerAttachment(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/data-sources/partner_attachment digitalocean_partner_attachment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/data-sources/partner_attachment digitalocean_partner_attachment} Data Source.
 func NewDataDigitaloceanPartnerAttachment_Override(d DataDigitaloceanPartnerAttachment, scope constructs.Construct, id *string, config *DataDigitaloceanPartnerAttachmentConfig) {
 	_init_.Initialize()
 
@@ -472,6 +496,17 @@ func (j *jsiiProxy_DataDigitaloceanPartnerAttachment)SetProvider(val cdktf.Terra
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDigitaloceanPartnerAttachment)SetRedundancyZone(val *string) {
+	if err := j.validateSetRedundancyZoneParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"redundancyZone",
 		val,
 	)
 }
@@ -800,6 +835,14 @@ func (d *jsiiProxy_DataDigitaloceanPartnerAttachment) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDigitaloceanPartnerAttachment) ResetRedundancyZone() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRedundancyZone",
 		nil, // no parameters
 	)
 }

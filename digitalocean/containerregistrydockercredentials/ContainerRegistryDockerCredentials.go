@@ -5,14 +5,14 @@ package containerregistrydockercredentials
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/containerregistrydockercredentials/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/containerregistrydockercredentials/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/container_registry_docker_credentials digitalocean_container_registry_docker_credentials}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/container_registry_docker_credentials digitalocean_container_registry_docker_credentials}.
 type ContainerRegistryDockerCredentials interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -403,7 +403,7 @@ func (j *jsiiProxy_ContainerRegistryDockerCredentials) WriteInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/container_registry_docker_credentials digitalocean_container_registry_docker_credentials} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/container_registry_docker_credentials digitalocean_container_registry_docker_credentials} Resource.
 func NewContainerRegistryDockerCredentials(scope constructs.Construct, id *string, config *ContainerRegistryDockerCredentialsConfig) ContainerRegistryDockerCredentials {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewContainerRegistryDockerCredentials(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/container_registry_docker_credentials digitalocean_container_registry_docker_credentials} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/container_registry_docker_credentials digitalocean_container_registry_docker_credentials} Resource.
 func NewContainerRegistryDockerCredentials_Override(c ContainerRegistryDockerCredentials, scope constructs.Construct, id *string, config *ContainerRegistryDockerCredentialsConfig) {
 	_init_.Initialize()
 

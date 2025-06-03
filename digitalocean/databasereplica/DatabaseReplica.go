@@ -5,14 +5,14 @@ package databasereplica
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/databasereplica/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/databasereplica/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/database_replica digitalocean_database_replica}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/database_replica digitalocean_database_replica}.
 type DatabaseReplica interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -575,7 +575,7 @@ func (j *jsiiProxy_DatabaseReplica) Uuid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/database_replica digitalocean_database_replica} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/database_replica digitalocean_database_replica} Resource.
 func NewDatabaseReplica(scope constructs.Construct, id *string, config *DatabaseReplicaConfig) DatabaseReplica {
 	_init_.Initialize()
 
@@ -593,7 +593,7 @@ func NewDatabaseReplica(scope constructs.Construct, id *string, config *Database
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/database_replica digitalocean_database_replica} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/database_replica digitalocean_database_replica} Resource.
 func NewDatabaseReplica_Override(d DatabaseReplica, scope constructs.Construct, id *string, config *DatabaseReplicaConfig) {
 	_init_.Initialize()
 

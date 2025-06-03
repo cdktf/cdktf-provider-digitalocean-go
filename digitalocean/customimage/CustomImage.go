@@ -5,14 +5,14 @@ package customimage
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/customimage/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/customimage/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/custom_image digitalocean_custom_image}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/custom_image digitalocean_custom_image}.
 type CustomImage interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -563,7 +563,7 @@ func (j *jsiiProxy_CustomImage) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/custom_image digitalocean_custom_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/custom_image digitalocean_custom_image} Resource.
 func NewCustomImage(scope constructs.Construct, id *string, config *CustomImageConfig) CustomImage {
 	_init_.Initialize()
 
@@ -581,7 +581,7 @@ func NewCustomImage(scope constructs.Construct, id *string, config *CustomImageC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/resources/custom_image digitalocean_custom_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/resources/custom_image digitalocean_custom_image} Resource.
 func NewCustomImage_Override(c CustomImage, scope constructs.Construct, id *string, config *CustomImageConfig) {
 	_init_.Initialize()
 

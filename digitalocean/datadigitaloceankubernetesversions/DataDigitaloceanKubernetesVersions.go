@@ -5,14 +5,14 @@ package datadigitaloceankubernetesversions
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v11/datadigitaloceankubernetesversions/internal"
+	"github.com/cdktf/cdktf-provider-digitalocean-go/digitalocean/v12/datadigitaloceankubernetesversions/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/data-sources/kubernetes_versions digitalocean_kubernetes_versions}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/data-sources/kubernetes_versions digitalocean_kubernetes_versions}.
 type DataDigitaloceanKubernetesVersions interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -311,7 +311,7 @@ func (j *jsiiProxy_DataDigitaloceanKubernetesVersions) VersionPrefixInput() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/data-sources/kubernetes_versions digitalocean_kubernetes_versions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/data-sources/kubernetes_versions digitalocean_kubernetes_versions} Data Source.
 func NewDataDigitaloceanKubernetesVersions(scope constructs.Construct, id *string, config *DataDigitaloceanKubernetesVersionsConfig) DataDigitaloceanKubernetesVersions {
 	_init_.Initialize()
 
@@ -329,7 +329,7 @@ func NewDataDigitaloceanKubernetesVersions(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.54.0/docs/data-sources/kubernetes_versions digitalocean_kubernetes_versions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.55.0/docs/data-sources/kubernetes_versions digitalocean_kubernetes_versions} Data Source.
 func NewDataDigitaloceanKubernetesVersions_Override(d DataDigitaloceanKubernetesVersions, scope constructs.Construct, id *string, config *DataDigitaloceanKubernetesVersionsConfig) {
 	_init_.Initialize()
 
