@@ -59,6 +59,10 @@ func (j *jsiiProxy_KubernetesClusterClusterAutoscalerConfigurationOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesClusterClusterAutoscalerConfigurationOutputReference) validateSetExpandersParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesClusterClusterAutoscalerConfigurationOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

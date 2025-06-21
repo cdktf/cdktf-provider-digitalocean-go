@@ -103,7 +103,19 @@ func (j *jsiiProxy_AppSpecOutputReference) validateSetComplexObjectIsFromSetPara
 	return nil
 }
 
+func (j *jsiiProxy_AppSpecOutputReference) validateSetDisableEdgeCacheParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_AppSpecOutputReference) validateSetDisableEmailObfuscationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppSpecOutputReference) validateSetDomainsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AppSpecOutputReference) validateSetEnhancedThreatControlEnabledParameters(val interface{}) error {
 	return nil
 }
 

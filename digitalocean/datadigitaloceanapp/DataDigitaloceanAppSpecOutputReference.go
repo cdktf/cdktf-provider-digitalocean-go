@@ -30,9 +30,12 @@ type DataDigitaloceanAppSpecOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	Database() DataDigitaloceanAppSpecDatabaseList
+	DisableEdgeCache() cdktf.IResolvable
+	DisableEmailObfuscation() cdktf.IResolvable
 	Domain() DataDigitaloceanAppSpecDomainList
 	Domains() *[]*string
 	Egress() DataDigitaloceanAppSpecEgressList
+	EnhancedThreatControlEnabled() cdktf.IResolvable
 	Env() DataDigitaloceanAppSpecEnvList
 	Features() *[]*string
 	// Experimental.
@@ -144,6 +147,26 @@ func (j *jsiiProxy_DataDigitaloceanAppSpecOutputReference) Database() DataDigita
 	return returns
 }
 
+func (j *jsiiProxy_DataDigitaloceanAppSpecOutputReference) DisableEdgeCache() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"disableEdgeCache",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDigitaloceanAppSpecOutputReference) DisableEmailObfuscation() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"disableEmailObfuscation",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDigitaloceanAppSpecOutputReference) Domain() DataDigitaloceanAppSpecDomainList {
 	var returns DataDigitaloceanAppSpecDomainList
 	_jsii_.Get(
@@ -169,6 +192,16 @@ func (j *jsiiProxy_DataDigitaloceanAppSpecOutputReference) Egress() DataDigitalo
 	_jsii_.Get(
 		j,
 		"egress",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDigitaloceanAppSpecOutputReference) EnhancedThreatControlEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"enhancedThreatControlEnabled",
 		&returns,
 	)
 	return returns

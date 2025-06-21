@@ -28,6 +28,9 @@ type DataDigitaloceanKubernetesClusterClusterAutoscalerConfigurationOutputRefere
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Expanders() *[]*string
+	SetExpanders(val *[]*string)
+	ExpandersInput() *[]*string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -70,6 +73,7 @@ type DataDigitaloceanKubernetesClusterClusterAutoscalerConfigurationOutputRefere
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetExpanders()
 	ResetScaleDownUnneededTime()
 	ResetScaleDownUtilizationThreshold()
 	// Produce the Token's value at resolution time.
@@ -112,6 +116,26 @@ func (j *jsiiProxy_DataDigitaloceanKubernetesClusterClusterAutoscalerConfigurati
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDigitaloceanKubernetesClusterClusterAutoscalerConfigurationOutputReference) Expanders() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"expanders",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDigitaloceanKubernetesClusterClusterAutoscalerConfigurationOutputReference) ExpandersInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"expandersInput",
 		&returns,
 	)
 	return returns
@@ -243,6 +267,17 @@ func (j *jsiiProxy_DataDigitaloceanKubernetesClusterClusterAutoscalerConfigurati
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDigitaloceanKubernetesClusterClusterAutoscalerConfigurationOutputReference)SetExpanders(val *[]*string) {
+	if err := j.validateSetExpandersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"expanders",
 		val,
 	)
 }
@@ -486,6 +521,14 @@ func (d *jsiiProxy_DataDigitaloceanKubernetesClusterClusterAutoscalerConfigurati
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataDigitaloceanKubernetesClusterClusterAutoscalerConfigurationOutputReference) ResetExpanders() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetExpanders",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataDigitaloceanKubernetesClusterClusterAutoscalerConfigurationOutputReference) ResetScaleDownUnneededTime() {

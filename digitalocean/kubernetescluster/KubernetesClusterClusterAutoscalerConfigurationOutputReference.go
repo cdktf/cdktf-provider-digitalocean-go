@@ -28,6 +28,9 @@ type KubernetesClusterClusterAutoscalerConfigurationOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Expanders() *[]*string
+	SetExpanders(val *[]*string)
+	ExpandersInput() *[]*string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -70,6 +73,7 @@ type KubernetesClusterClusterAutoscalerConfigurationOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetExpanders()
 	ResetScaleDownUnneededTime()
 	ResetScaleDownUtilizationThreshold()
 	// Produce the Token's value at resolution time.
@@ -112,6 +116,26 @@ func (j *jsiiProxy_KubernetesClusterClusterAutoscalerConfigurationOutputReferenc
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterClusterAutoscalerConfigurationOutputReference) Expanders() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"expanders",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterClusterAutoscalerConfigurationOutputReference) ExpandersInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"expandersInput",
 		&returns,
 	)
 	return returns
@@ -243,6 +267,17 @@ func (j *jsiiProxy_KubernetesClusterClusterAutoscalerConfigurationOutputReferenc
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KubernetesClusterClusterAutoscalerConfigurationOutputReference)SetExpanders(val *[]*string) {
+	if err := j.validateSetExpandersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"expanders",
 		val,
 	)
 }
@@ -486,6 +521,14 @@ func (k *jsiiProxy_KubernetesClusterClusterAutoscalerConfigurationOutputReferenc
 	)
 
 	return returns
+}
+
+func (k *jsiiProxy_KubernetesClusterClusterAutoscalerConfigurationOutputReference) ResetExpanders() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetExpanders",
+		nil, // no parameters
+	)
 }
 
 func (k *jsiiProxy_KubernetesClusterClusterAutoscalerConfigurationOutputReference) ResetScaleDownUnneededTime() {

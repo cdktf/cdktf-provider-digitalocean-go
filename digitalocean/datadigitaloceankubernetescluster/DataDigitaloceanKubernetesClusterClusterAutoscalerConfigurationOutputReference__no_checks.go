@@ -59,6 +59,10 @@ func (j *jsiiProxy_DataDigitaloceanKubernetesClusterClusterAutoscalerConfigurati
 	return nil
 }
 
+func (j *jsiiProxy_DataDigitaloceanKubernetesClusterClusterAutoscalerConfigurationOutputReference) validateSetExpandersParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDigitaloceanKubernetesClusterClusterAutoscalerConfigurationOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

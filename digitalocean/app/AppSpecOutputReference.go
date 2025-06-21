@@ -32,6 +32,12 @@ type AppSpecOutputReference interface {
 	CreationStack() *[]*string
 	Database() AppSpecDatabaseList
 	DatabaseInput() interface{}
+	DisableEdgeCache() interface{}
+	SetDisableEdgeCache(val interface{})
+	DisableEdgeCacheInput() interface{}
+	DisableEmailObfuscation() interface{}
+	SetDisableEmailObfuscation(val interface{})
+	DisableEmailObfuscationInput() interface{}
 	Domain() AppSpecDomainList
 	DomainInput() interface{}
 	Domains() *[]*string
@@ -39,6 +45,9 @@ type AppSpecOutputReference interface {
 	DomainsInput() *[]*string
 	Egress() AppSpecEgressList
 	EgressInput() interface{}
+	EnhancedThreatControlEnabled() interface{}
+	SetEnhancedThreatControlEnabled(val interface{})
+	EnhancedThreatControlEnabledInput() interface{}
 	Env() AppSpecEnvList
 	EnvInput() interface{}
 	Features() *[]*string
@@ -111,9 +120,12 @@ type AppSpecOutputReference interface {
 	PutWorker(value interface{})
 	ResetAlert()
 	ResetDatabase()
+	ResetDisableEdgeCache()
+	ResetDisableEmailObfuscation()
 	ResetDomain()
 	ResetDomains()
 	ResetEgress()
+	ResetEnhancedThreatControlEnabled()
 	ResetEnv()
 	ResetFeatures()
 	ResetFunction()
@@ -208,6 +220,46 @@ func (j *jsiiProxy_AppSpecOutputReference) DatabaseInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AppSpecOutputReference) DisableEdgeCache() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableEdgeCache",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecOutputReference) DisableEdgeCacheInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableEdgeCacheInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecOutputReference) DisableEmailObfuscation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableEmailObfuscation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecOutputReference) DisableEmailObfuscationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableEmailObfuscationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AppSpecOutputReference) Domain() AppSpecDomainList {
 	var returns AppSpecDomainList
 	_jsii_.Get(
@@ -263,6 +315,26 @@ func (j *jsiiProxy_AppSpecOutputReference) EgressInput() interface{} {
 	_jsii_.Get(
 		j,
 		"egressInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecOutputReference) EnhancedThreatControlEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enhancedThreatControlEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecOutputReference) EnhancedThreatControlEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enhancedThreatControlEnabledInput",
 		&returns,
 	)
 	return returns
@@ -558,6 +630,28 @@ func (j *jsiiProxy_AppSpecOutputReference)SetComplexObjectIsFromSet(val *bool) {
 	)
 }
 
+func (j *jsiiProxy_AppSpecOutputReference)SetDisableEdgeCache(val interface{}) {
+	if err := j.validateSetDisableEdgeCacheParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableEdgeCache",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppSpecOutputReference)SetDisableEmailObfuscation(val interface{}) {
+	if err := j.validateSetDisableEmailObfuscationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableEmailObfuscation",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AppSpecOutputReference)SetDomains(val *[]*string) {
 	if err := j.validateSetDomainsParameters(val); err != nil {
 		panic(err)
@@ -565,6 +659,17 @@ func (j *jsiiProxy_AppSpecOutputReference)SetDomains(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"domains",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppSpecOutputReference)SetEnhancedThreatControlEnabled(val interface{}) {
+	if err := j.validateSetEnhancedThreatControlEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enhancedThreatControlEnabled",
 		val,
 	)
 }
@@ -958,6 +1063,22 @@ func (a *jsiiProxy_AppSpecOutputReference) ResetDatabase() {
 	)
 }
 
+func (a *jsiiProxy_AppSpecOutputReference) ResetDisableEdgeCache() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDisableEdgeCache",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppSpecOutputReference) ResetDisableEmailObfuscation() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDisableEmailObfuscation",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AppSpecOutputReference) ResetDomain() {
 	_jsii_.InvokeVoid(
 		a,
@@ -978,6 +1099,14 @@ func (a *jsiiProxy_AppSpecOutputReference) ResetEgress() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetEgress",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppSpecOutputReference) ResetEnhancedThreatControlEnabled() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetEnhancedThreatControlEnabled",
 		nil, // no parameters
 	)
 }
