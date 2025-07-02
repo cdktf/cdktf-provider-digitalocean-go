@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.57.0/docs/data-sources/database_connection_pool digitalocean_database_connection_pool}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/data-sources/database_connection_pool digitalocean_database_connection_pool}.
 type DataDigitaloceanDatabaseConnectionPool interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -421,7 +421,7 @@ func (j *jsiiProxy_DataDigitaloceanDatabaseConnectionPool) User() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.57.0/docs/data-sources/database_connection_pool digitalocean_database_connection_pool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/data-sources/database_connection_pool digitalocean_database_connection_pool} Data Source.
 func NewDataDigitaloceanDatabaseConnectionPool(scope constructs.Construct, id *string, config *DataDigitaloceanDatabaseConnectionPoolConfig) DataDigitaloceanDatabaseConnectionPool {
 	_init_.Initialize()
 
@@ -439,7 +439,7 @@ func NewDataDigitaloceanDatabaseConnectionPool(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.57.0/docs/data-sources/database_connection_pool digitalocean_database_connection_pool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/data-sources/database_connection_pool digitalocean_database_connection_pool} Data Source.
 func NewDataDigitaloceanDatabaseConnectionPool_Override(d DataDigitaloceanDatabaseConnectionPool, scope constructs.Construct, id *string, config *DataDigitaloceanDatabaseConnectionPoolConfig) {
 	_init_.Initialize()
 

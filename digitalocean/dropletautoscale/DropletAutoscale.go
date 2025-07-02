@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.57.0/docs/resources/droplet_autoscale digitalocean_droplet_autoscale}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/droplet_autoscale digitalocean_droplet_autoscale}.
 type DropletAutoscale interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -410,7 +410,7 @@ func (j *jsiiProxy_DropletAutoscale) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.57.0/docs/resources/droplet_autoscale digitalocean_droplet_autoscale} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/droplet_autoscale digitalocean_droplet_autoscale} Resource.
 func NewDropletAutoscale(scope constructs.Construct, id *string, config *DropletAutoscaleConfig) DropletAutoscale {
 	_init_.Initialize()
 
@@ -428,7 +428,7 @@ func NewDropletAutoscale(scope constructs.Construct, id *string, config *Droplet
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.57.0/docs/resources/droplet_autoscale digitalocean_droplet_autoscale} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/droplet_autoscale digitalocean_droplet_autoscale} Resource.
 func NewDropletAutoscale_Override(d DropletAutoscale, scope constructs.Construct, id *string, config *DropletAutoscaleConfig) {
 	_init_.Initialize()
 

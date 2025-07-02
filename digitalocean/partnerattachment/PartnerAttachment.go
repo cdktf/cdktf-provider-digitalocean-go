@@ -12,13 +12,14 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.57.0/docs/resources/partner_attachment digitalocean_partner_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/partner_attachment digitalocean_partner_attachment}.
 type PartnerAttachment interface {
 	cdktf.TerraformResource
 	Bgp() PartnerAttachmentBgpOutputReference
 	BgpInput() *PartnerAttachmentBgp
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	Children() *[]*string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -58,6 +59,9 @@ type PartnerAttachment interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	ParentUuid() *string
+	SetParentUuid(val *string)
+	ParentUuidInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -135,6 +139,7 @@ type PartnerAttachment interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetParentUuid()
 	ResetRedundancyZone()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -180,6 +185,16 @@ func (j *jsiiProxy_PartnerAttachment) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PartnerAttachment) Children() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"children",
 		&returns,
 	)
 	return returns
@@ -355,6 +370,26 @@ func (j *jsiiProxy_PartnerAttachment) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_PartnerAttachment) ParentUuid() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parentUuid",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PartnerAttachment) ParentUuidInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parentUuidInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PartnerAttachment) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -506,7 +541,7 @@ func (j *jsiiProxy_PartnerAttachment) VpcIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.57.0/docs/resources/partner_attachment digitalocean_partner_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/partner_attachment digitalocean_partner_attachment} Resource.
 func NewPartnerAttachment(scope constructs.Construct, id *string, config *PartnerAttachmentConfig) PartnerAttachment {
 	_init_.Initialize()
 
@@ -524,7 +559,7 @@ func NewPartnerAttachment(scope constructs.Construct, id *string, config *Partne
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.57.0/docs/resources/partner_attachment digitalocean_partner_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/partner_attachment digitalocean_partner_attachment} Resource.
 func NewPartnerAttachment_Override(p PartnerAttachment, scope constructs.Construct, id *string, config *PartnerAttachmentConfig) {
 	_init_.Initialize()
 
@@ -613,6 +648,17 @@ func (j *jsiiProxy_PartnerAttachment)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PartnerAttachment)SetParentUuid(val *string) {
+	if err := j.validateSetParentUuidParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"parentUuid",
 		val,
 	)
 }
@@ -1056,6 +1102,14 @@ func (p *jsiiProxy_PartnerAttachment) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PartnerAttachment) ResetParentUuid() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetParentUuid",
 		nil, // no parameters
 	)
 }

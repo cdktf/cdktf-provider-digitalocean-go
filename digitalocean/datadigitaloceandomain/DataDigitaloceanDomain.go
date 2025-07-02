@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.57.0/docs/data-sources/domain digitalocean_domain}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/data-sources/domain digitalocean_domain}.
 type DataDigitaloceanDomain interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -321,7 +321,7 @@ func (j *jsiiProxy_DataDigitaloceanDomain) ZoneFile() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.57.0/docs/data-sources/domain digitalocean_domain} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/data-sources/domain digitalocean_domain} Data Source.
 func NewDataDigitaloceanDomain(scope constructs.Construct, id *string, config *DataDigitaloceanDomainConfig) DataDigitaloceanDomain {
 	_init_.Initialize()
 
@@ -339,7 +339,7 @@ func NewDataDigitaloceanDomain(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.57.0/docs/data-sources/domain digitalocean_domain} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/data-sources/domain digitalocean_domain} Data Source.
 func NewDataDigitaloceanDomain_Override(d DataDigitaloceanDomain, scope constructs.Construct, id *string, config *DataDigitaloceanDomainConfig) {
 	_init_.Initialize()
 

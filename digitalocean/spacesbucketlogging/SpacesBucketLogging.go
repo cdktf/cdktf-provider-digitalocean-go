@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.57.0/docs/resources/spaces_bucket_logging digitalocean_spaces_bucket_logging}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/spaces_bucket_logging digitalocean_spaces_bucket_logging}.
 type SpacesBucketLogging interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -402,7 +402,7 @@ func (j *jsiiProxy_SpacesBucketLogging) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.57.0/docs/resources/spaces_bucket_logging digitalocean_spaces_bucket_logging} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/spaces_bucket_logging digitalocean_spaces_bucket_logging} Resource.
 func NewSpacesBucketLogging(scope constructs.Construct, id *string, config *SpacesBucketLoggingConfig) SpacesBucketLogging {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewSpacesBucketLogging(scope constructs.Construct, id *string, config *Spac
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.57.0/docs/resources/spaces_bucket_logging digitalocean_spaces_bucket_logging} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/spaces_bucket_logging digitalocean_spaces_bucket_logging} Resource.
 func NewSpacesBucketLogging_Override(s SpacesBucketLogging, scope constructs.Construct, id *string, config *SpacesBucketLoggingConfig) {
 	_init_.Initialize()
 
