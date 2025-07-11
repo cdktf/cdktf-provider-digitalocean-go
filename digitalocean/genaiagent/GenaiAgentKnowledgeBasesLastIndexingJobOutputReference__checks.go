@@ -174,7 +174,7 @@ func (j *jsiiProxy_GenaiAgentKnowledgeBasesLastIndexingJobOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_GenaiAgentKnowledgeBasesLastIndexingJobOutputReference) validateSetDatasourceUuidsParameters(val *[]*string) error {
+func (j *jsiiProxy_GenaiAgentKnowledgeBasesLastIndexingJobOutputReference) validateSetDataSourceUuidsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -182,33 +182,9 @@ func (j *jsiiProxy_GenaiAgentKnowledgeBasesLastIndexingJobOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_GenaiAgentKnowledgeBasesLastIndexingJobOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	switch val.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *GenaiAgentKnowledgeBasesLastIndexingJob:
-		val := val.(*GenaiAgentKnowledgeBasesLastIndexingJob)
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	case GenaiAgentKnowledgeBasesLastIndexingJob:
-		val_ := val.(GenaiAgentKnowledgeBasesLastIndexingJob)
-		val := &val_
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GenaiAgentKnowledgeBasesLastIndexingJob; received %#v (a %T)", val, val)
-		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_GenaiAgentKnowledgeBasesLastIndexingJobOutputReference) validateSetKnowledgeBaseUuidParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
+func (j *jsiiProxy_GenaiAgentKnowledgeBasesLastIndexingJobOutputReference) validateSetInternalValueParameters(val *GenaiAgentKnowledgeBasesLastIndexingJob) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
 	}
 
 	return nil
@@ -262,21 +238,13 @@ func (j *jsiiProxy_GenaiAgentKnowledgeBasesLastIndexingJobOutputReference) valid
 	return nil
 }
 
-func validateNewGenaiAgentKnowledgeBasesLastIndexingJobOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGenaiAgentKnowledgeBasesLastIndexingJobOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}
 
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
-	}
-
-	if complexObjectIndex == nil {
-		return fmt.Errorf("parameter complexObjectIndex is required, but nil was provided")
-	}
-
-	if complexObjectIsFromSet == nil {
-		return fmt.Errorf("parameter complexObjectIsFromSet is required, but nil was provided")
 	}
 
 	return nil

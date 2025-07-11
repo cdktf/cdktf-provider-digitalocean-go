@@ -30,7 +30,7 @@ type DataDigitaloceanGenaiAgentsAgentsTemplateKnowledgeBasesLastIndexingJobOutpu
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DatasourceUuids() *[]*string
+	DataSourceUuids() *[]*string
 	FinishedAt() *string
 	// Experimental.
 	Fqn() *string
@@ -140,11 +140,11 @@ func (j *jsiiProxy_DataDigitaloceanGenaiAgentsAgentsTemplateKnowledgeBasesLastIn
 	return returns
 }
 
-func (j *jsiiProxy_DataDigitaloceanGenaiAgentsAgentsTemplateKnowledgeBasesLastIndexingJobOutputReference) DatasourceUuids() *[]*string {
+func (j *jsiiProxy_DataDigitaloceanGenaiAgentsAgentsTemplateKnowledgeBasesLastIndexingJobOutputReference) DataSourceUuids() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
-		"datasourceUuids",
+		"dataSourceUuids",
 		&returns,
 	)
 	return returns

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/project_resources digitalocean_project_resources}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/project_resources digitalocean_project_resources}.
 type ProjectResources interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_ProjectResources) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/project_resources digitalocean_project_resources} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/project_resources digitalocean_project_resources} Resource.
 func NewProjectResources(scope constructs.Construct, id *string, config *ProjectResourcesConfig) ProjectResources {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewProjectResources(scope constructs.Construct, id *string, config *Project
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/resources/project_resources digitalocean_project_resources} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/project_resources digitalocean_project_resources} Resource.
 func NewProjectResources_Override(p ProjectResources, scope constructs.Construct, id *string, config *ProjectResourcesConfig) {
 	_init_.Initialize()
 

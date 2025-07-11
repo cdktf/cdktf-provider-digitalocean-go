@@ -47,7 +47,7 @@ func (d *jsiiProxy_DataDigitaloceanGenaiAgentKnowledgeBasesOutputReference) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanGenaiAgentKnowledgeBasesOutputReference) validatePutLastIndexingJobParameters(value interface{}) error {
+func (d *jsiiProxy_DataDigitaloceanGenaiAgentKnowledgeBasesOutputReference) validatePutLastIndexingJobParameters(value *DataDigitaloceanGenaiAgentKnowledgeBasesLastIndexingJob) error {
 	return nil
 }
 
@@ -63,7 +63,27 @@ func (j *jsiiProxy_DataDigitaloceanGenaiAgentKnowledgeBasesOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_DataDigitaloceanGenaiAgentKnowledgeBasesOutputReference) validateSetDatabaseIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDigitaloceanGenaiAgentKnowledgeBasesOutputReference) validateSetEmbeddingModelUuidParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDigitaloceanGenaiAgentKnowledgeBasesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDigitaloceanGenaiAgentKnowledgeBasesOutputReference) validateSetIsPublicParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDigitaloceanGenaiAgentKnowledgeBasesOutputReference) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataDigitaloceanGenaiAgentKnowledgeBasesOutputReference) validateSetProjectIdParameters(val *string) error {
 	return nil
 }
 
@@ -84,10 +104,6 @@ func (j *jsiiProxy_DataDigitaloceanGenaiAgentKnowledgeBasesOutputReference) vali
 }
 
 func (j *jsiiProxy_DataDigitaloceanGenaiAgentKnowledgeBasesOutputReference) validateSetUserIdParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDigitaloceanGenaiAgentKnowledgeBasesOutputReference) validateSetUuidParameters(val *string) error {
 	return nil
 }
 

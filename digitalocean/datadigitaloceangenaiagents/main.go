@@ -1056,7 +1056,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "createdAt", GoGetter: "CreatedAt"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "datasourceUuids", GoGetter: "DatasourceUuids"},
+			_jsii_.MemberProperty{JsiiProperty: "dataSourceUuids", GoGetter: "DataSourceUuids"},
 			_jsii_.MemberProperty{JsiiProperty: "finishedAt", GoGetter: "FinishedAt"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
@@ -1147,7 +1147,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "updatedAt", GoGetter: "UpdatedAt"},
 			_jsii_.MemberProperty{JsiiProperty: "userId", GoGetter: "UserId"},
-			_jsii_.MemberProperty{JsiiProperty: "uuid", GoGetter: "Uuid"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDigitaloceanGenaiAgentsAgentsKnowledgeBasesOutputReference{}
@@ -1975,7 +1974,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "createdAt", GoGetter: "CreatedAt"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "datasourceUuids", GoGetter: "DatasourceUuids"},
+			_jsii_.MemberProperty{JsiiProperty: "dataSourceUuids", GoGetter: "DataSourceUuids"},
 			_jsii_.MemberProperty{JsiiProperty: "finishedAt", GoGetter: "FinishedAt"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
@@ -2066,7 +2065,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "updatedAt", GoGetter: "UpdatedAt"},
 			_jsii_.MemberProperty{JsiiProperty: "userId", GoGetter: "UserId"},
-			_jsii_.MemberProperty{JsiiProperty: "uuid", GoGetter: "Uuid"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDigitaloceanGenaiAgentsAgentsTemplateKnowledgeBasesOutputReference{}

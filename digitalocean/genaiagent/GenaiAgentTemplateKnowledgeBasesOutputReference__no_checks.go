@@ -47,7 +47,7 @@ func (g *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) validateInte
 	return nil
 }
 
-func (g *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) validatePutLastIndexingJobParameters(value interface{}) error {
+func (g *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) validatePutLastIndexingJobParameters(value *GenaiAgentTemplateKnowledgeBasesLastIndexingJob) error {
 	return nil
 }
 
@@ -63,7 +63,27 @@ func (j *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) validateSetC
 	return nil
 }
 
+func (j *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) validateSetDatabaseIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) validateSetEmbeddingModelUuidParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) validateSetIsPublicParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) validateSetProjectIdParameters(val *string) error {
 	return nil
 }
 
@@ -84,10 +104,6 @@ func (j *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) validateSetT
 }
 
 func (j *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) validateSetUserIdParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) validateSetUuidParameters(val *string) error {
 	return nil
 }
 

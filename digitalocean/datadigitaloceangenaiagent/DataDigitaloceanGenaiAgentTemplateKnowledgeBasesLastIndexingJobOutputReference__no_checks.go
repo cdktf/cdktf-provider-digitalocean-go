@@ -63,15 +63,11 @@ func (j *jsiiProxy_DataDigitaloceanGenaiAgentTemplateKnowledgeBasesLastIndexingJ
 	return nil
 }
 
-func (j *jsiiProxy_DataDigitaloceanGenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference) validateSetDatasourceUuidsParameters(val *[]*string) error {
+func (j *jsiiProxy_DataDigitaloceanGenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference) validateSetDataSourceUuidsParameters(val *[]*string) error {
 	return nil
 }
 
-func (j *jsiiProxy_DataDigitaloceanGenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDigitaloceanGenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference) validateSetKnowledgeBaseUuidParameters(val *string) error {
+func (j *jsiiProxy_DataDigitaloceanGenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference) validateSetInternalValueParameters(val *DataDigitaloceanGenaiAgentTemplateKnowledgeBasesLastIndexingJob) error {
 	return nil
 }
 
@@ -99,7 +95,7 @@ func (j *jsiiProxy_DataDigitaloceanGenaiAgentTemplateKnowledgeBasesLastIndexingJ
 	return nil
 }
 
-func validateNewDataDigitaloceanGenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataDigitaloceanGenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -31,16 +31,26 @@ type GenaiAgentTemplateKnowledgeBasesOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	DatabaseId() *string
+	SetDatabaseId(val *string)
+	DatabaseIdInput() *string
 	EmbeddingModelUuid() *string
+	SetEmbeddingModelUuid(val *string)
+	EmbeddingModelUuidInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	IsPublic() cdktf.IResolvable
-	LastIndexingJob() GenaiAgentTemplateKnowledgeBasesLastIndexingJobList
-	LastIndexingJobInput() interface{}
+	IsPublic() interface{}
+	SetIsPublic(val interface{})
+	IsPublicInput() interface{}
+	LastIndexingJob() GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference
+	LastIndexingJobInput() *GenaiAgentTemplateKnowledgeBasesLastIndexingJob
 	Name() *string
+	SetName(val *string)
+	NameInput() *string
 	ProjectId() *string
+	SetProjectId(val *string)
+	ProjectIdInput() *string
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -59,9 +69,6 @@ type GenaiAgentTemplateKnowledgeBasesOutputReference interface {
 	UserId() *string
 	SetUserId(val *string)
 	UserIdInput() *string
-	Uuid() *string
-	SetUuid(val *string)
-	UuidInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -86,12 +93,16 @@ type GenaiAgentTemplateKnowledgeBasesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutLastIndexingJob(value interface{})
+	PutLastIndexingJob(value *GenaiAgentTemplateKnowledgeBasesLastIndexingJob)
+	ResetDatabaseId()
+	ResetEmbeddingModelUuid()
+	ResetIsPublic()
 	ResetLastIndexingJob()
+	ResetName()
+	ResetProjectId()
 	ResetRegion()
 	ResetTags()
 	ResetUserId()
-	ResetUuid()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -167,11 +178,31 @@ func (j *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) DatabaseId()
 	return returns
 }
 
+func (j *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) DatabaseIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"databaseIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) EmbeddingModelUuid() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"embeddingModelUuid",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) EmbeddingModelUuidInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"embeddingModelUuidInput",
 		&returns,
 	)
 	return returns
@@ -197,8 +228,8 @@ func (j *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) InternalValu
 	return returns
 }
 
-func (j *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) IsPublic() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) IsPublic() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"isPublic",
@@ -207,8 +238,18 @@ func (j *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) IsPublic() c
 	return returns
 }
 
-func (j *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) LastIndexingJob() GenaiAgentTemplateKnowledgeBasesLastIndexingJobList {
-	var returns GenaiAgentTemplateKnowledgeBasesLastIndexingJobList
+func (j *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) IsPublicInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isPublicInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) LastIndexingJob() GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference {
+	var returns GenaiAgentTemplateKnowledgeBasesLastIndexingJobOutputReference
 	_jsii_.Get(
 		j,
 		"lastIndexingJob",
@@ -217,8 +258,8 @@ func (j *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) LastIndexing
 	return returns
 }
 
-func (j *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) LastIndexingJobInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) LastIndexingJobInput() *GenaiAgentTemplateKnowledgeBasesLastIndexingJob {
+	var returns *GenaiAgentTemplateKnowledgeBasesLastIndexingJob
 	_jsii_.Get(
 		j,
 		"lastIndexingJobInput",
@@ -237,11 +278,31 @@ func (j *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) Name() *stri
 	return returns
 }
 
+func (j *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) ProjectId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"projectId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) ProjectIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectIdInput",
 		&returns,
 	)
 	return returns
@@ -337,26 +398,6 @@ func (j *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) UserIdInput(
 	return returns
 }
 
-func (j *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) Uuid() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"uuid",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) UuidInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"uuidInput",
-		&returns,
-	)
-	return returns
-}
-
 
 func NewGenaiAgentTemplateKnowledgeBasesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GenaiAgentTemplateKnowledgeBasesOutputReference {
 	_init_.Initialize()
@@ -407,6 +448,28 @@ func (j *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference)SetComplexObj
 	)
 }
 
+func (j *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference)SetDatabaseId(val *string) {
+	if err := j.validateSetDatabaseIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"databaseId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference)SetEmbeddingModelUuid(val *string) {
+	if err := j.validateSetEmbeddingModelUuidParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"embeddingModelUuid",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -414,6 +477,39 @@ func (j *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference)SetInternalVa
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference)SetIsPublic(val interface{}) {
+	if err := j.validateSetIsPublicParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"isPublic",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference)SetProjectId(val *string) {
+	if err := j.validateSetProjectIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"projectId",
 		val,
 	)
 }
@@ -469,17 +565,6 @@ func (j *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference)SetUserId(val
 	_jsii_.Set(
 		j,
 		"userId",
-		val,
-	)
-}
-
-func (j *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference)SetUuid(val *string) {
-	if err := j.validateSetUuidParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"uuid",
 		val,
 	)
 }
@@ -670,7 +755,7 @@ func (g *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) Interpolatio
 	return returns
 }
 
-func (g *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) PutLastIndexingJob(value interface{}) {
+func (g *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) PutLastIndexingJob(value *GenaiAgentTemplateKnowledgeBasesLastIndexingJob) {
 	if err := g.validatePutLastIndexingJobParameters(value); err != nil {
 		panic(err)
 	}
@@ -681,10 +766,50 @@ func (g *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) PutLastIndex
 	)
 }
 
+func (g *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) ResetDatabaseId() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDatabaseId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) ResetEmbeddingModelUuid() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEmbeddingModelUuid",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) ResetIsPublic() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIsPublic",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) ResetLastIndexingJob() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetLastIndexingJob",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) ResetName() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetName",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) ResetProjectId() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetProjectId",
 		nil, // no parameters
 	)
 }
@@ -709,14 +834,6 @@ func (g *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) ResetUserId(
 	_jsii_.InvokeVoid(
 		g,
 		"resetUserId",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) ResetUuid() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetUuid",
 		nil, // no parameters
 	)
 }

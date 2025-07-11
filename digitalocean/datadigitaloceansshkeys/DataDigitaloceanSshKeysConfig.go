@@ -24,16 +24,16 @@ type DataDigitaloceanSshKeysConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// filter block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/data-sources/ssh_keys#filter DataDigitaloceanSshKeys#filter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/data-sources/ssh_keys#filter DataDigitaloceanSshKeys#filter}
 	Filter interface{} `field:"optional" json:"filter" yaml:"filter"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/data-sources/ssh_keys#id DataDigitaloceanSshKeys#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/data-sources/ssh_keys#id DataDigitaloceanSshKeys#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// sort block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/data-sources/ssh_keys#sort DataDigitaloceanSshKeys#sort}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/data-sources/ssh_keys#sort DataDigitaloceanSshKeys#sort}
 	Sort interface{} `field:"optional" json:"sort" yaml:"sort"`
 }
 

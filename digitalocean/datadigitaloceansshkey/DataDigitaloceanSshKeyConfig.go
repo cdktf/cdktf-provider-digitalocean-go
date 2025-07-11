@@ -24,7 +24,7 @@ type DataDigitaloceanSshKeyConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// name of the ssh key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/data-sources/ssh_key#name DataDigitaloceanSshKey#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/data-sources/ssh_key#name DataDigitaloceanSshKey#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

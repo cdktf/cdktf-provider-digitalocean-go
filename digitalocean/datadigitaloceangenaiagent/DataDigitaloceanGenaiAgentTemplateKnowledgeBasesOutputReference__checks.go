@@ -93,32 +93,12 @@ func (d *jsiiProxy_DataDigitaloceanGenaiAgentTemplateKnowledgeBasesOutputReferen
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanGenaiAgentTemplateKnowledgeBasesOutputReference) validatePutLastIndexingJobParameters(value interface{}) error {
+func (d *jsiiProxy_DataDigitaloceanGenaiAgentTemplateKnowledgeBasesOutputReference) validatePutLastIndexingJobParameters(value *DataDigitaloceanGenaiAgentTemplateKnowledgeBasesLastIndexingJob) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*DataDigitaloceanGenaiAgentTemplateKnowledgeBasesLastIndexingJob:
-		value := value.(*[]*DataDigitaloceanGenaiAgentTemplateKnowledgeBasesLastIndexingJob)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*DataDigitaloceanGenaiAgentTemplateKnowledgeBasesLastIndexingJob:
-		value_ := value.([]*DataDigitaloceanGenaiAgentTemplateKnowledgeBasesLastIndexingJob)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataDigitaloceanGenaiAgentTemplateKnowledgeBasesLastIndexingJob; received %#v (a %T)", value, value)
-		}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil
@@ -197,6 +177,22 @@ func (j *jsiiProxy_DataDigitaloceanGenaiAgentTemplateKnowledgeBasesOutputReferen
 	return nil
 }
 
+func (j *jsiiProxy_DataDigitaloceanGenaiAgentTemplateKnowledgeBasesOutputReference) validateSetDatabaseIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataDigitaloceanGenaiAgentTemplateKnowledgeBasesOutputReference) validateSetEmbeddingModelUuidParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataDigitaloceanGenaiAgentTemplateKnowledgeBasesOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
@@ -216,6 +212,42 @@ func (j *jsiiProxy_DataDigitaloceanGenaiAgentTemplateKnowledgeBasesOutputReferen
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataDigitaloceanGenaiAgentTemplateKnowledgeBases; received %#v (a %T)", val, val)
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataDigitaloceanGenaiAgentTemplateKnowledgeBasesOutputReference) validateSetIsPublicParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataDigitaloceanGenaiAgentTemplateKnowledgeBasesOutputReference) validateSetNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataDigitaloceanGenaiAgentTemplateKnowledgeBasesOutputReference) validateSetProjectIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil
@@ -254,14 +286,6 @@ func (j *jsiiProxy_DataDigitaloceanGenaiAgentTemplateKnowledgeBasesOutputReferen
 }
 
 func (j *jsiiProxy_DataDigitaloceanGenaiAgentTemplateKnowledgeBasesOutputReference) validateSetUserIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataDigitaloceanGenaiAgentTemplateKnowledgeBasesOutputReference) validateSetUuidParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -32,17 +32,15 @@ type DataDigitaloceanGenaiAgentKnowledgeBasesLastIndexingJobOutputReference inte
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DatasourceUuids() *[]*string
-	SetDatasourceUuids(val *[]*string)
-	DatasourceUuidsInput() *[]*string
+	DataSourceUuids() *[]*string
+	SetDataSourceUuids(val *[]*string)
+	DataSourceUuidsInput() *[]*string
 	FinishedAt() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataDigitaloceanGenaiAgentKnowledgeBasesLastIndexingJob
+	SetInternalValue(val *DataDigitaloceanGenaiAgentKnowledgeBasesLastIndexingJob)
 	KnowledgeBaseUuid() *string
-	SetKnowledgeBaseUuid(val *string)
-	KnowledgeBaseUuidInput() *string
 	Phase() *string
 	SetPhase(val *string)
 	PhaseInput() *string
@@ -90,8 +88,7 @@ type DataDigitaloceanGenaiAgentKnowledgeBasesLastIndexingJobOutputReference inte
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCompletedDatasources()
-	ResetDatasourceUuids()
-	ResetKnowledgeBaseUuid()
+	ResetDataSourceUuids()
 	ResetPhase()
 	ResetTokens()
 	ResetTotalDatasources()
@@ -171,21 +168,21 @@ func (j *jsiiProxy_DataDigitaloceanGenaiAgentKnowledgeBasesLastIndexingJobOutput
 	return returns
 }
 
-func (j *jsiiProxy_DataDigitaloceanGenaiAgentKnowledgeBasesLastIndexingJobOutputReference) DatasourceUuids() *[]*string {
+func (j *jsiiProxy_DataDigitaloceanGenaiAgentKnowledgeBasesLastIndexingJobOutputReference) DataSourceUuids() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
-		"datasourceUuids",
+		"dataSourceUuids",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataDigitaloceanGenaiAgentKnowledgeBasesLastIndexingJobOutputReference) DatasourceUuidsInput() *[]*string {
+func (j *jsiiProxy_DataDigitaloceanGenaiAgentKnowledgeBasesLastIndexingJobOutputReference) DataSourceUuidsInput() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
-		"datasourceUuidsInput",
+		"dataSourceUuidsInput",
 		&returns,
 	)
 	return returns
@@ -211,8 +208,8 @@ func (j *jsiiProxy_DataDigitaloceanGenaiAgentKnowledgeBasesLastIndexingJobOutput
 	return returns
 }
 
-func (j *jsiiProxy_DataDigitaloceanGenaiAgentKnowledgeBasesLastIndexingJobOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataDigitaloceanGenaiAgentKnowledgeBasesLastIndexingJobOutputReference) InternalValue() *DataDigitaloceanGenaiAgentKnowledgeBasesLastIndexingJob {
+	var returns *DataDigitaloceanGenaiAgentKnowledgeBasesLastIndexingJob
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -226,16 +223,6 @@ func (j *jsiiProxy_DataDigitaloceanGenaiAgentKnowledgeBasesLastIndexingJobOutput
 	_jsii_.Get(
 		j,
 		"knowledgeBaseUuid",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDigitaloceanGenaiAgentKnowledgeBasesLastIndexingJobOutputReference) KnowledgeBaseUuidInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"knowledgeBaseUuidInput",
 		&returns,
 	)
 	return returns
@@ -362,29 +349,29 @@ func (j *jsiiProxy_DataDigitaloceanGenaiAgentKnowledgeBasesLastIndexingJobOutput
 }
 
 
-func NewDataDigitaloceanGenaiAgentKnowledgeBasesLastIndexingJobOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDigitaloceanGenaiAgentKnowledgeBasesLastIndexingJobOutputReference {
+func NewDataDigitaloceanGenaiAgentKnowledgeBasesLastIndexingJobOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataDigitaloceanGenaiAgentKnowledgeBasesLastIndexingJobOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewDataDigitaloceanGenaiAgentKnowledgeBasesLastIndexingJobOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewDataDigitaloceanGenaiAgentKnowledgeBasesLastIndexingJobOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_DataDigitaloceanGenaiAgentKnowledgeBasesLastIndexingJobOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgent.DataDigitaloceanGenaiAgentKnowledgeBasesLastIndexingJobOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewDataDigitaloceanGenaiAgentKnowledgeBasesLastIndexingJobOutputReference_Override(d DataDigitaloceanGenaiAgentKnowledgeBasesLastIndexingJobOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataDigitaloceanGenaiAgentKnowledgeBasesLastIndexingJobOutputReference_Override(d DataDigitaloceanGenaiAgentKnowledgeBasesLastIndexingJobOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-digitalocean.dataDigitaloceanGenaiAgent.DataDigitaloceanGenaiAgentKnowledgeBasesLastIndexingJobOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
 }
@@ -422,35 +409,24 @@ func (j *jsiiProxy_DataDigitaloceanGenaiAgentKnowledgeBasesLastIndexingJobOutput
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanGenaiAgentKnowledgeBasesLastIndexingJobOutputReference)SetDatasourceUuids(val *[]*string) {
-	if err := j.validateSetDatasourceUuidsParameters(val); err != nil {
+func (j *jsiiProxy_DataDigitaloceanGenaiAgentKnowledgeBasesLastIndexingJobOutputReference)SetDataSourceUuids(val *[]*string) {
+	if err := j.validateSetDataSourceUuidsParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"datasourceUuids",
+		"dataSourceUuids",
 		val,
 	)
 }
 
-func (j *jsiiProxy_DataDigitaloceanGenaiAgentKnowledgeBasesLastIndexingJobOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataDigitaloceanGenaiAgentKnowledgeBasesLastIndexingJobOutputReference)SetInternalValue(val *DataDigitaloceanGenaiAgentKnowledgeBasesLastIndexingJob) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDigitaloceanGenaiAgentKnowledgeBasesLastIndexingJobOutputReference)SetKnowledgeBaseUuid(val *string) {
-	if err := j.validateSetKnowledgeBaseUuidParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"knowledgeBaseUuid",
 		val,
 	)
 }
@@ -715,18 +691,10 @@ func (d *jsiiProxy_DataDigitaloceanGenaiAgentKnowledgeBasesLastIndexingJobOutput
 	)
 }
 
-func (d *jsiiProxy_DataDigitaloceanGenaiAgentKnowledgeBasesLastIndexingJobOutputReference) ResetDatasourceUuids() {
+func (d *jsiiProxy_DataDigitaloceanGenaiAgentKnowledgeBasesLastIndexingJobOutputReference) ResetDataSourceUuids() {
 	_jsii_.InvokeVoid(
 		d,
-		"resetDatasourceUuids",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataDigitaloceanGenaiAgentKnowledgeBasesLastIndexingJobOutputReference) ResetKnowledgeBaseUuid() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetKnowledgeBaseUuid",
+		"resetDataSourceUuids",
 		nil, // no parameters
 	)
 }

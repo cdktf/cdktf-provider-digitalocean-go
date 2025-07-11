@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/data-sources/spaces_key digitalocean_spaces_key}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/data-sources/spaces_key digitalocean_spaces_key}.
 type DataDigitaloceanSpacesKey interface {
 	cdktf.TerraformDataSource
 	AccessKey() *string
@@ -321,7 +321,7 @@ func (j *jsiiProxy_DataDigitaloceanSpacesKey) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/data-sources/spaces_key digitalocean_spaces_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/data-sources/spaces_key digitalocean_spaces_key} Data Source.
 func NewDataDigitaloceanSpacesKey(scope constructs.Construct, id *string, config *DataDigitaloceanSpacesKeyConfig) DataDigitaloceanSpacesKey {
 	_init_.Initialize()
 
@@ -339,7 +339,7 @@ func NewDataDigitaloceanSpacesKey(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.58.0/docs/data-sources/spaces_key digitalocean_spaces_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/data-sources/spaces_key digitalocean_spaces_key} Data Source.
 func NewDataDigitaloceanSpacesKey_Override(d DataDigitaloceanSpacesKey, scope constructs.Construct, id *string, config *DataDigitaloceanSpacesKeyConfig) {
 	_init_.Initialize()
 

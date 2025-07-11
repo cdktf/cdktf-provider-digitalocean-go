@@ -47,7 +47,7 @@ func (g *jsiiProxy_GenaiAgentKnowledgeBasesOutputReference) validateInterpolatio
 	return nil
 }
 
-func (g *jsiiProxy_GenaiAgentKnowledgeBasesOutputReference) validatePutLastIndexingJobParameters(value interface{}) error {
+func (g *jsiiProxy_GenaiAgentKnowledgeBasesOutputReference) validatePutLastIndexingJobParameters(value *GenaiAgentKnowledgeBasesLastIndexingJob) error {
 	return nil
 }
 
@@ -63,7 +63,27 @@ func (j *jsiiProxy_GenaiAgentKnowledgeBasesOutputReference) validateSetComplexOb
 	return nil
 }
 
+func (j *jsiiProxy_GenaiAgentKnowledgeBasesOutputReference) validateSetDatabaseIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GenaiAgentKnowledgeBasesOutputReference) validateSetEmbeddingModelUuidParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GenaiAgentKnowledgeBasesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GenaiAgentKnowledgeBasesOutputReference) validateSetIsPublicParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GenaiAgentKnowledgeBasesOutputReference) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GenaiAgentKnowledgeBasesOutputReference) validateSetProjectIdParameters(val *string) error {
 	return nil
 }
 
@@ -84,10 +104,6 @@ func (j *jsiiProxy_GenaiAgentKnowledgeBasesOutputReference) validateSetTerraform
 }
 
 func (j *jsiiProxy_GenaiAgentKnowledgeBasesOutputReference) validateSetUserIdParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_GenaiAgentKnowledgeBasesOutputReference) validateSetUuidParameters(val *string) error {
 	return nil
 }
 
