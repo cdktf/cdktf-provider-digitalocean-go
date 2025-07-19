@@ -28,6 +28,7 @@ type DataDigitaloceanAppSpecFunctionAlertOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Destinations() DataDigitaloceanAppSpecFunctionAlertDestinationsList
 	Disabled() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
@@ -109,6 +110,16 @@ func (j *jsiiProxy_DataDigitaloceanAppSpecFunctionAlertOutputReference) Creation
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDigitaloceanAppSpecFunctionAlertOutputReference) Destinations() DataDigitaloceanAppSpecFunctionAlertDestinationsList {
+	var returns DataDigitaloceanAppSpecFunctionAlertDestinationsList
+	_jsii_.Get(
+		j,
+		"destinations",
 		&returns,
 	)
 	return returns

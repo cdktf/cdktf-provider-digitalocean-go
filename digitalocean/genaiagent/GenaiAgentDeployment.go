@@ -7,23 +7,23 @@ package genaiagent
 type GenaiAgentDeployment struct {
 	// Name of the API Key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#name GenaiAgent#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/genai_agent#name GenaiAgent#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// Status of the Deployment.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#status GenaiAgent#status}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/genai_agent#status GenaiAgent#status}
 	Status *string `field:"optional" json:"status" yaml:"status"`
 	// Url of the Deployment.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#url GenaiAgent#url}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/genai_agent#url GenaiAgent#url}
 	Url *string `field:"optional" json:"url" yaml:"url"`
 	// API Key value.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/genai_agent#uuid GenaiAgent#uuid}
 	Uuid *string `field:"optional" json:"uuid" yaml:"uuid"`
 	// Visibility of the Deployment.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/genai_agent#visibility GenaiAgent#visibility}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/genai_agent#visibility GenaiAgent#visibility}
 	Visibility *string `field:"optional" json:"visibility" yaml:"visibility"`
 }
 

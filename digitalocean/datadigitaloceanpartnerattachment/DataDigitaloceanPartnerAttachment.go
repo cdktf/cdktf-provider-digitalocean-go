@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/data-sources/partner_attachment digitalocean_partner_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/data-sources/partner_attachment digitalocean_partner_attachment}.
 type DataDigitaloceanPartnerAttachment interface {
 	cdktf.TerraformDataSource
 	Bgp() DataDigitaloceanPartnerAttachmentBgpOutputReference
@@ -425,7 +425,7 @@ func (j *jsiiProxy_DataDigitaloceanPartnerAttachment) VpcIds() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/data-sources/partner_attachment digitalocean_partner_attachment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/data-sources/partner_attachment digitalocean_partner_attachment} Data Source.
 func NewDataDigitaloceanPartnerAttachment(scope constructs.Construct, id *string, config *DataDigitaloceanPartnerAttachmentConfig) DataDigitaloceanPartnerAttachment {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewDataDigitaloceanPartnerAttachment(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/data-sources/partner_attachment digitalocean_partner_attachment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/data-sources/partner_attachment digitalocean_partner_attachment} Data Source.
 func NewDataDigitaloceanPartnerAttachment_Override(d DataDigitaloceanPartnerAttachment, scope constructs.Construct, id *string, config *DataDigitaloceanPartnerAttachmentConfig) {
 	_init_.Initialize()
 

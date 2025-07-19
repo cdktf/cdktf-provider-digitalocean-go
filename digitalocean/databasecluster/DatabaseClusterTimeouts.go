@@ -5,7 +5,7 @@ package databasecluster
 
 
 type DatabaseClusterTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/database_cluster#create DatabaseCluster#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/database_cluster#create DatabaseCluster#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
 }
 

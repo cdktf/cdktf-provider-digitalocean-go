@@ -28,6 +28,8 @@ type AppSpecServiceAlertOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Destinations() AppSpecServiceAlertDestinationsOutputReference
+	DestinationsInput() *AppSpecServiceAlertDestinations
 	Disabled() interface{}
 	SetDisabled(val interface{})
 	DisabledInput() interface{}
@@ -79,6 +81,8 @@ type AppSpecServiceAlertOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutDestinations(value *AppSpecServiceAlertDestinations)
+	ResetDestinations()
 	ResetDisabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -120,6 +124,26 @@ func (j *jsiiProxy_AppSpecServiceAlertOutputReference) CreationStack() *[]*strin
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecServiceAlertOutputReference) Destinations() AppSpecServiceAlertDestinationsOutputReference {
+	var returns AppSpecServiceAlertDestinationsOutputReference
+	_jsii_.Get(
+		j,
+		"destinations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecServiceAlertOutputReference) DestinationsInput() *AppSpecServiceAlertDestinations {
+	var returns *AppSpecServiceAlertDestinations
+	_jsii_.Get(
+		j,
+		"destinationsInput",
 		&returns,
 	)
 	return returns
@@ -587,6 +611,25 @@ func (a *jsiiProxy_AppSpecServiceAlertOutputReference) InterpolationForAttribute
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_AppSpecServiceAlertOutputReference) PutDestinations(value *AppSpecServiceAlertDestinations) {
+	if err := a.validatePutDestinationsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putDestinations",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AppSpecServiceAlertOutputReference) ResetDestinations() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDestinations",
+		nil, // no parameters
+	)
 }
 
 func (a *jsiiProxy_AppSpecServiceAlertOutputReference) ResetDisabled() {

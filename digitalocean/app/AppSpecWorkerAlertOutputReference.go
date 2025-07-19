@@ -28,6 +28,8 @@ type AppSpecWorkerAlertOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Destinations() AppSpecWorkerAlertDestinationsOutputReference
+	DestinationsInput() *AppSpecWorkerAlertDestinations
 	Disabled() interface{}
 	SetDisabled(val interface{})
 	DisabledInput() interface{}
@@ -79,6 +81,8 @@ type AppSpecWorkerAlertOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutDestinations(value *AppSpecWorkerAlertDestinations)
+	ResetDestinations()
 	ResetDisabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -120,6 +124,26 @@ func (j *jsiiProxy_AppSpecWorkerAlertOutputReference) CreationStack() *[]*string
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecWorkerAlertOutputReference) Destinations() AppSpecWorkerAlertDestinationsOutputReference {
+	var returns AppSpecWorkerAlertDestinationsOutputReference
+	_jsii_.Get(
+		j,
+		"destinations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecWorkerAlertOutputReference) DestinationsInput() *AppSpecWorkerAlertDestinations {
+	var returns *AppSpecWorkerAlertDestinations
+	_jsii_.Get(
+		j,
+		"destinationsInput",
 		&returns,
 	)
 	return returns
@@ -587,6 +611,25 @@ func (a *jsiiProxy_AppSpecWorkerAlertOutputReference) InterpolationForAttribute(
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_AppSpecWorkerAlertOutputReference) PutDestinations(value *AppSpecWorkerAlertDestinations) {
+	if err := a.validatePutDestinationsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putDestinations",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AppSpecWorkerAlertOutputReference) ResetDestinations() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDestinations",
+		nil, // no parameters
+	)
 }
 
 func (a *jsiiProxy_AppSpecWorkerAlertOutputReference) ResetDisabled() {

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/data-sources/genai_knowledge_base_data_sources digitalocean_genai_knowledge_base_data_sources}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/data-sources/genai_knowledge_base_data_sources digitalocean_genai_knowledge_base_data_sources}.
 type DataDigitaloceanGenaiKnowledgeBaseDataSources interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -299,7 +299,7 @@ func (j *jsiiProxy_DataDigitaloceanGenaiKnowledgeBaseDataSources) TerraformResou
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/data-sources/genai_knowledge_base_data_sources digitalocean_genai_knowledge_base_data_sources} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/data-sources/genai_knowledge_base_data_sources digitalocean_genai_knowledge_base_data_sources} Data Source.
 func NewDataDigitaloceanGenaiKnowledgeBaseDataSources(scope constructs.Construct, id *string, config *DataDigitaloceanGenaiKnowledgeBaseDataSourcesConfig) DataDigitaloceanGenaiKnowledgeBaseDataSources {
 	_init_.Initialize()
 
@@ -317,7 +317,7 @@ func NewDataDigitaloceanGenaiKnowledgeBaseDataSources(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/data-sources/genai_knowledge_base_data_sources digitalocean_genai_knowledge_base_data_sources} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/data-sources/genai_knowledge_base_data_sources digitalocean_genai_knowledge_base_data_sources} Data Source.
 func NewDataDigitaloceanGenaiKnowledgeBaseDataSources_Override(d DataDigitaloceanGenaiKnowledgeBaseDataSources, scope constructs.Construct, id *string, config *DataDigitaloceanGenaiKnowledgeBaseDataSourcesConfig) {
 	_init_.Initialize()
 

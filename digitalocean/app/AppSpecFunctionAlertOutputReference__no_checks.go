@@ -47,6 +47,10 @@ func (a *jsiiProxy_AppSpecFunctionAlertOutputReference) validateInterpolationFor
 	return nil
 }
 
+func (a *jsiiProxy_AppSpecFunctionAlertOutputReference) validatePutDestinationsParameters(value *AppSpecFunctionAlertDestinations) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppSpecFunctionAlertOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

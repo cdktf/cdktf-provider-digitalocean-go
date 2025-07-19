@@ -5,7 +5,7 @@ package kubernetescluster
 
 
 type KubernetesClusterTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.59.0/docs/resources/kubernetes_cluster#create KubernetesCluster#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/kubernetes_cluster#create KubernetesCluster#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
 }
 

@@ -28,6 +28,8 @@ type AppSpecAlertOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Destinations() AppSpecAlertDestinationsOutputReference
+	DestinationsInput() *AppSpecAlertDestinations
 	Disabled() interface{}
 	SetDisabled(val interface{})
 	DisabledInput() interface{}
@@ -70,6 +72,8 @@ type AppSpecAlertOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutDestinations(value *AppSpecAlertDestinations)
+	ResetDestinations()
 	ResetDisabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -111,6 +115,26 @@ func (j *jsiiProxy_AppSpecAlertOutputReference) CreationStack() *[]*string {
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecAlertOutputReference) Destinations() AppSpecAlertDestinationsOutputReference {
+	var returns AppSpecAlertDestinationsOutputReference
+	_jsii_.Get(
+		j,
+		"destinations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecAlertOutputReference) DestinationsInput() *AppSpecAlertDestinations {
+	var returns *AppSpecAlertDestinations
+	_jsii_.Get(
+		j,
+		"destinationsInput",
 		&returns,
 	)
 	return returns
@@ -485,6 +509,25 @@ func (a *jsiiProxy_AppSpecAlertOutputReference) InterpolationForAttribute(proper
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_AppSpecAlertOutputReference) PutDestinations(value *AppSpecAlertDestinations) {
+	if err := a.validatePutDestinationsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putDestinations",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AppSpecAlertOutputReference) ResetDestinations() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDestinations",
+		nil, // no parameters
+	)
 }
 
 func (a *jsiiProxy_AppSpecAlertOutputReference) ResetDisabled() {

@@ -28,6 +28,8 @@ type AppSpecFunctionAlertOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Destinations() AppSpecFunctionAlertDestinationsOutputReference
+	DestinationsInput() *AppSpecFunctionAlertDestinations
 	Disabled() interface{}
 	SetDisabled(val interface{})
 	DisabledInput() interface{}
@@ -79,6 +81,8 @@ type AppSpecFunctionAlertOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutDestinations(value *AppSpecFunctionAlertDestinations)
+	ResetDestinations()
 	ResetDisabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -120,6 +124,26 @@ func (j *jsiiProxy_AppSpecFunctionAlertOutputReference) CreationStack() *[]*stri
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecFunctionAlertOutputReference) Destinations() AppSpecFunctionAlertDestinationsOutputReference {
+	var returns AppSpecFunctionAlertDestinationsOutputReference
+	_jsii_.Get(
+		j,
+		"destinations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecFunctionAlertOutputReference) DestinationsInput() *AppSpecFunctionAlertDestinations {
+	var returns *AppSpecFunctionAlertDestinations
+	_jsii_.Get(
+		j,
+		"destinationsInput",
 		&returns,
 	)
 	return returns
@@ -587,6 +611,25 @@ func (a *jsiiProxy_AppSpecFunctionAlertOutputReference) InterpolationForAttribut
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_AppSpecFunctionAlertOutputReference) PutDestinations(value *AppSpecFunctionAlertDestinations) {
+	if err := a.validatePutDestinationsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putDestinations",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AppSpecFunctionAlertOutputReference) ResetDestinations() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDestinations",
+		nil, // no parameters
+	)
 }
 
 func (a *jsiiProxy_AppSpecFunctionAlertOutputReference) ResetDisabled() {
