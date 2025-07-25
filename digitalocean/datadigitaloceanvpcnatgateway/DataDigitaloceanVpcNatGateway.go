@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/data-sources/vpc_nat_gateway digitalocean_vpc_nat_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/data-sources/vpc_nat_gateway digitalocean_vpc_nat_gateway}.
 type DataDigitaloceanVpcNatGateway interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -410,7 +410,7 @@ func (j *jsiiProxy_DataDigitaloceanVpcNatGateway) Vpcs() DataDigitaloceanVpcNatG
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/data-sources/vpc_nat_gateway digitalocean_vpc_nat_gateway} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/data-sources/vpc_nat_gateway digitalocean_vpc_nat_gateway} Data Source.
 func NewDataDigitaloceanVpcNatGateway(scope constructs.Construct, id *string, config *DataDigitaloceanVpcNatGatewayConfig) DataDigitaloceanVpcNatGateway {
 	_init_.Initialize()
 
@@ -428,7 +428,7 @@ func NewDataDigitaloceanVpcNatGateway(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/data-sources/vpc_nat_gateway digitalocean_vpc_nat_gateway} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/data-sources/vpc_nat_gateway digitalocean_vpc_nat_gateway} Data Source.
 func NewDataDigitaloceanVpcNatGateway_Override(d DataDigitaloceanVpcNatGateway, scope constructs.Construct, id *string, config *DataDigitaloceanVpcNatGatewayConfig) {
 	_init_.Initialize()
 

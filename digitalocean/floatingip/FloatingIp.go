@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/floating_ip digitalocean_floating_ip}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/resources/floating_ip digitalocean_floating_ip}.
 type FloatingIp interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -392,7 +392,7 @@ func (j *jsiiProxy_FloatingIp) Urn() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/floating_ip digitalocean_floating_ip} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/resources/floating_ip digitalocean_floating_ip} Resource.
 func NewFloatingIp(scope constructs.Construct, id *string, config *FloatingIpConfig) FloatingIp {
 	_init_.Initialize()
 
@@ -410,7 +410,7 @@ func NewFloatingIp(scope constructs.Construct, id *string, config *FloatingIpCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.60.0/docs/resources/floating_ip digitalocean_floating_ip} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/resources/floating_ip digitalocean_floating_ip} Resource.
 func NewFloatingIp_Override(f FloatingIp, scope constructs.Construct, id *string, config *FloatingIpConfig) {
 	_init_.Initialize()
 
