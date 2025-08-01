@@ -22,16 +22,16 @@ type ReservedIpv6Config struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/resources/reserved_ipv6#region_slug ReservedIpv6#region_slug}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.62.0/docs/resources/reserved_ipv6#region_slug ReservedIpv6#region_slug}.
 	RegionSlug *string `field:"required" json:"regionSlug" yaml:"regionSlug"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/resources/reserved_ipv6#droplet_id ReservedIpv6#droplet_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.62.0/docs/resources/reserved_ipv6#droplet_id ReservedIpv6#droplet_id}.
 	DropletId *float64 `field:"optional" json:"dropletId" yaml:"dropletId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/resources/reserved_ipv6#id ReservedIpv6#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.62.0/docs/resources/reserved_ipv6#id ReservedIpv6#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/resources/reserved_ipv6#ip ReservedIpv6#ip}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.62.0/docs/resources/reserved_ipv6#ip ReservedIpv6#ip}.
 	Ip *string `field:"optional" json:"ip" yaml:"ip"`
 }
 

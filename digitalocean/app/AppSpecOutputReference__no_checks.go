@@ -87,6 +87,10 @@ func (a *jsiiProxy_AppSpecOutputReference) validatePutStaticSiteParameters(value
 	return nil
 }
 
+func (a *jsiiProxy_AppSpecOutputReference) validatePutVpcParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppSpecOutputReference) validatePutWorkerParameters(value interface{}) error {
 	return nil
 }

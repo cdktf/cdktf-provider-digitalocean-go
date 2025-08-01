@@ -81,6 +81,8 @@ type AppSpecOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Vpc() AppSpecVpcList
+	VpcInput() interface{}
 	Worker() AppSpecWorkerList
 	WorkerInput() interface{}
 	// Experimental.
@@ -117,6 +119,7 @@ type AppSpecOutputReference interface {
 	PutJob(value interface{})
 	PutService(value interface{})
 	PutStaticSite(value interface{})
+	PutVpc(value interface{})
 	PutWorker(value interface{})
 	ResetAlert()
 	ResetDatabase()
@@ -134,6 +137,7 @@ type AppSpecOutputReference interface {
 	ResetRegion()
 	ResetService()
 	ResetStaticSite()
+	ResetVpc()
 	ResetWorker()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -555,6 +559,26 @@ func (j *jsiiProxy_AppSpecOutputReference) TerraformResource() cdktf.IInterpolat
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecOutputReference) Vpc() AppSpecVpcList {
+	var returns AppSpecVpcList
+	_jsii_.Get(
+		j,
+		"vpc",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecOutputReference) VpcInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"vpcInput",
 		&returns,
 	)
 	return returns
@@ -1036,6 +1060,17 @@ func (a *jsiiProxy_AppSpecOutputReference) PutStaticSite(value interface{}) {
 	)
 }
 
+func (a *jsiiProxy_AppSpecOutputReference) PutVpc(value interface{}) {
+	if err := a.validatePutVpcParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putVpc",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AppSpecOutputReference) PutWorker(value interface{}) {
 	if err := a.validatePutWorkerParameters(value); err != nil {
 		panic(err)
@@ -1171,6 +1206,14 @@ func (a *jsiiProxy_AppSpecOutputReference) ResetStaticSite() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetStaticSite",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppSpecOutputReference) ResetVpc() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetVpc",
 		nil, // no parameters
 	)
 }

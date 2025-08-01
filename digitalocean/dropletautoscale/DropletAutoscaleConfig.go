@@ -24,15 +24,15 @@ type DropletAutoscaleConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/resources/droplet_autoscale#config DropletAutoscale#config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.62.0/docs/resources/droplet_autoscale#config DropletAutoscale#config}
 	Config *DropletAutoscaleConfigA `field:"required" json:"config" yaml:"config"`
 	// droplet_template block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/resources/droplet_autoscale#droplet_template DropletAutoscale#droplet_template}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.62.0/docs/resources/droplet_autoscale#droplet_template DropletAutoscale#droplet_template}
 	DropletTemplate *DropletAutoscaleDropletTemplate `field:"required" json:"dropletTemplate" yaml:"dropletTemplate"`
 	// Name of the Droplet autoscale pool.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/resources/droplet_autoscale#name DropletAutoscale#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.62.0/docs/resources/droplet_autoscale#name DropletAutoscale#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

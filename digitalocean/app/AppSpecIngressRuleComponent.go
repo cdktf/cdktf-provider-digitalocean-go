@@ -5,11 +5,11 @@ package app
 
 
 type AppSpecIngressRuleComponent struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/resources/app#name App#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.62.0/docs/resources/app#name App#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.62.0/docs/resources/app#preserve_path_prefix App#preserve_path_prefix}.
 	PreservePathPrefix interface{} `field:"optional" json:"preservePathPrefix" yaml:"preservePathPrefix"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.61.0/docs/resources/app#rewrite App#rewrite}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.62.0/docs/resources/app#rewrite App#rewrite}.
 	Rewrite *string `field:"optional" json:"rewrite" yaml:"rewrite"`
 }
 

@@ -57,6 +57,7 @@ type DataDigitaloceanAppSpecOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Vpc() DataDigitaloceanAppSpecVpcList
 	Worker() DataDigitaloceanAppSpecWorkerList
 	// Experimental.
 	ComputeFqn() *string
@@ -332,6 +333,16 @@ func (j *jsiiProxy_DataDigitaloceanAppSpecOutputReference) TerraformResource() c
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDigitaloceanAppSpecOutputReference) Vpc() DataDigitaloceanAppSpecVpcList {
+	var returns DataDigitaloceanAppSpecVpcList
+	_jsii_.Get(
+		j,
+		"vpc",
 		&returns,
 	)
 	return returns
