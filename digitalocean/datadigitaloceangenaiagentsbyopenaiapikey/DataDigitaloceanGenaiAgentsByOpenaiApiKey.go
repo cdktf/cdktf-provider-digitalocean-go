@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.62.0/docs/data-sources/genai_agents_by_openai_api_key digitalocean_genai_agents_by_openai_api_key}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/data-sources/genai_agents_by_openai_api_key digitalocean_genai_agents_by_openai_api_key}.
 type DataDigitaloceanGenaiAgentsByOpenaiApiKey interface {
 	cdktf.TerraformDataSource
 	Agents() DataDigitaloceanGenaiAgentsByOpenaiApiKeyAgentsList
@@ -299,7 +299,7 @@ func (j *jsiiProxy_DataDigitaloceanGenaiAgentsByOpenaiApiKey) UuidInput() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.62.0/docs/data-sources/genai_agents_by_openai_api_key digitalocean_genai_agents_by_openai_api_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/data-sources/genai_agents_by_openai_api_key digitalocean_genai_agents_by_openai_api_key} Data Source.
 func NewDataDigitaloceanGenaiAgentsByOpenaiApiKey(scope constructs.Construct, id *string, config *DataDigitaloceanGenaiAgentsByOpenaiApiKeyConfig) DataDigitaloceanGenaiAgentsByOpenaiApiKey {
 	_init_.Initialize()
 
@@ -317,7 +317,7 @@ func NewDataDigitaloceanGenaiAgentsByOpenaiApiKey(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.62.0/docs/data-sources/genai_agents_by_openai_api_key digitalocean_genai_agents_by_openai_api_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/data-sources/genai_agents_by_openai_api_key digitalocean_genai_agents_by_openai_api_key} Data Source.
 func NewDataDigitaloceanGenaiAgentsByOpenaiApiKey_Override(d DataDigitaloceanGenaiAgentsByOpenaiApiKey, scope constructs.Construct, id *string, config *DataDigitaloceanGenaiAgentsByOpenaiApiKeyConfig) {
 	_init_.Initialize()
 

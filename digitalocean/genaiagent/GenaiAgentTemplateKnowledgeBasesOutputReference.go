@@ -69,6 +69,7 @@ type GenaiAgentTemplateKnowledgeBasesOutputReference interface {
 	UserId() *string
 	SetUserId(val *string)
 	UserIdInput() *string
+	Uuid() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -393,6 +394,16 @@ func (j *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) UserIdInput(
 	_jsii_.Get(
 		j,
 		"userIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) Uuid() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"uuid",
 		&returns,
 	)
 	return returns

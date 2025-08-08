@@ -1426,6 +1426,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "updatedAt", GoGetter: "UpdatedAt"},
 			_jsii_.MemberProperty{JsiiProperty: "userId", GoGetter: "UserId"},
 			_jsii_.MemberProperty{JsiiProperty: "userIdInput", GoGetter: "UserIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "uuid", GoGetter: "Uuid"},
 		},
 		func() interface{} {
 			j := jsiiProxy_GenaiAgentKnowledgeBasesOutputReference{}
@@ -2389,6 +2390,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "updatedAt", GoGetter: "UpdatedAt"},
 			_jsii_.MemberProperty{JsiiProperty: "userId", GoGetter: "UserId"},
 			_jsii_.MemberProperty{JsiiProperty: "userIdInput", GoGetter: "UserIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "uuid", GoGetter: "Uuid"},
 		},
 		func() interface{} {
 			j := jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference{}

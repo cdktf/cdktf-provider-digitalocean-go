@@ -63,6 +63,8 @@ type AppSpecOutputReference interface {
 	SetInternalValue(val *AppSpec)
 	Job() AppSpecJobList
 	JobInput() interface{}
+	Maintenance() AppSpecMaintenanceOutputReference
+	MaintenanceInput() *AppSpecMaintenance
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -117,6 +119,7 @@ type AppSpecOutputReference interface {
 	PutFunction(value interface{})
 	PutIngress(value *AppSpecIngress)
 	PutJob(value interface{})
+	PutMaintenance(value *AppSpecMaintenance)
 	PutService(value interface{})
 	PutStaticSite(value interface{})
 	PutVpc(value interface{})
@@ -134,6 +137,7 @@ type AppSpecOutputReference interface {
 	ResetFunction()
 	ResetIngress()
 	ResetJob()
+	ResetMaintenance()
 	ResetRegion()
 	ResetService()
 	ResetStaticSite()
@@ -459,6 +463,26 @@ func (j *jsiiProxy_AppSpecOutputReference) JobInput() interface{} {
 	_jsii_.Get(
 		j,
 		"jobInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecOutputReference) Maintenance() AppSpecMaintenanceOutputReference {
+	var returns AppSpecMaintenanceOutputReference
+	_jsii_.Get(
+		j,
+		"maintenance",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecOutputReference) MaintenanceInput() *AppSpecMaintenance {
+	var returns *AppSpecMaintenance
+	_jsii_.Get(
+		j,
+		"maintenanceInput",
 		&returns,
 	)
 	return returns
@@ -1038,6 +1062,17 @@ func (a *jsiiProxy_AppSpecOutputReference) PutJob(value interface{}) {
 	)
 }
 
+func (a *jsiiProxy_AppSpecOutputReference) PutMaintenance(value *AppSpecMaintenance) {
+	if err := a.validatePutMaintenanceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putMaintenance",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AppSpecOutputReference) PutService(value interface{}) {
 	if err := a.validatePutServiceParameters(value); err != nil {
 		panic(err)
@@ -1182,6 +1217,14 @@ func (a *jsiiProxy_AppSpecOutputReference) ResetJob() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetJob",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppSpecOutputReference) ResetMaintenance() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetMaintenance",
 		nil, // no parameters
 	)
 }

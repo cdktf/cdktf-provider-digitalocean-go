@@ -2957,6 +2957,51 @@ func init() {
 			return &j
 		},
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-digitalocean.app.AppSpecMaintenance",
+		reflect.TypeOf((*AppSpecMaintenance)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-digitalocean.app.AppSpecMaintenanceOutputReference",
+		reflect.TypeOf((*AppSpecMaintenanceOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "archive", GoGetter: "Archive"},
+			_jsii_.MemberProperty{JsiiProperty: "archiveInput", GoGetter: "ArchiveInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "enabled", GoGetter: "Enabled"},
+			_jsii_.MemberProperty{JsiiProperty: "enabledInput", GoGetter: "EnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "offlinePageUrl", GoGetter: "OfflinePageUrl"},
+			_jsii_.MemberProperty{JsiiProperty: "offlinePageUrlInput", GoGetter: "OfflinePageUrlInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetArchive", GoMethod: "ResetArchive"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOfflinePageUrl", GoMethod: "ResetOfflinePageUrl"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_AppSpecMaintenanceOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-digitalocean.app.AppSpecOutputReference",
 		reflect.TypeOf((*AppSpecOutputReference)(nil)).Elem(),
@@ -3004,6 +3049,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "job", GoGetter: "Job"},
 			_jsii_.MemberProperty{JsiiProperty: "jobInput", GoGetter: "JobInput"},
+			_jsii_.MemberProperty{JsiiProperty: "maintenance", GoGetter: "Maintenance"},
+			_jsii_.MemberProperty{JsiiProperty: "maintenanceInput", GoGetter: "MaintenanceInput"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putAlert", GoMethod: "PutAlert"},
@@ -3014,6 +3061,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putFunction", GoMethod: "PutFunction"},
 			_jsii_.MemberMethod{JsiiMethod: "putIngress", GoMethod: "PutIngress"},
 			_jsii_.MemberMethod{JsiiMethod: "putJob", GoMethod: "PutJob"},
+			_jsii_.MemberMethod{JsiiMethod: "putMaintenance", GoMethod: "PutMaintenance"},
 			_jsii_.MemberMethod{JsiiMethod: "putService", GoMethod: "PutService"},
 			_jsii_.MemberMethod{JsiiMethod: "putStaticSite", GoMethod: "PutStaticSite"},
 			_jsii_.MemberMethod{JsiiMethod: "putVpc", GoMethod: "PutVpc"},
@@ -3033,6 +3081,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetFunction", GoMethod: "ResetFunction"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIngress", GoMethod: "ResetIngress"},
 			_jsii_.MemberMethod{JsiiMethod: "resetJob", GoMethod: "ResetJob"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMaintenance", GoMethod: "ResetMaintenance"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRegion", GoMethod: "ResetRegion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetService", GoMethod: "ResetService"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStaticSite", GoMethod: "ResetStaticSite"},

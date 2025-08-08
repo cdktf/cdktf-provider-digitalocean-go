@@ -79,6 +79,10 @@ func (a *jsiiProxy_AppSpecOutputReference) validatePutJobParameters(value interf
 	return nil
 }
 
+func (a *jsiiProxy_AppSpecOutputReference) validatePutMaintenanceParameters(value *AppSpecMaintenance) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppSpecOutputReference) validatePutServiceParameters(value interface{}) error {
 	return nil
 }

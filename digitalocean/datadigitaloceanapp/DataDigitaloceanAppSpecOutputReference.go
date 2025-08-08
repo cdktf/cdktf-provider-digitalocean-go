@@ -45,6 +45,7 @@ type DataDigitaloceanAppSpecOutputReference interface {
 	InternalValue() *DataDigitaloceanAppSpec
 	SetInternalValue(val *DataDigitaloceanAppSpec)
 	Job() DataDigitaloceanAppSpecJobList
+	Maintenance() DataDigitaloceanAppSpecMaintenanceList
 	Name() *string
 	Region() *string
 	Service() DataDigitaloceanAppSpecServiceList
@@ -273,6 +274,16 @@ func (j *jsiiProxy_DataDigitaloceanAppSpecOutputReference) Job() DataDigitalocea
 	_jsii_.Get(
 		j,
 		"job",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDigitaloceanAppSpecOutputReference) Maintenance() DataDigitaloceanAppSpecMaintenanceList {
+	var returns DataDigitaloceanAppSpecMaintenanceList
+	_jsii_.Get(
+		j,
+		"maintenance",
 		&returns,
 	)
 	return returns

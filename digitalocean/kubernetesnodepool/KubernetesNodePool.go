@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.62.0/docs/resources/kubernetes_node_pool digitalocean_kubernetes_node_pool}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/kubernetes_node_pool digitalocean_kubernetes_node_pool}.
 type KubernetesNodePool interface {
 	cdktf.TerraformResource
 	ActualNodeCount() *float64
@@ -593,7 +593,7 @@ func (j *jsiiProxy_KubernetesNodePool) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.62.0/docs/resources/kubernetes_node_pool digitalocean_kubernetes_node_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/kubernetes_node_pool digitalocean_kubernetes_node_pool} Resource.
 func NewKubernetesNodePool(scope constructs.Construct, id *string, config *KubernetesNodePoolConfig) KubernetesNodePool {
 	_init_.Initialize()
 
@@ -611,7 +611,7 @@ func NewKubernetesNodePool(scope constructs.Construct, id *string, config *Kuber
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.62.0/docs/resources/kubernetes_node_pool digitalocean_kubernetes_node_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/kubernetes_node_pool digitalocean_kubernetes_node_pool} Resource.
 func NewKubernetesNodePool_Override(k KubernetesNodePool, scope constructs.Construct, id *string, config *KubernetesNodePoolConfig) {
 	_init_.Initialize()
 

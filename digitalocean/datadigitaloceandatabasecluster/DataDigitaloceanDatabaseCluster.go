@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.62.0/docs/data-sources/database_cluster digitalocean_database_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/data-sources/database_cluster digitalocean_database_cluster}.
 type DataDigitaloceanDatabaseCluster interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -46,6 +46,7 @@ type DataDigitaloceanDatabaseCluster interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	MaintenanceWindow() DataDigitaloceanDatabaseClusterMaintenanceWindowList
+	MetricsEndpoints() *[]*string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -270,6 +271,16 @@ func (j *jsiiProxy_DataDigitaloceanDatabaseCluster) MaintenanceWindow() DataDigi
 	_jsii_.Get(
 		j,
 		"maintenanceWindow",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDigitaloceanDatabaseCluster) MetricsEndpoints() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"metricsEndpoints",
 		&returns,
 	)
 	return returns
@@ -576,7 +587,7 @@ func (j *jsiiProxy_DataDigitaloceanDatabaseCluster) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.62.0/docs/data-sources/database_cluster digitalocean_database_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/data-sources/database_cluster digitalocean_database_cluster} Data Source.
 func NewDataDigitaloceanDatabaseCluster(scope constructs.Construct, id *string, config *DataDigitaloceanDatabaseClusterConfig) DataDigitaloceanDatabaseCluster {
 	_init_.Initialize()
 
@@ -594,7 +605,7 @@ func NewDataDigitaloceanDatabaseCluster(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.62.0/docs/data-sources/database_cluster digitalocean_database_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/data-sources/database_cluster digitalocean_database_cluster} Data Source.
 func NewDataDigitaloceanDatabaseCluster_Override(d DataDigitaloceanDatabaseCluster, scope constructs.Construct, id *string, config *DataDigitaloceanDatabaseClusterConfig) {
 	_init_.Initialize()
 

@@ -1138,6 +1138,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "updatedAt", GoGetter: "UpdatedAt"},
 			_jsii_.MemberProperty{JsiiProperty: "userId", GoGetter: "UserId"},
+			_jsii_.MemberProperty{JsiiProperty: "uuid", GoGetter: "Uuid"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDigitaloceanGenaiAgentsByOpenaiApiKeyAgentsKnowledgeBasesOutputReference{}
@@ -2056,6 +2057,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "updatedAt", GoGetter: "UpdatedAt"},
 			_jsii_.MemberProperty{JsiiProperty: "userId", GoGetter: "UserId"},
+			_jsii_.MemberProperty{JsiiProperty: "uuid", GoGetter: "Uuid"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDigitaloceanGenaiAgentsByOpenaiApiKeyAgentsTemplateKnowledgeBasesOutputReference{}

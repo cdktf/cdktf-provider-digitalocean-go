@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.62.0/docs/resources/genai_function digitalocean_genai_function}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/genai_function digitalocean_genai_function}.
 type GenaiFunction interface {
 	cdktf.TerraformResource
 	AgentId() *string
@@ -484,7 +484,7 @@ func (j *jsiiProxy_GenaiFunction) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.62.0/docs/resources/genai_function digitalocean_genai_function} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/genai_function digitalocean_genai_function} Resource.
 func NewGenaiFunction(scope constructs.Construct, id *string, config *GenaiFunctionConfig) GenaiFunction {
 	_init_.Initialize()
 
@@ -502,7 +502,7 @@ func NewGenaiFunction(scope constructs.Construct, id *string, config *GenaiFunct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.62.0/docs/resources/genai_function digitalocean_genai_function} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/genai_function digitalocean_genai_function} Resource.
 func NewGenaiFunction_Override(g GenaiFunction, scope constructs.Construct, id *string, config *GenaiFunctionConfig) {
 	_init_.Initialize()
 

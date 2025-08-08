@@ -52,6 +52,7 @@ type DataDigitaloceanGenaiAgentsAgentsKnowledgeBasesOutputReference interface {
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	UpdatedAt() *string
 	UserId() *string
+	Uuid() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -276,6 +277,16 @@ func (j *jsiiProxy_DataDigitaloceanGenaiAgentsAgentsKnowledgeBasesOutputReferenc
 	_jsii_.Get(
 		j,
 		"userId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDigitaloceanGenaiAgentsAgentsKnowledgeBasesOutputReference) Uuid() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"uuid",
 		&returns,
 	)
 	return returns
