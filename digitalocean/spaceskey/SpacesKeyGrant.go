@@ -7,11 +7,11 @@ package spaceskey
 type SpacesKeyGrant struct {
 	// The name of the bucket to grant the key access to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/spaces_key#bucket SpacesKey#bucket}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/spaces_key#bucket SpacesKey#bucket}
 	Bucket *string `field:"required" json:"bucket" yaml:"bucket"`
 	// The permission to grant the key. Valid values are `read`, `readwrite`, or `fullaccess`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/spaces_key#permission SpacesKey#permission}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/spaces_key#permission SpacesKey#permission}
 	Permission *string `field:"required" json:"permission" yaml:"permission"`
 }
 

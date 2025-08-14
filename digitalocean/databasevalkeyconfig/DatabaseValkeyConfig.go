@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/database_valkey_config digitalocean_database_valkey_config}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/database_valkey_config digitalocean_database_valkey_config}.
 type DatabaseValkeyConfig interface {
 	cdktf.TerraformResource
 	AclChannelsDefault() *string
@@ -621,7 +621,7 @@ func (j *jsiiProxy_DatabaseValkeyConfig) ValkeyActiveExpireEffortInput() *float6
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/database_valkey_config digitalocean_database_valkey_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/database_valkey_config digitalocean_database_valkey_config} Resource.
 func NewDatabaseValkeyConfig(scope constructs.Construct, id *string, config *DatabaseValkeyConfigConfig) DatabaseValkeyConfig {
 	_init_.Initialize()
 
@@ -639,7 +639,7 @@ func NewDatabaseValkeyConfig(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/resources/database_valkey_config digitalocean_database_valkey_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/database_valkey_config digitalocean_database_valkey_config} Resource.
 func NewDatabaseValkeyConfig_Override(d DatabaseValkeyConfig, scope constructs.Construct, id *string, config *DatabaseValkeyConfigConfig) {
 	_init_.Initialize()
 

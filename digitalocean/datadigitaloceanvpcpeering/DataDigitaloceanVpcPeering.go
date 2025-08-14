@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/data-sources/vpc_peering digitalocean_vpc_peering}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/data-sources/vpc_peering digitalocean_vpc_peering}.
 type DataDigitaloceanVpcPeering interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -335,7 +335,7 @@ func (j *jsiiProxy_DataDigitaloceanVpcPeering) VpcIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/data-sources/vpc_peering digitalocean_vpc_peering} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/data-sources/vpc_peering digitalocean_vpc_peering} Data Source.
 func NewDataDigitaloceanVpcPeering(scope constructs.Construct, id *string, config *DataDigitaloceanVpcPeeringConfig) DataDigitaloceanVpcPeering {
 	_init_.Initialize()
 
@@ -353,7 +353,7 @@ func NewDataDigitaloceanVpcPeering(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/data-sources/vpc_peering digitalocean_vpc_peering} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/data-sources/vpc_peering digitalocean_vpc_peering} Data Source.
 func NewDataDigitaloceanVpcPeering_Override(d DataDigitaloceanVpcPeering, scope constructs.Construct, id *string, config *DataDigitaloceanVpcPeeringConfig) {
 	_init_.Initialize()
 

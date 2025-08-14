@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/data-sources/record digitalocean_record}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/data-sources/record digitalocean_record}.
 type DataDigitaloceanRecord interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -399,7 +399,7 @@ func (j *jsiiProxy_DataDigitaloceanRecord) Weight() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/data-sources/record digitalocean_record} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/data-sources/record digitalocean_record} Data Source.
 func NewDataDigitaloceanRecord(scope constructs.Construct, id *string, config *DataDigitaloceanRecordConfig) DataDigitaloceanRecord {
 	_init_.Initialize()
 
@@ -417,7 +417,7 @@ func NewDataDigitaloceanRecord(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/data-sources/record digitalocean_record} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/data-sources/record digitalocean_record} Data Source.
 func NewDataDigitaloceanRecord_Override(d DataDigitaloceanRecord, scope constructs.Construct, id *string, config *DataDigitaloceanRecordConfig) {
 	_init_.Initialize()
 

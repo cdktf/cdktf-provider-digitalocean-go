@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/data-sources/regions digitalocean_regions}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/data-sources/regions digitalocean_regions}.
 type DataDigitaloceanRegions interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -324,7 +324,7 @@ func (j *jsiiProxy_DataDigitaloceanRegions) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/data-sources/regions digitalocean_regions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/data-sources/regions digitalocean_regions} Data Source.
 func NewDataDigitaloceanRegions(scope constructs.Construct, id *string, config *DataDigitaloceanRegionsConfig) DataDigitaloceanRegions {
 	_init_.Initialize()
 
@@ -342,7 +342,7 @@ func NewDataDigitaloceanRegions(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.63.0/docs/data-sources/regions digitalocean_regions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/data-sources/regions digitalocean_regions} Data Source.
 func NewDataDigitaloceanRegions_Override(d DataDigitaloceanRegions, scope constructs.Construct, id *string, config *DataDigitaloceanRegionsConfig) {
 	_init_.Initialize()
 
