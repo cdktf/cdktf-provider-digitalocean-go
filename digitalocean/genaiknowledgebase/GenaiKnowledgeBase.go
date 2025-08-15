@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_knowledge_base digitalocean_genai_knowledge_base}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/genai_knowledge_base digitalocean_genai_knowledge_base}.
 type GenaiKnowledgeBase interface {
 	cdktf.TerraformResource
 	AddedToAgentAt() *string
@@ -580,7 +580,7 @@ func (j *jsiiProxy_GenaiKnowledgeBase) VpcUuidInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_knowledge_base digitalocean_genai_knowledge_base} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/genai_knowledge_base digitalocean_genai_knowledge_base} Resource.
 func NewGenaiKnowledgeBase(scope constructs.Construct, id *string, config *GenaiKnowledgeBaseConfig) GenaiKnowledgeBase {
 	_init_.Initialize()
 
@@ -598,7 +598,7 @@ func NewGenaiKnowledgeBase(scope constructs.Construct, id *string, config *Genai
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_knowledge_base digitalocean_genai_knowledge_base} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/genai_knowledge_base digitalocean_genai_knowledge_base} Resource.
 func NewGenaiKnowledgeBase_Override(g GenaiKnowledgeBase, scope constructs.Construct, id *string, config *GenaiKnowledgeBaseConfig) {
 	_init_.Initialize()
 

@@ -7,7 +7,7 @@ package app
 type AppSpecFunctionLogDestinationPapertrail struct {
 	// Papertrail syslog endpoint.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/app#endpoint App#endpoint}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/app#endpoint App#endpoint}
 	Endpoint *string `field:"required" json:"endpoint" yaml:"endpoint"`
 }
 

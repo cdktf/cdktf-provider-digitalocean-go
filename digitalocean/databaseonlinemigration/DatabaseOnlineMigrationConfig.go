@@ -22,19 +22,19 @@ type DatabaseOnlineMigrationConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/database_online_migration#cluster_id DatabaseOnlineMigration#cluster_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/database_online_migration#cluster_id DatabaseOnlineMigration#cluster_id}.
 	ClusterId *string `field:"required" json:"clusterId" yaml:"clusterId"`
 	// source block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/database_online_migration#source DatabaseOnlineMigration#source}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/database_online_migration#source DatabaseOnlineMigration#source}
 	Source *DatabaseOnlineMigrationSource `field:"required" json:"source" yaml:"source"`
 	// Disables SSL encryption when connecting to the source database.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/database_online_migration#disable_ssl DatabaseOnlineMigration#disable_ssl}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/database_online_migration#disable_ssl DatabaseOnlineMigration#disable_ssl}
 	DisableSsl interface{} `field:"optional" json:"disableSsl" yaml:"disableSsl"`
 	// The list of databases to be ignored during the migration.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/database_online_migration#ignore_dbs DatabaseOnlineMigration#ignore_dbs}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/database_online_migration#ignore_dbs DatabaseOnlineMigration#ignore_dbs}
 	IgnoreDbs *[]*string `field:"optional" json:"ignoreDbs" yaml:"ignoreDbs"`
 }
 

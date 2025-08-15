@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_agent_route digitalocean_genai_agent_route}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/genai_agent_route digitalocean_genai_agent_route}.
 type GenaiAgentRoute interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -439,7 +439,7 @@ func (j *jsiiProxy_GenaiAgentRoute) Uuid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_agent_route digitalocean_genai_agent_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/genai_agent_route digitalocean_genai_agent_route} Resource.
 func NewGenaiAgentRoute(scope constructs.Construct, id *string, config *GenaiAgentRouteConfig) GenaiAgentRoute {
 	_init_.Initialize()
 
@@ -457,7 +457,7 @@ func NewGenaiAgentRoute(scope constructs.Construct, id *string, config *GenaiAge
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_agent_route digitalocean_genai_agent_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/genai_agent_route digitalocean_genai_agent_route} Resource.
 func NewGenaiAgentRoute_Override(g GenaiAgentRoute, scope constructs.Construct, id *string, config *GenaiAgentRouteConfig) {
 	_init_.Initialize()
 

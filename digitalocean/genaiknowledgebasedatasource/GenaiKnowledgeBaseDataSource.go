@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_knowledge_base_data_source digitalocean_genai_knowledge_base_data_source}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/genai_knowledge_base_data_source digitalocean_genai_knowledge_base_data_source}.
 type GenaiKnowledgeBaseDataSource interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -381,7 +381,7 @@ func (j *jsiiProxy_GenaiKnowledgeBaseDataSource) WebCrawlerDataSourceInput() *Ge
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_knowledge_base_data_source digitalocean_genai_knowledge_base_data_source} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/genai_knowledge_base_data_source digitalocean_genai_knowledge_base_data_source} Resource.
 func NewGenaiKnowledgeBaseDataSource(scope constructs.Construct, id *string, config *GenaiKnowledgeBaseDataSourceConfig) GenaiKnowledgeBaseDataSource {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewGenaiKnowledgeBaseDataSource(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.64.0/docs/resources/genai_knowledge_base_data_source digitalocean_genai_knowledge_base_data_source} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/genai_knowledge_base_data_source digitalocean_genai_knowledge_base_data_source} Resource.
 func NewGenaiKnowledgeBaseDataSource_Override(g GenaiKnowledgeBaseDataSource, scope constructs.Construct, id *string, config *GenaiKnowledgeBaseDataSourceConfig) {
 	_init_.Initialize()
 
