@@ -55,6 +55,14 @@ func (d *jsiiProxy_DataDigitaloceanKubernetesCluster) validateOverrideLogicalIdP
 	return nil
 }
 
+func (d *jsiiProxy_DataDigitaloceanKubernetesCluster) validatePutAmdGpuDeviceMetricsExporterPluginParameters(value *DataDigitaloceanKubernetesClusterAmdGpuDeviceMetricsExporterPlugin) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataDigitaloceanKubernetesCluster) validatePutAmdGpuDevicePluginParameters(value *DataDigitaloceanKubernetesClusterAmdGpuDevicePlugin) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataDigitaloceanKubernetesCluster) validatePutClusterAutoscalerConfigurationParameters(value interface{}) error {
 	return nil
 }

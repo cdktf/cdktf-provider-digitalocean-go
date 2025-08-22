@@ -5,7 +5,7 @@ package kubernetescluster
 
 
 type KubernetesClusterRoutingAgent struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/kubernetes_cluster#enabled KubernetesCluster#enabled}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/resources/kubernetes_cluster#enabled KubernetesCluster#enabled}.
 	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
 }
 

@@ -5,11 +5,11 @@ package app
 
 
 type AppSpecFunctionAlertDestinations struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/app#emails App#emails}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/resources/app#emails App#emails}.
 	Emails *[]*string `field:"optional" json:"emails" yaml:"emails"`
 	// slack_webhooks block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/app#slack_webhooks App#slack_webhooks}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/resources/app#slack_webhooks App#slack_webhooks}
 	SlackWebhooks interface{} `field:"optional" json:"slackWebhooks" yaml:"slackWebhooks"`
 }
 

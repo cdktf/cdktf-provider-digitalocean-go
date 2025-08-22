@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/data-sources/database_metrics_credentials digitalocean_database_metrics_credentials}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/database_metrics_credentials digitalocean_database_metrics_credentials}.
 type DataDigitaloceanDatabaseMetricsCredentials interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -287,7 +287,7 @@ func (j *jsiiProxy_DataDigitaloceanDatabaseMetricsCredentials) Username() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/data-sources/database_metrics_credentials digitalocean_database_metrics_credentials} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/database_metrics_credentials digitalocean_database_metrics_credentials} Data Source.
 func NewDataDigitaloceanDatabaseMetricsCredentials(scope constructs.Construct, id *string, config *DataDigitaloceanDatabaseMetricsCredentialsConfig) DataDigitaloceanDatabaseMetricsCredentials {
 	_init_.Initialize()
 
@@ -305,7 +305,7 @@ func NewDataDigitaloceanDatabaseMetricsCredentials(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/data-sources/database_metrics_credentials digitalocean_database_metrics_credentials} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/database_metrics_credentials digitalocean_database_metrics_credentials} Data Source.
 func NewDataDigitaloceanDatabaseMetricsCredentials_Override(d DataDigitaloceanDatabaseMetricsCredentials, scope constructs.Construct, id *string, config *DataDigitaloceanDatabaseMetricsCredentialsConfig) {
 	_init_.Initialize()
 

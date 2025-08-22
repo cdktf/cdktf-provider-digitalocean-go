@@ -24,15 +24,15 @@ type VpcPeeringConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the VPC Peering.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/vpc_peering#name VpcPeering#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/resources/vpc_peering#name VpcPeering#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The list of VPCs to be peered.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/vpc_peering#vpc_ids VpcPeering#vpc_ids}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/resources/vpc_peering#vpc_ids VpcPeering#vpc_ids}
 	VpcIds *[]*string `field:"required" json:"vpcIds" yaml:"vpcIds"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/vpc_peering#timeouts VpcPeering#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/resources/vpc_peering#timeouts VpcPeering#timeouts}
 	Timeouts *VpcPeeringTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

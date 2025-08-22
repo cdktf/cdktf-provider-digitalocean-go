@@ -47,6 +47,10 @@ func (a *jsiiProxy_AppSpecIngressRuleMatchOutputReference) validateInterpolation
 	return nil
 }
 
+func (a *jsiiProxy_AppSpecIngressRuleMatchOutputReference) validatePutAuthorityParameters(value *AppSpecIngressRuleMatchAuthority) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppSpecIngressRuleMatchOutputReference) validatePutPathParameters(value *AppSpecIngressRuleMatchPath) error {
 	return nil
 }

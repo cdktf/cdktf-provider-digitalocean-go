@@ -13,6 +13,7 @@ import (
 
 type DataDigitaloceanAppSpecIngressRuleMatchOutputReference interface {
 	cdktf.ComplexObject
+	Authority() DataDigitaloceanAppSpecIngressRuleMatchAuthorityList
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -78,6 +79,16 @@ type DataDigitaloceanAppSpecIngressRuleMatchOutputReference interface {
 // The jsii proxy struct for DataDigitaloceanAppSpecIngressRuleMatchOutputReference
 type jsiiProxy_DataDigitaloceanAppSpecIngressRuleMatchOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataDigitaloceanAppSpecIngressRuleMatchOutputReference) Authority() DataDigitaloceanAppSpecIngressRuleMatchAuthorityList {
+	var returns DataDigitaloceanAppSpecIngressRuleMatchAuthorityList
+	_jsii_.Get(
+		j,
+		"authority",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataDigitaloceanAppSpecIngressRuleMatchOutputReference) ComplexObjectIndex() interface{} {

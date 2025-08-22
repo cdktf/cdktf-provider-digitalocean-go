@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/database_mongodb_config digitalocean_database_mongodb_config}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/resources/database_mongodb_config digitalocean_database_mongodb_config}.
 type DatabaseMongodbConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -453,7 +453,7 @@ func (j *jsiiProxy_DatabaseMongodbConfig) VerbosityInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/database_mongodb_config digitalocean_database_mongodb_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/resources/database_mongodb_config digitalocean_database_mongodb_config} Resource.
 func NewDatabaseMongodbConfig(scope constructs.Construct, id *string, config *DatabaseMongodbConfigConfig) DatabaseMongodbConfig {
 	_init_.Initialize()
 
@@ -471,7 +471,7 @@ func NewDatabaseMongodbConfig(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/database_mongodb_config digitalocean_database_mongodb_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/resources/database_mongodb_config digitalocean_database_mongodb_config} Resource.
 func NewDatabaseMongodbConfig_Override(d DatabaseMongodbConfig, scope constructs.Construct, id *string, config *DatabaseMongodbConfigConfig) {
 	_init_.Initialize()
 

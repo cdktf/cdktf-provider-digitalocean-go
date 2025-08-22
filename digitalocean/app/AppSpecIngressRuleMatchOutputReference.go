@@ -13,6 +13,8 @@ import (
 
 type AppSpecIngressRuleMatchOutputReference interface {
 	cdktf.ComplexObject
+	Authority() AppSpecIngressRuleMatchAuthorityOutputReference
+	AuthorityInput() *AppSpecIngressRuleMatchAuthority
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -66,7 +68,9 @@ type AppSpecIngressRuleMatchOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAuthority(value *AppSpecIngressRuleMatchAuthority)
 	PutPath(value *AppSpecIngressRuleMatchPath)
+	ResetAuthority()
 	ResetPath()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -81,6 +85,26 @@ type AppSpecIngressRuleMatchOutputReference interface {
 // The jsii proxy struct for AppSpecIngressRuleMatchOutputReference
 type jsiiProxy_AppSpecIngressRuleMatchOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_AppSpecIngressRuleMatchOutputReference) Authority() AppSpecIngressRuleMatchAuthorityOutputReference {
+	var returns AppSpecIngressRuleMatchAuthorityOutputReference
+	_jsii_.Get(
+		j,
+		"authority",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSpecIngressRuleMatchOutputReference) AuthorityInput() *AppSpecIngressRuleMatchAuthority {
+	var returns *AppSpecIngressRuleMatchAuthority
+	_jsii_.Get(
+		j,
+		"authorityInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_AppSpecIngressRuleMatchOutputReference) ComplexObjectIndex() interface{} {
@@ -442,6 +466,17 @@ func (a *jsiiProxy_AppSpecIngressRuleMatchOutputReference) InterpolationForAttri
 	return returns
 }
 
+func (a *jsiiProxy_AppSpecIngressRuleMatchOutputReference) PutAuthority(value *AppSpecIngressRuleMatchAuthority) {
+	if err := a.validatePutAuthorityParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putAuthority",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AppSpecIngressRuleMatchOutputReference) PutPath(value *AppSpecIngressRuleMatchPath) {
 	if err := a.validatePutPathParameters(value); err != nil {
 		panic(err)
@@ -450,6 +485,14 @@ func (a *jsiiProxy_AppSpecIngressRuleMatchOutputReference) PutPath(value *AppSpe
 		a,
 		"putPath",
 		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AppSpecIngressRuleMatchOutputReference) ResetAuthority() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAuthority",
+		nil, // no parameters
 	)
 }
 

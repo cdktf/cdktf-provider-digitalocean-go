@@ -12,9 +12,13 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/kubernetes_cluster digitalocean_kubernetes_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/resources/kubernetes_cluster digitalocean_kubernetes_cluster}.
 type KubernetesCluster interface {
 	cdktf.TerraformResource
+	AmdGpuDeviceMetricsExporterPlugin() KubernetesClusterAmdGpuDeviceMetricsExporterPluginOutputReference
+	AmdGpuDeviceMetricsExporterPluginInput() *KubernetesClusterAmdGpuDeviceMetricsExporterPlugin
+	AmdGpuDevicePlugin() KubernetesClusterAmdGpuDevicePluginOutputReference
+	AmdGpuDevicePluginInput() *KubernetesClusterAmdGpuDevicePlugin
 	AutoUpgrade() interface{}
 	SetAutoUpgrade(val interface{})
 	AutoUpgradeInput() interface{}
@@ -165,12 +169,16 @@ type KubernetesCluster interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAmdGpuDeviceMetricsExporterPlugin(value *KubernetesClusterAmdGpuDeviceMetricsExporterPlugin)
+	PutAmdGpuDevicePlugin(value *KubernetesClusterAmdGpuDevicePlugin)
 	PutClusterAutoscalerConfiguration(value interface{})
 	PutControlPlaneFirewall(value *KubernetesClusterControlPlaneFirewall)
 	PutMaintenancePolicy(value *KubernetesClusterMaintenancePolicy)
 	PutNodePool(value *KubernetesClusterNodePool)
 	PutRoutingAgent(value *KubernetesClusterRoutingAgent)
 	PutTimeouts(value *KubernetesClusterTimeouts)
+	ResetAmdGpuDeviceMetricsExporterPlugin()
+	ResetAmdGpuDevicePlugin()
 	ResetAutoUpgrade()
 	ResetClusterAutoscalerConfiguration()
 	ResetClusterSubnet()
@@ -206,6 +214,46 @@ type KubernetesCluster interface {
 // The jsii proxy struct for KubernetesCluster
 type jsiiProxy_KubernetesCluster struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_KubernetesCluster) AmdGpuDeviceMetricsExporterPlugin() KubernetesClusterAmdGpuDeviceMetricsExporterPluginOutputReference {
+	var returns KubernetesClusterAmdGpuDeviceMetricsExporterPluginOutputReference
+	_jsii_.Get(
+		j,
+		"amdGpuDeviceMetricsExporterPlugin",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesCluster) AmdGpuDeviceMetricsExporterPluginInput() *KubernetesClusterAmdGpuDeviceMetricsExporterPlugin {
+	var returns *KubernetesClusterAmdGpuDeviceMetricsExporterPlugin
+	_jsii_.Get(
+		j,
+		"amdGpuDeviceMetricsExporterPluginInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesCluster) AmdGpuDevicePlugin() KubernetesClusterAmdGpuDevicePluginOutputReference {
+	var returns KubernetesClusterAmdGpuDevicePluginOutputReference
+	_jsii_.Get(
+		j,
+		"amdGpuDevicePlugin",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesCluster) AmdGpuDevicePluginInput() *KubernetesClusterAmdGpuDevicePlugin {
+	var returns *KubernetesClusterAmdGpuDevicePlugin
+	_jsii_.Get(
+		j,
+		"amdGpuDevicePluginInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_KubernetesCluster) AutoUpgrade() interface{} {
@@ -839,7 +887,7 @@ func (j *jsiiProxy_KubernetesCluster) VpcUuidInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/kubernetes_cluster digitalocean_kubernetes_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/resources/kubernetes_cluster digitalocean_kubernetes_cluster} Resource.
 func NewKubernetesCluster(scope constructs.Construct, id *string, config *KubernetesClusterConfig) KubernetesCluster {
 	_init_.Initialize()
 
@@ -857,7 +905,7 @@ func NewKubernetesCluster(scope constructs.Construct, id *string, config *Kubern
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/kubernetes_cluster digitalocean_kubernetes_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/resources/kubernetes_cluster digitalocean_kubernetes_cluster} Resource.
 func NewKubernetesCluster_Override(k KubernetesCluster, scope constructs.Construct, id *string, config *KubernetesClusterConfig) {
 	_init_.Initialize()
 
@@ -1443,6 +1491,28 @@ func (k *jsiiProxy_KubernetesCluster) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (k *jsiiProxy_KubernetesCluster) PutAmdGpuDeviceMetricsExporterPlugin(value *KubernetesClusterAmdGpuDeviceMetricsExporterPlugin) {
+	if err := k.validatePutAmdGpuDeviceMetricsExporterPluginParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"putAmdGpuDeviceMetricsExporterPlugin",
+		[]interface{}{value},
+	)
+}
+
+func (k *jsiiProxy_KubernetesCluster) PutAmdGpuDevicePlugin(value *KubernetesClusterAmdGpuDevicePlugin) {
+	if err := k.validatePutAmdGpuDevicePluginParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"putAmdGpuDevicePlugin",
+		[]interface{}{value},
+	)
+}
+
 func (k *jsiiProxy_KubernetesCluster) PutClusterAutoscalerConfiguration(value interface{}) {
 	if err := k.validatePutClusterAutoscalerConfigurationParameters(value); err != nil {
 		panic(err)
@@ -1506,6 +1576,22 @@ func (k *jsiiProxy_KubernetesCluster) PutTimeouts(value *KubernetesClusterTimeou
 		k,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (k *jsiiProxy_KubernetesCluster) ResetAmdGpuDeviceMetricsExporterPlugin() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetAmdGpuDeviceMetricsExporterPlugin",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesCluster) ResetAmdGpuDevicePlugin() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetAmdGpuDevicePlugin",
+		nil, // no parameters
 	)
 }
 

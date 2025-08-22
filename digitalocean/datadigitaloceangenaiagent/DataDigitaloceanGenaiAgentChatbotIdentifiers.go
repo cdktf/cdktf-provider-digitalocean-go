@@ -7,7 +7,7 @@ package datadigitaloceangenaiagent
 type DataDigitaloceanGenaiAgentChatbotIdentifiers struct {
 	// Chatbot ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/data-sources/genai_agent#chatbot_id DataDigitaloceanGenaiAgent#chatbot_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/genai_agent#chatbot_id DataDigitaloceanGenaiAgent#chatbot_id}
 	ChatbotId *string `field:"optional" json:"chatbotId" yaml:"chatbotId"`
 }
 

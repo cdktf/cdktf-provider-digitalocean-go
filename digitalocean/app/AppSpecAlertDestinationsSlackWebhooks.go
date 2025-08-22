@@ -7,11 +7,11 @@ package app
 type AppSpecAlertDestinationsSlackWebhooks struct {
 	// The Slack channel to send notifications to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/app#channel App#channel}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/resources/app#channel App#channel}
 	Channel *string `field:"required" json:"channel" yaml:"channel"`
 	// The Slack webhook URL.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.65.0/docs/resources/app#url App#url}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/resources/app#url App#url}
 	Url *string `field:"required" json:"url" yaml:"url"`
 }
 
