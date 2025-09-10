@@ -24,39 +24,39 @@ type PartnerAttachmentConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The connection bandwidth in Mbps.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/resources/partner_attachment#connection_bandwidth_in_mbps PartnerAttachment#connection_bandwidth_in_mbps}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/partner_attachment#connection_bandwidth_in_mbps PartnerAttachment#connection_bandwidth_in_mbps}
 	ConnectionBandwidthInMbps *float64 `field:"required" json:"connectionBandwidthInMbps" yaml:"connectionBandwidthInMbps"`
 	// The NaaS provider.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/resources/partner_attachment#naas_provider PartnerAttachment#naas_provider}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/partner_attachment#naas_provider PartnerAttachment#naas_provider}
 	NaasProvider *string `field:"required" json:"naasProvider" yaml:"naasProvider"`
 	// The name of the Partner Attachment.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/resources/partner_attachment#name PartnerAttachment#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/partner_attachment#name PartnerAttachment#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The region where the Partner Attachment will be created.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/resources/partner_attachment#region PartnerAttachment#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/partner_attachment#region PartnerAttachment#region}
 	Region *string `field:"required" json:"region" yaml:"region"`
 	// The list of VPC IDs to attach the Partner Attachment to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/resources/partner_attachment#vpc_ids PartnerAttachment#vpc_ids}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/partner_attachment#vpc_ids PartnerAttachment#vpc_ids}
 	VpcIds *[]*string `field:"required" json:"vpcIds" yaml:"vpcIds"`
 	// bgp block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/resources/partner_attachment#bgp PartnerAttachment#bgp}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/partner_attachment#bgp PartnerAttachment#bgp}
 	Bgp *PartnerAttachmentBgp `field:"optional" json:"bgp" yaml:"bgp"`
 	// The UUID of the Parent Partner Attachment.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/resources/partner_attachment#parent_uuid PartnerAttachment#parent_uuid}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/partner_attachment#parent_uuid PartnerAttachment#parent_uuid}
 	ParentUuid *string `field:"optional" json:"parentUuid" yaml:"parentUuid"`
 	// The redundancy zone for the NaaS.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/resources/partner_attachment#redundancy_zone PartnerAttachment#redundancy_zone}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/partner_attachment#redundancy_zone PartnerAttachment#redundancy_zone}
 	RedundancyZone *string `field:"optional" json:"redundancyZone" yaml:"redundancyZone"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/resources/partner_attachment#timeouts PartnerAttachment#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/partner_attachment#timeouts PartnerAttachment#timeouts}
 	Timeouts *PartnerAttachmentTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

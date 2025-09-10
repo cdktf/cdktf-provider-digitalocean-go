@@ -5,9 +5,9 @@ package datadigitaloceanregions
 
 
 type DataDigitaloceanRegionsSort struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/regions#key DataDigitaloceanRegions#key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/regions#key DataDigitaloceanRegions#key}.
 	Key *string `field:"required" json:"key" yaml:"key"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.66.0/docs/data-sources/regions#direction DataDigitaloceanRegions#direction}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/regions#direction DataDigitaloceanRegions#direction}.
 	Direction *string `field:"optional" json:"direction" yaml:"direction"`
 }
 
