@@ -5,9 +5,9 @@ package partnerattachment
 
 
 type PartnerAttachmentTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/partner_attachment#create PartnerAttachment#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/partner_attachment#create PartnerAttachment#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/partner_attachment#delete PartnerAttachment#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/partner_attachment#delete PartnerAttachment#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
 }
 

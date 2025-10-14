@@ -5,7 +5,7 @@ package kubernetescluster
 
 
 type KubernetesClusterAmdGpuDevicePlugin struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/kubernetes_cluster#enabled KubernetesCluster#enabled}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/kubernetes_cluster#enabled KubernetesCluster#enabled}.
 	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
 }
 

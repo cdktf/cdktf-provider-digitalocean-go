@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/partner_attachment_service_key digitalocean_partner_attachment_service_key}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/partner_attachment_service_key digitalocean_partner_attachment_service_key}.
 type DataDigitaloceanPartnerAttachmentServiceKey interface {
 	cdktf.TerraformDataSource
 	AttachmentId() *string
@@ -321,7 +321,7 @@ func (j *jsiiProxy_DataDigitaloceanPartnerAttachmentServiceKey) Value() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/partner_attachment_service_key digitalocean_partner_attachment_service_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/partner_attachment_service_key digitalocean_partner_attachment_service_key} Data Source.
 func NewDataDigitaloceanPartnerAttachmentServiceKey(scope constructs.Construct, id *string, config *DataDigitaloceanPartnerAttachmentServiceKeyConfig) DataDigitaloceanPartnerAttachmentServiceKey {
 	_init_.Initialize()
 
@@ -339,7 +339,7 @@ func NewDataDigitaloceanPartnerAttachmentServiceKey(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/partner_attachment_service_key digitalocean_partner_attachment_service_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/partner_attachment_service_key digitalocean_partner_attachment_service_key} Data Source.
 func NewDataDigitaloceanPartnerAttachmentServiceKey_Override(d DataDigitaloceanPartnerAttachmentServiceKey, scope constructs.Construct, id *string, config *DataDigitaloceanPartnerAttachmentServiceKeyConfig) {
 	_init_.Initialize()
 

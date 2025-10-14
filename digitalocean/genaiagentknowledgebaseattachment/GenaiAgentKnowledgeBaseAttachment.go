@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/genai_agent_knowledge_base_attachment digitalocean_genai_agent_knowledge_base_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent_knowledge_base_attachment digitalocean_genai_agent_knowledge_base_attachment}.
 type GenaiAgentKnowledgeBaseAttachment interface {
 	cdktf.TerraformResource
 	AgentUuid() *string
@@ -356,7 +356,7 @@ func (j *jsiiProxy_GenaiAgentKnowledgeBaseAttachment) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/genai_agent_knowledge_base_attachment digitalocean_genai_agent_knowledge_base_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent_knowledge_base_attachment digitalocean_genai_agent_knowledge_base_attachment} Resource.
 func NewGenaiAgentKnowledgeBaseAttachment(scope constructs.Construct, id *string, config *GenaiAgentKnowledgeBaseAttachmentConfig) GenaiAgentKnowledgeBaseAttachment {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewGenaiAgentKnowledgeBaseAttachment(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/resources/genai_agent_knowledge_base_attachment digitalocean_genai_agent_knowledge_base_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/genai_agent_knowledge_base_attachment digitalocean_genai_agent_knowledge_base_attachment} Resource.
 func NewGenaiAgentKnowledgeBaseAttachment_Override(g GenaiAgentKnowledgeBaseAttachment, scope constructs.Construct, id *string, config *GenaiAgentKnowledgeBaseAttachmentConfig) {
 	_init_.Initialize()
 

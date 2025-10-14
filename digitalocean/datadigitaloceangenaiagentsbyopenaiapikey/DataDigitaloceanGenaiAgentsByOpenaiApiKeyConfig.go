@@ -24,9 +24,9 @@ type DataDigitaloceanGenaiAgentsByOpenaiApiKeyConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The UUID of the OpenAI API key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agents_by_openai_api_key#uuid DataDigitaloceanGenaiAgentsByOpenaiApiKey#uuid}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/genai_agents_by_openai_api_key#uuid DataDigitaloceanGenaiAgentsByOpenaiApiKey#uuid}
 	Uuid *string `field:"required" json:"uuid" yaml:"uuid"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.67.0/docs/data-sources/genai_agents_by_openai_api_key#id DataDigitaloceanGenaiAgentsByOpenaiApiKey#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/genai_agents_by_openai_api_key#id DataDigitaloceanGenaiAgentsByOpenaiApiKey#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
