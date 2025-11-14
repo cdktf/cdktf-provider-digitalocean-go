@@ -15,7 +15,7 @@ func (g *jsiiProxy_GenaiAgentChatbotIdentifiersList) validateGetParameters(index
 	return nil
 }
 
-func (g *jsiiProxy_GenaiAgentChatbotIdentifiersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GenaiAgentChatbotIdentifiersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

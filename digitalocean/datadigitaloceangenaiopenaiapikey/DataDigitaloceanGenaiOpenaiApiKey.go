@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/genai_openai_api_key digitalocean_genai_openai_api_key}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_openai_api_key digitalocean_genai_openai_api_key}.
 type DataDigitaloceanGenaiOpenaiApiKey interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -354,7 +354,7 @@ func (j *jsiiProxy_DataDigitaloceanGenaiOpenaiApiKey) UuidInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/genai_openai_api_key digitalocean_genai_openai_api_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_openai_api_key digitalocean_genai_openai_api_key} Data Source.
 func NewDataDigitaloceanGenaiOpenaiApiKey(scope constructs.Construct, id *string, config *DataDigitaloceanGenaiOpenaiApiKeyConfig) DataDigitaloceanGenaiOpenaiApiKey {
 	_init_.Initialize()
 
@@ -372,7 +372,7 @@ func NewDataDigitaloceanGenaiOpenaiApiKey(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/genai_openai_api_key digitalocean_genai_openai_api_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_openai_api_key digitalocean_genai_openai_api_key} Data Source.
 func NewDataDigitaloceanGenaiOpenaiApiKey_Override(d DataDigitaloceanGenaiOpenaiApiKey, scope constructs.Construct, id *string, config *DataDigitaloceanGenaiOpenaiApiKeyConfig) {
 	_init_.Initialize()
 

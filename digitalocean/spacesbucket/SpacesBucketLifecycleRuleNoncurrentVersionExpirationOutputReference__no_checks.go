@@ -43,11 +43,11 @@ func (s *jsiiProxy_SpacesBucketLifecycleRuleNoncurrentVersionExpirationOutputRef
 	return nil
 }
 
-func (s *jsiiProxy_SpacesBucketLifecycleRuleNoncurrentVersionExpirationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SpacesBucketLifecycleRuleNoncurrentVersionExpirationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SpacesBucketLifecycleRuleNoncurrentVersionExpirationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpacesBucketLifecycleRuleNoncurrentVersionExpirationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

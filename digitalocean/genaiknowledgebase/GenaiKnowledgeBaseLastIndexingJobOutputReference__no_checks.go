@@ -43,11 +43,11 @@ func (g *jsiiProxy_GenaiKnowledgeBaseLastIndexingJobOutputReference) validateGet
 	return nil
 }
 
-func (g *jsiiProxy_GenaiKnowledgeBaseLastIndexingJobOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GenaiKnowledgeBaseLastIndexingJobOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GenaiKnowledgeBaseLastIndexingJobOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GenaiKnowledgeBaseLastIndexingJobOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

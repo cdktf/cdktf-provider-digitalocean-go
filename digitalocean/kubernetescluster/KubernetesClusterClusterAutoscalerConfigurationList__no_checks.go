@@ -15,7 +15,7 @@ func (k *jsiiProxy_KubernetesClusterClusterAutoscalerConfigurationList) validate
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterClusterAutoscalerConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KubernetesClusterClusterAutoscalerConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

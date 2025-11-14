@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDigitaloceanAppSpecIngressRuleMatchAuthorityList) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanAppSpecIngressRuleMatchAuthorityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDigitaloceanAppSpecIngressRuleMatchAuthorityList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

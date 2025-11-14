@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDigitaloceanFirewallPendingChangesOutputReference) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanFirewallPendingChangesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDigitaloceanFirewallPendingChangesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanFirewallPendingChangesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDigitaloceanFirewallPendingChangesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DatabasePostgresqlConfigPgbouncerList) validateGetParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DatabasePostgresqlConfigPgbouncerList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatabasePostgresqlConfigPgbouncerList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

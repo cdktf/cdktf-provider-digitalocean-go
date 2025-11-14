@@ -75,12 +75,12 @@ type DataDigitaloceanGenaiKnowledgeBasesFilterOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetAll()
 	ResetMatchBy()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -540,8 +540,8 @@ func (d *jsiiProxy_DataDigitaloceanGenaiKnowledgeBasesFilterOutputReference) Int
 	return returns
 }
 
-func (d *jsiiProxy_DataDigitaloceanGenaiKnowledgeBasesFilterOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataDigitaloceanGenaiKnowledgeBasesFilterOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -549,7 +549,7 @@ func (d *jsiiProxy_DataDigitaloceanGenaiKnowledgeBasesFilterOutputReference) Int
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -572,8 +572,8 @@ func (d *jsiiProxy_DataDigitaloceanGenaiKnowledgeBasesFilterOutputReference) Res
 	)
 }
 
-func (d *jsiiProxy_DataDigitaloceanGenaiKnowledgeBasesFilterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataDigitaloceanGenaiKnowledgeBasesFilterOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -581,7 +581,7 @@ func (d *jsiiProxy_DataDigitaloceanGenaiKnowledgeBasesFilterOutputReference) Res
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

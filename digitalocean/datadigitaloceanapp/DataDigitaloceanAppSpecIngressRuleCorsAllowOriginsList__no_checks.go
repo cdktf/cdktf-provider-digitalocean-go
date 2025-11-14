@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDigitaloceanAppSpecIngressRuleCorsAllowOriginsList) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanAppSpecIngressRuleCorsAllowOriginsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDigitaloceanAppSpecIngressRuleCorsAllowOriginsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

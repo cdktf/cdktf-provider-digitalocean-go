@@ -15,7 +15,7 @@ func (a *jsiiProxy_AppSpecIngressRuleList) validateGetParameters(index *float64)
 	return nil
 }
 
-func (a *jsiiProxy_AppSpecIngressRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppSpecIngressRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

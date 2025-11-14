@@ -43,11 +43,11 @@ func (k *jsiiProxy_KubernetesClusterAmdGpuDeviceMetricsExporterPluginOutputRefer
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterAmdGpuDeviceMetricsExporterPluginOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KubernetesClusterAmdGpuDeviceMetricsExporterPluginOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterAmdGpuDeviceMetricsExporterPluginOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KubernetesClusterAmdGpuDeviceMetricsExporterPluginOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

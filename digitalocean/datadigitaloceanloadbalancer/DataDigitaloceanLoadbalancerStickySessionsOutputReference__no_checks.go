@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDigitaloceanLoadbalancerStickySessionsOutputReference) va
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanLoadbalancerStickySessionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDigitaloceanLoadbalancerStickySessionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanLoadbalancerStickySessionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDigitaloceanLoadbalancerStickySessionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDigitaloceanGenaiAgentsAgentsChatbotOutputReference) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanGenaiAgentsAgentsChatbotOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDigitaloceanGenaiAgentsAgentsChatbotOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanGenaiAgentsAgentsChatbotOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDigitaloceanGenaiAgentsAgentsChatbotOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

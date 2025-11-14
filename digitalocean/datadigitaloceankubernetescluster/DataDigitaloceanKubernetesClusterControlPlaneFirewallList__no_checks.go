@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDigitaloceanKubernetesClusterControlPlaneFirewallList) va
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanKubernetesClusterControlPlaneFirewallList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDigitaloceanKubernetesClusterControlPlaneFirewallList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

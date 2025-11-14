@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDigitaloceanVpcNatGatewayVpcsList) validateGetParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanVpcNatGatewayVpcsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDigitaloceanVpcNatGatewayVpcsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDigitaloceanAppSpecServiceImageDeployOnPushList) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanAppSpecServiceImageDeployOnPushList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDigitaloceanAppSpecServiceImageDeployOnPushList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

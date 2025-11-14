@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDigitaloceanAppSpecWorkerAlertDestinationsList) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanAppSpecWorkerAlertDestinationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDigitaloceanAppSpecWorkerAlertDestinationsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDigitaloceanAppSpecFunctionLogDestinationDatadogList) val
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanAppSpecFunctionLogDestinationDatadogList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDigitaloceanAppSpecFunctionLogDestinationDatadogList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

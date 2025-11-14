@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataDigitaloceanGenaiAgentTemplateOutputReference) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanGenaiAgentTemplateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDigitaloceanGenaiAgentTemplateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (d *jsiiProxy_DataDigitaloceanGenaiAgentTemplateOutputReference) validatePu
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanGenaiAgentTemplateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDigitaloceanGenaiAgentTemplateOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

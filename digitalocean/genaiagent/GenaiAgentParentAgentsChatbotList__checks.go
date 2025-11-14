@@ -29,9 +29,9 @@ func (g *jsiiProxy_GenaiAgentParentAgentsChatbotList) validateGetParameters(inde
 	return nil
 }
 
-func (g *jsiiProxy_GenaiAgentParentAgentsChatbotList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (g *jsiiProxy_GenaiAgentParentAgentsChatbotList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

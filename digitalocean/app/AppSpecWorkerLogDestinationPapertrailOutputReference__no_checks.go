@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppSpecWorkerLogDestinationPapertrailOutputReference) validat
 	return nil
 }
 
-func (a *jsiiProxy_AppSpecWorkerLogDestinationPapertrailOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppSpecWorkerLogDestinationPapertrailOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppSpecWorkerLogDestinationPapertrailOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppSpecWorkerLogDestinationPapertrailOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

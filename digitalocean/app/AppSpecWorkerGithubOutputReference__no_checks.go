@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppSpecWorkerGithubOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (a *jsiiProxy_AppSpecWorkerGithubOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppSpecWorkerGithubOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppSpecWorkerGithubOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppSpecWorkerGithubOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

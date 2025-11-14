@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDigitaloceanLoadbalancerGlbSettingsOutputReference) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanLoadbalancerGlbSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDigitaloceanLoadbalancerGlbSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanLoadbalancerGlbSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDigitaloceanLoadbalancerGlbSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

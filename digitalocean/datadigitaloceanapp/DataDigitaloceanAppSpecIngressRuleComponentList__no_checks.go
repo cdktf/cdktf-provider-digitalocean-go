@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDigitaloceanAppSpecIngressRuleComponentList) validateGetP
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanAppSpecIngressRuleComponentList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDigitaloceanAppSpecIngressRuleComponentList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

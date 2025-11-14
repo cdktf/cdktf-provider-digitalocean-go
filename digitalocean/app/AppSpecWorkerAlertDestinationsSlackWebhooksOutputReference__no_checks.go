@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppSpecWorkerAlertDestinationsSlackWebhooksOutputReference) v
 	return nil
 }
 
-func (a *jsiiProxy_AppSpecWorkerAlertDestinationsSlackWebhooksOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppSpecWorkerAlertDestinationsSlackWebhooksOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppSpecWorkerAlertDestinationsSlackWebhooksOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppSpecWorkerAlertDestinationsSlackWebhooksOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

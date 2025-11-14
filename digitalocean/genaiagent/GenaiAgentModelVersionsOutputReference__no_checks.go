@@ -43,11 +43,11 @@ func (g *jsiiProxy_GenaiAgentModelVersionsOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (g *jsiiProxy_GenaiAgentModelVersionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GenaiAgentModelVersionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GenaiAgentModelVersionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GenaiAgentModelVersionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

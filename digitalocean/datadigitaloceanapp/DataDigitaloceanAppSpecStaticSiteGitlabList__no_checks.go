@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDigitaloceanAppSpecStaticSiteGitlabList) validateGetParam
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanAppSpecStaticSiteGitlabList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDigitaloceanAppSpecStaticSiteGitlabList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

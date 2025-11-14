@@ -39,7 +39,7 @@ type DataDigitaloceanAppSpecJobLogDestinationPapertrailList interface {
 	Get(index *float64) DataDigitaloceanAppSpecJobLogDestinationPapertrailOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -208,8 +208,8 @@ func (d *jsiiProxy_DataDigitaloceanAppSpecJobLogDestinationPapertrailList) Get(i
 	return returns
 }
 
-func (d *jsiiProxy_DataDigitaloceanAppSpecJobLogDestinationPapertrailList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataDigitaloceanAppSpecJobLogDestinationPapertrailList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -217,7 +217,7 @@ func (d *jsiiProxy_DataDigitaloceanAppSpecJobLogDestinationPapertrailList) Resol
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

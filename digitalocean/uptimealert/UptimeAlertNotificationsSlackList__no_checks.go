@@ -15,7 +15,7 @@ func (u *jsiiProxy_UptimeAlertNotificationsSlackList) validateGetParameters(inde
 	return nil
 }
 
-func (u *jsiiProxy_UptimeAlertNotificationsSlackList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (u *jsiiProxy_UptimeAlertNotificationsSlackList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

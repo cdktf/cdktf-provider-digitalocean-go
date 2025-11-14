@@ -41,7 +41,7 @@ type AppSpecFunctionRoutesList interface {
 	Get(index *float64) AppSpecFunctionRoutesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (a *jsiiProxy_AppSpecFunctionRoutesList) Get(index *float64) AppSpecFunctio
 	return returns
 }
 
-func (a *jsiiProxy_AppSpecFunctionRoutesList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_AppSpecFunctionRoutesList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (a *jsiiProxy_AppSpecFunctionRoutesList) Resolve(_context cdktf.IResolveCon
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

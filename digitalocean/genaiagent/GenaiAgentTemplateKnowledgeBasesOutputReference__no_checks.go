@@ -43,7 +43,7 @@ func (g *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) validateGetS
 	return nil
 }
 
-func (g *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (g *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) validatePutL
 	return nil
 }
 
-func (g *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GenaiAgentTemplateKnowledgeBasesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

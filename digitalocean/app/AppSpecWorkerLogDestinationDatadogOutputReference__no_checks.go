@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppSpecWorkerLogDestinationDatadogOutputReference) validateGe
 	return nil
 }
 
-func (a *jsiiProxy_AppSpecWorkerLogDestinationDatadogOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppSpecWorkerLogDestinationDatadogOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppSpecWorkerLogDestinationDatadogOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppSpecWorkerLogDestinationDatadogOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

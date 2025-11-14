@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDigitaloceanAppSpecAlertDestinationsSlackWebhooksList) va
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanAppSpecAlertDestinationsSlackWebhooksList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDigitaloceanAppSpecAlertDestinationsSlackWebhooksList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

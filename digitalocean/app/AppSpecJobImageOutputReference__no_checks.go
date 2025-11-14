@@ -43,7 +43,7 @@ func (a *jsiiProxy_AppSpecJobImageOutputReference) validateGetStringMapAttribute
 	return nil
 }
 
-func (a *jsiiProxy_AppSpecJobImageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppSpecJobImageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_AppSpecJobImageOutputReference) validatePutDeployOnPushParame
 	return nil
 }
 
-func (a *jsiiProxy_AppSpecJobImageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppSpecJobImageOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

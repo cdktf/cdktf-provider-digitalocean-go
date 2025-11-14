@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDigitaloceanKubernetesClusterMaintenancePolicyList) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanKubernetesClusterMaintenancePolicyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDigitaloceanKubernetesClusterMaintenancePolicyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

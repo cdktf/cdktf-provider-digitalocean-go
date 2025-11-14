@@ -43,7 +43,7 @@ func (a *jsiiProxy_AppSpecJobLogDestinationOutputReference) validateGetStringMap
 	return nil
 }
 
-func (a *jsiiProxy_AppSpecJobLogDestinationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppSpecJobLogDestinationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (a *jsiiProxy_AppSpecJobLogDestinationOutputReference) validatePutPapertrai
 	return nil
 }
 
-func (a *jsiiProxy_AppSpecJobLogDestinationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppSpecJobLogDestinationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

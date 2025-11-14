@@ -43,11 +43,11 @@ func (g *jsiiProxy_GenaiKnowledgeBaseDataSourceSpacesDataSourceOutputReference) 
 	return nil
 }
 
-func (g *jsiiProxy_GenaiKnowledgeBaseDataSourceSpacesDataSourceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GenaiKnowledgeBaseDataSourceSpacesDataSourceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GenaiKnowledgeBaseDataSourceSpacesDataSourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GenaiKnowledgeBaseDataSourceSpacesDataSourceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

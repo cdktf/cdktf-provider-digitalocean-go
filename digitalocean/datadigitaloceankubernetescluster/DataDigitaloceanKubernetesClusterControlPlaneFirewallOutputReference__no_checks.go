@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDigitaloceanKubernetesClusterControlPlaneFirewallOutputRe
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanKubernetesClusterControlPlaneFirewallOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDigitaloceanKubernetesClusterControlPlaneFirewallOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanKubernetesClusterControlPlaneFirewallOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDigitaloceanKubernetesClusterControlPlaneFirewallOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

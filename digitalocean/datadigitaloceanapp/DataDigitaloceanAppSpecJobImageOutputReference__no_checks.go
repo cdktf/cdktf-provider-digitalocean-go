@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDigitaloceanAppSpecJobImageOutputReference) validateGetSt
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanAppSpecJobImageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDigitaloceanAppSpecJobImageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanAppSpecJobImageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDigitaloceanAppSpecJobImageOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

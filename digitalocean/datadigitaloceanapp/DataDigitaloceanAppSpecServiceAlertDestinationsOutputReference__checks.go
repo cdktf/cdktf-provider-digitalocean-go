@@ -85,17 +85,17 @@ func (d *jsiiProxy_DataDigitaloceanAppSpecServiceAlertDestinationsOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanAppSpecServiceAlertDestinationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (d *jsiiProxy_DataDigitaloceanAppSpecServiceAlertDestinationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanAppSpecServiceAlertDestinationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DataDigitaloceanAppSpecServiceAlertDestinationsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

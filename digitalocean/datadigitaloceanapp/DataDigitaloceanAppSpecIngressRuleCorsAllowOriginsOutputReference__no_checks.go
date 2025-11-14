@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDigitaloceanAppSpecIngressRuleCorsAllowOriginsOutputRefer
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanAppSpecIngressRuleCorsAllowOriginsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDigitaloceanAppSpecIngressRuleCorsAllowOriginsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanAppSpecIngressRuleCorsAllowOriginsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDigitaloceanAppSpecIngressRuleCorsAllowOriginsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

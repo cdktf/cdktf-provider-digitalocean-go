@@ -15,7 +15,7 @@ func (s *jsiiProxy_SpacesBucketCorsRuleList) validateGetParameters(index *float6
 	return nil
 }
 
-func (s *jsiiProxy_SpacesBucketCorsRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpacesBucketCorsRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

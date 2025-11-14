@@ -15,7 +15,7 @@ func (g *jsiiProxy_GenaiAgentParentAgentsAnthropicApiKeyList) validateGetParamet
 	return nil
 }
 
-func (g *jsiiProxy_GenaiAgentParentAgentsAnthropicApiKeyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GenaiAgentParentAgentsAnthropicApiKeyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

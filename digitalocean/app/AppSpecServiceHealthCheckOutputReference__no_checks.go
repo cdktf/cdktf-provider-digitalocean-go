@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppSpecServiceHealthCheckOutputReference) validateGetStringMa
 	return nil
 }
 
-func (a *jsiiProxy_AppSpecServiceHealthCheckOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppSpecServiceHealthCheckOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppSpecServiceHealthCheckOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppSpecServiceHealthCheckOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

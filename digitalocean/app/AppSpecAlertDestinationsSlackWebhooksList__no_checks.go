@@ -15,7 +15,7 @@ func (a *jsiiProxy_AppSpecAlertDestinationsSlackWebhooksList) validateGetParamet
 	return nil
 }
 
-func (a *jsiiProxy_AppSpecAlertDestinationsSlackWebhooksList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppSpecAlertDestinationsSlackWebhooksList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

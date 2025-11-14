@@ -41,7 +41,7 @@ type GenaiKnowledgeBaseDatasourcesList interface {
 	Get(index *float64) GenaiKnowledgeBaseDatasourcesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (g *jsiiProxy_GenaiKnowledgeBaseDatasourcesList) Get(index *float64) GenaiK
 	return returns
 }
 
-func (g *jsiiProxy_GenaiKnowledgeBaseDatasourcesList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GenaiKnowledgeBaseDatasourcesList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (g *jsiiProxy_GenaiKnowledgeBaseDatasourcesList) Resolve(_context cdktf.IRe
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

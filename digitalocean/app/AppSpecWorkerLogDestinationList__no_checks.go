@@ -15,7 +15,7 @@ func (a *jsiiProxy_AppSpecWorkerLogDestinationList) validateGetParameters(index 
 	return nil
 }
 
-func (a *jsiiProxy_AppSpecWorkerLogDestinationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppSpecWorkerLogDestinationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

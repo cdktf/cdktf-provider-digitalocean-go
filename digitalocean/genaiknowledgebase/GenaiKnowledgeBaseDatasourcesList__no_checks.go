@@ -15,7 +15,7 @@ func (g *jsiiProxy_GenaiKnowledgeBaseDatasourcesList) validateGetParameters(inde
 	return nil
 }
 
-func (g *jsiiProxy_GenaiKnowledgeBaseDatasourcesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GenaiKnowledgeBaseDatasourcesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

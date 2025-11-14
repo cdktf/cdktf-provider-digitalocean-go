@@ -15,7 +15,7 @@ func (f *jsiiProxy_FirewallPendingChangesList) validateGetParameters(index *floa
 	return nil
 }
 
-func (f *jsiiProxy_FirewallPendingChangesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FirewallPendingChangesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDigitaloceanLoadbalancerStickySessionsList) validateGetPa
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanLoadbalancerStickySessionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDigitaloceanLoadbalancerStickySessionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (a *jsiiProxy_AppSpecEnvList) validateGetParameters(index *float64) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppSpecEnvList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppSpecEnvList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (a *jsiiProxy_AppSpecIngressRuleOutputReference) validateGetStringMapAttrib
 	return nil
 }
 
-func (a *jsiiProxy_AppSpecIngressRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppSpecIngressRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (a *jsiiProxy_AppSpecIngressRuleOutputReference) validatePutRedirectParamet
 	return nil
 }
 
-func (a *jsiiProxy_AppSpecIngressRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppSpecIngressRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

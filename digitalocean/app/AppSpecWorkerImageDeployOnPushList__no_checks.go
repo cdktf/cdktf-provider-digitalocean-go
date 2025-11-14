@@ -15,7 +15,7 @@ func (a *jsiiProxy_AppSpecWorkerImageDeployOnPushList) validateGetParameters(ind
 	return nil
 }
 
-func (a *jsiiProxy_AppSpecWorkerImageDeployOnPushList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppSpecWorkerImageDeployOnPushList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

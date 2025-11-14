@@ -43,11 +43,11 @@ func (u *jsiiProxy_UptimeAlertNotificationsSlackOutputReference) validateGetStri
 	return nil
 }
 
-func (u *jsiiProxy_UptimeAlertNotificationsSlackOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (u *jsiiProxy_UptimeAlertNotificationsSlackOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (u *jsiiProxy_UptimeAlertNotificationsSlackOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (u *jsiiProxy_UptimeAlertNotificationsSlackOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

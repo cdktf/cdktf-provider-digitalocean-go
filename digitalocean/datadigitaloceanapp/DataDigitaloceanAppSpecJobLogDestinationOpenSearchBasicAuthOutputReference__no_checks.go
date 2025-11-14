@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOu
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDigitaloceanAppSpecJobLogDestinationOpenSearchBasicAuthOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

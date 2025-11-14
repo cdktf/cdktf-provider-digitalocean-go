@@ -15,7 +15,7 @@ func (v *jsiiProxy_VpcNatGatewayVpcsList) validateGetParameters(index *float64) 
 	return nil
 }
 
-func (v *jsiiProxy_VpcNatGatewayVpcsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpcNatGatewayVpcsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

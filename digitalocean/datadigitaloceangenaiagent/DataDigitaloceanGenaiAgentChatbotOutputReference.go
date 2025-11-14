@@ -81,7 +81,7 @@ type DataDigitaloceanGenaiAgentChatbotOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetButtonBackgroundColor()
 	ResetLogo()
 	ResetName()
@@ -90,7 +90,7 @@ type DataDigitaloceanGenaiAgentChatbotOutputReference interface {
 	ResetStartingMessage()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -612,8 +612,8 @@ func (d *jsiiProxy_DataDigitaloceanGenaiAgentChatbotOutputReference) Interpolati
 	return returns
 }
 
-func (d *jsiiProxy_DataDigitaloceanGenaiAgentChatbotOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataDigitaloceanGenaiAgentChatbotOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -621,7 +621,7 @@ func (d *jsiiProxy_DataDigitaloceanGenaiAgentChatbotOutputReference) Interpolati
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -676,8 +676,8 @@ func (d *jsiiProxy_DataDigitaloceanGenaiAgentChatbotOutputReference) ResetStarti
 	)
 }
 
-func (d *jsiiProxy_DataDigitaloceanGenaiAgentChatbotOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataDigitaloceanGenaiAgentChatbotOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -685,7 +685,7 @@ func (d *jsiiProxy_DataDigitaloceanGenaiAgentChatbotOutputReference) Resolve(_co
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

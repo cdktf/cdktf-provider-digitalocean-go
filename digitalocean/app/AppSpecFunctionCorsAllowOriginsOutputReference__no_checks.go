@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppSpecFunctionCorsAllowOriginsOutputReference) validateGetSt
 	return nil
 }
 
-func (a *jsiiProxy_AppSpecFunctionCorsAllowOriginsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppSpecFunctionCorsAllowOriginsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppSpecFunctionCorsAllowOriginsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppSpecFunctionCorsAllowOriginsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDigitaloceanGenaiModelsModelsAgreementList) validateGetPa
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanGenaiModelsModelsAgreementList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDigitaloceanGenaiModelsModelsAgreementList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (g *jsiiProxy_GenaiAgentTemplateModelAgreementList) validateGetParameters(i
 	return nil
 }
 
-func (g *jsiiProxy_GenaiAgentTemplateModelAgreementList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GenaiAgentTemplateModelAgreementList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

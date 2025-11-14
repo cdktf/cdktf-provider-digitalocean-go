@@ -43,7 +43,7 @@ func (g *jsiiProxy_GenaiKnowledgeBaseDatasourcesOutputReference) validateGetStri
 	return nil
 }
 
-func (g *jsiiProxy_GenaiKnowledgeBaseDatasourcesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GenaiKnowledgeBaseDatasourcesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (g *jsiiProxy_GenaiKnowledgeBaseDatasourcesOutputReference) validatePutWebC
 	return nil
 }
 
-func (g *jsiiProxy_GenaiKnowledgeBaseDatasourcesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GenaiKnowledgeBaseDatasourcesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

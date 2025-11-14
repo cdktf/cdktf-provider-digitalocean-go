@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDigitaloceanKubernetesClusterClusterAutoscalerConfigurati
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanKubernetesClusterClusterAutoscalerConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDigitaloceanKubernetesClusterClusterAutoscalerConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (a *jsiiProxy_AppSpecServiceCorsOutputReference) validateGetStringMapAttrib
 	return nil
 }
 
-func (a *jsiiProxy_AppSpecServiceCorsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppSpecServiceCorsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_AppSpecServiceCorsOutputReference) validatePutAllowOriginsPar
 	return nil
 }
 
-func (a *jsiiProxy_AppSpecServiceCorsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppSpecServiceCorsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

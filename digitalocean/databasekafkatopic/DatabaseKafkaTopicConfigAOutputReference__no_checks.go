@@ -43,11 +43,11 @@ func (d *jsiiProxy_DatabaseKafkaTopicConfigAOutputReference) validateGetStringMa
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseKafkaTopicConfigAOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatabaseKafkaTopicConfigAOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseKafkaTopicConfigAOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatabaseKafkaTopicConfigAOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

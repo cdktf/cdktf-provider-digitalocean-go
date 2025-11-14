@@ -43,7 +43,7 @@ func (d *jsiiProxy_DatabaseUserSettingsOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseUserSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatabaseUserSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (d *jsiiProxy_DatabaseUserSettingsOutputReference) validatePutOpensearchAcl
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseUserSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatabaseUserSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

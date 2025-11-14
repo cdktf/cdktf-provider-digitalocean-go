@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDigitaloceanGenaiAgentsAgentsKnowledgeBasesLastIndexingJo
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanGenaiAgentsAgentsKnowledgeBasesLastIndexingJobList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDigitaloceanGenaiAgentsAgentsKnowledgeBasesLastIndexingJobList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

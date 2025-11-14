@@ -15,7 +15,7 @@ func (a *jsiiProxy_AppSpecServiceAlertList) validateGetParameters(index *float64
 	return nil
 }
 
-func (a *jsiiProxy_AppSpecServiceAlertList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppSpecServiceAlertList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

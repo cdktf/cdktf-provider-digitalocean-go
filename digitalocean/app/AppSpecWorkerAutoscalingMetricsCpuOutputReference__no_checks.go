@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppSpecWorkerAutoscalingMetricsCpuOutputReference) validateGe
 	return nil
 }
 
-func (a *jsiiProxy_AppSpecWorkerAutoscalingMetricsCpuOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppSpecWorkerAutoscalingMetricsCpuOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppSpecWorkerAutoscalingMetricsCpuOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppSpecWorkerAutoscalingMetricsCpuOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

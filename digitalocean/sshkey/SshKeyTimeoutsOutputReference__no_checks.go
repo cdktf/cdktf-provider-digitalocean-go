@@ -43,11 +43,11 @@ func (s *jsiiProxy_SshKeyTimeoutsOutputReference) validateGetStringMapAttributeP
 	return nil
 }
 
-func (s *jsiiProxy_SshKeyTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SshKeyTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SshKeyTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SshKeyTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

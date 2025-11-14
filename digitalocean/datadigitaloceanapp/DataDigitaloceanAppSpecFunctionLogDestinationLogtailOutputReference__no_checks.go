@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDigitaloceanAppSpecFunctionLogDestinationLogtailOutputRef
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanAppSpecFunctionLogDestinationLogtailOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDigitaloceanAppSpecFunctionLogDestinationLogtailOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanAppSpecFunctionLogDestinationLogtailOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDigitaloceanAppSpecFunctionLogDestinationLogtailOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

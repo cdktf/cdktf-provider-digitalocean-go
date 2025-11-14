@@ -15,7 +15,7 @@ func (g *jsiiProxy_GenaiKnowledgeBaseDatasourcesFileUploadDataSourceList) valida
 	return nil
 }
 
-func (g *jsiiProxy_GenaiKnowledgeBaseDatasourcesFileUploadDataSourceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GenaiKnowledgeBaseDatasourcesFileUploadDataSourceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

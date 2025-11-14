@@ -43,11 +43,11 @@ func (m *jsiiProxy_MonitorAlertAlertsSlackOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (m *jsiiProxy_MonitorAlertAlertsSlackOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitorAlertAlertsSlackOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MonitorAlertAlertsSlackOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorAlertAlertsSlackOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

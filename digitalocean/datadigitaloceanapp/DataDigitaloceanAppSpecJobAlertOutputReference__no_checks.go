@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDigitaloceanAppSpecJobAlertOutputReference) validateGetSt
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanAppSpecJobAlertOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDigitaloceanAppSpecJobAlertOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanAppSpecJobAlertOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDigitaloceanAppSpecJobAlertOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

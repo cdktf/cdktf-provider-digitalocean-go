@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppSpecWorkerBitbucketOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (a *jsiiProxy_AppSpecWorkerBitbucketOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppSpecWorkerBitbucketOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppSpecWorkerBitbucketOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppSpecWorkerBitbucketOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

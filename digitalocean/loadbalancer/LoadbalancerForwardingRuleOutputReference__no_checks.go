@@ -43,11 +43,11 @@ func (l *jsiiProxy_LoadbalancerForwardingRuleOutputReference) validateGetStringM
 	return nil
 }
 
-func (l *jsiiProxy_LoadbalancerForwardingRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LoadbalancerForwardingRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LoadbalancerForwardingRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoadbalancerForwardingRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

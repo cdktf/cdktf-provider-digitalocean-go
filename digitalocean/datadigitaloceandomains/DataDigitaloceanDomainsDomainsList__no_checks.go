@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDigitaloceanDomainsDomainsList) validateGetParameters(ind
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanDomainsDomainsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDigitaloceanDomainsDomainsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

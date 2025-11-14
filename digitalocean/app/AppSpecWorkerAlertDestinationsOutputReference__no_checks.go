@@ -43,7 +43,7 @@ func (a *jsiiProxy_AppSpecWorkerAlertDestinationsOutputReference) validateGetStr
 	return nil
 }
 
-func (a *jsiiProxy_AppSpecWorkerAlertDestinationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppSpecWorkerAlertDestinationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_AppSpecWorkerAlertDestinationsOutputReference) validatePutSla
 	return nil
 }
 
-func (a *jsiiProxy_AppSpecWorkerAlertDestinationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppSpecWorkerAlertDestinationsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

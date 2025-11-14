@@ -15,7 +15,7 @@ func (d *jsiiProxy_DatabaseUserSettingsAclList) validateGetParameters(index *flo
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseUserSettingsAclList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatabaseUserSettingsAclList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

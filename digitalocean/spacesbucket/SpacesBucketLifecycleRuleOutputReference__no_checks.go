@@ -43,7 +43,7 @@ func (s *jsiiProxy_SpacesBucketLifecycleRuleOutputReference) validateGetStringMa
 	return nil
 }
 
-func (s *jsiiProxy_SpacesBucketLifecycleRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SpacesBucketLifecycleRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (s *jsiiProxy_SpacesBucketLifecycleRuleOutputReference) validatePutNoncurre
 	return nil
 }
 
-func (s *jsiiProxy_SpacesBucketLifecycleRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpacesBucketLifecycleRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

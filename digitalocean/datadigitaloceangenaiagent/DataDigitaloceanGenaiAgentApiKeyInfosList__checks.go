@@ -29,9 +29,9 @@ func (d *jsiiProxy_DataDigitaloceanGenaiAgentApiKeyInfosList) validateGetParamet
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanGenaiAgentApiKeyInfosList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DataDigitaloceanGenaiAgentApiKeyInfosList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

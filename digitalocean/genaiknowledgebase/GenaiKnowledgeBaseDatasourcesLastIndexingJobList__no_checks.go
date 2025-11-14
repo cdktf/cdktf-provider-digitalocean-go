@@ -15,7 +15,7 @@ func (g *jsiiProxy_GenaiKnowledgeBaseDatasourcesLastIndexingJobList) validateGet
 	return nil
 }
 
-func (g *jsiiProxy_GenaiKnowledgeBaseDatasourcesLastIndexingJobList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GenaiKnowledgeBaseDatasourcesLastIndexingJobList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

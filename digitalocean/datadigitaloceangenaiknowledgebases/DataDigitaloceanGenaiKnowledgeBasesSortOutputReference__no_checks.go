@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDigitaloceanGenaiKnowledgeBasesSortOutputReference) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanGenaiKnowledgeBasesSortOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDigitaloceanGenaiKnowledgeBasesSortOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanGenaiKnowledgeBasesSortOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDigitaloceanGenaiKnowledgeBasesSortOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

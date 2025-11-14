@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDigitaloceanSizesSizesList) validateGetParameters(index *
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanSizesSizesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDigitaloceanSizesSizesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

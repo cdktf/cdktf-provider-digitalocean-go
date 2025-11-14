@@ -43,11 +43,11 @@ func (k *jsiiProxy_KubernetesClusterMaintenancePolicyOutputReference) validateGe
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterMaintenancePolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KubernetesClusterMaintenancePolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterMaintenancePolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KubernetesClusterMaintenancePolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

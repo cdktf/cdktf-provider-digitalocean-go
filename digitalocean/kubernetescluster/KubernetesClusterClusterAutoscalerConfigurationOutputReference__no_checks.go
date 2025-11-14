@@ -43,11 +43,11 @@ func (k *jsiiProxy_KubernetesClusterClusterAutoscalerConfigurationOutputReferenc
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterClusterAutoscalerConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KubernetesClusterClusterAutoscalerConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterClusterAutoscalerConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KubernetesClusterClusterAutoscalerConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

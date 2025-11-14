@@ -15,7 +15,7 @@ func (l *jsiiProxy_LoadbalancerDomainsList) validateGetParameters(index *float64
 	return nil
 }
 
-func (l *jsiiProxy_LoadbalancerDomainsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoadbalancerDomainsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

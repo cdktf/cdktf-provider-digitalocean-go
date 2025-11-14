@@ -15,7 +15,7 @@ func (d *jsiiProxy_DropletAutoscaleCurrentUtilizationList) validateGetParameters
 	return nil
 }
 
-func (d *jsiiProxy_DropletAutoscaleCurrentUtilizationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DropletAutoscaleCurrentUtilizationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

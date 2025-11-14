@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDigitaloceanKubernetesClusterNodePoolTaintOutputReference
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanKubernetesClusterNodePoolTaintOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDigitaloceanKubernetesClusterNodePoolTaintOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanKubernetesClusterNodePoolTaintOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDigitaloceanKubernetesClusterNodePoolTaintOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

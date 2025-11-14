@@ -15,7 +15,7 @@ func (g *jsiiProxy_GenaiAgentTemplateModelVersionsList) validateGetParameters(in
 	return nil
 }
 
-func (g *jsiiProxy_GenaiAgentTemplateModelVersionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GenaiAgentTemplateModelVersionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

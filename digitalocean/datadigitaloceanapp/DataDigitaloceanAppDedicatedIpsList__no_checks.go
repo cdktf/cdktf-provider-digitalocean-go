@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDigitaloceanAppDedicatedIpsList) validateGetParameters(in
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanAppDedicatedIpsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDigitaloceanAppDedicatedIpsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

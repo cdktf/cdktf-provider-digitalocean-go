@@ -72,13 +72,13 @@ type DataDigitaloceanPartnerAttachmentBgpOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetLocalRouterIp()
 	ResetPeerRouterAsn()
 	ResetPeerRouterIp()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -507,8 +507,8 @@ func (d *jsiiProxy_DataDigitaloceanPartnerAttachmentBgpOutputReference) Interpol
 	return returns
 }
 
-func (d *jsiiProxy_DataDigitaloceanPartnerAttachmentBgpOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataDigitaloceanPartnerAttachmentBgpOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -516,7 +516,7 @@ func (d *jsiiProxy_DataDigitaloceanPartnerAttachmentBgpOutputReference) Interpol
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -547,8 +547,8 @@ func (d *jsiiProxy_DataDigitaloceanPartnerAttachmentBgpOutputReference) ResetPee
 	)
 }
 
-func (d *jsiiProxy_DataDigitaloceanPartnerAttachmentBgpOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataDigitaloceanPartnerAttachmentBgpOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -556,7 +556,7 @@ func (d *jsiiProxy_DataDigitaloceanPartnerAttachmentBgpOutputReference) Resolve(
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

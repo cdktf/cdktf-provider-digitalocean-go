@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDigitaloceanLoadbalancerHealthcheckList) validateGetParam
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanLoadbalancerHealthcheckList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDigitaloceanLoadbalancerHealthcheckList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

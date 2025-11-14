@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDigitaloceanTagsFilterList) validateGetParameters(index *
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanTagsFilterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDigitaloceanTagsFilterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

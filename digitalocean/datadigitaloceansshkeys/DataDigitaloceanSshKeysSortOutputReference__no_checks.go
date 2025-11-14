@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDigitaloceanSshKeysSortOutputReference) validateGetString
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanSshKeysSortOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDigitaloceanSshKeysSortOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanSshKeysSortOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDigitaloceanSshKeysSortOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -108,7 +108,7 @@ type AppSpecJobOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutAlert(value interface{})
 	PutBitbucket(value *AppSpecJobBitbucket)
 	PutEnv(value interface{})
@@ -137,7 +137,7 @@ type AppSpecJobOutputReference interface {
 	ResetTermination()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -932,8 +932,8 @@ func (a *jsiiProxy_AppSpecJobOutputReference) InterpolationAsList() cdktf.IResol
 	return returns
 }
 
-func (a *jsiiProxy_AppSpecJobOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_AppSpecJobOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -941,7 +941,7 @@ func (a *jsiiProxy_AppSpecJobOutputReference) InterpolationForAttribute(property
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -1183,8 +1183,8 @@ func (a *jsiiProxy_AppSpecJobOutputReference) ResetTermination() {
 	)
 }
 
-func (a *jsiiProxy_AppSpecJobOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_AppSpecJobOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -1192,7 +1192,7 @@ func (a *jsiiProxy_AppSpecJobOutputReference) Resolve(_context cdktf.IResolveCon
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAut
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDigitaloceanAppSpecWorkerLogDestinationOpenSearchBasicAuthList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

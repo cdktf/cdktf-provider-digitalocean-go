@@ -15,7 +15,7 @@ func (d *jsiiProxy_DatabaseClusterMaintenanceWindowList) validateGetParameters(i
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseClusterMaintenanceWindowList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatabaseClusterMaintenanceWindowList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (m *jsiiProxy_MonitorAlertAlertsOutputReference) validateGetStringMapAttrib
 	return nil
 }
 
-func (m *jsiiProxy_MonitorAlertAlertsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitorAlertAlertsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (m *jsiiProxy_MonitorAlertAlertsOutputReference) validatePutSlackParameters
 	return nil
 }
 
-func (m *jsiiProxy_MonitorAlertAlertsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorAlertAlertsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

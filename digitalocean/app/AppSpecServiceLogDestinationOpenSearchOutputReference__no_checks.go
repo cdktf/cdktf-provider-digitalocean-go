@@ -43,7 +43,7 @@ func (a *jsiiProxy_AppSpecServiceLogDestinationOpenSearchOutputReference) valida
 	return nil
 }
 
-func (a *jsiiProxy_AppSpecServiceLogDestinationOpenSearchOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppSpecServiceLogDestinationOpenSearchOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_AppSpecServiceLogDestinationOpenSearchOutputReference) valida
 	return nil
 }
 
-func (a *jsiiProxy_AppSpecServiceLogDestinationOpenSearchOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppSpecServiceLogDestinationOpenSearchOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DatabaseClusterBackupRestoreOutputReference) validateGetStrin
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseClusterBackupRestoreOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatabaseClusterBackupRestoreOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseClusterBackupRestoreOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatabaseClusterBackupRestoreOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

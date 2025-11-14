@@ -43,11 +43,11 @@ func (g *jsiiProxy_GenaiAgentChildAgentsDeploymentOutputReference) validateGetSt
 	return nil
 }
 
-func (g *jsiiProxy_GenaiAgentChildAgentsDeploymentOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GenaiAgentChildAgentsDeploymentOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GenaiAgentChildAgentsDeploymentOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GenaiAgentChildAgentsDeploymentOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

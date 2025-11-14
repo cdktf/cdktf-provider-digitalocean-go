@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDigitaloceanSpacesBucketsFilterList) validateGetParameter
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanSpacesBucketsFilterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDigitaloceanSpacesBucketsFilterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

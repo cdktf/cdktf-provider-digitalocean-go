@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/vpc_nat_gateway digitalocean_vpc_nat_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/vpc_nat_gateway digitalocean_vpc_nat_gateway}.
 type VpcNatGateway interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -54,6 +54,9 @@ type VpcNatGateway interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	ProjectId() *string
+	SetProjectId(val *string)
+	ProjectIdInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -137,6 +140,7 @@ type VpcNatGateway interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProjectId()
 	ResetTcpTimeoutSeconds()
 	ResetUdpTimeoutSeconds()
 	SynthesizeAttributes() *map[string]interface{}
@@ -322,6 +326,26 @@ func (j *jsiiProxy_VpcNatGateway) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcNatGateway) ProjectId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcNatGateway) ProjectIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectIdInput",
 		&returns,
 	)
 	return returns
@@ -528,7 +552,7 @@ func (j *jsiiProxy_VpcNatGateway) VpcsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/vpc_nat_gateway digitalocean_vpc_nat_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/vpc_nat_gateway digitalocean_vpc_nat_gateway} Resource.
 func NewVpcNatGateway(scope constructs.Construct, id *string, config *VpcNatGatewayConfig) VpcNatGateway {
 	_init_.Initialize()
 
@@ -546,7 +570,7 @@ func NewVpcNatGateway(scope constructs.Construct, id *string, config *VpcNatGate
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/resources/vpc_nat_gateway digitalocean_vpc_nat_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/vpc_nat_gateway digitalocean_vpc_nat_gateway} Resource.
 func NewVpcNatGateway_Override(v VpcNatGateway, scope constructs.Construct, id *string, config *VpcNatGatewayConfig) {
 	_init_.Initialize()
 
@@ -624,6 +648,17 @@ func (j *jsiiProxy_VpcNatGateway)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VpcNatGateway)SetProjectId(val *string) {
+	if err := j.validateSetProjectIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"projectId",
 		val,
 	)
 }
@@ -1078,6 +1113,14 @@ func (v *jsiiProxy_VpcNatGateway) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpcNatGateway) ResetProjectId() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetProjectId",
 		nil, // no parameters
 	)
 }

@@ -15,7 +15,7 @@ func (u *jsiiProxy_UptimeAlertNotificationsList) validateGetParameters(index *fl
 	return nil
 }
 
-func (u *jsiiProxy_UptimeAlertNotificationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (u *jsiiProxy_UptimeAlertNotificationsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

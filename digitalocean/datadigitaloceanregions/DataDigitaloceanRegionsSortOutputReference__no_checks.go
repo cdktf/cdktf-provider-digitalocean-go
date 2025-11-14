@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDigitaloceanRegionsSortOutputReference) validateGetString
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanRegionsSortOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDigitaloceanRegionsSortOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanRegionsSortOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDigitaloceanRegionsSortOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

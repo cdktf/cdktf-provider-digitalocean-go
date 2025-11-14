@@ -24,20 +24,20 @@ type DataDigitaloceanImageConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// id of the image.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/image#id DataDigitaloceanImage#id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/image#id DataDigitaloceanImage#id}
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *float64 `field:"optional" json:"id" yaml:"id"`
 	// name of the image.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/image#name DataDigitaloceanImage#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/image#name DataDigitaloceanImage#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// slug of the image.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/image#slug DataDigitaloceanImage#slug}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/image#slug DataDigitaloceanImage#slug}
 	Slug *string `field:"optional" json:"slug" yaml:"slug"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.68.0/docs/data-sources/image#source DataDigitaloceanImage#source}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/image#source DataDigitaloceanImage#source}.
 	Source *string `field:"optional" json:"source" yaml:"source"`
 }
 

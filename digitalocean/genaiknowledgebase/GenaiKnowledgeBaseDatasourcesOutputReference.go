@@ -76,7 +76,7 @@ type GenaiKnowledgeBaseDatasourcesOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutFileUploadDataSource(value interface{})
 	PutLastIndexingJob(value interface{})
 	PutSpacesDataSource(value interface{})
@@ -88,7 +88,7 @@ type GenaiKnowledgeBaseDatasourcesOutputReference interface {
 	ResetWebCrawlerDataSource()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -555,8 +555,8 @@ func (g *jsiiProxy_GenaiKnowledgeBaseDatasourcesOutputReference) InterpolationAs
 	return returns
 }
 
-func (g *jsiiProxy_GenaiKnowledgeBaseDatasourcesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GenaiKnowledgeBaseDatasourcesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -564,7 +564,7 @@ func (g *jsiiProxy_GenaiKnowledgeBaseDatasourcesOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -655,8 +655,8 @@ func (g *jsiiProxy_GenaiKnowledgeBaseDatasourcesOutputReference) ResetWebCrawler
 	)
 }
 
-func (g *jsiiProxy_GenaiKnowledgeBaseDatasourcesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GenaiKnowledgeBaseDatasourcesOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -664,7 +664,7 @@ func (g *jsiiProxy_GenaiKnowledgeBaseDatasourcesOutputReference) Resolve(_contex
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

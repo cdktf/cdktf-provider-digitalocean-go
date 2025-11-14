@@ -43,7 +43,7 @@ func (k *jsiiProxy_KubernetesClusterNodePoolOutputReference) validateGetStringMa
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterNodePoolOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KubernetesClusterNodePoolOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (k *jsiiProxy_KubernetesClusterNodePoolOutputReference) validatePutTaintPar
 	return nil
 }
 
-func (k *jsiiProxy_KubernetesClusterNodePoolOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KubernetesClusterNodePoolOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

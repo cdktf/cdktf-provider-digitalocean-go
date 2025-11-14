@@ -15,7 +15,7 @@ func (a *jsiiProxy_AppSpecServiceRoutesList) validateGetParameters(index *float6
 	return nil
 }
 
-func (a *jsiiProxy_AppSpecServiceRoutesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppSpecServiceRoutesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

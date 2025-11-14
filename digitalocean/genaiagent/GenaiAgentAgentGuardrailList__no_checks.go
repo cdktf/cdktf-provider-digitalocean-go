@@ -15,7 +15,7 @@ func (g *jsiiProxy_GenaiAgentAgentGuardrailList) validateGetParameters(index *fl
 	return nil
 }
 
-func (g *jsiiProxy_GenaiAgentAgentGuardrailList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GenaiAgentAgentGuardrailList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

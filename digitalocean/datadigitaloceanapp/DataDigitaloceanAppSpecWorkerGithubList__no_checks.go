@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDigitaloceanAppSpecWorkerGithubList) validateGetParameter
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanAppSpecWorkerGithubList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDigitaloceanAppSpecWorkerGithubList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

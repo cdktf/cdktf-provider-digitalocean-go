@@ -15,7 +15,7 @@ func (a *jsiiProxy_AppSpecStaticSiteRoutesList) validateGetParameters(index *flo
 	return nil
 }
 
-func (a *jsiiProxy_AppSpecStaticSiteRoutesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppSpecStaticSiteRoutesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

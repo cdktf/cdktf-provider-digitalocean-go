@@ -15,7 +15,7 @@ func (v *jsiiProxy_VpcNatGatewayEgressesPublicGatewaysList) validateGetParameter
 	return nil
 }
 
-func (v *jsiiProxy_VpcNatGatewayEgressesPublicGatewaysList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpcNatGatewayEgressesPublicGatewaysList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

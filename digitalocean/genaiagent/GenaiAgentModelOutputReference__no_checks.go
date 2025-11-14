@@ -43,7 +43,7 @@ func (g *jsiiProxy_GenaiAgentModelOutputReference) validateGetStringMapAttribute
 	return nil
 }
 
-func (g *jsiiProxy_GenaiAgentModelOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GenaiAgentModelOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (g *jsiiProxy_GenaiAgentModelOutputReference) validatePutVersionsParameters
 	return nil
 }
 
-func (g *jsiiProxy_GenaiAgentModelOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GenaiAgentModelOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

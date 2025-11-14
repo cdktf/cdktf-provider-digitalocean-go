@@ -115,6 +115,10 @@ func (j *jsiiProxy_VpcNatGateway) validateSetNameParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_VpcNatGateway) validateSetProjectIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcNatGateway) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

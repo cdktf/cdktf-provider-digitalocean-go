@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDigitaloceanDropletsSortList) validateGetParameters(index
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanDropletsSortList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDigitaloceanDropletsSortList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

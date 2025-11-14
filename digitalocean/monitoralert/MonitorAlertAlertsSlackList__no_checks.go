@@ -15,7 +15,7 @@ func (m *jsiiProxy_MonitorAlertAlertsSlackList) validateGetParameters(index *flo
 	return nil
 }
 
-func (m *jsiiProxy_MonitorAlertAlertsSlackList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorAlertAlertsSlackList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

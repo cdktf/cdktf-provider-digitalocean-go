@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDigitaloceanAppSpecJobBitbucketList) validateGetParameter
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanAppSpecJobBitbucketList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDigitaloceanAppSpecJobBitbucketList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (g *jsiiProxy_GenaiAgentFunctionsList) validateGetParameters(index *float64
 	return nil
 }
 
-func (g *jsiiProxy_GenaiAgentFunctionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GenaiAgentFunctionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

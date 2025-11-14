@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDigitaloceanAppSpecAlertDestinationsSlackWebhooksOutputRe
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanAppSpecAlertDestinationsSlackWebhooksOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDigitaloceanAppSpecAlertDestinationsSlackWebhooksOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDigitaloceanAppSpecAlertDestinationsSlackWebhooksOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDigitaloceanAppSpecAlertDestinationsSlackWebhooksOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

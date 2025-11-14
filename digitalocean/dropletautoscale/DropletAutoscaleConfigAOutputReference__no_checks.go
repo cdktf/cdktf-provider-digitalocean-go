@@ -43,11 +43,11 @@ func (d *jsiiProxy_DropletAutoscaleConfigAOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (d *jsiiProxy_DropletAutoscaleConfigAOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DropletAutoscaleConfigAOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DropletAutoscaleConfigAOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DropletAutoscaleConfigAOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

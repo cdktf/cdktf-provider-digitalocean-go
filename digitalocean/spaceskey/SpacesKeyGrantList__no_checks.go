@@ -15,7 +15,7 @@ func (s *jsiiProxy_SpacesKeyGrantList) validateGetParameters(index *float64) err
 	return nil
 }
 
-func (s *jsiiProxy_SpacesKeyGrantList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpacesKeyGrantList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 
