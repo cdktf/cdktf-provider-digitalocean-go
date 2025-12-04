@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_models digitalocean_genai_models}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_models digitalocean_genai_models}.
 type DataDigitaloceanGenaiModels interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -324,7 +324,7 @@ func (j *jsiiProxy_DataDigitaloceanGenaiModels) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_models digitalocean_genai_models} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_models digitalocean_genai_models} Data Source.
 func NewDataDigitaloceanGenaiModels(scope constructs.Construct, id *string, config *DataDigitaloceanGenaiModelsConfig) DataDigitaloceanGenaiModels {
 	_init_.Initialize()
 
@@ -342,7 +342,7 @@ func NewDataDigitaloceanGenaiModels(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_models digitalocean_genai_models} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_models digitalocean_genai_models} Data Source.
 func NewDataDigitaloceanGenaiModels_Override(d DataDigitaloceanGenaiModels, scope constructs.Construct, id *string, config *DataDigitaloceanGenaiModelsConfig) {
 	_init_.Initialize()
 

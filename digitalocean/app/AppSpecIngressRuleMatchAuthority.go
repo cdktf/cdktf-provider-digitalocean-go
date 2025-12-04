@@ -5,7 +5,7 @@ package app
 
 
 type AppSpecIngressRuleMatchAuthority struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/app#exact App#exact}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/app#exact App#exact}.
 	Exact *string `field:"optional" json:"exact" yaml:"exact"`
 }
 

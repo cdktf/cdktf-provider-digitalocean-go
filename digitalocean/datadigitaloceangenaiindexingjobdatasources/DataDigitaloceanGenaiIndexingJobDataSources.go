@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_indexing_job_data_sources digitalocean_genai_indexing_job_data_sources}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_indexing_job_data_sources digitalocean_genai_indexing_job_data_sources}.
 type DataDigitaloceanGenaiIndexingJobDataSources interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -299,7 +299,7 @@ func (j *jsiiProxy_DataDigitaloceanGenaiIndexingJobDataSources) TerraformResourc
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_indexing_job_data_sources digitalocean_genai_indexing_job_data_sources} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_indexing_job_data_sources digitalocean_genai_indexing_job_data_sources} Data Source.
 func NewDataDigitaloceanGenaiIndexingJobDataSources(scope constructs.Construct, id *string, config *DataDigitaloceanGenaiIndexingJobDataSourcesConfig) DataDigitaloceanGenaiIndexingJobDataSources {
 	_init_.Initialize()
 
@@ -317,7 +317,7 @@ func NewDataDigitaloceanGenaiIndexingJobDataSources(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_indexing_job_data_sources digitalocean_genai_indexing_job_data_sources} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_indexing_job_data_sources digitalocean_genai_indexing_job_data_sources} Data Source.
 func NewDataDigitaloceanGenaiIndexingJobDataSources_Override(d DataDigitaloceanGenaiIndexingJobDataSources, scope constructs.Construct, id *string, config *DataDigitaloceanGenaiIndexingJobDataSourcesConfig) {
 	_init_.Initialize()
 

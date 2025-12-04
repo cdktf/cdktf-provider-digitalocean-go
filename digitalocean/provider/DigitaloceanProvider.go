@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs digitalocean}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs digitalocean}.
 type DigitaloceanProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -402,7 +402,7 @@ func (j *jsiiProxy_DigitaloceanProvider) TokenInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs digitalocean} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs digitalocean} Resource.
 func NewDigitaloceanProvider(scope constructs.Construct, id *string, config *DigitaloceanProviderConfig) DigitaloceanProvider {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewDigitaloceanProvider(scope constructs.Construct, id *string, config *Dig
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs digitalocean} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs digitalocean} Resource.
 func NewDigitaloceanProvider_Override(d DigitaloceanProvider, scope constructs.Construct, id *string, config *DigitaloceanProviderConfig) {
 	_init_.Initialize()
 

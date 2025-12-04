@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/database_online_migration digitalocean_database_online_migration}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/database_online_migration digitalocean_database_online_migration}.
 type DatabaseOnlineMigration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -413,7 +413,7 @@ func (j *jsiiProxy_DatabaseOnlineMigration) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/database_online_migration digitalocean_database_online_migration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/database_online_migration digitalocean_database_online_migration} Resource.
 func NewDatabaseOnlineMigration(scope constructs.Construct, id *string, config *DatabaseOnlineMigrationConfig) DatabaseOnlineMigration {
 	_init_.Initialize()
 
@@ -431,7 +431,7 @@ func NewDatabaseOnlineMigration(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/database_online_migration digitalocean_database_online_migration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/database_online_migration digitalocean_database_online_migration} Resource.
 func NewDatabaseOnlineMigration_Override(d DatabaseOnlineMigration, scope constructs.Construct, id *string, config *DatabaseOnlineMigrationConfig) {
 	_init_.Initialize()
 

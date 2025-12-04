@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_indexing_job_cancel digitalocean_genai_indexing_job_cancel}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_indexing_job_cancel digitalocean_genai_indexing_job_cancel}.
 type GenaiIndexingJobCancel interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -487,7 +487,7 @@ func (j *jsiiProxy_GenaiIndexingJobCancel) UuidInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_indexing_job_cancel digitalocean_genai_indexing_job_cancel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_indexing_job_cancel digitalocean_genai_indexing_job_cancel} Resource.
 func NewGenaiIndexingJobCancel(scope constructs.Construct, id *string, config *GenaiIndexingJobCancelConfig) GenaiIndexingJobCancel {
 	_init_.Initialize()
 
@@ -505,7 +505,7 @@ func NewGenaiIndexingJobCancel(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/genai_indexing_job_cancel digitalocean_genai_indexing_job_cancel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/genai_indexing_job_cancel digitalocean_genai_indexing_job_cancel} Resource.
 func NewGenaiIndexingJobCancel_Override(g GenaiIndexingJobCancel, scope constructs.Construct, id *string, config *GenaiIndexingJobCancelConfig) {
 	_init_.Initialize()
 

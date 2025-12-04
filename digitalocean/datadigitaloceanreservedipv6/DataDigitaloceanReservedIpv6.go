@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/reserved_ipv6 digitalocean_reserved_ipv6}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/reserved_ipv6 digitalocean_reserved_ipv6}.
 type DataDigitaloceanReservedIpv6 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -321,7 +321,7 @@ func (j *jsiiProxy_DataDigitaloceanReservedIpv6) Urn() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/reserved_ipv6 digitalocean_reserved_ipv6} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/reserved_ipv6 digitalocean_reserved_ipv6} Data Source.
 func NewDataDigitaloceanReservedIpv6(scope constructs.Construct, id *string, config *DataDigitaloceanReservedIpv6Config) DataDigitaloceanReservedIpv6 {
 	_init_.Initialize()
 
@@ -339,7 +339,7 @@ func NewDataDigitaloceanReservedIpv6(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/reserved_ipv6 digitalocean_reserved_ipv6} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/reserved_ipv6 digitalocean_reserved_ipv6} Data Source.
 func NewDataDigitaloceanReservedIpv6_Override(d DataDigitaloceanReservedIpv6, scope constructs.Construct, id *string, config *DataDigitaloceanReservedIpv6Config) {
 	_init_.Initialize()
 

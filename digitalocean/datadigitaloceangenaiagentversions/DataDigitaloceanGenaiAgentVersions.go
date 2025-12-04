@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_agent_versions digitalocean_genai_agent_versions}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_agent_versions digitalocean_genai_agent_versions}.
 type DataDigitaloceanGenaiAgentVersions interface {
 	cdktf.TerraformDataSource
 	AgentId() *string
@@ -347,7 +347,7 @@ func (j *jsiiProxy_DataDigitaloceanGenaiAgentVersions) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_agent_versions digitalocean_genai_agent_versions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_agent_versions digitalocean_genai_agent_versions} Data Source.
 func NewDataDigitaloceanGenaiAgentVersions(scope constructs.Construct, id *string, config *DataDigitaloceanGenaiAgentVersionsConfig) DataDigitaloceanGenaiAgentVersions {
 	_init_.Initialize()
 
@@ -365,7 +365,7 @@ func NewDataDigitaloceanGenaiAgentVersions(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_agent_versions digitalocean_genai_agent_versions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_agent_versions digitalocean_genai_agent_versions} Data Source.
 func NewDataDigitaloceanGenaiAgentVersions_Override(d DataDigitaloceanGenaiAgentVersions, scope constructs.Construct, id *string, config *DataDigitaloceanGenaiAgentVersionsConfig) {
 	_init_.Initialize()
 

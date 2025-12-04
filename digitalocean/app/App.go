@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/app digitalocean_app}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/app digitalocean_app}.
 type App interface {
 	cdktf.TerraformResource
 	ActiveDeploymentId() *string
@@ -36,6 +36,9 @@ type App interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DeploymentPerPage() *float64
+	SetDeploymentPerPage(val *float64)
+	DeploymentPerPageInput() *float64
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -127,6 +130,7 @@ type App interface {
 	PutSpec(value *AppSpec)
 	PutTimeouts(value *AppTimeouts)
 	ResetDedicatedIps()
+	ResetDeploymentPerPage()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -247,6 +251,26 @@ func (j *jsiiProxy_App) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_App) DeploymentPerPage() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"deploymentPerPage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_App) DeploymentPerPageInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"deploymentPerPageInput",
 		&returns,
 	)
 	return returns
@@ -483,7 +507,7 @@ func (j *jsiiProxy_App) Urn() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/app digitalocean_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/app digitalocean_app} Resource.
 func NewApp(scope constructs.Construct, id *string, config *AppConfig) App {
 	_init_.Initialize()
 
@@ -501,7 +525,7 @@ func NewApp(scope constructs.Construct, id *string, config *AppConfig) App {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/resources/app digitalocean_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/app digitalocean_app} Resource.
 func NewApp_Override(a App, scope constructs.Construct, id *string, config *AppConfig) {
 	_init_.Initialize()
 
@@ -538,6 +562,17 @@ func (j *jsiiProxy_App)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_App)SetDeploymentPerPage(val *float64) {
+	if err := j.validateSetDeploymentPerPageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deploymentPerPage",
 		val,
 	)
 }
@@ -992,6 +1027,14 @@ func (a *jsiiProxy_App) ResetDedicatedIps() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetDedicatedIps",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_App) ResetDeploymentPerPage() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDeploymentPerPage",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_knowledge_base_indexing_jobs digitalocean_genai_knowledge_base_indexing_jobs}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_knowledge_base_indexing_jobs digitalocean_genai_knowledge_base_indexing_jobs}.
 type DataDigitaloceanGenaiKnowledgeBaseIndexingJobs interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -310,7 +310,7 @@ func (j *jsiiProxy_DataDigitaloceanGenaiKnowledgeBaseIndexingJobs) TerraformReso
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_knowledge_base_indexing_jobs digitalocean_genai_knowledge_base_indexing_jobs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_knowledge_base_indexing_jobs digitalocean_genai_knowledge_base_indexing_jobs} Data Source.
 func NewDataDigitaloceanGenaiKnowledgeBaseIndexingJobs(scope constructs.Construct, id *string, config *DataDigitaloceanGenaiKnowledgeBaseIndexingJobsConfig) DataDigitaloceanGenaiKnowledgeBaseIndexingJobs {
 	_init_.Initialize()
 
@@ -328,7 +328,7 @@ func NewDataDigitaloceanGenaiKnowledgeBaseIndexingJobs(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.69.0/docs/data-sources/genai_knowledge_base_indexing_jobs digitalocean_genai_knowledge_base_indexing_jobs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/genai_knowledge_base_indexing_jobs digitalocean_genai_knowledge_base_indexing_jobs} Data Source.
 func NewDataDigitaloceanGenaiKnowledgeBaseIndexingJobs_Override(d DataDigitaloceanGenaiKnowledgeBaseIndexingJobs, scope constructs.Construct, id *string, config *DataDigitaloceanGenaiKnowledgeBaseIndexingJobsConfig) {
 	_init_.Initialize()
 
