@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/nfs digitalocean_nfs}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/data-sources/nfs digitalocean_nfs}.
 type DataDigitaloceanNfs interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -345,7 +345,7 @@ func (j *jsiiProxy_DataDigitaloceanNfs) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/nfs digitalocean_nfs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/data-sources/nfs digitalocean_nfs} Data Source.
 func NewDataDigitaloceanNfs(scope constructs.Construct, id *string, config *DataDigitaloceanNfsConfig) DataDigitaloceanNfs {
 	_init_.Initialize()
 
@@ -363,7 +363,7 @@ func NewDataDigitaloceanNfs(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/data-sources/nfs digitalocean_nfs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/data-sources/nfs digitalocean_nfs} Data Source.
 func NewDataDigitaloceanNfs_Override(d DataDigitaloceanNfs, scope constructs.Construct, id *string, config *DataDigitaloceanNfsConfig) {
 	_init_.Initialize()
 

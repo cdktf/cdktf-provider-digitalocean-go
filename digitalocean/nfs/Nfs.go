@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/nfs digitalocean_nfs}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/nfs digitalocean_nfs}.
 type Nfs interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -448,7 +448,7 @@ func (j *jsiiProxy_Nfs) VpcIds() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/nfs digitalocean_nfs} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/nfs digitalocean_nfs} Resource.
 func NewNfs(scope constructs.Construct, id *string, config *NfsConfig) Nfs {
 	_init_.Initialize()
 
@@ -466,7 +466,7 @@ func NewNfs(scope constructs.Construct, id *string, config *NfsConfig) Nfs {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/nfs digitalocean_nfs} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/nfs digitalocean_nfs} Resource.
 func NewNfs_Override(n Nfs, scope constructs.Construct, id *string, config *NfsConfig) {
 	_init_.Initialize()
 

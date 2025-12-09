@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/nfs_attachment digitalocean_nfs_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/nfs_attachment digitalocean_nfs_attachment}.
 type NfsAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -379,7 +379,7 @@ func (j *jsiiProxy_NfsAttachment) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/nfs_attachment digitalocean_nfs_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/nfs_attachment digitalocean_nfs_attachment} Resource.
 func NewNfsAttachment(scope constructs.Construct, id *string, config *NfsAttachmentConfig) NfsAttachment {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewNfsAttachment(scope constructs.Construct, id *string, config *NfsAttachm
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/nfs_attachment digitalocean_nfs_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/nfs_attachment digitalocean_nfs_attachment} Resource.
 func NewNfsAttachment_Override(n NfsAttachment, scope constructs.Construct, id *string, config *NfsAttachmentConfig) {
 	_init_.Initialize()
 

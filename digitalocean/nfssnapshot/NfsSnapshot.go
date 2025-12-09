@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/nfs_snapshot digitalocean_nfs_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/nfs_snapshot digitalocean_nfs_snapshot}.
 type NfsSnapshot interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -412,7 +412,7 @@ func (j *jsiiProxy_NfsSnapshot) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/nfs_snapshot digitalocean_nfs_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/nfs_snapshot digitalocean_nfs_snapshot} Resource.
 func NewNfsSnapshot(scope constructs.Construct, id *string, config *NfsSnapshotConfig) NfsSnapshot {
 	_init_.Initialize()
 
@@ -430,7 +430,7 @@ func NewNfsSnapshot(scope constructs.Construct, id *string, config *NfsSnapshotC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.70.0/docs/resources/nfs_snapshot digitalocean_nfs_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/digitalocean/digitalocean/2.71.0/docs/resources/nfs_snapshot digitalocean_nfs_snapshot} Resource.
 func NewNfsSnapshot_Override(n NfsSnapshot, scope constructs.Construct, id *string, config *NfsSnapshotConfig) {
 	_init_.Initialize()
 
